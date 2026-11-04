@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Make 3D V2: code summary</title>
+<style>
+  :root {
+    --paper: #fbf6ea;
+    --panel: #fffdf8;
+    --ink: #2d2a26;
+    --muted: #6f685f;
+    --mint: #d9f1ea;
+    --sage: #dfeadf;
+    --sky: #dbe7f6;
+    --peach: #fde3cf;
+    --butter: #fff1b8;
+    --line: 2.5px solid var(--ink);
+    --shadow: 0 4px 0 var(--ink);
+    --radius: 14px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --paper: #26231f; --panel: #322e29; --ink: #f3eee4; --muted: #b8b0a3; }
+  }
+  :root[data-theme="dark"] { --paper: #26231f; --panel: #322e29; --ink: #f3eee4; --muted: #b8b0a3; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 980px; margin: 0 auto; padding: 16px; }
+  h1 { font-size: 26px; margin: 8px 0 4px; }
+  h2 { font-size: 20px; margin: 28px 0 8px; }
+  h3 { font-size: 16px; margin: 16px 0 4px; }
+  p, li { font-size: 15px; }
+  code { background: var(--sage); padding: 1px 5px; border-radius: 6px; font-size: 14px; }
+  .card { background: var(--panel); border: var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 14px 16px; margin: 12px 0; }
+  table { width: 100%; border-collapse: collapse; background: var(--panel); border: var(--line); border-radius: var(--radius); overflow: hidden; font-size: 14px; }
+  th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--muted); vertical-align: top; }
+  th { background: var(--sky); }
+  .lines { font-variant-numeric: tabular-nums; white-space: nowrap; font-weight: 600; }
+  .flow { display: grid; gap: 8px; }
+  .step { border: var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 10px 12px; background: var(--mint); }
+  .step.b { background: var(--sky); }
+  .step.c { background: var(--peach); }
+  .step.d { background: var(--butter); }
+  .arrow { text-align: center; font-size: 20px; line-height: 1; }
+  .two { display: grid; grid-template-columns: 1fr; gap: 12px; }
+  @media (min-width: 720px) { .two { grid-template-columns: 1fr 1fr; } }
+  .wire { width: 100%; height: auto; }
+  .tag { display: inline-block; font-size: 12px; font-weight: 700; border: 1.5px solid var(--ink); border-radius: 999px; padding: 0 8px; margin-right: 4px; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Make 3D V2: how the page fits together</h1>
+<p>Summary of <code>index.html</code>, with the CSS and JavaScript it depends on (<code>css/app.css</code>, <code>js/ui/app.js</code>, <code>js/viewer/viewer.js</code>). Line numbers are from the current files. Read it after the V2 merge; the layout and most of the wiring are shared with V1 (<code>V1/</code>).</p>
+
+<h2>1. The big picture</h2>
+<div class="card">
+  <svg class="wire" viewBox="0 0 960 330" role="img" aria-label="Diagram: the page, the engine, the viewer and the saved data, and how they connect">
+    <defs>
+      <marker id="ah" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2d2a26"/></marker>
+    </defs>
+    <rect x="20" y="20" width="250" height="120" rx="14" fill="#d9f1ea" stroke="#2d2a26" stroke-width="2.5"/>
+    <text x="40" y="52" font-weight="700" font-size="17" fill="#2d2a26">Page (index.html)</text>
+    <text x="40" y="76" font-size="14" fill="#2d2a26">Top bar, side panels,</text>
+    <text x="40" y="96" font-size="14" fill="#2d2a26">stage, footer, Library,</text>
+    <text x="40" y="116" font-size="14" fill="#2d2a26">Settings drawer, gear</text>
+
+    <rect x="350" y="20" width="250" height="120" rx="14" fill="#dbe7f6" stroke="#2d2a26" stroke-width="2.5"/>
+    <text x="370" y="52" font-weight="700" font-size="17" fill="#2d2a26">Page logic (app.js)</text>
+    <text x="370" y="76" font-size="14" fill="#2d2a26">State, applyOp, render,</text>
+    <text x="370" y="96" font-size="14" fill="#2d2a26">events, Library, files,</text>
+    <text x="370" y="116" font-size="14" fill="#2d2a26">cloud, start-up</text>
+
+    <rect x="680" y="20" width="260" height="120" rx="14" fill="#fde3cf" stroke="#2d2a26" stroke-width="2.5"/>
+    <text x="700" y="52" font-weight="700" font-size="17" fill="#2d2a26">3-D viewer (viewer.js)</text>
+    <text x="700" y="76" font-size="14" fill="#2d2a26">Three.js scene, orbit,</text>
+    <text x="700" y="96" font-size="14" fill="#2d2a26">pick, motion, PBR lights,</text>
+    <text x="700" y="116" font-size="14" fill="#2d2a26">GLB parts for export</text>
+
+    <rect x="350" y="190" width="250" height="110" rx="14" fill="#fff1b8" stroke="#2d2a26" stroke-width="2.5"/>
+    <text x="370" y="222" font-weight="700" font-size="17" fill="#2d2a26">Engine (js/core)</text>
+    <text x="370" y="246" font-size="14" fill="#2d2a26">Replay history, rules,</text>
+    <text x="370" y="266" font-size="14" fill="#2d2a26">materials, patterns, stages,</text>
+    <text x="370" y="286" font-size="14" fill="#2d2a26">IFC and GLB writers</text>
+
+    <rect x="20" y="190" width="250" height="110" rx="14" fill="#dfeadf" stroke="#2d2a26" stroke-width="2.5"/>
+    <text x="40" y="222" font-weight="700" font-size="17" fill="#2d2a26">Saved data</text>
+    <text x="40" y="246" font-size="14" fill="#2d2a26">Browser: this device only</text>
+    <text x="40" y="266" font-size="14" fill="#2d2a26">Cloud: Supabase (sign-in)</text>
+    <text x="40" y="286" font-size="14" fill="#2d2a26">Samples: bundled JS</text>
+
+    <rect x="680" y="190" width="260" height="110" rx="14" fill="#fffdf8" stroke="#2d2a26" stroke-width="2.5"/>
+    <text x="700" y="222" font-weight="700" font-size="17" fill="#2d2a26">Downloads</text>
+    <text x="700" y="246" font-size="14" fill="#2d2a26">Model JSON, IFC (Revit),</text>
+    <text x="700" y="266" font-size="14" fill="#2d2a26">GLB (3-D)</text>
+
+    <line x1="270" y1="80" x2="348" y2="80" stroke="#2d2a26" stroke-width="2.5" marker-end="url(#ah)"/>
+    <line x1="600" y1="80" x2="678" y2="80" stroke="#2d2a26" stroke-width="2.5" marker-end="url(#ah)"/>
+    <line x1="475" y1="142" x2="475" y2="188" stroke="#2d2a26" stroke-width="2.5" marker-end="url(#ah)"/>
+    <line x1="270" y1="245" x2="348" y2="245" stroke="#2d2a26" stroke-width="2.5" marker-end="url(#ah)"/>
+    <line x1="600" y1="245" x2="678" y2="245" stroke="#2d2a26" stroke-width="2.5" marker-end="url(#ah)"/>
+  </svg>
+  <p class="hint">Arrows show the usual direction of calls. The page reads and writes the engine, draws through the viewer, and saves to the device or the cloud.</p>
+</div>
+
+<h2>2. Table of contents: index.html</h2>
+<table>
+  <thead><tr><th>Lines</th><th>Section</th><th>What it does</th></tr></thead>
+  <tbody>
+    <tr><td class="lines">1–9</td><td>Head</td><td>Doctype, viewport, title (&quot;Make 3D V2&quot;), link to <code>css/app.css</code>.</td></tr>
+    <tr><td class="lines">10–15</td><td>Top bar</td><td>Brand with the V2 mark, model title, and the status pill (&quot;Saved on this device&quot;).</td></tr>
+    <tr><td class="lines">16–119</td><td>Side panels (<code>aside.side</code>)</td><td>Model name and description; &quot;Last change&quot;; &quot;Not applied&quot; (reject) with delete-and-retry, preview, dismiss; Objects list; Selected object facts; the add form and the paste box (the two tabs).</td></tr>
+    <tr><td class="lines">120–148</td><td>Stage (<code>section.stage</code>)</td><td>The 3-D canvas, the preview banner, Reset view, Back (linked views), the lower-right date track, Open (linked part), Full screen, the Parts dropdown, and the animation bar.</td></tr>
+    <tr><td class="lines">149–161</td><td>Footer (<code>footer.bottombar</code>)</td><td>History scrubber and &quot;Go to latest&quot;, Check model, the selection line, and the model-check errors panel (hidden until &quot;Show errors&quot; is on).</td></tr>
+    <tr><td class="lines">162</td><td>Library button</td><td>Opens the Library drawer.</td></tr>
+    <tr><td class="lines">164–200</td><td>Library drawer (<code>#libPanel</code>)</td><td>Built-in scenes, cloud sign-in and saved scenes, Quick Detail <code>make3d</code> references (read only), and a &quot;Later&quot; note.</td></tr>
+    <tr><td class="lines">201</td><td>Gear button</td><td>Opens Settings (lower right).</td></tr>
+    <tr><td class="lines">203–299</td><td>Settings drawer (<code>#gearPanel</code>)</td><td>Versions (V1 link), up axis, ground, display mode, units, show errors, animation speed and autoplay, Check model, Save file, Export IFC, Export GLB, open file, sample picker.</td></tr>
+    <tr><td class="lines">239–262</td><td>Material block (inside Settings)</td><td>P2b controls: material, colour, roughness, metalness, pattern, pattern colour, repeats. Each change is a <code>set_material</code> step.</td></tr>
+    <tr><td class="lines">301–319</td><td>Scripts</td><td>Loads in this order: Three.js (vendored), the core engine files, Supabase, cloud, viewer, the samples bundle, then the page logic last.</td></tr>
+  </tbody>
+</table>
+<p class="hint">Line numbers for the Settings block are approximate by a few lines; search for the element ID to find it.</p>
+
+<h2>3. Load order</h2>
+<div class="flow">
+  <div class="step">1. <code>vendor/three/three.min.js</code> (Three.js r160, vendored)</div>
+  <div class="arrow">↓</div>
+  <div class="step b">2. Core engine: units, schema, geometry, origin, rules, io, IFC, mesh, motion, linked views, visibility, patterns, GLB</div>
+  <div class="arrow">↓</div>
+  <div class="step c">3. Cloud (Supabase client) and <code>viewer.js</code>; the viewer attaches as <code>M3D.createViewer</code></div>
+  <div class="arrow">↓</div>
+  <div class="step d">4. <code>samples.bundle.js</code> (generated; do not edit), then <code>ui/app.js</code>, which runs <code>start()</code> at the end</div>
+</div>
+
+<h2>4. Main code map: js/ui/app.js (1,115 lines)</h2>
+<table>
+  <thead><tr><th>Lines</th><th>Section</th><th>What it does</th></tr></thead>
+  <tbody>
+    <tr><td class="lines">1–10</td><td>Setup</td><td>Wrapped in one function. Helpers <code>$</code>, <code>clone</code>; <code>STORE_KEY</code> (<code>make3d.v2.current</code>); bundled samples; default sample.</td></tr>
+    <tr><td class="lines">11–40</td><td>State <code>st</code></td><td>Everything the page remembers: history, world, motion, cursor, preview, last change, selection, ground, display, units, cloud and Quick Detail lists.</td></tr>
+    <tr><td class="lines">41–85</td><td>Storage</td><td>Reads the model from the URL or the device, saves after each change, shows status text.</td></tr>
+    <tr><td class="lines">86–92</td><td>Model state</td><td><code>latest</code>, <code>modelAt</code> (replay to the cursor), <code>shown</code> (preview or replayed model), <code>len</code> (length formatting).</td></tr>
+    <tr><td class="lines">93–142</td><td>Changes</td><td><code>applyOp</code> is the one path for every change: check, record, redraw. Also delete-and-retry, preview of a rejected change, discard.</td></tr>
+    <tr><td class="lines">143–174</td><td>Parts dropdown</td><td>Checkboxes for groups tagged <code>show:&lt;label&gt;</code>; hides their branches.</td></tr>
+    <tr><td class="lines">175–374</td><td>Rendering</td><td><code>render()</code> redraws everything from state: object list, selection, status line, last change, reject card, history bar, error panel.</td></tr>
+    <tr><td class="lines">376–427</td><td>Selection and linked views</td><td>Select an object; follow a <code>link:&lt;model&gt;</code> tag to another model with a fade or a zoom; Back.</td></tr>
+    <tr><td class="lines">428–505</td><td>Date track</td><td>The one-shot timeline tracker (lower right): scroll or drag to move through dates.</td></tr>
+    <tr><td class="lines">506–527</td><td>Full screen</td><td>Real Fullscreen API, or a fixed fill where the browser refuses it (iPad Safari).</td></tr>
+    <tr><td class="lines">528–607</td><td>Add form</td><td>Type, dimensions, position, rotation, material and parent controls; submits an <code>add</code> operation.</td></tr>
+    <tr><td class="lines">608–628</td><td>Paste box</td><td>Applies one operation or a list of operations written as JSON.</td></tr>
+    <tr><td class="lines">629–690</td><td>Files</td><td><code>saveFile</code> (JSON), <code>exportIfc</code> (Revit), <code>exportGlb</code> (3-D, via the viewer's baked parts), <code>openFile</code>.</td></tr>
+    <tr><td class="lines">691–701</td><td>Set state</td><td>Replaces the history, world and motion together, for a sample or an opened file.</td></tr>
+    <tr><td class="lines">702–742</td><td>Animation and preferences</td><td>Play and pause icons, the animation bar, speed and autoplay, saved in <code>make3d.v2.prefs</code>.</td></tr>
+    <tr><td class="lines">743–933</td><td>Library</td><td>Built-in scenes as projects with older versions folded away, cloud scenes, the scene log button.</td></tr>
+    <tr><td class="lines">934–943</td><td>Cloud setup</td><td>Starts the optional Supabase client; if it is not available the cloud parts are hidden.</td></tr>
+    <tr><td class="lines">945–1064</td><td>Events</td><td>Every button and field is wired here; the P2b material controls are at 1012–1063.</td></tr>
+    <tr><td class="lines">1065–1086</td><td>Tabs and samples</td><td>Switches between the paste box and the add form; fills the sample picker.</td></tr>
+    <tr><td class="lines">1088–1114</td><td>Start</td><td>Load, create the viewer, bind events, render, start the animation and the library. Runs once at the end.</td></tr>
+  </tbody>
+</table>
+
+<h2>5. Main code map: js/viewer/viewer.js (585 lines)</h2>
+<table>
+  <thead><tr><th>Lines</th><th>Section</th><th>What it does</th></tr></thead>
+  <tbody>
+    <tr><td class="lines">1–11</td><td>Header and colours</td><td>Describes the axes and controls; the main colours (<code>CANVAS_BG</code>, <code>INK</code>, <code>SELECT</code>, <code>GROUND</code>).</td></tr>
+    <tr><td class="lines">12–91</td><td>Procedural shaders</td><td>GLSL for the clouds, Earth and bands materials. Numbers come from the model header; no image files.</td></tr>
+    <tr><td class="lines">92–108</td><td>Room environment (P3)</td><td><code>makeRoomEnvironment</code> builds a small grey room with two light panels and turns it into the reflections that roughness and metalness use.</td></tr>
+    <tr><td class="lines">109–~200</td><td>Scene setup</td><td>Renderer, scene, camera, lights, ground, grid and origin marker.</td></tr>
+    <tr><td class="lines">~200–300</td><td>Building meshes</td><td>One node per object, box/cylinder/sphere/cone/loft/sheet geometry, standard or pattern materials (<code>patternTexture</code> caches one texture per pattern), and the edge and wire display.</td></tr>
+    <tr><td class="lines">~300–380</td><td>Motion and skins</td><td>Applies the motion pose each frame; updates skinned meshes (loft and sheet).</td></tr>
+    <tr><td class="lines">~380–470</td><td>Input</td><td>Orbit, pinch zoom, tap to select, and the render loop that only draws when something changed (saves iPad battery).</td></tr>
+    <tr><td class="lines">~470–534</td><td>Camera and fit</td><td>Fitting to the model, view state, and linked-view transitions.</td></tr>
+    <tr><td class="lines">535–583</td><td>Returned API</td><td>What the page can call: <code>setModel</code>, <code>setOptions</code>, <code>setSelected</code>, <code>setMotion</code>, <code>play</code>/<code>pause</code>/<code>seek</code>, <code>exportParts</code> (GLB, line 545), <code>stats</code> (triangles, draws, line 578).</td></tr>
+    <tr><td class="lines">584</td><td>Registration</td><td>Attaches <code>createViewer</code> to the shared <code>M3D</code> object.</td></tr>
+  </tbody>
+</table>
+<p class="hint">Ranges marked with <code>~</code> are approximate. Search for the function name in the file to find the exact line.</p>
+
+<h2>6. Variables that work with the page</h2>
+<p>These are the values you can change to restyle or tune the app without touching the logic.</p>
+
+<h3>CSS custom properties (css/app.css, lines 2–16)</h3>
+<table>
+  <thead><tr><th>Variable</th><th>Value now</th><th>What it does</th><th>How to tweak</th></tr></thead>
+  <tbody>
+    <tr><td><code>--paper</code></td><td>#fbf6ea</td><td>Page background (vanilla).</td><td>A lighter or darker paper tone; keep it light for the iPad look.</td></tr>
+    <tr><td><code>--panel</code></td><td>#fffdf8</td><td>Card and drawer background.</td><td>Brighter for contrast; it sits on the paper.</td></tr>
+    <tr><td><code>--ink</code></td><td>#2d2a26</td><td>Text, borders and shadows.</td><td>Change it to a softer brown to lighten every border at once.</td></tr>
+    <tr><td><code>--muted</code></td><td>#6f685f</td><td>Hints and secondary text.</td><td>Darker if hints are hard to read on iPad.</td></tr>
+    <tr><td><code>--mint</code>, <code>--sage</code>, <code>--sky</code>, <code>--peach</code>, <code>--butter</code></td><td>pastel colours</td><td>Button and card fills by role (primary, secondary, panels, the gear).</td><td>Swap a colour here to re-colour a whole group of buttons.</td></tr>
+    <tr><td><code>--select</code></td><td>#2f6fdd</td><td>Selection colour (CSS side).</td><td>Matches <code>SELECT</code> in the viewer; change both together.</td></tr>
+    <tr><td><code>--bad</code></td><td>#b3261e</td><td>Error text.</td><td>Keep it red-toned so errors stay easy to spot.</td></tr>
+    <tr><td><code>--line</code></td><td>2.5px solid ink</td><td>Border on every card, button and drawer.</td><td>2.5–3.5px is the range Jimmy's preferences use.</td></tr>
+    <tr><td><code>--shadow</code></td><td>0 4px 0 ink</td><td>The offset shadow that gives buttons depth.</td><td>Make the offset larger for more depth, or set it to <code>none</code>.</td></tr>
+    <tr><td><code>--radius</code></td><td>14px</td><td>Corner radius of cards and buttons.</td><td>Raise for rounder shapes.</td></tr>
+  </tbody>
+</table>
+
+<h3>Layout values worth knowing (css/app.css)</h3>
+<ul>
+  <li><code>.gear</code> (line 190): 68px button, lower right. Its position is set by <code>right</code> and <code>bottom</code>.</li>
+  <li><code>.drawer</code> (line 196): Settings and Library width is <code>min(360px, 92vw)</code>; max height 70% of the screen. Raise 360px for a wider panel.</li>
+  <li><code>.libbtn</code> (line 173): the Library button sits to the left of the gear.</li>
+  <li>Narrow screens (line 206): on iPad portrait and phones the side panel sits above the view. The breakpoint is in that block.</li>
+</ul>
+
+<h3>JavaScript constants (js/ui/app.js)</h3>
+<table>
+  <thead><tr><th>Name</th><th>Value now</th><th>What it does</th><th>How to tweak</th></tr></thead>
+  <tbody>
+    <tr><td><code>STORE_KEY</code></td><td><code>make3d.v2.current</code></td><td>Where the current model is saved on this device.</td><td>Change it to start fresh; V1 uses <code>make3d.v1.current</code>, so the two never share state.</td></tr>
+    <tr><td><code>SAMPLE_ID</code></td><td><code>garden-planter</code></td><td>The sample that opens when there is no saved model.</td><td>Use another sample ID from the bundle.</td></tr>
+    <tr><td><code>DAY</code></td><td>86400000</td><td>Milliseconds in a day, for the date track.</td><td>Only change if the timeline units are wrong.</td></tr>
+    <tr><td><code>DIM_LABELS</code></td><td>(object)</td><td>Field labels for each object type in the add form.</td><td>Rename a label here; the field order follows the type.</td></tr>
+    <tr><td><code>MAT_DEFAULT</code> (inside the P2b block, ~line 1014)</td><td>colour, roughness 0.75, metalness 0, pattern none</td><td>What the material controls show for a material that has no entry yet.</td><td>Match these to <code>MATERIAL_DEFAULTS</code> in <code>js/core/schema.js</code>.</td></tr>
+    <tr><td><code>st.animAuto</code></td><td>true</td><td>Whether animation plays twice on open, then pauses.</td><td>Set false to start paused; the Settings checkbox can override it.</td></tr>
+    <tr><td><code>st.display</code>, <code>st.units</code>, <code>st.up</code></td><td>solid, ftin, z</td><td>Default display mode, length format and up axis for a new session.</td><td>Change the default here; the Settings drawer still changes them.</td></tr>
+  </tbody>
+</table>
+
+<h3>Viewer constants and lights (js/viewer/viewer.js)</h3>
+<table>
+  <thead><tr><th>Name</th><th>Value now</th><th>What it does</th><th>How to tweak</th></tr></thead>
+  <tbody>
+    <tr><td><code>CANVAS_BG</code></td><td>0xfbf6ea</td><td>Background colour of the 3-D view.</td><td>Keep it equal to <code>--paper</code> so the view blends with the page.</td></tr>
+    <tr><td><code>INK</code></td><td>0x2d2a26</td><td>Edges, the grid and the origin marker.</td><td>Match <code>--ink</code>.</td></tr>
+    <tr><td><code>SELECT</code></td><td>0x2f6fdd</td><td>Selection box colour.</td><td>Match <code>--select</code>.</td></tr>
+    <tr><td><code>GROUND</code></td><td>0x8fc98a</td><td>Ground plane colour.</td><td>Any sage green or sand; the ground is a standard material, so it also reacts to the lights.</td></tr>
+    <tr><td>Hemisphere light</td><td>intensity 0.7</td><td>Soft overall light (lowered from 0.95 in P3 because the room environment adds light).</td><td>Raise for a brighter scene, lower for more contrast. Check the ground brightness after changing it.</td></tr>
+    <tr><td>Sun (directional)</td><td>intensity 0.8, from (-1, 2, 1.2)</td><td>The direct light that gives shadows of shape.</td><td>Move the position for a different light direction.</td></tr>
+    <tr><td>Room environment (<code>makeRoomEnvironment</code>)</td><td>room 0x5c5850, panels 0x9a9a9a</td><td>Reflections for roughness and metalness (P3).</td><td>Darker room makes metal look darker; brighter panels make shiny highlights stronger.</td></tr>
+    <tr><td><code>stats()</code></td><td>returns triangles, draws, meshes</td><td>Measurement only, for the headless checks.</td><td>Free to leave in place.</td></tr>
+  </tbody>
+</table>
+
+<h2>7. Notes for the next change</h2>
+<ul>
+  <li>Every change to the model goes through <code>applyOp</code> (app.js line 94). Add new behaviour there, not in the event handlers.</li>
+  <li>The viewer reads a model and never changes it; keep that rule when adding features.</li>
+  <li>The page sets two debugging globals for the headless checks: <code>window.__m3dViewer</code> (existing) and <code>window.M3D_viewer</code> (added in V2). They can be merged into one later.</li>
+  <li>The staged passes (<code>js/core/stages.js</code>) exist and are tested, but the viewer still uses the full replay; wiring them in is a later step.</li>
+</ul>
+
+</main>
+</body>
+</html>

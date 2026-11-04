@@ -1,0 +1,122 @@
+{
+  "schema": "make3d.motion/0.1",
+  "model_id": "planet-saturn-v06",
+  "name": "Spin and moons",
+  "description": "Saturn spins and its moons go round it. One 240 s loop; each motion is a whole number of turns, so it never jumps.",
+  "units": "in",
+  "up": "z",
+  "loop_s": 240,
+  "autoplay": {
+    "plays": 2
+  },
+  "motions": [
+    {
+      "id": "saturn-spin",
+      "target": "planet-saturn-v06-body-saturn",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 11
+    },
+    {
+      "id": "enceladus-orbit",
+      "target": "planet-saturn-v06-arm-enceladus",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 10
+    },
+    {
+      "id": "titan-orbit",
+      "target": "planet-saturn-v06-arm-titan",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 4
+    },
+    {
+      "id": "mimas-orbit",
+      "target": "planet-saturn-v06-arm-mimas",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 14
+    },
+    {
+      "id": "tethys-orbit",
+      "target": "planet-saturn-v06-arm-tethys",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 7
+    },
+    {
+      "id": "dione-orbit",
+      "target": "planet-saturn-v06-arm-dione",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 5
+    },
+    {
+      "id": "rhea-orbit",
+      "target": "planet-saturn-v06-arm-rhea",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 3
+    },
+    {
+      "id": "iapetus-orbit",
+      "target": "planet-saturn-v06-arm-iapetus",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 2
+    },
+    {
+      "id": "phoebe-orbit",
+      "target": "planet-saturn-v06-arm-phoebe",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 1
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "make3d.motion/0.1",
+  "model_id": "planet-mercury-v04",
+  "name": "Spin and moons",
+  "description": "Mercury spins and its moons go round it. One 240 s loop; each motion is a whole number of turns, so it never jumps.",
+  "units": "in",
+  "up": "z",
+  "loop_s": 240,
+  "autoplay": {
+    "plays": 2
+  },
+  "motions": [
+    {
+      "id": "mercury-spin",
+      "target": "planet-mercury-v04-body-mercury",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 6
+    }
+  ]
+}

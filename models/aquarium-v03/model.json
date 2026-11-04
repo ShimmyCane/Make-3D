@@ -1,0 +1,4684 @@
+{
+  "model_id": "aquarium-v03",
+  "name": "Grand Ocean Aquarium V03",
+  "description": "Grand Ocean Aquarium, increment 3 of 6 (about 200 objects). A 100 x 60 x 28 ft tank, two storeys tall, with a 100 ft walk-through tunnel, and from V06 small rooms on two levels. Tap an animal to read about it. Sizes are estimates, in inches.",
+  "units": "in",
+  "up": "z",
+  "world": "aquarium-world",
+  "materials": {
+    "sand": {
+      "color": "#f2e4c4",
+      "opacity": 1
+    },
+    "rock": {
+      "color": "#bdb5a8",
+      "opacity": 1
+    },
+    "rock2": {
+      "color": "#d3cbbd",
+      "opacity": 1
+    },
+    "glass": {
+      "color": "#bfe6f2",
+      "opacity": 0.2
+    },
+    "water": {
+      "color": "#8fd3e6",
+      "opacity": 0.09
+    },
+    "surface": {
+      "color": "#a9e2ee",
+      "opacity": 0.3
+    },
+    "concrete": {
+      "color": "#ebe6da",
+      "opacity": 1
+    },
+    "deck": {
+      "color": "#e2b98f",
+      "opacity": 1
+    },
+    "roof": {
+      "color": "#f7c9bd",
+      "opacity": 0.3
+    },
+    "steel": {
+      "color": "#b9c0ca",
+      "opacity": 1
+    },
+    "acrylic": {
+      "color": "#d7eef5",
+      "opacity": 0.22
+    },
+    "rib": {
+      "color": "#c9d6df",
+      "opacity": 1
+    },
+    "lamp": {
+      "color": "#fff1a8",
+      "opacity": 1
+    },
+    "sign": {
+      "color": "#fff8e7",
+      "opacity": 1
+    },
+    "bench": {
+      "color": "#e9b99a",
+      "opacity": 1
+    },
+    "mint": {
+      "color": "#a6e3d7",
+      "opacity": 1
+    },
+    "beam": {
+      "color": "#ffe9a6",
+      "opacity": 0.16
+    },
+    "wall": {
+      "color": "#e4dccb",
+      "opacity": 0.5
+    },
+    "coral": {
+      "color": "#f4a38c",
+      "opacity": 1
+    },
+    "shark": {
+      "color": "#aeb9c4",
+      "opacity": 1
+    },
+    "zebra": {
+      "color": "#ecd79c",
+      "opacity": 1
+    },
+    "spot": {
+      "color": "#8a6f4a",
+      "opacity": 1
+    },
+    "bonnet": {
+      "color": "#b9c3a8",
+      "opacity": 1
+    },
+    "leopard": {
+      "color": "#d8cdb2",
+      "opacity": 1
+    },
+    "blacktip": {
+      "color": "#bdb9b1",
+      "opacity": 1
+    },
+    "bass": {
+      "color": "#8c9aa8",
+      "opacity": 1
+    },
+    "garibaldi": {
+      "color": "#ffa05c",
+      "opacity": 1
+    },
+    "sheephead": {
+      "color": "#ec8c92",
+      "opacity": 1
+    },
+    "moray": {
+      "color": "#a8b87c",
+      "opacity": 1
+    },
+    "yellowtail": {
+      "color": "#d9d08a",
+      "opacity": 1
+    },
+    "barracuda": {
+      "color": "#a9b5bf",
+      "opacity": 1
+    },
+    "ray": {
+      "color": "#9a8fae",
+      "opacity": 1
+    },
+    "eagle": {
+      "color": "#86a0b8",
+      "opacity": 1
+    },
+    "turtle": {
+      "color": "#b3aa72",
+      "opacity": 1
+    },
+    "turtleSkin": {
+      "color": "#cfc79a",
+      "opacity": 1
+    },
+    "anchovy": {
+      "color": "#d8e3ec",
+      "opacity": 1
+    },
+    "sardine": {
+      "color": "#b8cbdc",
+      "opacity": 1
+    },
+    "blacksmith": {
+      "color": "#8f9ac2",
+      "opacity": 1
+    },
+    "tang": {
+      "color": "#8fb8f0",
+      "opacity": 1
+    },
+    "yellowTang": {
+      "color": "#ffe27a",
+      "opacity": 1
+    },
+    "idol": {
+      "color": "#f3efd0",
+      "opacity": 1
+    },
+    "sergeant": {
+      "color": "#e5e7a8",
+      "opacity": 1
+    },
+    "opaleye": {
+      "color": "#9bb59a",
+      "opacity": 1
+    },
+    "clown": {
+      "color": "#ff9a5a",
+      "opacity": 1
+    },
+    "ink": {
+      "color": "#2d2a26",
+      "opacity": 1
+    },
+    "white": {
+      "color": "#fffdf6",
+      "opacity": 1
+    },
+    "jelly": {
+      "color": "#f2c7e6",
+      "opacity": 0.75
+    },
+    "kelp": {
+      "color": "#9fb86a",
+      "opacity": 1
+    },
+    "kelp2": {
+      "color": "#b5c97c",
+      "opacity": 1
+    },
+    "stem": {
+      "color": "#8aa05a",
+      "opacity": 1
+    },
+    "grass": {
+      "color": "#8fd08a",
+      "opacity": 1
+    },
+    "fan": {
+      "color": "#e88fb0",
+      "opacity": 1
+    },
+    "coralY": {
+      "color": "#ffd36e",
+      "opacity": 1
+    },
+    "coralP": {
+      "color": "#c7a8e8",
+      "opacity": 1
+    },
+    "urchin": {
+      "color": "#7d6fa8",
+      "opacity": 1
+    },
+    "star": {
+      "color": "#ff8f6a",
+      "opacity": 1
+    },
+    "anemone": {
+      "color": "#f6a6c1",
+      "opacity": 1
+    },
+    "skin": {
+      "color": "#f2c9a5",
+      "opacity": 1
+    },
+    "shirtA": {
+      "color": "#8fc4f0",
+      "opacity": 1
+    },
+    "shirtB": {
+      "color": "#f7a8a0",
+      "opacity": 1
+    },
+    "shirtC": {
+      "color": "#c7b2ea",
+      "opacity": 1
+    },
+    "suit": {
+      "color": "#4a5a73",
+      "opacity": 1
+    },
+    "tankgas": {
+      "color": "#f2c94c",
+      "opacity": 1
+    },
+    "bubble": {
+      "color": "#e8f7fb",
+      "opacity": 0.6
+    }
+  },
+  "objects": [
+    {
+      "description": "the big pool: 100 x 60 ft, 28 ft of water. Sand floor, glass walls, a tunnel through the middle",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-tank",
+      "name": "Main tank",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "the sandy bottom of the tank, 1 ft deep",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-tank",
+      "material": "sand",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-sand",
+      "name": "Sand floor",
+      "type": "box",
+      "dimensions": [
+        1200,
+        720,
+        12
+      ],
+      "position": [
+        0,
+        0,
+        6
+      ]
+    },
+    {
+      "description": "the water in the tank, about 28 ft deep (see-through)",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-tank",
+      "material": "water",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-water",
+      "name": "Water",
+      "type": "box",
+      "dimensions": [
+        1200,
+        720,
+        324
+      ],
+      "position": [
+        0,
+        0,
+        174
+      ]
+    },
+    {
+      "description": "the top of the pool",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-tank",
+      "material": "surface",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-surface",
+      "name": "Water surface",
+      "type": "box",
+      "dimensions": [
+        1200,
+        720,
+        2.4
+      ],
+      "position": [
+        0,
+        0,
+        336
+      ]
+    },
+    {
+      "description": "thick acrylic wall of the tank",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-glass-front",
+      "name": "Tank glass: front",
+      "type": "box",
+      "dimensions": [
+        1200,
+        7.2,
+        324
+      ],
+      "position": [
+        0,
+        -360,
+        174
+      ]
+    },
+    {
+      "description": "thick acrylic wall of the tank",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-glass-back",
+      "name": "Tank glass: back",
+      "type": "box",
+      "dimensions": [
+        1200,
+        7.2,
+        324
+      ],
+      "position": [
+        0,
+        360,
+        174
+      ]
+    },
+    {
+      "description": "thick acrylic wall of the tank",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-glass-west",
+      "name": "Tank glass: west",
+      "type": "box",
+      "dimensions": [
+        7.2,
+        720,
+        324
+      ],
+      "position": [
+        -600,
+        0,
+        174
+      ]
+    },
+    {
+      "description": "thick acrylic wall of the tank",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-glass-east",
+      "name": "Tank glass: east",
+      "type": "box",
+      "dimensions": [
+        7.2,
+        720,
+        324
+      ],
+      "position": [
+        600,
+        0,
+        174
+      ]
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rim-front",
+      "name": "Pool rim: front",
+      "type": "box",
+      "dimensions": [
+        1224,
+        24,
+        18
+      ],
+      "position": [
+        0,
+        -372,
+        339
+      ]
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rim-back",
+      "name": "Pool rim: back",
+      "type": "box",
+      "dimensions": [
+        1224,
+        24,
+        18
+      ],
+      "position": [
+        0,
+        372,
+        339
+      ]
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rim-west",
+      "name": "Pool rim: west",
+      "type": "box",
+      "dimensions": [
+        24,
+        744,
+        18
+      ],
+      "position": [
+        -612,
+        0,
+        339
+      ]
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rim-east",
+      "name": "Pool rim: east",
+      "type": "box",
+      "dimensions": [
+        24,
+        744,
+        18
+      ],
+      "position": [
+        612,
+        0,
+        339
+      ]
+    },
+    {
+      "description": "a 100 ft clear tunnel along the tank floor; guests walk under the fish. Acrylic is about 10 ft across",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-tunnel",
+      "name": "Walk-through tunnel",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "thick clear acrylic, round, 10 ft across, 112 ft long",
+      "rotation_y": 90,
+      "parent": "aquarium-v03-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-tunnel-tube",
+      "name": "Acrylic tunnel tube",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        1344
+      ],
+      "position": [
+        0,
+        0,
+        72
+      ]
+    },
+    {
+      "description": "the floor guests walk on",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-tunnel",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-tunnel-floor",
+      "name": "Tunnel walkway",
+      "type": "box",
+      "dimensions": [
+        1344,
+        72,
+        4.8
+      ],
+      "position": [
+        0,
+        0,
+        14.4
+      ]
+    },
+    {
+      "description": "steel frame where the tunnel leaves the tank",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-tunnel",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-portal-1",
+      "name": "Tunnel entrance portal",
+      "type": "box",
+      "dimensions": [
+        36,
+        144,
+        144
+      ],
+      "position": [
+        -672,
+        0,
+        78
+      ]
+    },
+    {
+      "description": "steel frame where the tunnel leaves the tank",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-tunnel",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-portal-2",
+      "name": "Tunnel exit portal",
+      "type": "box",
+      "dimensions": [
+        36,
+        144,
+        144
+      ],
+      "position": [
+        672,
+        0,
+        78
+      ]
+    },
+    {
+      "description": "where guests enter, at the west end",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-lobby",
+      "name": "Entry lobby",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "polished concrete",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-lobby",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-lobby-floor",
+      "name": "Lobby floor",
+      "type": "box",
+      "dimensions": [
+        288,
+        360,
+        6
+      ],
+      "position": [
+        -804,
+        0,
+        3
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-lobby",
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-lobby-wall-n",
+      "name": "Lobby wall N",
+      "type": "box",
+      "dimensions": [
+        288,
+        7.2,
+        168
+      ],
+      "position": [
+        -804,
+        180,
+        87
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-lobby",
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-lobby-wall-s",
+      "name": "Lobby wall S",
+      "type": "box",
+      "dimensions": [
+        288,
+        7.2,
+        168
+      ],
+      "position": [
+        -804,
+        -180,
+        87
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-lobby",
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-lobby-wall-w",
+      "name": "Lobby wall W",
+      "type": "box",
+      "dimensions": [
+        7.2,
+        360,
+        168
+      ],
+      "position": [
+        -948,
+        0,
+        87
+      ]
+    },
+    {
+      "description": "see-through so you can look in",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-lobby",
+      "material": "roof",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-lobby-roof",
+      "name": "Lobby roof",
+      "type": "box",
+      "dimensions": [
+        300,
+        372,
+        7.2
+      ],
+      "position": [
+        -804,
+        0,
+        174
+      ]
+    },
+    {
+      "description": "guests check in here",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-lobby",
+      "material": "bench",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-lobby-desk",
+      "name": "Ticket desk",
+      "type": "box",
+      "dimensions": [
+        120,
+        36,
+        36
+      ],
+      "position": [
+        -840,
+        96,
+        21
+      ]
+    },
+    {
+      "description": "the way in from the street",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-lobby",
+      "material": "mint",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-lobby-door",
+      "name": "Entrance doors",
+      "type": "box",
+      "dimensions": [
+        7.2,
+        96,
+        96
+      ],
+      "position": [
+        -948,
+        0,
+        51
+      ]
+    },
+    {
+      "description": "the east end of the tunnel; gift shop and exit",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-exit",
+      "name": "Exit hall",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-exit",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-exit-floor",
+      "name": "Exit hall floor",
+      "type": "box",
+      "dimensions": [
+        264,
+        360,
+        6
+      ],
+      "position": [
+        804,
+        0,
+        3
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-exit",
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-exit-wall-n",
+      "name": "Exit wall N",
+      "type": "box",
+      "dimensions": [
+        264,
+        7.2,
+        168
+      ],
+      "position": [
+        804,
+        180,
+        87
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-exit",
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-exit-wall-s",
+      "name": "Exit wall S",
+      "type": "box",
+      "dimensions": [
+        264,
+        7.2,
+        168
+      ],
+      "position": [
+        804,
+        -180,
+        87
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-exit",
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-exit-wall-e",
+      "name": "Exit wall E",
+      "type": "box",
+      "dimensions": [
+        7.2,
+        360,
+        168
+      ],
+      "position": [
+        936,
+        0,
+        87
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-exit",
+      "material": "roof",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-exit-roof",
+      "name": "Exit hall roof",
+      "type": "box",
+      "dimensions": [
+        276,
+        372,
+        7.2
+      ],
+      "position": [
+        804,
+        0,
+        174
+      ]
+    },
+    {
+      "description": "plush sharks and postcards",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-exit",
+      "material": "bench",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-exit-shop",
+      "name": "Gift shop counter",
+      "type": "box",
+      "dimensions": [
+        36,
+        144,
+        42
+      ],
+      "position": [
+        864,
+        0,
+        24
+      ]
+    },
+    {
+      "description": "a 100 ft glass wall along the front of the tank, with benches. The main place to sit and watch",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-gallery",
+      "name": "Viewing gallery",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "dark floor so the glass glows",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-gallery-floor",
+      "name": "Gallery floor",
+      "type": "box",
+      "dimensions": [
+        1200,
+        204,
+        6
+      ],
+      "position": [
+        0,
+        -474,
+        3
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery",
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-gallery-back",
+      "name": "Gallery back wall",
+      "type": "box",
+      "dimensions": [
+        1200,
+        7.2,
+        168
+      ],
+      "position": [
+        0,
+        -576,
+        87
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery",
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-gallery-end-1",
+      "name": "Gallery end wall 1",
+      "type": "box",
+      "dimensions": [
+        7.2,
+        204,
+        168
+      ],
+      "position": [
+        -600,
+        -474,
+        87
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery",
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-gallery-end-2",
+      "name": "Gallery end wall 2",
+      "type": "box",
+      "dimensions": [
+        7.2,
+        204,
+        168
+      ],
+      "position": [
+        600,
+        -474,
+        87
+      ]
+    },
+    {
+      "description": "also the deck beside the pool",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery",
+      "material": "roof",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-gallery-roof",
+      "name": "Gallery roof",
+      "type": "box",
+      "dimensions": [
+        1212,
+        216,
+        7.2
+      ],
+      "position": [
+        0,
+        -474,
+        174
+      ]
+    },
+    {
+      "description": "walkway round the top of the pool where guests look down at the water",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-deck",
+      "name": "Pool deck",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-deck",
+      "material": "deck",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-deck-back",
+      "name": "Back deck",
+      "type": "box",
+      "dimensions": [
+        1224,
+        72,
+        7.2
+      ],
+      "position": [
+        0,
+        420,
+        333.6
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-deck",
+      "material": "deck",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-deck-side-1",
+      "name": "Side deck 1",
+      "type": "box",
+      "dimensions": [
+        72,
+        744,
+        7.2
+      ],
+      "position": [
+        -648,
+        0,
+        333.6
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-deck",
+      "material": "deck",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-deck-side-2",
+      "name": "Side deck 2",
+      "type": "box",
+      "dimensions": [
+        72,
+        744,
+        7.2
+      ],
+      "position": [
+        648,
+        0,
+        333.6
+      ]
+    },
+    {
+      "description": "rock piles on the sand where small fish hide",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rocks",
+      "name": "Rockwork",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "rock pile with crevices where small fish hide",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-rocks",
+      "material": "rock",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rock-1",
+      "name": "Rock pile 1",
+      "type": "sphere",
+      "dimensions": [
+        38.4
+      ],
+      "position": [
+        -456,
+        240,
+        38.4
+      ]
+    },
+    {
+      "description": "rock pile with crevices where small fish hide",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-rocks",
+      "material": "rock2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rock-2",
+      "name": "Rock pile 2",
+      "type": "sphere",
+      "dimensions": [
+        43.2
+      ],
+      "position": [
+        120,
+        264,
+        43.2
+      ]
+    },
+    {
+      "description": "rock pile with crevices where small fish hide",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-rocks",
+      "material": "rock",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rock-3",
+      "name": "Rock pile 3",
+      "type": "sphere",
+      "dimensions": [
+        38.4
+      ],
+      "position": [
+        504,
+        -264,
+        38.4
+      ]
+    },
+    {
+      "description": "rock pile with crevices where small fish hide",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-rocks",
+      "material": "rock2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rock-4",
+      "name": "Rock pile 4",
+      "type": "sphere",
+      "dimensions": [
+        40.8
+      ],
+      "position": [
+        -480,
+        -240,
+        40.8
+      ]
+    },
+    {
+      "description": "rock pile with crevices where small fish hide",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-rocks",
+      "material": "rock",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rock-5",
+      "name": "Rock pile 5",
+      "type": "sphere",
+      "dimensions": [
+        28.8
+      ],
+      "position": [
+        -72,
+        -240,
+        28.8
+      ]
+    },
+    {
+      "description": "rock pile with crevices where small fish hide",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-rocks",
+      "material": "rock2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rock-6",
+      "name": "Rock pile 6",
+      "type": "sphere",
+      "dimensions": [
+        33.6
+      ],
+      "position": [
+        288,
+        -288,
+        33.6
+      ]
+    },
+    {
+      "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-sandtiger-1",
+      "name": "Sand tiger shark 1",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        -305.676,
+        -1.236,
+        236.064
+      ]
+    },
+    {
+      "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+      "rotation_y": 90,
+      "parent": "aquarium-v03-sandtiger-1",
+      "material": "shark",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-sandtiger-1-body",
+      "name": "Sand tiger shark body",
+      "type": "cylinder",
+      "dimensions": [
+        7.56,
+        81
+      ],
+      "position": [
+        -302.28,
+        2.964,
+        236.064
+      ],
+      "rotation_z": -129.035
+    },
+    {
+      "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-sandtiger-1",
+      "material": "shark",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-sandtiger-1-tail",
+      "name": "Sand tiger shark tail",
+      "type": "box",
+      "dimensions": [
+        12.96,
+        3.24,
+        27
+      ],
+      "position": [
+        -272.352,
+        39.876,
+        240.384
+      ],
+      "rotation_z": -129.035
+    },
+    {
+      "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+      "rotation_y": 90,
+      "parent": "aquarium-v03-sandtiger-1",
+      "material": "shark",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-sandtiger-1-snout",
+      "name": "Sand tiger shark snout",
+      "type": "cone",
+      "dimensions": [
+        7.56,
+        21.6
+      ],
+      "position": [
+        -334.584,
+        -36.888,
+        236.064
+      ],
+      "rotation_z": -129.035
+    },
+    {
+      "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-sandtiger-1",
+      "material": "shark",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-sandtiger-1-dorsal",
+      "name": "Sand tiger shark dorsal fin",
+      "type": "cone",
+      "dimensions": [
+        6.48,
+        15.12
+      ],
+      "position": [
+        -305.676,
+        -1.236,
+        251.184
+      ],
+      "rotation_z": -129.035
+    },
+    {
+      "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-sandtiger-2",
+      "name": "Sand tiger shark 2",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        192.468,
+        -180.228,
+        206.94
+      ]
+    },
+    {
+      "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+      "rotation_y": 90,
+      "parent": "aquarium-v03-sandtiger-2",
+      "material": "shark",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-sandtiger-2-body",
+      "name": "Sand tiger shark body",
+      "type": "cylinder",
+      "dimensions": [
+        7.56,
+        81
+      ],
+      "position": [
+        197.832,
+        -179.592,
+        206.94
+      ],
+      "rotation_z": -173.234
+    },
+    {
+      "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-sandtiger-2",
+      "material": "shark",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-sandtiger-2-tail",
+      "name": "Sand tiger shark tail",
+      "type": "box",
+      "dimensions": [
+        12.96,
+        3.24,
+        27
+      ],
+      "position": [
+        245.016,
+        -173.988,
+        211.26
+      ],
+      "rotation_z": -173.234
+    },
+    {
+      "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+      "rotation_y": 90,
+      "parent": "aquarium-v03-sandtiger-2",
+      "material": "shark",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-sandtiger-2-snout",
+      "name": "Sand tiger shark snout",
+      "type": "cone",
+      "dimensions": [
+        7.56,
+        21.6
+      ],
+      "position": [
+        146.892,
+        -185.64,
+        206.94
+      ],
+      "rotation_z": -173.234
+    },
+    {
+      "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-sandtiger-2",
+      "material": "shark",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-sandtiger-2-dorsal",
+      "name": "Sand tiger shark dorsal fin",
+      "type": "cone",
+      "dimensions": [
+        6.48,
+        15.12
+      ],
+      "position": [
+        192.468,
+        -180.228,
+        222.06
+      ],
+      "rotation_z": -173.234
+    },
+    {
+      "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-sandtiger-3",
+      "name": "Sand tiger shark 3",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        -310.692,
+        65.616,
+        259.956
+      ]
+    },
+    {
+      "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+      "rotation_y": 90,
+      "parent": "aquarium-v03-sandtiger-3",
+      "material": "shark",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-sandtiger-3-body",
+      "name": "Sand tiger shark body",
+      "type": "cylinder",
+      "dimensions": [
+        7.56,
+        81
+      ],
+      "position": [
+        -307.752,
+        70.152,
+        259.956
+      ],
+      "rotation_z": -122.956
+    },
+    {
+      "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-sandtiger-3",
+      "material": "shark",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-sandtiger-3-tail",
+      "name": "Sand tiger shark tail",
+      "type": "box",
+      "dimensions": [
+        12.96,
+        3.24,
+        27
+      ],
+      "position": [
+        -281.904,
+        110.016,
+        264.276
+      ],
+      "rotation_z": -122.956
+    },
+    {
+      "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+      "rotation_y": 90,
+      "parent": "aquarium-v03-sandtiger-3",
+      "material": "shark",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-sandtiger-3-snout",
+      "name": "Sand tiger shark snout",
+      "type": "cone",
+      "dimensions": [
+        7.56,
+        21.6
+      ],
+      "position": [
+        -335.664,
+        27.096,
+        259.956
+      ],
+      "rotation_z": -122.956
+    },
+    {
+      "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-sandtiger-3",
+      "material": "shark",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-sandtiger-3-dorsal",
+      "name": "Sand tiger shark dorsal fin",
+      "type": "cone",
+      "dimensions": [
+        6.48,
+        15.12
+      ],
+      "position": [
+        -310.692,
+        65.616,
+        275.076
+      ],
+      "rotation_z": -122.956
+    },
+    {
+      "description": "The babies are striped like a zebra; adults are spotted. It rests on the sand and its long tail is about half its length. Usually 5 to 8 ft.",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-zebra-1",
+      "name": "Zebra shark 1",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        -401.16,
+        -220.476,
+        45.948
+      ]
+    },
+    {
+      "description": "The babies are striped like a zebra; adults are spotted. It rests on the sand and its long tail is about half its length. Usually 5 to 8 ft.",
+      "rotation_y": 90,
+      "parent": "aquarium-v03-zebra-1",
+      "material": "zebra",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-zebra-1-body",
+      "name": "Zebra shark body",
+      "type": "cylinder",
+      "dimensions": [
+        5.46,
+        58.5
+      ],
+      "position": [
+        -400.92,
+        -224.364,
+        45.948
+      ],
+      "rotation_z": 93.589
+    },
+    {
+      "description": "The babies are striped like a zebra; adults are spotted. It rests on the sand and its long tail is about half its length. Usually 5 to 8 ft.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-zebra-1",
+      "material": "zebra",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-zebra-1-tail",
+      "name": "Zebra shark tail",
+      "type": "box",
+      "dimensions": [
+        9.36,
+        2.34,
+        19.5
+      ],
+      "position": [
+        -398.772,
+        -258.624,
+        49.068
+      ],
+      "rotation_z": 93.589
+    },
+    {
+      "description": "The babies are striped like a zebra; adults are spotted. It rests on the sand and its long tail is about half its length. Usually 5 to 8 ft.",
+      "rotation_y": 90,
+      "parent": "aquarium-v03-zebra-1",
+      "material": "zebra",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-zebra-1-snout",
+      "name": "Zebra shark snout",
+      "type": "cone",
+      "dimensions": [
+        5.46,
+        15.6
+      ],
+      "position": [
+        -403.236,
+        -187.392,
+        45.948
+      ],
+      "rotation_z": 93.589
+    },
+    {
+      "description": "The babies are striped like a zebra; adults are spotted. It rests on the sand and its long tail is about half its length. Usually 5 to 8 ft.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-zebra-1",
+      "material": "zebra",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-zebra-1-dorsal",
+      "name": "Zebra shark dorsal fin",
+      "type": "cone",
+      "dimensions": [
+        4.68,
+        10.92
+      ],
+      "position": [
+        -401.16,
+        -220.476,
+        56.868
+      ],
+      "rotation_z": 93.589
+    },
+    {
+      "description": "California's biggest bony reef fish. It can grow past 7 ft and 500 lb, and it can live for decades. Now protected.",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-seabass-1",
+      "name": "Giant sea bass 1",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        414.192,
+        9.972,
+        203.352
+      ]
+    },
+    {
+      "description": "California's biggest bony reef fish. It can grow past 7 ft and 500 lb, and it can live for decades. Now protected.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-seabass-1",
+      "material": "bass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-seabass-1-body",
+      "name": "Giant sea bass body",
+      "type": "box",
+      "dimensions": [
+        43.2,
+        10.764,
+        24.84
+      ],
+      "position": [
+        412.752,
+        13.272,
+        203.352
+      ],
+      "rotation_z": 113.654
+    },
+    {
+      "description": "California's biggest bony reef fish. It can grow past 7 ft and 500 lb, and it can live for decades. Now protected.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-seabass-1",
+      "material": "bass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-seabass-1-tail",
+      "name": "Giant sea bass tail",
+      "type": "box",
+      "dimensions": [
+        14.4,
+        2.88,
+        21.6
+      ],
+      "position": [
+        424.596,
+        -13.776,
+        203.352
+      ],
+      "rotation_z": 113.654
+    },
+    {
+      "description": "California's biggest bony reef fish. It can grow past 7 ft and 500 lb, and it can live for decades. Now protected.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-seabass-1",
+      "material": "bass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-seabass-1-fin",
+      "name": "Giant sea bass back fin",
+      "type": "box",
+      "dimensions": [
+        18,
+        2.16,
+        8.64
+      ],
+      "position": [
+        412.752,
+        13.272,
+        219.912
+      ],
+      "rotation_z": 113.654
+    },
+    {
+      "description": "California's biggest bony reef fish. It can grow past 7 ft and 500 lb, and it can live for decades. Now protected.",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-seabass-2",
+      "name": "Giant sea bass 2",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        253.308,
+        -208.116,
+        214.62
+      ]
+    },
+    {
+      "description": "California's biggest bony reef fish. It can grow past 7 ft and 500 lb, and it can live for decades. Now protected.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-seabass-2",
+      "material": "bass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-seabass-2-body",
+      "name": "Giant sea bass body",
+      "type": "box",
+      "dimensions": [
+        43.2,
+        10.764,
+        24.84
+      ],
+      "position": [
+        256.896,
+        -208.356,
+        214.62
+      ],
+      "rotation_z": -3.86
+    },
+    {
+      "description": "California's biggest bony reef fish. It can grow past 7 ft and 500 lb, and it can live for decades. Now protected.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-seabass-2",
+      "material": "bass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-seabass-2-tail",
+      "name": "Giant sea bass tail",
+      "type": "box",
+      "dimensions": [
+        14.4,
+        2.88,
+        21.6
+      ],
+      "position": [
+        227.448,
+        -206.376,
+        214.62
+      ],
+      "rotation_z": -3.86
+    },
+    {
+      "description": "California's biggest bony reef fish. It can grow past 7 ft and 500 lb, and it can live for decades. Now protected.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-seabass-2",
+      "material": "bass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-seabass-2-fin",
+      "name": "Giant sea bass back fin",
+      "type": "box",
+      "dimensions": [
+        18,
+        2.16,
+        8.64
+      ],
+      "position": [
+        256.896,
+        -208.356,
+        231.18
+      ],
+      "rotation_z": -3.86
+    },
+    {
+      "description": "It eats seagrass, and its fat is green, which is where the name comes from. It can hold its breath for hours when resting.",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-turtle-1",
+      "name": "Green sea turtle 1",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        -193.464,
+        -274.248,
+        222.48
+      ]
+    },
+    {
+      "description": "It eats seagrass, and its fat is green, which is where the name comes from. It can hold its breath for hours when resting.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-turtle-1",
+      "material": "turtle",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-turtle-1-body",
+      "name": "Green sea turtle shell",
+      "type": "box",
+      "dimensions": [
+        19.8,
+        16.632,
+        5.544
+      ],
+      "position": [
+        -193.464,
+        -274.248,
+        222.48
+      ],
+      "rotation_z": -5.195
+    },
+    {
+      "description": "It eats seagrass, and its fat is green, which is where the name comes from. It can hold its breath for hours when resting.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-turtle-1",
+      "material": "turtleSkin",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-turtle-1-head",
+      "name": "Green sea turtle head",
+      "type": "sphere",
+      "dimensions": [
+        2.772
+      ],
+      "position": [
+        -180.06,
+        -275.472,
+        223.272
+      ],
+      "rotation_z": -5.195
+    },
+    {
+      "description": "It eats seagrass, and its fat is green, which is where the name comes from. It can hold its breath for hours when resting.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-turtle-1",
+      "material": "turtleSkin",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-turtle-1-flipper1",
+      "name": "Green sea turtle flipper",
+      "type": "box",
+      "dimensions": [
+        7.92,
+        2.772,
+        0.792
+      ],
+      "position": [
+        -187.728,
+        -263.64,
+        221.292
+      ],
+      "rotation_z": -40.195
+    },
+    {
+      "description": "It eats seagrass, and its fat is green, which is where the name comes from. It can hold its breath for hours when resting.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-turtle-1",
+      "material": "turtleSkin",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-turtle-1-flipper2",
+      "name": "Green sea turtle flipper",
+      "type": "box",
+      "dimensions": [
+        7.92,
+        2.772,
+        0.792
+      ],
+      "position": [
+        -189.732,
+        -285.72,
+        221.292
+      ],
+      "rotation_z": 29.805
+    },
+    {
+      "description": "It eats seagrass, and its fat is green, which is where the name comes from. It can hold its breath for hours when resting.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-turtle-1",
+      "material": "turtleSkin",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-turtle-1-flipper3",
+      "name": "Green sea turtle flipper",
+      "type": "box",
+      "dimensions": [
+        7.92,
+        2.772,
+        0.792
+      ],
+      "position": [
+        -197.976,
+        -262.704,
+        221.292
+      ],
+      "rotation_z": 29.805
+    },
+    {
+      "description": "It eats seagrass, and its fat is green, which is where the name comes from. It can hold its breath for hours when resting.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-turtle-1",
+      "material": "turtleSkin",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-turtle-1-flipper4",
+      "name": "Green sea turtle flipper",
+      "type": "box",
+      "dimensions": [
+        7.92,
+        2.772,
+        0.792
+      ],
+      "position": [
+        -199.992,
+        -284.784,
+        221.292
+      ],
+      "rotation_z": -40.195
+    },
+    {
+      "description": "It eats seagrass, and its fat is green, which is where the name comes from. It can hold its breath for hours when resting.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-turtle-1",
+      "material": "turtleSkin",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-turtle-1-tail",
+      "name": "Green sea turtle tail",
+      "type": "box",
+      "dimensions": [
+        3.96,
+        1.188,
+        1.188
+      ],
+      "position": [
+        -204.504,
+        -273.24,
+        222.48
+      ],
+      "rotation_z": -5.195
+    },
+    {
+      "description": "California's official state marine fish. Bright orange and bold; it guards its little patch of reef.",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-garibaldi-1",
+      "name": "Garibaldi 1",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        -134.028,
+        -198.72,
+        182.328
+      ]
+    },
+    {
+      "description": "California's official state marine fish. Bright orange and bold; it guards its little patch of reef.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-garibaldi-1",
+      "material": "garibaldi",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-garibaldi-1-body",
+      "name": "Garibaldi body",
+      "type": "box",
+      "dimensions": [
+        7.2,
+        1.872,
+        4.32
+      ],
+      "position": [
+        -134.628,
+        -198.756,
+        182.328
+      ],
+      "rotation_z": -176.433
+    },
+    {
+      "description": "California's official state marine fish. Bright orange and bold; it guards its little patch of reef.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-garibaldi-1",
+      "material": "garibaldi",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-garibaldi-1-tail",
+      "name": "Garibaldi tail",
+      "type": "box",
+      "dimensions": [
+        2.4,
+        0.48,
+        3.6
+      ],
+      "position": [
+        -129.72,
+        -198.456,
+        182.328
+      ],
+      "rotation_z": -176.433
+    },
+    {
+      "description": "California's official state marine fish. Bright orange and bold; it guards its little patch of reef.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-garibaldi-1",
+      "material": "garibaldi",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-garibaldi-1-fin",
+      "name": "Garibaldi back fin",
+      "type": "box",
+      "dimensions": [
+        3,
+        0.36,
+        1.44
+      ],
+      "position": [
+        -134.628,
+        -198.756,
+        185.208
+      ],
+      "rotation_z": -176.433
+    },
+    {
+      "description": "a brown-green seaweed that can grow up to 2 ft a day and forms underwater forests",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-1",
+      "name": "Giant kelp",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        -528,
+        264,
+        12
+      ]
+    },
+    {
+      "description": "the long stem (stipe)",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-1",
+      "material": "stem",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-1-stem",
+      "name": "Kelp stem",
+      "type": "cylinder",
+      "dimensions": [
+        1.44,
+        228
+      ],
+      "position": [
+        -528,
+        264,
+        126
+      ]
+    },
+    {
+      "description": "a leaf-like blade",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-1",
+      "material": "kelp2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-1-blade1",
+      "name": "Kelp blade",
+      "type": "box",
+      "dimensions": [
+        1.8,
+        8.4,
+        16.8
+      ],
+      "position": [
+        -532.8,
+        264,
+        91.8
+      ],
+      "rotation_z": 91.96
+    },
+    {
+      "description": "a leaf-like blade",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-1",
+      "material": "kelp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-1-blade2",
+      "name": "Kelp blade",
+      "type": "box",
+      "dimensions": [
+        1.8,
+        8.4,
+        16.8
+      ],
+      "position": [
+        -523.2,
+        264,
+        148.8
+      ],
+      "rotation_z": 156.443
+    },
+    {
+      "description": "a leaf-like blade",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-1",
+      "material": "kelp2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-1-blade3",
+      "name": "Kelp blade",
+      "type": "box",
+      "dimensions": [
+        1.8,
+        8.4,
+        16.8
+      ],
+      "position": [
+        -532.8,
+        264,
+        205.8
+      ],
+      "rotation_z": 16.331
+    },
+    {
+      "description": "a brown-green seaweed that can grow up to 2 ft a day and forms underwater forests",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-2",
+      "name": "Giant kelp",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        -168,
+        300,
+        12
+      ]
+    },
+    {
+      "description": "the long stem (stipe)",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-2",
+      "material": "stem",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-2-stem",
+      "name": "Kelp stem",
+      "type": "cylinder",
+      "dimensions": [
+        1.44,
+        204
+      ],
+      "position": [
+        -168,
+        300,
+        114
+      ]
+    },
+    {
+      "description": "a leaf-like blade",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-2",
+      "material": "kelp2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-2-blade1",
+      "name": "Kelp blade",
+      "type": "box",
+      "dimensions": [
+        1.8,
+        8.4,
+        16.8
+      ],
+      "position": [
+        -172.8,
+        300,
+        83.4
+      ],
+      "rotation_z": 120.282
+    },
+    {
+      "description": "a leaf-like blade",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-2",
+      "material": "kelp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-2-blade2",
+      "name": "Kelp blade",
+      "type": "box",
+      "dimensions": [
+        1.8,
+        8.4,
+        16.8
+      ],
+      "position": [
+        -163.2,
+        300,
+        134.4
+      ],
+      "rotation_z": 146.986
+    },
+    {
+      "description": "a leaf-like blade",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-2",
+      "material": "kelp2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-2-blade3",
+      "name": "Kelp blade",
+      "type": "box",
+      "dimensions": [
+        1.8,
+        8.4,
+        16.8
+      ],
+      "position": [
+        -172.8,
+        300,
+        185.4
+      ],
+      "rotation_z": 176.892
+    },
+    {
+      "description": "a brown-green seaweed that can grow up to 2 ft a day and forms underwater forests",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-3",
+      "name": "Giant kelp",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        192,
+        300,
+        12
+      ]
+    },
+    {
+      "description": "the long stem (stipe)",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-3",
+      "material": "stem",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-3-stem",
+      "name": "Kelp stem",
+      "type": "cylinder",
+      "dimensions": [
+        1.44,
+        240
+      ],
+      "position": [
+        192,
+        300,
+        132
+      ]
+    },
+    {
+      "description": "a leaf-like blade",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-3",
+      "material": "kelp2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-3-blade1",
+      "name": "Kelp blade",
+      "type": "box",
+      "dimensions": [
+        1.8,
+        8.4,
+        16.8
+      ],
+      "position": [
+        187.2,
+        300,
+        96
+      ],
+      "rotation_z": 50.481
+    },
+    {
+      "description": "a leaf-like blade",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-3",
+      "material": "kelp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-3-blade2",
+      "name": "Kelp blade",
+      "type": "box",
+      "dimensions": [
+        1.8,
+        8.4,
+        16.8
+      ],
+      "position": [
+        196.8,
+        300,
+        156
+      ],
+      "rotation_z": 67.273
+    },
+    {
+      "description": "a leaf-like blade",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-3",
+      "material": "kelp2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-3-blade3",
+      "name": "Kelp blade",
+      "type": "box",
+      "dimensions": [
+        1.8,
+        8.4,
+        16.8
+      ],
+      "position": [
+        187.2,
+        300,
+        216
+      ],
+      "rotation_z": 10.009
+    },
+    {
+      "description": "a brown-green seaweed that can grow up to 2 ft a day and forms underwater forests",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-4",
+      "name": "Giant kelp",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        360,
+        264,
+        12
+      ]
+    },
+    {
+      "description": "the long stem (stipe)",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-4",
+      "material": "stem",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-4-stem",
+      "name": "Kelp stem",
+      "type": "cylinder",
+      "dimensions": [
+        1.44,
+        216
+      ],
+      "position": [
+        360,
+        264,
+        120
+      ]
+    },
+    {
+      "description": "a leaf-like blade",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-4",
+      "material": "kelp2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-4-blade1",
+      "name": "Kelp blade",
+      "type": "box",
+      "dimensions": [
+        1.8,
+        8.4,
+        16.8
+      ],
+      "position": [
+        355.2,
+        264,
+        87.6
+      ],
+      "rotation_z": 149.929
+    },
+    {
+      "description": "a leaf-like blade",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-4",
+      "material": "kelp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-4-blade2",
+      "name": "Kelp blade",
+      "type": "box",
+      "dimensions": [
+        1.8,
+        8.4,
+        16.8
+      ],
+      "position": [
+        364.8,
+        264,
+        141.6
+      ],
+      "rotation_z": 89.903
+    },
+    {
+      "description": "a leaf-like blade",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-4",
+      "material": "kelp2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-4-blade3",
+      "name": "Kelp blade",
+      "type": "box",
+      "dimensions": [
+        1.8,
+        8.4,
+        16.8
+      ],
+      "position": [
+        355.2,
+        264,
+        195.6
+      ],
+      "rotation_z": 83.159
+    },
+    {
+      "description": "Black tips on its fins. It patrols shallow reefs and is shy of people.",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-blacktip-1",
+      "name": "Blacktip reef shark 1",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        223.404,
+        203.592,
+        172.692
+      ]
+    },
+    {
+      "description": "Black tips on its fins. It patrols shallow reefs and is shy of people.",
+      "rotation_y": 90,
+      "parent": "aquarium-v03-blacktip-1",
+      "material": "blacktip",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-blacktip-1-body",
+      "name": "Blacktip reef shark body",
+      "type": "cylinder",
+      "dimensions": [
+        4.2,
+        45
+      ],
+      "position": [
+        220.584,
+        204.624,
+        172.692
+      ],
+      "rotation_z": -20.078
+    },
+    {
+      "description": "Black tips on its fins. It patrols shallow reefs and is shy of people.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-blacktip-1",
+      "material": "blacktip",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-blacktip-1-tail",
+      "name": "Blacktip reef shark tail",
+      "type": "box",
+      "dimensions": [
+        7.2,
+        1.8,
+        15
+      ],
+      "position": [
+        195.792,
+        213.684,
+        175.092
+      ],
+      "rotation_z": -20.078
+    },
+    {
+      "description": "Black tips on its fins. It patrols shallow reefs and is shy of people.",
+      "rotation_y": 90,
+      "parent": "aquarium-v03-blacktip-1",
+      "material": "blacktip",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-blacktip-1-snout",
+      "name": "Blacktip reef shark snout",
+      "type": "cone",
+      "dimensions": [
+        4.2,
+        12
+      ],
+      "position": [
+        247.356,
+        194.832,
+        172.692
+      ],
+      "rotation_z": -20.078
+    },
+    {
+      "description": "Black tips on its fins. It patrols shallow reefs and is shy of people.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-blacktip-1",
+      "material": "blacktip",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-blacktip-1-dorsal",
+      "name": "Blacktip reef shark dorsal fin",
+      "type": "cone",
+      "dimensions": [
+        3.6,
+        8.4
+      ],
+      "position": [
+        223.404,
+        203.592,
+        181.092
+      ],
+      "rotation_z": -20.078
+    },
+    {
+      "description": "The smallest hammerhead. Its shovel-shaped head helps it find crabs and shrimp. About 30 to 50 inches long.",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-bonnet-1",
+      "name": "Bonnethead shark 1",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        -183.444,
+        -140.16,
+        168.252
+      ]
+    },
+    {
+      "description": "The smallest hammerhead. Its shovel-shaped head helps it find crabs and shrimp. About 30 to 50 inches long.",
+      "rotation_y": 90,
+      "parent": "aquarium-v03-bonnet-1",
+      "material": "bonnet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-bonnet-1-body",
+      "name": "Bonnethead shark body",
+      "type": "cylinder",
+      "dimensions": [
+        2.94,
+        31.5
+      ],
+      "position": [
+        -185.4,
+        -139.404,
+        168.252
+      ],
+      "rotation_z": -20.954
+    },
+    {
+      "description": "The smallest hammerhead. Its shovel-shaped head helps it find crabs and shrimp. About 30 to 50 inches long.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-bonnet-1",
+      "material": "bonnet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-bonnet-1-tail",
+      "name": "Bonnethead shark tail",
+      "type": "box",
+      "dimensions": [
+        5.04,
+        1.26,
+        10.5
+      ],
+      "position": [
+        -202.668,
+        -132.804,
+        169.932
+      ],
+      "rotation_z": -20.954
+    },
+    {
+      "description": "The smallest hammerhead. Its shovel-shaped head helps it find crabs and shrimp. About 30 to 50 inches long.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-bonnet-1",
+      "material": "bonnet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-bonnet-1-head",
+      "name": "Bonnethead shark hammer head",
+      "type": "box",
+      "dimensions": [
+        4.2,
+        10.92,
+        1.26
+      ],
+      "position": [
+        -169.32,
+        -145.572,
+        168.252
+      ],
+      "rotation_z": -20.954
+    },
+    {
+      "description": "The smallest hammerhead. Its shovel-shaped head helps it find crabs and shrimp. About 30 to 50 inches long.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-bonnet-1",
+      "material": "bonnet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-bonnet-1-dorsal",
+      "name": "Bonnethead shark dorsal fin",
+      "type": "cone",
+      "dimensions": [
+        2.52,
+        5.88
+      ],
+      "position": [
+        -183.444,
+        -140.16,
+        174.132
+      ],
+      "rotation_z": -20.954
+    },
+    {
+      "description": "The babies are striped like a zebra; adults are spotted. It rests on the sand and its long tail is about half its length. Usually 5 to 8 ft.",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-zebra-2",
+      "name": "Zebra shark 2",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        240.156,
+        -261.864,
+        63.456
+      ]
+    },
+    {
+      "description": "The babies are striped like a zebra; adults are spotted. It rests on the sand and its long tail is about half its length. Usually 5 to 8 ft.",
+      "rotation_y": 90,
+      "parent": "aquarium-v03-zebra-2",
+      "material": "zebra",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-zebra-2-body",
+      "name": "Zebra shark body",
+      "type": "cylinder",
+      "dimensions": [
+        5.46,
+        58.5
+      ],
+      "position": [
+        243.96,
+        -261,
+        63.456
+      ],
+      "rotation_z": -167.284
+    },
+    {
+      "description": "The babies are striped like a zebra; adults are spotted. It rests on the sand and its long tail is about half its length. Usually 5 to 8 ft.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-zebra-2",
+      "material": "zebra",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-zebra-2-tail",
+      "name": "Zebra shark tail",
+      "type": "box",
+      "dimensions": [
+        9.36,
+        2.34,
+        19.5
+      ],
+      "position": [
+        277.44,
+        -253.452,
+        66.576
+      ],
+      "rotation_z": -167.284
+    },
+    {
+      "description": "The babies are striped like a zebra; adults are spotted. It rests on the sand and its long tail is about half its length. Usually 5 to 8 ft.",
+      "rotation_y": 90,
+      "parent": "aquarium-v03-zebra-2",
+      "material": "zebra",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-zebra-2-snout",
+      "name": "Zebra shark snout",
+      "type": "cone",
+      "dimensions": [
+        5.46,
+        15.6
+      ],
+      "position": [
+        207.816,
+        -269.16,
+        63.456
+      ],
+      "rotation_z": -167.284
+    },
+    {
+      "description": "The babies are striped like a zebra; adults are spotted. It rests on the sand and its long tail is about half its length. Usually 5 to 8 ft.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-zebra-2",
+      "material": "zebra",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-zebra-2-dorsal",
+      "name": "Zebra shark dorsal fin",
+      "type": "cone",
+      "dimensions": [
+        4.68,
+        10.92
+      ],
+      "position": [
+        240.156,
+        -261.864,
+        74.376
+      ],
+      "rotation_z": -167.284
+    },
+    {
+      "description": "A fast open-water fish with a yellow tail and a stripe down its side. It hunts in groups.",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-yellowtail-1",
+      "name": "Yellowtail 1",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        -163.968,
+        -146.844,
+        245.46
+      ]
+    },
+    {
+      "description": "A fast open-water fish with a yellow tail and a stripe down its side. It hunts in groups.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-yellowtail-1",
+      "material": "yellowtail",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-yellowtail-1-body",
+      "name": "Yellowtail body",
+      "type": "box",
+      "dimensions": [
+        23.04,
+        3.994,
+        9.216
+      ],
+      "position": [
+        -165.72,
+        -146.064,
+        245.46
+      ],
+      "rotation_z": 155.897
+    },
+    {
+      "description": "A fast open-water fish with a yellow tail and a stripe down its side. It hunts in groups.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-yellowtail-1",
+      "material": "yellowtail",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-yellowtail-1-tail",
+      "name": "Yellowtail tail",
+      "type": "box",
+      "dimensions": [
+        7.68,
+        1.536,
+        11.52
+      ],
+      "position": [
+        -151.344,
+        -152.484,
+        245.46
+      ],
+      "rotation_z": 155.897
+    },
+    {
+      "description": "A fast open-water fish with a yellow tail and a stripe down its side. It hunts in groups.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-yellowtail-1",
+      "material": "yellowtail",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-yellowtail-1-fin",
+      "name": "Yellowtail back fin",
+      "type": "box",
+      "dimensions": [
+        9.6,
+        1.152,
+        4.608
+      ],
+      "position": [
+        -165.72,
+        -146.064,
+        251.604
+      ],
+      "rotation_z": 155.897
+    },
+    {
+      "description": "A fast open-water fish with a yellow tail and a stripe down its side. It hunts in groups.",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-yellowtail-2",
+      "name": "Yellowtail 2",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        -164.724,
+        214.836,
+        269.556
+      ]
+    },
+    {
+      "description": "A fast open-water fish with a yellow tail and a stripe down its side. It hunts in groups.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-yellowtail-2",
+      "material": "yellowtail",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-yellowtail-2-body",
+      "name": "Yellowtail body",
+      "type": "box",
+      "dimensions": [
+        23.04,
+        3.994,
+        9.216
+      ],
+      "position": [
+        -162.876,
+        215.364,
+        269.556
+      ],
+      "rotation_z": 15.952
+    },
+    {
+      "description": "A fast open-water fish with a yellow tail and a stripe down its side. It hunts in groups.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-yellowtail-2",
+      "material": "yellowtail",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-yellowtail-2-tail",
+      "name": "Yellowtail tail",
+      "type": "box",
+      "dimensions": [
+        7.68,
+        1.536,
+        11.52
+      ],
+      "position": [
+        -178.02,
+        211.032,
+        269.556
+      ],
+      "rotation_z": 15.952
+    },
+    {
+      "description": "A fast open-water fish with a yellow tail and a stripe down its side. It hunts in groups.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-yellowtail-2",
+      "material": "yellowtail",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-yellowtail-2-fin",
+      "name": "Yellowtail back fin",
+      "type": "box",
+      "dimensions": [
+        9.6,
+        1.152,
+        4.608
+      ],
+      "position": [
+        -162.876,
+        215.364,
+        275.7
+      ],
+      "rotation_z": 15.952
+    },
+    {
+      "description": "A long silver hunter with sharp teeth. It hovers still, then darts at its food.",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-barracuda-1",
+      "name": "Pacific barracuda 1",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        169.824,
+        192.888,
+        164.4
+      ]
+    },
+    {
+      "description": "A long silver hunter with sharp teeth. It hovers still, then darts at its food.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-barracuda-1",
+      "material": "barracuda",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-barracuda-1-body",
+      "name": "Pacific barracuda body",
+      "type": "box",
+      "dimensions": [
+        25.2,
+        3.276,
+        7.56
+      ],
+      "position": [
+        167.844,
+        193.584,
+        164.4
+      ],
+      "rotation_z": 160.606
+    },
+    {
+      "description": "A long silver hunter with sharp teeth. It hovers still, then darts at its food.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-barracuda-1",
+      "material": "barracuda",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-barracuda-1-tail",
+      "name": "Pacific barracuda tail",
+      "type": "box",
+      "dimensions": [
+        8.4,
+        1.68,
+        12.6
+      ],
+      "position": [
+        184.092,
+        187.872,
+        164.4
+      ],
+      "rotation_z": 160.606
+    },
+    {
+      "description": "A long silver hunter with sharp teeth. It hovers still, then darts at its food.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-barracuda-1",
+      "material": "barracuda",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-barracuda-1-fin",
+      "name": "Pacific barracuda back fin",
+      "type": "box",
+      "dimensions": [
+        10.5,
+        1.26,
+        5.04
+      ],
+      "position": [
+        167.844,
+        193.584,
+        169.44
+      ],
+      "rotation_z": 160.606
+    },
+    {
+      "description": "It flaps its wing-like fins to glide. It has a barb on its tail but is gentle and curious.",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-batray-1",
+      "name": "Bat ray 1",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        -440.316,
+        219.432,
+        58.944
+      ]
+    },
+    {
+      "description": "It flaps its wing-like fins to glide. It has a barb on its tail but is gentle and curious.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-batray-1",
+      "material": "ray",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-batray-1-body",
+      "name": "Bat ray wings",
+      "type": "box",
+      "dimensions": [
+        33,
+        33,
+        2.4
+      ],
+      "position": [
+        -440.316,
+        219.432,
+        58.944
+      ],
+      "rotation_z": 5.631
+    },
+    {
+      "description": "It flaps its wing-like fins to glide. It has a barb on its tail but is gentle and curious.",
+      "rotation_y": 90,
+      "parent": "aquarium-v03-batray-1",
+      "material": "ray",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-batray-1-tail",
+      "name": "Bat ray tail",
+      "type": "cylinder",
+      "dimensions": [
+        0.72,
+        42
+      ],
+      "position": [
+        -469.08,
+        243.024,
+        58.944
+      ],
+      "rotation_z": -39.369
+    },
+    {
+      "description": "It flaps its wing-like fins to glide. It has a barb on its tail but is gentle and curious.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-batray-1",
+      "material": "ray",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-batray-1-hump",
+      "name": "Bat ray head",
+      "type": "sphere",
+      "dimensions": [
+        4.2
+      ],
+      "position": [
+        -434.748,
+        214.86,
+        60.744
+      ],
+      "rotation_z": -39.369
+    },
+    {
+      "description": "California's official state marine fish. Bright orange and bold; it guards its little patch of reef.",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-garibaldi-2",
+      "name": "Garibaldi 2",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        37.92,
+        -157.608,
+        45.792
+      ]
+    },
+    {
+      "description": "California's official state marine fish. Bright orange and bold; it guards its little patch of reef.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-garibaldi-2",
+      "material": "garibaldi",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-garibaldi-2-body",
+      "name": "Garibaldi body",
+      "type": "box",
+      "dimensions": [
+        7.2,
+        1.872,
+        4.32
+      ],
+      "position": [
+        38.52,
+        -157.62,
+        45.792
+      ],
+      "rotation_z": -1.612
+    },
+    {
+      "description": "California's official state marine fish. Bright orange and bold; it guards its little patch of reef.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-garibaldi-2",
+      "material": "garibaldi",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-garibaldi-2-tail",
+      "name": "Garibaldi tail",
+      "type": "box",
+      "dimensions": [
+        2.4,
+        0.48,
+        3.6
+      ],
+      "position": [
+        33.6,
+        -157.488,
+        45.792
+      ],
+      "rotation_z": -1.612
+    },
+    {
+      "description": "California's official state marine fish. Bright orange and bold; it guards its little patch of reef.",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-garibaldi-2",
+      "material": "garibaldi",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-garibaldi-2-fin",
+      "name": "Garibaldi back fin",
+      "type": "box",
+      "dimensions": [
+        3,
+        0.36,
+        1.44
+      ],
+      "position": [
+        38.52,
+        -157.62,
+        48.672
+      ],
+      "rotation_z": -1.612
+    },
+    {
+      "description": "a brown-green seaweed that can grow up to 2 ft a day and forms underwater forests",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-7",
+      "name": "Giant kelp",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        -576,
+        144,
+        12
+      ]
+    },
+    {
+      "description": "the long stem (stipe)",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-7",
+      "material": "stem",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-7-stem",
+      "name": "Kelp stem",
+      "type": "cylinder",
+      "dimensions": [
+        1.44,
+        252
+      ],
+      "position": [
+        -576,
+        144,
+        138
+      ]
+    },
+    {
+      "description": "a leaf-like blade",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-7",
+      "material": "kelp2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-7-blade1",
+      "name": "Kelp blade",
+      "type": "box",
+      "dimensions": [
+        1.8,
+        8.4,
+        16.8
+      ],
+      "position": [
+        -580.8,
+        144,
+        100.2
+      ],
+      "rotation_z": 8.295
+    },
+    {
+      "description": "a leaf-like blade",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-7",
+      "material": "kelp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-7-blade2",
+      "name": "Kelp blade",
+      "type": "box",
+      "dimensions": [
+        1.8,
+        8.4,
+        16.8
+      ],
+      "position": [
+        -571.2,
+        144,
+        163.2
+      ],
+      "rotation_z": 65.29
+    },
+    {
+      "description": "a leaf-like blade",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-7",
+      "material": "kelp2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-7-blade3",
+      "name": "Kelp blade",
+      "type": "box",
+      "dimensions": [
+        1.8,
+        8.4,
+        16.8
+      ],
+      "position": [
+        -580.8,
+        144,
+        226.2
+      ],
+      "rotation_z": 76.829
+    },
+    {
+      "description": "a brown-green seaweed that can grow up to 2 ft a day and forms underwater forests",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-8",
+      "name": "Giant kelp",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        288,
+        336,
+        12
+      ]
+    },
+    {
+      "description": "the long stem (stipe)",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-8",
+      "material": "stem",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-8-stem",
+      "name": "Kelp stem",
+      "type": "cylinder",
+      "dimensions": [
+        1.44,
+        276
+      ],
+      "position": [
+        288,
+        336,
+        150
+      ]
+    },
+    {
+      "description": "a leaf-like blade",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-8",
+      "material": "kelp2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-8-blade1",
+      "name": "Kelp blade",
+      "type": "box",
+      "dimensions": [
+        1.8,
+        8.4,
+        16.8
+      ],
+      "position": [
+        283.2,
+        336,
+        108.6
+      ],
+      "rotation_z": 18.412
+    },
+    {
+      "description": "a leaf-like blade",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-8",
+      "material": "kelp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-8-blade2",
+      "name": "Kelp blade",
+      "type": "box",
+      "dimensions": [
+        1.8,
+        8.4,
+        16.8
+      ],
+      "position": [
+        292.8,
+        336,
+        177.6
+      ],
+      "rotation_z": 60.722
+    },
+    {
+      "description": "a leaf-like blade",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-8",
+      "material": "kelp2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-8-blade3",
+      "name": "Kelp blade",
+      "type": "box",
+      "dimensions": [
+        1.8,
+        8.4,
+        16.8
+      ],
+      "position": [
+        283.2,
+        336,
+        246.6
+      ],
+      "rotation_z": 124.496
+    },
+    {
+      "description": "a brown-green seaweed that can grow up to 2 ft a day and forms underwater forests",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-9",
+      "name": "Giant kelp",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        552,
+        96,
+        12
+      ]
+    },
+    {
+      "description": "the long stem (stipe)",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-9",
+      "material": "stem",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-9-stem",
+      "name": "Kelp stem",
+      "type": "cylinder",
+      "dimensions": [
+        1.44,
+        228
+      ],
+      "position": [
+        552,
+        96,
+        126
+      ]
+    },
+    {
+      "description": "a leaf-like blade",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-9",
+      "material": "kelp2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-9-blade1",
+      "name": "Kelp blade",
+      "type": "box",
+      "dimensions": [
+        1.8,
+        8.4,
+        16.8
+      ],
+      "position": [
+        547.2,
+        96,
+        91.8
+      ],
+      "rotation_z": 41.671
+    },
+    {
+      "description": "a leaf-like blade",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-9",
+      "material": "kelp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-9-blade2",
+      "name": "Kelp blade",
+      "type": "box",
+      "dimensions": [
+        1.8,
+        8.4,
+        16.8
+      ],
+      "position": [
+        556.8,
+        96,
+        148.8
+      ],
+      "rotation_z": 70.527
+    },
+    {
+      "description": "a leaf-like blade",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-kelp-9",
+      "material": "kelp2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-kelp-9-blade3",
+      "name": "Kelp blade",
+      "type": "box",
+      "dimensions": [
+        1.8,
+        8.4,
+        16.8
+      ],
+      "position": [
+        547.2,
+        96,
+        205.8
+      ],
+      "rotation_z": 134.092
+    },
+    {
+      "description": "steel ribs that hold the acrylic sections together",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-ribs",
+      "name": "Tunnel ribs",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "steel rib segment round the tunnel",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-ribs",
+      "material": "rib",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rib-1-1",
+      "name": "Tunnel rib 1.1",
+      "type": "box",
+      "dimensions": [
+        8.4,
+        62.4,
+        4.8
+      ],
+      "position": [
+        -576,
+        -55.599,
+        104.1
+      ],
+      "rotation_x": 60
+    },
+    {
+      "description": "steel rib segment round the tunnel",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-ribs",
+      "material": "rib",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rib-1-2",
+      "name": "Tunnel rib 1.2",
+      "type": "box",
+      "dimensions": [
+        8.4,
+        62.4,
+        4.8
+      ],
+      "position": [
+        -576,
+        0,
+        136.2
+      ]
+    },
+    {
+      "description": "steel rib segment round the tunnel",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-ribs",
+      "material": "rib",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rib-1-3",
+      "name": "Tunnel rib 1.3",
+      "type": "box",
+      "dimensions": [
+        8.4,
+        62.4,
+        4.8
+      ],
+      "position": [
+        -576,
+        55.599,
+        104.1
+      ],
+      "rotation_x": -60
+    },
+    {
+      "description": "steel rib segment round the tunnel",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-ribs",
+      "material": "rib",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rib-2-1",
+      "name": "Tunnel rib 2.1",
+      "type": "box",
+      "dimensions": [
+        8.4,
+        62.4,
+        4.8
+      ],
+      "position": [
+        -345.6,
+        -55.599,
+        104.1
+      ],
+      "rotation_x": 60
+    },
+    {
+      "description": "steel rib segment round the tunnel",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-ribs",
+      "material": "rib",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rib-2-2",
+      "name": "Tunnel rib 2.2",
+      "type": "box",
+      "dimensions": [
+        8.4,
+        62.4,
+        4.8
+      ],
+      "position": [
+        -345.6,
+        0,
+        136.2
+      ]
+    },
+    {
+      "description": "steel rib segment round the tunnel",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-ribs",
+      "material": "rib",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rib-2-3",
+      "name": "Tunnel rib 2.3",
+      "type": "box",
+      "dimensions": [
+        8.4,
+        62.4,
+        4.8
+      ],
+      "position": [
+        -345.6,
+        55.599,
+        104.1
+      ],
+      "rotation_x": -60
+    },
+    {
+      "description": "steel rib segment round the tunnel",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-ribs",
+      "material": "rib",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rib-3-1",
+      "name": "Tunnel rib 3.1",
+      "type": "box",
+      "dimensions": [
+        8.4,
+        62.4,
+        4.8
+      ],
+      "position": [
+        -115.2,
+        -55.599,
+        104.1
+      ],
+      "rotation_x": 60
+    },
+    {
+      "description": "steel rib segment round the tunnel",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-ribs",
+      "material": "rib",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rib-3-2",
+      "name": "Tunnel rib 3.2",
+      "type": "box",
+      "dimensions": [
+        8.4,
+        62.4,
+        4.8
+      ],
+      "position": [
+        -115.2,
+        0,
+        136.2
+      ]
+    },
+    {
+      "description": "steel rib segment round the tunnel",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-ribs",
+      "material": "rib",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rib-3-3",
+      "name": "Tunnel rib 3.3",
+      "type": "box",
+      "dimensions": [
+        8.4,
+        62.4,
+        4.8
+      ],
+      "position": [
+        -115.2,
+        55.599,
+        104.1
+      ],
+      "rotation_x": -60
+    },
+    {
+      "description": "steel rib segment round the tunnel",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-ribs",
+      "material": "rib",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rib-4-1",
+      "name": "Tunnel rib 4.1",
+      "type": "box",
+      "dimensions": [
+        8.4,
+        62.4,
+        4.8
+      ],
+      "position": [
+        115.2,
+        -55.599,
+        104.1
+      ],
+      "rotation_x": 60
+    },
+    {
+      "description": "steel rib segment round the tunnel",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-ribs",
+      "material": "rib",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rib-4-2",
+      "name": "Tunnel rib 4.2",
+      "type": "box",
+      "dimensions": [
+        8.4,
+        62.4,
+        4.8
+      ],
+      "position": [
+        115.2,
+        0,
+        136.2
+      ]
+    },
+    {
+      "description": "steel rib segment round the tunnel",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-ribs",
+      "material": "rib",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rib-4-3",
+      "name": "Tunnel rib 4.3",
+      "type": "box",
+      "dimensions": [
+        8.4,
+        62.4,
+        4.8
+      ],
+      "position": [
+        115.2,
+        55.599,
+        104.1
+      ],
+      "rotation_x": -60
+    },
+    {
+      "description": "steel rib segment round the tunnel",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-ribs",
+      "material": "rib",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rib-5-1",
+      "name": "Tunnel rib 5.1",
+      "type": "box",
+      "dimensions": [
+        8.4,
+        62.4,
+        4.8
+      ],
+      "position": [
+        345.6,
+        -55.599,
+        104.1
+      ],
+      "rotation_x": 60
+    },
+    {
+      "description": "steel rib segment round the tunnel",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-ribs",
+      "material": "rib",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rib-5-2",
+      "name": "Tunnel rib 5.2",
+      "type": "box",
+      "dimensions": [
+        8.4,
+        62.4,
+        4.8
+      ],
+      "position": [
+        345.6,
+        0,
+        136.2
+      ]
+    },
+    {
+      "description": "steel rib segment round the tunnel",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-ribs",
+      "material": "rib",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rib-5-3",
+      "name": "Tunnel rib 5.3",
+      "type": "box",
+      "dimensions": [
+        8.4,
+        62.4,
+        4.8
+      ],
+      "position": [
+        345.6,
+        55.599,
+        104.1
+      ],
+      "rotation_x": -60
+    },
+    {
+      "description": "steel rib segment round the tunnel",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-ribs",
+      "material": "rib",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rib-6-1",
+      "name": "Tunnel rib 6.1",
+      "type": "box",
+      "dimensions": [
+        8.4,
+        62.4,
+        4.8
+      ],
+      "position": [
+        576,
+        -55.599,
+        104.1
+      ],
+      "rotation_x": 60
+    },
+    {
+      "description": "steel rib segment round the tunnel",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-ribs",
+      "material": "rib",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rib-6-2",
+      "name": "Tunnel rib 6.2",
+      "type": "box",
+      "dimensions": [
+        8.4,
+        62.4,
+        4.8
+      ],
+      "position": [
+        576,
+        0,
+        136.2
+      ]
+    },
+    {
+      "description": "steel rib segment round the tunnel",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-ribs",
+      "material": "rib",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rib-6-3",
+      "name": "Tunnel rib 6.3",
+      "type": "box",
+      "dimensions": [
+        8.4,
+        62.4,
+        4.8
+      ],
+      "position": [
+        576,
+        55.599,
+        104.1
+      ],
+      "rotation_x": -60
+    },
+    {
+      "description": "where guests sit to watch the fish",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-gallery-furniture",
+      "name": "Gallery seating and fittings",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "long bench facing the glass",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery-furniture",
+      "material": "bench",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-bench-1",
+      "name": "Gallery bench 1",
+      "type": "box",
+      "dimensions": [
+        168,
+        24,
+        19.2
+      ],
+      "position": [
+        -450,
+        -432,
+        15.6
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery-furniture",
+      "material": "bench",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-bench-back-1",
+      "name": "Bench back 1",
+      "type": "box",
+      "dimensions": [
+        168,
+        4.8,
+        16.8
+      ],
+      "position": [
+        -450,
+        -444,
+        27.6
+      ]
+    },
+    {
+      "description": "long bench facing the glass",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery-furniture",
+      "material": "bench",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-bench-2",
+      "name": "Gallery bench 2",
+      "type": "box",
+      "dimensions": [
+        168,
+        24,
+        19.2
+      ],
+      "position": [
+        -150,
+        -432,
+        15.6
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery-furniture",
+      "material": "bench",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-bench-back-2",
+      "name": "Bench back 2",
+      "type": "box",
+      "dimensions": [
+        168,
+        4.8,
+        16.8
+      ],
+      "position": [
+        -150,
+        -444,
+        27.6
+      ]
+    },
+    {
+      "description": "long bench facing the glass",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery-furniture",
+      "material": "bench",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-bench-3",
+      "name": "Gallery bench 3",
+      "type": "box",
+      "dimensions": [
+        168,
+        24,
+        19.2
+      ],
+      "position": [
+        150,
+        -432,
+        15.6
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery-furniture",
+      "material": "bench",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-bench-back-3",
+      "name": "Bench back 3",
+      "type": "box",
+      "dimensions": [
+        168,
+        4.8,
+        16.8
+      ],
+      "position": [
+        150,
+        -444,
+        27.6
+      ]
+    },
+    {
+      "description": "long bench facing the glass",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery-furniture",
+      "material": "bench",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-bench-4",
+      "name": "Gallery bench 4",
+      "type": "box",
+      "dimensions": [
+        168,
+        24,
+        19.2
+      ],
+      "position": [
+        450,
+        -432,
+        15.6
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery-furniture",
+      "material": "bench",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-bench-back-4",
+      "name": "Bench back 4",
+      "type": "box",
+      "dimensions": [
+        168,
+        4.8,
+        16.8
+      ],
+      "position": [
+        450,
+        -444,
+        27.6
+      ]
+    },
+    {
+      "description": "concrete post between window panels",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery-furniture",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-pier-1",
+      "name": "Window pier 1",
+      "type": "box",
+      "dimensions": [
+        12,
+        18,
+        168
+      ],
+      "position": [
+        -600,
+        -366,
+        87
+      ]
+    },
+    {
+      "description": "concrete post between window panels",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery-furniture",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-pier-2",
+      "name": "Window pier 2",
+      "type": "box",
+      "dimensions": [
+        12,
+        18,
+        168
+      ],
+      "position": [
+        -300,
+        -366,
+        87
+      ]
+    },
+    {
+      "description": "concrete post between window panels",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery-furniture",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-pier-3",
+      "name": "Window pier 3",
+      "type": "box",
+      "dimensions": [
+        12,
+        18,
+        168
+      ],
+      "position": [
+        0,
+        -366,
+        87
+      ]
+    },
+    {
+      "description": "concrete post between window panels",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery-furniture",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-pier-4",
+      "name": "Window pier 4",
+      "type": "box",
+      "dimensions": [
+        12,
+        18,
+        168
+      ],
+      "position": [
+        300,
+        -366,
+        87
+      ]
+    },
+    {
+      "description": "concrete post between window panels",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery-furniture",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-pier-5",
+      "name": "Window pier 5",
+      "type": "box",
+      "dimensions": [
+        12,
+        18,
+        168
+      ],
+      "position": [
+        600,
+        -366,
+        87
+      ]
+    },
+    {
+      "description": "a warm spotlight that lights the glass",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery-furniture",
+      "material": "lamp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-lamp-1",
+      "name": "Gallery lamp 1",
+      "type": "cone",
+      "dimensions": [
+        9.6,
+        14.4
+      ],
+      "position": [
+        -480,
+        -408,
+        153.6
+      ]
+    },
+    {
+      "description": "a warm spotlight that lights the glass",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery-furniture",
+      "material": "lamp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-lamp-2",
+      "name": "Gallery lamp 2",
+      "type": "cone",
+      "dimensions": [
+        9.6,
+        14.4
+      ],
+      "position": [
+        -240,
+        -408,
+        153.6
+      ]
+    },
+    {
+      "description": "a warm spotlight that lights the glass",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery-furniture",
+      "material": "lamp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-lamp-3",
+      "name": "Gallery lamp 3",
+      "type": "cone",
+      "dimensions": [
+        9.6,
+        14.4
+      ],
+      "position": [
+        0,
+        -408,
+        153.6
+      ]
+    },
+    {
+      "description": "a warm spotlight that lights the glass",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery-furniture",
+      "material": "lamp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-lamp-4",
+      "name": "Gallery lamp 4",
+      "type": "cone",
+      "dimensions": [
+        9.6,
+        14.4
+      ],
+      "position": [
+        240,
+        -408,
+        153.6
+      ]
+    },
+    {
+      "description": "a warm spotlight that lights the glass",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery-furniture",
+      "material": "lamp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-lamp-5",
+      "name": "Gallery lamp 5",
+      "type": "cone",
+      "dimensions": [
+        9.6,
+        14.4
+      ],
+      "position": [
+        480,
+        -408,
+        153.6
+      ]
+    },
+    {
+      "description": "a sign showing the animals on this side of the tank",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery-furniture",
+      "material": "sign",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-sign-1",
+      "name": "Tank sign 1",
+      "type": "box",
+      "dimensions": [
+        72,
+        3.6,
+        36
+      ],
+      "position": [
+        -360,
+        -568.8,
+        84
+      ]
+    },
+    {
+      "description": "a sign showing the animals on this side of the tank",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery-furniture",
+      "material": "sign",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-sign-2",
+      "name": "Tank sign 2",
+      "type": "box",
+      "dimensions": [
+        72,
+        3.6,
+        36
+      ],
+      "position": [
+        0,
+        -568.8,
+        84
+      ]
+    },
+    {
+      "description": "a sign showing the animals on this side of the tank",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-gallery-furniture",
+      "material": "sign",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-sign-3",
+      "name": "Tank sign 3",
+      "type": "box",
+      "dimensions": [
+        72,
+        3.6,
+        36
+      ],
+      "position": [
+        360,
+        -568.8,
+        84
+      ]
+    },
+    {
+      "description": "safety rails round the deck",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rails",
+      "name": "Pool railings",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "rail post at the pool edge",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-rails",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rail-front-1",
+      "name": "Rail post 1",
+      "type": "cylinder",
+      "dimensions": [
+        1.44,
+        42
+      ],
+      "position": [
+        -540,
+        390,
+        356.4
+      ]
+    },
+    {
+      "description": "rail post at the pool edge",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-rails",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rail-front-2",
+      "name": "Rail post 2",
+      "type": "cylinder",
+      "dimensions": [
+        1.44,
+        42
+      ],
+      "position": [
+        -324,
+        390,
+        356.4
+      ]
+    },
+    {
+      "description": "rail post at the pool edge",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-rails",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rail-front-3",
+      "name": "Rail post 3",
+      "type": "cylinder",
+      "dimensions": [
+        1.44,
+        42
+      ],
+      "position": [
+        -108,
+        390,
+        356.4
+      ]
+    },
+    {
+      "description": "rail post at the pool edge",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-rails",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rail-front-4",
+      "name": "Rail post 4",
+      "type": "cylinder",
+      "dimensions": [
+        1.44,
+        42
+      ],
+      "position": [
+        108,
+        390,
+        356.4
+      ]
+    },
+    {
+      "description": "rail post at the pool edge",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-rails",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rail-front-5",
+      "name": "Rail post 5",
+      "type": "cylinder",
+      "dimensions": [
+        1.44,
+        42
+      ],
+      "position": [
+        324,
+        390,
+        356.4
+      ]
+    },
+    {
+      "description": "rail post at the pool edge",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-rails",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rail-front-6",
+      "name": "Rail post 6",
+      "type": "cylinder",
+      "dimensions": [
+        1.44,
+        42
+      ],
+      "position": [
+        540,
+        390,
+        356.4
+      ]
+    },
+    {
+      "description": "handrail along the back of the deck",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-rails",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-rail-back",
+      "name": "Back handrail",
+      "type": "box",
+      "dimensions": [
+        1200,
+        3.6,
+        3.6
+      ],
+      "position": [
+        0,
+        390,
+        372
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-lobby-furniture",
+      "name": "Lobby details",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-lobby-furniture",
+      "material": "bench",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-lobby-bench-1",
+      "name": "Lobby bench 1",
+      "type": "box",
+      "dimensions": [
+        48,
+        24,
+        16.8
+      ],
+      "position": [
+        -840,
+        -108,
+        12
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-lobby-furniture",
+      "material": "bench",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-lobby-bench-2",
+      "name": "Lobby bench 2",
+      "type": "box",
+      "dimensions": [
+        48,
+        24,
+        16.8
+      ],
+      "position": [
+        -744,
+        -108,
+        12
+      ]
+    },
+    {
+      "description": "welcome to the Grand Ocean Aquarium",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-lobby-furniture",
+      "material": "sign",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-lobby-sign",
+      "name": "Welcome sign",
+      "type": "box",
+      "dimensions": [
+        120,
+        3.6,
+        36
+      ],
+      "position": [
+        -840,
+        174,
+        108
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-lobby-furniture",
+      "material": "mint",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-exit-sign-1",
+      "name": "Exit sign",
+      "type": "box",
+      "dimensions": [
+        48,
+        3.6,
+        18
+      ],
+      "position": [
+        720,
+        174,
+        120
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-ribs",
+      "material": "lamp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-tunnel-lamp-1",
+      "name": "Tunnel light 1",
+      "type": "box",
+      "dimensions": [
+        1200,
+        4.8,
+        3.6
+      ],
+      "position": [
+        0,
+        -36,
+        135.6
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "aquarium-v03-ribs",
+      "material": "lamp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "aquarium-v03-tunnel-lamp-2",
+      "name": "Tunnel light 2",
+      "type": "box",
+      "dimensions": [
+        1200,
+        4.8,
+        3.6
+      ],
+      "position": [
+        0,
+        36,
+        135.6
+      ]
+    }
+  ],
+  "version": 215
+}

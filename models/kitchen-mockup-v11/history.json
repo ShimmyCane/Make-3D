@@ -1,0 +1,2146 @@
+{
+  "schema": "make3d.history/0.1",
+  "model_id": "kitchen-mockup-v11",
+  "header": {
+    "model_id": "kitchen-mockup-v11",
+    "name": "Kitchen mockup V11",
+    "description": "Kitchen mockup from photos, estimated sizes in inches. V11: review of V10. The left door of the back run becomes an open bay with two wood shelves, as in the first photo. Layout unchanged.",
+    "units": "in",
+    "up": "z",
+    "world": "default-world",
+    "view": {
+      "azimuth_deg": 214
+    },
+    "materials": {
+      "wall": {
+        "color": "#f4f0e6",
+        "opacity": 1
+      },
+      "floor": {
+        "color": "#8c9094",
+        "opacity": 1
+      },
+      "green": {
+        "color": "#3f9b5a",
+        "opacity": 1
+      },
+      "yellow": {
+        "color": "#e8b43a",
+        "opacity": 1
+      },
+      "cabinet": {
+        "color": "#f1ead8",
+        "opacity": 1
+      },
+      "wood": {
+        "color": "#7a4e2d",
+        "opacity": 1
+      },
+      "steel": {
+        "color": "#c9ced3",
+        "opacity": 1
+      },
+      "tile": {
+        "color": "#e8c35a",
+        "opacity": 1
+      },
+      "tileRed": {
+        "color": "#b5573a",
+        "opacity": 1
+      },
+      "chrome": {
+        "color": "#e3e7ea",
+        "opacity": 1
+      },
+      "black": {
+        "color": "#1e1f22",
+        "opacity": 1
+      },
+      "bowl": {
+        "color": "#7d858c",
+        "opacity": 1
+      },
+      "bulb": {
+        "color": "#fff0a6",
+        "opacity": 1
+      },
+      "iron": {
+        "color": "#40454b",
+        "opacity": 1
+      }
+    }
+  },
+  "operations": [
+    {
+      "seq": 1,
+      "op": "add",
+      "time": "2026-11-01T10:01:00.000Z",
+      "author": "jimmy",
+      "note": "add Room shell",
+      "object": {
+        "uuid": "kitchen-mockup-v11-g-shell",
+        "name": "Room shell",
+        "description": "floor, back wall, green left wall, yellow panel",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 2,
+      "op": "add",
+      "time": "2026-11-01T10:02:00.000Z",
+      "author": "jimmy",
+      "note": "add Back run",
+      "object": {
+        "uuid": "kitchen-mockup-v11-g-back",
+        "name": "Back run",
+        "description": "base cabinets, stove, counters, tiles, backsplash, doors",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 3,
+      "op": "add",
+      "time": "2026-11-01T10:03:00.000Z",
+      "author": "jimmy",
+      "note": "add Sink run",
+      "object": {
+        "uuid": "kitchen-mockup-v11-g-sink",
+        "name": "Sink run",
+        "description": "left-wall run: fridge, drawers, sink, faucets",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 4,
+      "op": "add",
+      "time": "2026-11-01T10:04:00.000Z",
+      "author": "jimmy",
+      "note": "add Return run",
+      "object": {
+        "uuid": "kitchen-mockup-v11-g-ret",
+        "name": "Return run",
+        "description": "right-side run: counter, tiles, doors",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 5,
+      "op": "add",
+      "time": "2026-11-01T10:05:00.000Z",
+      "author": "jimmy",
+      "note": "add Wood bar",
+      "object": {
+        "uuid": "kitchen-mockup-v11-g-bar",
+        "name": "Wood bar",
+        "description": "dark wood bar and ledge on the outside of the return run",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 6,
+      "op": "add",
+      "time": "2026-11-01T10:06:00.000Z",
+      "author": "jimmy",
+      "note": "add Upper cabinets",
+      "object": {
+        "uuid": "kitchen-mockup-v11-g-up",
+        "name": "Upper cabinets",
+        "description": "wall cabinets and the wood top shelf",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 7,
+      "op": "add",
+      "time": "2026-11-01T10:07:00.000Z",
+      "author": "jimmy",
+      "note": "add Fixtures",
+      "object": {
+        "uuid": "kitchen-mockup-v11-g-fx",
+        "name": "Fixtures",
+        "description": "frying pan, hooks, ceiling light",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 8,
+      "op": "add",
+      "time": "2026-11-01T10:08:00.000Z",
+      "author": "jimmy",
+      "note": "add Floor",
+      "object": {
+        "uuid": "kitchen-mockup-v11-shell-floor",
+        "name": "Floor",
+        "description": "kitchen floor, room footprint",
+        "type": "box",
+        "dimensions": [
+          186,
+          96,
+          0.5
+        ],
+        "position": [
+          93,
+          48,
+          0.25
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-shell",
+        "material": "floor"
+      }
+    },
+    {
+      "seq": 9,
+      "op": "add",
+      "time": "2026-11-01T10:09:00.000Z",
+      "author": "jimmy",
+      "note": "add Back wall",
+      "object": {
+        "uuid": "kitchen-mockup-v11-shell-back",
+        "name": "Back wall",
+        "description": "context only",
+        "type": "box",
+        "dimensions": [
+          186,
+          1,
+          96
+        ],
+        "position": [
+          93,
+          -0.5,
+          48
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-shell",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 10,
+      "op": "add",
+      "time": "2026-11-01T10:10:00.000Z",
+      "author": "jimmy",
+      "note": "add Green wall",
+      "object": {
+        "uuid": "kitchen-mockup-v11-shell-left",
+        "name": "Green wall",
+        "description": "left wall, green paint, context only",
+        "type": "box",
+        "dimensions": [
+          2,
+          96,
+          96
+        ],
+        "position": [
+          187,
+          48,
+          48
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-shell",
+        "material": "green"
+      }
+    },
+    {
+      "seq": 11,
+      "op": "add",
+      "time": "2026-11-01T10:11:00.000Z",
+      "author": "jimmy",
+      "note": "add Stove block",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-stove",
+        "name": "Stove block",
+        "description": "the cooker between the two counters",
+        "type": "box",
+        "dimensions": [
+          32,
+          24,
+          34
+        ],
+        "position": [
+          110,
+          12,
+          17.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 12,
+      "op": "add",
+      "time": "2026-11-01T10:12:00.000Z",
+      "author": "jimmy",
+      "note": "add Base cabinets, back right",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-br",
+        "name": "Base cabinets, back right",
+        "description": "right of the stove",
+        "type": "box",
+        "dimensions": [
+          88,
+          24,
+          34
+        ],
+        "position": [
+          50,
+          12,
+          17.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 13,
+      "op": "add",
+      "time": "2026-11-01T10:13:00.000Z",
+      "author": "jimmy",
+      "note": "add Return run",
+      "object": {
+        "uuid": "kitchen-mockup-v11-ret-carcass",
+        "name": "Return run",
+        "description": "along the right side of the room, toward the camera",
+        "type": "box",
+        "dimensions": [
+          24,
+          66,
+          34
+        ],
+        "position": [
+          18,
+          57,
+          17.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-ret",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 14,
+      "op": "add",
+      "time": "2026-11-01T10:14:00.000Z",
+      "author": "jimmy",
+      "note": "add Sink run",
+      "object": {
+        "uuid": "kitchen-mockup-v11-sink-carcass",
+        "name": "Sink run",
+        "description": "along the left wall: fridge end, drawers, sink",
+        "type": "box",
+        "dimensions": [
+          24,
+          66,
+          34
+        ],
+        "position": [
+          174,
+          57,
+          17.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-sink",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 15,
+      "op": "add",
+      "time": "2026-11-01T10:15:00.000Z",
+      "author": "jimmy",
+      "note": "add Wood bar",
+      "object": {
+        "uuid": "kitchen-mockup-v11-bar-wood",
+        "name": "Wood bar",
+        "description": "dark wood bar on the outside of the return run",
+        "type": "box",
+        "dimensions": [
+          4,
+          66,
+          40
+        ],
+        "position": [
+          4,
+          57,
+          20
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-bar",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 16,
+      "op": "add",
+      "time": "2026-11-01T10:16:00.000Z",
+      "author": "jimmy",
+      "note": "add Counter, back left",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-top-bl",
+        "name": "Counter, back left",
+        "description": "steel top",
+        "type": "box",
+        "dimensions": [
+          60,
+          24,
+          1.5
+        ],
+        "position": [
+          156,
+          12,
+          35.25
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 17,
+      "op": "add",
+      "time": "2026-11-01T10:17:00.000Z",
+      "author": "jimmy",
+      "note": "add Stove top",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-top-stove",
+        "name": "Stove top",
+        "description": "steel cooktop surface",
+        "type": "box",
+        "dimensions": [
+          32,
+          24,
+          1.5
+        ],
+        "position": [
+          110,
+          12,
+          35.25
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 18,
+      "op": "add",
+      "time": "2026-11-01T10:18:00.000Z",
+      "author": "jimmy",
+      "note": "add Counter, back right",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-top-br",
+        "name": "Counter, back right",
+        "description": "steel top",
+        "type": "box",
+        "dimensions": [
+          88,
+          24,
+          1.5
+        ],
+        "position": [
+          50,
+          12,
+          35.25
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 19,
+      "op": "add",
+      "time": "2026-11-01T10:19:00.000Z",
+      "author": "jimmy",
+      "note": "add Return counter",
+      "object": {
+        "uuid": "kitchen-mockup-v11-ret-top",
+        "name": "Return counter",
+        "description": "steel top",
+        "type": "box",
+        "dimensions": [
+          24,
+          66,
+          1.5
+        ],
+        "position": [
+          18,
+          57,
+          35.25
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-ret",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 20,
+      "op": "add",
+      "time": "2026-11-01T10:20:00.000Z",
+      "author": "jimmy",
+      "note": "add Sink counter",
+      "object": {
+        "uuid": "kitchen-mockup-v11-sink-top",
+        "name": "Sink counter",
+        "description": "steel top",
+        "type": "box",
+        "dimensions": [
+          24,
+          66,
+          1.5
+        ],
+        "position": [
+          174,
+          57,
+          35.25
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-sink",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 21,
+      "op": "add",
+      "time": "2026-11-01T10:21:00.000Z",
+      "author": "jimmy",
+      "note": "add Tile, back left",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-tile-bl",
+        "name": "Tile, back left",
+        "description": "yellow tile inset",
+        "type": "box",
+        "dimensions": [
+          56,
+          20,
+          0.5
+        ],
+        "position": [
+          156,
+          12,
+          36.25
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "tile"
+      }
+    },
+    {
+      "seq": 22,
+      "op": "add",
+      "time": "2026-11-01T10:22:00.000Z",
+      "author": "jimmy",
+      "note": "add Red tile patch, back left",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-tile-bl-red",
+        "name": "Red tile patch, back left",
+        "description": "terracotta tile patch",
+        "type": "box",
+        "dimensions": [
+          12,
+          8,
+          0.25
+        ],
+        "position": [
+          172,
+          6,
+          36.625
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "tileRed"
+      }
+    },
+    {
+      "seq": 23,
+      "op": "add",
+      "time": "2026-11-01T10:23:00.000Z",
+      "author": "jimmy",
+      "note": "add Tile, back right",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-tile-br",
+        "name": "Tile, back right",
+        "description": "yellow tile inset",
+        "type": "box",
+        "dimensions": [
+          60,
+          20,
+          0.5
+        ],
+        "position": [
+          62,
+          12,
+          36.25
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "tile"
+      }
+    },
+    {
+      "seq": 24,
+      "op": "add",
+      "time": "2026-11-01T10:24:00.000Z",
+      "author": "jimmy",
+      "note": "add Red tile patch, back right",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-tile-br-red",
+        "name": "Red tile patch, back right",
+        "description": "terracotta tile patch",
+        "type": "box",
+        "dimensions": [
+          12,
+          10,
+          0.25
+        ],
+        "position": [
+          70,
+          17,
+          36.625
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "tileRed"
+      }
+    },
+    {
+      "seq": 25,
+      "op": "add",
+      "time": "2026-11-01T10:25:00.000Z",
+      "author": "jimmy",
+      "note": "add Tile, return run",
+      "object": {
+        "uuid": "kitchen-mockup-v11-ret-tile",
+        "name": "Tile, return run",
+        "description": "yellow tile inset",
+        "type": "box",
+        "dimensions": [
+          20,
+          62,
+          0.5
+        ],
+        "position": [
+          18,
+          57,
+          36.25
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-ret",
+        "material": "tile"
+      }
+    },
+    {
+      "seq": 26,
+      "op": "add",
+      "time": "2026-11-01T10:26:00.000Z",
+      "author": "jimmy",
+      "note": "add Red tile patch, return run",
+      "object": {
+        "uuid": "kitchen-mockup-v11-ret-tile-red",
+        "name": "Red tile patch, return run",
+        "description": "terracotta tile patch",
+        "type": "box",
+        "dimensions": [
+          16,
+          10,
+          0.25
+        ],
+        "position": [
+          18,
+          65,
+          36.625
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-ret",
+        "material": "tileRed"
+      }
+    },
+    {
+      "seq": 27,
+      "op": "add",
+      "time": "2026-11-01T10:27:00.000Z",
+      "author": "jimmy",
+      "note": "add Oven door",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-stove-door",
+        "name": "Oven door",
+        "description": "cream oven door on the front",
+        "type": "box",
+        "dimensions": [
+          26,
+          1,
+          20
+        ],
+        "position": [
+          110,
+          24.5,
+          20
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 28,
+      "op": "add",
+      "time": "2026-11-01T10:28:00.000Z",
+      "author": "jimmy",
+      "note": "add Oven drawer",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-stove-drawer",
+        "name": "Oven drawer",
+        "description": "drawer under the oven door",
+        "type": "box",
+        "dimensions": [
+          26,
+          1,
+          6
+        ],
+        "position": [
+          110,
+          24.5,
+          5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 29,
+      "op": "add",
+      "time": "2026-11-01T10:29:00.000Z",
+      "author": "jimmy",
+      "note": "add Oven door handle",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-stove-handle",
+        "name": "Oven door handle",
+        "description": "chrome bar",
+        "type": "box",
+        "dimensions": [
+          18,
+          1,
+          1.1999999999999993
+        ],
+        "position": [
+          110,
+          25.5,
+          28.6
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "chrome"
+      }
+    },
+    {
+      "seq": 30,
+      "op": "add",
+      "time": "2026-11-01T10:30:00.000Z",
+      "author": "jimmy",
+      "note": "add Oven drawer handle",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-stove-drawer-handle",
+        "name": "Oven drawer handle",
+        "description": "chrome bar",
+        "type": "box",
+        "dimensions": [
+          18,
+          1,
+          1.1999999999999993
+        ],
+        "position": [
+          110,
+          25.5,
+          7
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "chrome"
+      }
+    },
+    {
+      "seq": 31,
+      "op": "add",
+      "time": "2026-11-01T10:31:00.000Z",
+      "author": "jimmy",
+      "note": "add Stove knob 1",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-stove-knob-1",
+        "name": "Stove knob 1",
+        "description": "control knob on the front band",
+        "type": "sphere",
+        "dimensions": [
+          1.1
+        ],
+        "position": [
+          120,
+          25.5,
+          33
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "chrome"
+      }
+    },
+    {
+      "seq": 32,
+      "op": "add",
+      "time": "2026-11-01T10:32:00.000Z",
+      "author": "jimmy",
+      "note": "add Stove knob 2",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-stove-knob-2",
+        "name": "Stove knob 2",
+        "description": "control knob on the front band",
+        "type": "sphere",
+        "dimensions": [
+          1.1
+        ],
+        "position": [
+          110,
+          25.5,
+          33
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "chrome"
+      }
+    },
+    {
+      "seq": 33,
+      "op": "add",
+      "time": "2026-11-01T10:33:00.000Z",
+      "author": "jimmy",
+      "note": "add Stove knob 3",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-stove-knob-3",
+        "name": "Stove knob 3",
+        "description": "control knob on the front band",
+        "type": "sphere",
+        "dimensions": [
+          1.1
+        ],
+        "position": [
+          100,
+          25.5,
+          33
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "chrome"
+      }
+    },
+    {
+      "seq": 34,
+      "op": "add",
+      "time": "2026-11-01T10:34:00.000Z",
+      "author": "jimmy",
+      "note": "add Burner 1",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-burner-1",
+        "name": "Burner 1",
+        "description": "black ring on the cooktop",
+        "type": "cylinder",
+        "dimensions": [
+          5,
+          0.8
+        ],
+        "position": [
+          116,
+          12,
+          36.4
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "black"
+      }
+    },
+    {
+      "seq": 35,
+      "op": "add",
+      "time": "2026-11-01T10:35:00.000Z",
+      "author": "jimmy",
+      "note": "add Burner 2",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-burner-2",
+        "name": "Burner 2",
+        "description": "black ring on the cooktop",
+        "type": "cylinder",
+        "dimensions": [
+          5,
+          0.8
+        ],
+        "position": [
+          102,
+          12,
+          36.4
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "black"
+      }
+    },
+    {
+      "seq": 36,
+      "op": "add",
+      "time": "2026-11-01T10:36:00.000Z",
+      "author": "jimmy",
+      "note": "add Base door 2",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-bl-door-2",
+        "name": "Base door 2",
+        "description": "cream door",
+        "type": "box",
+        "dimensions": [
+          28,
+          1,
+          31
+        ],
+        "position": [
+          141,
+          24.5,
+          17.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 37,
+      "op": "add",
+      "time": "2026-11-01T10:37:00.000Z",
+      "author": "jimmy",
+      "note": "add Door knob, back left 2",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-bl-knob-2",
+        "name": "Door knob, back left 2",
+        "description": "wood knob",
+        "type": "sphere",
+        "dimensions": [
+          0.8
+        ],
+        "position": [
+          153,
+          25.4,
+          30
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 38,
+      "op": "add",
+      "time": "2026-11-01T10:38:00.000Z",
+      "author": "jimmy",
+      "note": "add Base door 3",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-br-door-1",
+        "name": "Base door 3",
+        "description": "cream door, right of the stove",
+        "type": "box",
+        "dimensions": [
+          28,
+          1,
+          31
+        ],
+        "position": [
+          78,
+          24.5,
+          17.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 39,
+      "op": "add",
+      "time": "2026-11-01T10:39:00.000Z",
+      "author": "jimmy",
+      "note": "add Base door 4",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-br-door-2",
+        "name": "Base door 4",
+        "description": "cream door",
+        "type": "box",
+        "dimensions": [
+          30,
+          1,
+          31
+        ],
+        "position": [
+          47,
+          24.5,
+          17.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 40,
+      "op": "add",
+      "time": "2026-11-01T10:40:00.000Z",
+      "author": "jimmy",
+      "note": "add Door knob, back right 1",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-br-knob-1",
+        "name": "Door knob, back right 1",
+        "description": "wood knob",
+        "type": "sphere",
+        "dimensions": [
+          0.8
+        ],
+        "position": [
+          66,
+          25.4,
+          30
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 41,
+      "op": "add",
+      "time": "2026-11-01T10:41:00.000Z",
+      "author": "jimmy",
+      "note": "add Door knob, back right 2",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-br-knob-2",
+        "name": "Door knob, back right 2",
+        "description": "wood knob",
+        "type": "sphere",
+        "dimensions": [
+          0.8
+        ],
+        "position": [
+          60,
+          25.4,
+          30
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 42,
+      "op": "add",
+      "time": "2026-11-01T10:42:00.000Z",
+      "author": "jimmy",
+      "note": "add Fridge door",
+      "object": {
+        "uuid": "kitchen-mockup-v11-sink-fridge",
+        "name": "Fridge door",
+        "description": "cream door at the left end of the sink run",
+        "type": "box",
+        "dimensions": [
+          1,
+          22,
+          31
+        ],
+        "position": [
+          161.5,
+          37,
+          17.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-sink",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 43,
+      "op": "add",
+      "time": "2026-11-01T10:43:00.000Z",
+      "author": "jimmy",
+      "note": "add Fridge handle",
+      "object": {
+        "uuid": "kitchen-mockup-v11-sink-fridge-handle",
+        "name": "Fridge handle",
+        "description": "chrome handle",
+        "type": "box",
+        "dimensions": [
+          1.1999999999999993,
+          2,
+          2
+        ],
+        "position": [
+          160.4,
+          44,
+          29
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-sink",
+        "material": "chrome"
+      }
+    },
+    {
+      "seq": 44,
+      "op": "add",
+      "time": "2026-11-01T10:44:00.000Z",
+      "author": "jimmy",
+      "note": "add Wood drawer 1",
+      "object": {
+        "uuid": "kitchen-mockup-v11-sink-drawer-1",
+        "name": "Wood drawer 1",
+        "description": "wood drawer front",
+        "type": "box",
+        "dimensions": [
+          1,
+          12,
+          15
+        ],
+        "position": [
+          161.5,
+          54,
+          25.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-sink",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 45,
+      "op": "add",
+      "time": "2026-11-01T10:45:00.000Z",
+      "author": "jimmy",
+      "note": "add Wood drawer 2",
+      "object": {
+        "uuid": "kitchen-mockup-v11-sink-drawer-2",
+        "name": "Wood drawer 2",
+        "description": "wood drawer front",
+        "type": "box",
+        "dimensions": [
+          1,
+          12,
+          14
+        ],
+        "position": [
+          161.5,
+          54,
+          9
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-sink",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 46,
+      "op": "add",
+      "time": "2026-11-01T10:46:00.000Z",
+      "author": "jimmy",
+      "note": "add Sink base door",
+      "object": {
+        "uuid": "kitchen-mockup-v11-sink-door",
+        "name": "Sink base door",
+        "description": "cream door under the sink",
+        "type": "box",
+        "dimensions": [
+          1,
+          30,
+          31
+        ],
+        "position": [
+          161.5,
+          75,
+          17.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-sink",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 47,
+      "op": "add",
+      "time": "2026-11-01T10:47:00.000Z",
+      "author": "jimmy",
+      "note": "add Return door 1",
+      "object": {
+        "uuid": "kitchen-mockup-v11-ret-door-1",
+        "name": "Return door 1",
+        "description": "cream door on the open side",
+        "type": "box",
+        "dimensions": [
+          1,
+          33,
+          31
+        ],
+        "position": [
+          30.5,
+          40.5,
+          17.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-ret",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 48,
+      "op": "add",
+      "time": "2026-11-01T10:48:00.000Z",
+      "author": "jimmy",
+      "note": "add Return door 2",
+      "object": {
+        "uuid": "kitchen-mockup-v11-ret-door-2",
+        "name": "Return door 2",
+        "description": "cream door on the open side",
+        "type": "box",
+        "dimensions": [
+          1,
+          33,
+          31
+        ],
+        "position": [
+          30.5,
+          73.5,
+          17.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-ret",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 49,
+      "op": "add",
+      "time": "2026-11-01T10:49:00.000Z",
+      "author": "jimmy",
+      "note": "add Return knob 1",
+      "object": {
+        "uuid": "kitchen-mockup-v11-ret-knob-1",
+        "name": "Return knob 1",
+        "description": "wood knob",
+        "type": "sphere",
+        "dimensions": [
+          0.8
+        ],
+        "position": [
+          31.80000000000001,
+          55,
+          30
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-ret",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 50,
+      "op": "add",
+      "time": "2026-11-01T10:50:00.000Z",
+      "author": "jimmy",
+      "note": "add Return knob 2",
+      "object": {
+        "uuid": "kitchen-mockup-v11-ret-knob-2",
+        "name": "Return knob 2",
+        "description": "wood knob",
+        "type": "sphere",
+        "dimensions": [
+          0.8
+        ],
+        "position": [
+          31.80000000000001,
+          59,
+          30
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-ret",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 51,
+      "op": "add",
+      "time": "2026-11-01T10:51:00.000Z",
+      "author": "jimmy",
+      "note": "add Stainless backsplash",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-backsplash",
+        "name": "Stainless backsplash",
+        "description": "steel, behind the counters",
+        "type": "box",
+        "dimensions": [
+          180,
+          0.5,
+          18
+        ],
+        "position": [
+          96,
+          0.25,
+          45
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 52,
+      "op": "add",
+      "time": "2026-11-01T10:52:00.000Z",
+      "author": "jimmy",
+      "note": "add Upper cabinet, left",
+      "object": {
+        "uuid": "kitchen-mockup-v11-up-left",
+        "name": "Upper cabinet, left",
+        "description": "cream, two doors",
+        "type": "box",
+        "dimensions": [
+          60,
+          12,
+          30
+        ],
+        "position": [
+          156,
+          6,
+          69
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-up",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 53,
+      "op": "add",
+      "time": "2026-11-01T10:53:00.000Z",
+      "author": "jimmy",
+      "note": "add Upper cabinet, right",
+      "object": {
+        "uuid": "kitchen-mockup-v11-up-right",
+        "name": "Upper cabinet, right",
+        "description": "cream, two doors",
+        "type": "box",
+        "dimensions": [
+          88,
+          12,
+          30
+        ],
+        "position": [
+          50,
+          6,
+          69
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-up",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 54,
+      "op": "add",
+      "time": "2026-11-01T10:54:00.000Z",
+      "author": "jimmy",
+      "note": "add Upper door 1",
+      "object": {
+        "uuid": "kitchen-mockup-v11-up-left-door-1",
+        "name": "Upper door 1",
+        "description": "cream door",
+        "type": "box",
+        "dimensions": [
+          28,
+          1,
+          26
+        ],
+        "position": [
+          171,
+          12.5,
+          69
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-up",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 55,
+      "op": "add",
+      "time": "2026-11-01T10:55:00.000Z",
+      "author": "jimmy",
+      "note": "add Upper door 2",
+      "object": {
+        "uuid": "kitchen-mockup-v11-up-left-door-2",
+        "name": "Upper door 2",
+        "description": "cream door",
+        "type": "box",
+        "dimensions": [
+          28,
+          1,
+          26
+        ],
+        "position": [
+          141,
+          12.5,
+          69
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-up",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 56,
+      "op": "add",
+      "time": "2026-11-01T10:56:00.000Z",
+      "author": "jimmy",
+      "note": "add Upper door 3",
+      "object": {
+        "uuid": "kitchen-mockup-v11-up-right-door-1",
+        "name": "Upper door 3",
+        "description": "cream door",
+        "type": "box",
+        "dimensions": [
+          42,
+          1,
+          26
+        ],
+        "position": [
+          72,
+          12.5,
+          69
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-up",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 57,
+      "op": "add",
+      "time": "2026-11-01T10:57:00.000Z",
+      "author": "jimmy",
+      "note": "add Upper door 4",
+      "object": {
+        "uuid": "kitchen-mockup-v11-up-right-door-2",
+        "name": "Upper door 4",
+        "description": "cream door",
+        "type": "box",
+        "dimensions": [
+          42,
+          1,
+          26
+        ],
+        "position": [
+          28,
+          12.5,
+          69
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-up",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 58,
+      "op": "add",
+      "time": "2026-11-01T10:58:00.000Z",
+      "author": "jimmy",
+      "note": "add Upper knob 1",
+      "object": {
+        "uuid": "kitchen-mockup-v11-up-knob-1",
+        "name": "Upper knob 1",
+        "description": "wood pull",
+        "type": "sphere",
+        "dimensions": [
+          0.8
+        ],
+        "position": [
+          159,
+          13.2,
+          70
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-up",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 59,
+      "op": "add",
+      "time": "2026-11-01T10:59:00.000Z",
+      "author": "jimmy",
+      "note": "add Upper knob 2",
+      "object": {
+        "uuid": "kitchen-mockup-v11-up-knob-2",
+        "name": "Upper knob 2",
+        "description": "wood pull",
+        "type": "sphere",
+        "dimensions": [
+          0.8
+        ],
+        "position": [
+          47,
+          13.2,
+          70
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-up",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 60,
+      "op": "add",
+      "time": "2026-11-01T11:00:00.000Z",
+      "author": "jimmy",
+      "note": "add Wood top shelf",
+      "object": {
+        "uuid": "kitchen-mockup-v11-up-shelf",
+        "name": "Wood top shelf",
+        "description": "wood strip over the upper cabinets",
+        "type": "box",
+        "dimensions": [
+          180,
+          12,
+          2
+        ],
+        "position": [
+          96,
+          6,
+          85
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-up",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 61,
+      "op": "add",
+      "time": "2026-11-01T11:01:00.000Z",
+      "author": "jimmy",
+      "note": "add Frying pan",
+      "object": {
+        "uuid": "kitchen-mockup-v11-fx-pan",
+        "name": "Frying pan",
+        "description": "hung on the backsplash above the stove, face toward the room",
+        "type": "cylinder",
+        "dimensions": [
+          7,
+          1.5
+        ],
+        "position": [
+          110,
+          1.6,
+          66
+        ],
+        "rotation_y": 0,
+        "rotation_x": 90,
+        "parent": "kitchen-mockup-v11-g-fx",
+        "material": "iron"
+      }
+    },
+    {
+      "seq": 62,
+      "op": "add",
+      "time": "2026-11-01T11:02:00.000Z",
+      "author": "jimmy",
+      "note": "add Pan handle",
+      "object": {
+        "uuid": "kitchen-mockup-v11-fx-pan-handle",
+        "name": "Pan handle",
+        "description": "handle pointing down",
+        "type": "box",
+        "dimensions": [
+          1.1999999999999886,
+          1.2000000000000002,
+          10
+        ],
+        "position": [
+          110,
+          1.6,
+          54
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-fx",
+        "material": "black"
+      }
+    },
+    {
+      "seq": 63,
+      "op": "add",
+      "time": "2026-11-01T11:03:00.000Z",
+      "author": "jimmy",
+      "note": "add Hook 1",
+      "object": {
+        "uuid": "kitchen-mockup-v11-fx-hook-1",
+        "name": "Hook 1",
+        "description": "small hook on the backsplash",
+        "type": "sphere",
+        "dimensions": [
+          0.8
+        ],
+        "position": [
+          78,
+          1.2,
+          44
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-fx",
+        "material": "chrome"
+      }
+    },
+    {
+      "seq": 64,
+      "op": "add",
+      "time": "2026-11-01T11:04:00.000Z",
+      "author": "jimmy",
+      "note": "add Hook 2",
+      "object": {
+        "uuid": "kitchen-mockup-v11-fx-hook-2",
+        "name": "Hook 2",
+        "description": "small hook on the backsplash",
+        "type": "sphere",
+        "dimensions": [
+          0.8
+        ],
+        "position": [
+          70,
+          1.2,
+          44
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-fx",
+        "material": "chrome"
+      }
+    },
+    {
+      "seq": 65,
+      "op": "add",
+      "time": "2026-11-01T11:05:00.000Z",
+      "author": "jimmy",
+      "note": "add Hook 3",
+      "object": {
+        "uuid": "kitchen-mockup-v11-fx-hook-3",
+        "name": "Hook 3",
+        "description": "small hook on the backsplash",
+        "type": "sphere",
+        "dimensions": [
+          0.8
+        ],
+        "position": [
+          62,
+          1.2,
+          44
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-fx",
+        "material": "chrome"
+      }
+    },
+    {
+      "seq": 66,
+      "op": "add",
+      "time": "2026-11-01T11:06:00.000Z",
+      "author": "jimmy",
+      "note": "add Wood bar ledge",
+      "object": {
+        "uuid": "kitchen-mockup-v11-bar-ledge",
+        "name": "Wood bar ledge",
+        "description": "top ledge, sticks out toward the room",
+        "type": "box",
+        "dimensions": [
+          8,
+          66,
+          1.5
+        ],
+        "position": [
+          4,
+          57,
+          40.75
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-bar",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 67,
+      "op": "add",
+      "time": "2026-11-01T11:07:00.000Z",
+      "author": "jimmy",
+      "note": "add Sink bowl 1",
+      "object": {
+        "uuid": "kitchen-mockup-v11-sink-bowl-1",
+        "name": "Sink bowl 1",
+        "description": "steel basin, nearer the fridge",
+        "type": "box",
+        "dimensions": [
+          15,
+          12,
+          0.5
+        ],
+        "position": [
+          172.5,
+          64,
+          36.25
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-sink",
+        "material": "bowl"
+      }
+    },
+    {
+      "seq": 68,
+      "op": "add",
+      "time": "2026-11-01T11:08:00.000Z",
+      "author": "jimmy",
+      "note": "add Sink bowl 2",
+      "object": {
+        "uuid": "kitchen-mockup-v11-sink-bowl-2",
+        "name": "Sink bowl 2",
+        "description": "steel basin, toward the open end",
+        "type": "box",
+        "dimensions": [
+          15,
+          12,
+          0.5
+        ],
+        "position": [
+          172.5,
+          80,
+          36.25
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-sink",
+        "material": "bowl"
+      }
+    },
+    {
+      "seq": 69,
+      "op": "add",
+      "time": "2026-11-01T11:09:00.000Z",
+      "author": "jimmy",
+      "note": "add Faucet 1",
+      "object": {
+        "uuid": "kitchen-mockup-v11-sink-faucet-1",
+        "name": "Faucet 1",
+        "description": "over bowl 1, against the wall",
+        "type": "cylinder",
+        "dimensions": [
+          0.9,
+          10
+        ],
+        "position": [
+          183,
+          64,
+          41
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-sink",
+        "material": "chrome"
+      }
+    },
+    {
+      "seq": 70,
+      "op": "add",
+      "time": "2026-11-01T11:10:00.000Z",
+      "author": "jimmy",
+      "note": "add Faucet 1 spout",
+      "object": {
+        "uuid": "kitchen-mockup-v11-sink-faucet-1-spout",
+        "name": "Faucet 1 spout",
+        "description": "reaches over bowl 1",
+        "type": "box",
+        "dimensions": [
+          5,
+          1,
+          1
+        ],
+        "position": [
+          180.5,
+          64,
+          45
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-sink",
+        "material": "chrome"
+      }
+    },
+    {
+      "seq": 71,
+      "op": "add",
+      "time": "2026-11-01T11:11:00.000Z",
+      "author": "jimmy",
+      "note": "add Faucet 2",
+      "object": {
+        "uuid": "kitchen-mockup-v11-sink-faucet-2",
+        "name": "Faucet 2",
+        "description": "over bowl 2, against the wall",
+        "type": "cylinder",
+        "dimensions": [
+          0.9,
+          10
+        ],
+        "position": [
+          183,
+          80,
+          41
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-sink",
+        "material": "chrome"
+      }
+    },
+    {
+      "seq": 72,
+      "op": "add",
+      "time": "2026-11-01T11:12:00.000Z",
+      "author": "jimmy",
+      "note": "add Faucet 2 spout",
+      "object": {
+        "uuid": "kitchen-mockup-v11-sink-faucet-2-spout",
+        "name": "Faucet 2 spout",
+        "description": "reaches over bowl 2",
+        "type": "box",
+        "dimensions": [
+          5,
+          1,
+          1
+        ],
+        "position": [
+          180.5,
+          80,
+          45
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-sink",
+        "material": "chrome"
+      }
+    },
+    {
+      "seq": 73,
+      "op": "add",
+      "time": "2026-11-01T11:13:00.000Z",
+      "author": "jimmy",
+      "note": "add Light cord",
+      "object": {
+        "uuid": "kitchen-mockup-v11-fx-bulb-cord",
+        "name": "Light cord",
+        "description": "hangs from the ceiling",
+        "type": "cylinder",
+        "dimensions": [
+          0.25,
+          15
+        ],
+        "position": [
+          174,
+          40,
+          88.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-fx",
+        "material": "black"
+      }
+    },
+    {
+      "seq": 74,
+      "op": "add",
+      "time": "2026-11-01T11:14:00.000Z",
+      "author": "jimmy",
+      "note": "add Ceiling light bulb",
+      "object": {
+        "uuid": "kitchen-mockup-v11-fx-bulb",
+        "name": "Ceiling light bulb",
+        "description": "over the sink run",
+        "type": "sphere",
+        "dimensions": [
+          2.2
+        ],
+        "position": [
+          174,
+          40,
+          79
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-fx",
+        "material": "bulb"
+      }
+    },
+    {
+      "seq": 75,
+      "op": "add",
+      "time": "2026-11-01T11:15:00.000Z",
+      "author": "jimmy",
+      "note": "add Yellow wall panel",
+      "object": {
+        "uuid": "kitchen-mockup-v11-shell-yellow",
+        "name": "Yellow wall panel",
+        "description": "yellow panel above the cabinets, on the back wall",
+        "type": "box",
+        "dimensions": [
+          94,
+          0.5,
+          10
+        ],
+        "position": [
+          47,
+          0.25,
+          91
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-shell",
+        "material": "yellow"
+      }
+    },
+    {
+      "seq": 76,
+      "op": "add",
+      "time": "2026-11-01T11:16:00.000Z",
+      "author": "jimmy",
+      "note": "add Base side, back left",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-bl-side",
+        "name": "Base side, back left",
+        "description": "left end panel of the open bay",
+        "type": "box",
+        "dimensions": [
+          1,
+          24,
+          34
+        ],
+        "position": [
+          185.5,
+          12,
+          17.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 77,
+      "op": "add",
+      "time": "2026-11-01T11:17:00.000Z",
+      "author": "jimmy",
+      "note": "add Base cabinets, back left, right of the bay",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-bl-run",
+        "name": "Base cabinets, back left, right of the bay",
+        "description": "closed cabinet right of the open bay",
+        "type": "box",
+        "dimensions": [
+          31,
+          24,
+          34
+        ],
+        "position": [
+          141.5,
+          12,
+          17.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 78,
+      "op": "add",
+      "time": "2026-11-01T11:18:00.000Z",
+      "author": "jimmy",
+      "note": "add Bay top",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-bl-bay-top",
+        "name": "Bay top",
+        "description": "top of the open bay, under the counter",
+        "type": "box",
+        "dimensions": [
+          28,
+          24,
+          2
+        ],
+        "position": [
+          171,
+          12,
+          33.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 79,
+      "op": "add",
+      "time": "2026-11-01T11:19:00.000Z",
+      "author": "jimmy",
+      "note": "add Bay bottom",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-bl-bay-bottom",
+        "name": "Bay bottom",
+        "description": "floor of the open bay",
+        "type": "box",
+        "dimensions": [
+          28,
+          24,
+          1
+        ],
+        "position": [
+          171,
+          12,
+          1
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 80,
+      "op": "add",
+      "time": "2026-11-01T11:20:00.000Z",
+      "author": "jimmy",
+      "note": "add Bay back",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-bl-bay-back",
+        "name": "Bay back",
+        "description": "closes the bay at the wall",
+        "type": "box",
+        "dimensions": [
+          28,
+          1,
+          31
+        ],
+        "position": [
+          171,
+          0.5,
+          17
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 81,
+      "op": "add",
+      "time": "2026-11-01T11:21:00.000Z",
+      "author": "jimmy",
+      "note": "add Open shelf 1",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-bl-shelf-1",
+        "name": "Open shelf 1",
+        "description": "wood shelf in the bay",
+        "type": "box",
+        "dimensions": [
+          28,
+          23,
+          1
+        ],
+        "position": [
+          171,
+          12.5,
+          12.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 82,
+      "op": "add",
+      "time": "2026-11-01T11:22:00.000Z",
+      "author": "jimmy",
+      "note": "add Open shelf 2",
+      "object": {
+        "uuid": "kitchen-mockup-v11-back-bl-shelf-2",
+        "name": "Open shelf 2",
+        "description": "wood shelf in the bay",
+        "type": "box",
+        "dimensions": [
+          28,
+          23,
+          1
+        ],
+        "position": [
+          171,
+          12.5,
+          22.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-mockup-v11-g-back",
+        "material": "wood"
+      }
+    }
+  ]
+}

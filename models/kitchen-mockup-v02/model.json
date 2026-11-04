@@ -1,0 +1,492 @@
+{
+  "model_id": "kitchen-mockup-v02",
+  "name": "Kitchen mockup V02",
+  "description": "Kitchen mockup from photos, estimated sizes in inches. V02: review of V01. Steel counter tops, checkered tile insets with terracotta patches.",
+  "units": "in",
+  "up": "z",
+  "world": "default-world",
+  "view": {
+    "azimuth_deg": 214
+  },
+  "materials": {
+    "wall": {
+      "color": "#f4f0e6",
+      "opacity": 1
+    },
+    "floor": {
+      "color": "#8c9094",
+      "opacity": 1
+    },
+    "green": {
+      "color": "#3f9b5a",
+      "opacity": 1
+    },
+    "yellow": {
+      "color": "#e8b43a",
+      "opacity": 1
+    },
+    "cabinet": {
+      "color": "#f1ead8",
+      "opacity": 1
+    },
+    "wood": {
+      "color": "#7a4e2d",
+      "opacity": 1
+    },
+    "steel": {
+      "color": "#c9ced3",
+      "opacity": 1
+    },
+    "tile": {
+      "color": "#e8c35a",
+      "opacity": 1
+    },
+    "tileRed": {
+      "color": "#b5573a",
+      "opacity": 1
+    },
+    "chrome": {
+      "color": "#e3e7ea",
+      "opacity": 1
+    },
+    "black": {
+      "color": "#1e1f22",
+      "opacity": 1
+    },
+    "bowl": {
+      "color": "#7d858c",
+      "opacity": 1
+    },
+    "bulb": {
+      "color": "#fff0a6",
+      "opacity": 1
+    },
+    "iron": {
+      "color": "#40454b",
+      "opacity": 1
+    }
+  },
+  "objects": [
+    {
+      "description": "kitchen floor, room footprint",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "floor",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v02-shell-floor",
+      "name": "Floor",
+      "type": "box",
+      "dimensions": [
+        186,
+        96,
+        0.5
+      ],
+      "position": [
+        93,
+        48,
+        0.25
+      ]
+    },
+    {
+      "description": "context only",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v02-shell-back",
+      "name": "Back wall",
+      "type": "box",
+      "dimensions": [
+        186,
+        1,
+        96
+      ],
+      "position": [
+        93,
+        -0.5,
+        48
+      ]
+    },
+    {
+      "description": "left wall, green paint, context only",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "green",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v02-shell-left",
+      "name": "Green wall",
+      "type": "box",
+      "dimensions": [
+        2,
+        96,
+        96
+      ],
+      "position": [
+        187,
+        48,
+        48
+      ]
+    },
+    {
+      "description": "left end of the back run",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v02-back-bl",
+      "name": "Base cabinets, back left",
+      "type": "box",
+      "dimensions": [
+        60,
+        24,
+        34
+      ],
+      "position": [
+        156,
+        12,
+        17.5
+      ]
+    },
+    {
+      "description": "the cooker between the two counters",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v02-back-stove",
+      "name": "Stove block",
+      "type": "box",
+      "dimensions": [
+        32,
+        24,
+        34
+      ],
+      "position": [
+        110,
+        12,
+        17.5
+      ]
+    },
+    {
+      "description": "right of the stove",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v02-back-br",
+      "name": "Base cabinets, back right",
+      "type": "box",
+      "dimensions": [
+        88,
+        24,
+        34
+      ],
+      "position": [
+        50,
+        12,
+        17.5
+      ]
+    },
+    {
+      "description": "along the right side of the room, toward the camera",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v02-ret-carcass",
+      "name": "Return run",
+      "type": "box",
+      "dimensions": [
+        24,
+        66,
+        34
+      ],
+      "position": [
+        18,
+        57,
+        17.5
+      ]
+    },
+    {
+      "description": "along the left wall: fridge end, drawers, sink",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v02-sink-carcass",
+      "name": "Sink run",
+      "type": "box",
+      "dimensions": [
+        24,
+        66,
+        34
+      ],
+      "position": [
+        174,
+        57,
+        17.5
+      ]
+    },
+    {
+      "description": "dark wood bar on the outside of the return run",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v02-bar-wood",
+      "name": "Wood bar",
+      "type": "box",
+      "dimensions": [
+        4,
+        66,
+        40
+      ],
+      "position": [
+        4,
+        57,
+        20
+      ]
+    },
+    {
+      "description": "steel top",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v02-back-top-bl",
+      "name": "Counter, back left",
+      "type": "box",
+      "dimensions": [
+        60,
+        24,
+        1.5
+      ],
+      "position": [
+        156,
+        12,
+        35.25
+      ]
+    },
+    {
+      "description": "steel cooktop surface",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v02-back-top-stove",
+      "name": "Stove top",
+      "type": "box",
+      "dimensions": [
+        32,
+        24,
+        1.5
+      ],
+      "position": [
+        110,
+        12,
+        35.25
+      ]
+    },
+    {
+      "description": "steel top",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v02-back-top-br",
+      "name": "Counter, back right",
+      "type": "box",
+      "dimensions": [
+        88,
+        24,
+        1.5
+      ],
+      "position": [
+        50,
+        12,
+        35.25
+      ]
+    },
+    {
+      "description": "steel top",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v02-ret-top",
+      "name": "Return counter",
+      "type": "box",
+      "dimensions": [
+        24,
+        66,
+        1.5
+      ],
+      "position": [
+        18,
+        57,
+        35.25
+      ]
+    },
+    {
+      "description": "steel top",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v02-sink-top",
+      "name": "Sink counter",
+      "type": "box",
+      "dimensions": [
+        24,
+        66,
+        1.5
+      ],
+      "position": [
+        174,
+        57,
+        35.25
+      ]
+    },
+    {
+      "description": "yellow tile inset",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "tile",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v02-back-tile-bl",
+      "name": "Tile, back left",
+      "type": "box",
+      "dimensions": [
+        56,
+        20,
+        0.5
+      ],
+      "position": [
+        156,
+        12,
+        36.25
+      ]
+    },
+    {
+      "description": "terracotta tile patch",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "tileRed",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v02-back-tile-bl-red",
+      "name": "Red tile patch, back left",
+      "type": "box",
+      "dimensions": [
+        12,
+        8,
+        0.25
+      ],
+      "position": [
+        172,
+        6,
+        36.625
+      ]
+    },
+    {
+      "description": "yellow tile inset",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "tile",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v02-back-tile-br",
+      "name": "Tile, back right",
+      "type": "box",
+      "dimensions": [
+        60,
+        20,
+        0.5
+      ],
+      "position": [
+        62,
+        12,
+        36.25
+      ]
+    },
+    {
+      "description": "terracotta tile patch",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "tileRed",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v02-back-tile-br-red",
+      "name": "Red tile patch, back right",
+      "type": "box",
+      "dimensions": [
+        12,
+        10,
+        0.25
+      ],
+      "position": [
+        70,
+        17,
+        36.625
+      ]
+    },
+    {
+      "description": "yellow tile inset",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "tile",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v02-ret-tile",
+      "name": "Tile, return run",
+      "type": "box",
+      "dimensions": [
+        20,
+        62,
+        0.5
+      ],
+      "position": [
+        18,
+        57,
+        36.25
+      ]
+    },
+    {
+      "description": "terracotta tile patch",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "tileRed",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v02-ret-tile-red",
+      "name": "Red tile patch, return run",
+      "type": "box",
+      "dimensions": [
+        16,
+        10,
+        0.25
+      ],
+      "position": [
+        18,
+        65,
+        36.625
+      ]
+    }
+  ],
+  "version": 20
+}

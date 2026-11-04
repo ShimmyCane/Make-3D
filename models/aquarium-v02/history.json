@@ -1,0 +1,4321 @@
+{
+  "schema": "make3d.history/0.1",
+  "model_id": "aquarium-v02",
+  "header": {
+    "model_id": "aquarium-v02",
+    "name": "Grand Ocean Aquarium V02",
+    "description": "Grand Ocean Aquarium, increment 2 of 6 (about 150 objects). A 100 x 60 x 28 ft tank, two storeys tall, with a 100 ft walk-through tunnel, and from V06 small rooms on two levels. Tap an animal to read about it. Sizes are estimates, in inches.",
+    "units": "in",
+    "up": "z",
+    "world": "aquarium-world",
+    "materials": {
+      "sand": {
+        "color": "#f2e4c4",
+        "opacity": 1
+      },
+      "rock": {
+        "color": "#bdb5a8",
+        "opacity": 1
+      },
+      "rock2": {
+        "color": "#d3cbbd",
+        "opacity": 1
+      },
+      "glass": {
+        "color": "#bfe6f2",
+        "opacity": 0.2
+      },
+      "water": {
+        "color": "#8fd3e6",
+        "opacity": 0.09
+      },
+      "surface": {
+        "color": "#a9e2ee",
+        "opacity": 0.3
+      },
+      "concrete": {
+        "color": "#ebe6da",
+        "opacity": 1
+      },
+      "deck": {
+        "color": "#e2b98f",
+        "opacity": 1
+      },
+      "roof": {
+        "color": "#f7c9bd",
+        "opacity": 0.3
+      },
+      "steel": {
+        "color": "#b9c0ca",
+        "opacity": 1
+      },
+      "acrylic": {
+        "color": "#d7eef5",
+        "opacity": 0.22
+      },
+      "rib": {
+        "color": "#c9d6df",
+        "opacity": 1
+      },
+      "lamp": {
+        "color": "#fff1a8",
+        "opacity": 1
+      },
+      "sign": {
+        "color": "#fff8e7",
+        "opacity": 1
+      },
+      "bench": {
+        "color": "#e9b99a",
+        "opacity": 1
+      },
+      "mint": {
+        "color": "#a6e3d7",
+        "opacity": 1
+      },
+      "beam": {
+        "color": "#ffe9a6",
+        "opacity": 0.16
+      },
+      "wall": {
+        "color": "#e4dccb",
+        "opacity": 0.5
+      },
+      "coral": {
+        "color": "#f4a38c",
+        "opacity": 1
+      },
+      "shark": {
+        "color": "#aeb9c4",
+        "opacity": 1
+      },
+      "zebra": {
+        "color": "#ecd79c",
+        "opacity": 1
+      },
+      "spot": {
+        "color": "#8a6f4a",
+        "opacity": 1
+      },
+      "bonnet": {
+        "color": "#b9c3a8",
+        "opacity": 1
+      },
+      "leopard": {
+        "color": "#d8cdb2",
+        "opacity": 1
+      },
+      "blacktip": {
+        "color": "#bdb9b1",
+        "opacity": 1
+      },
+      "bass": {
+        "color": "#8c9aa8",
+        "opacity": 1
+      },
+      "garibaldi": {
+        "color": "#ffa05c",
+        "opacity": 1
+      },
+      "sheephead": {
+        "color": "#ec8c92",
+        "opacity": 1
+      },
+      "moray": {
+        "color": "#a8b87c",
+        "opacity": 1
+      },
+      "yellowtail": {
+        "color": "#d9d08a",
+        "opacity": 1
+      },
+      "barracuda": {
+        "color": "#a9b5bf",
+        "opacity": 1
+      },
+      "ray": {
+        "color": "#9a8fae",
+        "opacity": 1
+      },
+      "eagle": {
+        "color": "#86a0b8",
+        "opacity": 1
+      },
+      "turtle": {
+        "color": "#b3aa72",
+        "opacity": 1
+      },
+      "turtleSkin": {
+        "color": "#cfc79a",
+        "opacity": 1
+      },
+      "anchovy": {
+        "color": "#d8e3ec",
+        "opacity": 1
+      },
+      "sardine": {
+        "color": "#b8cbdc",
+        "opacity": 1
+      },
+      "blacksmith": {
+        "color": "#8f9ac2",
+        "opacity": 1
+      },
+      "tang": {
+        "color": "#8fb8f0",
+        "opacity": 1
+      },
+      "yellowTang": {
+        "color": "#ffe27a",
+        "opacity": 1
+      },
+      "idol": {
+        "color": "#f3efd0",
+        "opacity": 1
+      },
+      "sergeant": {
+        "color": "#e5e7a8",
+        "opacity": 1
+      },
+      "opaleye": {
+        "color": "#9bb59a",
+        "opacity": 1
+      },
+      "clown": {
+        "color": "#ff9a5a",
+        "opacity": 1
+      },
+      "ink": {
+        "color": "#2d2a26",
+        "opacity": 1
+      },
+      "white": {
+        "color": "#fffdf6",
+        "opacity": 1
+      },
+      "jelly": {
+        "color": "#f2c7e6",
+        "opacity": 0.75
+      },
+      "kelp": {
+        "color": "#9fb86a",
+        "opacity": 1
+      },
+      "kelp2": {
+        "color": "#b5c97c",
+        "opacity": 1
+      },
+      "stem": {
+        "color": "#8aa05a",
+        "opacity": 1
+      },
+      "grass": {
+        "color": "#8fd08a",
+        "opacity": 1
+      },
+      "fan": {
+        "color": "#e88fb0",
+        "opacity": 1
+      },
+      "coralY": {
+        "color": "#ffd36e",
+        "opacity": 1
+      },
+      "coralP": {
+        "color": "#c7a8e8",
+        "opacity": 1
+      },
+      "urchin": {
+        "color": "#7d6fa8",
+        "opacity": 1
+      },
+      "star": {
+        "color": "#ff8f6a",
+        "opacity": 1
+      },
+      "anemone": {
+        "color": "#f6a6c1",
+        "opacity": 1
+      },
+      "skin": {
+        "color": "#f2c9a5",
+        "opacity": 1
+      },
+      "shirtA": {
+        "color": "#8fc4f0",
+        "opacity": 1
+      },
+      "shirtB": {
+        "color": "#f7a8a0",
+        "opacity": 1
+      },
+      "shirtC": {
+        "color": "#c7b2ea",
+        "opacity": 1
+      },
+      "suit": {
+        "color": "#4a5a73",
+        "opacity": 1
+      },
+      "tankgas": {
+        "color": "#f2c94c",
+        "opacity": 1
+      },
+      "bubble": {
+        "color": "#e8f7fb",
+        "opacity": 0.6
+      }
+    }
+  },
+  "operations": [
+    {
+      "seq": 1,
+      "op": "add",
+      "time": "2026-11-01T10:01:00.000Z",
+      "author": "jimmy",
+      "note": "add Main tank",
+      "object": {
+        "uuid": "aquarium-v02-tank",
+        "name": "Main tank",
+        "description": "the big pool: 100 x 60 ft, 28 ft of water. Sand floor, glass walls, a tunnel through the middle",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 2,
+      "op": "add",
+      "time": "2026-11-01T10:02:00.000Z",
+      "author": "jimmy",
+      "note": "add Sand floor",
+      "object": {
+        "uuid": "aquarium-v02-sand",
+        "name": "Sand floor",
+        "description": "the sandy bottom of the tank, 1 ft deep",
+        "type": "box",
+        "dimensions": [
+          1200,
+          720,
+          12
+        ],
+        "position": [
+          0,
+          0,
+          6
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-tank",
+        "material": "sand"
+      }
+    },
+    {
+      "seq": 3,
+      "op": "add",
+      "time": "2026-11-01T10:03:00.000Z",
+      "author": "jimmy",
+      "note": "add Water",
+      "object": {
+        "uuid": "aquarium-v02-water",
+        "name": "Water",
+        "description": "the water in the tank, about 28 ft deep (see-through)",
+        "type": "box",
+        "dimensions": [
+          1200,
+          720,
+          324
+        ],
+        "position": [
+          0,
+          0,
+          174
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-tank",
+        "material": "water"
+      }
+    },
+    {
+      "seq": 4,
+      "op": "add",
+      "time": "2026-11-01T10:04:00.000Z",
+      "author": "jimmy",
+      "note": "add Water surface",
+      "object": {
+        "uuid": "aquarium-v02-surface",
+        "name": "Water surface",
+        "description": "the top of the pool",
+        "type": "box",
+        "dimensions": [
+          1200,
+          720,
+          2.4
+        ],
+        "position": [
+          0,
+          0,
+          336
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-tank",
+        "material": "surface"
+      }
+    },
+    {
+      "seq": 5,
+      "op": "add",
+      "time": "2026-11-01T10:05:00.000Z",
+      "author": "jimmy",
+      "note": "add Tank glass: front",
+      "object": {
+        "uuid": "aquarium-v02-glass-front",
+        "name": "Tank glass: front",
+        "description": "thick acrylic wall of the tank",
+        "type": "box",
+        "dimensions": [
+          1200,
+          7.2,
+          324
+        ],
+        "position": [
+          0,
+          -360,
+          174
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-tank",
+        "material": "glass"
+      }
+    },
+    {
+      "seq": 6,
+      "op": "add",
+      "time": "2026-11-01T10:06:00.000Z",
+      "author": "jimmy",
+      "note": "add Tank glass: back",
+      "object": {
+        "uuid": "aquarium-v02-glass-back",
+        "name": "Tank glass: back",
+        "description": "thick acrylic wall of the tank",
+        "type": "box",
+        "dimensions": [
+          1200,
+          7.2,
+          324
+        ],
+        "position": [
+          0,
+          360,
+          174
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-tank",
+        "material": "glass"
+      }
+    },
+    {
+      "seq": 7,
+      "op": "add",
+      "time": "2026-11-01T10:07:00.000Z",
+      "author": "jimmy",
+      "note": "add Tank glass: west",
+      "object": {
+        "uuid": "aquarium-v02-glass-west",
+        "name": "Tank glass: west",
+        "description": "thick acrylic wall of the tank",
+        "type": "box",
+        "dimensions": [
+          7.2,
+          720,
+          324
+        ],
+        "position": [
+          -600,
+          0,
+          174
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-tank",
+        "material": "glass"
+      }
+    },
+    {
+      "seq": 8,
+      "op": "add",
+      "time": "2026-11-01T10:08:00.000Z",
+      "author": "jimmy",
+      "note": "add Tank glass: east",
+      "object": {
+        "uuid": "aquarium-v02-glass-east",
+        "name": "Tank glass: east",
+        "description": "thick acrylic wall of the tank",
+        "type": "box",
+        "dimensions": [
+          7.2,
+          720,
+          324
+        ],
+        "position": [
+          600,
+          0,
+          174
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-tank",
+        "material": "glass"
+      }
+    },
+    {
+      "seq": 9,
+      "op": "add",
+      "time": "2026-11-01T10:09:00.000Z",
+      "author": "jimmy",
+      "note": "add Pool rim: front",
+      "object": {
+        "uuid": "aquarium-v02-rim-front",
+        "name": "Pool rim: front",
+        "description": "concrete edge round the top of the pool",
+        "type": "box",
+        "dimensions": [
+          1224,
+          24,
+          18
+        ],
+        "position": [
+          0,
+          -372,
+          339
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-tank",
+        "material": "concrete"
+      }
+    },
+    {
+      "seq": 10,
+      "op": "add",
+      "time": "2026-11-01T10:10:00.000Z",
+      "author": "jimmy",
+      "note": "add Pool rim: back",
+      "object": {
+        "uuid": "aquarium-v02-rim-back",
+        "name": "Pool rim: back",
+        "description": "concrete edge round the top of the pool",
+        "type": "box",
+        "dimensions": [
+          1224,
+          24,
+          18
+        ],
+        "position": [
+          0,
+          372,
+          339
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-tank",
+        "material": "concrete"
+      }
+    },
+    {
+      "seq": 11,
+      "op": "add",
+      "time": "2026-11-01T10:11:00.000Z",
+      "author": "jimmy",
+      "note": "add Pool rim: west",
+      "object": {
+        "uuid": "aquarium-v02-rim-west",
+        "name": "Pool rim: west",
+        "description": "concrete edge round the top of the pool",
+        "type": "box",
+        "dimensions": [
+          24,
+          744,
+          18
+        ],
+        "position": [
+          -612,
+          0,
+          339
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-tank",
+        "material": "concrete"
+      }
+    },
+    {
+      "seq": 12,
+      "op": "add",
+      "time": "2026-11-01T10:12:00.000Z",
+      "author": "jimmy",
+      "note": "add Pool rim: east",
+      "object": {
+        "uuid": "aquarium-v02-rim-east",
+        "name": "Pool rim: east",
+        "description": "concrete edge round the top of the pool",
+        "type": "box",
+        "dimensions": [
+          24,
+          744,
+          18
+        ],
+        "position": [
+          612,
+          0,
+          339
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-tank",
+        "material": "concrete"
+      }
+    },
+    {
+      "seq": 13,
+      "op": "add",
+      "time": "2026-11-01T10:13:00.000Z",
+      "author": "jimmy",
+      "note": "add Walk-through tunnel",
+      "object": {
+        "uuid": "aquarium-v02-tunnel",
+        "name": "Walk-through tunnel",
+        "description": "a 100 ft clear tunnel along the tank floor; guests walk under the fish. Acrylic is about 10 ft across",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 14,
+      "op": "add",
+      "time": "2026-11-01T10:14:00.000Z",
+      "author": "jimmy",
+      "note": "add Acrylic tunnel tube",
+      "object": {
+        "uuid": "aquarium-v02-tunnel-tube",
+        "name": "Acrylic tunnel tube",
+        "description": "thick clear acrylic, round, 10 ft across, 112 ft long",
+        "type": "cylinder",
+        "dimensions": [
+          62.4,
+          1344
+        ],
+        "position": [
+          0,
+          0,
+          72
+        ],
+        "rotation_y": 90,
+        "parent": "aquarium-v02-tunnel",
+        "material": "acrylic"
+      }
+    },
+    {
+      "seq": 15,
+      "op": "add",
+      "time": "2026-11-01T10:15:00.000Z",
+      "author": "jimmy",
+      "note": "add Tunnel walkway",
+      "object": {
+        "uuid": "aquarium-v02-tunnel-floor",
+        "name": "Tunnel walkway",
+        "description": "the floor guests walk on",
+        "type": "box",
+        "dimensions": [
+          1344,
+          72,
+          4.8
+        ],
+        "position": [
+          0,
+          0,
+          14.4
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-tunnel",
+        "material": "concrete"
+      }
+    },
+    {
+      "seq": 16,
+      "op": "add",
+      "time": "2026-11-01T10:16:00.000Z",
+      "author": "jimmy",
+      "note": "add Tunnel entrance portal",
+      "object": {
+        "uuid": "aquarium-v02-portal-1",
+        "name": "Tunnel entrance portal",
+        "description": "steel frame where the tunnel leaves the tank",
+        "type": "box",
+        "dimensions": [
+          36,
+          144,
+          144
+        ],
+        "position": [
+          -672,
+          0,
+          78
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-tunnel",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 17,
+      "op": "add",
+      "time": "2026-11-01T10:17:00.000Z",
+      "author": "jimmy",
+      "note": "add Tunnel exit portal",
+      "object": {
+        "uuid": "aquarium-v02-portal-2",
+        "name": "Tunnel exit portal",
+        "description": "steel frame where the tunnel leaves the tank",
+        "type": "box",
+        "dimensions": [
+          36,
+          144,
+          144
+        ],
+        "position": [
+          672,
+          0,
+          78
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-tunnel",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 18,
+      "op": "add",
+      "time": "2026-11-01T10:18:00.000Z",
+      "author": "jimmy",
+      "note": "add Entry lobby",
+      "object": {
+        "uuid": "aquarium-v02-lobby",
+        "name": "Entry lobby",
+        "description": "where guests enter, at the west end",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 19,
+      "op": "add",
+      "time": "2026-11-01T10:19:00.000Z",
+      "author": "jimmy",
+      "note": "add Lobby floor",
+      "object": {
+        "uuid": "aquarium-v02-lobby-floor",
+        "name": "Lobby floor",
+        "description": "polished concrete",
+        "type": "box",
+        "dimensions": [
+          288,
+          360,
+          6
+        ],
+        "position": [
+          -804,
+          0,
+          3
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-lobby",
+        "material": "concrete"
+      }
+    },
+    {
+      "seq": 20,
+      "op": "add",
+      "time": "2026-11-01T10:20:00.000Z",
+      "author": "jimmy",
+      "note": "add Lobby wall N",
+      "object": {
+        "uuid": "aquarium-v02-lobby-wall-n",
+        "name": "Lobby wall N",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          288,
+          7.2,
+          168
+        ],
+        "position": [
+          -804,
+          180,
+          87
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-lobby",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 21,
+      "op": "add",
+      "time": "2026-11-01T10:21:00.000Z",
+      "author": "jimmy",
+      "note": "add Lobby wall S",
+      "object": {
+        "uuid": "aquarium-v02-lobby-wall-s",
+        "name": "Lobby wall S",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          288,
+          7.2,
+          168
+        ],
+        "position": [
+          -804,
+          -180,
+          87
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-lobby",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 22,
+      "op": "add",
+      "time": "2026-11-01T10:22:00.000Z",
+      "author": "jimmy",
+      "note": "add Lobby wall W",
+      "object": {
+        "uuid": "aquarium-v02-lobby-wall-w",
+        "name": "Lobby wall W",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          7.2,
+          360,
+          168
+        ],
+        "position": [
+          -948,
+          0,
+          87
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-lobby",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 23,
+      "op": "add",
+      "time": "2026-11-01T10:23:00.000Z",
+      "author": "jimmy",
+      "note": "add Lobby roof",
+      "object": {
+        "uuid": "aquarium-v02-lobby-roof",
+        "name": "Lobby roof",
+        "description": "see-through so you can look in",
+        "type": "box",
+        "dimensions": [
+          300,
+          372,
+          7.2
+        ],
+        "position": [
+          -804,
+          0,
+          174
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-lobby",
+        "material": "roof"
+      }
+    },
+    {
+      "seq": 24,
+      "op": "add",
+      "time": "2026-11-01T10:24:00.000Z",
+      "author": "jimmy",
+      "note": "add Ticket desk",
+      "object": {
+        "uuid": "aquarium-v02-lobby-desk",
+        "name": "Ticket desk",
+        "description": "guests check in here",
+        "type": "box",
+        "dimensions": [
+          120,
+          36,
+          36
+        ],
+        "position": [
+          -840,
+          96,
+          21
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-lobby",
+        "material": "bench"
+      }
+    },
+    {
+      "seq": 25,
+      "op": "add",
+      "time": "2026-11-01T10:25:00.000Z",
+      "author": "jimmy",
+      "note": "add Entrance doors",
+      "object": {
+        "uuid": "aquarium-v02-lobby-door",
+        "name": "Entrance doors",
+        "description": "the way in from the street",
+        "type": "box",
+        "dimensions": [
+          7.2,
+          96,
+          96
+        ],
+        "position": [
+          -948,
+          0,
+          51
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-lobby",
+        "material": "mint"
+      }
+    },
+    {
+      "seq": 26,
+      "op": "add",
+      "time": "2026-11-01T10:26:00.000Z",
+      "author": "jimmy",
+      "note": "add Exit hall",
+      "object": {
+        "uuid": "aquarium-v02-exit",
+        "name": "Exit hall",
+        "description": "the east end of the tunnel; gift shop and exit",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 27,
+      "op": "add",
+      "time": "2026-11-01T10:27:00.000Z",
+      "author": "jimmy",
+      "note": "add Exit hall floor",
+      "object": {
+        "uuid": "aquarium-v02-exit-floor",
+        "name": "Exit hall floor",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          264,
+          360,
+          6
+        ],
+        "position": [
+          804,
+          0,
+          3
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-exit",
+        "material": "concrete"
+      }
+    },
+    {
+      "seq": 28,
+      "op": "add",
+      "time": "2026-11-01T10:28:00.000Z",
+      "author": "jimmy",
+      "note": "add Exit wall N",
+      "object": {
+        "uuid": "aquarium-v02-exit-wall-n",
+        "name": "Exit wall N",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          264,
+          7.2,
+          168
+        ],
+        "position": [
+          804,
+          180,
+          87
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-exit",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 29,
+      "op": "add",
+      "time": "2026-11-01T10:29:00.000Z",
+      "author": "jimmy",
+      "note": "add Exit wall S",
+      "object": {
+        "uuid": "aquarium-v02-exit-wall-s",
+        "name": "Exit wall S",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          264,
+          7.2,
+          168
+        ],
+        "position": [
+          804,
+          -180,
+          87
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-exit",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 30,
+      "op": "add",
+      "time": "2026-11-01T10:30:00.000Z",
+      "author": "jimmy",
+      "note": "add Exit wall E",
+      "object": {
+        "uuid": "aquarium-v02-exit-wall-e",
+        "name": "Exit wall E",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          7.2,
+          360,
+          168
+        ],
+        "position": [
+          936,
+          0,
+          87
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-exit",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 31,
+      "op": "add",
+      "time": "2026-11-01T10:31:00.000Z",
+      "author": "jimmy",
+      "note": "add Exit hall roof",
+      "object": {
+        "uuid": "aquarium-v02-exit-roof",
+        "name": "Exit hall roof",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          276,
+          372,
+          7.2
+        ],
+        "position": [
+          804,
+          0,
+          174
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-exit",
+        "material": "roof"
+      }
+    },
+    {
+      "seq": 32,
+      "op": "add",
+      "time": "2026-11-01T10:32:00.000Z",
+      "author": "jimmy",
+      "note": "add Gift shop counter",
+      "object": {
+        "uuid": "aquarium-v02-exit-shop",
+        "name": "Gift shop counter",
+        "description": "plush sharks and postcards",
+        "type": "box",
+        "dimensions": [
+          36,
+          144,
+          42
+        ],
+        "position": [
+          864,
+          0,
+          24
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-exit",
+        "material": "bench"
+      }
+    },
+    {
+      "seq": 33,
+      "op": "add",
+      "time": "2026-11-01T10:33:00.000Z",
+      "author": "jimmy",
+      "note": "add Viewing gallery",
+      "object": {
+        "uuid": "aquarium-v02-gallery",
+        "name": "Viewing gallery",
+        "description": "a 100 ft glass wall along the front of the tank, with benches. The main place to sit and watch",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 34,
+      "op": "add",
+      "time": "2026-11-01T10:34:00.000Z",
+      "author": "jimmy",
+      "note": "add Gallery floor",
+      "object": {
+        "uuid": "aquarium-v02-gallery-floor",
+        "name": "Gallery floor",
+        "description": "dark floor so the glass glows",
+        "type": "box",
+        "dimensions": [
+          1200,
+          204,
+          6
+        ],
+        "position": [
+          0,
+          -474,
+          3
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-gallery",
+        "material": "concrete"
+      }
+    },
+    {
+      "seq": 35,
+      "op": "add",
+      "time": "2026-11-01T10:35:00.000Z",
+      "author": "jimmy",
+      "note": "add Gallery back wall",
+      "object": {
+        "uuid": "aquarium-v02-gallery-back",
+        "name": "Gallery back wall",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1200,
+          7.2,
+          168
+        ],
+        "position": [
+          0,
+          -576,
+          87
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-gallery",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 36,
+      "op": "add",
+      "time": "2026-11-01T10:36:00.000Z",
+      "author": "jimmy",
+      "note": "add Gallery end wall 1",
+      "object": {
+        "uuid": "aquarium-v02-gallery-end-1",
+        "name": "Gallery end wall 1",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          7.2,
+          204,
+          168
+        ],
+        "position": [
+          -600,
+          -474,
+          87
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-gallery",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 37,
+      "op": "add",
+      "time": "2026-11-01T10:37:00.000Z",
+      "author": "jimmy",
+      "note": "add Gallery end wall 2",
+      "object": {
+        "uuid": "aquarium-v02-gallery-end-2",
+        "name": "Gallery end wall 2",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          7.2,
+          204,
+          168
+        ],
+        "position": [
+          600,
+          -474,
+          87
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-gallery",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 38,
+      "op": "add",
+      "time": "2026-11-01T10:38:00.000Z",
+      "author": "jimmy",
+      "note": "add Gallery roof",
+      "object": {
+        "uuid": "aquarium-v02-gallery-roof",
+        "name": "Gallery roof",
+        "description": "also the deck beside the pool",
+        "type": "box",
+        "dimensions": [
+          1212,
+          216,
+          7.2
+        ],
+        "position": [
+          0,
+          -474,
+          174
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-gallery",
+        "material": "roof"
+      }
+    },
+    {
+      "seq": 39,
+      "op": "add",
+      "time": "2026-11-01T10:39:00.000Z",
+      "author": "jimmy",
+      "note": "add Pool deck",
+      "object": {
+        "uuid": "aquarium-v02-deck",
+        "name": "Pool deck",
+        "description": "walkway round the top of the pool where guests look down at the water",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 40,
+      "op": "add",
+      "time": "2026-11-01T10:40:00.000Z",
+      "author": "jimmy",
+      "note": "add Back deck",
+      "object": {
+        "uuid": "aquarium-v02-deck-back",
+        "name": "Back deck",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1224,
+          72,
+          7.2
+        ],
+        "position": [
+          0,
+          420,
+          333.6
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-deck",
+        "material": "deck"
+      }
+    },
+    {
+      "seq": 41,
+      "op": "add",
+      "time": "2026-11-01T10:41:00.000Z",
+      "author": "jimmy",
+      "note": "add Side deck 1",
+      "object": {
+        "uuid": "aquarium-v02-deck-side-1",
+        "name": "Side deck 1",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          72,
+          744,
+          7.2
+        ],
+        "position": [
+          -648,
+          0,
+          333.6
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-deck",
+        "material": "deck"
+      }
+    },
+    {
+      "seq": 42,
+      "op": "add",
+      "time": "2026-11-01T10:42:00.000Z",
+      "author": "jimmy",
+      "note": "add Side deck 2",
+      "object": {
+        "uuid": "aquarium-v02-deck-side-2",
+        "name": "Side deck 2",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          72,
+          744,
+          7.2
+        ],
+        "position": [
+          648,
+          0,
+          333.6
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-deck",
+        "material": "deck"
+      }
+    },
+    {
+      "seq": 43,
+      "op": "add",
+      "time": "2026-11-01T10:43:00.000Z",
+      "author": "jimmy",
+      "note": "add Rockwork",
+      "object": {
+        "uuid": "aquarium-v02-rocks",
+        "name": "Rockwork",
+        "description": "rock piles on the sand where small fish hide",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 44,
+      "op": "add",
+      "time": "2026-11-01T10:44:00.000Z",
+      "author": "jimmy",
+      "note": "add Rock pile 1",
+      "object": {
+        "uuid": "aquarium-v02-rock-1",
+        "name": "Rock pile 1",
+        "description": "rock pile with crevices where small fish hide",
+        "type": "sphere",
+        "dimensions": [
+          38.4
+        ],
+        "position": [
+          -456,
+          240,
+          38.4
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-rocks",
+        "material": "rock"
+      }
+    },
+    {
+      "seq": 45,
+      "op": "add",
+      "time": "2026-11-01T10:45:00.000Z",
+      "author": "jimmy",
+      "note": "add Rock pile 2",
+      "object": {
+        "uuid": "aquarium-v02-rock-2",
+        "name": "Rock pile 2",
+        "description": "rock pile with crevices where small fish hide",
+        "type": "sphere",
+        "dimensions": [
+          43.2
+        ],
+        "position": [
+          120,
+          264,
+          43.2
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-rocks",
+        "material": "rock2"
+      }
+    },
+    {
+      "seq": 46,
+      "op": "add",
+      "time": "2026-11-01T10:46:00.000Z",
+      "author": "jimmy",
+      "note": "add Rock pile 3",
+      "object": {
+        "uuid": "aquarium-v02-rock-3",
+        "name": "Rock pile 3",
+        "description": "rock pile with crevices where small fish hide",
+        "type": "sphere",
+        "dimensions": [
+          38.4
+        ],
+        "position": [
+          504,
+          -264,
+          38.4
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-rocks",
+        "material": "rock"
+      }
+    },
+    {
+      "seq": 47,
+      "op": "add",
+      "time": "2026-11-01T10:47:00.000Z",
+      "author": "jimmy",
+      "note": "add Rock pile 4",
+      "object": {
+        "uuid": "aquarium-v02-rock-4",
+        "name": "Rock pile 4",
+        "description": "rock pile with crevices where small fish hide",
+        "type": "sphere",
+        "dimensions": [
+          40.8
+        ],
+        "position": [
+          -480,
+          -240,
+          40.8
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-rocks",
+        "material": "rock2"
+      }
+    },
+    {
+      "seq": 48,
+      "op": "add",
+      "time": "2026-11-01T10:48:00.000Z",
+      "author": "jimmy",
+      "note": "add Rock pile 5",
+      "object": {
+        "uuid": "aquarium-v02-rock-5",
+        "name": "Rock pile 5",
+        "description": "rock pile with crevices where small fish hide",
+        "type": "sphere",
+        "dimensions": [
+          28.8
+        ],
+        "position": [
+          -72,
+          -240,
+          28.8
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-rocks",
+        "material": "rock"
+      }
+    },
+    {
+      "seq": 49,
+      "op": "add",
+      "time": "2026-11-01T10:49:00.000Z",
+      "author": "jimmy",
+      "note": "add Rock pile 6",
+      "object": {
+        "uuid": "aquarium-v02-rock-6",
+        "name": "Rock pile 6",
+        "description": "rock pile with crevices where small fish hide",
+        "type": "sphere",
+        "dimensions": [
+          33.6
+        ],
+        "position": [
+          288,
+          -288,
+          33.6
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-rocks",
+        "material": "rock2"
+      }
+    },
+    {
+      "seq": 50,
+      "op": "add",
+      "time": "2026-11-01T10:50:00.000Z",
+      "author": "jimmy",
+      "note": "add Sand tiger shark 1",
+      "object": {
+        "uuid": "aquarium-v02-sandtiger-1",
+        "name": "Sand tiger shark 1",
+        "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          -305.676,
+          -1.236,
+          236.064
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 51,
+      "op": "add",
+      "time": "2026-11-01T10:51:00.000Z",
+      "author": "jimmy",
+      "note": "add Sand tiger shark body",
+      "object": {
+        "uuid": "aquarium-v02-sandtiger-1-body",
+        "name": "Sand tiger shark body",
+        "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+        "type": "cylinder",
+        "dimensions": [
+          7.56,
+          81
+        ],
+        "position": [
+          -302.28,
+          2.964,
+          236.064
+        ],
+        "rotation_y": 90,
+        "rotation_z": -129.035,
+        "parent": "aquarium-v02-sandtiger-1",
+        "material": "shark"
+      }
+    },
+    {
+      "seq": 52,
+      "op": "add",
+      "time": "2026-11-01T10:52:00.000Z",
+      "author": "jimmy",
+      "note": "add Sand tiger shark tail",
+      "object": {
+        "uuid": "aquarium-v02-sandtiger-1-tail",
+        "name": "Sand tiger shark tail",
+        "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+        "type": "box",
+        "dimensions": [
+          12.96,
+          3.24,
+          27
+        ],
+        "position": [
+          -272.352,
+          39.876,
+          240.384
+        ],
+        "rotation_y": 0,
+        "rotation_z": -129.035,
+        "parent": "aquarium-v02-sandtiger-1",
+        "material": "shark"
+      }
+    },
+    {
+      "seq": 53,
+      "op": "add",
+      "time": "2026-11-01T10:53:00.000Z",
+      "author": "jimmy",
+      "note": "add Sand tiger shark snout",
+      "object": {
+        "uuid": "aquarium-v02-sandtiger-1-snout",
+        "name": "Sand tiger shark snout",
+        "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+        "type": "cone",
+        "dimensions": [
+          7.56,
+          21.6
+        ],
+        "position": [
+          -334.584,
+          -36.888,
+          236.064
+        ],
+        "rotation_y": 90,
+        "rotation_z": -129.035,
+        "parent": "aquarium-v02-sandtiger-1",
+        "material": "shark"
+      }
+    },
+    {
+      "seq": 54,
+      "op": "add",
+      "time": "2026-11-01T10:54:00.000Z",
+      "author": "jimmy",
+      "note": "add Sand tiger shark dorsal fin",
+      "object": {
+        "uuid": "aquarium-v02-sandtiger-1-dorsal",
+        "name": "Sand tiger shark dorsal fin",
+        "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+        "type": "cone",
+        "dimensions": [
+          6.48,
+          15.12
+        ],
+        "position": [
+          -305.676,
+          -1.236,
+          251.184
+        ],
+        "rotation_y": 0,
+        "rotation_z": -129.035,
+        "parent": "aquarium-v02-sandtiger-1",
+        "material": "shark"
+      }
+    },
+    {
+      "seq": 55,
+      "op": "add",
+      "time": "2026-11-01T10:55:00.000Z",
+      "author": "jimmy",
+      "note": "add Sand tiger shark 2",
+      "object": {
+        "uuid": "aquarium-v02-sandtiger-2",
+        "name": "Sand tiger shark 2",
+        "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          192.468,
+          -180.228,
+          206.94
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 56,
+      "op": "add",
+      "time": "2026-11-01T10:56:00.000Z",
+      "author": "jimmy",
+      "note": "add Sand tiger shark body",
+      "object": {
+        "uuid": "aquarium-v02-sandtiger-2-body",
+        "name": "Sand tiger shark body",
+        "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+        "type": "cylinder",
+        "dimensions": [
+          7.56,
+          81
+        ],
+        "position": [
+          197.832,
+          -179.592,
+          206.94
+        ],
+        "rotation_y": 90,
+        "rotation_z": -173.234,
+        "parent": "aquarium-v02-sandtiger-2",
+        "material": "shark"
+      }
+    },
+    {
+      "seq": 57,
+      "op": "add",
+      "time": "2026-11-01T10:57:00.000Z",
+      "author": "jimmy",
+      "note": "add Sand tiger shark tail",
+      "object": {
+        "uuid": "aquarium-v02-sandtiger-2-tail",
+        "name": "Sand tiger shark tail",
+        "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+        "type": "box",
+        "dimensions": [
+          12.96,
+          3.24,
+          27
+        ],
+        "position": [
+          245.016,
+          -173.988,
+          211.26
+        ],
+        "rotation_y": 0,
+        "rotation_z": -173.234,
+        "parent": "aquarium-v02-sandtiger-2",
+        "material": "shark"
+      }
+    },
+    {
+      "seq": 58,
+      "op": "add",
+      "time": "2026-11-01T10:58:00.000Z",
+      "author": "jimmy",
+      "note": "add Sand tiger shark snout",
+      "object": {
+        "uuid": "aquarium-v02-sandtiger-2-snout",
+        "name": "Sand tiger shark snout",
+        "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+        "type": "cone",
+        "dimensions": [
+          7.56,
+          21.6
+        ],
+        "position": [
+          146.892,
+          -185.64,
+          206.94
+        ],
+        "rotation_y": 90,
+        "rotation_z": -173.234,
+        "parent": "aquarium-v02-sandtiger-2",
+        "material": "shark"
+      }
+    },
+    {
+      "seq": 59,
+      "op": "add",
+      "time": "2026-11-01T10:59:00.000Z",
+      "author": "jimmy",
+      "note": "add Sand tiger shark dorsal fin",
+      "object": {
+        "uuid": "aquarium-v02-sandtiger-2-dorsal",
+        "name": "Sand tiger shark dorsal fin",
+        "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+        "type": "cone",
+        "dimensions": [
+          6.48,
+          15.12
+        ],
+        "position": [
+          192.468,
+          -180.228,
+          222.06
+        ],
+        "rotation_y": 0,
+        "rotation_z": -173.234,
+        "parent": "aquarium-v02-sandtiger-2",
+        "material": "shark"
+      }
+    },
+    {
+      "seq": 60,
+      "op": "add",
+      "time": "2026-11-01T11:00:00.000Z",
+      "author": "jimmy",
+      "note": "add Sand tiger shark 3",
+      "object": {
+        "uuid": "aquarium-v02-sandtiger-3",
+        "name": "Sand tiger shark 3",
+        "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          -310.692,
+          65.616,
+          259.956
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 61,
+      "op": "add",
+      "time": "2026-11-01T11:01:00.000Z",
+      "author": "jimmy",
+      "note": "add Sand tiger shark body",
+      "object": {
+        "uuid": "aquarium-v02-sandtiger-3-body",
+        "name": "Sand tiger shark body",
+        "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+        "type": "cylinder",
+        "dimensions": [
+          7.56,
+          81
+        ],
+        "position": [
+          -307.752,
+          70.152,
+          259.956
+        ],
+        "rotation_y": 90,
+        "rotation_z": -122.956,
+        "parent": "aquarium-v02-sandtiger-3",
+        "material": "shark"
+      }
+    },
+    {
+      "seq": 62,
+      "op": "add",
+      "time": "2026-11-01T11:02:00.000Z",
+      "author": "jimmy",
+      "note": "add Sand tiger shark tail",
+      "object": {
+        "uuid": "aquarium-v02-sandtiger-3-tail",
+        "name": "Sand tiger shark tail",
+        "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+        "type": "box",
+        "dimensions": [
+          12.96,
+          3.24,
+          27
+        ],
+        "position": [
+          -281.904,
+          110.016,
+          264.276
+        ],
+        "rotation_y": 0,
+        "rotation_z": -122.956,
+        "parent": "aquarium-v02-sandtiger-3",
+        "material": "shark"
+      }
+    },
+    {
+      "seq": 63,
+      "op": "add",
+      "time": "2026-11-01T11:03:00.000Z",
+      "author": "jimmy",
+      "note": "add Sand tiger shark snout",
+      "object": {
+        "uuid": "aquarium-v02-sandtiger-3-snout",
+        "name": "Sand tiger shark snout",
+        "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+        "type": "cone",
+        "dimensions": [
+          7.56,
+          21.6
+        ],
+        "position": [
+          -335.664,
+          27.096,
+          259.956
+        ],
+        "rotation_y": 90,
+        "rotation_z": -122.956,
+        "parent": "aquarium-v02-sandtiger-3",
+        "material": "shark"
+      }
+    },
+    {
+      "seq": 64,
+      "op": "add",
+      "time": "2026-11-01T11:04:00.000Z",
+      "author": "jimmy",
+      "note": "add Sand tiger shark dorsal fin",
+      "object": {
+        "uuid": "aquarium-v02-sandtiger-3-dorsal",
+        "name": "Sand tiger shark dorsal fin",
+        "description": "Looks fierce, with teeth that stick out of its mouth, but it is calm around people. It gulps air at the surface so it can float. Adults are 8 to 10 ft.",
+        "type": "cone",
+        "dimensions": [
+          6.48,
+          15.12
+        ],
+        "position": [
+          -310.692,
+          65.616,
+          275.076
+        ],
+        "rotation_y": 0,
+        "rotation_z": -122.956,
+        "parent": "aquarium-v02-sandtiger-3",
+        "material": "shark"
+      }
+    },
+    {
+      "seq": 65,
+      "op": "add",
+      "time": "2026-11-01T11:05:00.000Z",
+      "author": "jimmy",
+      "note": "add Zebra shark 1",
+      "object": {
+        "uuid": "aquarium-v02-zebra-1",
+        "name": "Zebra shark 1",
+        "description": "The babies are striped like a zebra; adults are spotted. It rests on the sand and its long tail is about half its length. Usually 5 to 8 ft.",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          -401.16,
+          -220.476,
+          45.948
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 66,
+      "op": "add",
+      "time": "2026-11-01T11:06:00.000Z",
+      "author": "jimmy",
+      "note": "add Zebra shark body",
+      "object": {
+        "uuid": "aquarium-v02-zebra-1-body",
+        "name": "Zebra shark body",
+        "description": "The babies are striped like a zebra; adults are spotted. It rests on the sand and its long tail is about half its length. Usually 5 to 8 ft.",
+        "type": "cylinder",
+        "dimensions": [
+          5.46,
+          58.5
+        ],
+        "position": [
+          -400.92,
+          -224.364,
+          45.948
+        ],
+        "rotation_y": 90,
+        "rotation_z": 93.589,
+        "parent": "aquarium-v02-zebra-1",
+        "material": "zebra"
+      }
+    },
+    {
+      "seq": 67,
+      "op": "add",
+      "time": "2026-11-01T11:07:00.000Z",
+      "author": "jimmy",
+      "note": "add Zebra shark tail",
+      "object": {
+        "uuid": "aquarium-v02-zebra-1-tail",
+        "name": "Zebra shark tail",
+        "description": "The babies are striped like a zebra; adults are spotted. It rests on the sand and its long tail is about half its length. Usually 5 to 8 ft.",
+        "type": "box",
+        "dimensions": [
+          9.36,
+          2.34,
+          19.5
+        ],
+        "position": [
+          -398.772,
+          -258.624,
+          49.068
+        ],
+        "rotation_y": 0,
+        "rotation_z": 93.589,
+        "parent": "aquarium-v02-zebra-1",
+        "material": "zebra"
+      }
+    },
+    {
+      "seq": 68,
+      "op": "add",
+      "time": "2026-11-01T11:08:00.000Z",
+      "author": "jimmy",
+      "note": "add Zebra shark snout",
+      "object": {
+        "uuid": "aquarium-v02-zebra-1-snout",
+        "name": "Zebra shark snout",
+        "description": "The babies are striped like a zebra; adults are spotted. It rests on the sand and its long tail is about half its length. Usually 5 to 8 ft.",
+        "type": "cone",
+        "dimensions": [
+          5.46,
+          15.6
+        ],
+        "position": [
+          -403.236,
+          -187.392,
+          45.948
+        ],
+        "rotation_y": 90,
+        "rotation_z": 93.589,
+        "parent": "aquarium-v02-zebra-1",
+        "material": "zebra"
+      }
+    },
+    {
+      "seq": 69,
+      "op": "add",
+      "time": "2026-11-01T11:09:00.000Z",
+      "author": "jimmy",
+      "note": "add Zebra shark dorsal fin",
+      "object": {
+        "uuid": "aquarium-v02-zebra-1-dorsal",
+        "name": "Zebra shark dorsal fin",
+        "description": "The babies are striped like a zebra; adults are spotted. It rests on the sand and its long tail is about half its length. Usually 5 to 8 ft.",
+        "type": "cone",
+        "dimensions": [
+          4.68,
+          10.92
+        ],
+        "position": [
+          -401.16,
+          -220.476,
+          56.868
+        ],
+        "rotation_y": 0,
+        "rotation_z": 93.589,
+        "parent": "aquarium-v02-zebra-1",
+        "material": "zebra"
+      }
+    },
+    {
+      "seq": 70,
+      "op": "add",
+      "time": "2026-11-01T11:10:00.000Z",
+      "author": "jimmy",
+      "note": "add Giant sea bass 1",
+      "object": {
+        "uuid": "aquarium-v02-seabass-1",
+        "name": "Giant sea bass 1",
+        "description": "California's biggest bony reef fish. It can grow past 7 ft and 500 lb, and it can live for decades. Now protected.",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          414.192,
+          9.972,
+          203.352
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 71,
+      "op": "add",
+      "time": "2026-11-01T11:11:00.000Z",
+      "author": "jimmy",
+      "note": "add Giant sea bass body",
+      "object": {
+        "uuid": "aquarium-v02-seabass-1-body",
+        "name": "Giant sea bass body",
+        "description": "California's biggest bony reef fish. It can grow past 7 ft and 500 lb, and it can live for decades. Now protected.",
+        "type": "box",
+        "dimensions": [
+          43.2,
+          10.764,
+          24.84
+        ],
+        "position": [
+          412.752,
+          13.272,
+          203.352
+        ],
+        "rotation_y": 0,
+        "rotation_z": 113.654,
+        "parent": "aquarium-v02-seabass-1",
+        "material": "bass"
+      }
+    },
+    {
+      "seq": 72,
+      "op": "add",
+      "time": "2026-11-01T11:12:00.000Z",
+      "author": "jimmy",
+      "note": "add Giant sea bass tail",
+      "object": {
+        "uuid": "aquarium-v02-seabass-1-tail",
+        "name": "Giant sea bass tail",
+        "description": "California's biggest bony reef fish. It can grow past 7 ft and 500 lb, and it can live for decades. Now protected.",
+        "type": "box",
+        "dimensions": [
+          14.4,
+          2.88,
+          21.6
+        ],
+        "position": [
+          424.596,
+          -13.776,
+          203.352
+        ],
+        "rotation_y": 0,
+        "rotation_z": 113.654,
+        "parent": "aquarium-v02-seabass-1",
+        "material": "bass"
+      }
+    },
+    {
+      "seq": 73,
+      "op": "add",
+      "time": "2026-11-01T11:13:00.000Z",
+      "author": "jimmy",
+      "note": "add Giant sea bass back fin",
+      "object": {
+        "uuid": "aquarium-v02-seabass-1-fin",
+        "name": "Giant sea bass back fin",
+        "description": "California's biggest bony reef fish. It can grow past 7 ft and 500 lb, and it can live for decades. Now protected.",
+        "type": "box",
+        "dimensions": [
+          18,
+          2.16,
+          8.64
+        ],
+        "position": [
+          412.752,
+          13.272,
+          219.912
+        ],
+        "rotation_y": 0,
+        "rotation_z": 113.654,
+        "parent": "aquarium-v02-seabass-1",
+        "material": "bass"
+      }
+    },
+    {
+      "seq": 74,
+      "op": "add",
+      "time": "2026-11-01T11:14:00.000Z",
+      "author": "jimmy",
+      "note": "add Giant sea bass 2",
+      "object": {
+        "uuid": "aquarium-v02-seabass-2",
+        "name": "Giant sea bass 2",
+        "description": "California's biggest bony reef fish. It can grow past 7 ft and 500 lb, and it can live for decades. Now protected.",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          253.308,
+          -208.116,
+          214.62
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 75,
+      "op": "add",
+      "time": "2026-11-01T11:15:00.000Z",
+      "author": "jimmy",
+      "note": "add Giant sea bass body",
+      "object": {
+        "uuid": "aquarium-v02-seabass-2-body",
+        "name": "Giant sea bass body",
+        "description": "California's biggest bony reef fish. It can grow past 7 ft and 500 lb, and it can live for decades. Now protected.",
+        "type": "box",
+        "dimensions": [
+          43.2,
+          10.764,
+          24.84
+        ],
+        "position": [
+          256.896,
+          -208.356,
+          214.62
+        ],
+        "rotation_y": 0,
+        "rotation_z": -3.86,
+        "parent": "aquarium-v02-seabass-2",
+        "material": "bass"
+      }
+    },
+    {
+      "seq": 76,
+      "op": "add",
+      "time": "2026-11-01T11:16:00.000Z",
+      "author": "jimmy",
+      "note": "add Giant sea bass tail",
+      "object": {
+        "uuid": "aquarium-v02-seabass-2-tail",
+        "name": "Giant sea bass tail",
+        "description": "California's biggest bony reef fish. It can grow past 7 ft and 500 lb, and it can live for decades. Now protected.",
+        "type": "box",
+        "dimensions": [
+          14.4,
+          2.88,
+          21.6
+        ],
+        "position": [
+          227.448,
+          -206.376,
+          214.62
+        ],
+        "rotation_y": 0,
+        "rotation_z": -3.86,
+        "parent": "aquarium-v02-seabass-2",
+        "material": "bass"
+      }
+    },
+    {
+      "seq": 77,
+      "op": "add",
+      "time": "2026-11-01T11:17:00.000Z",
+      "author": "jimmy",
+      "note": "add Giant sea bass back fin",
+      "object": {
+        "uuid": "aquarium-v02-seabass-2-fin",
+        "name": "Giant sea bass back fin",
+        "description": "California's biggest bony reef fish. It can grow past 7 ft and 500 lb, and it can live for decades. Now protected.",
+        "type": "box",
+        "dimensions": [
+          18,
+          2.16,
+          8.64
+        ],
+        "position": [
+          256.896,
+          -208.356,
+          231.18
+        ],
+        "rotation_y": 0,
+        "rotation_z": -3.86,
+        "parent": "aquarium-v02-seabass-2",
+        "material": "bass"
+      }
+    },
+    {
+      "seq": 78,
+      "op": "add",
+      "time": "2026-11-01T11:18:00.000Z",
+      "author": "jimmy",
+      "note": "add Green sea turtle 1",
+      "object": {
+        "uuid": "aquarium-v02-turtle-1",
+        "name": "Green sea turtle 1",
+        "description": "It eats seagrass, and its fat is green, which is where the name comes from. It can hold its breath for hours when resting.",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          -193.464,
+          -274.248,
+          222.48
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 79,
+      "op": "add",
+      "time": "2026-11-01T11:19:00.000Z",
+      "author": "jimmy",
+      "note": "add Green sea turtle shell",
+      "object": {
+        "uuid": "aquarium-v02-turtle-1-body",
+        "name": "Green sea turtle shell",
+        "description": "It eats seagrass, and its fat is green, which is where the name comes from. It can hold its breath for hours when resting.",
+        "type": "box",
+        "dimensions": [
+          19.8,
+          16.632,
+          5.544
+        ],
+        "position": [
+          -193.464,
+          -274.248,
+          222.48
+        ],
+        "rotation_y": 0,
+        "rotation_z": -5.195,
+        "parent": "aquarium-v02-turtle-1",
+        "material": "turtle"
+      }
+    },
+    {
+      "seq": 80,
+      "op": "add",
+      "time": "2026-11-01T11:20:00.000Z",
+      "author": "jimmy",
+      "note": "add Green sea turtle head",
+      "object": {
+        "uuid": "aquarium-v02-turtle-1-head",
+        "name": "Green sea turtle head",
+        "description": "It eats seagrass, and its fat is green, which is where the name comes from. It can hold its breath for hours when resting.",
+        "type": "sphere",
+        "dimensions": [
+          2.772
+        ],
+        "position": [
+          -180.06,
+          -275.472,
+          223.272
+        ],
+        "rotation_y": 0,
+        "rotation_z": -5.195,
+        "parent": "aquarium-v02-turtle-1",
+        "material": "turtleSkin"
+      }
+    },
+    {
+      "seq": 81,
+      "op": "add",
+      "time": "2026-11-01T11:21:00.000Z",
+      "author": "jimmy",
+      "note": "add Green sea turtle flipper",
+      "object": {
+        "uuid": "aquarium-v02-turtle-1-flipper1",
+        "name": "Green sea turtle flipper",
+        "description": "It eats seagrass, and its fat is green, which is where the name comes from. It can hold its breath for hours when resting.",
+        "type": "box",
+        "dimensions": [
+          7.92,
+          2.772,
+          0.792
+        ],
+        "position": [
+          -187.728,
+          -263.64,
+          221.292
+        ],
+        "rotation_y": 0,
+        "rotation_z": -40.195,
+        "parent": "aquarium-v02-turtle-1",
+        "material": "turtleSkin"
+      }
+    },
+    {
+      "seq": 82,
+      "op": "add",
+      "time": "2026-11-01T11:22:00.000Z",
+      "author": "jimmy",
+      "note": "add Green sea turtle flipper",
+      "object": {
+        "uuid": "aquarium-v02-turtle-1-flipper2",
+        "name": "Green sea turtle flipper",
+        "description": "It eats seagrass, and its fat is green, which is where the name comes from. It can hold its breath for hours when resting.",
+        "type": "box",
+        "dimensions": [
+          7.92,
+          2.772,
+          0.792
+        ],
+        "position": [
+          -189.732,
+          -285.72,
+          221.292
+        ],
+        "rotation_y": 0,
+        "rotation_z": 29.805,
+        "parent": "aquarium-v02-turtle-1",
+        "material": "turtleSkin"
+      }
+    },
+    {
+      "seq": 83,
+      "op": "add",
+      "time": "2026-11-01T11:23:00.000Z",
+      "author": "jimmy",
+      "note": "add Green sea turtle flipper",
+      "object": {
+        "uuid": "aquarium-v02-turtle-1-flipper3",
+        "name": "Green sea turtle flipper",
+        "description": "It eats seagrass, and its fat is green, which is where the name comes from. It can hold its breath for hours when resting.",
+        "type": "box",
+        "dimensions": [
+          7.92,
+          2.772,
+          0.792
+        ],
+        "position": [
+          -197.976,
+          -262.704,
+          221.292
+        ],
+        "rotation_y": 0,
+        "rotation_z": 29.805,
+        "parent": "aquarium-v02-turtle-1",
+        "material": "turtleSkin"
+      }
+    },
+    {
+      "seq": 84,
+      "op": "add",
+      "time": "2026-11-01T11:24:00.000Z",
+      "author": "jimmy",
+      "note": "add Green sea turtle flipper",
+      "object": {
+        "uuid": "aquarium-v02-turtle-1-flipper4",
+        "name": "Green sea turtle flipper",
+        "description": "It eats seagrass, and its fat is green, which is where the name comes from. It can hold its breath for hours when resting.",
+        "type": "box",
+        "dimensions": [
+          7.92,
+          2.772,
+          0.792
+        ],
+        "position": [
+          -199.992,
+          -284.784,
+          221.292
+        ],
+        "rotation_y": 0,
+        "rotation_z": -40.195,
+        "parent": "aquarium-v02-turtle-1",
+        "material": "turtleSkin"
+      }
+    },
+    {
+      "seq": 85,
+      "op": "add",
+      "time": "2026-11-01T11:25:00.000Z",
+      "author": "jimmy",
+      "note": "add Green sea turtle tail",
+      "object": {
+        "uuid": "aquarium-v02-turtle-1-tail",
+        "name": "Green sea turtle tail",
+        "description": "It eats seagrass, and its fat is green, which is where the name comes from. It can hold its breath for hours when resting.",
+        "type": "box",
+        "dimensions": [
+          3.96,
+          1.188,
+          1.188
+        ],
+        "position": [
+          -204.504,
+          -273.24,
+          222.48
+        ],
+        "rotation_y": 0,
+        "rotation_z": -5.195,
+        "parent": "aquarium-v02-turtle-1",
+        "material": "turtleSkin"
+      }
+    },
+    {
+      "seq": 86,
+      "op": "add",
+      "time": "2026-11-01T11:26:00.000Z",
+      "author": "jimmy",
+      "note": "add Garibaldi 1",
+      "object": {
+        "uuid": "aquarium-v02-garibaldi-1",
+        "name": "Garibaldi 1",
+        "description": "California's official state marine fish. Bright orange and bold; it guards its little patch of reef.",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          -134.028,
+          -198.72,
+          182.328
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 87,
+      "op": "add",
+      "time": "2026-11-01T11:27:00.000Z",
+      "author": "jimmy",
+      "note": "add Garibaldi body",
+      "object": {
+        "uuid": "aquarium-v02-garibaldi-1-body",
+        "name": "Garibaldi body",
+        "description": "California's official state marine fish. Bright orange and bold; it guards its little patch of reef.",
+        "type": "box",
+        "dimensions": [
+          7.2,
+          1.872,
+          4.32
+        ],
+        "position": [
+          -134.628,
+          -198.756,
+          182.328
+        ],
+        "rotation_y": 0,
+        "rotation_z": -176.433,
+        "parent": "aquarium-v02-garibaldi-1",
+        "material": "garibaldi"
+      }
+    },
+    {
+      "seq": 88,
+      "op": "add",
+      "time": "2026-11-01T11:28:00.000Z",
+      "author": "jimmy",
+      "note": "add Garibaldi tail",
+      "object": {
+        "uuid": "aquarium-v02-garibaldi-1-tail",
+        "name": "Garibaldi tail",
+        "description": "California's official state marine fish. Bright orange and bold; it guards its little patch of reef.",
+        "type": "box",
+        "dimensions": [
+          2.4,
+          0.48,
+          3.6
+        ],
+        "position": [
+          -129.72,
+          -198.456,
+          182.328
+        ],
+        "rotation_y": 0,
+        "rotation_z": -176.433,
+        "parent": "aquarium-v02-garibaldi-1",
+        "material": "garibaldi"
+      }
+    },
+    {
+      "seq": 89,
+      "op": "add",
+      "time": "2026-11-01T11:29:00.000Z",
+      "author": "jimmy",
+      "note": "add Garibaldi back fin",
+      "object": {
+        "uuid": "aquarium-v02-garibaldi-1-fin",
+        "name": "Garibaldi back fin",
+        "description": "California's official state marine fish. Bright orange and bold; it guards its little patch of reef.",
+        "type": "box",
+        "dimensions": [
+          3,
+          0.36,
+          1.44
+        ],
+        "position": [
+          -134.628,
+          -198.756,
+          185.208
+        ],
+        "rotation_y": 0,
+        "rotation_z": -176.433,
+        "parent": "aquarium-v02-garibaldi-1",
+        "material": "garibaldi"
+      }
+    },
+    {
+      "seq": 90,
+      "op": "add",
+      "time": "2026-11-01T11:30:00.000Z",
+      "author": "jimmy",
+      "note": "add Giant kelp",
+      "object": {
+        "uuid": "aquarium-v02-kelp-1",
+        "name": "Giant kelp",
+        "description": "a brown-green seaweed that can grow up to 2 ft a day and forms underwater forests",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          -528,
+          264,
+          12
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 91,
+      "op": "add",
+      "time": "2026-11-01T11:31:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp stem",
+      "object": {
+        "uuid": "aquarium-v02-kelp-1-stem",
+        "name": "Kelp stem",
+        "description": "the long stem (stipe)",
+        "type": "cylinder",
+        "dimensions": [
+          1.44,
+          228
+        ],
+        "position": [
+          -528,
+          264,
+          126
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-kelp-1",
+        "material": "stem"
+      }
+    },
+    {
+      "seq": 92,
+      "op": "add",
+      "time": "2026-11-01T11:32:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp blade",
+      "object": {
+        "uuid": "aquarium-v02-kelp-1-blade1",
+        "name": "Kelp blade",
+        "description": "a leaf-like blade",
+        "type": "box",
+        "dimensions": [
+          1.8,
+          8.4,
+          16.8
+        ],
+        "position": [
+          -532.8,
+          264,
+          91.8
+        ],
+        "rotation_y": 0,
+        "rotation_z": 91.96,
+        "parent": "aquarium-v02-kelp-1",
+        "material": "kelp2"
+      }
+    },
+    {
+      "seq": 93,
+      "op": "add",
+      "time": "2026-11-01T11:33:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp blade",
+      "object": {
+        "uuid": "aquarium-v02-kelp-1-blade2",
+        "name": "Kelp blade",
+        "description": "a leaf-like blade",
+        "type": "box",
+        "dimensions": [
+          1.8,
+          8.4,
+          16.8
+        ],
+        "position": [
+          -523.2,
+          264,
+          148.8
+        ],
+        "rotation_y": 0,
+        "rotation_z": 156.443,
+        "parent": "aquarium-v02-kelp-1",
+        "material": "kelp"
+      }
+    },
+    {
+      "seq": 94,
+      "op": "add",
+      "time": "2026-11-01T11:34:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp blade",
+      "object": {
+        "uuid": "aquarium-v02-kelp-1-blade3",
+        "name": "Kelp blade",
+        "description": "a leaf-like blade",
+        "type": "box",
+        "dimensions": [
+          1.8,
+          8.4,
+          16.8
+        ],
+        "position": [
+          -532.8,
+          264,
+          205.8
+        ],
+        "rotation_y": 0,
+        "rotation_z": 16.331,
+        "parent": "aquarium-v02-kelp-1",
+        "material": "kelp2"
+      }
+    },
+    {
+      "seq": 95,
+      "op": "add",
+      "time": "2026-11-01T11:35:00.000Z",
+      "author": "jimmy",
+      "note": "add Giant kelp",
+      "object": {
+        "uuid": "aquarium-v02-kelp-2",
+        "name": "Giant kelp",
+        "description": "a brown-green seaweed that can grow up to 2 ft a day and forms underwater forests",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          -168,
+          300,
+          12
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 96,
+      "op": "add",
+      "time": "2026-11-01T11:36:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp stem",
+      "object": {
+        "uuid": "aquarium-v02-kelp-2-stem",
+        "name": "Kelp stem",
+        "description": "the long stem (stipe)",
+        "type": "cylinder",
+        "dimensions": [
+          1.44,
+          204
+        ],
+        "position": [
+          -168,
+          300,
+          114
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-kelp-2",
+        "material": "stem"
+      }
+    },
+    {
+      "seq": 97,
+      "op": "add",
+      "time": "2026-11-01T11:37:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp blade",
+      "object": {
+        "uuid": "aquarium-v02-kelp-2-blade1",
+        "name": "Kelp blade",
+        "description": "a leaf-like blade",
+        "type": "box",
+        "dimensions": [
+          1.8,
+          8.4,
+          16.8
+        ],
+        "position": [
+          -172.8,
+          300,
+          83.4
+        ],
+        "rotation_y": 0,
+        "rotation_z": 120.282,
+        "parent": "aquarium-v02-kelp-2",
+        "material": "kelp2"
+      }
+    },
+    {
+      "seq": 98,
+      "op": "add",
+      "time": "2026-11-01T11:38:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp blade",
+      "object": {
+        "uuid": "aquarium-v02-kelp-2-blade2",
+        "name": "Kelp blade",
+        "description": "a leaf-like blade",
+        "type": "box",
+        "dimensions": [
+          1.8,
+          8.4,
+          16.8
+        ],
+        "position": [
+          -163.2,
+          300,
+          134.4
+        ],
+        "rotation_y": 0,
+        "rotation_z": 146.986,
+        "parent": "aquarium-v02-kelp-2",
+        "material": "kelp"
+      }
+    },
+    {
+      "seq": 99,
+      "op": "add",
+      "time": "2026-11-01T11:39:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp blade",
+      "object": {
+        "uuid": "aquarium-v02-kelp-2-blade3",
+        "name": "Kelp blade",
+        "description": "a leaf-like blade",
+        "type": "box",
+        "dimensions": [
+          1.8,
+          8.4,
+          16.8
+        ],
+        "position": [
+          -172.8,
+          300,
+          185.4
+        ],
+        "rotation_y": 0,
+        "rotation_z": 176.892,
+        "parent": "aquarium-v02-kelp-2",
+        "material": "kelp2"
+      }
+    },
+    {
+      "seq": 100,
+      "op": "add",
+      "time": "2026-11-01T11:40:00.000Z",
+      "author": "jimmy",
+      "note": "add Giant kelp",
+      "object": {
+        "uuid": "aquarium-v02-kelp-3",
+        "name": "Giant kelp",
+        "description": "a brown-green seaweed that can grow up to 2 ft a day and forms underwater forests",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          192,
+          300,
+          12
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 101,
+      "op": "add",
+      "time": "2026-11-01T11:41:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp stem",
+      "object": {
+        "uuid": "aquarium-v02-kelp-3-stem",
+        "name": "Kelp stem",
+        "description": "the long stem (stipe)",
+        "type": "cylinder",
+        "dimensions": [
+          1.44,
+          240
+        ],
+        "position": [
+          192,
+          300,
+          132
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-kelp-3",
+        "material": "stem"
+      }
+    },
+    {
+      "seq": 102,
+      "op": "add",
+      "time": "2026-11-01T11:42:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp blade",
+      "object": {
+        "uuid": "aquarium-v02-kelp-3-blade1",
+        "name": "Kelp blade",
+        "description": "a leaf-like blade",
+        "type": "box",
+        "dimensions": [
+          1.8,
+          8.4,
+          16.8
+        ],
+        "position": [
+          187.2,
+          300,
+          96
+        ],
+        "rotation_y": 0,
+        "rotation_z": 50.481,
+        "parent": "aquarium-v02-kelp-3",
+        "material": "kelp2"
+      }
+    },
+    {
+      "seq": 103,
+      "op": "add",
+      "time": "2026-11-01T11:43:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp blade",
+      "object": {
+        "uuid": "aquarium-v02-kelp-3-blade2",
+        "name": "Kelp blade",
+        "description": "a leaf-like blade",
+        "type": "box",
+        "dimensions": [
+          1.8,
+          8.4,
+          16.8
+        ],
+        "position": [
+          196.8,
+          300,
+          156
+        ],
+        "rotation_y": 0,
+        "rotation_z": 67.273,
+        "parent": "aquarium-v02-kelp-3",
+        "material": "kelp"
+      }
+    },
+    {
+      "seq": 104,
+      "op": "add",
+      "time": "2026-11-01T11:44:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp blade",
+      "object": {
+        "uuid": "aquarium-v02-kelp-3-blade3",
+        "name": "Kelp blade",
+        "description": "a leaf-like blade",
+        "type": "box",
+        "dimensions": [
+          1.8,
+          8.4,
+          16.8
+        ],
+        "position": [
+          187.2,
+          300,
+          216
+        ],
+        "rotation_y": 0,
+        "rotation_z": 10.009,
+        "parent": "aquarium-v02-kelp-3",
+        "material": "kelp2"
+      }
+    },
+    {
+      "seq": 105,
+      "op": "add",
+      "time": "2026-11-01T11:45:00.000Z",
+      "author": "jimmy",
+      "note": "add Giant kelp",
+      "object": {
+        "uuid": "aquarium-v02-kelp-4",
+        "name": "Giant kelp",
+        "description": "a brown-green seaweed that can grow up to 2 ft a day and forms underwater forests",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          360,
+          264,
+          12
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 106,
+      "op": "add",
+      "time": "2026-11-01T11:46:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp stem",
+      "object": {
+        "uuid": "aquarium-v02-kelp-4-stem",
+        "name": "Kelp stem",
+        "description": "the long stem (stipe)",
+        "type": "cylinder",
+        "dimensions": [
+          1.44,
+          216
+        ],
+        "position": [
+          360,
+          264,
+          120
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-kelp-4",
+        "material": "stem"
+      }
+    },
+    {
+      "seq": 107,
+      "op": "add",
+      "time": "2026-11-01T11:47:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp blade",
+      "object": {
+        "uuid": "aquarium-v02-kelp-4-blade1",
+        "name": "Kelp blade",
+        "description": "a leaf-like blade",
+        "type": "box",
+        "dimensions": [
+          1.8,
+          8.4,
+          16.8
+        ],
+        "position": [
+          355.2,
+          264,
+          87.6
+        ],
+        "rotation_y": 0,
+        "rotation_z": 149.929,
+        "parent": "aquarium-v02-kelp-4",
+        "material": "kelp2"
+      }
+    },
+    {
+      "seq": 108,
+      "op": "add",
+      "time": "2026-11-01T11:48:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp blade",
+      "object": {
+        "uuid": "aquarium-v02-kelp-4-blade2",
+        "name": "Kelp blade",
+        "description": "a leaf-like blade",
+        "type": "box",
+        "dimensions": [
+          1.8,
+          8.4,
+          16.8
+        ],
+        "position": [
+          364.8,
+          264,
+          141.6
+        ],
+        "rotation_y": 0,
+        "rotation_z": 89.903,
+        "parent": "aquarium-v02-kelp-4",
+        "material": "kelp"
+      }
+    },
+    {
+      "seq": 109,
+      "op": "add",
+      "time": "2026-11-01T11:49:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp blade",
+      "object": {
+        "uuid": "aquarium-v02-kelp-4-blade3",
+        "name": "Kelp blade",
+        "description": "a leaf-like blade",
+        "type": "box",
+        "dimensions": [
+          1.8,
+          8.4,
+          16.8
+        ],
+        "position": [
+          355.2,
+          264,
+          195.6
+        ],
+        "rotation_y": 0,
+        "rotation_z": 83.159,
+        "parent": "aquarium-v02-kelp-4",
+        "material": "kelp2"
+      }
+    },
+    {
+      "seq": 110,
+      "op": "add",
+      "time": "2026-11-01T11:50:00.000Z",
+      "author": "jimmy",
+      "note": "add Blacktip reef shark 1",
+      "object": {
+        "uuid": "aquarium-v02-blacktip-1",
+        "name": "Blacktip reef shark 1",
+        "description": "Black tips on its fins. It patrols shallow reefs and is shy of people.",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          223.404,
+          203.592,
+          172.692
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 111,
+      "op": "add",
+      "time": "2026-11-01T11:51:00.000Z",
+      "author": "jimmy",
+      "note": "add Blacktip reef shark body",
+      "object": {
+        "uuid": "aquarium-v02-blacktip-1-body",
+        "name": "Blacktip reef shark body",
+        "description": "Black tips on its fins. It patrols shallow reefs and is shy of people.",
+        "type": "cylinder",
+        "dimensions": [
+          4.2,
+          45
+        ],
+        "position": [
+          220.584,
+          204.624,
+          172.692
+        ],
+        "rotation_y": 90,
+        "rotation_z": -20.078,
+        "parent": "aquarium-v02-blacktip-1",
+        "material": "blacktip"
+      }
+    },
+    {
+      "seq": 112,
+      "op": "add",
+      "time": "2026-11-01T11:52:00.000Z",
+      "author": "jimmy",
+      "note": "add Blacktip reef shark tail",
+      "object": {
+        "uuid": "aquarium-v02-blacktip-1-tail",
+        "name": "Blacktip reef shark tail",
+        "description": "Black tips on its fins. It patrols shallow reefs and is shy of people.",
+        "type": "box",
+        "dimensions": [
+          7.2,
+          1.8,
+          15
+        ],
+        "position": [
+          195.792,
+          213.684,
+          175.092
+        ],
+        "rotation_y": 0,
+        "rotation_z": -20.078,
+        "parent": "aquarium-v02-blacktip-1",
+        "material": "blacktip"
+      }
+    },
+    {
+      "seq": 113,
+      "op": "add",
+      "time": "2026-11-01T11:53:00.000Z",
+      "author": "jimmy",
+      "note": "add Blacktip reef shark snout",
+      "object": {
+        "uuid": "aquarium-v02-blacktip-1-snout",
+        "name": "Blacktip reef shark snout",
+        "description": "Black tips on its fins. It patrols shallow reefs and is shy of people.",
+        "type": "cone",
+        "dimensions": [
+          4.2,
+          12
+        ],
+        "position": [
+          247.356,
+          194.832,
+          172.692
+        ],
+        "rotation_y": 90,
+        "rotation_z": -20.078,
+        "parent": "aquarium-v02-blacktip-1",
+        "material": "blacktip"
+      }
+    },
+    {
+      "seq": 114,
+      "op": "add",
+      "time": "2026-11-01T11:54:00.000Z",
+      "author": "jimmy",
+      "note": "add Blacktip reef shark dorsal fin",
+      "object": {
+        "uuid": "aquarium-v02-blacktip-1-dorsal",
+        "name": "Blacktip reef shark dorsal fin",
+        "description": "Black tips on its fins. It patrols shallow reefs and is shy of people.",
+        "type": "cone",
+        "dimensions": [
+          3.6,
+          8.4
+        ],
+        "position": [
+          223.404,
+          203.592,
+          181.092
+        ],
+        "rotation_y": 0,
+        "rotation_z": -20.078,
+        "parent": "aquarium-v02-blacktip-1",
+        "material": "blacktip"
+      }
+    },
+    {
+      "seq": 115,
+      "op": "add",
+      "time": "2026-11-01T11:55:00.000Z",
+      "author": "jimmy",
+      "note": "add Bonnethead shark 1",
+      "object": {
+        "uuid": "aquarium-v02-bonnet-1",
+        "name": "Bonnethead shark 1",
+        "description": "The smallest hammerhead. Its shovel-shaped head helps it find crabs and shrimp. About 30 to 50 inches long.",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          -183.444,
+          -140.16,
+          168.252
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 116,
+      "op": "add",
+      "time": "2026-11-01T11:56:00.000Z",
+      "author": "jimmy",
+      "note": "add Bonnethead shark body",
+      "object": {
+        "uuid": "aquarium-v02-bonnet-1-body",
+        "name": "Bonnethead shark body",
+        "description": "The smallest hammerhead. Its shovel-shaped head helps it find crabs and shrimp. About 30 to 50 inches long.",
+        "type": "cylinder",
+        "dimensions": [
+          2.94,
+          31.5
+        ],
+        "position": [
+          -185.4,
+          -139.404,
+          168.252
+        ],
+        "rotation_y": 90,
+        "rotation_z": -20.954,
+        "parent": "aquarium-v02-bonnet-1",
+        "material": "bonnet"
+      }
+    },
+    {
+      "seq": 117,
+      "op": "add",
+      "time": "2026-11-01T11:57:00.000Z",
+      "author": "jimmy",
+      "note": "add Bonnethead shark tail",
+      "object": {
+        "uuid": "aquarium-v02-bonnet-1-tail",
+        "name": "Bonnethead shark tail",
+        "description": "The smallest hammerhead. Its shovel-shaped head helps it find crabs and shrimp. About 30 to 50 inches long.",
+        "type": "box",
+        "dimensions": [
+          5.04,
+          1.26,
+          10.5
+        ],
+        "position": [
+          -202.668,
+          -132.804,
+          169.932
+        ],
+        "rotation_y": 0,
+        "rotation_z": -20.954,
+        "parent": "aquarium-v02-bonnet-1",
+        "material": "bonnet"
+      }
+    },
+    {
+      "seq": 118,
+      "op": "add",
+      "time": "2026-11-01T11:58:00.000Z",
+      "author": "jimmy",
+      "note": "add Bonnethead shark hammer head",
+      "object": {
+        "uuid": "aquarium-v02-bonnet-1-head",
+        "name": "Bonnethead shark hammer head",
+        "description": "The smallest hammerhead. Its shovel-shaped head helps it find crabs and shrimp. About 30 to 50 inches long.",
+        "type": "box",
+        "dimensions": [
+          4.2,
+          10.92,
+          1.26
+        ],
+        "position": [
+          -169.32,
+          -145.572,
+          168.252
+        ],
+        "rotation_y": 0,
+        "rotation_z": -20.954,
+        "parent": "aquarium-v02-bonnet-1",
+        "material": "bonnet"
+      }
+    },
+    {
+      "seq": 119,
+      "op": "add",
+      "time": "2026-11-01T11:59:00.000Z",
+      "author": "jimmy",
+      "note": "add Bonnethead shark dorsal fin",
+      "object": {
+        "uuid": "aquarium-v02-bonnet-1-dorsal",
+        "name": "Bonnethead shark dorsal fin",
+        "description": "The smallest hammerhead. Its shovel-shaped head helps it find crabs and shrimp. About 30 to 50 inches long.",
+        "type": "cone",
+        "dimensions": [
+          2.52,
+          5.88
+        ],
+        "position": [
+          -183.444,
+          -140.16,
+          174.132
+        ],
+        "rotation_y": 0,
+        "rotation_z": -20.954,
+        "parent": "aquarium-v02-bonnet-1",
+        "material": "bonnet"
+      }
+    },
+    {
+      "seq": 120,
+      "op": "add",
+      "time": "2026-11-01T12:00:00.000Z",
+      "author": "jimmy",
+      "note": "add Zebra shark 2",
+      "object": {
+        "uuid": "aquarium-v02-zebra-2",
+        "name": "Zebra shark 2",
+        "description": "The babies are striped like a zebra; adults are spotted. It rests on the sand and its long tail is about half its length. Usually 5 to 8 ft.",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          240.156,
+          -261.864,
+          63.456
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 121,
+      "op": "add",
+      "time": "2026-11-01T12:01:00.000Z",
+      "author": "jimmy",
+      "note": "add Zebra shark body",
+      "object": {
+        "uuid": "aquarium-v02-zebra-2-body",
+        "name": "Zebra shark body",
+        "description": "The babies are striped like a zebra; adults are spotted. It rests on the sand and its long tail is about half its length. Usually 5 to 8 ft.",
+        "type": "cylinder",
+        "dimensions": [
+          5.46,
+          58.5
+        ],
+        "position": [
+          243.96,
+          -261,
+          63.456
+        ],
+        "rotation_y": 90,
+        "rotation_z": -167.284,
+        "parent": "aquarium-v02-zebra-2",
+        "material": "zebra"
+      }
+    },
+    {
+      "seq": 122,
+      "op": "add",
+      "time": "2026-11-01T12:02:00.000Z",
+      "author": "jimmy",
+      "note": "add Zebra shark tail",
+      "object": {
+        "uuid": "aquarium-v02-zebra-2-tail",
+        "name": "Zebra shark tail",
+        "description": "The babies are striped like a zebra; adults are spotted. It rests on the sand and its long tail is about half its length. Usually 5 to 8 ft.",
+        "type": "box",
+        "dimensions": [
+          9.36,
+          2.34,
+          19.5
+        ],
+        "position": [
+          277.44,
+          -253.452,
+          66.576
+        ],
+        "rotation_y": 0,
+        "rotation_z": -167.284,
+        "parent": "aquarium-v02-zebra-2",
+        "material": "zebra"
+      }
+    },
+    {
+      "seq": 123,
+      "op": "add",
+      "time": "2026-11-01T12:03:00.000Z",
+      "author": "jimmy",
+      "note": "add Zebra shark snout",
+      "object": {
+        "uuid": "aquarium-v02-zebra-2-snout",
+        "name": "Zebra shark snout",
+        "description": "The babies are striped like a zebra; adults are spotted. It rests on the sand and its long tail is about half its length. Usually 5 to 8 ft.",
+        "type": "cone",
+        "dimensions": [
+          5.46,
+          15.6
+        ],
+        "position": [
+          207.816,
+          -269.16,
+          63.456
+        ],
+        "rotation_y": 90,
+        "rotation_z": -167.284,
+        "parent": "aquarium-v02-zebra-2",
+        "material": "zebra"
+      }
+    },
+    {
+      "seq": 124,
+      "op": "add",
+      "time": "2026-11-01T12:04:00.000Z",
+      "author": "jimmy",
+      "note": "add Zebra shark dorsal fin",
+      "object": {
+        "uuid": "aquarium-v02-zebra-2-dorsal",
+        "name": "Zebra shark dorsal fin",
+        "description": "The babies are striped like a zebra; adults are spotted. It rests on the sand and its long tail is about half its length. Usually 5 to 8 ft.",
+        "type": "cone",
+        "dimensions": [
+          4.68,
+          10.92
+        ],
+        "position": [
+          240.156,
+          -261.864,
+          74.376
+        ],
+        "rotation_y": 0,
+        "rotation_z": -167.284,
+        "parent": "aquarium-v02-zebra-2",
+        "material": "zebra"
+      }
+    },
+    {
+      "seq": 125,
+      "op": "add",
+      "time": "2026-11-01T12:05:00.000Z",
+      "author": "jimmy",
+      "note": "add Yellowtail 1",
+      "object": {
+        "uuid": "aquarium-v02-yellowtail-1",
+        "name": "Yellowtail 1",
+        "description": "A fast open-water fish with a yellow tail and a stripe down its side. It hunts in groups.",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          -163.968,
+          -146.844,
+          245.46
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 126,
+      "op": "add",
+      "time": "2026-11-01T12:06:00.000Z",
+      "author": "jimmy",
+      "note": "add Yellowtail body",
+      "object": {
+        "uuid": "aquarium-v02-yellowtail-1-body",
+        "name": "Yellowtail body",
+        "description": "A fast open-water fish with a yellow tail and a stripe down its side. It hunts in groups.",
+        "type": "box",
+        "dimensions": [
+          23.04,
+          3.994,
+          9.216
+        ],
+        "position": [
+          -165.72,
+          -146.064,
+          245.46
+        ],
+        "rotation_y": 0,
+        "rotation_z": 155.897,
+        "parent": "aquarium-v02-yellowtail-1",
+        "material": "yellowtail"
+      }
+    },
+    {
+      "seq": 127,
+      "op": "add",
+      "time": "2026-11-01T12:07:00.000Z",
+      "author": "jimmy",
+      "note": "add Yellowtail tail",
+      "object": {
+        "uuid": "aquarium-v02-yellowtail-1-tail",
+        "name": "Yellowtail tail",
+        "description": "A fast open-water fish with a yellow tail and a stripe down its side. It hunts in groups.",
+        "type": "box",
+        "dimensions": [
+          7.68,
+          1.536,
+          11.52
+        ],
+        "position": [
+          -151.344,
+          -152.484,
+          245.46
+        ],
+        "rotation_y": 0,
+        "rotation_z": 155.897,
+        "parent": "aquarium-v02-yellowtail-1",
+        "material": "yellowtail"
+      }
+    },
+    {
+      "seq": 128,
+      "op": "add",
+      "time": "2026-11-01T12:08:00.000Z",
+      "author": "jimmy",
+      "note": "add Yellowtail back fin",
+      "object": {
+        "uuid": "aquarium-v02-yellowtail-1-fin",
+        "name": "Yellowtail back fin",
+        "description": "A fast open-water fish with a yellow tail and a stripe down its side. It hunts in groups.",
+        "type": "box",
+        "dimensions": [
+          9.6,
+          1.152,
+          4.608
+        ],
+        "position": [
+          -165.72,
+          -146.064,
+          251.604
+        ],
+        "rotation_y": 0,
+        "rotation_z": 155.897,
+        "parent": "aquarium-v02-yellowtail-1",
+        "material": "yellowtail"
+      }
+    },
+    {
+      "seq": 129,
+      "op": "add",
+      "time": "2026-11-01T12:09:00.000Z",
+      "author": "jimmy",
+      "note": "add Yellowtail 2",
+      "object": {
+        "uuid": "aquarium-v02-yellowtail-2",
+        "name": "Yellowtail 2",
+        "description": "A fast open-water fish with a yellow tail and a stripe down its side. It hunts in groups.",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          -164.724,
+          214.836,
+          269.556
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 130,
+      "op": "add",
+      "time": "2026-11-01T12:10:00.000Z",
+      "author": "jimmy",
+      "note": "add Yellowtail body",
+      "object": {
+        "uuid": "aquarium-v02-yellowtail-2-body",
+        "name": "Yellowtail body",
+        "description": "A fast open-water fish with a yellow tail and a stripe down its side. It hunts in groups.",
+        "type": "box",
+        "dimensions": [
+          23.04,
+          3.994,
+          9.216
+        ],
+        "position": [
+          -162.876,
+          215.364,
+          269.556
+        ],
+        "rotation_y": 0,
+        "rotation_z": 15.952,
+        "parent": "aquarium-v02-yellowtail-2",
+        "material": "yellowtail"
+      }
+    },
+    {
+      "seq": 131,
+      "op": "add",
+      "time": "2026-11-01T12:11:00.000Z",
+      "author": "jimmy",
+      "note": "add Yellowtail tail",
+      "object": {
+        "uuid": "aquarium-v02-yellowtail-2-tail",
+        "name": "Yellowtail tail",
+        "description": "A fast open-water fish with a yellow tail and a stripe down its side. It hunts in groups.",
+        "type": "box",
+        "dimensions": [
+          7.68,
+          1.536,
+          11.52
+        ],
+        "position": [
+          -178.02,
+          211.032,
+          269.556
+        ],
+        "rotation_y": 0,
+        "rotation_z": 15.952,
+        "parent": "aquarium-v02-yellowtail-2",
+        "material": "yellowtail"
+      }
+    },
+    {
+      "seq": 132,
+      "op": "add",
+      "time": "2026-11-01T12:12:00.000Z",
+      "author": "jimmy",
+      "note": "add Yellowtail back fin",
+      "object": {
+        "uuid": "aquarium-v02-yellowtail-2-fin",
+        "name": "Yellowtail back fin",
+        "description": "A fast open-water fish with a yellow tail and a stripe down its side. It hunts in groups.",
+        "type": "box",
+        "dimensions": [
+          9.6,
+          1.152,
+          4.608
+        ],
+        "position": [
+          -162.876,
+          215.364,
+          275.7
+        ],
+        "rotation_y": 0,
+        "rotation_z": 15.952,
+        "parent": "aquarium-v02-yellowtail-2",
+        "material": "yellowtail"
+      }
+    },
+    {
+      "seq": 133,
+      "op": "add",
+      "time": "2026-11-01T12:13:00.000Z",
+      "author": "jimmy",
+      "note": "add Pacific barracuda 1",
+      "object": {
+        "uuid": "aquarium-v02-barracuda-1",
+        "name": "Pacific barracuda 1",
+        "description": "A long silver hunter with sharp teeth. It hovers still, then darts at its food.",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          169.824,
+          192.888,
+          164.4
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 134,
+      "op": "add",
+      "time": "2026-11-01T12:14:00.000Z",
+      "author": "jimmy",
+      "note": "add Pacific barracuda body",
+      "object": {
+        "uuid": "aquarium-v02-barracuda-1-body",
+        "name": "Pacific barracuda body",
+        "description": "A long silver hunter with sharp teeth. It hovers still, then darts at its food.",
+        "type": "box",
+        "dimensions": [
+          25.2,
+          3.276,
+          7.56
+        ],
+        "position": [
+          167.844,
+          193.584,
+          164.4
+        ],
+        "rotation_y": 0,
+        "rotation_z": 160.606,
+        "parent": "aquarium-v02-barracuda-1",
+        "material": "barracuda"
+      }
+    },
+    {
+      "seq": 135,
+      "op": "add",
+      "time": "2026-11-01T12:15:00.000Z",
+      "author": "jimmy",
+      "note": "add Pacific barracuda tail",
+      "object": {
+        "uuid": "aquarium-v02-barracuda-1-tail",
+        "name": "Pacific barracuda tail",
+        "description": "A long silver hunter with sharp teeth. It hovers still, then darts at its food.",
+        "type": "box",
+        "dimensions": [
+          8.4,
+          1.68,
+          12.6
+        ],
+        "position": [
+          184.092,
+          187.872,
+          164.4
+        ],
+        "rotation_y": 0,
+        "rotation_z": 160.606,
+        "parent": "aquarium-v02-barracuda-1",
+        "material": "barracuda"
+      }
+    },
+    {
+      "seq": 136,
+      "op": "add",
+      "time": "2026-11-01T12:16:00.000Z",
+      "author": "jimmy",
+      "note": "add Pacific barracuda back fin",
+      "object": {
+        "uuid": "aquarium-v02-barracuda-1-fin",
+        "name": "Pacific barracuda back fin",
+        "description": "A long silver hunter with sharp teeth. It hovers still, then darts at its food.",
+        "type": "box",
+        "dimensions": [
+          10.5,
+          1.26,
+          5.04
+        ],
+        "position": [
+          167.844,
+          193.584,
+          169.44
+        ],
+        "rotation_y": 0,
+        "rotation_z": 160.606,
+        "parent": "aquarium-v02-barracuda-1",
+        "material": "barracuda"
+      }
+    },
+    {
+      "seq": 137,
+      "op": "add",
+      "time": "2026-11-01T12:17:00.000Z",
+      "author": "jimmy",
+      "note": "add Bat ray 1",
+      "object": {
+        "uuid": "aquarium-v02-batray-1",
+        "name": "Bat ray 1",
+        "description": "It flaps its wing-like fins to glide. It has a barb on its tail but is gentle and curious.",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          -440.316,
+          219.432,
+          58.944
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 138,
+      "op": "add",
+      "time": "2026-11-01T12:18:00.000Z",
+      "author": "jimmy",
+      "note": "add Bat ray wings",
+      "object": {
+        "uuid": "aquarium-v02-batray-1-body",
+        "name": "Bat ray wings",
+        "description": "It flaps its wing-like fins to glide. It has a barb on its tail but is gentle and curious.",
+        "type": "box",
+        "dimensions": [
+          33,
+          33,
+          2.4
+        ],
+        "position": [
+          -440.316,
+          219.432,
+          58.944
+        ],
+        "rotation_y": 0,
+        "rotation_z": 5.631,
+        "parent": "aquarium-v02-batray-1",
+        "material": "ray"
+      }
+    },
+    {
+      "seq": 139,
+      "op": "add",
+      "time": "2026-11-01T12:19:00.000Z",
+      "author": "jimmy",
+      "note": "add Bat ray tail",
+      "object": {
+        "uuid": "aquarium-v02-batray-1-tail",
+        "name": "Bat ray tail",
+        "description": "It flaps its wing-like fins to glide. It has a barb on its tail but is gentle and curious.",
+        "type": "cylinder",
+        "dimensions": [
+          0.72,
+          42
+        ],
+        "position": [
+          -469.08,
+          243.024,
+          58.944
+        ],
+        "rotation_y": 90,
+        "rotation_z": -39.369,
+        "parent": "aquarium-v02-batray-1",
+        "material": "ray"
+      }
+    },
+    {
+      "seq": 140,
+      "op": "add",
+      "time": "2026-11-01T12:20:00.000Z",
+      "author": "jimmy",
+      "note": "add Bat ray head",
+      "object": {
+        "uuid": "aquarium-v02-batray-1-hump",
+        "name": "Bat ray head",
+        "description": "It flaps its wing-like fins to glide. It has a barb on its tail but is gentle and curious.",
+        "type": "sphere",
+        "dimensions": [
+          4.2
+        ],
+        "position": [
+          -434.748,
+          214.86,
+          60.744
+        ],
+        "rotation_y": 0,
+        "rotation_z": -39.369,
+        "parent": "aquarium-v02-batray-1",
+        "material": "ray"
+      }
+    },
+    {
+      "seq": 141,
+      "op": "add",
+      "time": "2026-11-01T12:21:00.000Z",
+      "author": "jimmy",
+      "note": "add Garibaldi 2",
+      "object": {
+        "uuid": "aquarium-v02-garibaldi-2",
+        "name": "Garibaldi 2",
+        "description": "California's official state marine fish. Bright orange and bold; it guards its little patch of reef.",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          37.92,
+          -157.608,
+          45.792
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 142,
+      "op": "add",
+      "time": "2026-11-01T12:22:00.000Z",
+      "author": "jimmy",
+      "note": "add Garibaldi body",
+      "object": {
+        "uuid": "aquarium-v02-garibaldi-2-body",
+        "name": "Garibaldi body",
+        "description": "California's official state marine fish. Bright orange and bold; it guards its little patch of reef.",
+        "type": "box",
+        "dimensions": [
+          7.2,
+          1.872,
+          4.32
+        ],
+        "position": [
+          38.52,
+          -157.62,
+          45.792
+        ],
+        "rotation_y": 0,
+        "rotation_z": -1.612,
+        "parent": "aquarium-v02-garibaldi-2",
+        "material": "garibaldi"
+      }
+    },
+    {
+      "seq": 143,
+      "op": "add",
+      "time": "2026-11-01T12:23:00.000Z",
+      "author": "jimmy",
+      "note": "add Garibaldi tail",
+      "object": {
+        "uuid": "aquarium-v02-garibaldi-2-tail",
+        "name": "Garibaldi tail",
+        "description": "California's official state marine fish. Bright orange and bold; it guards its little patch of reef.",
+        "type": "box",
+        "dimensions": [
+          2.4,
+          0.48,
+          3.6
+        ],
+        "position": [
+          33.6,
+          -157.488,
+          45.792
+        ],
+        "rotation_y": 0,
+        "rotation_z": -1.612,
+        "parent": "aquarium-v02-garibaldi-2",
+        "material": "garibaldi"
+      }
+    },
+    {
+      "seq": 144,
+      "op": "add",
+      "time": "2026-11-01T12:24:00.000Z",
+      "author": "jimmy",
+      "note": "add Garibaldi back fin",
+      "object": {
+        "uuid": "aquarium-v02-garibaldi-2-fin",
+        "name": "Garibaldi back fin",
+        "description": "California's official state marine fish. Bright orange and bold; it guards its little patch of reef.",
+        "type": "box",
+        "dimensions": [
+          3,
+          0.36,
+          1.44
+        ],
+        "position": [
+          38.52,
+          -157.62,
+          48.672
+        ],
+        "rotation_y": 0,
+        "rotation_z": -1.612,
+        "parent": "aquarium-v02-garibaldi-2",
+        "material": "garibaldi"
+      }
+    },
+    {
+      "seq": 145,
+      "op": "add",
+      "time": "2026-11-01T12:25:00.000Z",
+      "author": "jimmy",
+      "note": "add Giant kelp",
+      "object": {
+        "uuid": "aquarium-v02-kelp-7",
+        "name": "Giant kelp",
+        "description": "a brown-green seaweed that can grow up to 2 ft a day and forms underwater forests",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          -576,
+          144,
+          12
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 146,
+      "op": "add",
+      "time": "2026-11-01T12:26:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp stem",
+      "object": {
+        "uuid": "aquarium-v02-kelp-7-stem",
+        "name": "Kelp stem",
+        "description": "the long stem (stipe)",
+        "type": "cylinder",
+        "dimensions": [
+          1.44,
+          252
+        ],
+        "position": [
+          -576,
+          144,
+          138
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-kelp-7",
+        "material": "stem"
+      }
+    },
+    {
+      "seq": 147,
+      "op": "add",
+      "time": "2026-11-01T12:27:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp blade",
+      "object": {
+        "uuid": "aquarium-v02-kelp-7-blade1",
+        "name": "Kelp blade",
+        "description": "a leaf-like blade",
+        "type": "box",
+        "dimensions": [
+          1.8,
+          8.4,
+          16.8
+        ],
+        "position": [
+          -580.8,
+          144,
+          100.2
+        ],
+        "rotation_y": 0,
+        "rotation_z": 8.295,
+        "parent": "aquarium-v02-kelp-7",
+        "material": "kelp2"
+      }
+    },
+    {
+      "seq": 148,
+      "op": "add",
+      "time": "2026-11-01T12:28:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp blade",
+      "object": {
+        "uuid": "aquarium-v02-kelp-7-blade2",
+        "name": "Kelp blade",
+        "description": "a leaf-like blade",
+        "type": "box",
+        "dimensions": [
+          1.8,
+          8.4,
+          16.8
+        ],
+        "position": [
+          -571.2,
+          144,
+          163.2
+        ],
+        "rotation_y": 0,
+        "rotation_z": 65.29,
+        "parent": "aquarium-v02-kelp-7",
+        "material": "kelp"
+      }
+    },
+    {
+      "seq": 149,
+      "op": "add",
+      "time": "2026-11-01T12:29:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp blade",
+      "object": {
+        "uuid": "aquarium-v02-kelp-7-blade3",
+        "name": "Kelp blade",
+        "description": "a leaf-like blade",
+        "type": "box",
+        "dimensions": [
+          1.8,
+          8.4,
+          16.8
+        ],
+        "position": [
+          -580.8,
+          144,
+          226.2
+        ],
+        "rotation_y": 0,
+        "rotation_z": 76.829,
+        "parent": "aquarium-v02-kelp-7",
+        "material": "kelp2"
+      }
+    },
+    {
+      "seq": 150,
+      "op": "add",
+      "time": "2026-11-01T12:30:00.000Z",
+      "author": "jimmy",
+      "note": "add Giant kelp",
+      "object": {
+        "uuid": "aquarium-v02-kelp-8",
+        "name": "Giant kelp",
+        "description": "a brown-green seaweed that can grow up to 2 ft a day and forms underwater forests",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          288,
+          336,
+          12
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 151,
+      "op": "add",
+      "time": "2026-11-01T12:31:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp stem",
+      "object": {
+        "uuid": "aquarium-v02-kelp-8-stem",
+        "name": "Kelp stem",
+        "description": "the long stem (stipe)",
+        "type": "cylinder",
+        "dimensions": [
+          1.44,
+          276
+        ],
+        "position": [
+          288,
+          336,
+          150
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-kelp-8",
+        "material": "stem"
+      }
+    },
+    {
+      "seq": 152,
+      "op": "add",
+      "time": "2026-11-01T12:32:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp blade",
+      "object": {
+        "uuid": "aquarium-v02-kelp-8-blade1",
+        "name": "Kelp blade",
+        "description": "a leaf-like blade",
+        "type": "box",
+        "dimensions": [
+          1.8,
+          8.4,
+          16.8
+        ],
+        "position": [
+          283.2,
+          336,
+          108.6
+        ],
+        "rotation_y": 0,
+        "rotation_z": 18.412,
+        "parent": "aquarium-v02-kelp-8",
+        "material": "kelp2"
+      }
+    },
+    {
+      "seq": 153,
+      "op": "add",
+      "time": "2026-11-01T12:33:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp blade",
+      "object": {
+        "uuid": "aquarium-v02-kelp-8-blade2",
+        "name": "Kelp blade",
+        "description": "a leaf-like blade",
+        "type": "box",
+        "dimensions": [
+          1.8,
+          8.4,
+          16.8
+        ],
+        "position": [
+          292.8,
+          336,
+          177.6
+        ],
+        "rotation_y": 0,
+        "rotation_z": 60.722,
+        "parent": "aquarium-v02-kelp-8",
+        "material": "kelp"
+      }
+    },
+    {
+      "seq": 154,
+      "op": "add",
+      "time": "2026-11-01T12:34:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp blade",
+      "object": {
+        "uuid": "aquarium-v02-kelp-8-blade3",
+        "name": "Kelp blade",
+        "description": "a leaf-like blade",
+        "type": "box",
+        "dimensions": [
+          1.8,
+          8.4,
+          16.8
+        ],
+        "position": [
+          283.2,
+          336,
+          246.6
+        ],
+        "rotation_y": 0,
+        "rotation_z": 124.496,
+        "parent": "aquarium-v02-kelp-8",
+        "material": "kelp2"
+      }
+    },
+    {
+      "seq": 155,
+      "op": "add",
+      "time": "2026-11-01T12:35:00.000Z",
+      "author": "jimmy",
+      "note": "add Giant kelp",
+      "object": {
+        "uuid": "aquarium-v02-kelp-9",
+        "name": "Giant kelp",
+        "description": "a brown-green seaweed that can grow up to 2 ft a day and forms underwater forests",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          552,
+          96,
+          12
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 156,
+      "op": "add",
+      "time": "2026-11-01T12:36:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp stem",
+      "object": {
+        "uuid": "aquarium-v02-kelp-9-stem",
+        "name": "Kelp stem",
+        "description": "the long stem (stipe)",
+        "type": "cylinder",
+        "dimensions": [
+          1.44,
+          228
+        ],
+        "position": [
+          552,
+          96,
+          126
+        ],
+        "rotation_y": 0,
+        "parent": "aquarium-v02-kelp-9",
+        "material": "stem"
+      }
+    },
+    {
+      "seq": 157,
+      "op": "add",
+      "time": "2026-11-01T12:37:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp blade",
+      "object": {
+        "uuid": "aquarium-v02-kelp-9-blade1",
+        "name": "Kelp blade",
+        "description": "a leaf-like blade",
+        "type": "box",
+        "dimensions": [
+          1.8,
+          8.4,
+          16.8
+        ],
+        "position": [
+          547.2,
+          96,
+          91.8
+        ],
+        "rotation_y": 0,
+        "rotation_z": 41.671,
+        "parent": "aquarium-v02-kelp-9",
+        "material": "kelp2"
+      }
+    },
+    {
+      "seq": 158,
+      "op": "add",
+      "time": "2026-11-01T12:38:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp blade",
+      "object": {
+        "uuid": "aquarium-v02-kelp-9-blade2",
+        "name": "Kelp blade",
+        "description": "a leaf-like blade",
+        "type": "box",
+        "dimensions": [
+          1.8,
+          8.4,
+          16.8
+        ],
+        "position": [
+          556.8,
+          96,
+          148.8
+        ],
+        "rotation_y": 0,
+        "rotation_z": 70.527,
+        "parent": "aquarium-v02-kelp-9",
+        "material": "kelp"
+      }
+    },
+    {
+      "seq": 159,
+      "op": "add",
+      "time": "2026-11-01T12:39:00.000Z",
+      "author": "jimmy",
+      "note": "add Kelp blade",
+      "object": {
+        "uuid": "aquarium-v02-kelp-9-blade3",
+        "name": "Kelp blade",
+        "description": "a leaf-like blade",
+        "type": "box",
+        "dimensions": [
+          1.8,
+          8.4,
+          16.8
+        ],
+        "position": [
+          547.2,
+          96,
+          205.8
+        ],
+        "rotation_y": 0,
+        "rotation_z": 134.092,
+        "parent": "aquarium-v02-kelp-9",
+        "material": "kelp2"
+      }
+    }
+  ]
+}

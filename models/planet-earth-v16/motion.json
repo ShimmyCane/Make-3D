@@ -1,0 +1,200 @@
+{
+  "schema": "make3d.motion/0.1",
+  "model_id": "planet-earth-v16",
+  "name": "Spin, clouds, station, launches, storms",
+  "description": "Earth spins; the Moon goes round. Clouds drift on their own shells. Launches lift off and return to their pads. Storms turn. One 480 s loop; every motion is a whole number of turns, so it never jumps.",
+  "units": "in",
+  "up": "z",
+  "loop_s": 480,
+  "autoplay": {
+    "plays": 2
+  },
+  "motions": [
+    {
+      "id": "earth-spin",
+      "target": "planet-earth-v16-body-earth",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 32
+    },
+    {
+      "id": "moon-orbit",
+      "target": "planet-earth-v16-arm-moon",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 16
+    },
+    {
+      "id": "cloud-drift",
+      "target": "planet-earth-v16-clouds",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 40
+    },
+    {
+      "id": "iss-orbit",
+      "target": "planet-earth-v16-iss",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 72
+    },
+    {
+      "id": "launch-1",
+      "target": "planet-earth-v16-rocket-1",
+      "kind": "bob",
+      "axis": "x",
+      "amount": 26,
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "launch-2",
+      "target": "planet-earth-v16-rocket-2",
+      "kind": "bob",
+      "axis": "y",
+      "amount": 26,
+      "cycles": 2,
+      "phase": 0.5
+    },
+    {
+      "id": "storm-1-turn",
+      "target": "planet-earth-v16-storm-1",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 32
+    },
+    {
+      "id": "storm-2-turn",
+      "target": "planet-earth-v16-storm-2",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 32
+    },
+    {
+      "id": "storm-3-turn",
+      "target": "planet-earth-v16-storm-3",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 32
+    },
+    {
+      "id": "polar-orbit",
+      "target": "planet-earth-v16-polar",
+      "kind": "spin",
+      "axis": "x",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 36
+    },
+    {
+      "id": "sat-1-orbit",
+      "target": "planet-earth-v16-sat-1",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 24
+    },
+    {
+      "id": "sat-2-orbit",
+      "target": "planet-earth-v16-sat-2",
+      "kind": "spin",
+      "axis": "y",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 30
+    },
+    {
+      "id": "sat-3-orbit",
+      "target": "planet-earth-v16-sat-3",
+      "kind": "spin",
+      "axis": "x",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 36
+    },
+    {
+      "id": "sat-4-orbit",
+      "target": "planet-earth-v16-sat-4",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 28
+    },
+    {
+      "id": "sat-5-orbit",
+      "target": "planet-earth-v16-sat-5",
+      "kind": "spin",
+      "axis": "y",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 34
+    },
+    {
+      "id": "sat-6-orbit",
+      "target": "planet-earth-v16-sat-6",
+      "kind": "spin",
+      "axis": "x",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 40
+    }
+  ]
+}

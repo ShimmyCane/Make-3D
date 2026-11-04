@@ -1,0 +1,1939 @@
+{
+  "model_id": "robot-loop-v04",
+  "name": "Robot going for a stroll V04",
+  "description": "Adds a top hat on the head. Hat is a visibility group. Walks the loop from Quick Detail \"Robot Loop\" (3c4c380d-7901-4944-8929-d74e92903789).",
+  "units": "in",
+  "up": "z",
+  "world": "default-world",
+  "materials": {
+    "body": {
+      "color": "#a8e0c8",
+      "opacity": 1
+    },
+    "head": {
+      "color": "#bfe3f0",
+      "opacity": 1
+    },
+    "accent": {
+      "color": "#f4a38c",
+      "opacity": 1
+    },
+    "joint": {
+      "color": "#c9c3d9",
+      "opacity": 1
+    },
+    "ink": {
+      "color": "#2d2a26",
+      "opacity": 1
+    },
+    "banana": {
+      "color": "#ffd96a",
+      "opacity": 1
+    },
+    "peel": {
+      "color": "#7a5a43",
+      "opacity": 1
+    },
+    "stone": {
+      "color": "#e9e4d8",
+      "opacity": 1
+    }
+  },
+  "objects": [
+    {
+      "description": "toy robot, about 3 ft tall; walks the path",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-robot",
+      "name": "Robot",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "swings from the hip",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-robot",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-leg-l",
+      "name": "Left leg",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        3.5,
+        15
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-leg-l",
+      "material": "joint",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-thigh-l",
+      "name": "Left leg tube",
+      "type": "cylinder",
+      "dimensions": [
+        1.4,
+        13.5
+      ],
+      "position": [
+        0,
+        3.5,
+        8.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-leg-l",
+      "material": "accent",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-foot-l",
+      "name": "Left foot",
+      "type": "box",
+      "dimensions": [
+        6,
+        3.5,
+        1.5
+      ],
+      "position": [
+        1,
+        3.5,
+        1
+      ]
+    },
+    {
+      "description": "swings from the hip",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-robot",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-leg-r",
+      "name": "Right leg",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        -3.5,
+        15
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-leg-r",
+      "material": "joint",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-thigh-r",
+      "name": "Right leg tube",
+      "type": "cylinder",
+      "dimensions": [
+        1.4,
+        13.5
+      ],
+      "position": [
+        0,
+        -3.5,
+        8.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-leg-r",
+      "material": "accent",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-foot-r",
+      "name": "Right foot",
+      "type": "box",
+      "dimensions": [
+        6,
+        3.5,
+        1.5
+      ],
+      "position": [
+        1,
+        -3.5,
+        1
+      ]
+    },
+    {
+      "description": "sways a little on each step",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-robot",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-upper",
+      "name": "Upper body",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        24
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-upper",
+      "material": "joint",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-pelvis",
+      "name": "Hips",
+      "type": "box",
+      "dimensions": [
+        7,
+        10,
+        3
+      ],
+      "position": [
+        0,
+        0,
+        15.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-upper",
+      "material": "body",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-torso",
+      "name": "Body",
+      "type": "box",
+      "dimensions": [
+        8,
+        11,
+        11
+      ],
+      "position": [
+        0,
+        0,
+        22.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-upper",
+      "material": "accent",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-panel",
+      "name": "Chest panel",
+      "type": "box",
+      "dimensions": [
+        0.5,
+        6,
+        4
+      ],
+      "position": [
+        4.25,
+        0,
+        23.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-upper",
+      "material": "banana",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-button1",
+      "name": "Button 1",
+      "type": "sphere",
+      "dimensions": [
+        0.7
+      ],
+      "position": [
+        4.6,
+        -1.5,
+        23.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-upper",
+      "material": "head",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-button2",
+      "name": "Button 2",
+      "type": "sphere",
+      "dimensions": [
+        0.7
+      ],
+      "position": [
+        4.6,
+        1.5,
+        23.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-upper",
+      "material": "joint",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-neck",
+      "name": "Neck",
+      "type": "cylinder",
+      "dimensions": [
+        1.5,
+        2
+      ],
+      "position": [
+        0,
+        0,
+        29
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-upper",
+      "material": "head",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-head",
+      "name": "Head",
+      "type": "box",
+      "dimensions": [
+        8,
+        9,
+        7
+      ],
+      "position": [
+        0,
+        0,
+        33.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-upper",
+      "material": "ink",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-eye-l",
+      "name": "Left eye",
+      "type": "sphere",
+      "dimensions": [
+        1.2
+      ],
+      "position": [
+        4,
+        2,
+        34.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-upper",
+      "material": "ink",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-eye-r",
+      "name": "Right eye",
+      "type": "sphere",
+      "dimensions": [
+        1.2
+      ],
+      "position": [
+        4,
+        -2,
+        34.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-upper",
+      "material": "accent",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-mouth",
+      "name": "Mouth",
+      "type": "box",
+      "dimensions": [
+        0.4,
+        3,
+        0.6
+      ],
+      "position": [
+        4.1,
+        0,
+        31.8
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-upper",
+      "material": "ink",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-antenna",
+      "name": "Antenna",
+      "type": "cylinder",
+      "dimensions": [
+        0.3,
+        4
+      ],
+      "position": [
+        0,
+        0,
+        39
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-upper",
+      "material": "accent",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-antenna-ball",
+      "name": "Antenna ball",
+      "type": "sphere",
+      "dimensions": [
+        1
+      ],
+      "position": [
+        0,
+        0,
+        41.5
+      ]
+    },
+    {
+      "description": "swings from the shoulder",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-upper",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-arm-l",
+      "name": "Left arm",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        6.8,
+        27
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-arm-l",
+      "material": "joint",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-arm-l-tube",
+      "name": "Left arm tube",
+      "type": "cylinder",
+      "dimensions": [
+        1.2,
+        10
+      ],
+      "position": [
+        0,
+        6.8,
+        22
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-arm-l",
+      "material": "accent",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-hand-l",
+      "name": "Left hand",
+      "type": "sphere",
+      "dimensions": [
+        1.8
+      ],
+      "position": [
+        0,
+        6.8,
+        16.5
+      ]
+    },
+    {
+      "description": "holds the banana up in front",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-upper",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-arm-r",
+      "name": "Right arm",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        -6.8,
+        27
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -45,
+      "parent": "robot-loop-v04-arm-r",
+      "material": "joint",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-arm-r-tube",
+      "name": "Right arm tube",
+      "type": "cylinder",
+      "dimensions": [
+        1.2,
+        10
+      ],
+      "position": [
+        3.5355339059327373,
+        -6.8,
+        23.464466094067262
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-arm-r",
+      "material": "accent",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-hand-r",
+      "name": "Right hand",
+      "type": "sphere",
+      "dimensions": [
+        1.8
+      ],
+      "position": [
+        7.071067811865475,
+        -6.8,
+        19.928932188134524
+      ]
+    },
+    {
+      "description": "held in the right hand",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-arm-r",
+      "material": null,
+      "tags": [
+        "show:banana"
+      ],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-banana",
+      "name": "Banana",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        7.071067811865475,
+        -6.8,
+        19.928932188134524
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 42.857142857142854,
+      "parent": "robot-loop-v04-banana",
+      "material": "banana",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-banana-1",
+      "name": "Banana piece 1",
+      "type": "cylinder",
+      "dimensions": [
+        0.7278823268847101,
+        1.7959965017094255
+      ],
+      "position": [
+        6.669379042844433,
+        -6.8,
+        15.847895761509008
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 28.571428571428573,
+      "parent": "robot-loop-v04-banana",
+      "material": "banana",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-banana-2",
+      "name": "Banana piece 2",
+      "type": "cylinder",
+      "dimensions": [
+        0.8682214306505568,
+        1.7959965017094255
+      ],
+      "position": [
+        7.540397252086846,
+        -6.8,
+        17.059408316406614
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 14.285714285714286,
+      "parent": "robot-loop-v04-banana",
+      "material": "banana",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-banana-3",
+      "name": "Banana piece 3",
+      "type": "cylinder",
+      "dimensions": [
+        0.9653391037658468,
+        1.7959965017094255
+      ],
+      "position": [
+        8.085531529239942,
+        -6.8,
+        18.448387801992762
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-banana",
+      "material": "banana",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-banana-4",
+      "name": "Banana piece 4",
+      "type": "cylinder",
+      "dimensions": [
+        1,
+        1.7959965017094255
+      ],
+      "position": [
+        8.271067811865475,
+        -6.8,
+        19.928932188134524
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -14.285714285714292,
+      "parent": "robot-loop-v04-banana",
+      "material": "banana",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-banana-5",
+      "name": "Banana piece 5",
+      "type": "cylinder",
+      "dimensions": [
+        0.9653391037658466,
+        1.7959965017094255
+      ],
+      "position": [
+        8.085531529239942,
+        -6.8,
+        21.409476574276287
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -28.571428571428573,
+      "parent": "robot-loop-v04-banana",
+      "material": "banana",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-banana-6",
+      "name": "Banana piece 6",
+      "type": "cylinder",
+      "dimensions": [
+        0.8682214306505568,
+        1.7959965017094255
+      ],
+      "position": [
+        7.540397252086846,
+        -6.8,
+        22.798456059862435
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -42.85714285714286,
+      "parent": "robot-loop-v04-banana",
+      "material": "banana",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-banana-7",
+      "name": "Banana piece 7",
+      "type": "cylinder",
+      "dimensions": [
+        0.7278823268847101,
+        1.7959965017094255
+      ],
+      "position": [
+        6.669379042844433,
+        -6.8,
+        24.00996861476004
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-banana",
+      "material": "peel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-banana-tip-top",
+      "name": "Banana stem",
+      "type": "sphere",
+      "dimensions": [
+        0.55
+      ],
+      "position": [
+        6.127793469984711,
+        -6.8,
+        24.525198846848394
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-banana",
+      "material": "peel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-banana-tip-bottom",
+      "name": "Banana tip",
+      "type": "sphere",
+      "dimensions": [
+        0.55
+      ],
+      "position": [
+        6.127793469984711,
+        -6.8,
+        15.332665529420655
+      ]
+    },
+    {
+      "description": "the path the robot walks",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stones",
+      "name": "Stepping stones",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-1",
+      "name": "Stone 1",
+      "type": "cylinder",
+      "dimensions": [
+        3.2,
+        0.25
+      ],
+      "position": [
+        0,
+        0,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-2",
+      "name": "Stone 2",
+      "type": "cylinder",
+      "dimensions": [
+        3.6,
+        0.25
+      ],
+      "position": [
+        15.72,
+        -3.34,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-3",
+      "name": "Stone 3",
+      "type": "cylinder",
+      "dimensions": [
+        4,
+        0.25
+      ],
+      "position": [
+        31.65,
+        -5.78,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-4",
+      "name": "Stone 4",
+      "type": "cylinder",
+      "dimensions": [
+        3.2,
+        0.25
+      ],
+      "position": [
+        47.72,
+        -7.02,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-5",
+      "name": "Stone 5",
+      "type": "cylinder",
+      "dimensions": [
+        3.6,
+        0.25
+      ],
+      "position": [
+        63.83,
+        -6.86,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-6",
+      "name": "Stone 6",
+      "type": "cylinder",
+      "dimensions": [
+        4,
+        0.25
+      ],
+      "position": [
+        79.86,
+        -5.18,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-7",
+      "name": "Stone 7",
+      "type": "cylinder",
+      "dimensions": [
+        3.2,
+        0.25
+      ],
+      "position": [
+        95.55,
+        -1.55,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-8",
+      "name": "Stone 8",
+      "type": "cylinder",
+      "dimensions": [
+        3.6,
+        0.25
+      ],
+      "position": [
+        110.22,
+        5.02,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-9",
+      "name": "Stone 9",
+      "type": "cylinder",
+      "dimensions": [
+        4,
+        0.25
+      ],
+      "position": [
+        122.85,
+        14.97,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-10",
+      "name": "Stone 10",
+      "type": "cylinder",
+      "dimensions": [
+        3.2,
+        0.25
+      ],
+      "position": [
+        132.83,
+        27.59,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-11",
+      "name": "Stone 11",
+      "type": "cylinder",
+      "dimensions": [
+        3.6,
+        0.25
+      ],
+      "position": [
+        139.82,
+        42.06,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-12",
+      "name": "Stone 12",
+      "type": "cylinder",
+      "dimensions": [
+        4,
+        0.25
+      ],
+      "position": [
+        142.69,
+        57.89,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-13",
+      "name": "Stone 13",
+      "type": "cylinder",
+      "dimensions": [
+        3.2,
+        0.25
+      ],
+      "position": [
+        142.03,
+        73.97,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-14",
+      "name": "Stone 14",
+      "type": "cylinder",
+      "dimensions": [
+        3.6,
+        0.25
+      ],
+      "position": [
+        139.22,
+        89.83,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-15",
+      "name": "Stone 15",
+      "type": "cylinder",
+      "dimensions": [
+        4,
+        0.25
+      ],
+      "position": [
+        134.14,
+        105.11,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-16",
+      "name": "Stone 16",
+      "type": "cylinder",
+      "dimensions": [
+        3.2,
+        0.25
+      ],
+      "position": [
+        125.85,
+        118.9,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-17",
+      "name": "Stone 17",
+      "type": "cylinder",
+      "dimensions": [
+        3.6,
+        0.25
+      ],
+      "position": [
+        114.59,
+        130.38,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-18",
+      "name": "Stone 18",
+      "type": "cylinder",
+      "dimensions": [
+        4,
+        0.25
+      ],
+      "position": [
+        101.42,
+        139.63,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-19",
+      "name": "Stone 19",
+      "type": "cylinder",
+      "dimensions": [
+        3.2,
+        0.25
+      ],
+      "position": [
+        87.07,
+        146.95,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-20",
+      "name": "Stone 20",
+      "type": "cylinder",
+      "dimensions": [
+        3.6,
+        0.25
+      ],
+      "position": [
+        71.93,
+        152.48,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-21",
+      "name": "Stone 21",
+      "type": "cylinder",
+      "dimensions": [
+        4,
+        0.25
+      ],
+      "position": [
+        56.04,
+        153.69,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-22",
+      "name": "Stone 22",
+      "type": "cylinder",
+      "dimensions": [
+        3.2,
+        0.25
+      ],
+      "position": [
+        43,
+        145.29,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-23",
+      "name": "Stone 23",
+      "type": "cylinder",
+      "dimensions": [
+        3.6,
+        0.25
+      ],
+      "position": [
+        35.51,
+        131.04,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-24",
+      "name": "Stone 24",
+      "type": "cylinder",
+      "dimensions": [
+        4,
+        0.25
+      ],
+      "position": [
+        26.59,
+        117.62,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-25",
+      "name": "Stone 25",
+      "type": "cylinder",
+      "dimensions": [
+        3.2,
+        0.25
+      ],
+      "position": [
+        16.22,
+        105.3,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-26",
+      "name": "Stone 26",
+      "type": "cylinder",
+      "dimensions": [
+        3.6,
+        0.25
+      ],
+      "position": [
+        4.37,
+        94.39,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-27",
+      "name": "Stone 27",
+      "type": "cylinder",
+      "dimensions": [
+        4,
+        0.25
+      ],
+      "position": [
+        -9.09,
+        85.63,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-28",
+      "name": "Stone 28",
+      "type": "cylinder",
+      "dimensions": [
+        3.2,
+        0.25
+      ],
+      "position": [
+        -24.99,
+        84.7,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-29",
+      "name": "Stone 29",
+      "type": "cylinder",
+      "dimensions": [
+        3.6,
+        0.25
+      ],
+      "position": [
+        -38.81,
+        92.61,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-30",
+      "name": "Stone 30",
+      "type": "cylinder",
+      "dimensions": [
+        4,
+        0.25
+      ],
+      "position": [
+        -50.64,
+        103.54,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-31",
+      "name": "Stone 31",
+      "type": "cylinder",
+      "dimensions": [
+        3.2,
+        0.25
+      ],
+      "position": [
+        -61.99,
+        114.98,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-32",
+      "name": "Stone 32",
+      "type": "cylinder",
+      "dimensions": [
+        3.6,
+        0.25
+      ],
+      "position": [
+        -76.72,
+        117.46,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-33",
+      "name": "Stone 33",
+      "type": "cylinder",
+      "dimensions": [
+        4,
+        0.25
+      ],
+      "position": [
+        -89.09,
+        107.54,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-34",
+      "name": "Stone 34",
+      "type": "cylinder",
+      "dimensions": [
+        3.2,
+        0.25
+      ],
+      "position": [
+        -95.98,
+        93.02,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-35",
+      "name": "Stone 35",
+      "type": "cylinder",
+      "dimensions": [
+        3.6,
+        0.25
+      ],
+      "position": [
+        -98.35,
+        77.15,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-36",
+      "name": "Stone 36",
+      "type": "cylinder",
+      "dimensions": [
+        4,
+        0.25
+      ],
+      "position": [
+        -96.32,
+        61.18,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-37",
+      "name": "Stone 37",
+      "type": "cylinder",
+      "dimensions": [
+        3.2,
+        0.25
+      ],
+      "position": [
+        -91.49,
+        45.82,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-38",
+      "name": "Stone 38",
+      "type": "cylinder",
+      "dimensions": [
+        3.6,
+        0.25
+      ],
+      "position": [
+        -84.4,
+        31.37,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-39",
+      "name": "Stone 39",
+      "type": "cylinder",
+      "dimensions": [
+        4,
+        0.25
+      ],
+      "position": [
+        -74.46,
+        18.73,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-40",
+      "name": "Stone 40",
+      "type": "cylinder",
+      "dimensions": [
+        3.2,
+        0.25
+      ],
+      "position": [
+        -61.21,
+        9.67,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-41",
+      "name": "Stone 41",
+      "type": "cylinder",
+      "dimensions": [
+        3.6,
+        0.25
+      ],
+      "position": [
+        -45.58,
+        6.12,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-42",
+      "name": "Stone 42",
+      "type": "cylinder",
+      "dimensions": [
+        4,
+        0.25
+      ],
+      "position": [
+        -29.59,
+        7.42,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-43",
+      "name": "Stone 43",
+      "type": "cylinder",
+      "dimensions": [
+        3.2,
+        0.25
+      ],
+      "position": [
+        -17.92,
+        18.01,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-44",
+      "name": "Stone 44",
+      "type": "cylinder",
+      "dimensions": [
+        3.6,
+        0.25
+      ],
+      "position": [
+        -4.49,
+        26.48,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-45",
+      "name": "Stone 45",
+      "type": "cylinder",
+      "dimensions": [
+        4,
+        0.25
+      ],
+      "position": [
+        11.02,
+        24.65,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-46",
+      "name": "Stone 46",
+      "type": "cylinder",
+      "dimensions": [
+        3.2,
+        0.25
+      ],
+      "position": [
+        23.4,
+        14.49,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-47",
+      "name": "Stone 47",
+      "type": "cylinder",
+      "dimensions": [
+        3.6,
+        0.25
+      ],
+      "position": [
+        29.96,
+        -0.02,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-48",
+      "name": "Stone 48",
+      "type": "cylinder",
+      "dimensions": [
+        4,
+        0.25
+      ],
+      "position": [
+        25.94,
+        -14.85,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-49",
+      "name": "Stone 49",
+      "type": "cylinder",
+      "dimensions": [
+        3.2,
+        0.25
+      ],
+      "position": [
+        12.44,
+        -23.56,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-50",
+      "name": "Stone 50",
+      "type": "cylinder",
+      "dimensions": [
+        3.6,
+        0.25
+      ],
+      "position": [
+        -3.05,
+        -26.86,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-51",
+      "name": "Stone 51",
+      "type": "cylinder",
+      "dimensions": [
+        4,
+        0.25
+      ],
+      "position": [
+        -16.6,
+        -19.21,
+        0.125
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-stones",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-stone-52",
+      "name": "Stone 52",
+      "type": "cylinder",
+      "dimensions": [
+        3.2,
+        0.25
+      ],
+      "position": [
+        -15.3,
+        -3.72,
+        0.125
+      ]
+    },
+    {
+      "description": "held in the left hand",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-arm-l",
+      "material": null,
+      "tags": [
+        "show:frisbee"
+      ],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-frisbee",
+      "name": "Frisbee",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        6.8,
+        16.5
+      ]
+    },
+    {
+      "description": "flat, coral",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-frisbee",
+      "material": "accent",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-frisbee-disc",
+      "name": "Frisbee disc",
+      "type": "cylinder",
+      "dimensions": [
+        4.5,
+        0.5
+      ],
+      "position": [
+        0,
+        12.3,
+        16.5
+      ]
+    },
+    {
+      "description": "raised ring on the disc",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-frisbee",
+      "material": "joint",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-frisbee-rim",
+      "name": "Frisbee rim",
+      "type": "cylinder",
+      "dimensions": [
+        2.8,
+        0.6
+      ],
+      "position": [
+        0,
+        12.3,
+        17.05
+      ]
+    },
+    {
+      "description": "sits on the head",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-upper",
+      "material": null,
+      "tags": [
+        "show:hat"
+      ],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-hat",
+      "name": "Top hat",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        37
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-hat",
+      "material": "ink",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-hat-brim",
+      "name": "Hat brim",
+      "type": "cylinder",
+      "dimensions": [
+        5.5,
+        0.6
+      ],
+      "position": [
+        0,
+        0,
+        37.3
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-hat",
+      "material": "ink",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-hat-crown",
+      "name": "Hat crown",
+      "type": "cylinder",
+      "dimensions": [
+        3.6,
+        6
+      ],
+      "position": [
+        0,
+        0,
+        40.6
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "robot-loop-v04-hat",
+      "material": "accent",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "robot-loop-v04-hat-band",
+      "name": "Hat band",
+      "type": "cylinder",
+      "dimensions": [
+        3.65,
+        1
+      ],
+      "position": [
+        0,
+        0,
+        38.1
+      ]
+    }
+  ],
+  "version": 96
+}

@@ -1,0 +1,611 @@
+{
+  "schema": "make3d.history/0.1",
+  "model_id": "planet-mars-v02",
+  "header": {
+    "model_id": "planet-mars-v02",
+    "name": "Mars (planet view) V02",
+    "description": "Mars on its own, increment 2: the red planet, with two small moons. Textures are placed by latitude and longitude; sizes are rough. Spins, with its moons going round. Use the button to go back to the Solar System.",
+    "units": "in",
+    "up": "z",
+    "world": "solar-system-world",
+    "materials": {
+      "sun": {
+        "color": "#ffd23f",
+        "opacity": 1
+      },
+      "corona": {
+        "color": "#ffb347",
+        "opacity": 0.2
+      },
+      "orbit": {
+        "color": "#8a86a3",
+        "opacity": 1
+      },
+      "mercury": {
+        "color": "#b8b0a4",
+        "opacity": 1
+      },
+      "venus": {
+        "color": "#f0d9a0",
+        "opacity": 1
+      },
+      "earth": {
+        "color": "#4f8fd6",
+        "opacity": 1
+      },
+      "mars": {
+        "color": "#d9714a",
+        "opacity": 1
+      },
+      "jup1": {
+        "color": "#e8c49a",
+        "opacity": 1
+      },
+      "jup2": {
+        "color": "#b87c55",
+        "opacity": 1
+      },
+      "jup3": {
+        "color": "#f2e6d0",
+        "opacity": 1
+      },
+      "sat": {
+        "color": "#ecd8a0",
+        "opacity": 1
+      },
+      "satb": {
+        "color": "#d9b97c",
+        "opacity": 1
+      },
+      "ring": {
+        "color": "#e6d7b0",
+        "opacity": 0.8
+      },
+      "ring2": {
+        "color": "#b59f7a",
+        "opacity": 0.8
+      },
+      "uranus": {
+        "color": "#a9e6f0",
+        "opacity": 1
+      },
+      "uranusb": {
+        "color": "#8fd4e6",
+        "opacity": 1
+      },
+      "neptune": {
+        "color": "#4f73e0",
+        "opacity": 1
+      },
+      "neptuneb": {
+        "color": "#3b5fc2",
+        "opacity": 1
+      },
+      "pluto": {
+        "color": "#c9b49a",
+        "opacity": 1
+      },
+      "charon": {
+        "color": "#8f8a85",
+        "opacity": 1
+      },
+      "moon": {
+        "color": "#bdbdbd",
+        "opacity": 1
+      },
+      "phobos": {
+        "color": "#8c7f74",
+        "opacity": 1
+      },
+      "io": {
+        "color": "#f6e28a",
+        "opacity": 1
+      },
+      "europa": {
+        "color": "#e9dfcf",
+        "opacity": 1
+      },
+      "ganymede": {
+        "color": "#a79b8b",
+        "opacity": 1
+      },
+      "callisto": {
+        "color": "#7e7467",
+        "opacity": 1
+      },
+      "titan": {
+        "color": "#e9b872",
+        "opacity": 1
+      },
+      "enceladus": {
+        "color": "#f4f8ff",
+        "opacity": 1
+      },
+      "miranda": {
+        "color": "#b4b4b4",
+        "opacity": 1
+      },
+      "ariel": {
+        "color": "#c9c9c9",
+        "opacity": 1
+      },
+      "triton": {
+        "color": "#e0d6c8",
+        "opacity": 1
+      },
+      "rock": {
+        "color": "#9a9188",
+        "opacity": 1
+      },
+      "rock2": {
+        "color": "#b3a99c",
+        "opacity": 1
+      },
+      "air": {
+        "color": "#9fd8ff",
+        "opacity": 0.2
+      },
+      "venusair": {
+        "color": "#ffe9a8",
+        "opacity": 0.25
+      },
+      "marker": {
+        "color": "#ff8fa3",
+        "opacity": 1
+      },
+      "venusb1": {
+        "color": "#f3e3b0",
+        "opacity": 1
+      },
+      "venusb2": {
+        "color": "#e2c58a",
+        "opacity": 1
+      },
+      "cap": {
+        "color": "#fbfbff",
+        "opacity": 1
+      },
+      "dark": {
+        "color": "#5b544d",
+        "opacity": 1
+      },
+      "grs": {
+        "color": "#c4543b",
+        "opacity": 1
+      },
+      "ovalw": {
+        "color": "#fff7ee",
+        "opacity": 1
+      },
+      "hexblue": {
+        "color": "#2e4f8f",
+        "opacity": 1
+      },
+      "ringdark": {
+        "color": "#5c5a5a",
+        "opacity": 0.7
+      },
+      "crater": {
+        "color": "#7d756c",
+        "opacity": 1
+      },
+      "brightray": {
+        "color": "#f2f0ea",
+        "opacity": 1
+      },
+      "olympus": {
+        "color": "#b0664a",
+        "opacity": 1
+      },
+      "dustv": {
+        "color": "#c7a77a",
+        "opacity": 0.3
+      },
+      "ice": {
+        "color": "#ffffff",
+        "opacity": 1
+      },
+      "pluto_heart": {
+        "color": "#f4efe6",
+        "opacity": 1
+      },
+      "nitro": {
+        "color": "#fffdf7",
+        "opacity": 1
+      },
+      "mtn": {
+        "color": "#8a8f6a",
+        "opacity": 1
+      },
+      "amalthea": {
+        "color": "#b89070",
+        "opacity": 1
+      },
+      "himalia": {
+        "color": "#a09a92",
+        "opacity": 1
+      },
+      "thebe": {
+        "color": "#a58c75",
+        "opacity": 1
+      },
+      "mimas": {
+        "color": "#e8e8e8",
+        "opacity": 1
+      },
+      "tethys": {
+        "color": "#dcdcdc",
+        "opacity": 1
+      },
+      "dione": {
+        "color": "#d0d0d0",
+        "opacity": 1
+      },
+      "rhea": {
+        "color": "#c9c9c9",
+        "opacity": 1
+      },
+      "iapetus": {
+        "color": "#b8a890",
+        "opacity": 1
+      },
+      "umbriel": {
+        "color": "#6d6d72",
+        "opacity": 1
+      },
+      "titania": {
+        "color": "#bcbcc0",
+        "opacity": 1
+      },
+      "oberon": {
+        "color": "#a9a39d",
+        "opacity": 1
+      },
+      "puck": {
+        "color": "#8f8f8f",
+        "opacity": 1
+      },
+      "proteus": {
+        "color": "#7d7d7d",
+        "opacity": 1
+      },
+      "nereid": {
+        "color": "#9ea5b8",
+        "opacity": 1
+      },
+      "nix": {
+        "color": "#dedede",
+        "opacity": 1
+      },
+      "hydra": {
+        "color": "#e6e6e6",
+        "opacity": 1
+      },
+      "land": {
+        "color": "#5f9e5a",
+        "opacity": 1
+      },
+      "dsand": {
+        "color": "#d9b77a",
+        "opacity": 1
+      },
+      "cloud": {
+        "color": "#ffffff",
+        "opacity": 0.35
+      },
+      "iss": {
+        "color": "#d9dde3",
+        "opacity": 1
+      },
+      "panel": {
+        "color": "#2f5f9e",
+        "opacity": 1
+      },
+      "rocket": {
+        "color": "#f2f2f2",
+        "opacity": 1
+      },
+      "nose": {
+        "color": "#d6453d",
+        "opacity": 1
+      },
+      "plume": {
+        "color": "#ffa640",
+        "opacity": 0.6
+      },
+      "pad": {
+        "color": "#8c8c8c",
+        "opacity": 1
+      },
+      "storm": {
+        "color": "#ffffff",
+        "opacity": 0.8
+      },
+      "eye": {
+        "color": "#3c4a5a",
+        "opacity": 1
+      },
+      "light": {
+        "color": "#ffe27a",
+        "opacity": 1
+      }
+    },
+    "view": {
+      "fill": 0.75,
+      "radius": 7
+    },
+    "links": [
+      {
+        "label": "Back to the Solar System",
+        "target": "solar-system-v06",
+        "transition": "fade"
+      }
+    ]
+  },
+  "operations": [
+    {
+      "seq": 1,
+      "op": "add",
+      "time": "2026-11-01T10:01:00.000Z",
+      "author": "jimmy",
+      "note": "add Mars body",
+      "object": {
+        "uuid": "planet-mars-v02-body-mars",
+        "name": "Mars body",
+        "description": "spins on its own axis",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 2,
+      "op": "add",
+      "time": "2026-11-01T10:02:00.000Z",
+      "author": "jimmy",
+      "note": "add Mars",
+      "object": {
+        "uuid": "planet-mars-v02-ball-mars",
+        "name": "Mars",
+        "description": "the red planet, with two small moons",
+        "type": "sphere",
+        "dimensions": [
+          7
+        ],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": "planet-mars-v02-body-mars",
+        "material": "mars"
+      }
+    },
+    {
+      "seq": 3,
+      "op": "add",
+      "time": "2026-11-01T10:03:00.000Z",
+      "author": "jimmy",
+      "note": "add Mars atmosphere",
+      "object": {
+        "uuid": "planet-mars-v02-air-mars",
+        "name": "Mars atmosphere",
+        "description": "a thin see-through haze (taps pass through it)",
+        "type": "sphere",
+        "dimensions": [
+          7.84
+        ],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": "planet-mars-v02-body-mars",
+        "material": "air"
+      }
+    },
+    {
+      "seq": 4,
+      "op": "add",
+      "time": "2026-11-01T10:04:00.000Z",
+      "author": "jimmy",
+      "note": "add North polar cap",
+      "object": {
+        "uuid": "planet-mars-v02-cap-n",
+        "name": "North polar cap",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          3.2,
+          0.4
+        ],
+        "position": [
+          0,
+          0,
+          7.2
+        ],
+        "rotation_y": 0,
+        "parent": "planet-mars-v02-body-mars",
+        "material": "cap"
+      }
+    },
+    {
+      "seq": 5,
+      "op": "add",
+      "time": "2026-11-01T10:05:00.000Z",
+      "author": "jimmy",
+      "note": "add South polar cap",
+      "object": {
+        "uuid": "planet-mars-v02-cap-s",
+        "name": "South polar cap",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          3,
+          0.4
+        ],
+        "position": [
+          0,
+          0,
+          -7.2
+        ],
+        "rotation_y": 180,
+        "parent": "planet-mars-v02-body-mars",
+        "material": "cap"
+      }
+    },
+    {
+      "seq": 6,
+      "op": "add",
+      "time": "2026-11-01T10:06:00.000Z",
+      "author": "jimmy",
+      "note": "add Dark region",
+      "object": {
+        "uuid": "planet-mars-v02-dark",
+        "name": "Dark region",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          5,
+          0.4
+        ],
+        "position": [
+          5.689,
+          3.983,
+          -1.476
+        ],
+        "rotation_y": 102,
+        "rotation_z": 35,
+        "parent": "planet-mars-v02-body-mars",
+        "material": "dark"
+      }
+    },
+    {
+      "seq": 7,
+      "op": "add",
+      "time": "2026-11-01T10:07:00.000Z",
+      "author": "jimmy",
+      "note": "add Olympus Mons",
+      "object": {
+        "uuid": "planet-mars-v02-olympus",
+        "name": "Olympus Mons",
+        "description": "a tall volcano",
+        "type": "cone",
+        "dimensions": [
+          2.4,
+          3.2
+        ],
+        "position": [
+          -5.257,
+          -6.266,
+          2.658
+        ],
+        "rotation_y": 72,
+        "rotation_z": -130,
+        "parent": "planet-mars-v02-body-mars",
+        "material": "olympus"
+      }
+    },
+    {
+      "seq": 8,
+      "op": "add",
+      "time": "2026-11-01T10:08:00.000Z",
+      "author": "jimmy",
+      "note": "add Phobos orbit",
+      "object": {
+        "uuid": "planet-mars-v02-arm-phobos",
+        "name": "Phobos orbit",
+        "description": "turns the moon round the planet",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 9,
+      "op": "add",
+      "time": "2026-11-01T10:09:00.000Z",
+      "author": "jimmy",
+      "note": "add Phobos",
+      "object": {
+        "uuid": "planet-mars-v02-moon-phobos",
+        "name": "Phobos",
+        "description": "a moon of Mars",
+        "type": "sphere",
+        "dimensions": [
+          1.2
+        ],
+        "position": [
+          14,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": "planet-mars-v02-arm-phobos",
+        "material": "phobos"
+      }
+    },
+    {
+      "seq": 10,
+      "op": "add",
+      "time": "2026-11-01T10:10:00.000Z",
+      "author": "jimmy",
+      "note": "add Deimos orbit",
+      "object": {
+        "uuid": "planet-mars-v02-arm-deimos",
+        "name": "Deimos orbit",
+        "description": "turns the moon round the planet",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 11,
+      "op": "add",
+      "time": "2026-11-01T10:11:00.000Z",
+      "author": "jimmy",
+      "note": "add Deimos",
+      "object": {
+        "uuid": "planet-mars-v02-moon-deimos",
+        "name": "Deimos",
+        "description": "a moon of Mars",
+        "type": "sphere",
+        "dimensions": [
+          0.8
+        ],
+        "position": [
+          20,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": "planet-mars-v02-arm-deimos",
+        "material": "phobos"
+      }
+    }
+  ]
+}

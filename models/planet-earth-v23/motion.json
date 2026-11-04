@@ -1,0 +1,914 @@
+{
+  "schema": "make3d.motion/0.1",
+  "model_id": "planet-earth-v23",
+  "name": "Spin, satellites, launches, storms",
+  "description": "Earth spins; the Moon goes round. The ISS, Tiangong, Hubble and the weather satellite go round. Six rockets launch from their sites one after another: four come back to their pads, two fall into the sea. Each carries a new satellite that is released at the top and drops out of sight. Clouds drift. Storms turn. One 480 s loop; each motion is a whole number of turns, so it never jumps.",
+  "units": "in",
+  "up": "z",
+  "loop_s": 480,
+  "autoplay": {
+    "plays": 2
+  },
+  "motions": [
+    {
+      "id": "earth-spin",
+      "target": "planet-earth-v23-body-earth",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 32
+    },
+    {
+      "id": "moon-orbit",
+      "target": "planet-earth-v23-arm-moon",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 16
+    },
+    {
+      "id": "cloud-drift",
+      "target": "planet-earth-v23-clouds22",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 40
+    },
+    {
+      "id": "cloud-drift2",
+      "target": "planet-earth-v23-clouds22b",
+      "kind": "spin",
+      "axis": "y",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 30
+    },
+    {
+      "id": "arm22-iss-turn",
+      "target": "planet-earth-v23-arm22-iss",
+      "kind": "spin",
+      "axis": "y",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 60
+    },
+    {
+      "id": "arm22-hubble-turn",
+      "target": "planet-earth-v23-arm22-hubble",
+      "kind": "spin",
+      "axis": "x",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 52
+    },
+    {
+      "id": "arm23-tiangong-turn",
+      "target": "planet-earth-v23-arm23-tiangong",
+      "kind": "spin",
+      "axis": "y",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 56
+    },
+    {
+      "id": "arm23-goes-turn",
+      "target": "planet-earth-v23-arm23-goes",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 32
+    },
+    {
+      "id": "storm22-1-turn",
+      "target": "planet-earth-v23-storm22-1",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 32
+    },
+    {
+      "id": "storm22-2-turn",
+      "target": "planet-earth-v23-storm22-2",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 32
+    },
+    {
+      "id": "storm22-3-turn",
+      "target": "planet-earth-v23-storm22-3",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 32
+    },
+    {
+      "id": "storm22-4-turn",
+      "target": "planet-earth-v23-storm22-4",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 32
+    },
+    {
+      "id": "storm22-5-turn",
+      "target": "planet-earth-v23-storm22-5",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 32
+    },
+    {
+      "id": "launch23-1",
+      "target": "planet-earth-v23-rocket23-1",
+      "kind": "path",
+      "points": [
+        [
+          1.407,
+          -8.497,
+          4.676
+        ],
+        [
+          1.5,
+          -9.06,
+          4.986
+        ],
+        [
+          1.593,
+          -9.624,
+          5.296
+        ],
+        [
+          1.5,
+          -9.06,
+          4.986
+        ]
+      ],
+      "pivot": [
+        1.407,
+        -8.497,
+        4.676
+      ],
+      "cycles": 1,
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          0.05,
+          0.25
+        ],
+        [
+          0.1,
+          0.5
+        ],
+        [
+          0.18,
+          0.75
+        ],
+        [
+          0.25,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "sat23-1-deploy",
+      "target": "planet-earth-v23-sat23-1",
+      "kind": "path",
+      "points": [
+        [
+          1.507,
+          -9.104,
+          5.01
+        ],
+        [
+          1.694,
+          -10.231,
+          5.63
+        ],
+        [
+          3.26,
+          -10.506,
+          5.917
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "pivot": [
+        1.507,
+        -9.104,
+        5.01
+      ],
+      "cycles": 1,
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          0.1,
+          0.05
+        ],
+        [
+          0.13,
+          0.113
+        ],
+        [
+          0.18,
+          0.595
+        ],
+        [
+          0.36,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "launch23-2",
+      "target": "planet-earth-v23-rocket23-2",
+      "kind": "path",
+      "points": [
+        [
+          3.064,
+          6.093,
+          7.038
+        ],
+        [
+          3.268,
+          6.497,
+          7.504
+        ],
+        [
+          3.471,
+          6.901,
+          7.971
+        ],
+        [
+          3.268,
+          6.497,
+          7.504
+        ]
+      ],
+      "pivot": [
+        3.064,
+        6.093,
+        7.038
+      ],
+      "cycles": 1,
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          0.15,
+          0.25
+        ],
+        [
+          0.2,
+          0.5
+        ],
+        [
+          0.28,
+          0.75
+        ],
+        [
+          0.35,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "sat23-2-deploy",
+      "target": "planet-earth-v23-sat23-2",
+      "kind": "path",
+      "points": [
+        [
+          3.283,
+          6.528,
+          7.54
+        ],
+        [
+          3.69,
+          7.336,
+          8.474
+        ],
+        [
+          2.537,
+          8.383,
+          8.905
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "pivot": [
+        3.283,
+        6.528,
+        7.54
+      ],
+      "cycles": 1,
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          0.2,
+          0.05
+        ],
+        [
+          0.23,
+          0.113
+        ],
+        [
+          0.28,
+          0.595
+        ],
+        [
+          0.46,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "launch23-3",
+      "target": "planet-earth-v23-rocket23-3",
+      "kind": "path",
+      "points": [
+        [
+          5.901,
+          -7.774,
+          0.888
+        ],
+        [
+          6.292,
+          -8.289,
+          0.947
+        ],
+        [
+          6.683,
+          -8.805,
+          1.006
+        ],
+        [
+          7.889,
+          -6.62,
+          1.447
+        ],
+        [
+          7.055,
+          -5.92,
+          1.294
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "pivot": [
+        5.901,
+        -7.774,
+        0.888
+      ],
+      "cycles": 1,
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          0.24,
+          0.027
+        ],
+        [
+          0.3,
+          0.054
+        ],
+        [
+          0.34,
+          0.16
+        ],
+        [
+          0.37,
+          0.205
+        ],
+        [
+          0.45,
+          0.592
+        ],
+        [
+          0.52,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "sat23-3-deploy",
+      "target": "planet-earth-v23-sat23-3",
+      "kind": "path",
+      "points": [
+        [
+          6.322,
+          -8.329,
+          0.952
+        ],
+        [
+          7.105,
+          -9.36,
+          1.069
+        ],
+        [
+          8.661,
+          -8.929,
+          1.124
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "pivot": [
+        6.322,
+        -8.329,
+        0.952
+      ],
+      "cycles": 1,
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          0.3,
+          0.05
+        ],
+        [
+          0.33,
+          0.113
+        ],
+        [
+          0.38,
+          0.595
+        ],
+        [
+          0.56,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "launch23-4",
+      "target": "planet-earth-v23-rocket23-4",
+      "kind": "path",
+      "points": [
+        [
+          -1.324,
+          7.288,
+          6.416
+        ],
+        [
+          -1.412,
+          7.771,
+          6.842
+        ],
+        [
+          -1.5,
+          8.255,
+          7.268
+        ],
+        [
+          -1.412,
+          7.771,
+          6.842
+        ]
+      ],
+      "pivot": [
+        -1.324,
+        7.288,
+        6.416
+      ],
+      "cycles": 1,
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          0.35,
+          0.25
+        ],
+        [
+          0.4,
+          0.5
+        ],
+        [
+          0.48,
+          0.75
+        ],
+        [
+          0.55,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "sat23-4-deploy",
+      "target": "planet-earth-v23-sat23-4",
+      "kind": "path",
+      "points": [
+        [
+          -1.419,
+          7.809,
+          6.875
+        ],
+        [
+          -1.595,
+          8.775,
+          7.726
+        ],
+        [
+          -3.152,
+          8.954,
+          8.119
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "pivot": [
+        -1.419,
+        7.809,
+        6.875
+      ],
+      "cycles": 1,
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          0.4,
+          0.05
+        ],
+        [
+          0.43,
+          0.113
+        ],
+        [
+          0.48,
+          0.595
+        ],
+        [
+          0.66,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "launch23-5",
+      "target": "planet-earth-v23-rocket23-5",
+      "kind": "path",
+      "points": [
+        [
+          -4.101,
+          -6.935,
+          5.579
+        ],
+        [
+          -4.373,
+          -7.395,
+          5.949
+        ],
+        [
+          -4.645,
+          -7.855,
+          6.319
+        ],
+        [
+          -4.373,
+          -7.395,
+          5.949
+        ]
+      ],
+      "pivot": [
+        -4.101,
+        -6.935,
+        5.579
+      ],
+      "cycles": 1,
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          0.45,
+          0.25
+        ],
+        [
+          0.5,
+          0.5
+        ],
+        [
+          0.58,
+          0.75
+        ],
+        [
+          0.65,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "sat23-5-deploy",
+      "target": "planet-earth-v23-sat23-5",
+      "kind": "path",
+      "points": [
+        [
+          -4.394,
+          -7.43,
+          5.977
+        ],
+        [
+          -4.938,
+          -8.35,
+          6.717
+        ],
+        [
+          -3.898,
+          -9.539,
+          7.059
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "pivot": [
+        -4.394,
+        -7.43,
+        5.977
+      ],
+      "cycles": 1,
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          0.5,
+          0.05
+        ],
+        [
+          0.53,
+          0.113
+        ],
+        [
+          0.58,
+          0.595
+        ],
+        [
+          0.76,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "launch23-6",
+      "target": "planet-earth-v23-rocket23-6",
+      "kind": "path",
+      "points": [
+        [
+          -3.293,
+          8.625,
+          3.287
+        ],
+        [
+          -3.512,
+          9.197,
+          3.505
+        ],
+        [
+          -3.73,
+          9.769,
+          3.724
+        ],
+        [
+          -7.069,
+          7.069,
+          2.867
+        ],
+        [
+          -6.321,
+          6.321,
+          2.563
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "pivot": [
+        -3.293,
+        8.625,
+        3.287
+      ],
+      "cycles": 1,
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          0.54,
+          0.025
+        ],
+        [
+          0.6,
+          0.05
+        ],
+        [
+          0.64,
+          0.219
+        ],
+        [
+          0.67,
+          0.262
+        ],
+        [
+          0.75,
+          0.621
+        ],
+        [
+          0.82,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "sat23-6-deploy",
+      "target": "planet-earth-v23-sat23-6",
+      "kind": "path",
+      "points": [
+        [
+          -3.529,
+          9.241,
+          3.522
+        ],
+        [
+          -3.966,
+          10.385,
+          3.958
+        ],
+        [
+          -5.568,
+          10.378,
+          4.16
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "pivot": [
+        -3.529,
+        9.241,
+        3.522
+      ],
+      "cycles": 1,
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          0.6,
+          0.05
+        ],
+        [
+          0.63,
+          0.113
+        ],
+        [
+          0.68,
+          0.595
+        ],
+        [
+          0.86,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  ]
+}

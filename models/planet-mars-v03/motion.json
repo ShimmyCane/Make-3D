@@ -1,0 +1,50 @@
+{
+  "schema": "make3d.motion/0.1",
+  "model_id": "planet-mars-v03",
+  "name": "Spin and moons",
+  "description": "Mars spins and its moons go round it. One 240 s loop; each motion is a whole number of turns, so it never jumps.",
+  "units": "in",
+  "up": "z",
+  "loop_s": 240,
+  "autoplay": {
+    "plays": 2
+  },
+  "motions": [
+    {
+      "id": "mars-spin",
+      "target": "planet-mars-v03-body-mars",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 8
+    },
+    {
+      "id": "phobos-orbit",
+      "target": "planet-mars-v03-arm-phobos",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 12
+    },
+    {
+      "id": "deimos-orbit",
+      "target": "planet-mars-v03-arm-deimos",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 6
+    }
+  ]
+}

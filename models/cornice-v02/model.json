@@ -1,0 +1,2394 @@
+{
+  "model_id": "cornice-v02",
+  "name": "Cornice V02",
+  "description": "Same two rooms. V02: the cornice from the traced profile (slices of its outline, with the two steps) on the back wall of each room.",
+  "units": "in",
+  "up": "z",
+  "world": "default-world",
+  "materials": {
+    "wall": {
+      "color": "#f4efe4",
+      "opacity": 1
+    },
+    "floor": {
+      "color": "#c9b89a",
+      "opacity": 1
+    },
+    "cornice": {
+      "color": "#f0d9a8",
+      "opacity": 1
+    },
+    "step": {
+      "color": "#e8c27a",
+      "opacity": 1
+    },
+    "envelope": {
+      "color": "#f0d9a8",
+      "opacity": 0.35
+    },
+    "frame": {
+      "color": "#7a5a3a",
+      "opacity": 1
+    },
+    "canvas": {
+      "color": "#9fc5e8",
+      "opacity": 1
+    },
+    "lamp": {
+      "color": "#fff2a8",
+      "opacity": 1
+    },
+    "shirt": {
+      "color": "#7fb3d5",
+      "opacity": 1
+    },
+    "pants": {
+      "color": "#3c4a5c",
+      "opacity": 1
+    },
+    "skin": {
+      "color": "#e8b894",
+      "opacity": 1
+    },
+    "ink": {
+      "color": "#2d2a26",
+      "opacity": 1
+    }
+  },
+  "objects": [
+    {
+      "description": "both rooms",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "floor",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ground",
+      "name": "Floor",
+      "type": "box",
+      "dimensions": [
+        372,
+        252,
+        1
+      ],
+      "position": [
+        -90,
+        0,
+        -0.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-wall-museum-back",
+      "name": "Museum picture wall",
+      "type": "box",
+      "dimensions": [
+        6,
+        252,
+        288
+      ],
+      "position": [
+        -363,
+        0,
+        144
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-wall-museum-left",
+      "name": "Museum side wall (left)",
+      "type": "box",
+      "dimensions": [
+        372,
+        6,
+        288
+      ],
+      "position": [
+        -180,
+        -123,
+        144
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-wall-museum-right",
+      "name": "Museum side wall (right)",
+      "type": "box",
+      "dimensions": [
+        372,
+        6,
+        288
+      ],
+      "position": [
+        -180,
+        123,
+        144
+      ]
+    },
+    {
+      "description": "between the two rooms",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-wall-shared",
+      "name": "Shared wall",
+      "type": "box",
+      "dimensions": [
+        6,
+        252,
+        288
+      ],
+      "position": [
+        3,
+        0,
+        144
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-wall-home-far",
+      "name": "Home far wall",
+      "type": "box",
+      "dimensions": [
+        6,
+        252,
+        108
+      ],
+      "position": [
+        183,
+        0,
+        54
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-wall-home-left",
+      "name": "Home side wall (left)",
+      "type": "box",
+      "dimensions": [
+        174,
+        6,
+        108
+      ],
+      "position": [
+        93,
+        -123,
+        54
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-wall-home-right",
+      "name": "Home side wall (right)",
+      "type": "box",
+      "dimensions": [
+        174,
+        6,
+        108
+      ],
+      "position": [
+        93,
+        123,
+        54
+      ]
+    },
+    {
+      "description": "14 ft by 10 ft",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "frame",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-frame",
+      "name": "Picture frame",
+      "type": "box",
+      "dimensions": [
+        2,
+        124,
+        172
+      ],
+      "position": [
+        -359,
+        0,
+        96
+      ]
+    },
+    {
+      "description": "canvas",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "canvas",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-canvas",
+      "name": "Picture",
+      "type": "box",
+      "dimensions": [
+        0.6,
+        112,
+        160
+      ],
+      "position": [
+        -357.7,
+        0,
+        96
+      ]
+    },
+    {
+      "description": "picture light",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "lamp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-lamp-1",
+      "name": "Lamp 1",
+      "type": "sphere",
+      "dimensions": [
+        3
+      ],
+      "position": [
+        -300,
+        -80,
+        186
+      ]
+    },
+    {
+      "description": "picture light",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "lamp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-lamp-2",
+      "name": "Lamp 2",
+      "type": "sphere",
+      "dimensions": [
+        3
+      ],
+      "position": [
+        -300,
+        -40,
+        186
+      ]
+    },
+    {
+      "description": "picture light",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "lamp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-lamp-3",
+      "name": "Lamp 3",
+      "type": "sphere",
+      "dimensions": [
+        3
+      ],
+      "position": [
+        -300,
+        0,
+        186
+      ]
+    },
+    {
+      "description": "picture light",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "lamp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-lamp-4",
+      "name": "Lamp 4",
+      "type": "sphere",
+      "dimensions": [
+        3
+      ],
+      "position": [
+        -300,
+        40,
+        186
+      ]
+    },
+    {
+      "description": "picture light",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "lamp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-lamp-5",
+      "name": "Lamp 5",
+      "type": "sphere",
+      "dimensions": [
+        3
+      ],
+      "position": [
+        -300,
+        80,
+        186
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-p-museum",
+      "name": "Museum person",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-p-museum",
+      "material": "pants",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-p-museum-legL",
+      "name": "Left leg",
+      "type": "box",
+      "dimensions": [
+        4,
+        5,
+        30
+      ],
+      "position": [
+        -8,
+        -3.5,
+        15
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-p-museum",
+      "material": "pants",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-p-museum-legR",
+      "name": "Right leg",
+      "type": "box",
+      "dimensions": [
+        4,
+        5,
+        30
+      ],
+      "position": [
+        -8,
+        3.5,
+        15
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-p-museum",
+      "material": "shirt",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-p-museum-torso",
+      "name": "Torso",
+      "type": "box",
+      "dimensions": [
+        8,
+        16,
+        26
+      ],
+      "position": [
+        -8,
+        0,
+        43
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-p-museum",
+      "material": "shirt",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-p-museum-armL",
+      "name": "Left arm",
+      "type": "box",
+      "dimensions": [
+        3,
+        3,
+        24
+      ],
+      "position": [
+        -8,
+        -9.5,
+        42
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-p-museum",
+      "material": "shirt",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-p-museum-armR",
+      "name": "Right arm",
+      "type": "box",
+      "dimensions": [
+        3,
+        3,
+        24
+      ],
+      "position": [
+        -8,
+        9.5,
+        42
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-p-museum",
+      "material": "skin",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-p-museum-neck",
+      "name": "Neck",
+      "type": "cylinder",
+      "dimensions": [
+        2,
+        5
+      ],
+      "position": [
+        -8,
+        0,
+        58.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-p-museum",
+      "material": "skin",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-p-museum-head",
+      "name": "Head",
+      "type": "sphere",
+      "dimensions": [
+        5.5
+      ],
+      "position": [
+        -8,
+        0,
+        66.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-p-museum",
+      "material": "ink",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-p-museum-eyeL",
+      "name": "Left eye",
+      "type": "sphere",
+      "dimensions": [
+        1
+      ],
+      "position": [
+        -13.2,
+        -2,
+        67.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-p-museum",
+      "material": "ink",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-p-museum-eyeR",
+      "name": "Right eye",
+      "type": "sphere",
+      "dimensions": [
+        1
+      ],
+      "position": [
+        -13.2,
+        2,
+        67.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-p-home",
+      "name": "Home person",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-p-home",
+      "material": "pants",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-p-home-legL",
+      "name": "Left leg",
+      "type": "box",
+      "dimensions": [
+        4,
+        5,
+        30
+      ],
+      "position": [
+        14,
+        -3.5,
+        15
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-p-home",
+      "material": "pants",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-p-home-legR",
+      "name": "Right leg",
+      "type": "box",
+      "dimensions": [
+        4,
+        5,
+        30
+      ],
+      "position": [
+        14,
+        3.5,
+        15
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-p-home",
+      "material": "shirt",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-p-home-torso",
+      "name": "Torso",
+      "type": "box",
+      "dimensions": [
+        8,
+        16,
+        26
+      ],
+      "position": [
+        14,
+        0,
+        43
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-p-home",
+      "material": "shirt",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-p-home-armL",
+      "name": "Left arm",
+      "type": "box",
+      "dimensions": [
+        3,
+        3,
+        24
+      ],
+      "position": [
+        14,
+        -9.5,
+        42
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-p-home",
+      "material": "shirt",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-p-home-armR",
+      "name": "Right arm",
+      "type": "box",
+      "dimensions": [
+        3,
+        3,
+        24
+      ],
+      "position": [
+        14,
+        9.5,
+        42
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-p-home",
+      "material": "skin",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-p-home-neck",
+      "name": "Neck",
+      "type": "cylinder",
+      "dimensions": [
+        2,
+        5
+      ],
+      "position": [
+        14,
+        0,
+        58.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-p-home",
+      "material": "skin",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-p-home-head",
+      "name": "Head",
+      "type": "sphere",
+      "dimensions": [
+        5.5
+      ],
+      "position": [
+        14,
+        0,
+        66.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-p-home",
+      "material": "ink",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-p-home-eyeL",
+      "name": "Left eye",
+      "type": "sphere",
+      "dimensions": [
+        1
+      ],
+      "position": [
+        19.2,
+        -2,
+        67.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-p-home",
+      "material": "ink",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-p-home-eyeR",
+      "name": "Right eye",
+      "type": "sphere",
+      "dimensions": [
+        1
+      ],
+      "position": [
+        19.2,
+        2,
+        67.5
+      ]
+    },
+    {
+      "description": "the traced profile, with its two steps",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-cornice",
+      "name": "Museum cornice",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm--14",
+      "name": "Profile slice -14",
+      "type": "box",
+      "dimensions": [
+        60.5642,
+        240,
+        2.0780569999999976
+      ],
+      "position": [
+        -308.0391,
+        0,
+        192.0377685
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm--13",
+      "name": "Profile slice -13",
+      "type": "box",
+      "dimensions": [
+        76.3685,
+        240,
+        3.79
+      ],
+      "position": [
+        -321.81575,
+        0,
+        194.971797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm--12",
+      "name": "Profile slice -12",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        -359.4,
+        0,
+        198.761797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm--11",
+      "name": "Profile slice -11",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        -359.4,
+        0,
+        202.551797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm--10",
+      "name": "Profile slice -10",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        -359.4,
+        0,
+        206.34179699999999
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm--9",
+      "name": "Profile slice -9",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        -359.4,
+        0,
+        210.131797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm--8",
+      "name": "Profile slice -8",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        -359.4,
+        0,
+        213.921797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm--7",
+      "name": "Profile slice -7",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        -359.4,
+        0,
+        217.711797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm--6",
+      "name": "Profile slice -6",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        -359.4,
+        0,
+        221.501797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm--5",
+      "name": "Profile slice -5",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        -359.4,
+        0,
+        225.291797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm--4",
+      "name": "Profile slice -4",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        -359.1726,
+        0,
+        229.081797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm--3",
+      "name": "Profile slice -3",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        -359.1726,
+        0,
+        232.871797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm--2",
+      "name": "Profile slice -2",
+      "type": "box",
+      "dimensions": [
+        1.2128000000000003,
+        240,
+        3.79
+      ],
+      "position": [
+        -359.3936,
+        0,
+        236.66179699999998
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm--1",
+      "name": "Profile slice -1",
+      "type": "box",
+      "dimensions": [
+        1.2128000000000003,
+        240,
+        3.79
+      ],
+      "position": [
+        -359.3936,
+        0,
+        240.451797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-0",
+      "name": "Profile slice 0",
+      "type": "box",
+      "dimensions": [
+        1.2128000000000003,
+        240,
+        3.79
+      ],
+      "position": [
+        -359.3936,
+        0,
+        244.241797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-1",
+      "name": "Profile slice 1",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        -358.1872,
+        0,
+        248.03179699999998
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-2",
+      "name": "Profile slice 2",
+      "type": "box",
+      "dimensions": [
+        1.2128000000000003,
+        240,
+        3.79
+      ],
+      "position": [
+        -359.3936,
+        0,
+        251.821797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-3",
+      "name": "Profile slice 3",
+      "type": "box",
+      "dimensions": [
+        1.4401999999999997,
+        240,
+        3.79
+      ],
+      "position": [
+        -359.2799,
+        0,
+        255.611797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-4",
+      "name": "Profile slice 4",
+      "type": "box",
+      "dimensions": [
+        1.4401999999999997,
+        240,
+        3.79
+      ],
+      "position": [
+        -359.2799,
+        0,
+        259.401797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-5",
+      "name": "Profile slice 5",
+      "type": "box",
+      "dimensions": [
+        1.4401999999999997,
+        240,
+        3.79
+      ],
+      "position": [
+        -359.2799,
+        0,
+        263.191797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-6",
+      "name": "Profile slice 6",
+      "type": "box",
+      "dimensions": [
+        1.4401999999999997,
+        240,
+        3.79
+      ],
+      "position": [
+        -359.2799,
+        0,
+        266.981797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-7",
+      "name": "Profile slice 7",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        -358.9831,
+        0,
+        270.771797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-8",
+      "name": "Profile slice 8",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        -357.9598,
+        0,
+        274.56179699999996
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-9",
+      "name": "Profile slice 9",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        -358.5662,
+        0,
+        278.351797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-10",
+      "name": "Profile slice 10",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        -357.9598,
+        0,
+        282.141797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-11",
+      "name": "Profile slice 11",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        -357.9598,
+        0,
+        285.93179699999996
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-a--13",
+      "name": "Step slice -13",
+      "type": "box",
+      "dimensions": [
+        1.6676000000000073,
+        240,
+        3.0619410000000005
+      ],
+      "position": [
+        -282.4566,
+        0,
+        195.3358265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-a--12",
+      "name": "Step slice -12",
+      "type": "box",
+      "dimensions": [
+        1.3644000000000034,
+        240,
+        3.79
+      ],
+      "position": [
+        -282.6082,
+        0,
+        198.761797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-a--11",
+      "name": "Step slice -11",
+      "type": "box",
+      "dimensions": [
+        1.2000000000000028,
+        240,
+        3.79
+      ],
+      "position": [
+        -282.3872,
+        0,
+        202.551797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-a--10",
+      "name": "Step slice -10",
+      "type": "box",
+      "dimensions": [
+        2.3877000000000095,
+        240,
+        3.79
+      ],
+      "position": [
+        -283.57465,
+        0,
+        206.34179699999999
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-a--9",
+      "name": "Step slice -9",
+      "type": "box",
+      "dimensions": [
+        5.988200000000006,
+        240,
+        3.79
+      ],
+      "position": [
+        -286.5877,
+        0,
+        210.131797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-a--8",
+      "name": "Step slice -8",
+      "type": "box",
+      "dimensions": [
+        16.600199999999994,
+        240,
+        3.186631999999999
+      ],
+      "position": [
+        -298.18510000000003,
+        0,
+        213.620113
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-b--8",
+      "name": "Step slice -8",
+      "type": "box",
+      "dimensions": [
+        11.786899999999996,
+        240,
+        2.851217
+      ],
+      "position": [
+        -309.95305,
+        0,
+        214.3911885
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-b--7",
+      "name": "Step slice -7",
+      "type": "box",
+      "dimensions": [
+        13.985100000000003,
+        240,
+        3.79
+      ],
+      "position": [
+        -312.15125,
+        0,
+        217.711797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-b--6",
+      "name": "Step slice -6",
+      "type": "box",
+      "dimensions": [
+        3.8278999999999996,
+        240,
+        3.79
+      ],
+      "position": [
+        -318.85955,
+        0,
+        221.501797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-b--5",
+      "name": "Step slice -5",
+      "type": "box",
+      "dimensions": [
+        2.0087000000000046,
+        240,
+        3.79
+      ],
+      "position": [
+        -320.48924999999997,
+        0,
+        225.291797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-b--4",
+      "name": "Step slice -4",
+      "type": "box",
+      "dimensions": [
+        1.2000000000000028,
+        240,
+        3.79
+      ],
+      "position": [
+        -320.8936,
+        0,
+        229.081797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-pm-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-pm-b--3",
+      "name": "Step slice -3",
+      "type": "box",
+      "dimensions": [
+        1.2000000000000028,
+        240,
+        3.421612
+      ],
+      "position": [
+        -320.8936,
+        0,
+        232.687603
+      ]
+    },
+    {
+      "description": "the traced profile, with its two steps",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-cornice",
+      "name": "Home cornice",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph--14",
+      "name": "Profile slice -14",
+      "type": "box",
+      "dimensions": [
+        60.5642,
+        240,
+        2.0780569999999976
+      ],
+      "position": [
+        128.03910000000002,
+        0,
+        12.0377685
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph--13",
+      "name": "Profile slice -13",
+      "type": "box",
+      "dimensions": [
+        76.3685,
+        240,
+        3.79
+      ],
+      "position": [
+        141.81575,
+        0,
+        14.971796999999995
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph--12",
+      "name": "Profile slice -12",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        179.4,
+        0,
+        18.761796999999994
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph--11",
+      "name": "Profile slice -11",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        179.4,
+        0,
+        22.551796999999993
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph--10",
+      "name": "Profile slice -10",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        179.4,
+        0,
+        26.341796999999996
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph--9",
+      "name": "Profile slice -9",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        179.4,
+        0,
+        30.131796999999995
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph--8",
+      "name": "Profile slice -8",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        179.4,
+        0,
+        33.921797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph--7",
+      "name": "Profile slice -7",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        179.4,
+        0,
+        37.711797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph--6",
+      "name": "Profile slice -6",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        179.4,
+        0,
+        41.501796999999996
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph--5",
+      "name": "Profile slice -5",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        179.4,
+        0,
+        45.291796999999995
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph--4",
+      "name": "Profile slice -4",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        179.1726,
+        0,
+        49.081796999999995
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph--3",
+      "name": "Profile slice -3",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        179.1726,
+        0,
+        52.871796999999994
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph--2",
+      "name": "Profile slice -2",
+      "type": "box",
+      "dimensions": [
+        1.2128000000000003,
+        240,
+        3.79
+      ],
+      "position": [
+        179.3936,
+        0,
+        56.66179699999999
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph--1",
+      "name": "Profile slice -1",
+      "type": "box",
+      "dimensions": [
+        1.2128000000000003,
+        240,
+        3.79
+      ],
+      "position": [
+        179.3936,
+        0,
+        60.451797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-0",
+      "name": "Profile slice 0",
+      "type": "box",
+      "dimensions": [
+        1.2128000000000003,
+        240,
+        3.79
+      ],
+      "position": [
+        179.3936,
+        0,
+        64.24179699999999
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-1",
+      "name": "Profile slice 1",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        178.1872,
+        0,
+        68.031797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-2",
+      "name": "Profile slice 2",
+      "type": "box",
+      "dimensions": [
+        1.2128000000000003,
+        240,
+        3.79
+      ],
+      "position": [
+        179.3936,
+        0,
+        71.82179699999999
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-3",
+      "name": "Profile slice 3",
+      "type": "box",
+      "dimensions": [
+        1.4401999999999997,
+        240,
+        3.79
+      ],
+      "position": [
+        179.2799,
+        0,
+        75.611797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-4",
+      "name": "Profile slice 4",
+      "type": "box",
+      "dimensions": [
+        1.4401999999999997,
+        240,
+        3.79
+      ],
+      "position": [
+        179.2799,
+        0,
+        79.40179699999999
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-5",
+      "name": "Profile slice 5",
+      "type": "box",
+      "dimensions": [
+        1.4401999999999997,
+        240,
+        3.79
+      ],
+      "position": [
+        179.2799,
+        0,
+        83.191797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-6",
+      "name": "Profile slice 6",
+      "type": "box",
+      "dimensions": [
+        1.4401999999999997,
+        240,
+        3.79
+      ],
+      "position": [
+        179.2799,
+        0,
+        86.98179699999999
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-7",
+      "name": "Profile slice 7",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        178.9831,
+        0,
+        90.77179699999999
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-8",
+      "name": "Profile slice 8",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        177.9598,
+        0,
+        94.56179699999998
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-9",
+      "name": "Profile slice 9",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        178.5662,
+        0,
+        98.35179699999999
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-10",
+      "name": "Profile slice 10",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        177.9598,
+        0,
+        102.14179699999998
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "cornice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-11",
+      "name": "Profile slice 11",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        240,
+        3.79
+      ],
+      "position": [
+        177.9598,
+        0,
+        105.93179699999999
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-a--13",
+      "name": "Step slice -13",
+      "type": "box",
+      "dimensions": [
+        1.6676000000000073,
+        240,
+        3.0619410000000005
+      ],
+      "position": [
+        102.45660000000001,
+        0,
+        15.335826499999996
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-a--12",
+      "name": "Step slice -12",
+      "type": "box",
+      "dimensions": [
+        1.3644000000000034,
+        240,
+        3.79
+      ],
+      "position": [
+        102.60820000000001,
+        0,
+        18.761796999999994
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-a--11",
+      "name": "Step slice -11",
+      "type": "box",
+      "dimensions": [
+        1.2000000000000028,
+        240,
+        3.79
+      ],
+      "position": [
+        102.3872,
+        0,
+        22.551796999999993
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-a--10",
+      "name": "Step slice -10",
+      "type": "box",
+      "dimensions": [
+        2.3877000000000095,
+        240,
+        3.79
+      ],
+      "position": [
+        103.57464999999999,
+        0,
+        26.341796999999996
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-a--9",
+      "name": "Step slice -9",
+      "type": "box",
+      "dimensions": [
+        5.988200000000006,
+        240,
+        3.79
+      ],
+      "position": [
+        106.5877,
+        0,
+        30.131796999999995
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-a--8",
+      "name": "Step slice -8",
+      "type": "box",
+      "dimensions": [
+        16.600199999999994,
+        240,
+        3.186631999999999
+      ],
+      "position": [
+        118.1851,
+        0,
+        33.620112999999996
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-b--8",
+      "name": "Step slice -8",
+      "type": "box",
+      "dimensions": [
+        11.786899999999996,
+        240,
+        2.851217
+      ],
+      "position": [
+        129.95305000000002,
+        0,
+        34.3911885
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-b--7",
+      "name": "Step slice -7",
+      "type": "box",
+      "dimensions": [
+        13.985100000000003,
+        240,
+        3.79
+      ],
+      "position": [
+        132.15125,
+        0,
+        37.711797
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-b--6",
+      "name": "Step slice -6",
+      "type": "box",
+      "dimensions": [
+        3.8278999999999996,
+        240,
+        3.79
+      ],
+      "position": [
+        138.85954999999998,
+        0,
+        41.501796999999996
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-b--5",
+      "name": "Step slice -5",
+      "type": "box",
+      "dimensions": [
+        2.0087000000000046,
+        240,
+        3.79
+      ],
+      "position": [
+        140.48925,
+        0,
+        45.291796999999995
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-b--4",
+      "name": "Step slice -4",
+      "type": "box",
+      "dimensions": [
+        1.2000000000000028,
+        240,
+        3.79
+      ],
+      "position": [
+        140.8936,
+        0,
+        49.081796999999995
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v02-ph-cornice",
+      "material": "step",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v02-ph-b--3",
+      "name": "Step slice -3",
+      "type": "box",
+      "dimensions": [
+        1.2000000000000028,
+        240,
+        3.421612
+      ],
+      "position": [
+        140.8936,
+        0,
+        52.687602999999996
+      ]
+    }
+  ],
+  "version": 113
+}

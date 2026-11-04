@@ -1,0 +1,110 @@
+{
+  "schema": "make3d.motion/0.1",
+  "model_id": "planet-saturn-v04",
+  "name": "Spin and moons",
+  "description": "Saturn spins and its moons go round it. One 240 s loop; each motion is a whole number of turns, so it never jumps.",
+  "units": "in",
+  "up": "z",
+  "loop_s": 240,
+  "autoplay": {
+    "plays": 2
+  },
+  "motions": [
+    {
+      "id": "saturn-spin",
+      "target": "planet-saturn-v04-body-saturn",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 11
+    },
+    {
+      "id": "enceladus-orbit",
+      "target": "planet-saturn-v04-arm-enceladus",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 10
+    },
+    {
+      "id": "titan-orbit",
+      "target": "planet-saturn-v04-arm-titan",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 4
+    },
+    {
+      "id": "mimas-orbit",
+      "target": "planet-saturn-v04-arm-mimas",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 14
+    },
+    {
+      "id": "tethys-orbit",
+      "target": "planet-saturn-v04-arm-tethys",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 7
+    },
+    {
+      "id": "dione-orbit",
+      "target": "planet-saturn-v04-arm-dione",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 5
+    },
+    {
+      "id": "rhea-orbit",
+      "target": "planet-saturn-v04-arm-rhea",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 3
+    },
+    {
+      "id": "iapetus-orbit",
+      "target": "planet-saturn-v04-arm-iapetus",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 2
+    }
+  ]
+}

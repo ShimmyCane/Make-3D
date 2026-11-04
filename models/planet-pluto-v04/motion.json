@@ -1,0 +1,62 @@
+{
+  "schema": "make3d.motion/0.1",
+  "model_id": "planet-pluto-v04",
+  "name": "Spin and moons",
+  "description": "Pluto spins and its moons go round it. One 240 s loop; each motion is a whole number of turns, so it never jumps.",
+  "units": "in",
+  "up": "z",
+  "loop_s": 240,
+  "autoplay": {
+    "plays": 2
+  },
+  "motions": [
+    {
+      "id": "pluto-spin",
+      "target": "planet-pluto-v04-body-pluto",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 2
+    },
+    {
+      "id": "charon-orbit",
+      "target": "planet-pluto-v04-arm-charon",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 2
+    },
+    {
+      "id": "nix-orbit",
+      "target": "planet-pluto-v04-arm-nix",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 3
+    },
+    {
+      "id": "hydra-orbit",
+      "target": "planet-pluto-v04-arm-hydra",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 2
+    }
+  ]
+}

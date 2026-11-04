@@ -1,0 +1,8762 @@
+{
+  "model_id": "planet-earth-v08",
+  "name": "Earth (planet view) V08",
+  "description": "Earth on its own, increment 8 of 10: continents, deserts and ice caps, clouds, a station, a launch, a storm, a polar satellite. Sizes are rough and not to scale.",
+  "units": "in",
+  "up": "z",
+  "world": "solar-system-world",
+  "materials": {
+    "sun": {
+      "color": "#ffd23f",
+      "opacity": 1
+    },
+    "corona": {
+      "color": "#ffb347",
+      "opacity": 0.2
+    },
+    "orbit": {
+      "color": "#8a86a3",
+      "opacity": 1
+    },
+    "mercury": {
+      "color": "#b8b0a4",
+      "opacity": 1
+    },
+    "venus": {
+      "color": "#f0d9a0",
+      "opacity": 1
+    },
+    "earth": {
+      "color": "#4f8fd6",
+      "opacity": 1
+    },
+    "mars": {
+      "color": "#d9714a",
+      "opacity": 1
+    },
+    "jup1": {
+      "color": "#e8c49a",
+      "opacity": 1
+    },
+    "jup2": {
+      "color": "#b87c55",
+      "opacity": 1
+    },
+    "jup3": {
+      "color": "#f2e6d0",
+      "opacity": 1
+    },
+    "sat": {
+      "color": "#ecd8a0",
+      "opacity": 1
+    },
+    "satb": {
+      "color": "#d9b97c",
+      "opacity": 1
+    },
+    "ring": {
+      "color": "#e6d7b0",
+      "opacity": 0.8
+    },
+    "ring2": {
+      "color": "#b59f7a",
+      "opacity": 0.8
+    },
+    "uranus": {
+      "color": "#a9e6f0",
+      "opacity": 1
+    },
+    "uranusb": {
+      "color": "#8fd4e6",
+      "opacity": 1
+    },
+    "neptune": {
+      "color": "#4f73e0",
+      "opacity": 1
+    },
+    "neptuneb": {
+      "color": "#3b5fc2",
+      "opacity": 1
+    },
+    "pluto": {
+      "color": "#c9b49a",
+      "opacity": 1
+    },
+    "charon": {
+      "color": "#8f8a85",
+      "opacity": 1
+    },
+    "moon": {
+      "color": "#bdbdbd",
+      "opacity": 1
+    },
+    "phobos": {
+      "color": "#8c7f74",
+      "opacity": 1
+    },
+    "io": {
+      "color": "#f6e28a",
+      "opacity": 1
+    },
+    "europa": {
+      "color": "#e9dfcf",
+      "opacity": 1
+    },
+    "ganymede": {
+      "color": "#a79b8b",
+      "opacity": 1
+    },
+    "callisto": {
+      "color": "#7e7467",
+      "opacity": 1
+    },
+    "titan": {
+      "color": "#e9b872",
+      "opacity": 1
+    },
+    "enceladus": {
+      "color": "#f4f8ff",
+      "opacity": 1
+    },
+    "miranda": {
+      "color": "#b4b4b4",
+      "opacity": 1
+    },
+    "ariel": {
+      "color": "#c9c9c9",
+      "opacity": 1
+    },
+    "triton": {
+      "color": "#e0d6c8",
+      "opacity": 1
+    },
+    "rock": {
+      "color": "#9a9188",
+      "opacity": 1
+    },
+    "rock2": {
+      "color": "#b3a99c",
+      "opacity": 1
+    },
+    "air": {
+      "color": "#9fd8ff",
+      "opacity": 0.2
+    },
+    "venusair": {
+      "color": "#ffe9a8",
+      "opacity": 0.25
+    },
+    "marker": {
+      "color": "#ff8fa3",
+      "opacity": 1
+    },
+    "venusb1": {
+      "color": "#f3e3b0",
+      "opacity": 1
+    },
+    "venusb2": {
+      "color": "#e2c58a",
+      "opacity": 1
+    },
+    "cap": {
+      "color": "#fbfbff",
+      "opacity": 1
+    },
+    "dark": {
+      "color": "#5b544d",
+      "opacity": 1
+    },
+    "grs": {
+      "color": "#c4543b",
+      "opacity": 1
+    },
+    "ovalw": {
+      "color": "#fff7ee",
+      "opacity": 1
+    },
+    "hexblue": {
+      "color": "#2e4f8f",
+      "opacity": 1
+    },
+    "ringdark": {
+      "color": "#5c5a5a",
+      "opacity": 0.7
+    },
+    "crater": {
+      "color": "#7d756c",
+      "opacity": 1
+    },
+    "brightray": {
+      "color": "#f2f0ea",
+      "opacity": 1
+    },
+    "olympus": {
+      "color": "#b0664a",
+      "opacity": 1
+    },
+    "dustv": {
+      "color": "#c7a77a",
+      "opacity": 0.3
+    },
+    "ice": {
+      "color": "#ffffff",
+      "opacity": 1
+    },
+    "pluto_heart": {
+      "color": "#f4efe6",
+      "opacity": 1
+    },
+    "nitro": {
+      "color": "#fffdf7",
+      "opacity": 1
+    },
+    "mtn": {
+      "color": "#8a8f6a",
+      "opacity": 1
+    },
+    "amalthea": {
+      "color": "#b89070",
+      "opacity": 1
+    },
+    "himalia": {
+      "color": "#a09a92",
+      "opacity": 1
+    },
+    "thebe": {
+      "color": "#a58c75",
+      "opacity": 1
+    },
+    "mimas": {
+      "color": "#e8e8e8",
+      "opacity": 1
+    },
+    "tethys": {
+      "color": "#dcdcdc",
+      "opacity": 1
+    },
+    "dione": {
+      "color": "#d0d0d0",
+      "opacity": 1
+    },
+    "rhea": {
+      "color": "#c9c9c9",
+      "opacity": 1
+    },
+    "iapetus": {
+      "color": "#b8a890",
+      "opacity": 1
+    },
+    "umbriel": {
+      "color": "#6d6d72",
+      "opacity": 1
+    },
+    "titania": {
+      "color": "#bcbcc0",
+      "opacity": 1
+    },
+    "oberon": {
+      "color": "#a9a39d",
+      "opacity": 1
+    },
+    "puck": {
+      "color": "#8f8f8f",
+      "opacity": 1
+    },
+    "proteus": {
+      "color": "#7d7d7d",
+      "opacity": 1
+    },
+    "nereid": {
+      "color": "#9ea5b8",
+      "opacity": 1
+    },
+    "nix": {
+      "color": "#dedede",
+      "opacity": 1
+    },
+    "hydra": {
+      "color": "#e6e6e6",
+      "opacity": 1
+    },
+    "land": {
+      "color": "#5f9e5a",
+      "opacity": 1
+    },
+    "dsand": {
+      "color": "#d9b77a",
+      "opacity": 1
+    },
+    "cloud": {
+      "color": "#ffffff",
+      "opacity": 0.35
+    },
+    "iss": {
+      "color": "#d9dde3",
+      "opacity": 1
+    },
+    "panel": {
+      "color": "#2f5f9e",
+      "opacity": 1
+    },
+    "rocket": {
+      "color": "#f2f2f2",
+      "opacity": 1
+    },
+    "nose": {
+      "color": "#d6453d",
+      "opacity": 1
+    },
+    "plume": {
+      "color": "#ffa640",
+      "opacity": 0.6
+    },
+    "pad": {
+      "color": "#8c8c8c",
+      "opacity": 1
+    },
+    "storm": {
+      "color": "#ffffff",
+      "opacity": 0.8
+    },
+    "eye": {
+      "color": "#3c4a5a",
+      "opacity": 1
+    },
+    "light": {
+      "color": "#ffe27a",
+      "opacity": 1
+    }
+  },
+  "view": {
+    "fill": 0.75,
+    "radius": 9.5
+  },
+  "links": [
+    {
+      "label": "Back to the Solar System",
+      "target": "solar-system-v06",
+      "transition": "fade"
+    }
+  ],
+  "objects": [
+    {
+      "description": "spins on its own axis",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-body-earth",
+      "name": "Earth body",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "our home, with one Moon",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "earth",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-ball-earth",
+      "name": "Earth",
+      "type": "sphere",
+      "dimensions": [
+        9.5
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a thin see-through haze (taps pass through it)",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "air",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-air-earth",
+      "name": "Earth atmosphere",
+      "type": "sphere",
+      "dimensions": [
+        10.64
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "the Moon goes round the Earth",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-arm-moon",
+      "name": "Moon orbit",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "our Moon, 2.7 in radius here (not to scale)",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-arm-moon",
+      "material": "moon",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-moon",
+      "name": "Moon",
+      "type": "sphere",
+      "dimensions": [
+        2.7
+      ],
+      "position": [
+        30,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-0",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.807,
+        -0.071,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-1",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.783,
+        -0.21,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-2",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.735,
+        -0.343,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-3",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.664,
+        -0.465,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-4",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.573,
+        -0.573,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-5",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.465,
+        -0.664,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-6",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.343,
+        -0.735,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-7",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.21,
+        -0.783,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-8",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.071,
+        -0.807,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-9",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.071,
+        -0.807,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-10",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.21,
+        -0.783,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-11",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.343,
+        -0.735,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-12",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.465,
+        -0.664,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-13",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.573,
+        -0.573,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-14",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.664,
+        -0.465,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-15",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.735,
+        -0.343,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-16",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.783,
+        -0.21,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-17",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.807,
+        -0.071,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-18",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.807,
+        0.071,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-19",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.783,
+        0.21,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-20",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.735,
+        0.343,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-21",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.664,
+        0.465,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-22",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.573,
+        0.573,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-23",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.465,
+        0.664,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-24",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.343,
+        0.735,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-25",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.21,
+        0.783,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-26",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.071,
+        0.807,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-27",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.071,
+        0.807,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-28",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.21,
+        0.783,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-29",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.343,
+        0.735,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-30",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.465,
+        0.664,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-31",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.573,
+        0.573,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-32",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.664,
+        0.465,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-33",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.735,
+        0.343,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-34",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.783,
+        0.21,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-35",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.807,
+        0.071,
+        -9.265
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-36",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.398,
+        -0.21,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-37",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.325,
+        -0.623,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-38",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.181,
+        -1.017,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-39",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.972,
+        -1.381,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-40",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.702,
+        -1.702,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-41",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.381,
+        -1.972,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-42",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.017,
+        -2.181,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-43",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.623,
+        -2.325,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-44",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.21,
+        -2.398,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-45",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.21,
+        -2.398,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-46",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.623,
+        -2.325,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-47",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.017,
+        -2.181,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-48",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.381,
+        -1.972,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-49",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.702,
+        -1.702,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-50",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.972,
+        -1.381,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-51",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.181,
+        -1.017,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-52",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.325,
+        -0.623,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-53",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.398,
+        -0.21,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-54",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.398,
+        0.21,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-55",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.325,
+        0.623,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-56",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.181,
+        1.017,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-57",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.972,
+        1.381,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-58",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.702,
+        1.702,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-59",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.381,
+        1.972,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-60",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.017,
+        2.181,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-61",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.623,
+        2.325,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-62",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.21,
+        2.398,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-63",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.21,
+        2.398,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-64",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.623,
+        2.325,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-65",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.017,
+        2.181,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-66",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.381,
+        1.972,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-67",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.702,
+        1.702,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-68",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.972,
+        1.381,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-69",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.181,
+        1.017,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-70",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.325,
+        0.623,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-71",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.398,
+        0.21,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-72",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.381,
+        -5.153,
+        -7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-73",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.254,
+        -4.834,
+        -7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-74",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.06,
+        -4.37,
+        -7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-75",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.772,
+        -3.772,
+        -7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-76",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        4.37,
+        -3.06,
+        -7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-77",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.702,
+        -6.352,
+        -6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-78",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.779,
+        -5.96,
+        -6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-79",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.772,
+        -5.387,
+        -6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-80",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        4.65,
+        -4.65,
+        -6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-81",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        5.387,
+        -3.772,
+        -6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-82",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.972,
+        -7.359,
+        -5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-83",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.22,
+        -6.904,
+        -5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-84",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        4.37,
+        -6.24,
+        -5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-85",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        5.387,
+        -5.387,
+        -5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-86",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        6.24,
+        -4.37,
+        -5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-87",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.22,
+        6.904,
+        -5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-88",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -4.37,
+        6.24,
+        -5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-89",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -5.387,
+        5.387,
+        -5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-90",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -6.24,
+        4.37,
+        -5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-91",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.181,
+        -8.141,
+        -3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-92",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.562,
+        -7.639,
+        -3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-93",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        4.834,
+        -6.904,
+        -3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-94",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        5.96,
+        -5.96,
+        -3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-95",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        6.904,
+        -4.834,
+        -3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-96",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.141,
+        -2.181,
+        -3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-97",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.397,
+        -0.735,
+        -3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-98",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.397,
+        0.735,
+        -3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-99",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.141,
+        2.181,
+        -3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-100",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        7.639,
+        3.562,
+        -3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-101",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        6.904,
+        4.834,
+        -3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-102",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        5.96,
+        5.96,
+        -3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-103",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.562,
+        7.639,
+        -3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "dsand",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-104",
+      "name": "Desert",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -4.834,
+        6.904,
+        -3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "dsand",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-105",
+      "name": "Desert",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -5.96,
+        5.96,
+        -3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-106",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -6.904,
+        4.834,
+        -3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-107",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.325,
+        -8.677,
+        -2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-108",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.796,
+        -8.141,
+        -2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-109",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        5.153,
+        -7.359,
+        -2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-110",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        6.352,
+        -6.352,
+        -2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-111",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        7.359,
+        -5.153,
+        -2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-112",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.677,
+        -2.325,
+        -2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-113",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.949,
+        -0.783,
+        -2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-114",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.949,
+        0.783,
+        -2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-115",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.677,
+        2.325,
+        -2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-116",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.141,
+        3.796,
+        -2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-117",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        7.359,
+        5.153,
+        -2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-118",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        6.352,
+        6.352,
+        -2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-119",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.796,
+        8.141,
+        -2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-120",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -5.153,
+        7.359,
+        -2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-121",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -6.352,
+        6.352,
+        -2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-122",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -7.359,
+        5.153,
+        -2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-123",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.398,
+        -8.949,
+        -0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-124",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.915,
+        -8.397,
+        -0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-125",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        5.314,
+        -7.589,
+        -0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-126",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        6.551,
+        -6.551,
+        -0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-127",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        7.589,
+        -5.314,
+        -0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-128",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.949,
+        -2.398,
+        -0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-129",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        9.229,
+        -0.807,
+        -0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-130",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        9.229,
+        0.807,
+        -0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-131",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.949,
+        2.398,
+        -0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-132",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.397,
+        3.915,
+        -0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-133",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        7.589,
+        5.314,
+        -0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-134",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        6.551,
+        6.551,
+        -0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-135",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.807,
+        9.229,
+        -0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-136",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.398,
+        8.949,
+        -0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-137",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.915,
+        8.397,
+        -0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-138",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -5.314,
+        7.589,
+        -0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-139",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -6.551,
+        6.551,
+        -0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-140",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.398,
+        -8.949,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-141",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.915,
+        -8.397,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-142",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        5.314,
+        -7.589,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-143",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        6.551,
+        -6.551,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-144",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        7.589,
+        -5.314,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-145",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.949,
+        -2.398,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-146",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        9.229,
+        -0.807,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-147",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        9.229,
+        0.807,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-148",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.949,
+        2.398,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-149",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.397,
+        3.915,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-150",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        7.589,
+        5.314,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-151",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        6.551,
+        6.551,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-152",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        5.314,
+        7.589,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-153",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.915,
+        8.397,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-154",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.398,
+        8.949,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-155",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.807,
+        9.229,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-156",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.807,
+        9.229,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-157",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.398,
+        8.949,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-158",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.915,
+        8.397,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-159",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -5.314,
+        7.589,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-160",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -6.551,
+        6.551,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-161",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -7.589,
+        5.314,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-162",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -8.397,
+        3.915,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-163",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -8.949,
+        2.398,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-164",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -9.229,
+        0.807,
+        0.811
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-165",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -8.677,
+        -2.325,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-166",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -8.141,
+        -3.796,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-167",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -7.359,
+        -5.153,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-168",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -6.352,
+        -6.352,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-169",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -5.153,
+        -7.359,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-170",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.796,
+        -8.141,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-171",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.325,
+        -8.677,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-172",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.783,
+        -8.949,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-173",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.783,
+        -8.949,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-174",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.325,
+        -8.677,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-175",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.796,
+        -8.141,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-176",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        5.153,
+        -7.359,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-177",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.677,
+        -2.325,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-178",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.949,
+        -0.783,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-179",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.949,
+        0.783,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-180",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.677,
+        2.325,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-181",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.141,
+        3.796,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-182",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        7.359,
+        5.153,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-183",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        6.352,
+        6.352,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-184",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        5.153,
+        7.359,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-185",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.796,
+        8.141,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-186",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.325,
+        8.677,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-187",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.783,
+        8.949,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-188",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.783,
+        8.949,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-189",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.325,
+        8.677,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-190",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.796,
+        8.141,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-191",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -5.153,
+        7.359,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-192",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -6.352,
+        6.352,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-193",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -7.359,
+        5.153,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-194",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -8.141,
+        3.796,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-195",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -8.677,
+        2.325,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-196",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -8.949,
+        0.783,
+        2.407
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-197",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -8.141,
+        -2.181,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-198",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -7.639,
+        -3.562,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-199",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -6.904,
+        -4.834,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-200",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -5.96,
+        -5.96,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-201",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -4.834,
+        -6.904,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-202",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.562,
+        -7.639,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-203",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.181,
+        -8.141,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-204",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.735,
+        -8.397,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-205",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.735,
+        -8.397,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-206",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.181,
+        -8.141,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-207",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.562,
+        -7.639,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-208",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        4.834,
+        -6.904,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-209",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.141,
+        -2.181,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "dsand",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-210",
+      "name": "Desert",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.397,
+        -0.735,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "dsand",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-211",
+      "name": "Desert",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.397,
+        0.735,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "dsand",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-212",
+      "name": "Desert",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        8.141,
+        2.181,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "dsand",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-213",
+      "name": "Desert",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        7.639,
+        3.562,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "dsand",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-214",
+      "name": "Desert",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        6.904,
+        4.834,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-215",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        5.96,
+        5.96,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-216",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        4.834,
+        6.904,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-217",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.562,
+        7.639,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-218",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.181,
+        8.141,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-219",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.735,
+        8.397,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-220",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.735,
+        8.397,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-221",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.181,
+        8.141,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-222",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.562,
+        7.639,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-223",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -4.834,
+        6.904,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-224",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -5.96,
+        5.96,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-225",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -6.904,
+        4.834,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-226",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -7.639,
+        3.562,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-227",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -8.141,
+        2.181,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-228",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -8.397,
+        0.735,
+        3.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-229",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -7.359,
+        -1.972,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-230",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -6.904,
+        -3.22,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-231",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -6.24,
+        -4.37,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-232",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -5.387,
+        -5.387,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-233",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -4.37,
+        -6.24,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-234",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.22,
+        -6.904,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-235",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.972,
+        -7.359,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-236",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.664,
+        -7.589,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-237",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.664,
+        -7.589,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-238",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.972,
+        -7.359,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-239",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.22,
+        -6.904,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-240",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        4.37,
+        -6.24,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-241",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        7.359,
+        -1.972,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-242",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        7.589,
+        -0.664,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-243",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        7.589,
+        0.664,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-244",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        7.359,
+        1.972,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-245",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        6.904,
+        3.22,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-246",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        6.24,
+        4.37,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-247",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        5.387,
+        5.387,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-248",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        4.37,
+        6.24,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-249",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.22,
+        6.904,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-250",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.972,
+        7.359,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-251",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.664,
+        7.589,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-252",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.664,
+        7.589,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-253",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.972,
+        7.359,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-254",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.22,
+        6.904,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-255",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -4.37,
+        6.24,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-256",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -5.387,
+        5.387,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-257",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -6.24,
+        4.37,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-258",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -6.904,
+        3.22,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-259",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -7.359,
+        1.972,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-260",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -7.589,
+        0.664,
+        5.334
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-261",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -6.352,
+        -1.702,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-262",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -5.96,
+        -2.779,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-263",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -5.387,
+        -3.772,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-264",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -4.65,
+        -4.65,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-265",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.772,
+        -5.387,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-266",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.779,
+        -5.96,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-267",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.702,
+        -6.352,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-268",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.573,
+        -6.551,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-269",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.573,
+        -6.551,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-270",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.702,
+        -6.352,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-271",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.779,
+        -5.96,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-272",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.772,
+        -5.387,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-273",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        6.551,
+        -0.573,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-274",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        6.551,
+        0.573,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-275",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        6.352,
+        1.702,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-276",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        5.96,
+        2.779,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-277",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        5.387,
+        3.772,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-278",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        4.65,
+        4.65,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-279",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.772,
+        5.387,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-280",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.779,
+        5.96,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-281",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.702,
+        6.352,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-282",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.573,
+        6.551,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-283",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.573,
+        6.551,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-284",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.702,
+        6.352,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-285",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.779,
+        5.96,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-286",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.772,
+        5.387,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-287",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -4.65,
+        4.65,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-288",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -5.387,
+        3.772,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-289",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -5.96,
+        2.779,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-290",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -6.352,
+        1.702,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-291",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -6.551,
+        0.573,
+        6.576
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-292",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -5.153,
+        -1.381,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-293",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -4.834,
+        -2.254,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-294",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -4.37,
+        -3.06,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-295",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.772,
+        -3.772,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-296",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.06,
+        -4.37,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-297",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.254,
+        -4.834,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-298",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.381,
+        -5.153,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-299",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.465,
+        -5.314,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-300",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.465,
+        -5.314,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-301",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.381,
+        -5.153,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-302",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.254,
+        -4.834,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-303",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.06,
+        -4.37,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-304",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        5.314,
+        -0.465,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-305",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        5.314,
+        0.465,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-306",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        5.153,
+        1.381,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-307",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        4.834,
+        2.254,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-308",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        4.37,
+        3.06,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-309",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.772,
+        3.772,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-310",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.06,
+        4.37,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-311",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.254,
+        4.834,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-312",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.381,
+        5.153,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-313",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.465,
+        5.314,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-314",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.465,
+        5.314,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-315",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.381,
+        5.153,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-316",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.254,
+        4.834,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-317",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.06,
+        4.37,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-318",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.772,
+        3.772,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-319",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -4.37,
+        3.06,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-320",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -4.834,
+        2.254,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-321",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -5.153,
+        1.381,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-322",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -5.314,
+        0.465,
+        7.618
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-323",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.796,
+        -1.017,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-324",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.562,
+        -1.661,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-325",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.22,
+        -2.254,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-326",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.779,
+        -2.779,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-327",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.254,
+        -3.22,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-328",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.661,
+        -3.562,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-329",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.017,
+        -3.796,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-330",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.343,
+        -3.915,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-331",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.343,
+        -3.915,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-332",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.017,
+        -3.796,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-333",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.661,
+        -3.562,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-334",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.254,
+        -3.22,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-335",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.779,
+        -2.779,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-336",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.22,
+        -2.254,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-337",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.562,
+        -1.661,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-338",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.915,
+        -0.343,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-339",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.915,
+        0.343,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-340",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.796,
+        1.017,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-341",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.562,
+        1.661,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-342",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        3.22,
+        2.254,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-343",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.779,
+        2.779,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-344",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.254,
+        3.22,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-345",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.661,
+        3.562,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-346",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.017,
+        3.796,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-347",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.343,
+        3.915,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-348",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.343,
+        3.915,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-349",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.017,
+        3.796,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-350",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.661,
+        3.562,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-351",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.254,
+        3.22,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-352",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.779,
+        2.779,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-353",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.22,
+        2.254,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-354",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.562,
+        1.661,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-355",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.796,
+        1.017,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-356",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -3.915,
+        0.343,
+        8.429
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-357",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.381,
+        -1.972,
+        8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-358",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.702,
+        -1.702,
+        8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-359",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.972,
+        -1.381,
+        8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-360",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        2.181,
+        -1.017,
+        8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-361",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.702,
+        1.702,
+        8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-362",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.381,
+        1.972,
+        8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-363",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        1.017,
+        2.181,
+        8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-364",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.623,
+        2.325,
+        8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-365",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        0.21,
+        2.398,
+        8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-366",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.21,
+        2.398,
+        8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-367",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -0.623,
+        2.325,
+        8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-368",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.017,
+        2.181,
+        8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-369",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.381,
+        1.972,
+        8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-370",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.702,
+        1.702,
+        8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-371",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -1.972,
+        1.381,
+        8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-372",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.181,
+        1.017,
+        8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-373",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.325,
+        0.623,
+        8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "land",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-land-374",
+      "name": "Land",
+      "type": "sphere",
+      "dimensions": [
+        1.25
+      ],
+      "position": [
+        -2.398,
+        0.21,
+        8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 2,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "ice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-ice-n",
+      "name": "North ice cap",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        0.4
+      ],
+      "position": [
+        0.346,
+        0,
+        9.894
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 178,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "ice",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-ice-s",
+      "name": "South ice cap",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        0.4
+      ],
+      "position": [
+        0.346,
+        0,
+        -9.894
+      ]
+    },
+    {
+      "description": "drifts faster than the ground",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-clouds",
+      "name": "Cloud layer",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-0",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        1.6
+      ],
+      "position": [
+        -3.66,
+        0,
+        -10.055
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-1",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        2.14
+      ],
+      "position": [
+        8.797,
+        -5.277,
+        3.043
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-2",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        2.68
+      ],
+      "position": [
+        -4.024,
+        7.543,
+        -6.433
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-3",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        3.22
+      ],
+      "position": [
+        -0.349,
+        -6.932,
+        8.144
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-4",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        1.76
+      ],
+      "position": [
+        5.945,
+        8.867,
+        -0.731
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-5",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        2.3
+      ],
+      "position": [
+        -5.216,
+        -2.455,
+        -9.014
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-6",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        2.84
+      ],
+      "position": [
+        9.3,
+        -0.938,
+        5.207
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-7",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        3.38
+      ],
+      "position": [
+        -7.813,
+        5.828,
+        -4.413
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-8",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        1.92
+      ],
+      "position": [
+        1.898,
+        -4.623,
+        9.462
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-9",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        2.46
+      ],
+      "position": [
+        1.589,
+        10.457,
+        1.615
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-10",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        3
+      ],
+      "position": [
+        -4.84,
+        -5.85,
+        -7.54
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-11",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        3.54
+      ],
+      "position": [
+        7.531,
+        2.658,
+        7.121
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-12",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        2.08
+      ],
+      "position": [
+        -10.264,
+        2.092,
+        -2.181
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-13",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        2.62
+      ],
+      "position": [
+        3.305,
+        -3.026,
+        -9.716
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-14",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        3.16
+      ],
+      "position": [
+        -2.842,
+        9.557,
+        3.883
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-15",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        1.7
+      ],
+      "position": [
+        -2.252,
+        -8.77,
+        -5.702
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-16",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        2.24
+      ],
+      "position": [
+        4.441,
+        4.385,
+        8.691
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-17",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        2.78
+      ],
+      "position": [
+        -10.395,
+        -2.53,
+        0.157
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-18",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        3.32
+      ],
+      "position": [
+        6.2,
+        -1.929,
+        -8.505
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-19",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        1.86
+      ],
+      "position": [
+        -5.916,
+        6.626,
+        5.965
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-20",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        2.4
+      ],
+      "position": [
+        1.889,
+        -9.901,
+        -3.589
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-21",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        2.94
+      ],
+      "position": [
+        1.446,
+        3.938,
+        9.844
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-22",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        3.48
+      ],
+      "position": [
+        -8.101,
+        -6.532,
+        2.487
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-23",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        2.02
+      ],
+      "position": [
+        8.114,
+        1.129,
+        -6.884
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-24",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        2.56
+      ],
+      "position": [
+        -6.78,
+        2.884,
+        7.759
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-clouds",
+      "material": "cloud",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-cloud-25",
+      "name": "Cloud",
+      "type": "sphere",
+      "dimensions": [
+        3.1
+      ],
+      "position": [
+        6.242,
+        -8.592,
+        -1.304
+      ]
+    },
+    {
+      "description": "a large satellite in a low orbit",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-iss",
+      "name": "Space station group",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "the big satellite (not to scale)",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-iss",
+      "material": "iss",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-iss-core",
+      "name": "Station core",
+      "type": "box",
+      "dimensions": [
+        2.6,
+        0.9,
+        0.9
+      ],
+      "position": [
+        17.5,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-iss",
+      "material": "panel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-iss-panel",
+      "name": "Station panels",
+      "type": "box",
+      "dimensions": [
+        0.25,
+        6.4,
+        1.6
+      ],
+      "position": [
+        17.5,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a rocket that lifts off once per loop, then returns to the pad",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-rocket-1",
+      "name": "Launch 1 rocket",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 90,
+      "parent": "planet-earth-v08-body-earth",
+      "material": "pad",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-pad-1",
+      "name": "Launch 1 pad",
+      "type": "cylinder",
+      "dimensions": [
+        3,
+        0.4
+      ],
+      "position": [
+        9.8,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 90,
+      "parent": "planet-earth-v08-rocket-1",
+      "material": "rocket",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-rocket-1-body",
+      "name": "Launch 1 stage",
+      "type": "cylinder",
+      "dimensions": [
+        0.7,
+        8
+      ],
+      "position": [
+        14.1,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 90,
+      "parent": "planet-earth-v08-rocket-1",
+      "material": "nose",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-rocket-1-nose",
+      "name": "Launch 1 nose cone",
+      "type": "cone",
+      "dimensions": [
+        0.7,
+        2.2
+      ],
+      "position": [
+        19.2,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "the exhaust",
+      "rotation_y": 90,
+      "parent": "planet-earth-v08-rocket-1",
+      "material": "plume",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-rocket-1-plume",
+      "name": "Launch 1 plume",
+      "type": "cone",
+      "dimensions": [
+        1.4,
+        3
+      ],
+      "position": [
+        8.6,
+        0,
+        0
+      ],
+      "rotation_x": 180
+    },
+    {
+      "description": "a hurricane seen from above",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-body-earth",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1",
+      "name": "Storm group",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "the calm centre",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "eye",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-eye",
+      "name": "Storm eye",
+      "type": "sphere",
+      "dimensions": [
+        1
+      ],
+      "position": [
+        -7.894,
+        4.558,
+        3.318
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "storm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-arm0-0",
+      "name": "Storm cloud 1.1",
+      "type": "sphere",
+      "dimensions": [
+        0.7
+      ],
+      "position": [
+        -8.855,
+        3.195,
+        3.373
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "storm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-arm0-1",
+      "name": "Storm cloud 1.2",
+      "type": "sphere",
+      "dimensions": [
+        0.8
+      ],
+      "position": [
+        -8.671,
+        1.936,
+        4.59
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "storm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-arm0-2",
+      "name": "Storm cloud 1.3",
+      "type": "sphere",
+      "dimensions": [
+        0.9
+      ],
+      "position": [
+        -7.527,
+        1.632,
+        6.378
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "storm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-arm0-3",
+      "name": "Storm cloud 1.4",
+      "type": "sphere",
+      "dimensions": [
+        1
+      ],
+      "position": [
+        -5.683,
+        2.652,
+        7.789
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "storm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-arm0-4",
+      "name": "Storm cloud 1.5",
+      "type": "sphere",
+      "dimensions": [
+        1.1
+      ],
+      "position": [
+        -3.696,
+        4.746,
+        7.988
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "storm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-arm0-5",
+      "name": "Storm cloud 1.6",
+      "type": "sphere",
+      "dimensions": [
+        1.2
+      ],
+      "position": [
+        -2.185,
+        7.198,
+        6.589
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "storm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-arm0-6",
+      "name": "Storm cloud 1.7",
+      "type": "sphere",
+      "dimensions": [
+        1.3
+      ],
+      "position": [
+        -1.613,
+        9.12,
+        3.772
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "storm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-arm1-0",
+      "name": "Storm cloud 2.1",
+      "type": "sphere",
+      "dimensions": [
+        0.7
+      ],
+      "position": [
+        -7.184,
+        5.106,
+        4.724
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "storm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-arm1-1",
+      "name": "Storm cloud 2.2",
+      "type": "sphere",
+      "dimensions": [
+        0.8
+      ],
+      "position": [
+        -6.011,
+        6.419,
+        4.761
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "storm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-arm1-2",
+      "name": "Storm cloud 2.3",
+      "type": "sphere",
+      "dimensions": [
+        0.9
+      ],
+      "position": [
+        -5.201,
+        7.844,
+        3.379
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "storm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-arm1-3",
+      "name": "Storm cloud 2.4",
+      "type": "sphere",
+      "dimensions": [
+        1
+      ],
+      "position": [
+        -5.193,
+        8.495,
+        0.928
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "storm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-arm1-4",
+      "name": "Storm cloud 2.5",
+      "type": "sphere",
+      "dimensions": [
+        1.1
+      ],
+      "position": [
+        -6.036,
+        7.779,
+        -1.747
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "storm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-arm1-5",
+      "name": "Storm cloud 2.6",
+      "type": "sphere",
+      "dimensions": [
+        1.2
+      ],
+      "position": [
+        -7.408,
+        5.623,
+        -3.675
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "storm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-arm1-6",
+      "name": "Storm cloud 2.7",
+      "type": "sphere",
+      "dimensions": [
+        1.3
+      ],
+      "position": [
+        -8.768,
+        2.475,
+        -4.124
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "storm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-arm2-0",
+      "name": "Storm cloud 3.1",
+      "type": "sphere",
+      "dimensions": [
+        0.7
+      ],
+      "position": [
+        -8.036,
+        5.598,
+        2.021
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "storm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-arm2-1",
+      "name": "Storm cloud 3.2",
+      "type": "sphere",
+      "dimensions": [
+        0.8
+      ],
+      "position": [
+        -8.599,
+        5.086,
+        0.433
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "storm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-arm2-2",
+      "name": "Storm cloud 3.3",
+      "type": "sphere",
+      "dimensions": [
+        0.9
+      ],
+      "position": [
+        -9.424,
+        3.314,
+        -0.446
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "storm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-arm2-3",
+      "name": "Storm cloud 3.4",
+      "type": "sphere",
+      "dimensions": [
+        1
+      ],
+      "position": [
+        -9.961,
+        0.883,
+        0.041
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "storm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-arm2-4",
+      "name": "Storm cloud 3.5",
+      "type": "sphere",
+      "dimensions": [
+        1.1
+      ],
+      "position": [
+        -9.725,
+        -1.292,
+        1.936
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "storm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-arm2-5",
+      "name": "Storm cloud 3.6",
+      "type": "sphere",
+      "dimensions": [
+        1.2
+      ],
+      "position": [
+        -8.506,
+        -2.371,
+        4.692
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-storm-1",
+      "material": "storm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-storm-1-arm2-6",
+      "name": "Storm cloud 3.7",
+      "type": "sphere",
+      "dimensions": [
+        1.3
+      ],
+      "position": [
+        -6.435,
+        -1.887,
+        7.419
+      ]
+    },
+    {
+      "description": "a large satellite on a polar orbit",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-polar",
+      "name": "Polar satellite group",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a large satellite over the poles",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-polar",
+      "material": "iss",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-polar-core",
+      "name": "Polar satellite",
+      "type": "box",
+      "dimensions": [
+        2.2,
+        2.2,
+        2.2
+      ],
+      "position": [
+        0,
+        21.5,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v08-polar",
+      "material": "panel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v08-polar-panel",
+      "name": "Polar satellite panels",
+      "type": "box",
+      "dimensions": [
+        0.25,
+        9,
+        2.4
+      ],
+      "position": [
+        0,
+        21.5,
+        0
+      ]
+    }
+  ],
+  "version": 443
+}

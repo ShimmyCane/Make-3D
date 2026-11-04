@@ -1,0 +1,1528 @@
+{
+  "model_id": "kitchen-mockup-v09",
+  "name": "Kitchen mockup V09",
+  "description": "Kitchen mockup from photos, estimated sizes in inches. V09: ceiling light over the sink, and a yellow panel above the upper cabinets.",
+  "units": "in",
+  "up": "z",
+  "world": "default-world",
+  "view": {
+    "azimuth_deg": 214
+  },
+  "materials": {
+    "wall": {
+      "color": "#f4f0e6",
+      "opacity": 1
+    },
+    "floor": {
+      "color": "#8c9094",
+      "opacity": 1
+    },
+    "green": {
+      "color": "#3f9b5a",
+      "opacity": 1
+    },
+    "yellow": {
+      "color": "#e8b43a",
+      "opacity": 1
+    },
+    "cabinet": {
+      "color": "#f1ead8",
+      "opacity": 1
+    },
+    "wood": {
+      "color": "#7a4e2d",
+      "opacity": 1
+    },
+    "steel": {
+      "color": "#c9ced3",
+      "opacity": 1
+    },
+    "tile": {
+      "color": "#e8c35a",
+      "opacity": 1
+    },
+    "tileRed": {
+      "color": "#b5573a",
+      "opacity": 1
+    },
+    "chrome": {
+      "color": "#e3e7ea",
+      "opacity": 1
+    },
+    "black": {
+      "color": "#1e1f22",
+      "opacity": 1
+    },
+    "bowl": {
+      "color": "#7d858c",
+      "opacity": 1
+    },
+    "bulb": {
+      "color": "#fff0a6",
+      "opacity": 1
+    },
+    "iron": {
+      "color": "#40454b",
+      "opacity": 1
+    }
+  },
+  "objects": [
+    {
+      "description": "kitchen floor, room footprint",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "floor",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-shell-floor",
+      "name": "Floor",
+      "type": "box",
+      "dimensions": [
+        186,
+        96,
+        0.5
+      ],
+      "position": [
+        93,
+        48,
+        0.25
+      ]
+    },
+    {
+      "description": "context only",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-shell-back",
+      "name": "Back wall",
+      "type": "box",
+      "dimensions": [
+        186,
+        1,
+        96
+      ],
+      "position": [
+        93,
+        -0.5,
+        48
+      ]
+    },
+    {
+      "description": "left wall, green paint, context only",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "green",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-shell-left",
+      "name": "Green wall",
+      "type": "box",
+      "dimensions": [
+        2,
+        96,
+        96
+      ],
+      "position": [
+        187,
+        48,
+        48
+      ]
+    },
+    {
+      "description": "left end of the back run",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-bl",
+      "name": "Base cabinets, back left",
+      "type": "box",
+      "dimensions": [
+        60,
+        24,
+        34
+      ],
+      "position": [
+        156,
+        12,
+        17.5
+      ]
+    },
+    {
+      "description": "the cooker between the two counters",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-stove",
+      "name": "Stove block",
+      "type": "box",
+      "dimensions": [
+        32,
+        24,
+        34
+      ],
+      "position": [
+        110,
+        12,
+        17.5
+      ]
+    },
+    {
+      "description": "right of the stove",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-br",
+      "name": "Base cabinets, back right",
+      "type": "box",
+      "dimensions": [
+        88,
+        24,
+        34
+      ],
+      "position": [
+        50,
+        12,
+        17.5
+      ]
+    },
+    {
+      "description": "along the right side of the room, toward the camera",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-ret-carcass",
+      "name": "Return run",
+      "type": "box",
+      "dimensions": [
+        24,
+        66,
+        34
+      ],
+      "position": [
+        18,
+        57,
+        17.5
+      ]
+    },
+    {
+      "description": "along the left wall: fridge end, drawers, sink",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-sink-carcass",
+      "name": "Sink run",
+      "type": "box",
+      "dimensions": [
+        24,
+        66,
+        34
+      ],
+      "position": [
+        174,
+        57,
+        17.5
+      ]
+    },
+    {
+      "description": "dark wood bar on the outside of the return run",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-bar-wood",
+      "name": "Wood bar",
+      "type": "box",
+      "dimensions": [
+        4,
+        66,
+        40
+      ],
+      "position": [
+        4,
+        57,
+        20
+      ]
+    },
+    {
+      "description": "steel top",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-top-bl",
+      "name": "Counter, back left",
+      "type": "box",
+      "dimensions": [
+        60,
+        24,
+        1.5
+      ],
+      "position": [
+        156,
+        12,
+        35.25
+      ]
+    },
+    {
+      "description": "steel cooktop surface",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-top-stove",
+      "name": "Stove top",
+      "type": "box",
+      "dimensions": [
+        32,
+        24,
+        1.5
+      ],
+      "position": [
+        110,
+        12,
+        35.25
+      ]
+    },
+    {
+      "description": "steel top",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-top-br",
+      "name": "Counter, back right",
+      "type": "box",
+      "dimensions": [
+        88,
+        24,
+        1.5
+      ],
+      "position": [
+        50,
+        12,
+        35.25
+      ]
+    },
+    {
+      "description": "steel top",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-ret-top",
+      "name": "Return counter",
+      "type": "box",
+      "dimensions": [
+        24,
+        66,
+        1.5
+      ],
+      "position": [
+        18,
+        57,
+        35.25
+      ]
+    },
+    {
+      "description": "steel top",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-sink-top",
+      "name": "Sink counter",
+      "type": "box",
+      "dimensions": [
+        24,
+        66,
+        1.5
+      ],
+      "position": [
+        174,
+        57,
+        35.25
+      ]
+    },
+    {
+      "description": "yellow tile inset",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "tile",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-tile-bl",
+      "name": "Tile, back left",
+      "type": "box",
+      "dimensions": [
+        56,
+        20,
+        0.5
+      ],
+      "position": [
+        156,
+        12,
+        36.25
+      ]
+    },
+    {
+      "description": "terracotta tile patch",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "tileRed",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-tile-bl-red",
+      "name": "Red tile patch, back left",
+      "type": "box",
+      "dimensions": [
+        12,
+        8,
+        0.25
+      ],
+      "position": [
+        172,
+        6,
+        36.625
+      ]
+    },
+    {
+      "description": "yellow tile inset",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "tile",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-tile-br",
+      "name": "Tile, back right",
+      "type": "box",
+      "dimensions": [
+        60,
+        20,
+        0.5
+      ],
+      "position": [
+        62,
+        12,
+        36.25
+      ]
+    },
+    {
+      "description": "terracotta tile patch",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "tileRed",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-tile-br-red",
+      "name": "Red tile patch, back right",
+      "type": "box",
+      "dimensions": [
+        12,
+        10,
+        0.25
+      ],
+      "position": [
+        70,
+        17,
+        36.625
+      ]
+    },
+    {
+      "description": "yellow tile inset",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "tile",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-ret-tile",
+      "name": "Tile, return run",
+      "type": "box",
+      "dimensions": [
+        20,
+        62,
+        0.5
+      ],
+      "position": [
+        18,
+        57,
+        36.25
+      ]
+    },
+    {
+      "description": "terracotta tile patch",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "tileRed",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-ret-tile-red",
+      "name": "Red tile patch, return run",
+      "type": "box",
+      "dimensions": [
+        16,
+        10,
+        0.25
+      ],
+      "position": [
+        18,
+        65,
+        36.625
+      ]
+    },
+    {
+      "description": "cream oven door on the front",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-stove-door",
+      "name": "Oven door",
+      "type": "box",
+      "dimensions": [
+        26,
+        1,
+        20
+      ],
+      "position": [
+        110,
+        24.5,
+        20
+      ]
+    },
+    {
+      "description": "drawer under the oven door",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-stove-drawer",
+      "name": "Oven drawer",
+      "type": "box",
+      "dimensions": [
+        26,
+        1,
+        6
+      ],
+      "position": [
+        110,
+        24.5,
+        5
+      ]
+    },
+    {
+      "description": "chrome bar",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "chrome",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-stove-handle",
+      "name": "Oven door handle",
+      "type": "box",
+      "dimensions": [
+        18,
+        1,
+        1.1999999999999993
+      ],
+      "position": [
+        110,
+        25.5,
+        28.6
+      ]
+    },
+    {
+      "description": "chrome bar",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "chrome",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-stove-drawer-handle",
+      "name": "Oven drawer handle",
+      "type": "box",
+      "dimensions": [
+        18,
+        1,
+        1.1999999999999993
+      ],
+      "position": [
+        110,
+        25.5,
+        7
+      ]
+    },
+    {
+      "description": "control knob on the front band",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "chrome",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-stove-knob-1",
+      "name": "Stove knob 1",
+      "type": "sphere",
+      "dimensions": [
+        1.1
+      ],
+      "position": [
+        120,
+        25.5,
+        33
+      ]
+    },
+    {
+      "description": "control knob on the front band",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "chrome",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-stove-knob-2",
+      "name": "Stove knob 2",
+      "type": "sphere",
+      "dimensions": [
+        1.1
+      ],
+      "position": [
+        110,
+        25.5,
+        33
+      ]
+    },
+    {
+      "description": "control knob on the front band",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "chrome",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-stove-knob-3",
+      "name": "Stove knob 3",
+      "type": "sphere",
+      "dimensions": [
+        1.1
+      ],
+      "position": [
+        100,
+        25.5,
+        33
+      ]
+    },
+    {
+      "description": "black ring on the cooktop",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "black",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-burner-1",
+      "name": "Burner 1",
+      "type": "cylinder",
+      "dimensions": [
+        5,
+        0.8
+      ],
+      "position": [
+        116,
+        12,
+        36.4
+      ]
+    },
+    {
+      "description": "black ring on the cooktop",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "black",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-burner-2",
+      "name": "Burner 2",
+      "type": "cylinder",
+      "dimensions": [
+        5,
+        0.8
+      ],
+      "position": [
+        102,
+        12,
+        36.4
+      ]
+    },
+    {
+      "description": "cream door, left end",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-bl-door-1",
+      "name": "Base door 1",
+      "type": "box",
+      "dimensions": [
+        28,
+        1,
+        31
+      ],
+      "position": [
+        171,
+        24.5,
+        17.5
+      ]
+    },
+    {
+      "description": "cream door",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-bl-door-2",
+      "name": "Base door 2",
+      "type": "box",
+      "dimensions": [
+        28,
+        1,
+        31
+      ],
+      "position": [
+        141,
+        24.5,
+        17.5
+      ]
+    },
+    {
+      "description": "wood knob",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-bl-knob-1",
+      "name": "Door knob, back left 1",
+      "type": "sphere",
+      "dimensions": [
+        0.8
+      ],
+      "position": [
+        159,
+        25.4,
+        30
+      ]
+    },
+    {
+      "description": "wood knob",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-bl-knob-2",
+      "name": "Door knob, back left 2",
+      "type": "sphere",
+      "dimensions": [
+        0.8
+      ],
+      "position": [
+        153,
+        25.4,
+        30
+      ]
+    },
+    {
+      "description": "cream door, right of the stove",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-br-door-1",
+      "name": "Base door 3",
+      "type": "box",
+      "dimensions": [
+        28,
+        1,
+        31
+      ],
+      "position": [
+        78,
+        24.5,
+        17.5
+      ]
+    },
+    {
+      "description": "cream door",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-br-door-2",
+      "name": "Base door 4",
+      "type": "box",
+      "dimensions": [
+        30,
+        1,
+        31
+      ],
+      "position": [
+        47,
+        24.5,
+        17.5
+      ]
+    },
+    {
+      "description": "wood knob",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-br-knob-1",
+      "name": "Door knob, back right 1",
+      "type": "sphere",
+      "dimensions": [
+        0.8
+      ],
+      "position": [
+        66,
+        25.4,
+        30
+      ]
+    },
+    {
+      "description": "wood knob",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-br-knob-2",
+      "name": "Door knob, back right 2",
+      "type": "sphere",
+      "dimensions": [
+        0.8
+      ],
+      "position": [
+        60,
+        25.4,
+        30
+      ]
+    },
+    {
+      "description": "cream door at the left end of the sink run",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-sink-fridge",
+      "name": "Fridge door",
+      "type": "box",
+      "dimensions": [
+        1,
+        22,
+        31
+      ],
+      "position": [
+        161.5,
+        37,
+        17.5
+      ]
+    },
+    {
+      "description": "chrome handle",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "chrome",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-sink-fridge-handle",
+      "name": "Fridge handle",
+      "type": "box",
+      "dimensions": [
+        1.1999999999999993,
+        2,
+        2
+      ],
+      "position": [
+        160.4,
+        44,
+        29
+      ]
+    },
+    {
+      "description": "wood drawer front",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-sink-drawer-1",
+      "name": "Wood drawer 1",
+      "type": "box",
+      "dimensions": [
+        1,
+        12,
+        15
+      ],
+      "position": [
+        161.5,
+        54,
+        25.5
+      ]
+    },
+    {
+      "description": "wood drawer front",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-sink-drawer-2",
+      "name": "Wood drawer 2",
+      "type": "box",
+      "dimensions": [
+        1,
+        12,
+        14
+      ],
+      "position": [
+        161.5,
+        54,
+        9
+      ]
+    },
+    {
+      "description": "cream door under the sink",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-sink-door",
+      "name": "Sink base door",
+      "type": "box",
+      "dimensions": [
+        1,
+        30,
+        31
+      ],
+      "position": [
+        161.5,
+        75,
+        17.5
+      ]
+    },
+    {
+      "description": "cream door on the open side",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-ret-door-1",
+      "name": "Return door 1",
+      "type": "box",
+      "dimensions": [
+        1,
+        33,
+        31
+      ],
+      "position": [
+        30.5,
+        40.5,
+        17.5
+      ]
+    },
+    {
+      "description": "cream door on the open side",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-ret-door-2",
+      "name": "Return door 2",
+      "type": "box",
+      "dimensions": [
+        1,
+        33,
+        31
+      ],
+      "position": [
+        30.5,
+        73.5,
+        17.5
+      ]
+    },
+    {
+      "description": "wood knob",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-ret-knob-1",
+      "name": "Return knob 1",
+      "type": "sphere",
+      "dimensions": [
+        0.8
+      ],
+      "position": [
+        31.80000000000001,
+        55,
+        30
+      ]
+    },
+    {
+      "description": "wood knob",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-ret-knob-2",
+      "name": "Return knob 2",
+      "type": "sphere",
+      "dimensions": [
+        0.8
+      ],
+      "position": [
+        31.80000000000001,
+        59,
+        30
+      ]
+    },
+    {
+      "description": "steel, behind the counters",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-back-backsplash",
+      "name": "Stainless backsplash",
+      "type": "box",
+      "dimensions": [
+        180,
+        0.5,
+        18
+      ],
+      "position": [
+        96,
+        0.25,
+        45
+      ]
+    },
+    {
+      "description": "cream, two doors",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-up-left",
+      "name": "Upper cabinet, left",
+      "type": "box",
+      "dimensions": [
+        60,
+        12,
+        30
+      ],
+      "position": [
+        156,
+        6,
+        69
+      ]
+    },
+    {
+      "description": "cream, two doors",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-up-right",
+      "name": "Upper cabinet, right",
+      "type": "box",
+      "dimensions": [
+        88,
+        12,
+        30
+      ],
+      "position": [
+        50,
+        6,
+        69
+      ]
+    },
+    {
+      "description": "cream door",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-up-left-door-1",
+      "name": "Upper door 1",
+      "type": "box",
+      "dimensions": [
+        28,
+        1,
+        26
+      ],
+      "position": [
+        171,
+        12.5,
+        69
+      ]
+    },
+    {
+      "description": "cream door",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-up-left-door-2",
+      "name": "Upper door 2",
+      "type": "box",
+      "dimensions": [
+        28,
+        1,
+        26
+      ],
+      "position": [
+        141,
+        12.5,
+        69
+      ]
+    },
+    {
+      "description": "cream door",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-up-right-door-1",
+      "name": "Upper door 3",
+      "type": "box",
+      "dimensions": [
+        42,
+        1,
+        26
+      ],
+      "position": [
+        72,
+        12.5,
+        69
+      ]
+    },
+    {
+      "description": "cream door",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "cabinet",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-up-right-door-2",
+      "name": "Upper door 4",
+      "type": "box",
+      "dimensions": [
+        42,
+        1,
+        26
+      ],
+      "position": [
+        28,
+        12.5,
+        69
+      ]
+    },
+    {
+      "description": "wood pull",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-up-knob-1",
+      "name": "Upper knob 1",
+      "type": "sphere",
+      "dimensions": [
+        0.8
+      ],
+      "position": [
+        159,
+        13.2,
+        70
+      ]
+    },
+    {
+      "description": "wood pull",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-up-knob-2",
+      "name": "Upper knob 2",
+      "type": "sphere",
+      "dimensions": [
+        0.8
+      ],
+      "position": [
+        47,
+        13.2,
+        70
+      ]
+    },
+    {
+      "description": "wood strip over the upper cabinets",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-up-shelf",
+      "name": "Wood top shelf",
+      "type": "box",
+      "dimensions": [
+        180,
+        12,
+        2
+      ],
+      "position": [
+        96,
+        6,
+        85
+      ]
+    },
+    {
+      "description": "hung on the backsplash above the stove, face toward the room",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "iron",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-fx-pan",
+      "name": "Frying pan",
+      "type": "cylinder",
+      "dimensions": [
+        7,
+        1.5
+      ],
+      "position": [
+        110,
+        1.6,
+        66
+      ],
+      "rotation_x": 90
+    },
+    {
+      "description": "handle pointing down",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "black",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-fx-pan-handle",
+      "name": "Pan handle",
+      "type": "box",
+      "dimensions": [
+        1.1999999999999886,
+        1.2000000000000002,
+        10
+      ],
+      "position": [
+        110,
+        1.6,
+        54
+      ]
+    },
+    {
+      "description": "small hook on the backsplash",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "chrome",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-fx-hook-1",
+      "name": "Hook 1",
+      "type": "sphere",
+      "dimensions": [
+        0.8
+      ],
+      "position": [
+        78,
+        1.2,
+        44
+      ]
+    },
+    {
+      "description": "small hook on the backsplash",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "chrome",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-fx-hook-2",
+      "name": "Hook 2",
+      "type": "sphere",
+      "dimensions": [
+        0.8
+      ],
+      "position": [
+        70,
+        1.2,
+        44
+      ]
+    },
+    {
+      "description": "small hook on the backsplash",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "chrome",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-fx-hook-3",
+      "name": "Hook 3",
+      "type": "sphere",
+      "dimensions": [
+        0.8
+      ],
+      "position": [
+        62,
+        1.2,
+        44
+      ]
+    },
+    {
+      "description": "top ledge, sticks out toward the room",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-bar-ledge",
+      "name": "Wood bar ledge",
+      "type": "box",
+      "dimensions": [
+        8,
+        66,
+        1.5
+      ],
+      "position": [
+        4,
+        57,
+        40.75
+      ]
+    },
+    {
+      "description": "steel basin, nearer the fridge",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "bowl",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-sink-bowl-1",
+      "name": "Sink bowl 1",
+      "type": "box",
+      "dimensions": [
+        15,
+        12,
+        0.5
+      ],
+      "position": [
+        172.5,
+        64,
+        36.25
+      ]
+    },
+    {
+      "description": "steel basin, toward the open end",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "bowl",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-sink-bowl-2",
+      "name": "Sink bowl 2",
+      "type": "box",
+      "dimensions": [
+        15,
+        12,
+        0.5
+      ],
+      "position": [
+        172.5,
+        80,
+        36.25
+      ]
+    },
+    {
+      "description": "over bowl 1, against the wall",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "chrome",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-sink-faucet-1",
+      "name": "Faucet 1",
+      "type": "cylinder",
+      "dimensions": [
+        0.9,
+        10
+      ],
+      "position": [
+        183,
+        64,
+        41
+      ]
+    },
+    {
+      "description": "reaches over bowl 1",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "chrome",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-sink-faucet-1-spout",
+      "name": "Faucet 1 spout",
+      "type": "box",
+      "dimensions": [
+        5,
+        1,
+        1
+      ],
+      "position": [
+        180.5,
+        64,
+        45
+      ]
+    },
+    {
+      "description": "over bowl 2, against the wall",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "chrome",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-sink-faucet-2",
+      "name": "Faucet 2",
+      "type": "cylinder",
+      "dimensions": [
+        0.9,
+        10
+      ],
+      "position": [
+        183,
+        80,
+        41
+      ]
+    },
+    {
+      "description": "reaches over bowl 2",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "chrome",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-sink-faucet-2-spout",
+      "name": "Faucet 2 spout",
+      "type": "box",
+      "dimensions": [
+        5,
+        1,
+        1
+      ],
+      "position": [
+        180.5,
+        80,
+        45
+      ]
+    },
+    {
+      "description": "hangs from the ceiling",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "black",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-fx-bulb-cord",
+      "name": "Light cord",
+      "type": "cylinder",
+      "dimensions": [
+        0.25,
+        15
+      ],
+      "position": [
+        174,
+        40,
+        88.5
+      ]
+    },
+    {
+      "description": "over the sink run",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "bulb",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-fx-bulb",
+      "name": "Ceiling light bulb",
+      "type": "sphere",
+      "dimensions": [
+        2.2
+      ],
+      "position": [
+        174,
+        40,
+        79
+      ]
+    },
+    {
+      "description": "yellow panel above the cabinets, on the back wall",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "yellow",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "kitchen-mockup-v09-shell-yellow",
+      "name": "Yellow wall panel",
+      "type": "box",
+      "dimensions": [
+        94,
+        0.5,
+        10
+      ],
+      "position": [
+        47,
+        0.25,
+        91
+      ]
+    }
+  ],
+  "version": 71
+}

@@ -1,0 +1,5755 @@
+{
+  "model_id": "adventure-park-v14",
+  "name": "Adventure park V14",
+  "description": "Adventure Coaster Park, compact, curved and animated, increment 14 of 16. Capacity 1000 persons per hour. Estimated from published figures, in inches.",
+  "units": "in",
+  "up": "z",
+  "world": "adventure-park-world",
+  "materials": {
+    "path": {
+      "color": "#f4e7cf",
+      "opacity": 1
+    },
+    "stone": {
+      "color": "#e7e2d6",
+      "opacity": 1
+    },
+    "track": {
+      "color": "#f29a7e",
+      "opacity": 1
+    },
+    "steel": {
+      "color": "#b9c0ca",
+      "opacity": 1
+    },
+    "car": {
+      "color": "#ffc09a",
+      "opacity": 1
+    },
+    "cup": {
+      "color": "#f7d1e0",
+      "opacity": 1
+    },
+    "water": {
+      "color": "#a6e3d7",
+      "opacity": 0.9
+    },
+    "boat": {
+      "color": "#9cc8f0",
+      "opacity": 1
+    },
+    "wood": {
+      "color": "#e2b98f",
+      "opacity": 1
+    },
+    "roof": {
+      "color": "#f7a8a0",
+      "opacity": 1
+    },
+    "cream": {
+      "color": "#fff8e7",
+      "opacity": 1
+    },
+    "fence": {
+      "color": "#fffdf6",
+      "opacity": 1
+    },
+    "red": {
+      "color": "#f08080",
+      "opacity": 1
+    },
+    "green": {
+      "color": "#9ed39a",
+      "opacity": 1
+    },
+    "leaf": {
+      "color": "#8fcf8a",
+      "opacity": 1
+    },
+    "trunk": {
+      "color": "#b98a63",
+      "opacity": 1
+    },
+    "lamp": {
+      "color": "#fff1a8",
+      "opacity": 1
+    },
+    "flower": {
+      "color": "#f6a6c1",
+      "opacity": 1
+    },
+    "flag": {
+      "color": "#ffd36e",
+      "opacity": 1
+    },
+    "lavender": {
+      "color": "#c7b2ea",
+      "opacity": 1
+    },
+    "mint": {
+      "color": "#9fd8c0",
+      "opacity": 1
+    },
+    "sky": {
+      "color": "#bfe3f7",
+      "opacity": 0.85
+    },
+    "skin": {
+      "color": "#ffd9b8",
+      "opacity": 1
+    }
+  },
+  "objects": [
+    {
+      "description": "the park gate and its sign",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-gate",
+      "name": "Entrance",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "walkways and the plaza",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-paths",
+      "name": "Paths",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "kiddie coaster: curved oval track, station, two cars",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip",
+      "name": "Pip's Little Loop",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a gentle boat ride on a short river",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-bumble",
+      "name": "Bumble River",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "turntable and canopy",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-teacups",
+      "name": "Teacup Twirl",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "four cups that spin on the turntable",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tea-cups",
+      "name": "Teacups",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "the adventure family coaster, 60 ft lift",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder",
+      "name": "Thunder Trail",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "log flume with a lift and a splash drop",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-splash",
+      "name": "Splash Falls",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "show ride: tower and A-frame",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-skywheel",
+      "name": "Sky Wheel",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "the turning wheel with bubble cars",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-wheel",
+      "name": "Sky Wheel wheel",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "fences, signs, walkways and stop buttons",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-safety",
+      "name": "Safety",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "trees, benches, lamps and flower beds",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-scenery",
+      "name": "Scenery",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a basin and eight jets that play in a wave",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-fountain",
+      "name": "Plaza fountain",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "flags, the park sign and balloons",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-finish",
+      "name": "Finishing",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "entrance post",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-gate",
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-gate-post-l",
+      "name": "Gate post left",
+      "type": "cylinder",
+      "dimensions": [
+        12,
+        192
+      ],
+      "position": [
+        -120,
+        -1416,
+        96
+      ]
+    },
+    {
+      "description": "entrance post",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-gate",
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-gate-post-r",
+      "name": "Gate post right",
+      "type": "cylinder",
+      "dimensions": [
+        12,
+        192
+      ],
+      "position": [
+        120,
+        -1416,
+        96
+      ]
+    },
+    {
+      "description": "arch over the path",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-gate",
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-gate-beam",
+      "name": "Gate beam",
+      "type": "box",
+      "dimensions": [
+        288,
+        24,
+        24
+      ],
+      "position": [
+        0,
+        -1416,
+        192
+      ]
+    },
+    {
+      "description": "from the gate to the plaza",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-paths",
+      "material": "path",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-path-main",
+      "name": "Main path",
+      "type": "box",
+      "dimensions": [
+        96,
+        1152,
+        3.6
+      ],
+      "position": [
+        0,
+        -840,
+        1.8
+      ]
+    },
+    {
+      "description": "round meeting place, 52 ft across",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-paths",
+      "material": "path",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-plaza",
+      "name": "Plaza",
+      "type": "cylinder",
+      "dimensions": [
+        312,
+        3.6
+      ],
+      "position": [
+        0,
+        0,
+        1.8
+      ]
+    },
+    {
+      "description": "to Pip and Bumble River",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-paths",
+      "material": "path",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-path-west",
+      "name": "West path",
+      "type": "box",
+      "dimensions": [
+        1440,
+        96,
+        3.6
+      ],
+      "position": [
+        -1032,
+        0,
+        1.8
+      ]
+    },
+    {
+      "description": "to the teacups and Thunder Trail",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-paths",
+      "material": "path",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-path-east",
+      "name": "East path",
+      "type": "box",
+      "dimensions": [
+        1440,
+        96,
+        3.6
+      ],
+      "position": [
+        1032,
+        0,
+        1.8
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -52.864,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-0",
+      "name": "pip rail left 1",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        76.89
+      ],
+      "position": [
+        -691.469,
+        -445.232,
+        77.846
+      ],
+      "rotation_x": -75.412
+    },
+    {
+      "description": "",
+      "rotation_y": -52.864,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-0",
+      "name": "pip rail right 1",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        76.89
+      ],
+      "position": [
+        -667.969,
+        -440.356,
+        77.846
+      ],
+      "rotation_x": -75.412
+    },
+    {
+      "description": "steel support",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-pip",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-post-0",
+      "name": "pip support 1",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        72
+      ],
+      "position": [
+        -672,
+        -480,
+        36
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -77.906,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-1",
+      "name": "pip rail left 2",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        82.014
+      ],
+      "position": [
+        -718.903,
+        -377.042,
+        88.238
+      ],
+      "rotation_x": -58.049
+    },
+    {
+      "description": "",
+      "rotation_y": -77.906,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-1",
+      "name": "pip rail right 2",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        82.014
+      ],
+      "position": [
+        -698.413,
+        -364.546,
+        88.238
+      ],
+      "rotation_x": -58.049
+    },
+    {
+      "description": "",
+      "rotation_y": -87.849,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-2",
+      "name": "pip rail left 3",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        91.151
+      ],
+      "position": [
+        -772.276,
+        -315.463,
+        94.084
+      ],
+      "rotation_x": -40.581
+    },
+    {
+      "description": "",
+      "rotation_y": -87.849,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-2",
+      "name": "pip rail right 3",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        91.151
+      ],
+      "position": [
+        -756.657,
+        -297.241,
+        94.084
+      ],
+      "rotation_x": -40.581
+    },
+    {
+      "description": "",
+      "rotation_y": -91.673,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-3",
+      "name": "pip rail left 4",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        100.224
+      ],
+      "position": [
+        -849.052,
+        -264.297,
+        94.084
+      ],
+      "rotation_x": -27.398
+    },
+    {
+      "description": "",
+      "rotation_y": -91.673,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-3",
+      "name": "pip rail right 4",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        100.224
+      ],
+      "position": [
+        -838.004,
+        -242.991,
+        94.084
+      ],
+      "rotation_x": -27.398
+    },
+    {
+      "description": "",
+      "rotation_y": -94.979,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-4",
+      "name": "pip rail left 5",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        108.531
+      ],
+      "position": [
+        -943.331,
+        -228.021,
+        88.238
+      ],
+      "rotation_x": -15.111
+    },
+    {
+      "description": "",
+      "rotation_y": -94.979,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-4",
+      "name": "pip rail right 5",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        108.531
+      ],
+      "position": [
+        -937.052,
+        -204.856,
+        88.238
+      ],
+      "rotation_x": -15.111
+    },
+    {
+      "description": "",
+      "rotation_y": -95.98,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-5",
+      "name": "pip rail left 6",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        112.699
+      ],
+      "position": [
+        -1049.293,
+        -209.095,
+        77.846
+      ],
+      "rotation_x": -5.24
+    },
+    {
+      "description": "",
+      "rotation_y": -95.98,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-5",
+      "name": "pip rail right 6",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        112.699
+      ],
+      "position": [
+        -1047.089,
+        -185.197,
+        77.846
+      ],
+      "rotation_x": -5.24
+    },
+    {
+      "description": "steel support",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-pip",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-post-5",
+      "name": "pip support 6",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        83.691
+      ],
+      "position": [
+        -992.383,
+        -202.292,
+        41.846
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -95.98,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-6",
+      "name": "pip rail left 7",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        112.699
+      ],
+      "position": [
+        -1158.707,
+        -209.095,
+        66.154
+      ],
+      "rotation_x": 5.24
+    },
+    {
+      "description": "",
+      "rotation_y": -95.98,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-6",
+      "name": "pip rail right 7",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        112.699
+      ],
+      "position": [
+        -1160.911,
+        -185.197,
+        66.154
+      ],
+      "rotation_x": 5.24
+    },
+    {
+      "description": "",
+      "rotation_y": -94.979,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-7",
+      "name": "pip rail left 8",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        108.531
+      ],
+      "position": [
+        -1264.669,
+        -228.021,
+        55.762
+      ],
+      "rotation_x": 15.111
+    },
+    {
+      "description": "",
+      "rotation_y": -94.979,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-7",
+      "name": "pip rail right 8",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        108.531
+      ],
+      "position": [
+        -1270.948,
+        -204.856,
+        55.762
+      ],
+      "rotation_x": 15.111
+    },
+    {
+      "description": "",
+      "rotation_y": -91.673,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-8",
+      "name": "pip rail left 9",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        100.224
+      ],
+      "position": [
+        -1358.948,
+        -264.297,
+        49.916
+      ],
+      "rotation_x": 27.398
+    },
+    {
+      "description": "",
+      "rotation_y": -91.673,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-8",
+      "name": "pip rail right 9",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        100.224
+      ],
+      "position": [
+        -1369.996,
+        -242.991,
+        49.916
+      ],
+      "rotation_x": 27.398
+    },
+    {
+      "description": "",
+      "rotation_y": -87.849,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-9",
+      "name": "pip rail left 10",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        91.151
+      ],
+      "position": [
+        -1435.724,
+        -315.463,
+        49.916
+      ],
+      "rotation_x": 40.581
+    },
+    {
+      "description": "",
+      "rotation_y": -87.849,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-9",
+      "name": "pip rail right 10",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        91.151
+      ],
+      "position": [
+        -1451.343,
+        -297.241,
+        49.916
+      ],
+      "rotation_x": 40.581
+    },
+    {
+      "description": "",
+      "rotation_y": -77.906,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-10",
+      "name": "pip rail left 11",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        82.014
+      ],
+      "position": [
+        -1489.097,
+        -377.042,
+        55.762
+      ],
+      "rotation_x": 58.049
+    },
+    {
+      "description": "",
+      "rotation_y": -77.906,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-10",
+      "name": "pip rail right 11",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        82.014
+      ],
+      "position": [
+        -1509.587,
+        -364.546,
+        55.762
+      ],
+      "rotation_x": 58.049
+    },
+    {
+      "description": "steel support",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-pip",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-post-10",
+      "name": "pip support 11",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        51.215
+      ],
+      "position": [
+        -1478.123,
+        -336,
+        25.608
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -52.864,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-11",
+      "name": "pip rail left 12",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        76.89
+      ],
+      "position": [
+        -1516.531,
+        -445.232,
+        66.154
+      ],
+      "rotation_x": 75.412
+    },
+    {
+      "description": "",
+      "rotation_y": -52.864,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-11",
+      "name": "pip rail right 12",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        76.89
+      ],
+      "position": [
+        -1540.031,
+        -440.356,
+        66.154
+      ],
+      "rotation_x": 75.412
+    },
+    {
+      "description": "",
+      "rotation_y": 52.864,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-12",
+      "name": "pip rail left 13",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        76.89
+      ],
+      "position": [
+        -1516.531,
+        -514.768,
+        77.846
+      ],
+      "rotation_x": 75.412
+    },
+    {
+      "description": "",
+      "rotation_y": 52.864,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-12",
+      "name": "pip rail right 13",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        76.89
+      ],
+      "position": [
+        -1540.031,
+        -519.644,
+        77.846
+      ],
+      "rotation_x": 75.412
+    },
+    {
+      "description": "",
+      "rotation_y": 77.906,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-13",
+      "name": "pip rail left 14",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        82.014
+      ],
+      "position": [
+        -1489.097,
+        -582.958,
+        88.238
+      ],
+      "rotation_x": 58.049
+    },
+    {
+      "description": "",
+      "rotation_y": 77.906,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-13",
+      "name": "pip rail right 14",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        82.014
+      ],
+      "position": [
+        -1509.587,
+        -595.454,
+        88.238
+      ],
+      "rotation_x": 58.049
+    },
+    {
+      "description": "",
+      "rotation_y": 87.849,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-14",
+      "name": "pip rail left 15",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        91.151
+      ],
+      "position": [
+        -1435.724,
+        -644.537,
+        94.084
+      ],
+      "rotation_x": 40.581
+    },
+    {
+      "description": "",
+      "rotation_y": 87.849,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-14",
+      "name": "pip rail right 15",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        91.151
+      ],
+      "position": [
+        -1451.343,
+        -662.759,
+        94.084
+      ],
+      "rotation_x": 40.581
+    },
+    {
+      "description": "",
+      "rotation_y": 91.673,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-15",
+      "name": "pip rail left 16",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        100.224
+      ],
+      "position": [
+        -1358.948,
+        -695.703,
+        94.084
+      ],
+      "rotation_x": 27.398
+    },
+    {
+      "description": "",
+      "rotation_y": 91.673,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-15",
+      "name": "pip rail right 16",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        100.224
+      ],
+      "position": [
+        -1369.996,
+        -717.009,
+        94.084
+      ],
+      "rotation_x": 27.398
+    },
+    {
+      "description": "steel support",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-pip",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-post-15",
+      "name": "pip support 16",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        95.383
+      ],
+      "position": [
+        -1408.944,
+        -683.296,
+        47.692
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 94.979,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-16",
+      "name": "pip rail left 17",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        108.531
+      ],
+      "position": [
+        -1264.669,
+        -731.979,
+        88.238
+      ],
+      "rotation_x": 15.111
+    },
+    {
+      "description": "",
+      "rotation_y": 94.979,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-16",
+      "name": "pip rail right 17",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        108.531
+      ],
+      "position": [
+        -1270.948,
+        -755.144,
+        88.238
+      ],
+      "rotation_x": 15.111
+    },
+    {
+      "description": "",
+      "rotation_y": 95.98,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-17",
+      "name": "pip rail left 18",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        112.699
+      ],
+      "position": [
+        -1158.707,
+        -750.905,
+        77.846
+      ],
+      "rotation_x": 5.24
+    },
+    {
+      "description": "",
+      "rotation_y": 95.98,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-17",
+      "name": "pip rail right 18",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        112.699
+      ],
+      "position": [
+        -1160.911,
+        -774.803,
+        77.846
+      ],
+      "rotation_x": 5.24
+    },
+    {
+      "description": "",
+      "rotation_y": 95.98,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-18",
+      "name": "pip rail left 19",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        112.699
+      ],
+      "position": [
+        -1049.293,
+        -750.905,
+        66.154
+      ],
+      "rotation_x": -5.24
+    },
+    {
+      "description": "",
+      "rotation_y": 95.98,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-18",
+      "name": "pip rail right 19",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        112.699
+      ],
+      "position": [
+        -1047.089,
+        -774.803,
+        66.154
+      ],
+      "rotation_x": -5.24
+    },
+    {
+      "description": "",
+      "rotation_y": 94.979,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-19",
+      "name": "pip rail left 20",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        108.531
+      ],
+      "position": [
+        -943.331,
+        -731.979,
+        55.762
+      ],
+      "rotation_x": -15.111
+    },
+    {
+      "description": "",
+      "rotation_y": 94.979,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-19",
+      "name": "pip rail right 20",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        108.531
+      ],
+      "position": [
+        -937.052,
+        -755.144,
+        55.762
+      ],
+      "rotation_x": -15.111
+    },
+    {
+      "description": "",
+      "rotation_y": 91.673,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-20",
+      "name": "pip rail left 21",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        100.224
+      ],
+      "position": [
+        -849.052,
+        -695.703,
+        49.916
+      ],
+      "rotation_x": -27.398
+    },
+    {
+      "description": "",
+      "rotation_y": 91.673,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-20",
+      "name": "pip rail right 21",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        100.224
+      ],
+      "position": [
+        -838.004,
+        -717.009,
+        49.916
+      ],
+      "rotation_x": -27.398
+    },
+    {
+      "description": "steel support",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-pip",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-post-20",
+      "name": "pip support 21",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        51.215
+      ],
+      "position": [
+        -888,
+        -729.415,
+        25.608
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 87.849,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-21",
+      "name": "pip rail left 22",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        91.151
+      ],
+      "position": [
+        -772.276,
+        -644.537,
+        49.916
+      ],
+      "rotation_x": -40.581
+    },
+    {
+      "description": "",
+      "rotation_y": 87.849,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-21",
+      "name": "pip rail right 22",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        91.151
+      ],
+      "position": [
+        -756.657,
+        -662.759,
+        49.916
+      ],
+      "rotation_x": -40.581
+    },
+    {
+      "description": "",
+      "rotation_y": 77.906,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-22",
+      "name": "pip rail left 23",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        82.014
+      ],
+      "position": [
+        -718.903,
+        -582.958,
+        55.762
+      ],
+      "rotation_x": -58.049
+    },
+    {
+      "description": "",
+      "rotation_y": 77.906,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-22",
+      "name": "pip rail right 23",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        82.014
+      ],
+      "position": [
+        -698.413,
+        -595.454,
+        55.762
+      ],
+      "rotation_x": -58.049
+    },
+    {
+      "description": "",
+      "rotation_y": 52.864,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railL-23",
+      "name": "pip rail left 24",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        76.89
+      ],
+      "position": [
+        -691.469,
+        -514.768,
+        66.154
+      ],
+      "rotation_x": -75.412
+    },
+    {
+      "description": "",
+      "rotation_y": 52.864,
+      "parent": "adventure-park-v14-pip",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-railR-23",
+      "name": "pip rail right 24",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        76.89
+      ],
+      "position": [
+        -667.969,
+        -519.644,
+        66.154
+      ],
+      "rotation_x": -75.412
+    },
+    {
+      "description": "a seat car, five seats",
+      "rotation_y": -8.95,
+      "parent": "adventure-park-v14-pip",
+      "material": "car",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-car-1",
+      "name": "Pip car 1",
+      "type": "box",
+      "dimensions": [
+        72,
+        36,
+        30
+      ],
+      "position": [
+        -672,
+        -480,
+        96
+      ],
+      "rotation_z": 90
+    },
+    {
+      "description": "a seat car, five seats",
+      "rotation_y": 0.961,
+      "parent": "adventure-park-v14-pip",
+      "material": "car",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-car-2",
+      "name": "Pip car 2",
+      "type": "box",
+      "dimensions": [
+        72,
+        36,
+        30
+      ],
+      "position": [
+        -1378.754,
+        -701.759,
+        119.095
+      ],
+      "rotation_z": -29.247
+    },
+    {
+      "description": "low station beside the oval",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-pip",
+      "material": "cream",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-station",
+      "name": "Pip station",
+      "type": "box",
+      "dimensions": [
+        192,
+        120,
+        120
+      ],
+      "position": [
+        -1104,
+        -888,
+        60
+      ]
+    },
+    {
+      "description": "coral roof",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-pip",
+      "material": "roof",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-roof",
+      "name": "Pip station roof",
+      "type": "box",
+      "dimensions": [
+        216,
+        144,
+        12
+      ],
+      "position": [
+        -1104,
+        -888,
+        126
+      ]
+    },
+    {
+      "description": "mint water, 1.5 ft deep",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-bumble",
+      "material": "water",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-bumble-water",
+      "name": "Bumble River water",
+      "type": "box",
+      "dimensions": [
+        912,
+        264,
+        18
+      ],
+      "position": [
+        -816,
+        696,
+        9
+      ]
+    },
+    {
+      "description": "boarding house on the bank",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-bumble",
+      "material": "cream",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-bumble-station",
+      "name": "Bumble station",
+      "type": "box",
+      "dimensions": [
+        144,
+        96,
+        108
+      ],
+      "position": [
+        -816,
+        456,
+        54
+      ]
+    },
+    {
+      "description": "turntable, 1 ft high",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-teacups",
+      "material": "stone",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tea-platform",
+      "name": "Teacup platform",
+      "type": "cylinder",
+      "dimensions": [
+        240,
+        12
+      ],
+      "position": [
+        888,
+        -576,
+        6
+      ]
+    },
+    {
+      "description": "the spindle the cups turn on",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-teacups",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tea-pole",
+      "name": "Teacup centre pole",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        96
+      ],
+      "position": [
+        888,
+        -576,
+        48
+      ]
+    },
+    {
+      "description": "coral canopy",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-teacups",
+      "material": "roof",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tea-roof",
+      "name": "Teacup roof",
+      "type": "cone",
+      "dimensions": [
+        168,
+        60
+      ],
+      "position": [
+        888,
+        -576,
+        120
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 23.69,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-0",
+      "name": "thunder rail left 1",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        86.943
+      ],
+      "position": [
+        385.409,
+        519.662,
+        87.556
+      ],
+      "rotation_x": 6.457
+    },
+    {
+      "description": "",
+      "rotation_y": 23.69,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-0",
+      "name": "thunder rail right 1",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        86.943
+      ],
+      "position": [
+        378.902,
+        496.561,
+        87.556
+      ],
+      "rotation_x": 6.457
+    },
+    {
+      "description": "steel support",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-thunder",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-post-0",
+      "name": "thunder support 1",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        48
+      ],
+      "position": [
+        364.8,
+        513,
+        24
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 23.46,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-1",
+      "name": "thunder rail left 2",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        124.127
+      ],
+      "position": [
+        423.018,
+        517.608,
+        184
+      ],
+      "rotation_x": -2.257
+    },
+    {
+      "description": "",
+      "rotation_y": 23.46,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-1",
+      "name": "thunder rail right 2",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        124.127
+      ],
+      "position": [
+        425.382,
+        493.725,
+        184
+      ],
+      "rotation_x": -2.257
+    },
+    {
+      "description": "",
+      "rotation_y": 21.912,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-2",
+      "name": "thunder rail left 3",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        128.479
+      ],
+      "position": [
+        471.626,
+        522.494,
+        300.444
+      ],
+      "rotation_x": -2.181
+    },
+    {
+      "description": "",
+      "rotation_y": 21.912,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-2",
+      "name": "thunder rail right 3",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        128.479
+      ],
+      "position": [
+        474.063,
+        498.618,
+        300.444
+      ],
+      "rotation_x": -2.181
+    },
+    {
+      "description": "",
+      "rotation_y": 15.301,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-3",
+      "name": "thunder rail left 4",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        113.719
+      ],
+      "position": [
+        511.805,
+        525,
+        414.844
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 15.301,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-3",
+      "name": "thunder rail right 4",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        113.719
+      ],
+      "position": [
+        511.805,
+        501,
+        414.844
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 12.504,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-4",
+      "name": "thunder rail left 5",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        131.942
+      ],
+      "position": [
+        541.092,
+        525,
+        534.094
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 12.504,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-4",
+      "name": "thunder rail right 5",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        131.942
+      ],
+      "position": [
+        541.092,
+        501,
+        534.094
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 16.228,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-5",
+      "name": "thunder rail left 6",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        103.694
+      ],
+      "position": [
+        569.864,
+        525,
+        648.281
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 16.228,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-5",
+      "name": "thunder rail right 6",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        103.694
+      ],
+      "position": [
+        569.864,
+        501,
+        648.281
+      ]
+    },
+    {
+      "description": "steel support",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-thunder",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-post-5",
+      "name": "thunder support 6",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        598.5
+      ],
+      "position": [
+        555.375,
+        513,
+        299.25
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 54.928,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-6",
+      "name": "thunder rail left 7",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        38.179
+      ],
+      "position": [
+        599.977,
+        525,
+        709.031
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 54.928,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-6",
+      "name": "thunder rail right 7",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        38.179
+      ],
+      "position": [
+        599.977,
+        501,
+        709.031
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 157.904,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-7",
+      "name": "thunder rail left 8",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        60.684
+      ],
+      "position": [
+        626.611,
+        525.375,
+        691.889
+      ],
+      "rotation_x": -0.721
+    },
+    {
+      "description": "",
+      "rotation_y": 157.904,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-7",
+      "name": "thunder rail right 8",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        60.684
+      ],
+      "position": [
+        627.414,
+        501.389,
+        691.889
+      ],
+      "rotation_x": -0.721
+    },
+    {
+      "description": "",
+      "rotation_y": 167.441,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-8",
+      "name": "thunder rail left 9",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        110.888
+      ],
+      "position": [
+        649.645,
+        526.575,
+        609.667
+      ],
+      "rotation_x": -0.868
+    },
+    {
+      "description": "",
+      "rotation_y": 167.441,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-8",
+      "name": "thunder rail right 9",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        110.888
+      ],
+      "position": [
+        651.314,
+        502.633,
+        609.667
+      ],
+      "rotation_x": -0.868
+    },
+    {
+      "description": "",
+      "rotation_y": 169.615,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-9",
+      "name": "thunder rail left 10",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        137.823
+      ],
+      "position": [
+        674.144,
+        528.257,
+        487.778
+      ],
+      "rotation_x": -0.699
+    },
+    {
+      "description": "",
+      "rotation_y": 169.615,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-9",
+      "name": "thunder rail right 10",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        137.823
+      ],
+      "position": [
+        675.764,
+        504.312,
+        487.778
+      ],
+      "rotation_x": -0.699
+    },
+    {
+      "description": "",
+      "rotation_y": 169.738,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-10",
+      "name": "thunder rail left 11",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        140.471
+      ],
+      "position": [
+        699.521,
+        529.501,
+        350.889
+      ],
+      "rotation_x": -0.312
+    },
+    {
+      "description": "",
+      "rotation_y": 169.738,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-10",
+      "name": "thunder rail right 11",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        140.471
+      ],
+      "position": [
+        700.254,
+        505.513,
+        350.889
+      ],
+      "rotation_x": -0.312
+    },
+    {
+      "description": "steel support",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-thunder",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-post-10",
+      "name": "thunder support 11",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        420
+      ],
+      "position": [
+        687.375,
+        517.125,
+        210
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 168.021,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-11",
+      "name": "thunder rail left 12",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        118.814
+      ],
+      "position": [
+        725.249,
+        529.343,
+        223.667
+      ],
+      "rotation_x": 0.516
+    },
+    {
+      "description": "",
+      "rotation_y": 168.021,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-11",
+      "name": "thunder rail right 12",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        118.814
+      ],
+      "position": [
+        724.209,
+        505.365,
+        223.667
+      ],
+      "rotation_x": 0.516
+    },
+    {
+      "description": "",
+      "rotation_y": 161.153,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-12",
+      "name": "thunder rail left 13",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        73.595
+      ],
+      "position": [
+        750.835,
+        526.757,
+        130.778
+      ],
+      "rotation_x": 2.975
+    },
+    {
+      "description": "",
+      "rotation_y": 161.153,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-12",
+      "name": "thunder rail right 13",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        73.595
+      ],
+      "position": [
+        747.023,
+        503.062,
+        130.778
+      ],
+      "rotation_x": 2.975
+    },
+    {
+      "description": "",
+      "rotation_y": 47.726,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-13",
+      "name": "thunder rail left 14",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        89.521
+      ],
+      "position": [
+        797.17,
+        509.462,
+        124.5
+      ],
+      "rotation_x": 18.817
+    },
+    {
+      "description": "",
+      "rotation_y": 47.726,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-13",
+      "name": "thunder rail right 14",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        89.521
+      ],
+      "position": [
+        787.13,
+        487.663,
+        124.5
+      ],
+      "rotation_x": 18.817
+    },
+    {
+      "description": "",
+      "rotation_y": 31.978,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-14",
+      "name": "thunder rail left 15",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        136.021
+      ],
+      "position": [
+        863.817,
+        476.14,
+        208.5
+      ],
+      "rotation_x": 15.839
+    },
+    {
+      "description": "",
+      "rotation_y": 31.978,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-14",
+      "name": "thunder rail right 15",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        136.021
+      ],
+      "position": [
+        852.483,
+        454.985,
+        208.5
+      ],
+      "rotation_x": 15.839
+    },
+    {
+      "description": "",
+      "rotation_y": 133.139,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-15",
+      "name": "thunder rail left 16",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        91.905
+      ],
+      "position": [
+        929.606,
+        443.229,
+        234.222
+      ],
+      "rotation_x": 18.613
+    },
+    {
+      "description": "",
+      "rotation_y": 133.139,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-15",
+      "name": "thunder rail right 16",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        91.905
+      ],
+      "position": [
+        919.549,
+        421.438,
+        234.222
+      ],
+      "rotation_x": 18.613
+    },
+    {
+      "description": "steel support",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-thunder",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-post-15",
+      "name": "thunder support 16",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        264
+      ],
+      "position": [
+        892.8,
+        447,
+        132
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 144.547,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-16",
+      "name": "thunder rail left 17",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        125.686
+      ],
+      "position": [
+        996.388,
+        414.088,
+        154.667
+      ],
+      "rotation_x": 13.496
+    },
+    {
+      "description": "",
+      "rotation_y": 144.547,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-16",
+      "name": "thunder rail right 17",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        125.686
+      ],
+      "position": [
+        987.212,
+        391.912,
+        154.667
+      ],
+      "rotation_x": 13.496
+    },
+    {
+      "description": "",
+      "rotation_y": 117.361,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-17",
+      "name": "thunder rail left 18",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        71.936
+      ],
+      "position": [
+        1060.398,
+        396.588,
+        88.444
+      ],
+      "rotation_x": 5.851
+    },
+    {
+      "description": "",
+      "rotation_y": 117.361,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-17",
+      "name": "thunder rail right 18",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        71.936
+      ],
+      "position": [
+        1057.647,
+        372.746,
+        88.444
+      ],
+      "rotation_x": 5.851
+    },
+    {
+      "description": "",
+      "rotation_y": 30.201,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-18",
+      "name": "thunder rail left 19",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        78.02
+      ],
+      "position": [
+        1105.397,
+        400.071,
+        105
+      ],
+      "rotation_x": -11.822
+    },
+    {
+      "description": "",
+      "rotation_y": 30.201,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-18",
+      "name": "thunder rail right 19",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        78.02
+      ],
+      "position": [
+        1114.617,
+        377.913,
+        105
+      ],
+      "rotation_x": -11.822
+    },
+    {
+      "description": "",
+      "rotation_y": 16.101,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-19",
+      "name": "thunder rail left 20",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        125.274
+      ],
+      "position": [
+        1138.223,
+        420.732,
+        196.5
+      ],
+      "rotation_x": -13.569
+    },
+    {
+      "description": "",
+      "rotation_y": 16.101,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-19",
+      "name": "thunder rail right 20",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        125.274
+      ],
+      "position": [
+        1153.978,
+        402.627,
+        196.5
+      ],
+      "rotation_x": -13.569
+    },
+    {
+      "description": "",
+      "rotation_y": 13.53,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-20",
+      "name": "thunder rail left 21",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        137.018
+      ],
+      "position": [
+        1168.832,
+        453.564,
+        318.75
+      ],
+      "rotation_x": -16.844
+    },
+    {
+      "description": "",
+      "rotation_y": 13.53,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-20",
+      "name": "thunder rail right 21",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        137.018
+      ],
+      "position": [
+        1187.823,
+        438.889,
+        318.75
+      ],
+      "rotation_x": -16.844
+    },
+    {
+      "description": "steel support",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-thunder",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-post-20",
+      "name": "thunder support 21",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        255
+      ],
+      "position": [
+        1162.988,
+        426.375,
+        127.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 16.636,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-21",
+      "name": "thunder rail left 22",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        112.056
+      ],
+      "position": [
+        1198.039,
+        495.869,
+        431.25
+      ],
+      "rotation_x": -24.755
+    },
+    {
+      "description": "",
+      "rotation_y": 16.636,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-21",
+      "name": "thunder rail right 22",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        112.056
+      ],
+      "position": [
+        1218.428,
+        483.209,
+        431.25
+      ],
+      "rotation_x": -24.755
+    },
+    {
+      "description": "",
+      "rotation_y": 26.154,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-22",
+      "name": "thunder rail left 23",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        124.648
+      ],
+      "position": [
+        1233.66,
+        557.869,
+        523.556
+      ],
+      "rotation_x": -38.869
+    },
+    {
+      "description": "",
+      "rotation_y": 26.154,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-22",
+      "name": "thunder rail right 23",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        124.648
+      ],
+      "position": [
+        1254.717,
+        546.353,
+        523.556
+      ],
+      "rotation_x": -38.869
+    },
+    {
+      "description": "",
+      "rotation_y": 34.095,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-23",
+      "name": "thunder rail left 24",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        116.174
+      ],
+      "position": [
+        1274.074,
+        642.323,
+        596
+      ],
+      "rotation_x": -53.089
+    },
+    {
+      "description": "",
+      "rotation_y": 34.095,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-23",
+      "name": "thunder rail right 24",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        116.174
+      ],
+      "position": [
+        1296.193,
+        633.01,
+        596
+      ],
+      "rotation_x": -53.089
+    },
+    {
+      "description": "",
+      "rotation_y": 92.974,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-24",
+      "name": "thunder rail left 25",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        94.456
+      ],
+      "position": [
+        1301.443,
+        732.73,
+        624.444
+      ],
+      "rotation_x": -79.549
+    },
+    {
+      "description": "",
+      "rotation_y": 92.974,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-24",
+      "name": "thunder rail right 25",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        94.456
+      ],
+      "position": [
+        1325.046,
+        728.382,
+        624.444
+      ],
+      "rotation_x": -79.549
+    },
+    {
+      "description": "",
+      "rotation_y": -173.278,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-25",
+      "name": "thunder rail left 26",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        96.729
+      ],
+      "position": [
+        1306.004,
+        811.014,
+        591.188
+      ],
+      "rotation_x": -46.911
+    },
+    {
+      "description": "",
+      "rotation_y": -173.278,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-25",
+      "name": "thunder rail right 26",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        96.729
+      ],
+      "position": [
+        1329.862,
+        813.626,
+        591.188
+      ],
+      "rotation_x": -46.911
+    },
+    {
+      "description": "steel support",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-thunder",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-post-25",
+      "name": "thunder support 26",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        624
+      ],
+      "position": [
+        1321.8,
+        777,
+        312
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -169.252,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-26",
+      "name": "thunder rail left 27",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        135.233
+      ],
+      "position": [
+        1291.96,
+        881.201,
+        502.688
+      ],
+      "rotation_x": -33.041
+    },
+    {
+      "description": "",
+      "rotation_y": -169.252,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-26",
+      "name": "thunder rail right 27",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        135.233
+      ],
+      "position": [
+        1315.031,
+        887.815,
+        502.688
+      ],
+      "rotation_x": -33.041
+    },
+    {
+      "description": "",
+      "rotation_y": -165.18,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-27",
+      "name": "thunder rail left 28",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        140.297
+      ],
+      "position": [
+        1266.32,
+        950.083,
+        387.563
+      ],
+      "rotation_x": -28.781
+    },
+    {
+      "description": "",
+      "rotation_y": -165.18,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-27",
+      "name": "thunder rail right 28",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        140.297
+      ],
+      "position": [
+        1288.077,
+        960.214,
+        387.563
+      ],
+      "rotation_x": -28.781
+    },
+    {
+      "description": "",
+      "rotation_y": -156.307,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-28",
+      "name": "thunder rail left 29",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        109.424
+      ],
+      "position": [
+        1232.502,
+        1007.807,
+        284.063
+      ],
+      "rotation_x": -28.42
+    },
+    {
+      "description": "",
+      "rotation_y": -156.307,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-28",
+      "name": "thunder rail right 29",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        109.424
+      ],
+      "position": [
+        1251.77,
+        1022.115,
+        284.063
+      ],
+      "rotation_x": -28.42
+    },
+    {
+      "description": "",
+      "rotation_y": -132.966,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-29",
+      "name": "thunder rail left 30",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        104.881
+      ],
+      "position": [
+        1181.559,
+        1052.854,
+        207.556
+      ],
+      "rotation_x": -24.804
+    },
+    {
+      "description": "",
+      "rotation_y": -132.966,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-29",
+      "name": "thunder rail right 30",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        104.881
+      ],
+      "position": [
+        1194.375,
+        1073.146,
+        207.556
+      ],
+      "rotation_x": -24.804
+    },
+    {
+      "description": "",
+      "rotation_y": -111.305,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-30",
+      "name": "thunder rail left 31",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        93.155
+      ],
+      "position": [
+        1107.938,
+        1084.389,
+        158.667
+      ],
+      "rotation_x": -13.66
+    },
+    {
+      "description": "",
+      "rotation_y": -111.305,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-30",
+      "name": "thunder rail right 31",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        93.155
+      ],
+      "position": [
+        1113.996,
+        1107.611,
+        158.667
+      ],
+      "rotation_x": -13.66
+    },
+    {
+      "description": "steel support",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-thunder",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-post-30",
+      "name": "thunder support 31",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        175.111
+      ],
+      "position": [
+        1153.133,
+        1085,
+        87.556
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -88.677,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-31",
+      "name": "thunder rail left 32",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        77.021
+      ],
+      "position": [
+        1030.3,
+        1095,
+        143.111
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -88.677,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-31",
+      "name": "thunder rail right 32",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        77.021
+      ],
+      "position": [
+        1030.3,
+        1119,
+        143.111
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -44.484,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-32",
+      "name": "thunder rail left 33",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        92.014
+      ],
+      "position": [
+        966.437,
+        1081.515,
+        175.111
+      ],
+      "rotation_x": 18.59
+    },
+    {
+      "description": "",
+      "rotation_y": -44.484,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-32",
+      "name": "thunder rail right 33",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        92.014
+      ],
+      "position": [
+        956.052,
+        1103.152,
+        175.111
+      ],
+      "rotation_x": 18.59
+    },
+    {
+      "description": "",
+      "rotation_y": -29.032,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-33",
+      "name": "thunder rail left 34",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        122.125
+      ],
+      "position": [
+        912.086,
+        1043.32,
+        254.667
+      ],
+      "rotation_x": 24.856
+    },
+    {
+      "description": "",
+      "rotation_y": -29.032,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-33",
+      "name": "thunder rail right 34",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        122.125
+      ],
+      "position": [
+        895.514,
+        1060.68,
+        254.667
+      ],
+      "rotation_x": 24.856
+    },
+    {
+      "description": "",
+      "rotation_y": -41.376,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-34",
+      "name": "thunder rail left 35",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        91.556
+      ],
+      "position": [
+        860.442,
+        992.284,
+        331.556
+      ],
+      "rotation_x": 34.102
+    },
+    {
+      "description": "",
+      "rotation_y": -41.376,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-34",
+      "name": "thunder rail right 35",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        91.556
+      ],
+      "position": [
+        843.269,
+        1009.049,
+        331.556
+      ],
+      "rotation_x": 34.102
+    },
+    {
+      "description": "",
+      "rotation_y": -127.645,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-35",
+      "name": "thunder rail left 36",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        110.934
+      ],
+      "position": [
+        801.38,
+        931.58,
+        333.75
+      ],
+      "rotation_x": 39.208
+    },
+    {
+      "description": "",
+      "rotation_y": -127.645,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-35",
+      "name": "thunder rail right 36",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        110.934
+      ],
+      "position": [
+        784.158,
+        948.295,
+        333.75
+      ],
+      "rotation_x": 39.208
+    },
+    {
+      "description": "steel support",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-thunder",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-post-35",
+      "name": "thunder support 36",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        360
+      ],
+      "position": [
+        826.8,
+        975,
+        180
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -145.055,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-36",
+      "name": "thunder rail left 37",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        127.627
+      ],
+      "position": [
+        735.114,
+        865.314,
+        261.75
+      ],
+      "rotation_x": 29
+    },
+    {
+      "description": "",
+      "rotation_y": -145.055,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-36",
+      "name": "thunder rail right 37",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        127.627
+      ],
+      "position": [
+        718.424,
+        882.561,
+        261.75
+      ],
+      "rotation_x": 29
+    },
+    {
+      "description": "",
+      "rotation_y": -128.897,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-37",
+      "name": "thunder rail left 38",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        93.42
+      ],
+      "position": [
+        667.926,
+        813.088,
+        189.375
+      ],
+      "rotation_x": 24.802
+    },
+    {
+      "description": "",
+      "rotation_y": -128.897,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-37",
+      "name": "thunder rail right 38",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        93.42
+      ],
+      "position": [
+        655.674,
+        833.725,
+        189.375
+      ],
+      "rotation_x": 24.802
+    },
+    {
+      "description": "",
+      "rotation_y": -122.932,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-38",
+      "name": "thunder rail left 39",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        83.081
+      ],
+      "position": [
+        600.317,
+        779.289,
+        141.375
+      ],
+      "rotation_x": 18.828
+    },
+    {
+      "description": "",
+      "rotation_y": -122.932,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-38",
+      "name": "thunder rail right 39",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        83.081
+      ],
+      "position": [
+        591.283,
+        801.524,
+        141.375
+      ],
+      "rotation_x": 18.828
+    },
+    {
+      "description": "",
+      "rotation_y": -116.687,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-39",
+      "name": "thunder rail left 40",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        79.803
+      ],
+      "position": [
+        530.157,
+        758.028,
+        102.375
+      ],
+      "rotation_x": 10.423
+    },
+    {
+      "description": "",
+      "rotation_y": -116.687,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-39",
+      "name": "thunder rail right 40",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        79.803
+      ],
+      "position": [
+        525.318,
+        781.535,
+        102.375
+      ],
+      "rotation_x": 10.423
+    },
+    {
+      "description": "",
+      "rotation_y": -111.801,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-40",
+      "name": "thunder rail left 41",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        69.178
+      ],
+      "position": [
+        465.186,
+        741.787,
+        72.375
+      ],
+      "rotation_x": 15.565
+    },
+    {
+      "description": "",
+      "rotation_y": -111.801,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-40",
+      "name": "thunder rail right 41",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        69.178
+      ],
+      "position": [
+        458.289,
+        764.775,
+        72.375
+      ],
+      "rotation_x": 15.565
+    },
+    {
+      "description": "steel support",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-thunder",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-post-40",
+      "name": "thunder support 41",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        84.75
+      ],
+      "position": [
+        492.675,
+        762.563,
+        42.375
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -103.299,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-41",
+      "name": "thunder rail left 42",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        60.602
+      ],
+      "position": [
+        418.865,
+        714.068,
+        55.125
+      ],
+      "rotation_x": 45.619
+    },
+    {
+      "description": "",
+      "rotation_y": -103.299,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-41",
+      "name": "thunder rail right 42",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        60.602
+      ],
+      "position": [
+        401.485,
+        730.62,
+        55.125
+      ],
+      "rotation_x": 45.619
+    },
+    {
+      "description": "",
+      "rotation_y": -95.194,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-42",
+      "name": "thunder rail left 43",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        60.981
+      ],
+      "position": [
+        388.141,
+        667.97,
+        49.125
+      ],
+      "rotation_x": 65.95
+    },
+    {
+      "description": "",
+      "rotation_y": -95.194,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-42",
+      "name": "thunder rail right 43",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        60.981
+      ],
+      "position": [
+        366.209,
+        677.717,
+        49.125
+      ],
+      "rotation_x": 65.95
+    },
+    {
+      "description": "",
+      "rotation_y": -148.57,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-43",
+      "name": "thunder rail left 44",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        75.988
+      ],
+      "position": [
+        370.44,
+        606.879,
+        37.875
+      ],
+      "rotation_x": 71.802
+    },
+    {
+      "description": "",
+      "rotation_y": -148.57,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-43",
+      "name": "thunder rail right 44",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        75.988
+      ],
+      "position": [
+        346.785,
+        610.934,
+        37.875
+      ],
+      "rotation_x": 71.802
+    },
+    {
+      "description": "",
+      "rotation_y": 31.43,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railL-44",
+      "name": "thunder rail left 45",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        64.349
+      ],
+      "position": [
+        370.364,
+        545.338,
+        37.875
+      ],
+      "rotation_x": 68.358
+    },
+    {
+      "description": "",
+      "rotation_y": 31.43,
+      "parent": "adventure-park-v14-thunder",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-railR-44",
+      "name": "thunder rail right 45",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        64.349
+      ],
+      "position": [
+        346.861,
+        540.475,
+        37.875
+      ],
+      "rotation_x": 68.358
+    },
+    {
+      "description": "a seat car, five seats",
+      "rotation_y": -49.678,
+      "parent": "adventure-park-v14-thunder",
+      "material": "car",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-car-1",
+      "name": "Thunder car 1",
+      "type": "box",
+      "dimensions": [
+        72,
+        36,
+        30
+      ],
+      "position": [
+        364.8,
+        513,
+        72
+      ],
+      "rotation_z": -55.842
+    },
+    {
+      "description": "a seat car, five seats",
+      "rotation_y": 79.964,
+      "parent": "adventure-park-v14-thunder",
+      "material": "car",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-car-2",
+      "name": "Thunder car 2",
+      "type": "box",
+      "dimensions": [
+        72,
+        36,
+        30
+      ],
+      "position": [
+        695.753,
+        517.517,
+        397.102
+      ],
+      "rotation_z": 2.437
+    },
+    {
+      "description": "boarding hall",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-thunder",
+      "material": "cream",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-station",
+      "name": "Thunder station",
+      "type": "box",
+      "dimensions": [
+        240,
+        144,
+        120
+      ],
+      "position": [
+        168,
+        432,
+        60
+      ]
+    },
+    {
+      "description": "drives the chain lift",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-thunder",
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-thunder-motor",
+      "name": "Lift motor house",
+      "type": "box",
+      "dimensions": [
+        84,
+        72,
+        84
+      ],
+      "position": [
+        720,
+        264,
+        42
+      ]
+    },
+    {
+      "description": "channel, 1.5 ft deep",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-splash",
+      "material": "water",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-splash-water",
+      "name": "Splash pool",
+      "type": "box",
+      "dimensions": [
+        816,
+        144,
+        18
+      ],
+      "position": [
+        -1176,
+        1200,
+        9
+      ]
+    },
+    {
+      "description": "the slope up, 45 degrees",
+      "rotation_y": -45,
+      "parent": "adventure-park-v14-splash",
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-splash-lift",
+      "name": "Flume lift",
+      "type": "box",
+      "dimensions": [
+        407.294,
+        96,
+        24
+      ],
+      "position": [
+        -1536,
+        1200,
+        156
+      ]
+    },
+    {
+      "description": "the drop into the pool, 45 degrees",
+      "rotation_y": 45,
+      "parent": "adventure-park-v14-splash",
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-splash-drop",
+      "name": "Flume drop",
+      "type": "box",
+      "dimensions": [
+        407.294,
+        96,
+        24
+      ],
+      "position": [
+        -1248,
+        1200,
+        156
+      ]
+    },
+    {
+      "description": "boarding house",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-splash",
+      "material": "cream",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-splash-station",
+      "name": "Flume station",
+      "type": "box",
+      "dimensions": [
+        288,
+        144,
+        120
+      ],
+      "position": [
+        -1176,
+        1392,
+        60
+      ]
+    },
+    {
+      "description": "queue or safety rail",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-safety",
+      "material": "fence",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-queue-n",
+      "name": "pip-queue fence north",
+      "type": "box",
+      "dimensions": [
+        528,
+        6,
+        36
+      ],
+      "position": [
+        -1104,
+        -984,
+        18
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-safety",
+      "material": "fence",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-queue-s",
+      "name": "pip-queue fence south",
+      "type": "box",
+      "dimensions": [
+        528,
+        6,
+        36
+      ],
+      "position": [
+        -1104,
+        -1080,
+        18
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-safety",
+      "material": "fence",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-queue-w",
+      "name": "pip-queue fence west",
+      "type": "box",
+      "dimensions": [
+        6,
+        96,
+        36
+      ],
+      "position": [
+        -1368,
+        -1032,
+        18
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-safety",
+      "material": "fence",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-queue-e",
+      "name": "pip-queue fence east",
+      "type": "box",
+      "dimensions": [
+        6,
+        96,
+        36
+      ],
+      "position": [
+        -840,
+        -1032,
+        18
+      ]
+    },
+    {
+      "description": "queue or safety rail",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-safety",
+      "material": "fence",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tea-queue-n",
+      "name": "tea-queue fence north",
+      "type": "box",
+      "dimensions": [
+        576,
+        6,
+        36
+      ],
+      "position": [
+        888,
+        -288,
+        18
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-safety",
+      "material": "fence",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tea-queue-s",
+      "name": "tea-queue fence south",
+      "type": "box",
+      "dimensions": [
+        576,
+        6,
+        36
+      ],
+      "position": [
+        888,
+        -864,
+        18
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-safety",
+      "material": "fence",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tea-queue-w",
+      "name": "tea-queue fence west",
+      "type": "box",
+      "dimensions": [
+        6,
+        576,
+        36
+      ],
+      "position": [
+        600,
+        -576,
+        18
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-safety",
+      "material": "fence",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tea-queue-e",
+      "name": "tea-queue fence east",
+      "type": "box",
+      "dimensions": [
+        6,
+        576,
+        36
+      ],
+      "position": [
+        1176,
+        -576,
+        18
+      ]
+    },
+    {
+      "description": "stands at the Pip queue",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-safety",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-sign-post",
+      "name": "Height sign post",
+      "type": "cylinder",
+      "dimensions": [
+        4.8,
+        108
+      ],
+      "position": [
+        -1584,
+        -840,
+        54
+      ]
+    },
+    {
+      "description": "riders under 36 in ride with an adult",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-safety",
+      "material": "cream",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-pip-sign",
+      "name": "Height sign: 36 in",
+      "type": "box",
+      "dimensions": [
+        12,
+        72,
+        36
+      ],
+      "position": [
+        -1584,
+        -840,
+        90
+      ]
+    },
+    {
+      "description": "a clear route along the south edge",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-safety",
+      "material": "path",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-walkway",
+      "name": "Emergency walkway",
+      "type": "box",
+      "dimensions": [
+        3600,
+        96,
+        3.6
+      ],
+      "position": [
+        0,
+        -1536,
+        1.8
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-scenery",
+      "material": "trunk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tree-1-trunk",
+      "name": "Tree trunk",
+      "type": "cylinder",
+      "dimensions": [
+        7.2,
+        96
+      ],
+      "position": [
+        -1560,
+        -1320,
+        48
+      ]
+    },
+    {
+      "description": "round crown",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-scenery",
+      "material": "leaf",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tree-1-leaves",
+      "name": "Tree crown",
+      "type": "sphere",
+      "dimensions": [
+        72
+      ],
+      "position": [
+        -1560,
+        -1320,
+        144
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-scenery",
+      "material": "trunk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tree-2-trunk",
+      "name": "Tree trunk",
+      "type": "cylinder",
+      "dimensions": [
+        7.2,
+        96
+      ],
+      "position": [
+        -1680,
+        120,
+        48
+      ]
+    },
+    {
+      "description": "round crown",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-scenery",
+      "material": "leaf",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tree-2-leaves",
+      "name": "Tree crown",
+      "type": "sphere",
+      "dimensions": [
+        72
+      ],
+      "position": [
+        -1680,
+        120,
+        144
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-scenery",
+      "material": "trunk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tree-3-trunk",
+      "name": "Tree trunk",
+      "type": "cylinder",
+      "dimensions": [
+        7.2,
+        96
+      ],
+      "position": [
+        -720,
+        -1200,
+        48
+      ]
+    },
+    {
+      "description": "round crown",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-scenery",
+      "material": "leaf",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tree-3-leaves",
+      "name": "Tree crown",
+      "type": "sphere",
+      "dimensions": [
+        72
+      ],
+      "position": [
+        -720,
+        -1200,
+        144
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-scenery",
+      "material": "trunk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tree-4-trunk",
+      "name": "Tree trunk",
+      "type": "cylinder",
+      "dimensions": [
+        7.2,
+        96
+      ],
+      "position": [
+        -240,
+        1152,
+        48
+      ]
+    },
+    {
+      "description": "round crown",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-scenery",
+      "material": "leaf",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tree-4-leaves",
+      "name": "Tree crown",
+      "type": "sphere",
+      "dimensions": [
+        72
+      ],
+      "position": [
+        -240,
+        1152,
+        144
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-scenery",
+      "material": "trunk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tree-5-trunk",
+      "name": "Tree trunk",
+      "type": "cylinder",
+      "dimensions": [
+        7.2,
+        96
+      ],
+      "position": [
+        360,
+        1320,
+        48
+      ]
+    },
+    {
+      "description": "round crown",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-scenery",
+      "material": "leaf",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tree-5-leaves",
+      "name": "Tree crown",
+      "type": "sphere",
+      "dimensions": [
+        72
+      ],
+      "position": [
+        360,
+        1320,
+        144
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-scenery",
+      "material": "trunk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tree-6-trunk",
+      "name": "Tree trunk",
+      "type": "cylinder",
+      "dimensions": [
+        7.2,
+        96
+      ],
+      "position": [
+        1680,
+        1200,
+        48
+      ]
+    },
+    {
+      "description": "round crown",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-scenery",
+      "material": "leaf",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tree-6-leaves",
+      "name": "Tree crown",
+      "type": "sphere",
+      "dimensions": [
+        72
+      ],
+      "position": [
+        1680,
+        1200,
+        144
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-scenery",
+      "material": "trunk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tree-7-trunk",
+      "name": "Tree trunk",
+      "type": "cylinder",
+      "dimensions": [
+        7.2,
+        96
+      ],
+      "position": [
+        -360,
+        -720,
+        48
+      ]
+    },
+    {
+      "description": "round crown",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-scenery",
+      "material": "leaf",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tree-7-leaves",
+      "name": "Tree crown",
+      "type": "sphere",
+      "dimensions": [
+        72
+      ],
+      "position": [
+        -360,
+        -720,
+        144
+      ]
+    },
+    {
+      "description": "wooden bench by the plaza",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-scenery",
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-bench-1",
+      "name": "Bench 1",
+      "type": "box",
+      "dimensions": [
+        72,
+        24,
+        24
+      ],
+      "position": [
+        -264,
+        240,
+        12
+      ]
+    },
+    {
+      "description": "wooden bench by the plaza",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-scenery",
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-bench-2",
+      "name": "Bench 2",
+      "type": "box",
+      "dimensions": [
+        72,
+        24,
+        24
+      ],
+      "position": [
+        264,
+        240,
+        12
+      ]
+    },
+    {
+      "description": "a cup for two riders",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-tea-cups",
+      "material": "cup",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tea-cup-1",
+      "name": "Teacup 1",
+      "type": "cylinder",
+      "dimensions": [
+        38.4,
+        36
+      ],
+      "position": [
+        1032,
+        -576,
+        30
+      ]
+    },
+    {
+      "description": "a cup for two riders",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-tea-cups",
+      "material": "cup",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tea-cup-2",
+      "name": "Teacup 2",
+      "type": "cylinder",
+      "dimensions": [
+        38.4,
+        36
+      ],
+      "position": [
+        888,
+        -432,
+        30
+      ]
+    },
+    {
+      "description": "a cup for two riders",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-tea-cups",
+      "material": "cup",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tea-cup-3",
+      "name": "Teacup 3",
+      "type": "cylinder",
+      "dimensions": [
+        38.4,
+        36
+      ],
+      "position": [
+        744,
+        -576,
+        30
+      ]
+    },
+    {
+      "description": "a cup for two riders",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-tea-cups",
+      "material": "cup",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-tea-cup-4",
+      "name": "Teacup 4",
+      "type": "cylinder",
+      "dimensions": [
+        38.4,
+        36
+      ],
+      "position": [
+        888,
+        -720,
+        30
+      ]
+    },
+    {
+      "description": "floats on the river, four seats",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-bumble",
+      "material": "boat",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-bumble-boat-1",
+      "name": "Bumble boat 1",
+      "type": "box",
+      "dimensions": [
+        72,
+        48,
+        24
+      ],
+      "position": [
+        -984,
+        696,
+        30
+      ]
+    },
+    {
+      "description": "floats on the river, four seats",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-bumble",
+      "material": "boat",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-bumble-boat-2",
+      "name": "Bumble boat 2",
+      "type": "box",
+      "dimensions": [
+        72,
+        48,
+        24
+      ],
+      "position": [
+        -816,
+        696,
+        30
+      ]
+    },
+    {
+      "description": "floats on the river, four seats",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-bumble",
+      "material": "boat",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-bumble-boat-3",
+      "name": "Bumble boat 3",
+      "type": "box",
+      "dimensions": [
+        72,
+        48,
+        24
+      ],
+      "position": [
+        -648,
+        696,
+        30
+      ]
+    },
+    {
+      "description": "rides the lift, drops into the pool; two seats",
+      "rotation_y": -44.2,
+      "parent": "adventure-park-v14-splash",
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-splash-boat-1",
+      "name": "Log boat 1",
+      "type": "box",
+      "dimensions": [
+        72,
+        48,
+        24
+      ],
+      "position": [
+        -1656,
+        1200,
+        36
+      ],
+      "rotation_z": 180
+    },
+    {
+      "description": "rides the lift, drops into the pool; two seats",
+      "rotation_y": 0.007,
+      "parent": "adventure-park-v14-splash",
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-splash-boat-2",
+      "name": "Log boat 2",
+      "type": "box",
+      "dimensions": [
+        72,
+        48,
+        24
+      ],
+      "position": [
+        -943.609,
+        1200,
+        30.817
+      ],
+      "rotation_z": 180
+    },
+    {
+      "description": "rides the lift, drops into the pool; two seats",
+      "rotation_y": -0.421,
+      "parent": "adventure-park-v14-splash",
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-splash-boat-3",
+      "name": "Log boat 3",
+      "type": "box",
+      "dimensions": [
+        72,
+        48,
+        24
+      ],
+      "position": [
+        -1428.07,
+        1200,
+        34.324
+      ],
+      "rotation_z": 180
+    },
+    {
+      "description": "the post under the hub",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-skywheel",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-tower",
+      "name": "Sky Wheel tower",
+      "type": "cylinder",
+      "dimensions": [
+        14.4,
+        432
+      ],
+      "position": [
+        1560,
+        -360,
+        216
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 12.947,
+      "parent": "adventure-park-v14-skywheel",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-frame-l",
+      "name": "Sky Wheel leg left",
+      "type": "cylinder",
+      "dimensions": [
+        7.2,
+        428.492
+      ],
+      "position": [
+        1512,
+        -360,
+        223.2
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -12.947,
+      "parent": "adventure-park-v14-skywheel",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-frame-r",
+      "name": "Sky Wheel leg right",
+      "type": "cylinder",
+      "dimensions": [
+        7.2,
+        428.492
+      ],
+      "position": [
+        1608,
+        -360,
+        223.2
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -15,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-rim-1",
+      "name": "Sky Wheel rim 1",
+      "type": "cylinder",
+      "dimensions": [
+        4.8,
+        161.503
+      ],
+      "position": [
+        1851.1,
+        -360,
+        510
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 90,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-spoke-1",
+      "name": "Sky Wheel spoke 1",
+      "type": "cylinder",
+      "dimensions": [
+        3,
+        312
+      ],
+      "position": [
+        1716,
+        -360,
+        432
+      ]
+    },
+    {
+      "description": "a bubble car, two seats",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "lavender",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-car-1",
+      "name": "Bubble car 1",
+      "type": "sphere",
+      "dimensions": [
+        30
+      ],
+      "position": [
+        1872,
+        -360,
+        432
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -45,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-rim-2",
+      "name": "Sky Wheel rim 2",
+      "type": "cylinder",
+      "dimensions": [
+        4.8,
+        161.503
+      ],
+      "position": [
+        1773.1,
+        -360,
+        645.1
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 60,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-spoke-2",
+      "name": "Sky Wheel spoke 2",
+      "type": "cylinder",
+      "dimensions": [
+        3,
+        312
+      ],
+      "position": [
+        1695.1,
+        -360,
+        510
+      ]
+    },
+    {
+      "description": "a bubble car, two seats",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "lavender",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-car-2",
+      "name": "Bubble car 2",
+      "type": "sphere",
+      "dimensions": [
+        30
+      ],
+      "position": [
+        1830.2,
+        -360,
+        588
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -75,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-rim-3",
+      "name": "Sky Wheel rim 3",
+      "type": "cylinder",
+      "dimensions": [
+        4.8,
+        161.503
+      ],
+      "position": [
+        1638,
+        -360,
+        723.1
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 30,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-spoke-3",
+      "name": "Sky Wheel spoke 3",
+      "type": "cylinder",
+      "dimensions": [
+        3,
+        312
+      ],
+      "position": [
+        1638,
+        -360,
+        567.1
+      ]
+    },
+    {
+      "description": "a bubble car, two seats",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "lavender",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-car-3",
+      "name": "Bubble car 3",
+      "type": "sphere",
+      "dimensions": [
+        30
+      ],
+      "position": [
+        1716,
+        -360,
+        702.2
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -105,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-rim-4",
+      "name": "Sky Wheel rim 4",
+      "type": "cylinder",
+      "dimensions": [
+        4.8,
+        161.503
+      ],
+      "position": [
+        1482,
+        -360,
+        723.1
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-spoke-4",
+      "name": "Sky Wheel spoke 4",
+      "type": "cylinder",
+      "dimensions": [
+        3,
+        312
+      ],
+      "position": [
+        1560,
+        -360,
+        588
+      ]
+    },
+    {
+      "description": "a bubble car, two seats",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "lavender",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-car-4",
+      "name": "Bubble car 4",
+      "type": "sphere",
+      "dimensions": [
+        30
+      ],
+      "position": [
+        1560,
+        -360,
+        744
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -135,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-rim-5",
+      "name": "Sky Wheel rim 5",
+      "type": "cylinder",
+      "dimensions": [
+        4.8,
+        161.503
+      ],
+      "position": [
+        1346.9,
+        -360,
+        645.1
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -30,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-spoke-5",
+      "name": "Sky Wheel spoke 5",
+      "type": "cylinder",
+      "dimensions": [
+        3,
+        312
+      ],
+      "position": [
+        1482,
+        -360,
+        567.1
+      ]
+    },
+    {
+      "description": "a bubble car, two seats",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "lavender",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-car-5",
+      "name": "Bubble car 5",
+      "type": "sphere",
+      "dimensions": [
+        30
+      ],
+      "position": [
+        1404,
+        -360,
+        702.2
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -165,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-rim-6",
+      "name": "Sky Wheel rim 6",
+      "type": "cylinder",
+      "dimensions": [
+        4.8,
+        161.503
+      ],
+      "position": [
+        1268.9,
+        -360,
+        510
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -60,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-spoke-6",
+      "name": "Sky Wheel spoke 6",
+      "type": "cylinder",
+      "dimensions": [
+        3,
+        312
+      ],
+      "position": [
+        1424.9,
+        -360,
+        510
+      ]
+    },
+    {
+      "description": "a bubble car, two seats",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "lavender",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-car-6",
+      "name": "Bubble car 6",
+      "type": "sphere",
+      "dimensions": [
+        30
+      ],
+      "position": [
+        1289.8,
+        -360,
+        588
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 165,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-rim-7",
+      "name": "Sky Wheel rim 7",
+      "type": "cylinder",
+      "dimensions": [
+        4.8,
+        161.503
+      ],
+      "position": [
+        1268.9,
+        -360,
+        354
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -90,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-spoke-7",
+      "name": "Sky Wheel spoke 7",
+      "type": "cylinder",
+      "dimensions": [
+        3,
+        312
+      ],
+      "position": [
+        1404,
+        -360,
+        432
+      ]
+    },
+    {
+      "description": "a bubble car, two seats",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "lavender",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-car-7",
+      "name": "Bubble car 7",
+      "type": "sphere",
+      "dimensions": [
+        30
+      ],
+      "position": [
+        1248,
+        -360,
+        432
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 135,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-rim-8",
+      "name": "Sky Wheel rim 8",
+      "type": "cylinder",
+      "dimensions": [
+        4.8,
+        161.503
+      ],
+      "position": [
+        1346.9,
+        -360,
+        218.9
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -120,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-spoke-8",
+      "name": "Sky Wheel spoke 8",
+      "type": "cylinder",
+      "dimensions": [
+        3,
+        312
+      ],
+      "position": [
+        1424.9,
+        -360,
+        354
+      ]
+    },
+    {
+      "description": "a bubble car, two seats",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "lavender",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-car-8",
+      "name": "Bubble car 8",
+      "type": "sphere",
+      "dimensions": [
+        30
+      ],
+      "position": [
+        1289.8,
+        -360,
+        276
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 105,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-rim-9",
+      "name": "Sky Wheel rim 9",
+      "type": "cylinder",
+      "dimensions": [
+        4.8,
+        161.503
+      ],
+      "position": [
+        1482,
+        -360,
+        140.9
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -150,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-spoke-9",
+      "name": "Sky Wheel spoke 9",
+      "type": "cylinder",
+      "dimensions": [
+        3,
+        312
+      ],
+      "position": [
+        1482,
+        -360,
+        296.9
+      ]
+    },
+    {
+      "description": "a bubble car, two seats",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "lavender",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-car-9",
+      "name": "Bubble car 9",
+      "type": "sphere",
+      "dimensions": [
+        30
+      ],
+      "position": [
+        1404,
+        -360,
+        161.8
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 75,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-rim-10",
+      "name": "Sky Wheel rim 10",
+      "type": "cylinder",
+      "dimensions": [
+        4.8,
+        161.503
+      ],
+      "position": [
+        1638,
+        -360,
+        140.9
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 180,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-spoke-10",
+      "name": "Sky Wheel spoke 10",
+      "type": "cylinder",
+      "dimensions": [
+        3,
+        312
+      ],
+      "position": [
+        1560,
+        -360,
+        276
+      ]
+    },
+    {
+      "description": "a bubble car, two seats",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "lavender",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-car-10",
+      "name": "Bubble car 10",
+      "type": "sphere",
+      "dimensions": [
+        30
+      ],
+      "position": [
+        1560,
+        -360,
+        120
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 45,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-rim-11",
+      "name": "Sky Wheel rim 11",
+      "type": "cylinder",
+      "dimensions": [
+        4.8,
+        161.503
+      ],
+      "position": [
+        1773.1,
+        -360,
+        218.9
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 150,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-spoke-11",
+      "name": "Sky Wheel spoke 11",
+      "type": "cylinder",
+      "dimensions": [
+        3,
+        312
+      ],
+      "position": [
+        1638,
+        -360,
+        296.9
+      ]
+    },
+    {
+      "description": "a bubble car, two seats",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "lavender",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-car-11",
+      "name": "Bubble car 11",
+      "type": "sphere",
+      "dimensions": [
+        30
+      ],
+      "position": [
+        1716,
+        -360,
+        161.8
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 15,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "track",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-rim-12",
+      "name": "Sky Wheel rim 12",
+      "type": "cylinder",
+      "dimensions": [
+        4.8,
+        161.503
+      ],
+      "position": [
+        1851.1,
+        -360,
+        354
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 120,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-spoke-12",
+      "name": "Sky Wheel spoke 12",
+      "type": "cylinder",
+      "dimensions": [
+        3,
+        312
+      ],
+      "position": [
+        1695.1,
+        -360,
+        354
+      ]
+    },
+    {
+      "description": "a bubble car, two seats",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "lavender",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-car-12",
+      "name": "Bubble car 12",
+      "type": "sphere",
+      "dimensions": [
+        30
+      ],
+      "position": [
+        1830.2,
+        -360,
+        276
+      ]
+    },
+    {
+      "description": "the axle at the centre",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-sky-wheel",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-sky-hub",
+      "name": "Sky Wheel hub",
+      "type": "cylinder",
+      "dimensions": [
+        18,
+        24
+      ],
+      "position": [
+        1560,
+        -360,
+        432
+      ],
+      "rotation_x": 90
+    },
+    {
+      "description": "pole by the gate",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-finish",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-flagpole-1",
+      "name": "Flag pole 1",
+      "type": "cylinder",
+      "dimensions": [
+        3.6,
+        312
+      ],
+      "position": [
+        -216,
+        -1512,
+        156
+      ]
+    },
+    {
+      "description": "pastel flag on the pole",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-finish",
+      "material": "flag",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-flag-1",
+      "name": "Flag 1",
+      "type": "box",
+      "dimensions": [
+        72,
+        3.6,
+        36
+      ],
+      "position": [
+        -180,
+        -1512,
+        288
+      ]
+    },
+    {
+      "description": "pole by the gate",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-finish",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-flagpole-2",
+      "name": "Flag pole 2",
+      "type": "cylinder",
+      "dimensions": [
+        3.6,
+        312
+      ],
+      "position": [
+        216,
+        -1512,
+        156
+      ]
+    },
+    {
+      "description": "pastel flag on the pole",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-finish",
+      "material": "flag",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-flag-2",
+      "name": "Flag 2",
+      "type": "box",
+      "dimensions": [
+        72,
+        3.6,
+        36
+      ],
+      "position": [
+        252,
+        -1512,
+        288
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-finish",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-balloon-stick-1",
+      "name": "Balloon stick 1",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        120
+      ],
+      "position": [
+        -288,
+        168,
+        60
+      ]
+    },
+    {
+      "description": "party balloon",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-finish",
+      "material": "lavender",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-balloon-1",
+      "name": "Balloon 1",
+      "type": "sphere",
+      "dimensions": [
+        18
+      ],
+      "position": [
+        -288,
+        168,
+        132
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-finish",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-balloon-stick-2",
+      "name": "Balloon stick 2",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        120
+      ],
+      "position": [
+        312,
+        216,
+        60
+      ]
+    },
+    {
+      "description": "party balloon",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-finish",
+      "material": "mint",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-balloon-2",
+      "name": "Balloon 2",
+      "type": "sphere",
+      "dimensions": [
+        18
+      ],
+      "position": [
+        312,
+        216,
+        132
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-finish",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-balloon-stick-3",
+      "name": "Balloon stick 3",
+      "type": "cylinder",
+      "dimensions": [
+        2.4,
+        120
+      ],
+      "position": [
+        0,
+        -408,
+        60
+      ]
+    },
+    {
+      "description": "party balloon",
+      "rotation_y": 0,
+      "parent": "adventure-park-v14-finish",
+      "material": "roof",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "adventure-park-v14-balloon-3",
+      "name": "Balloon 3",
+      "type": "sphere",
+      "dimensions": [
+        18
+      ],
+      "position": [
+        0,
+        -408,
+        132
+      ]
+    }
+  ],
+  "version": 277
+}

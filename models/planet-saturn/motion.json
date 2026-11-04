@@ -1,0 +1,50 @@
+{
+  "schema": "make3d.motion/0.1",
+  "model_id": "planet-saturn",
+  "name": "Spin and moons",
+  "description": "Saturn spins and its moons go round it. One 240 s loop; each motion is a whole number of turns, so it never jumps.",
+  "units": "in",
+  "up": "z",
+  "loop_s": 240,
+  "autoplay": {
+    "plays": 2
+  },
+  "motions": [
+    {
+      "id": "saturn-spin",
+      "target": "planet-saturn-body-saturn",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 11
+    },
+    {
+      "id": "enceladus-orbit",
+      "target": "planet-saturn-arm-enceladus",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 10
+    },
+    {
+      "id": "titan-orbit",
+      "target": "planet-saturn-arm-titan",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 4
+    }
+  ]
+}

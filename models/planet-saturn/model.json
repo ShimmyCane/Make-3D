@@ -1,0 +1,509 @@
+{
+  "model_id": "planet-saturn",
+  "name": "Saturn (planet view) V01",
+  "description": "Saturn on its own: a gas giant with big, flat rings. Spins, with its moons going round. Tap the pink marker to fly back to the Solar System. Sizes are estimates, in inches.",
+  "units": "in",
+  "up": "z",
+  "world": "solar-system-world",
+  "materials": {
+    "sun": {
+      "color": "#ffd23f",
+      "opacity": 1
+    },
+    "corona": {
+      "color": "#ffb347",
+      "opacity": 0.2
+    },
+    "orbit": {
+      "color": "#8a86a3",
+      "opacity": 1
+    },
+    "mercury": {
+      "color": "#b8b0a4",
+      "opacity": 1
+    },
+    "venus": {
+      "color": "#f0d9a0",
+      "opacity": 1
+    },
+    "earth": {
+      "color": "#4f8fd6",
+      "opacity": 1
+    },
+    "mars": {
+      "color": "#d9714a",
+      "opacity": 1
+    },
+    "jup1": {
+      "color": "#e8c49a",
+      "opacity": 1
+    },
+    "jup2": {
+      "color": "#b87c55",
+      "opacity": 1
+    },
+    "jup3": {
+      "color": "#f2e6d0",
+      "opacity": 1
+    },
+    "sat": {
+      "color": "#ecd8a0",
+      "opacity": 1
+    },
+    "satb": {
+      "color": "#d9b97c",
+      "opacity": 1
+    },
+    "ring": {
+      "color": "#e6d7b0",
+      "opacity": 0.8
+    },
+    "ring2": {
+      "color": "#b59f7a",
+      "opacity": 0.8
+    },
+    "uranus": {
+      "color": "#a9e6f0",
+      "opacity": 1
+    },
+    "uranusb": {
+      "color": "#8fd4e6",
+      "opacity": 1
+    },
+    "neptune": {
+      "color": "#4f73e0",
+      "opacity": 1
+    },
+    "neptuneb": {
+      "color": "#3b5fc2",
+      "opacity": 1
+    },
+    "pluto": {
+      "color": "#c9b49a",
+      "opacity": 1
+    },
+    "charon": {
+      "color": "#8f8a85",
+      "opacity": 1
+    },
+    "moon": {
+      "color": "#bdbdbd",
+      "opacity": 1
+    },
+    "phobos": {
+      "color": "#8c7f74",
+      "opacity": 1
+    },
+    "io": {
+      "color": "#f6e28a",
+      "opacity": 1
+    },
+    "europa": {
+      "color": "#e9dfcf",
+      "opacity": 1
+    },
+    "ganymede": {
+      "color": "#a79b8b",
+      "opacity": 1
+    },
+    "callisto": {
+      "color": "#7e7467",
+      "opacity": 1
+    },
+    "titan": {
+      "color": "#e9b872",
+      "opacity": 1
+    },
+    "enceladus": {
+      "color": "#f4f8ff",
+      "opacity": 1
+    },
+    "miranda": {
+      "color": "#b4b4b4",
+      "opacity": 1
+    },
+    "ariel": {
+      "color": "#c9c9c9",
+      "opacity": 1
+    },
+    "triton": {
+      "color": "#e0d6c8",
+      "opacity": 1
+    },
+    "rock": {
+      "color": "#9a9188",
+      "opacity": 1
+    },
+    "rock2": {
+      "color": "#b3a99c",
+      "opacity": 1
+    },
+    "air": {
+      "color": "#9fd8ff",
+      "opacity": 0.2
+    },
+    "venusair": {
+      "color": "#ffe9a8",
+      "opacity": 0.25
+    },
+    "marker": {
+      "color": "#ff8fa3",
+      "opacity": 1
+    }
+  },
+  "view": {
+    "fill": 0.75,
+    "radius": 19
+  },
+  "objects": [
+    {
+      "description": "spins on its own axis",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-saturn-body-saturn",
+      "name": "Saturn body",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a gas giant with big, flat rings",
+      "rotation_y": 0,
+      "parent": "planet-saturn-body-saturn",
+      "material": "sat",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-saturn-ball-saturn",
+      "name": "Saturn",
+      "type": "sphere",
+      "dimensions": [
+        19
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "planet-saturn-body-saturn",
+      "material": "sat",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-saturn-band-saturn-1",
+      "name": "Saturn band 1",
+      "type": "cylinder",
+      "dimensions": [
+        12.589,
+        4.239
+      ],
+      "position": [
+        0,
+        0,
+        -14.547
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "planet-saturn-body-saturn",
+      "material": "satb",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-saturn-band-saturn-2",
+      "name": "Saturn band 2",
+      "type": "cylinder",
+      "dimensions": [
+        16.384,
+        4.239
+      ],
+      "position": [
+        0,
+        0,
+        -10.391
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "planet-saturn-body-saturn",
+      "material": "sat",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-saturn-band-saturn-3",
+      "name": "Saturn band 3",
+      "type": "cylinder",
+      "dimensions": [
+        18.486,
+        4.239
+      ],
+      "position": [
+        0,
+        0,
+        -6.234
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "planet-saturn-body-saturn",
+      "material": "satb",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-saturn-band-saturn-4",
+      "name": "Saturn band 4",
+      "type": "cylinder",
+      "dimensions": [
+        19.453,
+        4.239
+      ],
+      "position": [
+        0,
+        0,
+        -2.078
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "planet-saturn-body-saturn",
+      "material": "sat",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-saturn-band-saturn-5",
+      "name": "Saturn band 5",
+      "type": "cylinder",
+      "dimensions": [
+        19.453,
+        4.239
+      ],
+      "position": [
+        0,
+        0,
+        2.078
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "planet-saturn-body-saturn",
+      "material": "satb",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-saturn-band-saturn-6",
+      "name": "Saturn band 6",
+      "type": "cylinder",
+      "dimensions": [
+        18.486,
+        4.239
+      ],
+      "position": [
+        0,
+        0,
+        6.234
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "planet-saturn-body-saturn",
+      "material": "sat",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-saturn-band-saturn-7",
+      "name": "Saturn band 7",
+      "type": "cylinder",
+      "dimensions": [
+        16.384,
+        4.239
+      ],
+      "position": [
+        0,
+        0,
+        10.391
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "planet-saturn-body-saturn",
+      "material": "satb",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-saturn-band-saturn-8",
+      "name": "Saturn band 8",
+      "type": "cylinder",
+      "dimensions": [
+        12.589,
+        4.239
+      ],
+      "position": [
+        0,
+        0,
+        14.547
+      ]
+    },
+    {
+      "description": "a flat disc of ice",
+      "rotation_y": 0,
+      "parent": "planet-saturn-body-saturn",
+      "material": "ring",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-saturn-ring-a-saturn",
+      "name": "Saturn rings, outer",
+      "type": "cylinder",
+      "dimensions": [
+        39.9,
+        0.4
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a darker band inside the rings",
+      "rotation_y": 0,
+      "parent": "planet-saturn-body-saturn",
+      "material": "ring2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-saturn-ring-b-saturn",
+      "name": "Saturn rings, inner",
+      "type": "cylinder",
+      "dimensions": [
+        30.4,
+        0.4
+      ],
+      "position": [
+        0,
+        0,
+        0.6
+      ]
+    },
+    {
+      "description": "a thin see-through haze (taps pass through it)",
+      "rotation_y": 0,
+      "parent": "planet-saturn-body-saturn",
+      "material": "air",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-saturn-air-saturn",
+      "name": "Saturn atmosphere",
+      "type": "sphere",
+      "dimensions": [
+        21.28
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "turns the moon round the planet",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-saturn-arm-enceladus",
+      "name": "Enceladus orbit",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a moon of Saturn",
+      "rotation_y": 0,
+      "parent": "planet-saturn-arm-enceladus",
+      "material": "enceladus",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-saturn-moon-enceladus",
+      "name": "Enceladus",
+      "type": "sphere",
+      "dimensions": [
+        0.9
+      ],
+      "position": [
+        30,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "turns the moon round the planet",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-saturn-arm-titan",
+      "name": "Titan orbit",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a moon of Saturn",
+      "rotation_y": 0,
+      "parent": "planet-saturn-arm-titan",
+      "material": "titan",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-saturn-moon-titan",
+      "name": "Titan",
+      "type": "sphere",
+      "dimensions": [
+        3.4
+      ],
+      "position": [
+        52,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "tap to fly back to the Sun and all the planets",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "marker",
+      "tags": [
+        "link:solar-system-v05:fade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "planet-saturn-home",
+      "name": "Back to the Solar System",
+      "type": "sphere",
+      "dimensions": [
+        2.6
+      ],
+      "position": [
+        -45,
+        0,
+        21.1
+      ]
+    }
+  ],
+  "version": 18
+}

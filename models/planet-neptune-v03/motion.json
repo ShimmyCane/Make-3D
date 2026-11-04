@@ -1,0 +1,62 @@
+{
+  "schema": "make3d.motion/0.1",
+  "model_id": "planet-neptune-v03",
+  "name": "Spin and moons",
+  "description": "Neptune spins and its moons go round it. One 240 s loop; each motion is a whole number of turns, so it never jumps.",
+  "units": "in",
+  "up": "z",
+  "loop_s": 240,
+  "autoplay": {
+    "plays": 2
+  },
+  "motions": [
+    {
+      "id": "neptune-spin",
+      "target": "planet-neptune-v03-body-neptune",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 8
+    },
+    {
+      "id": "triton-orbit",
+      "target": "planet-neptune-v03-arm-triton",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 2
+    },
+    {
+      "id": "proteus-orbit",
+      "target": "planet-neptune-v03-arm-proteus",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 4
+    },
+    {
+      "id": "nereid-orbit",
+      "target": "planet-neptune-v03-arm-nereid",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 1
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "model_id": "planet-uranus",
+  "name": "Uranus (planet view) V01",
+  "description": "Uranus on its own: an ice giant that rolls on its side; this model spins it about the sideways axis. Spins, with its moons going round. Tap the pink marker to fly back to the Solar System. Sizes are estimates, in inches.",
+  "units": "in",
+  "up": "z",
+  "world": "solar-system-world",
+  "materials": {
+    "sun": {
+      "color": "#ffd23f",
+      "opacity": 1
+    },
+    "corona": {
+      "color": "#ffb347",
+      "opacity": 0.2
+    },
+    "orbit": {
+      "color": "#8a86a3",
+      "opacity": 1
+    },
+    "mercury": {
+      "color": "#b8b0a4",
+      "opacity": 1
+    },
+    "venus": {
+      "color": "#f0d9a0",
+      "opacity": 1
+    },
+    "earth": {
+      "color": "#4f8fd6",
+      "opacity": 1
+    },
+    "mars": {
+      "color": "#d9714a",
+      "opacity": 1
+    },
+    "jup1": {
+      "color": "#e8c49a",
+      "opacity": 1
+    },
+    "jup2": {
+      "color": "#b87c55",
+      "opacity": 1
+    },
+    "jup3": {
+      "color": "#f2e6d0",
+      "opacity": 1
+    },
+    "sat": {
+      "color": "#ecd8a0",
+      "opacity": 1
+    },
+    "satb": {
+      "color": "#d9b97c",
+      "opacity": 1
+    },
+    "ring": {
+      "color": "#e6d7b0",
+      "opacity": 0.8
+    },
+    "ring2": {
+      "color": "#b59f7a",
+      "opacity": 0.8
+    },
+    "uranus": {
+      "color": "#a9e6f0",
+      "opacity": 1
+    },
+    "uranusb": {
+      "color": "#8fd4e6",
+      "opacity": 1
+    },
+    "neptune": {
+      "color": "#4f73e0",
+      "opacity": 1
+    },
+    "neptuneb": {
+      "color": "#3b5fc2",
+      "opacity": 1
+    },
+    "pluto": {
+      "color": "#c9b49a",
+      "opacity": 1
+    },
+    "charon": {
+      "color": "#8f8a85",
+      "opacity": 1
+    },
+    "moon": {
+      "color": "#bdbdbd",
+      "opacity": 1
+    },
+    "phobos": {
+      "color": "#8c7f74",
+      "opacity": 1
+    },
+    "io": {
+      "color": "#f6e28a",
+      "opacity": 1
+    },
+    "europa": {
+      "color": "#e9dfcf",
+      "opacity": 1
+    },
+    "ganymede": {
+      "color": "#a79b8b",
+      "opacity": 1
+    },
+    "callisto": {
+      "color": "#7e7467",
+      "opacity": 1
+    },
+    "titan": {
+      "color": "#e9b872",
+      "opacity": 1
+    },
+    "enceladus": {
+      "color": "#f4f8ff",
+      "opacity": 1
+    },
+    "miranda": {
+      "color": "#b4b4b4",
+      "opacity": 1
+    },
+    "ariel": {
+      "color": "#c9c9c9",
+      "opacity": 1
+    },
+    "triton": {
+      "color": "#e0d6c8",
+      "opacity": 1
+    },
+    "rock": {
+      "color": "#9a9188",
+      "opacity": 1
+    },
+    "rock2": {
+      "color": "#b3a99c",
+      "opacity": 1
+    },
+    "air": {
+      "color": "#9fd8ff",
+      "opacity": 0.2
+    },
+    "venusair": {
+      "color": "#ffe9a8",
+      "opacity": 0.25
+    },
+    "marker": {
+      "color": "#ff8fa3",
+      "opacity": 1
+    }
+  },
+  "view": {
+    "fill": 0.75,
+    "radius": 14
+  },
+  "objects": [
+    {
+      "description": "spins on its own axis",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-uranus-body-uranus",
+      "name": "Uranus body",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "an ice giant that rolls on its side; this model spins it about the sideways axis",
+      "rotation_y": 0,
+      "parent": "planet-uranus-body-uranus",
+      "material": "uranus",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-uranus-ball-uranus",
+      "name": "Uranus",
+      "type": "sphere",
+      "dimensions": [
+        14
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a thin see-through haze (taps pass through it)",
+      "rotation_y": 0,
+      "parent": "planet-uranus-body-uranus",
+      "material": "air",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-uranus-air-uranus",
+      "name": "Uranus atmosphere",
+      "type": "sphere",
+      "dimensions": [
+        15.68
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "turns the moon round the planet",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-uranus-arm-miranda",
+      "name": "Miranda orbit",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a moon of Uranus",
+      "rotation_y": 0,
+      "parent": "planet-uranus-arm-miranda",
+      "material": "miranda",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-uranus-moon-miranda",
+      "name": "Miranda",
+      "type": "sphere",
+      "dimensions": [
+        1.2
+      ],
+      "position": [
+        26,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "turns the moon round the planet",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-uranus-arm-ariel",
+      "name": "Ariel orbit",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a moon of Uranus",
+      "rotation_y": 0,
+      "parent": "planet-uranus-arm-ariel",
+      "material": "ariel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-uranus-moon-ariel",
+      "name": "Ariel",
+      "type": "sphere",
+      "dimensions": [
+        1.8
+      ],
+      "position": [
+        34,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "tap to fly back to the Sun and all the planets",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "marker",
+      "tags": [
+        "link:solar-system-v05:fade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "planet-uranus-home",
+      "name": "Back to the Solar System",
+      "type": "sphere",
+      "dimensions": [
+        2.6
+      ],
+      "position": [
+        -40,
+        0,
+        16.6
+      ]
+    }
+  ],
+  "version": 8
+}

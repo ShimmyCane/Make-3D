@@ -1,0 +1,934 @@
+{
+  "model_id": "living-room-v01",
+  "name": "Living room V01",
+  "description": "Living room from a photo, estimated sizes in inches. V01: blockout. Room shell, bookcase, TV, plants, sofa, children’s table and chairs as boxes.",
+  "units": "in",
+  "up": "z",
+  "world": "default-world",
+  "view": {
+    "azimuth_deg": 214
+  },
+  "materials": {
+    "wall": {
+      "color": "#f7f3ea",
+      "opacity": 1
+    },
+    "floor": {
+      "color": "#c9955f",
+      "opacity": 1
+    },
+    "yellow": {
+      "color": "#f2c94c",
+      "opacity": 1
+    },
+    "black": {
+      "color": "#1d1f23",
+      "opacity": 1
+    },
+    "pot": {
+      "color": "#c97b5d",
+      "opacity": 1
+    },
+    "leaf": {
+      "color": "#5f9e5a",
+      "opacity": 1
+    },
+    "leafLight": {
+      "color": "#86b86f",
+      "opacity": 1
+    },
+    "fan": {
+      "color": "#9ec9e8",
+      "opacity": 1
+    },
+    "fanPink": {
+      "color": "#f2b8c6",
+      "opacity": 1
+    },
+    "sofa": {
+      "color": "#8d949c",
+      "opacity": 1
+    },
+    "glass": {
+      "color": "#bfe3f2",
+      "opacity": 0.45
+    },
+    "tableWood": {
+      "color": "#e3c08f",
+      "opacity": 1
+    },
+    "tableLeg": {
+      "color": "#f4f1ea",
+      "opacity": 1
+    },
+    "chairWood": {
+      "color": "#d4a77a",
+      "opacity": 1
+    },
+    "chairBlue": {
+      "color": "#3f8fd2",
+      "opacity": 1
+    },
+    "rug": {
+      "color": "#aebfae",
+      "opacity": 1
+    },
+    "bin": {
+      "color": "#f5f5f2",
+      "opacity": 1
+    },
+    "door": {
+      "color": "#8a5a3c",
+      "opacity": 1
+    },
+    "basket": {
+      "color": "#d9bf8c",
+      "opacity": 1
+    },
+    "trim": {
+      "color": "#ffffff",
+      "opacity": 1
+    },
+    "puzzleBox": {
+      "color": "#8c3b2e",
+      "opacity": 1
+    },
+    "bottle": {
+      "color": "#2f7f86",
+      "opacity": 1
+    },
+    "boxDark": {
+      "color": "#3a3a3a",
+      "opacity": 1
+    },
+    "puzzle1": {
+      "color": "#6fa8dc",
+      "opacity": 1
+    },
+    "puzzle2": {
+      "color": "#f4c542",
+      "opacity": 1
+    },
+    "shoe1": {
+      "color": "#2b2b2b",
+      "opacity": 1
+    },
+    "shoe2": {
+      "color": "#6b4f3a",
+      "opacity": 1
+    },
+    "book0": {
+      "color": "#e76f51",
+      "opacity": 1
+    },
+    "book1": {
+      "color": "#2a9d8f",
+      "opacity": 1
+    },
+    "book2": {
+      "color": "#e9c46a",
+      "opacity": 1
+    },
+    "book3": {
+      "color": "#6d597a",
+      "opacity": 1
+    },
+    "book4": {
+      "color": "#8ab17d",
+      "opacity": 1
+    },
+    "book5": {
+      "color": "#f4a261",
+      "opacity": 1
+    },
+    "book6": {
+      "color": "#457b9d",
+      "opacity": 1
+    }
+  },
+  "objects": [
+    {
+      "description": "wood floor, room footprint",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "floor",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-floor",
+      "name": "Floor",
+      "type": "box",
+      "dimensions": [
+        200,
+        144,
+        0.5
+      ],
+      "position": [
+        100,
+        72,
+        0.25
+      ]
+    },
+    {
+      "description": "context only",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-wall-back-left",
+      "name": "Back wall, left part",
+      "type": "box",
+      "dimensions": [
+        128,
+        4,
+        96
+      ],
+      "position": [
+        136,
+        -2,
+        48
+      ]
+    },
+    {
+      "description": "context only",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-wall-gap",
+      "name": "Back wall, between windows",
+      "type": "box",
+      "dimensions": [
+        4,
+        4,
+        96
+      ],
+      "position": [
+        52,
+        -2,
+        48
+      ]
+    },
+    {
+      "description": "context only",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-wall-back-right",
+      "name": "Back wall, far right",
+      "type": "box",
+      "dimensions": [
+        4,
+        4,
+        96
+      ],
+      "position": [
+        2,
+        -2,
+        48
+      ]
+    },
+    {
+      "description": "context only",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-wall-A-above",
+      "name": "Above window A",
+      "type": "box",
+      "dimensions": [
+        18,
+        4,
+        12
+      ],
+      "position": [
+        63,
+        -2,
+        90
+      ]
+    },
+    {
+      "description": "context only",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-wall-A-below",
+      "name": "Below window A",
+      "type": "box",
+      "dimensions": [
+        18,
+        4,
+        42
+      ],
+      "position": [
+        63,
+        -2,
+        21
+      ]
+    },
+    {
+      "description": "context only",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-wall-B-above",
+      "name": "Above window B",
+      "type": "box",
+      "dimensions": [
+        46,
+        4,
+        12
+      ],
+      "position": [
+        27,
+        -2,
+        90
+      ]
+    },
+    {
+      "description": "context only",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-wall-B-below",
+      "name": "Below window B",
+      "type": "box",
+      "dimensions": [
+        46,
+        4,
+        36
+      ],
+      "position": [
+        27,
+        -2,
+        18
+      ]
+    },
+    {
+      "description": "context only",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-wall-left",
+      "name": "Left wall",
+      "type": "box",
+      "dimensions": [
+        4,
+        144,
+        96
+      ],
+      "position": [
+        202,
+        72,
+        48
+      ]
+    },
+    {
+      "description": "context only, door is on it",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-wall-right",
+      "name": "Right wall",
+      "type": "box",
+      "dimensions": [
+        4,
+        144,
+        96
+      ],
+      "position": [
+        -2,
+        72,
+        48
+      ]
+    },
+    {
+      "description": "door to the next room, front right",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "door",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-door",
+      "name": "Door",
+      "type": "box",
+      "dimensions": [
+        2,
+        30,
+        80
+      ],
+      "position": [
+        1,
+        118,
+        40
+      ]
+    },
+    {
+      "description": "low cube unit under the TV, 120 in wide",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "yellow",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-bookcase",
+      "name": "Yellow bookcase",
+      "type": "box",
+      "dimensions": [
+        120,
+        14,
+        30
+      ],
+      "position": [
+        140,
+        7,
+        15
+      ]
+    },
+    {
+      "description": "black stand on the bookcase",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "black",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-tv-stand",
+      "name": "TV stand",
+      "type": "box",
+      "dimensions": [
+        56,
+        12,
+        4
+      ],
+      "position": [
+        166,
+        6,
+        32
+      ]
+    },
+    {
+      "description": "large flat TV, about 56 in wide",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "black",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-tv",
+      "name": "TV",
+      "type": "box",
+      "dimensions": [
+        56,
+        3,
+        33
+      ],
+      "position": [
+        166,
+        1.5,
+        50.5
+      ]
+    },
+    {
+      "description": "terracotta pot, right end of the bookcase",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "pot",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-pot-1",
+      "name": "Plant pot 1",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        12
+      ],
+      "position": [
+        108,
+        7,
+        36
+      ]
+    },
+    {
+      "description": "big leafy plant",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "leaf",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-leaves-1",
+      "name": "Plant 1 leaves",
+      "type": "sphere",
+      "dimensions": [
+        11
+      ],
+      "position": [
+        108,
+        7,
+        52
+      ]
+    },
+    {
+      "description": "smaller pot beside plant 1",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "pot",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-pot-2",
+      "name": "Plant pot 2",
+      "type": "cylinder",
+      "dimensions": [
+        5,
+        10
+      ],
+      "position": [
+        92,
+        7,
+        35
+      ]
+    },
+    {
+      "description": "smaller leafy plant",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "leaf",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-leaves-2",
+      "name": "Plant 2 leaves",
+      "type": "sphere",
+      "dimensions": [
+        9
+      ],
+      "position": [
+        92,
+        7,
+        46
+      ]
+    },
+    {
+      "description": "small blue fan on the bookcase",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "fan",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-fan-blue",
+      "name": "Blue fan",
+      "type": "cylinder",
+      "dimensions": [
+        4,
+        7
+      ],
+      "position": [
+        132,
+        8,
+        33.5
+      ]
+    },
+    {
+      "description": "small pink fan on the bookcase",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "fanPink",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-fan-pink",
+      "name": "Pink fan",
+      "type": "cylinder",
+      "dimensions": [
+        3.5,
+        7
+      ],
+      "position": [
+        120,
+        7,
+        33.5
+      ]
+    },
+    {
+      "description": "floor pot, in front of the bookcase end",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "pot",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-floor-pot",
+      "name": "Tall plant pot",
+      "type": "cylinder",
+      "dimensions": [
+        8,
+        16
+      ],
+      "position": [
+        76,
+        24,
+        8
+      ]
+    },
+    {
+      "description": "tall leafy plant",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "leaf",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-floor-leaves",
+      "name": "Tall plant leaves",
+      "type": "sphere",
+      "dimensions": [
+        14
+      ],
+      "position": [
+        76,
+        24,
+        50
+      ]
+    },
+    {
+      "description": "against the back wall, under the wide window, 64 in long",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "sofa",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-sofa",
+      "name": "Grey sofa",
+      "type": "box",
+      "dimensions": [
+        64,
+        34,
+        30
+      ],
+      "position": [
+        36,
+        17,
+        15
+      ]
+    },
+    {
+      "description": "light wood top, 22 in high",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "tableWood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-table-top",
+      "name": "Children’s table top",
+      "type": "box",
+      "dimensions": [
+        44,
+        30,
+        1.5
+      ],
+      "position": [
+        96,
+        61,
+        21.25
+      ]
+    },
+    {
+      "description": "white leg",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "tableLeg",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-table-leg-1",
+      "name": "Table leg 1",
+      "type": "cylinder",
+      "dimensions": [
+        1,
+        20.5
+      ],
+      "position": [
+        116,
+        50,
+        10.25
+      ]
+    },
+    {
+      "description": "white leg",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "tableLeg",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-table-leg-2",
+      "name": "Table leg 2",
+      "type": "cylinder",
+      "dimensions": [
+        1,
+        20.5
+      ],
+      "position": [
+        76,
+        50,
+        10.25
+      ]
+    },
+    {
+      "description": "white leg",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "tableLeg",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-table-leg-3",
+      "name": "Table leg 3",
+      "type": "cylinder",
+      "dimensions": [
+        1,
+        20.5
+      ],
+      "position": [
+        116,
+        72,
+        10.25
+      ]
+    },
+    {
+      "description": "white leg",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "tableLeg",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-table-leg-4",
+      "name": "Table leg 4",
+      "type": "cylinder",
+      "dimensions": [
+        1,
+        20.5
+      ],
+      "position": [
+        76,
+        72,
+        10.25
+      ]
+    },
+    {
+      "description": "back of the table, faces the table",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "chairWood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-chair-1",
+      "name": "Wooden chair 1",
+      "type": "box",
+      "dimensions": [
+        14,
+        14,
+        1.5
+      ],
+      "position": [
+        104,
+        34,
+        11.25
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "chairWood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-chair-1-back",
+      "name": "Wooden chair 1 back",
+      "type": "box",
+      "dimensions": [
+        14,
+        1.5,
+        12
+      ],
+      "position": [
+        104,
+        27.25,
+        17
+      ]
+    },
+    {
+      "description": "left side of the table",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "chairWood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-chair-2",
+      "name": "Wooden chair 2",
+      "type": "box",
+      "dimensions": [
+        14,
+        14,
+        1.5
+      ],
+      "position": [
+        130,
+        62,
+        11.25
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "chairWood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-chair-2-back",
+      "name": "Wooden chair 2 back",
+      "type": "box",
+      "dimensions": [
+        14,
+        1.5,
+        12
+      ],
+      "position": [
+        130,
+        55.25,
+        17
+      ]
+    },
+    {
+      "description": "front of the table, facing back",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "chairWood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-chair-3",
+      "name": "Wooden chair 3",
+      "type": "box",
+      "dimensions": [
+        14,
+        14,
+        1.5
+      ],
+      "position": [
+        96,
+        94,
+        11.25
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "chairWood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-chair-3-back",
+      "name": "Wooden chair 3 back",
+      "type": "box",
+      "dimensions": [
+        14,
+        1.5,
+        12
+      ],
+      "position": [
+        96,
+        100.75,
+        17
+      ]
+    },
+    {
+      "description": "small plastic chair, front right of the table",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "chairBlue",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-chair-blue",
+      "name": "Blue chair",
+      "type": "box",
+      "dimensions": [
+        13,
+        13,
+        1.2
+      ],
+      "position": [
+        64,
+        96,
+        10
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "chairBlue",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-chair-blue-back",
+      "name": "Blue chair back",
+      "type": "box",
+      "dimensions": [
+        13,
+        1.5,
+        10
+      ],
+      "position": [
+        64,
+        102.75,
+        15
+      ]
+    },
+    {
+      "description": "grey-green rug, front right",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "rug",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-rug",
+      "name": "Rug",
+      "type": "box",
+      "dimensions": [
+        44,
+        30,
+        0.5
+      ],
+      "position": [
+        50,
+        122,
+        0.75
+      ]
+    },
+    {
+      "description": "white bin, front left corner",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "bin",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "living-room-v01-bin",
+      "name": "Bin",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        14
+      ],
+      "position": [
+        192,
+        128,
+        7
+      ]
+    }
+  ],
+  "version": 38
+}

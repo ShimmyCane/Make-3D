@@ -1,0 +1,234 @@
+{
+  "model_id": "honda-crv-test-v01",
+  "name": "Honda CR-V test model V01",
+  "description": "Honda CR-V test model, estimated from published spec figures, in inches. Increment 1 of 5.",
+  "units": "in",
+  "up": "z",
+  "world": "default-world",
+  "materials": {
+    "paint": {
+      "color": "#f5f3ec",
+      "opacity": 1
+    },
+    "glass": {
+      "color": "#2f3b47",
+      "opacity": 0.85
+    },
+    "trim": {
+      "color": "#3a3f45",
+      "opacity": 1
+    },
+    "tyre": {
+      "color": "#1f2124",
+      "opacity": 1
+    },
+    "rim": {
+      "color": "#c9ced6",
+      "opacity": 1
+    },
+    "hub": {
+      "color": "#8e959e",
+      "opacity": 1
+    },
+    "lamp": {
+      "color": "#fff4d1",
+      "opacity": 1
+    },
+    "tail": {
+      "color": "#d9463f",
+      "opacity": 1
+    },
+    "grille": {
+      "color": "#2b2f34",
+      "opacity": 1
+    },
+    "plate": {
+      "color": "#ffffff",
+      "opacity": 1
+    },
+    "exhaust": {
+      "color": "#6b6f75",
+      "opacity": 1
+    }
+  },
+  "objects": [
+    {
+      "description": "the car body",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "honda-crv-test-v01-body",
+      "name": "Body",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "windows and windscreen",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "honda-crv-test-v01-glass",
+      "name": "Glass",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "four wheels",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "honda-crv-test-v01-wheels",
+      "name": "Wheels",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "from 8 in to 27 in above the ground",
+      "rotation_y": 0,
+      "parent": "honda-crv-test-v01-body",
+      "material": "paint",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "honda-crv-test-v01-lower",
+      "name": "Lower body",
+      "type": "box",
+      "dimensions": [
+        184.8,
+        72,
+        19
+      ],
+      "position": [
+        -1.5,
+        0,
+        17.5
+      ]
+    },
+    {
+      "description": "blockout of the roof and glass; refined in V02",
+      "rotation_y": 0,
+      "parent": "honda-crv-test-v01-body",
+      "material": "paint",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "honda-crv-test-v01-cabin",
+      "name": "Cabin block",
+      "type": "box",
+      "dimensions": [
+        96,
+        66,
+        40
+      ],
+      "position": [
+        -3,
+        0,
+        46
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "honda-crv-test-v01-wheels",
+      "material": "tyre",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "honda-crv-test-v01-tyre-left-front",
+      "name": "Tyre front left",
+      "type": "cylinder",
+      "dimensions": [
+        14.5,
+        9.25
+      ],
+      "position": [
+        53.15,
+        32,
+        14.5
+      ],
+      "rotation_x": -90
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "honda-crv-test-v01-wheels",
+      "material": "tyre",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "honda-crv-test-v01-tyre-right-front",
+      "name": "Tyre front right",
+      "type": "cylinder",
+      "dimensions": [
+        14.5,
+        9.25
+      ],
+      "position": [
+        53.15,
+        -32,
+        14.5
+      ],
+      "rotation_x": -90
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "honda-crv-test-v01-wheels",
+      "material": "tyre",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "honda-crv-test-v01-tyre-left-rear",
+      "name": "Tyre rear left",
+      "type": "cylinder",
+      "dimensions": [
+        14.5,
+        9.25
+      ],
+      "position": [
+        -53.15,
+        32,
+        14.5
+      ],
+      "rotation_x": -90
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "honda-crv-test-v01-wheels",
+      "material": "tyre",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "honda-crv-test-v01-tyre-right-rear",
+      "name": "Tyre rear right",
+      "type": "cylinder",
+      "dimensions": [
+        14.5,
+        9.25
+      ],
+      "position": [
+        -53.15,
+        -32,
+        14.5
+      ],
+      "rotation_x": -90
+    }
+  ],
+  "version": 9
+}

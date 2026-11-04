@@ -1,0 +1,595 @@
+{
+  "schema": "make3d.history/0.1",
+  "model_id": "kitchen-mockup-v02",
+  "header": {
+    "model_id": "kitchen-mockup-v02",
+    "name": "Kitchen mockup V02",
+    "description": "Kitchen mockup from photos, estimated sizes in inches. V02: review of V01. Steel counter tops, checkered tile insets with terracotta patches.",
+    "units": "in",
+    "up": "z",
+    "world": "default-world",
+    "view": {
+      "azimuth_deg": 214
+    },
+    "materials": {
+      "wall": {
+        "color": "#f4f0e6",
+        "opacity": 1
+      },
+      "floor": {
+        "color": "#8c9094",
+        "opacity": 1
+      },
+      "green": {
+        "color": "#3f9b5a",
+        "opacity": 1
+      },
+      "yellow": {
+        "color": "#e8b43a",
+        "opacity": 1
+      },
+      "cabinet": {
+        "color": "#f1ead8",
+        "opacity": 1
+      },
+      "wood": {
+        "color": "#7a4e2d",
+        "opacity": 1
+      },
+      "steel": {
+        "color": "#c9ced3",
+        "opacity": 1
+      },
+      "tile": {
+        "color": "#e8c35a",
+        "opacity": 1
+      },
+      "tileRed": {
+        "color": "#b5573a",
+        "opacity": 1
+      },
+      "chrome": {
+        "color": "#e3e7ea",
+        "opacity": 1
+      },
+      "black": {
+        "color": "#1e1f22",
+        "opacity": 1
+      },
+      "bowl": {
+        "color": "#7d858c",
+        "opacity": 1
+      },
+      "bulb": {
+        "color": "#fff0a6",
+        "opacity": 1
+      },
+      "iron": {
+        "color": "#40454b",
+        "opacity": 1
+      }
+    }
+  },
+  "operations": [
+    {
+      "seq": 1,
+      "op": "add",
+      "time": "2026-11-01T10:01:00.000Z",
+      "author": "jimmy",
+      "note": "add Floor",
+      "object": {
+        "uuid": "kitchen-mockup-v02-shell-floor",
+        "name": "Floor",
+        "description": "kitchen floor, room footprint",
+        "type": "box",
+        "dimensions": [
+          186,
+          96,
+          0.5
+        ],
+        "position": [
+          93,
+          48,
+          0.25
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "floor"
+      }
+    },
+    {
+      "seq": 2,
+      "op": "add",
+      "time": "2026-11-01T10:02:00.000Z",
+      "author": "jimmy",
+      "note": "add Back wall",
+      "object": {
+        "uuid": "kitchen-mockup-v02-shell-back",
+        "name": "Back wall",
+        "description": "context only",
+        "type": "box",
+        "dimensions": [
+          186,
+          1,
+          96
+        ],
+        "position": [
+          93,
+          -0.5,
+          48
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 3,
+      "op": "add",
+      "time": "2026-11-01T10:03:00.000Z",
+      "author": "jimmy",
+      "note": "add Green wall",
+      "object": {
+        "uuid": "kitchen-mockup-v02-shell-left",
+        "name": "Green wall",
+        "description": "left wall, green paint, context only",
+        "type": "box",
+        "dimensions": [
+          2,
+          96,
+          96
+        ],
+        "position": [
+          187,
+          48,
+          48
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "green"
+      }
+    },
+    {
+      "seq": 4,
+      "op": "add",
+      "time": "2026-11-01T10:04:00.000Z",
+      "author": "jimmy",
+      "note": "add Base cabinets, back left",
+      "object": {
+        "uuid": "kitchen-mockup-v02-back-bl",
+        "name": "Base cabinets, back left",
+        "description": "left end of the back run",
+        "type": "box",
+        "dimensions": [
+          60,
+          24,
+          34
+        ],
+        "position": [
+          156,
+          12,
+          17.5
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 5,
+      "op": "add",
+      "time": "2026-11-01T10:05:00.000Z",
+      "author": "jimmy",
+      "note": "add Stove block",
+      "object": {
+        "uuid": "kitchen-mockup-v02-back-stove",
+        "name": "Stove block",
+        "description": "the cooker between the two counters",
+        "type": "box",
+        "dimensions": [
+          32,
+          24,
+          34
+        ],
+        "position": [
+          110,
+          12,
+          17.5
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 6,
+      "op": "add",
+      "time": "2026-11-01T10:06:00.000Z",
+      "author": "jimmy",
+      "note": "add Base cabinets, back right",
+      "object": {
+        "uuid": "kitchen-mockup-v02-back-br",
+        "name": "Base cabinets, back right",
+        "description": "right of the stove",
+        "type": "box",
+        "dimensions": [
+          88,
+          24,
+          34
+        ],
+        "position": [
+          50,
+          12,
+          17.5
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 7,
+      "op": "add",
+      "time": "2026-11-01T10:07:00.000Z",
+      "author": "jimmy",
+      "note": "add Return run",
+      "object": {
+        "uuid": "kitchen-mockup-v02-ret-carcass",
+        "name": "Return run",
+        "description": "along the right side of the room, toward the camera",
+        "type": "box",
+        "dimensions": [
+          24,
+          66,
+          34
+        ],
+        "position": [
+          18,
+          57,
+          17.5
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 8,
+      "op": "add",
+      "time": "2026-11-01T10:08:00.000Z",
+      "author": "jimmy",
+      "note": "add Sink run",
+      "object": {
+        "uuid": "kitchen-mockup-v02-sink-carcass",
+        "name": "Sink run",
+        "description": "along the left wall: fridge end, drawers, sink",
+        "type": "box",
+        "dimensions": [
+          24,
+          66,
+          34
+        ],
+        "position": [
+          174,
+          57,
+          17.5
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 9,
+      "op": "add",
+      "time": "2026-11-01T10:09:00.000Z",
+      "author": "jimmy",
+      "note": "add Wood bar",
+      "object": {
+        "uuid": "kitchen-mockup-v02-bar-wood",
+        "name": "Wood bar",
+        "description": "dark wood bar on the outside of the return run",
+        "type": "box",
+        "dimensions": [
+          4,
+          66,
+          40
+        ],
+        "position": [
+          4,
+          57,
+          20
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 10,
+      "op": "add",
+      "time": "2026-11-01T10:10:00.000Z",
+      "author": "jimmy",
+      "note": "add Counter, back left",
+      "object": {
+        "uuid": "kitchen-mockup-v02-back-top-bl",
+        "name": "Counter, back left",
+        "description": "steel top",
+        "type": "box",
+        "dimensions": [
+          60,
+          24,
+          1.5
+        ],
+        "position": [
+          156,
+          12,
+          35.25
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 11,
+      "op": "add",
+      "time": "2026-11-01T10:11:00.000Z",
+      "author": "jimmy",
+      "note": "add Stove top",
+      "object": {
+        "uuid": "kitchen-mockup-v02-back-top-stove",
+        "name": "Stove top",
+        "description": "steel cooktop surface",
+        "type": "box",
+        "dimensions": [
+          32,
+          24,
+          1.5
+        ],
+        "position": [
+          110,
+          12,
+          35.25
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 12,
+      "op": "add",
+      "time": "2026-11-01T10:12:00.000Z",
+      "author": "jimmy",
+      "note": "add Counter, back right",
+      "object": {
+        "uuid": "kitchen-mockup-v02-back-top-br",
+        "name": "Counter, back right",
+        "description": "steel top",
+        "type": "box",
+        "dimensions": [
+          88,
+          24,
+          1.5
+        ],
+        "position": [
+          50,
+          12,
+          35.25
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 13,
+      "op": "add",
+      "time": "2026-11-01T10:13:00.000Z",
+      "author": "jimmy",
+      "note": "add Return counter",
+      "object": {
+        "uuid": "kitchen-mockup-v02-ret-top",
+        "name": "Return counter",
+        "description": "steel top",
+        "type": "box",
+        "dimensions": [
+          24,
+          66,
+          1.5
+        ],
+        "position": [
+          18,
+          57,
+          35.25
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 14,
+      "op": "add",
+      "time": "2026-11-01T10:14:00.000Z",
+      "author": "jimmy",
+      "note": "add Sink counter",
+      "object": {
+        "uuid": "kitchen-mockup-v02-sink-top",
+        "name": "Sink counter",
+        "description": "steel top",
+        "type": "box",
+        "dimensions": [
+          24,
+          66,
+          1.5
+        ],
+        "position": [
+          174,
+          57,
+          35.25
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 15,
+      "op": "add",
+      "time": "2026-11-01T10:15:00.000Z",
+      "author": "jimmy",
+      "note": "add Tile, back left",
+      "object": {
+        "uuid": "kitchen-mockup-v02-back-tile-bl",
+        "name": "Tile, back left",
+        "description": "yellow tile inset",
+        "type": "box",
+        "dimensions": [
+          56,
+          20,
+          0.5
+        ],
+        "position": [
+          156,
+          12,
+          36.25
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "tile"
+      }
+    },
+    {
+      "seq": 16,
+      "op": "add",
+      "time": "2026-11-01T10:16:00.000Z",
+      "author": "jimmy",
+      "note": "add Red tile patch, back left",
+      "object": {
+        "uuid": "kitchen-mockup-v02-back-tile-bl-red",
+        "name": "Red tile patch, back left",
+        "description": "terracotta tile patch",
+        "type": "box",
+        "dimensions": [
+          12,
+          8,
+          0.25
+        ],
+        "position": [
+          172,
+          6,
+          36.625
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "tileRed"
+      }
+    },
+    {
+      "seq": 17,
+      "op": "add",
+      "time": "2026-11-01T10:17:00.000Z",
+      "author": "jimmy",
+      "note": "add Tile, back right",
+      "object": {
+        "uuid": "kitchen-mockup-v02-back-tile-br",
+        "name": "Tile, back right",
+        "description": "yellow tile inset",
+        "type": "box",
+        "dimensions": [
+          60,
+          20,
+          0.5
+        ],
+        "position": [
+          62,
+          12,
+          36.25
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "tile"
+      }
+    },
+    {
+      "seq": 18,
+      "op": "add",
+      "time": "2026-11-01T10:18:00.000Z",
+      "author": "jimmy",
+      "note": "add Red tile patch, back right",
+      "object": {
+        "uuid": "kitchen-mockup-v02-back-tile-br-red",
+        "name": "Red tile patch, back right",
+        "description": "terracotta tile patch",
+        "type": "box",
+        "dimensions": [
+          12,
+          10,
+          0.25
+        ],
+        "position": [
+          70,
+          17,
+          36.625
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "tileRed"
+      }
+    },
+    {
+      "seq": 19,
+      "op": "add",
+      "time": "2026-11-01T10:19:00.000Z",
+      "author": "jimmy",
+      "note": "add Tile, return run",
+      "object": {
+        "uuid": "kitchen-mockup-v02-ret-tile",
+        "name": "Tile, return run",
+        "description": "yellow tile inset",
+        "type": "box",
+        "dimensions": [
+          20,
+          62,
+          0.5
+        ],
+        "position": [
+          18,
+          57,
+          36.25
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "tile"
+      }
+    },
+    {
+      "seq": 20,
+      "op": "add",
+      "time": "2026-11-01T10:20:00.000Z",
+      "author": "jimmy",
+      "note": "add Red tile patch, return run",
+      "object": {
+        "uuid": "kitchen-mockup-v02-ret-tile-red",
+        "name": "Red tile patch, return run",
+        "description": "terracotta tile patch",
+        "type": "box",
+        "dimensions": [
+          16,
+          10,
+          0.25
+        ],
+        "position": [
+          18,
+          65,
+          36.625
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "tileRed"
+      }
+    }
+  ]
+}

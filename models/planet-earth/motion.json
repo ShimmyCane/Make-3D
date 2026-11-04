@@ -1,0 +1,38 @@
+{
+  "schema": "make3d.motion/0.1",
+  "model_id": "planet-earth",
+  "name": "Spin and moons",
+  "description": "Earth spins and its moons go round it. One 240 s loop; each motion is a whole number of turns, so it never jumps.",
+  "units": "in",
+  "up": "z",
+  "loop_s": 240,
+  "autoplay": {
+    "plays": 2
+  },
+  "motions": [
+    {
+      "id": "earth-spin",
+      "target": "planet-earth-body-earth",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 8
+    },
+    {
+      "id": "moon-orbit",
+      "target": "planet-earth-arm-moon",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 4
+    }
+  ]
+}

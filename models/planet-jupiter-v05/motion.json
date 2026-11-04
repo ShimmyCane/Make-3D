@@ -1,0 +1,134 @@
+{
+  "schema": "make3d.motion/0.1",
+  "model_id": "planet-jupiter-v05",
+  "name": "Spin and moons",
+  "description": "Jupiter spins and its moons go round it. One 240 s loop; each motion is a whole number of turns, so it never jumps.",
+  "units": "in",
+  "up": "z",
+  "loop_s": 240,
+  "autoplay": {
+    "plays": 2
+  },
+  "motions": [
+    {
+      "id": "jupiter-spin",
+      "target": "planet-jupiter-v05-body-jupiter",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 12
+    },
+    {
+      "id": "io-orbit",
+      "target": "planet-jupiter-v05-arm-io",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 9
+    },
+    {
+      "id": "europa-orbit",
+      "target": "planet-jupiter-v05-arm-europa",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 6
+    },
+    {
+      "id": "ganymede-orbit",
+      "target": "planet-jupiter-v05-arm-ganymede",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 4
+    },
+    {
+      "id": "callisto-orbit",
+      "target": "planet-jupiter-v05-arm-callisto",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 3
+    },
+    {
+      "id": "amalthea-orbit",
+      "target": "planet-jupiter-v05-arm-amalthea",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 15
+    },
+    {
+      "id": "himalia-orbit",
+      "target": "planet-jupiter-v05-arm-himalia",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 2
+    },
+    {
+      "id": "thebe-orbit",
+      "target": "planet-jupiter-v05-arm-thebe",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 11
+    },
+    {
+      "id": "leda-orbit",
+      "target": "planet-jupiter-v05-arm-leda",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 1
+    },
+    {
+      "id": "ananke-orbit",
+      "target": "planet-jupiter-v05-arm-ananke",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 1
+    }
+  ]
+}

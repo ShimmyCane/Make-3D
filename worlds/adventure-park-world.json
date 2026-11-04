@@ -1,0 +1,53 @@
+{
+  "schema": "make3d.world/0.1",
+  "world_id": "adventure-park-world",
+  "units": "in",
+  "coordinate_system": "right-handed",
+  "up": "z",
+  "gravity": [
+    0,
+    0,
+    -386.1
+  ],
+  "bounds": {
+    "min": [
+      -4320,
+      -2880,
+      0
+    ],
+    "max": [
+      4320,
+      2880,
+      1440
+    ]
+  },
+  "rules": [
+    {
+      "id": "rule-001",
+      "type": "valid_coordinates",
+      "severity": "reject"
+    },
+    {
+      "id": "rule-002",
+      "type": "valid_geometry",
+      "severity": "reject"
+    },
+    {
+      "id": "rule-003",
+      "type": "minimum_dimension",
+      "value": 0.25,
+      "severity": "warning"
+    },
+    {
+      "id": "rule-004",
+      "type": "within_bounds",
+      "severity": "warning"
+    },
+    {
+      "id": "rule-005",
+      "type": "object_overlap",
+      "mode": "allow",
+      "severity": "review"
+    }
+  ]
+}

@@ -1,0 +1,6054 @@
+{
+  "schema": "make3d.motion/0.1",
+  "model_id": "habitat-aquarium-v05",
+  "name": "Swim and sway",
+  "description": "Kelp and eelgrass sway; animals swim closed loops; jellies pulse. Every motion repeats a whole number of times per 60 s loop, so it never jumps.",
+  "units": "in",
+  "up": "z",
+  "loop_s": 60,
+  "autoplay": {
+    "plays": 2
+  },
+  "motions": [
+    {
+      "id": "kelp-1-sway-x",
+      "target": "habitat-aquarium-v05-kelp-1",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -292.735,
+        12.183,
+        18.036
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-1-sway-y",
+      "target": "habitat-aquarium-v05-kelp-1",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -292.735,
+        12.183,
+        18.036
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-2-sway-x",
+      "target": "habitat-aquarium-v05-kelp-2",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        130.011,
+        212.296,
+        30.375
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "kelp-2-sway-y",
+      "target": "habitat-aquarium-v05-kelp-2",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        130.011,
+        212.296,
+        30.375
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "kelp-3-sway-x",
+      "target": "habitat-aquarium-v05-kelp-3",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        78.753,
+        181.559,
+        22.156
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-3-sway-y",
+      "target": "habitat-aquarium-v05-kelp-3",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        78.753,
+        181.559,
+        22.156
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-4-sway-x",
+      "target": "habitat-aquarium-v05-kelp-4",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -89.887,
+        107.444,
+        18.811
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-4-sway-y",
+      "target": "habitat-aquarium-v05-kelp-4",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -89.887,
+        107.444,
+        18.811
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-5-sway-x",
+      "target": "habitat-aquarium-v05-kelp-5",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -217.572,
+        61.123,
+        16.002
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "kelp-5-sway-y",
+      "target": "habitat-aquarium-v05-kelp-5",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -217.572,
+        61.123,
+        16.002
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-6-sway-x",
+      "target": "habitat-aquarium-v05-kelp-6",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -429.209,
+        81.282,
+        43.735
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-6-sway-y",
+      "target": "habitat-aquarium-v05-kelp-6",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -429.209,
+        81.282,
+        43.735
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-7-sway-x",
+      "target": "habitat-aquarium-v05-kelp-7",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -51.802,
+        112.368,
+        17.196
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-7-sway-y",
+      "target": "habitat-aquarium-v05-kelp-7",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -51.802,
+        112.368,
+        17.196
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-8-sway-x",
+      "target": "habitat-aquarium-v05-kelp-8",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -322.992,
+        33.414,
+        24.171
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-8-sway-y",
+      "target": "habitat-aquarium-v05-kelp-8",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -322.992,
+        33.414,
+        24.171
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "kelp-9-sway-x",
+      "target": "habitat-aquarium-v05-kelp-9",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        33.809,
+        226.363,
+        47.976
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-9-sway-y",
+      "target": "habitat-aquarium-v05-kelp-9",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        33.809,
+        226.363,
+        47.976
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-10-sway-x",
+      "target": "habitat-aquarium-v05-kelp-10",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        44.907,
+        188.629,
+        29.5
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-10-sway-y",
+      "target": "habitat-aquarium-v05-kelp-10",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        44.907,
+        188.629,
+        29.5
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-11-sway-x",
+      "target": "habitat-aquarium-v05-kelp-11",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -241.104,
+        22.459,
+        16.918
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-11-sway-y",
+      "target": "habitat-aquarium-v05-kelp-11",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -241.104,
+        22.459,
+        16.918
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-12-sway-x",
+      "target": "habitat-aquarium-v05-kelp-12",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -443.003,
+        74.412,
+        43.733
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-12-sway-y",
+      "target": "habitat-aquarium-v05-kelp-12",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -443.003,
+        74.412,
+        43.733
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-13-sway-x",
+      "target": "habitat-aquarium-v05-kelp-13",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        3.072,
+        210.302,
+        43.819
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "kelp-13-sway-y",
+      "target": "habitat-aquarium-v05-kelp-13",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        3.072,
+        210.302,
+        43.819
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "kelp-14-sway-x",
+      "target": "habitat-aquarium-v05-kelp-14",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -7.938,
+        147.503,
+        20.887
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-14-sway-y",
+      "target": "habitat-aquarium-v05-kelp-14",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -7.938,
+        147.503,
+        20.887
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-15-sway-x",
+      "target": "habitat-aquarium-v05-kelp-15",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -312.705,
+        14.673,
+        19.806
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-15-sway-y",
+      "target": "habitat-aquarium-v05-kelp-15",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -312.705,
+        14.673,
+        19.806
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "kelp-16-sway-x",
+      "target": "habitat-aquarium-v05-kelp-16",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -28.099,
+        141.664,
+        21.505
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "kelp-16-sway-y",
+      "target": "habitat-aquarium-v05-kelp-16",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -28.099,
+        141.664,
+        21.505
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "kelp-17-sway-x",
+      "target": "habitat-aquarium-v05-kelp-17",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -359.92,
+        7.913,
+        23.664
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "kelp-17-sway-y",
+      "target": "habitat-aquarium-v05-kelp-17",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -359.92,
+        7.913,
+        23.664
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-18-sway-x",
+      "target": "habitat-aquarium-v05-kelp-18",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -2.324,
+        161.334,
+        24.857
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "kelp-18-sway-y",
+      "target": "habitat-aquarium-v05-kelp-18",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -2.324,
+        161.334,
+        24.857
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-19-sway-x",
+      "target": "habitat-aquarium-v05-kelp-19",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        14.733,
+        210.704,
+        43.069
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-19-sway-y",
+      "target": "habitat-aquarium-v05-kelp-19",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        14.733,
+        210.704,
+        43.069
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-20-sway-x",
+      "target": "habitat-aquarium-v05-kelp-20",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -17.205,
+        205.717,
+        42.885
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-20-sway-y",
+      "target": "habitat-aquarium-v05-kelp-20",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -17.205,
+        205.717,
+        42.885
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-21-sway-x",
+      "target": "habitat-aquarium-v05-kelp-21",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -225.091,
+        50.133,
+        16.582
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "kelp-21-sway-y",
+      "target": "habitat-aquarium-v05-kelp-21",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -225.091,
+        50.133,
+        16.582
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "kelp-22-sway-x",
+      "target": "habitat-aquarium-v05-kelp-22",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -362.072,
+        33.918,
+        32.315
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-22-sway-y",
+      "target": "habitat-aquarium-v05-kelp-22",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -362.072,
+        33.918,
+        32.315
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-23-sway-x",
+      "target": "habitat-aquarium-v05-kelp-23",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -64.099,
+        121.771,
+        20.138
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-23-sway-y",
+      "target": "habitat-aquarium-v05-kelp-23",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -64.099,
+        121.771,
+        20.138
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "kelp-24-sway-x",
+      "target": "habitat-aquarium-v05-kelp-24",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -449.02,
+        38.01,
+        38.128
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-24-sway-y",
+      "target": "habitat-aquarium-v05-kelp-24",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -449.02,
+        38.01,
+        38.128
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "grass-1-sway",
+      "target": "habitat-aquarium-v05-grass-1",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -18.176,
+        -185.511,
+        18.031
+      ],
+      "from": -5,
+      "to": 5,
+      "cycles": 4,
+      "phase": 0.5
+    },
+    {
+      "id": "grass-2-sway",
+      "target": "habitat-aquarium-v05-grass-2",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -47.647,
+        -187.614,
+        20.228
+      ],
+      "from": -5,
+      "to": 5,
+      "cycles": 3,
+      "phase": 0.5
+    },
+    {
+      "id": "grass-3-sway",
+      "target": "habitat-aquarium-v05-grass-3",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -103.125,
+        -170.926,
+        14.956
+      ],
+      "from": -5,
+      "to": 5,
+      "cycles": 3,
+      "phase": 0.5
+    },
+    {
+      "id": "grass-4-sway",
+      "target": "habitat-aquarium-v05-grass-4",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -182.991,
+        -208.918,
+        23.237
+      ],
+      "from": -5,
+      "to": 5,
+      "cycles": 4,
+      "phase": 0.5
+    },
+    {
+      "id": "grass-5-sway",
+      "target": "habitat-aquarium-v05-grass-5",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -129.185,
+        -201.932,
+        23.502
+      ],
+      "from": -5,
+      "to": 5,
+      "cycles": 5,
+      "phase": 0
+    },
+    {
+      "id": "grass-6-sway",
+      "target": "habitat-aquarium-v05-grass-6",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -116.531,
+        -229.349,
+        40.907
+      ],
+      "from": -5,
+      "to": 5,
+      "cycles": 3,
+      "phase": 0.5
+    },
+    {
+      "id": "sandtiger-1-swim",
+      "target": "habitat-aquarium-v05-sandtiger-1",
+      "kind": "path",
+      "points": [
+        [
+          316.44,
+          35.28,
+          284.928
+        ],
+        [
+          254.748,
+          58.116,
+          258.312
+        ],
+        [
+          186.54,
+          70.164,
+          224.016
+        ],
+        [
+          106.872,
+          74.532,
+          216.324
+        ],
+        [
+          38.1,
+          54.012,
+          242.94
+        ],
+        [
+          23.004,
+          19.596,
+          277.248
+        ],
+        [
+          32.868,
+          -11.856,
+          284.928
+        ],
+        [
+          63.912,
+          -43.74,
+          258.312
+        ],
+        [
+          139.584,
+          -59.112,
+          224.016
+        ],
+        [
+          216.372,
+          -47.532,
+          216.324
+        ],
+        [
+          274.716,
+          -28.128,
+          242.94
+        ],
+        [
+          323.34,
+          -0.612,
+          277.248
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 139.506,
+      "pivot": [
+        316.44,
+        35.28,
+        284.928
+      ],
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "sandtiger-1-tail",
+      "target": "habitat-aquarium-v05-sandtiger-1-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        350.94,
+        5.82,
+        284.928
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 56,
+      "phase": 0.5
+    },
+    {
+      "id": "sandtiger-2-swim",
+      "target": "habitat-aquarium-v05-sandtiger-2",
+      "kind": "path",
+      "points": [
+        [
+          64.944,
+          -43.584,
+          178.548
+        ],
+        [
+          -13.848,
+          -22.212,
+          188.016
+        ],
+        [
+          -34.992,
+          19.932,
+          206.016
+        ],
+        [
+          -20.856,
+          58.488,
+          214.524
+        ],
+        [
+          10.512,
+          96.84,
+          205.056
+        ],
+        [
+          87.864,
+          119.424,
+          187.056
+        ],
+        [
+          173.28,
+          107.292,
+          178.548
+        ],
+        [
+          234.696,
+          82.032,
+          188.016
+        ],
+        [
+          287.136,
+          49.608,
+          206.016
+        ],
+        [
+          288.564,
+          5.652,
+          214.524
+        ],
+        [
+          224.304,
+          -24.348,
+          205.056
+        ],
+        [
+          148.74,
+          -37.644,
+          187.056
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 174.631,
+      "pivot": [
+        64.944,
+        -43.584,
+        178.548
+      ],
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "sandtiger-2-tail",
+      "target": "habitat-aquarium-v05-sandtiger-2-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        110.1,
+        -47.832,
+        178.548
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 42,
+      "phase": 0
+    },
+    {
+      "id": "sandtiger-3-swim",
+      "target": "habitat-aquarium-v05-sandtiger-3",
+      "kind": "path",
+      "points": [
+        [
+          -194.796,
+          -62.568,
+          209.712
+        ],
+        [
+          -26.688,
+          -68.34,
+          220.464
+        ],
+        [
+          124.776,
+          -60.984,
+          255.588
+        ],
+        [
+          276.024,
+          -41.076,
+          279.972
+        ],
+        [
+          339.492,
+          2.784,
+          269.22
+        ],
+        [
+          274.032,
+          44.868,
+          234.084
+        ],
+        [
+          174.612,
+          76.512,
+          209.712
+        ],
+        [
+          34.992,
+          101.832,
+          220.464
+        ],
+        [
+          -137.784,
+          94.704,
+          255.588
+        ],
+        [
+          -240.432,
+          58.392,
+          279.972
+        ],
+        [
+          -292.488,
+          19.392,
+          269.22
+        ],
+        [
+          -304.116,
+          -25.836,
+          234.084
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -8.686,
+      "pivot": [
+        -194.796,
+        -62.568,
+        209.712
+      ],
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "sandtiger-3-tail",
+      "target": "habitat-aquarium-v05-sandtiger-3-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        -239.64,
+        -55.716,
+        209.712
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 26,
+      "phase": 0.5
+    },
+    {
+      "id": "sandtiger-4-swim",
+      "target": "habitat-aquarium-v05-sandtiger-4",
+      "kind": "path",
+      "points": [
+        [
+          100.512,
+          -56.136,
+          174.132
+        ],
+        [
+          244.992,
+          -45.804,
+          191.604
+        ],
+        [
+          377.508,
+          -24.756,
+          204.096
+        ],
+        [
+          397.224,
+          9.636,
+          199.116
+        ],
+        [
+          301.236,
+          36.768,
+          181.644
+        ],
+        [
+          183.996,
+          56.46,
+          169.152
+        ],
+        [
+          26.028,
+          68.748,
+          174.132
+        ],
+        [
+          -133.704,
+          54.948,
+          191.604
+        ],
+        [
+          -203.928,
+          24.864,
+          204.096
+        ],
+        [
+          -231.156,
+          -5.172,
+          199.116
+        ],
+        [
+          -205.716,
+          -38.496,
+          181.644
+        ],
+        [
+          -65.688,
+          -59.088,
+          169.152
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 2.464,
+      "pivot": [
+        100.512,
+        -56.136,
+        174.132
+      ],
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "sandtiger-4-tail",
+      "target": "habitat-aquarium-v05-sandtiger-4-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        55.188,
+        -58.092,
+        174.132
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 34,
+      "phase": 0.5
+    },
+    {
+      "id": "sandtiger-5-swim",
+      "target": "habitat-aquarium-v05-sandtiger-5",
+      "kind": "path",
+      "points": [
+        [
+          125.676,
+          -37.38,
+          179.496
+        ],
+        [
+          48.648,
+          -57.768,
+          179.52
+        ],
+        [
+          -47.016,
+          -53.16,
+          210.708
+        ],
+        [
+          -103.836,
+          -21.276,
+          241.872
+        ],
+        [
+          -125.232,
+          13.548,
+          241.86
+        ],
+        [
+          -128.652,
+          51.828,
+          210.672
+        ],
+        [
+          -71.352,
+          84.408,
+          179.496
+        ],
+        [
+          22.656,
+          89.184,
+          179.52
+        ],
+        [
+          104.988,
+          79.572,
+          210.708
+        ],
+        [
+          185.436,
+          61.68,
+          241.872
+        ],
+        [
+          223.8,
+          24.492,
+          241.86
+        ],
+        [
+          186.612,
+          -12.168,
+          210.672
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -161.676,
+      "pivot": [
+        125.676,
+        -37.38,
+        179.496
+      ],
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "sandtiger-5-tail",
+      "target": "habitat-aquarium-v05-sandtiger-5-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        168.732,
+        -23.124,
+        179.496
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 28,
+      "phase": 0.5
+    },
+    {
+      "id": "zebra-1-swim",
+      "target": "habitat-aquarium-v05-zebra-1",
+      "kind": "path",
+      "points": [
+        [
+          -101.592,
+          -255.9,
+          46.752
+        ],
+        [
+          -63.336,
+          -268.56,
+          58.26
+        ],
+        [
+          -24.096,
+          -274.92,
+          71.508
+        ],
+        [
+          20.94,
+          -273.336,
+          73.248
+        ],
+        [
+          51.456,
+          -253.5,
+          61.74
+        ],
+        [
+          51.54,
+          -228.264,
+          48.492
+        ],
+        [
+          41.58,
+          -205.692,
+          46.752
+        ],
+        [
+          16.644,
+          -184.224,
+          58.26
+        ],
+        [
+          -28.716,
+          -179.064,
+          71.508
+        ],
+        [
+          -67.044,
+          -191.64,
+          73.248
+        ],
+        [
+          -96.324,
+          -207.852,
+          61.74
+        ],
+        [
+          -116.436,
+          -230.904,
+          48.492
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -35.257,
+      "pivot": [
+        -101.592,
+        -255.9,
+        46.752
+      ],
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "zebra-1-tail",
+      "target": "habitat-aquarium-v05-zebra-1-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        -128.34,
+        -236.988,
+        46.752
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 42,
+      "phase": 0.5
+    },
+    {
+      "id": "zebra-2-swim",
+      "target": "habitat-aquarium-v05-zebra-2",
+      "kind": "path",
+      "points": [
+        [
+          8.712,
+          -276.852,
+          71.268
+        ],
+        [
+          43.02,
+          -269.004,
+          73.392
+        ],
+        [
+          59.58,
+          -243.48,
+          62.124
+        ],
+        [
+          52.86,
+          -216.924,
+          48.732
+        ],
+        [
+          39.996,
+          -193.572,
+          46.608
+        ],
+        [
+          14.256,
+          -174.012,
+          57.876
+        ],
+        [
+          -21.996,
+          -175.44,
+          71.268
+        ],
+        [
+          -47.736,
+          -193.32,
+          73.392
+        ],
+        [
+          -66.888,
+          -213.792,
+          62.124
+        ],
+        [
+          -75.444,
+          -241.2,
+          48.732
+        ],
+        [
+          -55.764,
+          -265.308,
+          46.608
+        ],
+        [
+          -23.304,
+          -273.984,
+          57.876
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 4.207,
+      "pivot": [
+        8.712,
+        -276.852,
+        71.268
+      ],
+      "cycles": 5,
+      "phase": 0
+    },
+    {
+      "id": "zebra-2-tail",
+      "target": "habitat-aquarium-v05-zebra-2-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        -23.964,
+        -279.252,
+        71.268
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 40,
+      "phase": 0.5
+    },
+    {
+      "id": "zebra-3-swim",
+      "target": "habitat-aquarium-v05-zebra-3",
+      "kind": "path",
+      "points": [
+        [
+          58.488,
+          -227.952,
+          46.548
+        ],
+        [
+          43.284,
+          -245.388,
+          48.816
+        ],
+        [
+          13.704,
+          -255.72,
+          62.256
+        ],
+        [
+          -17.82,
+          -248.34,
+          73.452
+        ],
+        [
+          -37.752,
+          -233.316,
+          71.184
+        ],
+        [
+          -53.46,
+          -216.06,
+          57.744
+        ],
+        [
+          -52.5,
+          -194.304,
+          46.548
+        ],
+        [
+          -26.868,
+          -180.312,
+          48.816
+        ],
+        [
+          3.192,
+          -176.652,
+          62.256
+        ],
+        [
+          34.116,
+          -176.46,
+          73.452
+        ],
+        [
+          62.724,
+          -187.884,
+          71.184
+        ],
+        [
+          68.628,
+          -209.256,
+          57.744
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -125.035,
+      "pivot": [
+        58.488,
+        -227.952,
+        46.548
+      ],
+      "cycles": 5,
+      "phase": 0
+    },
+    {
+      "id": "zebra-3-tail",
+      "target": "habitat-aquarium-v05-zebra-3-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        77.292,
+        -201.132,
+        46.548
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 36,
+      "phase": 0
+    },
+    {
+      "id": "leopard-1-swim",
+      "target": "habitat-aquarium-v05-leopard-1",
+      "kind": "path",
+      "points": [
+        [
+          58.836,
+          -250.032,
+          70.32
+        ],
+        [
+          43.464,
+          -235.02,
+          56.46
+        ],
+        [
+          19.176,
+          -223.896,
+          46.14
+        ],
+        [
+          -14.304,
+          -214.836,
+          49.68
+        ],
+        [
+          -56.436,
+          -216.888,
+          63.54
+        ],
+        [
+          -81.96,
+          -229.596,
+          73.86
+        ],
+        [
+          -94.464,
+          -243.396,
+          70.32
+        ],
+        [
+          -97.788,
+          -259.26,
+          56.46
+        ],
+        [
+          -72.168,
+          -272.508,
+          46.14
+        ],
+        [
+          -31.272,
+          -274.8,
+          49.68
+        ],
+        [
+          5.52,
+          -272.136,
+          63.54
+        ],
+        [
+          42.324,
+          -265.332,
+          73.86
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 88.098,
+      "pivot": [
+        58.836,
+        -250.032,
+        70.32
+      ],
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "leopard-1-tail",
+      "target": "habitat-aquarium-v05-leopard-1-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        58.08,
+        -272.7,
+        70.32
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 34,
+      "phase": 0
+    },
+    {
+      "id": "leopard-2-swim",
+      "target": "habitat-aquarium-v05-leopard-2",
+      "kind": "path",
+      "points": [
+        [
+          69.912,
+          -223.752,
+          45.6
+        ],
+        [
+          57.588,
+          -199.308,
+          52.632
+        ],
+        [
+          26.184,
+          -183.984,
+          67.032
+        ],
+        [
+          -9.852,
+          -190.788,
+          74.4
+        ],
+        [
+          -35.796,
+          -206.676,
+          67.368
+        ],
+        [
+          -58.104,
+          -226.836,
+          52.968
+        ],
+        [
+          -60.252,
+          -254.724,
+          45.6
+        ],
+        [
+          -34.308,
+          -274.512,
+          52.632
+        ],
+        [
+          -2.82,
+          -283.272,
+          67.032
+        ],
+        [
+          31.812,
+          -287.556,
+          74.4
+        ],
+        [
+          65.376,
+          -275.004,
+          67.368
+        ],
+        [
+          75.456,
+          -248.4,
+          52.968
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 109.952,
+      "pivot": [
+        69.912,
+        -223.752,
+        45.6
+      ],
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "leopard-2-tail",
+      "target": "habitat-aquarium-v05-leopard-2-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        77.652,
+        -245.076,
+        45.6
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 38,
+      "phase": 0
+    },
+    {
+      "id": "bonnet-1-swim",
+      "target": "habitat-aquarium-v05-bonnet-1",
+      "kind": "path",
+      "points": [
+        [
+          -326.676,
+          -100.2,
+          201.36
+        ],
+        [
+          -346.368,
+          -44.052,
+          185.16
+        ],
+        [
+          -269.616,
+          7.848,
+          170.268
+        ],
+        [
+          -123.6,
+          21.036,
+          171.552
+        ],
+        [
+          9.48,
+          11.712,
+          187.752
+        ],
+        [
+          142.356,
+          -9.624,
+          202.656
+        ],
+        [
+          217.716,
+          -61.848,
+          201.36
+        ],
+        [
+          173.604,
+          -118.416,
+          185.16
+        ],
+        [
+          86.616,
+          -159.3,
+          170.268
+        ],
+        [
+          -26.568,
+          -194.112,
+          171.552
+        ],
+        [
+          -178.668,
+          -193.8,
+          187.752
+        ],
+        [
+          -280.584,
+          -150.42,
+          202.656
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 121.837,
+      "pivot": [
+        -326.676,
+        -100.2,
+        201.36
+      ],
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "bonnet-1-tail",
+      "target": "habitat-aquarium-v05-bonnet-1-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        -317.376,
+        -115.188,
+        201.36
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 22,
+      "phase": 0.5
+    },
+    {
+      "id": "bonnet-2-swim",
+      "target": "habitat-aquarium-v05-bonnet-2",
+      "kind": "path",
+      "points": [
+        [
+          85.752,
+          -235.776,
+          73.992
+        ],
+        [
+          54.732,
+          -222.384,
+          69.948
+        ],
+        [
+          20.712,
+          -218.964,
+          55.956
+        ],
+        [
+          -15.084,
+          -219.468,
+          46.008
+        ],
+        [
+          -45.864,
+          -233.4,
+          50.052
+        ],
+        [
+          -49.512,
+          -256.356,
+          64.044
+        ],
+        [
+          -37.404,
+          -275.904,
+          73.992
+        ],
+        [
+          -18.78,
+          -294.42,
+          69.948
+        ],
+        [
+          16.536,
+          -303.588,
+          55.956
+        ],
+        [
+          51.204,
+          -294.024,
+          46.008
+        ],
+        [
+          73.116,
+          -277.896,
+          50.052
+        ],
+        [
+          90.288,
+          -258.876,
+          64.044
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 134.284,
+      "pivot": [
+        85.752,
+        -235.776,
+        73.992
+      ],
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "bonnet-2-tail",
+      "target": "habitat-aquarium-v05-bonnet-2-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        98.064,
+        -248.4,
+        73.992
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 44,
+      "phase": 0.5
+    },
+    {
+      "id": "bonnet-3-swim",
+      "target": "habitat-aquarium-v05-bonnet-3",
+      "kind": "path",
+      "points": [
+        [
+          -285.06,
+          35.364,
+          192.168
+        ],
+        [
+          -249.6,
+          -4.296,
+          207.972
+        ],
+        [
+          -180.024,
+          -40.08,
+          208.404
+        ],
+        [
+          -28.344,
+          -69.504,
+          193.032
+        ],
+        [
+          183.528,
+          -66.744,
+          177.228
+        ],
+        [
+          335.172,
+          -40.68,
+          176.796
+        ],
+        [
+          453.204,
+          -10.572,
+          192.168
+        ],
+        [
+          503.004,
+          30.78,
+          207.972
+        ],
+        [
+          385.26,
+          66.6,
+          208.404
+        ],
+        [
+          198.156,
+          80.208,
+          193.032
+        ],
+        [
+          10.548,
+          85.884,
+          177.228
+        ],
+        [
+          -190.944,
+          73.956,
+          176.796
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -126.278,
+      "pivot": [
+        -285.06,
+        35.364,
+        192.168
+      ],
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "bonnet-3-tail",
+      "target": "habitat-aquarium-v05-bonnet-3-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        -274.62,
+        49.584,
+        192.168
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 52,
+      "phase": 0.5
+    },
+    {
+      "id": "bonnet-4-swim",
+      "target": "habitat-aquarium-v05-bonnet-4",
+      "kind": "path",
+      "points": [
+        [
+          193.5,
+          -75.552,
+          238.428
+        ],
+        [
+          102.492,
+          -84.696,
+          268.068
+        ],
+        [
+          25.14,
+          -63.048,
+          265.188
+        ],
+        [
+          -37.704,
+          -34.968,
+          232.668
+        ],
+        [
+          -79.62,
+          7.908,
+          203.028
+        ],
+        [
+          -49.08,
+          54.24,
+          205.908
+        ],
+        [
+          24.984,
+          78.912,
+          238.428
+        ],
+        [
+          102.3,
+          93.72,
+          268.068
+        ],
+        [
+          193.308,
+          91.524,
+          265.188
+        ],
+        [
+          253.764,
+          54.336,
+          232.668
+        ],
+        [
+          257.052,
+          8.004,
+          203.028
+        ],
+        [
+          242.592,
+          -34.872,
+          205.908
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -160.389,
+      "pivot": [
+        193.5,
+        -75.552,
+        238.428
+      ],
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "bonnet-4-tail",
+      "target": "habitat-aquarium-v05-bonnet-4-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        210.12,
+        -69.636,
+        238.428
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 46,
+      "phase": 0
+    },
+    {
+      "id": "blacktip-1-swim",
+      "target": "habitat-aquarium-v05-blacktip-1",
+      "kind": "path",
+      "points": [
+        [
+          -45.648,
+          -90.804,
+          205.2
+        ],
+        [
+          -118.248,
+          -50.868,
+          201.528
+        ],
+        [
+          -165.816,
+          -4.764,
+          184.44
+        ],
+        [
+          -109.788,
+          43.704,
+          171.012
+        ],
+        [
+          40.632,
+          63.684,
+          174.684
+        ],
+        [
+          188.316,
+          63.24,
+          191.772
+        ],
+        [
+          340.668,
+          52.98,
+          205.2
+        ],
+        [
+          447.84,
+          13.68,
+          201.528
+        ],
+        [
+          428.352,
+          -36.756,
+          184.44
+        ],
+        [
+          353.268,
+          -76.26,
+          171.012
+        ],
+        [
+          248.484,
+          -112.104,
+          174.684
+        ],
+        [
+          85.284,
+          -121.26,
+          191.772
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 160.852,
+      "pivot": [
+        -45.648,
+        -90.804,
+        205.2
+      ],
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "blacktip-1-tail",
+      "target": "habitat-aquarium-v05-blacktip-1-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        -21.84,
+        -99.072,
+        205.2
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 22,
+      "phase": 0
+    },
+    {
+      "id": "blacktip-2-swim",
+      "target": "habitat-aquarium-v05-blacktip-2",
+      "kind": "path",
+      "points": [
+        [
+          148.392,
+          -93.336,
+          260.484
+        ],
+        [
+          110.904,
+          -147.672,
+          238.02
+        ],
+        [
+          50.448,
+          -179.664,
+          202.428
+        ],
+        [
+          -18.564,
+          -203.544,
+          189.3
+        ],
+        [
+          -99.42,
+          -193.476,
+          211.764
+        ],
+        [
+          -143.316,
+          -141.912,
+          247.356
+        ],
+        [
+          -149.964,
+          -86.58,
+          260.484
+        ],
+        [
+          -142.992,
+          -29.748,
+          238.02
+        ],
+        [
+          -90.948,
+          17.832,
+          202.428
+        ],
+        [
+          -9.576,
+          20.604,
+          189.3
+        ],
+        [
+          57.54,
+          -2.736,
+          211.764
+        ],
+        [
+          119.568,
+          -35.688,
+          247.356
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -94.449,
+      "pivot": [
+        148.392,
+        -93.336,
+        260.484
+      ],
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "blacktip-2-tail",
+      "target": "habitat-aquarium-v05-blacktip-2-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        150.348,
+        -68.208,
+        260.484
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 48,
+      "phase": 0.5
+    },
+    {
+      "id": "blacktip-3-swim",
+      "target": "habitat-aquarium-v05-blacktip-3",
+      "kind": "path",
+      "points": [
+        [
+          385.296,
+          -21.936,
+          178.512
+        ],
+        [
+          379.848,
+          -89.34,
+          166.176
+        ],
+        [
+          349.092,
+          -153.996,
+          171.36
+        ],
+        [
+          245.844,
+          -209.016,
+          188.88
+        ],
+        [
+          87.372,
+          -210.312,
+          201.216
+        ],
+        [
+          -36.576,
+          -174.432,
+          196.032
+        ],
+        [
+          -142.704,
+          -129.828,
+          178.512
+        ],
+        [
+          -194.484,
+          -61.116,
+          166.176
+        ],
+        [
+          -117.672,
+          2.784,
+          171.36
+        ],
+        [
+          11.712,
+          34.308,
+          188.88
+        ],
+        [
+          148.608,
+          54.36,
+          201.216
+        ],
+        [
+          303.624,
+          40.668,
+          196.032
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -59.819,
+      "pivot": [
+        385.296,
+        -21.936,
+        178.512
+      ],
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "blacktip-3-tail",
+      "target": "habitat-aquarium-v05-blacktip-3-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        372.624,
+        -0.156,
+        178.512
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 46,
+      "phase": 0.5
+    },
+    {
+      "id": "seabass-1-swim",
+      "target": "habitat-aquarium-v05-seabass-1",
+      "kind": "path",
+      "points": [
+        [
+          369.444,
+          -197.712,
+          203.04
+        ],
+        [
+          291.156,
+          -226.908,
+          225.72
+        ],
+        [
+          153.576,
+          -233.328,
+          254.064
+        ],
+        [
+          39.564,
+          -214.872,
+          259.74
+        ],
+        [
+          -45.324,
+          -191.448,
+          237.06
+        ],
+        [
+          -102.516,
+          -159.048,
+          208.716
+        ],
+        [
+          -54.876,
+          -124.56,
+          203.04
+        ],
+        [
+          62.988,
+          -107.868,
+          225.72
+        ],
+        [
+          182.7,
+          -100.272,
+          254.064
+        ],
+        [
+          318.18,
+          -103.476,
+          259.74
+        ],
+        [
+          408.12,
+          -131.544,
+          237.06
+        ],
+        [
+          404.268,
+          -166.692,
+          208.716
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -151.868,
+      "pivot": [
+        369.444,
+        -197.712,
+        203.04
+      ],
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "seabass-1-tail",
+      "target": "habitat-aquarium-v05-seabass-1-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        385.32,
+        -189.228,
+        203.04
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 26,
+      "phase": 0.5
+    },
+    {
+      "id": "seabass-2-swim",
+      "target": "habitat-aquarium-v05-seabass-2",
+      "kind": "path",
+      "points": [
+        [
+          13.176,
+          22.116,
+          199.152
+        ],
+        [
+          37.2,
+          -32.064,
+          213.444
+        ],
+        [
+          73.776,
+          -82.404,
+          211.092
+        ],
+        [
+          146.412,
+          -114.264,
+          194.472
+        ],
+        [
+          227.004,
+          -95.556,
+          180.18
+        ],
+        [
+          278.676,
+          -53.136,
+          182.532
+        ],
+        [
+          319.572,
+          -4.632,
+          199.152
+        ],
+        [
+          320.712,
+          57.636,
+          213.444
+        ],
+        [
+          258.42,
+          99.708,
+          211.092
+        ],
+        [
+          182.724,
+          111.468,
+          194.472
+        ],
+        [
+          105.252,
+          113.304,
+          180.18
+        ],
+        [
+          31.476,
+          82.896,
+          182.532
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -86.991,
+      "pivot": [
+        13.176,
+        22.116,
+        199.152
+      ],
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "seabass-2-tail",
+      "target": "habitat-aquarium-v05-seabass-2-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        12.228,
+        40.092,
+        199.152
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 24,
+      "phase": 0
+    },
+    {
+      "id": "seabass-3-swim",
+      "target": "habitat-aquarium-v05-seabass-3",
+      "kind": "path",
+      "points": [
+        [
+          294.648,
+          -148.332,
+          264.48
+        ],
+        [
+          372.324,
+          -103.404,
+          282.12
+        ],
+        [
+          313.008,
+          -55.908,
+          263.772
+        ],
+        [
+          190.884,
+          -27.396,
+          227.772
+        ],
+        [
+          55.008,
+          -5.904,
+          210.132
+        ],
+        [
+          -112.644,
+          -8.052,
+          228.48
+        ],
+        [
+          -219.144,
+          -47.316,
+          264.48
+        ],
+        [
+          -239.832,
+          -93.516,
+          282.12
+        ],
+        [
+          -233.496,
+          -139.812,
+          263.772
+        ],
+        [
+          -143.508,
+          -182.592,
+          227.772
+        ],
+        [
+          22.308,
+          -190.824,
+          210.132
+        ],
+        [
+          165.12,
+          -173.136,
+          228.48
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 18.53,
+      "pivot": [
+        294.648,
+        -148.332,
+        264.48
+      ],
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "seabass-3-tail",
+      "target": "habitat-aquarium-v05-seabass-3-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        277.584,
+        -154.056,
+        264.48
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 46,
+      "phase": 0.5
+    },
+    {
+      "id": "seabass-4-swim",
+      "target": "habitat-aquarium-v05-seabass-4",
+      "kind": "path",
+      "points": [
+        [
+          -166.776,
+          -151.656,
+          219.756
+        ],
+        [
+          -312.864,
+          -131.184,
+          201.528
+        ],
+        [
+          -321.396,
+          -99.612,
+          213.036
+        ],
+        [
+          -208.44,
+          -75.66,
+          242.796
+        ],
+        [
+          -74.448,
+          -57.6,
+          261.024
+        ],
+        [
+          109.704,
+          -47.652,
+          249.504
+        ],
+        [
+          285.408,
+          -62.256,
+          219.756
+        ],
+        [
+          358.932,
+          -89.832,
+          201.528
+        ],
+        [
+          390.012,
+          -117.384,
+          213.036
+        ],
+        [
+          351.948,
+          -147.792,
+          242.796
+        ],
+        [
+          184.776,
+          -164.76,
+          261.024
+        ],
+        [
+          -1.704,
+          -161.136,
+          249.504
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 174.525,
+      "pivot": [
+        -166.776,
+        -151.656,
+        219.756
+      ],
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "seabass-4-tail",
+      "target": "habitat-aquarium-v05-seabass-4-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        -148.86,
+        -153.372,
+        219.756
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 52,
+      "phase": 0
+    },
+    {
+      "id": "yellowtail-1-swim",
+      "target": "habitat-aquarium-v05-yellowtail-1",
+      "kind": "path",
+      "points": [
+        [
+          -218.628,
+          -47.496,
+          261.612
+        ],
+        [
+          -194.64,
+          13.284,
+          230.928
+        ],
+        [
+          -56.484,
+          55.536,
+          199.272
+        ],
+        [
+          122.124,
+          50.976,
+          198.3
+        ],
+        [
+          270.264,
+          28.128,
+          228.972
+        ],
+        [
+          408.588,
+          -9.54,
+          260.628
+        ],
+        [
+          444.048,
+          -72.552,
+          261.612
+        ],
+        [
+          343.464,
+          -124.44,
+          230.928
+        ],
+        [
+          212.856,
+          -157.92,
+          199.272
+        ],
+        [
+          50.544,
+          -181.032,
+          198.3
+        ],
+        [
+          -123.072,
+          -160.272,
+          228.972
+        ],
+        [
+          -201.096,
+          -103.836,
+          260.628
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 87.071,
+      "pivot": [
+        -218.628,
+        -47.496,
+        261.612
+      ],
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "yellowtail-1-tail",
+      "target": "habitat-aquarium-v05-yellowtail-1-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        -219.12,
+        -57.084,
+        261.612
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 40,
+      "phase": 0.5
+    },
+    {
+      "id": "yellowtail-2-swim",
+      "target": "habitat-aquarium-v05-yellowtail-2",
+      "kind": "path",
+      "points": [
+        [
+          362.1,
+          50.016,
+          241.8
+        ],
+        [
+          245.28,
+          106.524,
+          247.308
+        ],
+        [
+          108.432,
+          112.692,
+          219.252
+        ],
+        [
+          -24.696,
+          103.752,
+          185.688
+        ],
+        [
+          -146.928,
+          52.728,
+          180.18
+        ],
+        [
+          -167.52,
+          -38.196,
+          208.236
+        ],
+        [
+          -107.736,
+          -114.684,
+          241.8
+        ],
+        [
+          -28.656,
+          -181.632,
+          247.308
+        ],
+        [
+          103.788,
+          -221.7,
+          219.252
+        ],
+        [
+          241.2,
+          -187.284,
+          185.688
+        ],
+        [
+          318.252,
+          -116.964,
+          180.18
+        ],
+        [
+          372.312,
+          -41.076,
+          208.236
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 130.693,
+      "pivot": [
+        362.1,
+        50.016,
+        241.8
+      ],
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "yellowtail-2-tail",
+      "target": "habitat-aquarium-v05-yellowtail-2-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        368.364,
+        42.732,
+        241.8
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 60,
+      "phase": 0
+    },
+    {
+      "id": "yellowtail-3-swim",
+      "target": "habitat-aquarium-v05-yellowtail-3",
+      "kind": "path",
+      "points": [
+        [
+          -182.424,
+          -54.66,
+          190.104
+        ],
+        [
+          -328.608,
+          -22.716,
+          174.24
+        ],
+        [
+          -318.612,
+          21,
+          173.652
+        ],
+        [
+          -159.144,
+          50.496,
+          188.94
+        ],
+        [
+          20.472,
+          68.436,
+          204.816
+        ],
+        [
+          239.292,
+          76.5,
+          205.392
+        ],
+        [
+          433.776,
+          52.992,
+          190.104
+        ],
+        [
+          488.628,
+          12.036,
+          174.24
+        ],
+        [
+          480.684,
+          -26.46,
+          173.652
+        ],
+        [
+          408.048,
+          -66.456,
+          188.94
+        ],
+        [
+          203.568,
+          -86.676,
+          204.816
+        ],
+        [
+          -10.752,
+          -75.216,
+          205.392
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 170.65,
+      "pivot": [
+        -182.424,
+        -54.66,
+        190.104
+      ],
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "yellowtail-3-tail",
+      "target": "habitat-aquarium-v05-yellowtail-3-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        -172.956,
+        -56.22,
+        190.104
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 52,
+      "phase": 0
+    },
+    {
+      "id": "barracuda-1-swim",
+      "target": "habitat-aquarium-v05-barracuda-1",
+      "kind": "path",
+      "points": [
+        [
+          -134.88,
+          -83.412,
+          179.58
+        ],
+        [
+          72.564,
+          -83.412,
+          177.492
+        ],
+        [
+          245.7,
+          -68.88,
+          191.928
+        ],
+        [
+          409.644,
+          -45.684,
+          208.464
+        ],
+        [
+          469.824,
+          -4.356,
+          210.552
+        ],
+        [
+          366.072,
+          32.364,
+          196.116
+        ],
+        [
+          217.932,
+          55.74,
+          179.58
+        ],
+        [
+          37.668,
+          73.164,
+          177.492
+        ],
+        [
+          -167.544,
+          63.156,
+          191.928
+        ],
+        [
+          -271.224,
+          26.436,
+          208.464
+        ],
+        [
+          -296.22,
+          -11.484,
+          210.552
+        ],
+        [
+          -279.9,
+          -52.092,
+          196.116
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -5.067,
+      "pivot": [
+        -134.88,
+        -83.412,
+        179.58
+      ],
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "barracuda-1-tail",
+      "target": "habitat-aquarium-v05-barracuda-1-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        -145.344,
+        -82.488,
+        179.58
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 42,
+      "phase": 0
+    },
+    {
+      "id": "barracuda-2-swim",
+      "target": "habitat-aquarium-v05-barracuda-2",
+      "kind": "path",
+      "points": [
+        [
+          -40.776,
+          -138.78,
+          254.388
+        ],
+        [
+          30.144,
+          -174.36,
+          254.364
+        ],
+        [
+          114.6,
+          -160.896,
+          223.176
+        ],
+        [
+          161.256,
+          -98.4,
+          192.012
+        ],
+        [
+          177.348,
+          -32.172,
+          192.036
+        ],
+        [
+          176.424,
+          40.416,
+          223.224
+        ],
+        [
+          121.128,
+          98.928,
+          254.388
+        ],
+        [
+          37.128,
+          103.716,
+          254.364
+        ],
+        [
+          -35.208,
+          83.04,
+          223.176
+        ],
+        [
+          -105.204,
+          46.044,
+          192.012
+        ],
+        [
+          -134.364,
+          -25.944,
+          192.036
+        ],
+        [
+          -97.008,
+          -93.24,
+          223.224
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -32.596,
+      "pivot": [
+        -40.776,
+        -138.78,
+        254.388
+      ],
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "barracuda-2-tail",
+      "target": "habitat-aquarium-v05-barracuda-2-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        -49.62,
+        -133.128,
+        254.388
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 24,
+      "phase": 0
+    },
+    {
+      "id": "sheephead-1-swim",
+      "target": "habitat-aquarium-v05-sheephead-1",
+      "kind": "path",
+      "points": [
+        [
+          -118.86,
+          -188.964,
+          50.4
+        ],
+        [
+          -141.864,
+          -207.888,
+          45.9
+        ],
+        [
+          -137.472,
+          -232.836,
+          55.5
+        ],
+        [
+          -116.928,
+          -250.704,
+          69.6
+        ],
+        [
+          -92.604,
+          -265.536,
+          74.1
+        ],
+        [
+          -58.224,
+          -270.336,
+          64.5
+        ],
+        [
+          -30.24,
+          -255.144,
+          50.4
+        ],
+        [
+          -18.888,
+          -233.472,
+          45.9
+        ],
+        [
+          -13.104,
+          -210.972,
+          55.5
+        ],
+        [
+          -24.492,
+          -187.26,
+          69.6
+        ],
+        [
+          -56.868,
+          -177.504,
+          74.1
+        ],
+        [
+          -88.752,
+          -181.308,
+          64.5
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -153.514,
+      "pivot": [
+        -118.86,
+        -188.964,
+        50.4
+      ],
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "sheephead-1-tail",
+      "target": "habitat-aquarium-v05-sheephead-1-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        -113.484,
+        -186.288,
+        50.4
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 20,
+      "phase": 0
+    },
+    {
+      "id": "sheephead-2-swim",
+      "target": "habitat-aquarium-v05-sheephead-2",
+      "kind": "path",
+      "points": [
+        [
+          -51.948,
+          -291.48,
+          70.32
+        ],
+        [
+          -19.632,
+          -300.492,
+          56.46
+        ],
+        [
+          7.884,
+          -280.332,
+          46.14
+        ],
+        [
+          23.928,
+          -252.384,
+          49.68
+        ],
+        [
+          35.232,
+          -219.768,
+          63.54
+        ],
+        [
+          26.052,
+          -183.948,
+          73.86
+        ],
+        [
+          -3.3,
+          -167.364,
+          70.32
+        ],
+        [
+          -32.964,
+          -165.792,
+          56.46
+        ],
+        [
+          -63.864,
+          -171.144,
+          46.14
+        ],
+        [
+          -87,
+          -197.952,
+          49.68
+        ],
+        [
+          -85.152,
+          -234.684,
+          63.54
+        ],
+        [
+          -71.544,
+          -264.216,
+          73.86
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -35.057,
+      "pivot": [
+        -51.948,
+        -291.48,
+        70.32
+      ],
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "sheephead-2-tail",
+      "target": "habitat-aquarium-v05-sheephead-2-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        -56.856,
+        -288.036,
+        70.32
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 32,
+      "phase": 0
+    },
+    {
+      "id": "garibaldi-1-swim",
+      "target": "habitat-aquarium-v05-garibaldi-1",
+      "kind": "path",
+      "points": [
+        [
+          71.7,
+          -133.2,
+          251.508
+        ],
+        [
+          -47.148,
+          -137.316,
+          256.968
+        ],
+        [
+          -141.708,
+          -149.976,
+          234.144
+        ],
+        [
+          -227.652,
+          -168.708,
+          205.872
+        ],
+        [
+          -244.188,
+          -197.7,
+          200.412
+        ],
+        [
+          -169.812,
+          -220.2,
+          223.236
+        ],
+        [
+          -76.62,
+          -233.424,
+          251.508
+        ],
+        [
+          34.356,
+          -241.812,
+          256.968
+        ],
+        [
+          147.78,
+          -230.748,
+          234.144
+        ],
+        [
+          192.24,
+          -204.12,
+          205.872
+        ],
+        [
+          193.608,
+          -178.248,
+          200.412
+        ],
+        [
+          168.588,
+          -151.104,
+          223.236
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 176.357,
+      "pivot": [
+        71.7,
+        -133.2,
+        251.508
+      ],
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "garibaldi-1-tail",
+      "target": "habitat-aquarium-v05-garibaldi-1-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        74.688,
+        -133.392,
+        251.508
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 42,
+      "phase": 0.5
+    },
+    {
+      "id": "garibaldi-2-swim",
+      "target": "habitat-aquarium-v05-garibaldi-2",
+      "kind": "path",
+      "points": [
+        [
+          40.884,
+          -237.072,
+          65.388
+        ],
+        [
+          64.008,
+          -214.296,
+          74.256
+        ],
+        [
+          50.34,
+          -188.868,
+          68.868
+        ],
+        [
+          16.68,
+          -173.688,
+          54.612
+        ],
+        [
+          -20.004,
+          -162.732,
+          45.744
+        ],
+        [
+          -65.52,
+          -162.48,
+          51.132
+        ],
+        [
+          -96.6,
+          -182.064,
+          65.388
+        ],
+        [
+          -102.408,
+          -206.592,
+          74.256
+        ],
+        [
+          -100.416,
+          -230.532,
+          68.868
+        ],
+        [
+          -78.024,
+          -253.536,
+          54.612
+        ],
+        [
+          -33.276,
+          -259.38,
+          45.744
+        ],
+        [
+          6.192,
+          -250.044,
+          51.132
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 31.625,
+      "pivot": [
+        40.884,
+        -237.072,
+        65.388
+      ],
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "garibaldi-2-tail",
+      "target": "habitat-aquarium-v05-garibaldi-2-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        38.328,
+        -238.644,
+        65.388
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 52,
+      "phase": 0.5
+    },
+    {
+      "id": "garibaldi-3-swim",
+      "target": "habitat-aquarium-v05-garibaldi-3",
+      "kind": "path",
+      "points": [
+        [
+          -253.296,
+          -144.084,
+          169.968
+        ],
+        [
+          -80.076,
+          -146.52,
+          192.156
+        ],
+        [
+          86.784,
+          -144.564,
+          220.74
+        ],
+        [
+          245.784,
+          -131.7,
+          227.112
+        ],
+        [
+          283.212,
+          -106.848,
+          204.924
+        ],
+        [
+          212.16,
+          -85.248,
+          176.34
+        ],
+        [
+          116.232,
+          -66.6,
+          169.968
+        ],
+        [
+          -45.24,
+          -54.312,
+          192.156
+        ],
+        [
+          -222.408,
+          -62.34,
+          220.74
+        ],
+        [
+          -324.588,
+          -81.504,
+          227.112
+        ],
+        [
+          -395.508,
+          -102.108,
+          204.924
+        ],
+        [
+          -393.048,
+          -127.248,
+          176.34
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -3.506,
+      "pivot": [
+        -253.296,
+        -144.084,
+        169.968
+      ],
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "garibaldi-3-tail",
+      "target": "habitat-aquarium-v05-garibaldi-3-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        -256.296,
+        -143.904,
+        169.968
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 40,
+      "phase": 0
+    },
+    {
+      "id": "garibaldi-4-swim",
+      "target": "habitat-aquarium-v05-garibaldi-4",
+      "kind": "path",
+      "points": [
+        [
+          -71.736,
+          -242.892,
+          74.268
+        ],
+        [
+          -97.224,
+          -258.336,
+          68.796
+        ],
+        [
+          -127.74,
+          -264.264,
+          54.528
+        ],
+        [
+          -160.524,
+          -266.592,
+          45.732
+        ],
+        [
+          -191.712,
+          -255.84,
+          51.204
+        ],
+        [
+          -200.016,
+          -234.084,
+          65.472
+        ],
+        [
+          -192.84,
+          -214.32,
+          74.268
+        ],
+        [
+          -179.628,
+          -195.108,
+          68.796
+        ],
+        [
+          -149.364,
+          -183.324,
+          54.528
+        ],
+        [
+          -115.584,
+          -189.624,
+          45.732
+        ],
+        [
+          -92.232,
+          -203.46,
+          51.204
+        ],
+        [
+          -72.672,
+          -220.344,
+          65.472
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -122.896,
+      "pivot": [
+        -71.736,
+        -242.892,
+        74.268
+      ],
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "garibaldi-4-tail",
+      "target": "habitat-aquarium-v05-garibaldi-4-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        -70.104,
+        -240.372,
+        74.268
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 28,
+      "phase": 0
+    },
+    {
+      "id": "batray-1-swim",
+      "target": "habitat-aquarium-v05-batray-1",
+      "kind": "path",
+      "points": [
+        [
+          -36.144,
+          -193.752,
+          67.68
+        ],
+        [
+          4.788,
+          -194.328,
+          74.388
+        ],
+        [
+          36.732,
+          -208.152,
+          66.708
+        ],
+        [
+          38.376,
+          -228.324,
+          52.32
+        ],
+        [
+          26.556,
+          -245.652,
+          45.612
+        ],
+        [
+          5.04,
+          -262.38,
+          53.292
+        ],
+        [
+          -35.868,
+          -268.74,
+          67.68
+        ],
+        [
+          -73.104,
+          -259.344,
+          74.388
+        ],
+        [
+          -98.472,
+          -245.76,
+          66.708
+        ],
+        [
+          -117.9,
+          -228.468,
+          52.32
+        ],
+        [
+          -108.924,
+          -208.284,
+          45.612
+        ],
+        [
+          -73.332,
+          -197.508,
+          53.292
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 2.364,
+      "pivot": [
+        -36.144,
+        -193.752,
+        67.68
+      ],
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "batray-2-swim",
+      "target": "habitat-aquarium-v05-batray-2",
+      "kind": "path",
+      "points": [
+        [
+          -36.552,
+          -228.588,
+          54.984
+        ],
+        [
+          -12.732,
+          -216.768,
+          45.804
+        ],
+        [
+          19.344,
+          -216.156,
+          50.82
+        ],
+        [
+          47.976,
+          -219.552,
+          65.016
+        ],
+        [
+          75.708,
+          -228.024,
+          74.196
+        ],
+        [
+          84.06,
+          -244.344,
+          69.18
+        ],
+        [
+          69.084,
+          -258.684,
+          54.984
+        ],
+        [
+          48.936,
+          -269.496,
+          45.804
+        ],
+        [
+          20.532,
+          -277.38,
+          50.82
+        ],
+        [
+          -11.652,
+          -272.88,
+          65.016
+        ],
+        [
+          -28.74,
+          -259.164,
+          74.196
+        ],
+        [
+          -37.224,
+          -244.944,
+          69.18
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 49.1,
+      "pivot": [
+        -36.552,
+        -228.588,
+        54.984
+      ],
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "batray-3-swim",
+      "target": "habitat-aquarium-v05-batray-3",
+      "kind": "path",
+      "points": [
+        [
+          -40.74,
+          -197.796,
+          71.208
+        ],
+        [
+          -52.296,
+          -214.476,
+          73.428
+        ],
+        [
+          -58.632,
+          -232.308,
+          62.22
+        ],
+        [
+          -46.284,
+          -250.74,
+          48.792
+        ],
+        [
+          -14.244,
+          -257.724,
+          46.572
+        ],
+        [
+          16.656,
+          -255.132,
+          57.78
+        ],
+        [
+          46.704,
+          -249.372,
+          71.208
+        ],
+        [
+          68.316,
+          -234.012,
+          73.428
+        ],
+        [
+          62.82,
+          -214.572,
+          62.22
+        ],
+        [
+          43.464,
+          -200.484,
+          48.792
+        ],
+        [
+          19.752,
+          -188.412,
+          46.572
+        ],
+        [
+          -14.208,
+          -185.34,
+          57.78
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -142.466,
+      "pivot": [
+        -40.74,
+        -197.796,
+        71.208
+      ],
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "eagleray-1-swim",
+      "target": "habitat-aquarium-v05-eagleray-1",
+      "kind": "path",
+      "points": [
+        [
+          -61.896,
+          39.48,
+          219.036
+        ],
+        [
+          -150.84,
+          -13.068,
+          197.304
+        ],
+        [
+          -144.216,
+          -87.06,
+          211.296
+        ],
+        [
+          -63.612,
+          -139.716,
+          247.02
+        ],
+        [
+          28.884,
+          -179.268,
+          268.752
+        ],
+        [
+          153.312,
+          -196.836,
+          254.76
+        ],
+        [
+          262.596,
+          -156.576,
+          219.036
+        ],
+        [
+          302.424,
+          -90.528,
+          197.304
+        ],
+        [
+          316.368,
+          -25.164,
+          211.296
+        ],
+        [
+          280.884,
+          44.952,
+          247.02
+        ],
+        [
+          164.976,
+          78.684,
+          268.752
+        ],
+        [
+          44.544,
+          65.292,
+          254.76
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -158.228,
+      "pivot": [
+        -61.896,
+        39.48,
+        219.036
+      ],
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "turtle-1-swim",
+      "target": "habitat-aquarium-v05-turtle-1",
+      "kind": "path",
+      "points": [
+        [
+          13.956,
+          -162.36,
+          220.428
+        ],
+        [
+          152.76,
+          -153.528,
+          190.98
+        ],
+        [
+          216.252,
+          -133.776,
+          171.276
+        ],
+        [
+          243.612,
+          -113.916,
+          180.996
+        ],
+        [
+          224.736,
+          -91.644,
+          210.432
+        ],
+        [
+          105.444,
+          -77.64,
+          230.148
+        ],
+        [
+          -37.956,
+          -79.092,
+          220.428
+        ],
+        [
+          -163.944,
+          -85.392,
+          190.98
+        ],
+        [
+          -280.38,
+          -99.036,
+          171.276
+        ],
+        [
+          -299.892,
+          -121.86,
+          180.996
+        ],
+        [
+          -219.996,
+          -140.16,
+          210.432
+        ],
+        [
+          -121.356,
+          -153.732,
+          230.148
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 0.033,
+      "pivot": [
+        13.956,
+        -162.36,
+        220.428
+      ],
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "turtle-2-swim",
+      "target": "habitat-aquarium-v05-turtle-2",
+      "kind": "path",
+      "points": [
+        [
+          -233.292,
+          -110.448,
+          216.036
+        ],
+        [
+          -144.936,
+          -136.68,
+          202.356
+        ],
+        [
+          -57.336,
+          -125.904,
+          224.364
+        ],
+        [
+          24.24,
+          -105,
+          260.04
+        ],
+        [
+          87.648,
+          -55.68,
+          273.72
+        ],
+        [
+          76.536,
+          10.008,
+          251.712
+        ],
+        [
+          19.152,
+          56.748,
+          216.036
+        ],
+        [
+          -47.988,
+          94.848,
+          202.356
+        ],
+        [
+          -141.852,
+          107.916,
+          224.364
+        ],
+        [
+          -219.096,
+          68.46,
+          260.04
+        ],
+        [
+          -249.312,
+          10.932,
+          273.72
+        ],
+        [
+          -263.748,
+          -48.06,
+          251.712
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -36.736,
+      "pivot": [
+        -233.292,
+        -110.448,
+        216.036
+      ],
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "moray-1-swim",
+      "target": "habitat-aquarium-v05-moray-1",
+      "kind": "path",
+      "points": [
+        [
+          101.802,
+          -349.04,
+          31.2
+        ],
+        [
+          102.698,
+          -341.967,
+          32.4
+        ],
+        [
+          103.145,
+          -350.219,
+          33.6
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 93.116,
+      "pivot": [
+        101.802,
+        -349.04,
+        31.2
+      ],
+      "cycles": 7,
+      "phase": 0
+    },
+    {
+      "id": "moray-1-tail",
+      "target": "habitat-aquarium-v05-moray-1-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        102.324,
+        -358.632,
+        31.2
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 28,
+      "phase": 0
+    },
+    {
+      "id": "anchovy-school-swim",
+      "target": "habitat-aquarium-v05-anchovy-school",
+      "kind": "path",
+      "points": [
+        [
+          -122.796,
+          -141.324,
+          235.524
+        ],
+        [
+          -35.04,
+          -146.556,
+          199.788
+        ],
+        [
+          30.66,
+          -109.356,
+          178.164
+        ],
+        [
+          70.02,
+          -64.368,
+          192.276
+        ],
+        [
+          93.528,
+          -10.08,
+          228.012
+        ],
+        [
+          56.4,
+          43.572,
+          249.636
+        ],
+        [
+          -24.444,
+          63.168,
+          235.524
+        ],
+        [
+          -102.156,
+          63.564,
+          199.788
+        ],
+        [
+          -183.924,
+          50.076,
+          178.164
+        ],
+        [
+          -234.552,
+          1.668,
+          192.276
+        ],
+        [
+          -219.42,
+          -55.14,
+          228.012
+        ],
+        [
+          -181.068,
+          -100.512,
+          249.636
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -17.57,
+      "pivot": [
+        -122.796,
+        -141.324,
+        235.524
+      ],
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "anchovy-school-2-swim",
+      "target": "habitat-aquarium-v05-anchovy-school-2",
+      "kind": "path",
+      "points": [
+        [
+          204.192,
+          -188.532,
+          256.428
+        ],
+        [
+          344.364,
+          -166.8,
+          229.332
+        ],
+        [
+          372.012,
+          -135.252,
+          204.624
+        ],
+        [
+          358.932,
+          -105.732,
+          207.012
+        ],
+        [
+          283.476,
+          -75.972,
+          234.096
+        ],
+        [
+          110.076,
+          -64.728,
+          258.804
+        ],
+        [
+          -53.772,
+          -76.14,
+          256.428
+        ],
+        [
+          -187.56,
+          -92.964,
+          229.332
+        ],
+        [
+          -291.324,
+          -119.748,
+          204.624
+        ],
+        [
+          -258.084,
+          -152.724,
+          207.012
+        ],
+        [
+          -121.896,
+          -172.86,
+          234.096
+        ],
+        [
+          24.972,
+          -185.556,
+          258.804
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 3.349,
+      "pivot": [
+        204.192,
+        -188.532,
+        256.428
+      ],
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "sardine-school-swim",
+      "target": "habitat-aquarium-v05-sardine-school",
+      "kind": "path",
+      "points": [
+        [
+          153.024,
+          -36.564,
+          191.532
+        ],
+        [
+          142.92,
+          -89.088,
+          226.308
+        ],
+        [
+          35.424,
+          -125.472,
+          251.772
+        ],
+        [
+          -103.992,
+          -124.716,
+          242.484
+        ],
+        [
+          -225.9,
+          -110.844,
+          207.708
+        ],
+        [
+          -341.892,
+          -81.288,
+          182.244
+        ],
+        [
+          -371.988,
+          -28.116,
+          191.532
+        ],
+        [
+          -300.516,
+          16.872,
+          226.308
+        ],
+        [
+          -207.612,
+          49.62,
+          251.772
+        ],
+        [
+          -81.504,
+          72.588,
+          242.484
+        ],
+        [
+          56.088,
+          55.8,
+          207.708
+        ],
+        [
+          124.032,
+          10.044,
+          182.244
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -78.912,
+      "pivot": [
+        153.024,
+        -36.564,
+        191.532
+      ],
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "sardine-school-2-swim",
+      "target": "habitat-aquarium-v05-sardine-school-2",
+      "kind": "path",
+      "points": [
+        [
+          -53.412,
+          78,
+          171.24
+        ],
+        [
+          -173.136,
+          50.64,
+          181.176
+        ],
+        [
+          -215.928,
+          -14.448,
+          199.14
+        ],
+        [
+          -204.48,
+          -76.536,
+          207.168
+        ],
+        [
+          -169.368,
+          -139.008,
+          197.244
+        ],
+        [
+          -65.304,
+          -180.9,
+          179.28
+        ],
+        [
+          61.26,
+          -168.228,
+          171.24
+        ],
+        [
+          155.844,
+          -131.868,
+          181.176
+        ],
+        [
+          239.208,
+          -84.336,
+          199.14
+        ],
+        [
+          254.868,
+          -15.072,
+          207.168
+        ],
+        [
+          171.108,
+          37.332,
+          197.244
+        ],
+        [
+          65.064,
+          63.072,
+          179.28
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -177.071,
+      "pivot": [
+        -53.412,
+        78,
+        171.24
+      ],
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "blacksmith-school-swim",
+      "target": "habitat-aquarium-v05-blacksmith-school",
+      "kind": "path",
+      "points": [
+        [
+          39.552,
+          94.164,
+          173.424
+        ],
+        [
+          4.86,
+          36.504,
+          187.704
+        ],
+        [
+          30.852,
+          -18.828,
+          204.336
+        ],
+        [
+          71.796,
+          -67.584,
+          206.7
+        ],
+        [
+          149.328,
+          -104.892,
+          192.432
+        ],
+        [
+          247.248,
+          -94.68,
+          175.788
+        ],
+        [
+          311.592,
+          -53.064,
+          173.424
+        ],
+        [
+          359.256,
+          -6.708,
+          187.704
+        ],
+        [
+          372.636,
+          53.544,
+          204.336
+        ],
+        [
+          309.396,
+          100.992,
+          206.7
+        ],
+        [
+          219.072,
+          114.72,
+          192.432
+        ],
+        [
+          130.464,
+          117.12,
+          175.788
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -147.336,
+      "pivot": [
+        39.552,
+        94.164,
+        173.424
+      ],
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "blacksmith-school-2-swim",
+      "target": "habitat-aquarium-v05-blacksmith-school-2",
+      "kind": "path",
+      "points": [
+        [
+          -150.072,
+          -256.248,
+          71.268
+        ],
+        [
+          -166.116,
+          -238.668,
+          73.404
+        ],
+        [
+          -173.7,
+          -219.852,
+          62.136
+        ],
+        [
+          -150.456,
+          -201.252,
+          48.732
+        ],
+        [
+          -98.424,
+          -195.348,
+          46.596
+        ],
+        [
+          -49.968,
+          -198.9,
+          57.864
+        ],
+        [
+          -2.868,
+          -205.836,
+          71.268
+        ],
+        [
+          28.344,
+          -222.708,
+          73.404
+        ],
+        [
+          15.924,
+          -242.616,
+          62.136
+        ],
+        [
+          -16.488,
+          -256.632,
+          48.732
+        ],
+        [
+          -56.016,
+          -268.512,
+          46.596
+        ],
+        [
+          -110.46,
+          -270.24,
+          57.864
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 150.325,
+      "pivot": [
+        -150.072,
+        -256.248,
+        71.268
+      ],
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "opaleye-school-swim",
+      "target": "habitat-aquarium-v05-opaleye-school",
+      "kind": "path",
+      "points": [
+        [
+          -71.568,
+          -254.136,
+          45.6
+        ],
+        [
+          -85.548,
+          -224.4,
+          52.536
+        ],
+        [
+          -74.712,
+          -194.856,
+          66.924
+        ],
+        [
+          -57.348,
+          -171.264,
+          74.4
+        ],
+        [
+          -30.576,
+          -151.956,
+          67.464
+        ],
+        [
+          4.116,
+          -155.568,
+          53.076
+        ],
+        [
+          26.208,
+          -179.076,
+          45.6
+        ],
+        [
+          39.504,
+          -204.84,
+          52.536
+        ],
+        [
+          44.112,
+          -236.052,
+          66.924
+        ],
+        [
+          23.4,
+          -262.176,
+          74.4
+        ],
+        [
+          -9.552,
+          -268.212,
+          67.464
+        ],
+        [
+          -40.2,
+          -266.028,
+          53.076
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 137.521,
+      "pivot": [
+        -71.568,
+        -254.136,
+        45.6
+      ],
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "bluetang-school-swim",
+      "target": "habitat-aquarium-v05-bluetang-school",
+      "kind": "path",
+      "points": [
+        [
+          52.524,
+          -220.56,
+          70.932
+        ],
+        [
+          55.272,
+          -242.592,
+          73.584
+        ],
+        [
+          26.988,
+          -258.648,
+          62.652
+        ],
+        [
+          -6.756,
+          -267.84,
+          49.068
+        ],
+        [
+          -46.812,
+          -273.036,
+          46.416
+        ],
+        [
+          -85.644,
+          -263.244,
+          57.348
+        ],
+        [
+          -98.82,
+          -242.736,
+          70.932
+        ],
+        [
+          -97.56,
+          -223.26,
+          73.584
+        ],
+        [
+          -86.388,
+          -202.992,
+          62.652
+        ],
+        [
+          -50.304,
+          -190.764,
+          49.068
+        ],
+        [
+          -8.856,
+          -195.204,
+          46.416
+        ],
+        [
+          23.64,
+          -205.5,
+          57.348
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -49.424,
+      "pivot": [
+        52.524,
+        -220.56,
+        70.932
+      ],
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "yellowtang-school-swim",
+      "target": "habitat-aquarium-v05-yellowtang-school",
+      "kind": "path",
+      "points": [
+        [
+          -55.02,
+          -190.872,
+          45.732
+        ],
+        [
+          -50.988,
+          -221.916,
+          54.552
+        ],
+        [
+          -30.36,
+          -243.984,
+          68.82
+        ],
+        [
+          -6.228,
+          -261.984,
+          74.268
+        ],
+        [
+          27.504,
+          -268.116,
+          65.448
+        ],
+        [
+          55.224,
+          -249.444,
+          51.18
+        ],
+        [
+          66.048,
+          -222.252,
+          45.732
+        ],
+        [
+          71.22,
+          -194.364,
+          54.552
+        ],
+        [
+          60.24,
+          -164.892,
+          68.82
+        ],
+        [
+          28.488,
+          -152.532,
+          74.268
+        ],
+        [
+          -2.976,
+          -157.644,
+          65.448
+        ],
+        [
+          -32.28,
+          -167.544,
+          51.18
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -109.004,
+      "pivot": [
+        -55.02,
+        -190.872,
+        45.732
+      ],
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "sergeant-school-swim",
+      "target": "habitat-aquarium-v05-sergeant-school",
+      "kind": "path",
+      "points": [
+        [
+          -37.524,
+          -160.668,
+          170.868
+        ],
+        [
+          85.548,
+          -164.232,
+          187.884
+        ],
+        [
+          200.424,
+          -161.952,
+          217.8
+        ],
+        [
+          315.288,
+          -150.372,
+          230.676
+        ],
+        [
+          356.064,
+          -124.752,
+          213.66
+        ],
+        [
+          309.432,
+          -100.968,
+          183.756
+        ],
+        [
+          242.46,
+          -81.552,
+          170.868
+        ],
+        [
+          136.488,
+          -66.804,
+          187.884
+        ],
+        [
+          8.664,
+          -72.324,
+          217.8
+        ],
+        [
+          -67.788,
+          -92.556,
+          230.676
+        ],
+        [
+          -115.68,
+          -114.24,
+          213.66
+        ],
+        [
+          -124.572,
+          -140.568,
+          183.756
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -6.401,
+      "pivot": [
+        -37.524,
+        -160.668,
+        170.868
+      ],
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "idol-school-swim",
+      "target": "habitat-aquarium-v05-idol-school",
+      "kind": "path",
+      "points": [
+        [
+          330.264,
+          -165.924,
+          255.036
+        ],
+        [
+          294.456,
+          -134.628,
+          262.38
+        ],
+        [
+          158.556,
+          -117.252,
+          240.864
+        ],
+        [
+          15.804,
+          -108.996,
+          212.004
+        ],
+        [
+          -147.768,
+          -108.552,
+          204.66
+        ],
+        [
+          -273.42,
+          -130.044,
+          226.176
+        ],
+        [
+          -285.204,
+          -160.956,
+          255.036
+        ],
+        [
+          -251.7,
+          -188.424,
+          262.38
+        ],
+        [
+          -171.96,
+          -215.388,
+          240.864
+        ],
+        [
+          -10.5,
+          -225.18,
+          212.004
+        ],
+        [
+          137.184,
+          -211.656,
+          204.66
+        ],
+        [
+          246.432,
+          -192.444,
+          226.176
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 50.028,
+      "pivot": [
+        330.264,
+        -165.924,
+        255.036
+      ],
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "clown-1-swim",
+      "target": "habitat-aquarium-v05-clown-1",
+      "kind": "path",
+      "points": [
+        [
+          50.504,
+          265.82,
+          95.564
+        ],
+        [
+          64.904,
+          251.42,
+          99.164
+        ],
+        [
+          79.304,
+          265.82,
+          95.564
+        ],
+        [
+          64.904,
+          280.22,
+          99.164
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -90,
+      "pivot": [
+        50.504,
+        265.82,
+        95.564
+      ],
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "clown-1-tail",
+      "target": "habitat-aquarium-v05-clown-1-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        50.508,
+        267.024,
+        95.568
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 42,
+      "phase": 0
+    },
+    {
+      "id": "clown-2-swim",
+      "target": "habitat-aquarium-v05-clown-2",
+      "kind": "path",
+      "points": [
+        [
+          -22.911,
+          265.736,
+          101.094
+        ],
+        [
+          -8.511,
+          251.336,
+          104.694
+        ],
+        [
+          5.889,
+          265.736,
+          101.094
+        ],
+        [
+          -8.511,
+          280.136,
+          104.694
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -90,
+      "pivot": [
+        -22.911,
+        265.736,
+        101.094
+      ],
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "clown-2-tail",
+      "target": "habitat-aquarium-v05-clown-2-tail",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        -22.908,
+        266.94,
+        101.1
+      ],
+      "from": -16,
+      "to": 16,
+      "cycles": 26,
+      "phase": 0
+    },
+    {
+      "id": "jelly-1-drift",
+      "target": "habitat-aquarium-v05-jelly-1",
+      "kind": "path",
+      "points": [
+        [
+          -90.036,
+          -141.816,
+          189.396
+        ],
+        [
+          -106.236,
+          -143.316,
+          180.456
+        ],
+        [
+          -121.296,
+          -152.844,
+          179.016
+        ],
+        [
+          -124.14,
+          -170.28,
+          186.504
+        ],
+        [
+          -117.084,
+          -185.1,
+          195.444
+        ],
+        [
+          -107.652,
+          -198.096,
+          196.896
+        ],
+        [
+          -91.68,
+          -206.076,
+          189.396
+        ],
+        [
+          -74.832,
+          -199.776,
+          180.456
+        ],
+        [
+          -65.244,
+          -186.384,
+          179.016
+        ],
+        [
+          -58.464,
+          -171.9,
+          186.504
+        ],
+        [
+          -59.376,
+          -154.368,
+          195.444
+        ],
+        [
+          -73.38,
+          -143.244,
+          196.896
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -179.852,
+      "cycles": 1,
+      "phase": 0,
+      "pivot": [
+        -90.036,
+        -141.816,
+        189.396
+      ]
+    },
+    {
+      "id": "jelly-1-pulse",
+      "target": "habitat-aquarium-v05-jelly-1-bell",
+      "kind": "bob",
+      "axis": "z",
+      "amount": 3,
+      "cycles": 6,
+      "phase": 0
+    },
+    {
+      "id": "jelly-2-drift",
+      "target": "habitat-aquarium-v05-jelly-2",
+      "kind": "path",
+      "points": [
+        [
+          260.508,
+          117.66,
+          180.072
+        ],
+        [
+          254.472,
+          108.864,
+          189.396
+        ],
+        [
+          254.076,
+          100.044,
+          192.096
+        ],
+        [
+          256.32,
+          90.876,
+          185.46
+        ],
+        [
+          266.628,
+          84.132,
+          176.136
+        ],
+        [
+          280.488,
+          84.864,
+          173.436
+        ],
+        [
+          291.552,
+          89.028,
+          180.072
+        ],
+        [
+          301.716,
+          94.98,
+          189.396
+        ],
+        [
+          304.86,
+          104.628,
+          192.096
+        ],
+        [
+          297.036,
+          112.704,
+          185.46
+        ],
+        [
+          286.368,
+          117.36,
+          176.136
+        ],
+        [
+          273.96,
+          120.576,
+          173.436
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -148.959,
+      "cycles": 1,
+      "phase": 0,
+      "pivot": [
+        260.508,
+        117.66,
+        180.072
+      ]
+    },
+    {
+      "id": "jelly-2-pulse",
+      "target": "habitat-aquarium-v05-jelly-2-bell",
+      "kind": "bob",
+      "axis": "z",
+      "amount": 3,
+      "cycles": 7,
+      "phase": 0
+    },
+    {
+      "id": "jelly-3-drift",
+      "target": "habitat-aquarium-v05-jelly-3",
+      "kind": "path",
+      "points": [
+        [
+          325.32,
+          13.476,
+          216.876
+        ],
+        [
+          335.184,
+          -0.744,
+          211.98
+        ],
+        [
+          353.76,
+          -6.156,
+          202.38
+        ],
+        [
+          370.62,
+          1.98,
+          197.676
+        ],
+        [
+          381.984,
+          13.716,
+          202.572
+        ],
+        [
+          390.66,
+          28.56,
+          212.172
+        ],
+        [
+          386.556,
+          45.816,
+          216.876
+        ],
+        [
+          370.344,
+          54.96,
+          211.98
+        ],
+        [
+          353.424,
+          57.996,
+          202.38
+        ],
+        [
+          334.884,
+          57.384,
+          197.676
+        ],
+        [
+          320.412,
+          45.528,
+          202.572
+        ],
+        [
+          319.764,
+          28.248,
+          212.172
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -62.062,
+      "cycles": 1,
+      "phase": 0,
+      "pivot": [
+        325.32,
+        13.476,
+        216.876
+      ]
+    },
+    {
+      "id": "jelly-3-pulse",
+      "target": "habitat-aquarium-v05-jelly-3-bell",
+      "kind": "bob",
+      "axis": "z",
+      "amount": 3,
+      "cycles": 8,
+      "phase": 0
+    },
+    {
+      "id": "jelly-4-drift",
+      "target": "habitat-aquarium-v05-jelly-4",
+      "kind": "path",
+      "points": [
+        [
+          125.04,
+          112.116,
+          190.968
+        ],
+        [
+          139.464,
+          115.584,
+          181.884
+        ],
+        [
+          147.072,
+          127.32,
+          174.66
+        ],
+        [
+          150.264,
+          139.476,
+          176.532
+        ],
+        [
+          149.88,
+          153.18,
+          185.616
+        ],
+        [
+          139.536,
+          163.404,
+          192.84
+        ],
+        [
+          125.124,
+          163.848,
+          190.968
+        ],
+        [
+          112.524,
+          160.416,
+          181.884
+        ],
+        [
+          100.32,
+          153.24,
+          174.66
+        ],
+        [
+          96.24,
+          139.56,
+          176.532
+        ],
+        [
+          103.056,
+          127.38,
+          185.616
+        ],
+        [
+          112.464,
+          118.656,
+          192.84
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -6.573,
+      "cycles": 1,
+      "phase": 0,
+      "pivot": [
+        125.04,
+        112.116,
+        190.968
+      ]
+    },
+    {
+      "id": "jelly-4-pulse",
+      "target": "habitat-aquarium-v05-jelly-4-bell",
+      "kind": "bob",
+      "axis": "z",
+      "amount": 3,
+      "cycles": 6,
+      "phase": 0
+    },
+    {
+      "id": "jelly-5-drift",
+      "target": "habitat-aquarium-v05-jelly-5",
+      "kind": "path",
+      "points": [
+        [
+          -114.324,
+          -124.008,
+          195.912
+        ],
+        [
+          -126.564,
+          -110.52,
+          202.74
+        ],
+        [
+          -147.396,
+          -107.58,
+          200.316
+        ],
+        [
+          -166.344,
+          -109.728,
+          191.052
+        ],
+        [
+          -185.496,
+          -115.824,
+          184.224
+        ],
+        [
+          -194.928,
+          -130.524,
+          186.66
+        ],
+        [
+          -187.896,
+          -145.548,
+          195.912
+        ],
+        [
+          -175.956,
+          -156.804,
+          202.74
+        ],
+        [
+          -159.36,
+          -166.212,
+          200.316
+        ],
+        [
+          -137.676,
+          -165,
+          191.052
+        ],
+        [
+          -123.876,
+          -152.916,
+          184.224
+        ],
+        [
+          -116.88,
+          -139.512,
+          186.66
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 108.355,
+      "cycles": 1,
+      "phase": 0,
+      "pivot": [
+        -114.324,
+        -124.008,
+        195.912
+      ]
+    },
+    {
+      "id": "jelly-5-pulse",
+      "target": "habitat-aquarium-v05-jelly-5-bell",
+      "kind": "bob",
+      "axis": "z",
+      "amount": 3,
+      "cycles": 7,
+      "phase": 0
+    },
+    {
+      "id": "jelly-6-drift",
+      "target": "habitat-aquarium-v05-jelly-6",
+      "kind": "path",
+      "points": [
+        [
+          47.088,
+          109.008,
+          245.376
+        ],
+        [
+          65.388,
+          108.504,
+          237.936
+        ],
+        [
+          79.584,
+          117.228,
+          239.484
+        ],
+        [
+          91.344,
+          127.872,
+          248.46
+        ],
+        [
+          97.392,
+          143.7,
+          255.888
+        ],
+        [
+          88.704,
+          158.616,
+          254.352
+        ],
+        [
+          73.428,
+          165.624,
+          245.376
+        ],
+        [
+          57.6,
+          169.728,
+          237.936
+        ],
+        [
+          39.756,
+          166.656,
+          239.484
+        ],
+        [
+          30.132,
+          152.244,
+          248.46
+        ],
+        [
+          31.2,
+          136.5,
+          255.888
+        ],
+        [
+          35.28,
+          121.764,
+          254.352
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -23.795,
+      "cycles": 1,
+      "phase": 0,
+      "pivot": [
+        47.088,
+        109.008,
+        245.376
+      ]
+    },
+    {
+      "id": "jelly-6-pulse",
+      "target": "habitat-aquarium-v05-jelly-6-bell",
+      "kind": "bob",
+      "axis": "z",
+      "amount": 3,
+      "cycles": 8,
+      "phase": 0
+    },
+    {
+      "id": "jelly-7-drift",
+      "target": "habitat-aquarium-v05-jelly-7",
+      "kind": "path",
+      "points": [
+        [
+          200.4,
+          172.2,
+          240.552
+        ],
+        [
+          185.448,
+          173.208,
+          249.396
+        ],
+        [
+          174.432,
+          165.804,
+          257.064
+        ],
+        [
+          168.9,
+          156.696,
+          255.888
+        ],
+        [
+          165.78,
+          146.4,
+          247.044
+        ],
+        [
+          172.092,
+          136.2,
+          239.388
+        ],
+        [
+          186.156,
+          132.756,
+          240.552
+        ],
+        [
+          199.452,
+          133.728,
+          249.396
+        ],
+        [
+          212.928,
+          136.86,
+          257.064
+        ],
+        [
+          221.58,
+          146.04,
+          255.888
+        ],
+        [
+          218.52,
+          156.888,
+          247.044
+        ],
+        [
+          210.756,
+          165.024,
+          239.388
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 161.994,
+      "cycles": 1,
+      "phase": 0,
+      "pivot": [
+        200.4,
+        172.2,
+        240.552
+      ]
+    },
+    {
+      "id": "jelly-7-pulse",
+      "target": "habitat-aquarium-v05-jelly-7-bell",
+      "kind": "bob",
+      "axis": "z",
+      "amount": 3,
+      "cycles": 6,
+      "phase": 0
+    },
+    {
+      "id": "jelly-8-drift",
+      "target": "habitat-aquarium-v05-jelly-8",
+      "kind": "path",
+      "points": [
+        [
+          -131.124,
+          -83.64,
+          191.964
+        ],
+        [
+          -146.856,
+          -90.36,
+          183.228
+        ],
+        [
+          -156.324,
+          -105.876,
+          182.304
+        ],
+        [
+          -151.092,
+          -123.06,
+          190.116
+        ],
+        [
+          -139.932,
+          -135.012,
+          198.852
+        ],
+        [
+          -126.156,
+          -145.068,
+          199.776
+        ],
+        [
+          -107.772,
+          -145.392,
+          191.964
+        ],
+        [
+          -95.268,
+          -132.336,
+          183.228
+        ],
+        [
+          -90.348,
+          -116.832,
+          182.304
+        ],
+        [
+          -88.392,
+          -100.068,
+          190.116
+        ],
+        [
+          -97.296,
+          -84.228,
+          198.852
+        ],
+        [
+          -115.032,
+          -80.088,
+          199.776
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -162.144,
+      "cycles": 1,
+      "phase": 0,
+      "pivot": [
+        -131.124,
+        -83.64,
+        191.964
+      ]
+    },
+    {
+      "id": "jelly-8-pulse",
+      "target": "habitat-aquarium-v05-jelly-8-bell",
+      "kind": "bob",
+      "axis": "z",
+      "amount": 3,
+      "cycles": 7,
+      "phase": 0
+    },
+    {
+      "id": "diver-swim",
+      "target": "habitat-aquarium-v05-diver",
+      "kind": "path",
+      "points": [
+        [
+          336.12,
+          6.168,
+          180.132
+        ],
+        [
+          376.068,
+          -43.8,
+          198.108
+        ],
+        [
+          298.8,
+          -90.66,
+          206.34
+        ],
+        [
+          151.452,
+          -106.74,
+          196.584
+        ],
+        [
+          10.044,
+          -108.276,
+          178.596
+        ],
+        [
+          -140.076,
+          -94.8,
+          170.376
+        ],
+        [
+          -223.476,
+          -49.116,
+          180.132
+        ],
+        [
+          -191.688,
+          1.356,
+          198.108
+        ],
+        [
+          -124.98,
+          42.852,
+          206.34
+        ],
+        [
+          -14.808,
+          79.344,
+          196.584
+        ],
+        [
+          145.86,
+          80.52,
+          178.596
+        ],
+        [
+          261.42,
+          46.128,
+          170.376
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": -37.988,
+      "pivot": [
+        336.12,
+        6.168,
+        180.132
+      ],
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "walker-1-walk",
+      "target": "habitat-aquarium-v05-walker-1",
+      "kind": "path",
+      "face": "tangent",
+      "rest_heading_deg": -7.471,
+      "cycles": 1,
+      "phase": 0,
+      "points": [
+        [
+          -624,
+          -19.116,
+          16.8
+        ],
+        [
+          -240,
+          -86.821,
+          16.8
+        ],
+        [
+          120,
+          81.066,
+          16.8
+        ],
+        [
+          552,
+          91.821,
+          16.8
+        ],
+        [
+          624,
+          72.621,
+          16.8
+        ],
+        [
+          552,
+          53.421,
+          16.8
+        ],
+        [
+          120,
+          42.666,
+          16.8
+        ],
+        [
+          -240,
+          -125.221,
+          16.8
+        ],
+        [
+          -624,
+          -38.316,
+          16.8
+        ]
+      ],
+      "pivot": [
+        -624,
+        -19.116,
+        16.8
+      ]
+    },
+    {
+      "id": "walker-2-walk",
+      "target": "habitat-aquarium-v05-walker-2",
+      "kind": "path",
+      "face": "tangent",
+      "rest_heading_deg": -12.979,
+      "cycles": 1,
+      "phase": 0,
+      "points": [
+        [
+          -480,
+          -118.523,
+          16.8
+        ],
+        [
+          -240,
+          -125.221,
+          16.8
+        ],
+        [
+          120,
+          42.666,
+          16.8
+        ],
+        [
+          552,
+          53.421,
+          16.8
+        ],
+        [
+          624,
+          72.621,
+          16.8
+        ],
+        [
+          552,
+          91.821,
+          16.8
+        ],
+        [
+          120,
+          81.066,
+          16.8
+        ],
+        [
+          -240,
+          -86.821,
+          16.8
+        ],
+        [
+          -624,
+          -38.316,
+          16.8
+        ]
+      ],
+      "pivot": [
+        -480,
+        -118.523,
+        16.8
+      ]
+    }
+  ]
+}

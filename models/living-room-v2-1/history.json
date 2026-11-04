@@ -1,0 +1,5955 @@
+{
+  "schema": "make3d.history/0.1",
+  "model_id": "living-room-v2-1",
+  "header": {
+    "model_id": "living-room-v2-1",
+    "name": "Living room V2.1",
+    "description": "Living room from two photos, estimated sizes in inches. V2.1: plan reconciled with all three photos. One window on the TV wall, at the far corner (it is the window beside the sofa and above the far end of the bookcase), not two. The far wall keeps the big window behind the sofa and the narrow window by the front door.",
+    "units": "in",
+    "up": "z",
+    "world": "default-world",
+    "view": {
+      "azimuth_deg": 34
+    },
+    "materials": {
+      "wall": {
+        "color": "#f7f3ea",
+        "opacity": 1
+      },
+      "floor": {
+        "color": "#c9955f",
+        "opacity": 1
+      },
+      "yellow": {
+        "color": "#f2c94c",
+        "opacity": 1
+      },
+      "black": {
+        "color": "#1d1f23",
+        "opacity": 1
+      },
+      "pot": {
+        "color": "#c97b5d",
+        "opacity": 1
+      },
+      "potBlue": {
+        "color": "#2d4f8a",
+        "opacity": 1
+      },
+      "leaf": {
+        "color": "#5f9e5a",
+        "opacity": 1
+      },
+      "leafLight": {
+        "color": "#86b86f",
+        "opacity": 1
+      },
+      "trunk": {
+        "color": "#7a5a43",
+        "opacity": 1
+      },
+      "sofa": {
+        "color": "#8d949c",
+        "opacity": 1
+      },
+      "glass": {
+        "color": "#bfe3f2",
+        "opacity": 0.45
+      },
+      "door": {
+        "color": "#8a5a3c",
+        "opacity": 1
+      },
+      "trim": {
+        "color": "#ffffff",
+        "opacity": 1
+      },
+      "tableWood": {
+        "color": "#e3c08f",
+        "opacity": 1
+      },
+      "tableLeg": {
+        "color": "#f4f1ea",
+        "opacity": 1
+      },
+      "chairWood": {
+        "color": "#d4a77a",
+        "opacity": 1
+      },
+      "chairBlue": {
+        "color": "#3f8fd2",
+        "opacity": 1
+      },
+      "rug": {
+        "color": "#aebfae",
+        "opacity": 1
+      },
+      "bin": {
+        "color": "#f5f5f2",
+        "opacity": 1
+      },
+      "shoe1": {
+        "color": "#2b2b2b",
+        "opacity": 1
+      },
+      "shoe2": {
+        "color": "#6b4f3a",
+        "opacity": 1
+      },
+      "cork": {
+        "color": "#a77f58",
+        "opacity": 0.4
+      },
+      "chairPink": {
+        "color": "#e7a9c4",
+        "opacity": 1
+      },
+      "fan": {
+        "color": "#9ec9e8",
+        "opacity": 1
+      },
+      "fanPink": {
+        "color": "#f2b8c6",
+        "opacity": 1
+      },
+      "puzzleBox": {
+        "color": "#8c3b2e",
+        "opacity": 1
+      },
+      "bottle": {
+        "color": "#2f7f86",
+        "opacity": 1
+      },
+      "boxDark": {
+        "color": "#3a3a3a",
+        "opacity": 1
+      },
+      "puzzle1": {
+        "color": "#6fa8dc",
+        "opacity": 1
+      },
+      "puzzle2": {
+        "color": "#f4c542",
+        "opacity": 1
+      },
+      "paperRed": {
+        "color": "#d64545",
+        "opacity": 1
+      },
+      "paperWhite": {
+        "color": "#fafafa",
+        "opacity": 1
+      },
+      "poster": {
+        "color": "#8fb8e0",
+        "opacity": 1
+      },
+      "lantern": {
+        "color": "#e8532c",
+        "opacity": 1
+      },
+      "printer": {
+        "color": "#6c7075",
+        "opacity": 1
+      },
+      "boxBrown": {
+        "color": "#b08a5a",
+        "opacity": 1
+      },
+      "green": {
+        "color": "#5fae54",
+        "opacity": 1
+      },
+      "paperBag": {
+        "color": "#e8d9b5",
+        "opacity": 1
+      },
+      "clearBin": {
+        "color": "#dfe7ea",
+        "opacity": 1
+      },
+      "basket": {
+        "color": "#d9bf8c",
+        "opacity": 1
+      },
+      "jacket": {
+        "color": "#222428",
+        "opacity": 1
+      },
+      "book0": {
+        "color": "#e76f51",
+        "opacity": 1
+      },
+      "book1": {
+        "color": "#2a9d8f",
+        "opacity": 1
+      },
+      "book2": {
+        "color": "#e9c46a",
+        "opacity": 1
+      },
+      "book3": {
+        "color": "#6d597a",
+        "opacity": 1
+      },
+      "book4": {
+        "color": "#8ab17d",
+        "opacity": 1
+      },
+      "book5": {
+        "color": "#f4a261",
+        "opacity": 1
+      },
+      "book6": {
+        "color": "#457b9d",
+        "opacity": 1
+      },
+      "lightPanel": {
+        "color": "#fffbe6",
+        "opacity": 1
+      }
+    }
+  },
+  "operations": [
+    {
+      "seq": 1,
+      "op": "add",
+      "time": "2026-11-01T10:01:00.000Z",
+      "author": "jimmy",
+      "note": "add Room shell",
+      "object": {
+        "uuid": "living-room-v2-1-room-shell",
+        "name": "Room shell",
+        "description": "floor, walls, the far wall with openings and the front door",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 2,
+      "op": "add",
+      "time": "2026-11-01T10:02:00.000Z",
+      "author": "jimmy",
+      "note": "add Windows",
+      "object": {
+        "uuid": "living-room-v2-1-windows",
+        "name": "Windows",
+        "description": "glass panes",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 3,
+      "op": "add",
+      "time": "2026-11-01T10:03:00.000Z",
+      "author": "jimmy",
+      "note": "add Ceiling",
+      "object": {
+        "uuid": "living-room-v2-1-ceiling",
+        "name": "Ceiling",
+        "description": "cork tiles and light panels",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 4,
+      "op": "add",
+      "time": "2026-11-01T10:04:00.000Z",
+      "author": "jimmy",
+      "note": "add TV wall things",
+      "object": {
+        "uuid": "living-room-v2-1-tv-wall",
+        "name": "TV wall things",
+        "description": "TV, console, paper cut-outs and chart on the TV wall",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 5,
+      "op": "add",
+      "time": "2026-11-01T10:05:00.000Z",
+      "author": "jimmy",
+      "note": "add Plants",
+      "object": {
+        "uuid": "living-room-v2-1-plants",
+        "name": "Plants",
+        "description": "pots, trunks and leaves",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 6,
+      "op": "add",
+      "time": "2026-11-01T10:06:00.000Z",
+      "author": "jimmy",
+      "note": "add Children’s table and chairs",
+      "object": {
+        "uuid": "living-room-v2-1-childrens-table",
+        "name": "Children’s table and chairs",
+        "description": "table, chairs, jacket and the things on the table",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 7,
+      "op": "add",
+      "time": "2026-11-01T10:07:00.000Z",
+      "author": "jimmy",
+      "note": "add Wall decor",
+      "object": {
+        "uuid": "living-room-v2-1-decor",
+        "name": "Wall decor",
+        "description": "poster, switch, lantern and door frame",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 8,
+      "op": "add",
+      "time": "2026-11-01T10:08:00.000Z",
+      "author": "jimmy",
+      "note": "add Floor items",
+      "object": {
+        "uuid": "living-room-v2-1-floor-items",
+        "name": "Floor items",
+        "description": "rug, bin, suitcase and shoes",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 9,
+      "op": "add",
+      "time": "2026-11-01T10:09:00.000Z",
+      "author": "jimmy",
+      "note": "add Floor",
+      "object": {
+        "uuid": "living-room-v2-1-floor",
+        "name": "Floor",
+        "description": "wood floor, room footprint",
+        "type": "box",
+        "dimensions": [
+          156,
+          216,
+          0.5
+        ],
+        "position": [
+          78,
+          108,
+          0.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-room-shell",
+        "material": "floor"
+      }
+    },
+    {
+      "seq": 10,
+      "op": "add",
+      "time": "2026-11-01T10:10:00.000Z",
+      "author": "jimmy",
+      "note": "add TV wall, near part",
+      "object": {
+        "uuid": "living-room-v2-1-tvwall-y0",
+        "name": "TV wall, near part",
+        "description": "context only",
+        "type": "box",
+        "dimensions": [
+          4,
+          170,
+          96
+        ],
+        "position": [
+          -2,
+          85,
+          48
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-tv-wall",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 11,
+      "op": "add",
+      "time": "2026-11-01T10:11:00.000Z",
+      "author": "jimmy",
+      "note": "add TV wall, far part",
+      "object": {
+        "uuid": "living-room-v2-1-tvwall-y1",
+        "name": "TV wall, far part",
+        "description": "context only",
+        "type": "box",
+        "dimensions": [
+          4,
+          28,
+          96
+        ],
+        "position": [
+          -2,
+          202,
+          48
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-tv-wall",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 12,
+      "op": "add",
+      "time": "2026-11-01T10:12:00.000Z",
+      "author": "jimmy",
+      "note": "add Wall below TV-wall window",
+      "object": {
+        "uuid": "living-room-v2-1-tvwall-below",
+        "name": "Wall below TV-wall window",
+        "description": "context only",
+        "type": "box",
+        "dimensions": [
+          4,
+          18,
+          42
+        ],
+        "position": [
+          -2,
+          179,
+          21
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-tv-wall",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 13,
+      "op": "add",
+      "time": "2026-11-01T10:13:00.000Z",
+      "author": "jimmy",
+      "note": "add Wall above TV-wall window",
+      "object": {
+        "uuid": "living-room-v2-1-tvwall-above",
+        "name": "Wall above TV-wall window",
+        "description": "context only",
+        "type": "box",
+        "dimensions": [
+          4,
+          18,
+          12
+        ],
+        "position": [
+          -2,
+          179,
+          90
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-tv-wall",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 14,
+      "op": "add",
+      "time": "2026-11-01T10:14:00.000Z",
+      "author": "jimmy",
+      "note": "add Window glass, TV wall",
+      "object": {
+        "uuid": "living-room-v2-1-glass-tv-wall",
+        "name": "Window glass, TV wall",
+        "description": "the one window on the TV wall, near the far corner",
+        "type": "box",
+        "dimensions": [
+          0.5,
+          18,
+          42
+        ],
+        "position": [
+          0.25,
+          179,
+          63
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-windows",
+        "material": "glass"
+      }
+    },
+    {
+      "seq": 15,
+      "op": "add",
+      "time": "2026-11-01T10:15:00.000Z",
+      "author": "jimmy",
+      "note": "add Right wall",
+      "object": {
+        "uuid": "living-room-v2-1-wall-right",
+        "name": "Right wall",
+        "description": "context only",
+        "type": "box",
+        "dimensions": [
+          4,
+          216,
+          96
+        ],
+        "position": [
+          158,
+          108,
+          48
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-room-shell",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 16,
+      "op": "add",
+      "time": "2026-11-01T10:16:00.000Z",
+      "author": "jimmy",
+      "note": "add Wall piece",
+      "object": {
+        "uuid": "living-room-v2-1-far-x0",
+        "name": "Wall piece",
+        "description": "context only",
+        "type": "box",
+        "dimensions": [
+          34,
+          4,
+          96
+        ],
+        "position": [
+          17,
+          218,
+          48
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-room-shell",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 17,
+      "op": "add",
+      "time": "2026-11-01T10:17:00.000Z",
+      "author": "jimmy",
+      "note": "add Wall below big",
+      "object": {
+        "uuid": "living-room-v2-1-far-big-below",
+        "name": "Wall below big",
+        "description": "context only",
+        "type": "box",
+        "dimensions": [
+          58,
+          4,
+          36
+        ],
+        "position": [
+          63,
+          218,
+          18
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-room-shell",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 18,
+      "op": "add",
+      "time": "2026-11-01T10:18:00.000Z",
+      "author": "jimmy",
+      "note": "add Wall above big",
+      "object": {
+        "uuid": "living-room-v2-1-far-big-above",
+        "name": "Wall above big",
+        "description": "context only",
+        "type": "box",
+        "dimensions": [
+          58,
+          4,
+          12
+        ],
+        "position": [
+          63,
+          218,
+          90
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-room-shell",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 19,
+      "op": "add",
+      "time": "2026-11-01T10:19:00.000Z",
+      "author": "jimmy",
+      "note": "add Wall piece",
+      "object": {
+        "uuid": "living-room-v2-1-far-x92",
+        "name": "Wall piece",
+        "description": "context only",
+        "type": "box",
+        "dimensions": [
+          8,
+          4,
+          96
+        ],
+        "position": [
+          96,
+          218,
+          48
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-room-shell",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 20,
+      "op": "add",
+      "time": "2026-11-01T10:20:00.000Z",
+      "author": "jimmy",
+      "note": "add Wall below narrow-right",
+      "object": {
+        "uuid": "living-room-v2-1-far-narrow-right-below",
+        "name": "Wall below narrow-right",
+        "description": "context only",
+        "type": "box",
+        "dimensions": [
+          10,
+          4,
+          42
+        ],
+        "position": [
+          105,
+          218,
+          21
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-room-shell",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 21,
+      "op": "add",
+      "time": "2026-11-01T10:21:00.000Z",
+      "author": "jimmy",
+      "note": "add Wall above narrow-right",
+      "object": {
+        "uuid": "living-room-v2-1-far-narrow-right-above",
+        "name": "Wall above narrow-right",
+        "description": "context only",
+        "type": "box",
+        "dimensions": [
+          10,
+          4,
+          12
+        ],
+        "position": [
+          105,
+          218,
+          90
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-room-shell",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 22,
+      "op": "add",
+      "time": "2026-11-01T10:22:00.000Z",
+      "author": "jimmy",
+      "note": "add Wall piece",
+      "object": {
+        "uuid": "living-room-v2-1-far-x110",
+        "name": "Wall piece",
+        "description": "context only",
+        "type": "box",
+        "dimensions": [
+          8,
+          4,
+          96
+        ],
+        "position": [
+          114,
+          218,
+          48
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-room-shell",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 23,
+      "op": "add",
+      "time": "2026-11-01T10:23:00.000Z",
+      "author": "jimmy",
+      "note": "add Wall above door",
+      "object": {
+        "uuid": "living-room-v2-1-far-door-above",
+        "name": "Wall above door",
+        "description": "context only",
+        "type": "box",
+        "dimensions": [
+          32,
+          4,
+          16
+        ],
+        "position": [
+          134,
+          218,
+          88
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-room-shell",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 24,
+      "op": "add",
+      "time": "2026-11-01T10:24:00.000Z",
+      "author": "jimmy",
+      "note": "add Wall piece",
+      "object": {
+        "uuid": "living-room-v2-1-far-x150",
+        "name": "Wall piece",
+        "description": "context only",
+        "type": "box",
+        "dimensions": [
+          6,
+          4,
+          96
+        ],
+        "position": [
+          153,
+          218,
+          48
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-room-shell",
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 25,
+      "op": "add",
+      "time": "2026-11-01T10:25:00.000Z",
+      "author": "jimmy",
+      "note": "add Window glass, big",
+      "object": {
+        "uuid": "living-room-v2-1-glass-big",
+        "name": "Window glass, big",
+        "description": "pane in the opening",
+        "type": "box",
+        "dimensions": [
+          58,
+          0.5,
+          48
+        ],
+        "position": [
+          63,
+          215.75,
+          60
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-windows",
+        "material": "glass"
+      }
+    },
+    {
+      "seq": 26,
+      "op": "add",
+      "time": "2026-11-01T10:26:00.000Z",
+      "author": "jimmy",
+      "note": "add Window glass, narrow-right",
+      "object": {
+        "uuid": "living-room-v2-1-glass-narrow-right",
+        "name": "Window glass, narrow-right",
+        "description": "pane in the opening",
+        "type": "box",
+        "dimensions": [
+          10,
+          0.5,
+          42
+        ],
+        "position": [
+          105,
+          215.75,
+          63
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-windows",
+        "material": "glass"
+      }
+    },
+    {
+      "seq": 27,
+      "op": "add",
+      "time": "2026-11-01T10:27:00.000Z",
+      "author": "jimmy",
+      "note": "add Front door",
+      "object": {
+        "uuid": "living-room-v2-1-door-panel",
+        "name": "Front door",
+        "description": "brown door in the far wall, right side",
+        "type": "box",
+        "dimensions": [
+          32,
+          1.5,
+          80
+        ],
+        "position": [
+          134,
+          215.25,
+          40
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-room-shell",
+        "material": "door"
+      }
+    },
+    {
+      "seq": 28,
+      "op": "add",
+      "time": "2026-11-01T10:28:00.000Z",
+      "author": "jimmy",
+      "note": "add Yellow bookcase, two units",
+      "object": {
+        "uuid": "living-room-v2-1-bookcase",
+        "name": "Yellow bookcase, two units",
+        "description": "eight cubes, 14 in each, along the left wall",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 29,
+      "op": "add",
+      "time": "2026-11-01T10:29:00.000Z",
+      "author": "jimmy",
+      "note": "add Bookcase back",
+      "object": {
+        "uuid": "living-room-v2-1-bc-back",
+        "name": "Bookcase back",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          0.8,
+          112,
+          28
+        ],
+        "position": [
+          13.6,
+          56,
+          14
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "yellow"
+      }
+    },
+    {
+      "seq": 30,
+      "op": "add",
+      "time": "2026-11-01T10:30:00.000Z",
+      "author": "jimmy",
+      "note": "add Bookcase bottom",
+      "object": {
+        "uuid": "living-room-v2-1-bc-shelf-bottom",
+        "name": "Bookcase bottom",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          112,
+          1.2
+        ],
+        "position": [
+          7,
+          56,
+          0.6
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "yellow"
+      }
+    },
+    {
+      "seq": 31,
+      "op": "add",
+      "time": "2026-11-01T10:31:00.000Z",
+      "author": "jimmy",
+      "note": "add Bookcase middle shelf",
+      "object": {
+        "uuid": "living-room-v2-1-bc-shelf-middle",
+        "name": "Bookcase middle shelf",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          112,
+          1.2
+        ],
+        "position": [
+          7,
+          56,
+          14
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "yellow"
+      }
+    },
+    {
+      "seq": 32,
+      "op": "add",
+      "time": "2026-11-01T10:32:00.000Z",
+      "author": "jimmy",
+      "note": "add Bookcase top",
+      "object": {
+        "uuid": "living-room-v2-1-bc-shelf-top",
+        "name": "Bookcase top",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          112,
+          1.2
+        ],
+        "position": [
+          7,
+          56,
+          27.4
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "yellow"
+      }
+    },
+    {
+      "seq": 33,
+      "op": "add",
+      "time": "2026-11-01T10:33:00.000Z",
+      "author": "jimmy",
+      "note": "add Bookcase near end",
+      "object": {
+        "uuid": "living-room-v2-1-bc-side-near",
+        "name": "Bookcase near end",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          1.2,
+          28
+        ],
+        "position": [
+          7,
+          0.6,
+          14
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "yellow"
+      }
+    },
+    {
+      "seq": 34,
+      "op": "add",
+      "time": "2026-11-01T10:34:00.000Z",
+      "author": "jimmy",
+      "note": "add Bookcase far end",
+      "object": {
+        "uuid": "living-room-v2-1-bc-side-far",
+        "name": "Bookcase far end",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          1.2,
+          28
+        ],
+        "position": [
+          7,
+          111.4,
+          14
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "yellow"
+      }
+    },
+    {
+      "seq": 35,
+      "op": "add",
+      "time": "2026-11-01T10:35:00.000Z",
+      "author": "jimmy",
+      "note": "add Bookcase divider at 14 in",
+      "object": {
+        "uuid": "living-room-v2-1-bc-divider-14",
+        "name": "Bookcase divider at 14 in",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          1.2,
+          28
+        ],
+        "position": [
+          7,
+          14,
+          14
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "yellow"
+      }
+    },
+    {
+      "seq": 36,
+      "op": "add",
+      "time": "2026-11-01T10:36:00.000Z",
+      "author": "jimmy",
+      "note": "add Bookcase divider at 28 in",
+      "object": {
+        "uuid": "living-room-v2-1-bc-divider-28",
+        "name": "Bookcase divider at 28 in",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          1.2,
+          28
+        ],
+        "position": [
+          7,
+          28,
+          14
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "yellow"
+      }
+    },
+    {
+      "seq": 37,
+      "op": "add",
+      "time": "2026-11-01T10:37:00.000Z",
+      "author": "jimmy",
+      "note": "add Bookcase divider at 42 in",
+      "object": {
+        "uuid": "living-room-v2-1-bc-divider-42",
+        "name": "Bookcase divider at 42 in",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          1.2,
+          28
+        ],
+        "position": [
+          7,
+          42,
+          14
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "yellow"
+      }
+    },
+    {
+      "seq": 38,
+      "op": "add",
+      "time": "2026-11-01T10:38:00.000Z",
+      "author": "jimmy",
+      "note": "add Bookcase divider at 56 in",
+      "object": {
+        "uuid": "living-room-v2-1-bc-divider-56",
+        "name": "Bookcase divider at 56 in",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          1.2,
+          28
+        ],
+        "position": [
+          7,
+          56,
+          14
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "yellow"
+      }
+    },
+    {
+      "seq": 39,
+      "op": "add",
+      "time": "2026-11-01T10:39:00.000Z",
+      "author": "jimmy",
+      "note": "add Bookcase divider at 70 in",
+      "object": {
+        "uuid": "living-room-v2-1-bc-divider-70",
+        "name": "Bookcase divider at 70 in",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          1.2,
+          28
+        ],
+        "position": [
+          7,
+          70,
+          14
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "yellow"
+      }
+    },
+    {
+      "seq": 40,
+      "op": "add",
+      "time": "2026-11-01T10:40:00.000Z",
+      "author": "jimmy",
+      "note": "add Bookcase divider at 84 in",
+      "object": {
+        "uuid": "living-room-v2-1-bc-divider-84",
+        "name": "Bookcase divider at 84 in",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          1.2,
+          28
+        ],
+        "position": [
+          7,
+          84,
+          14
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "yellow"
+      }
+    },
+    {
+      "seq": 41,
+      "op": "add",
+      "time": "2026-11-01T10:41:00.000Z",
+      "author": "jimmy",
+      "note": "add Bookcase divider at 98 in",
+      "object": {
+        "uuid": "living-room-v2-1-bc-divider-98",
+        "name": "Bookcase divider at 98 in",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          1.2,
+          28
+        ],
+        "position": [
+          7,
+          98,
+          14
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "yellow"
+      }
+    },
+    {
+      "seq": 42,
+      "op": "add",
+      "time": "2026-11-01T10:42:00.000Z",
+      "author": "jimmy",
+      "note": "add Black TV console",
+      "object": {
+        "uuid": "living-room-v2-1-tv-console",
+        "name": "Black TV console",
+        "description": "low black stand on the TV unit",
+        "type": "box",
+        "dimensions": [
+          14,
+          56,
+          12
+        ],
+        "position": [
+          7,
+          84,
+          34
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-tv-wall",
+        "material": "black"
+      }
+    },
+    {
+      "seq": 43,
+      "op": "add",
+      "time": "2026-11-01T10:43:00.000Z",
+      "author": "jimmy",
+      "note": "add TV",
+      "object": {
+        "uuid": "living-room-v2-1-tv",
+        "name": "TV",
+        "description": "large flat TV on the console, about 60 in wide, face toward the room",
+        "type": "box",
+        "dimensions": [
+          3,
+          60,
+          34
+        ],
+        "position": [
+          4.5,
+          84,
+          57
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-tv-wall",
+        "material": "black"
+      }
+    },
+    {
+      "seq": 44,
+      "op": "add",
+      "time": "2026-11-01T10:44:00.000Z",
+      "author": "jimmy",
+      "note": "add Grey sofa",
+      "object": {
+        "uuid": "living-room-v2-1-sofa",
+        "name": "Grey sofa",
+        "description": "under the big window on the far wall, 64 in long",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 45,
+      "op": "add",
+      "time": "2026-11-01T10:45:00.000Z",
+      "author": "jimmy",
+      "note": "add Sofa base",
+      "object": {
+        "uuid": "living-room-v2-1-sofa-base",
+        "name": "Sofa base",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          64,
+          34,
+          10
+        ],
+        "position": [
+          66,
+          199,
+          5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-sofa",
+        "material": "sofa"
+      }
+    },
+    {
+      "seq": 46,
+      "op": "add",
+      "time": "2026-11-01T10:46:00.000Z",
+      "author": "jimmy",
+      "note": "add Sofa back",
+      "object": {
+        "uuid": "living-room-v2-1-sofa-back",
+        "name": "Sofa back",
+        "description": "low back against the far wall",
+        "type": "box",
+        "dimensions": [
+          64,
+          8,
+          22
+        ],
+        "position": [
+          66,
+          212,
+          21
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-sofa",
+        "material": "sofa"
+      }
+    },
+    {
+      "seq": 47,
+      "op": "add",
+      "time": "2026-11-01T10:47:00.000Z",
+      "author": "jimmy",
+      "note": "add Sofa arm, left",
+      "object": {
+        "uuid": "living-room-v2-1-sofa-arm-l",
+        "name": "Sofa arm, left",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          6,
+          34,
+          16
+        ],
+        "position": [
+          37,
+          199,
+          8
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-sofa",
+        "material": "sofa"
+      }
+    },
+    {
+      "seq": 48,
+      "op": "add",
+      "time": "2026-11-01T10:48:00.000Z",
+      "author": "jimmy",
+      "note": "add Sofa arm, right",
+      "object": {
+        "uuid": "living-room-v2-1-sofa-arm-r",
+        "name": "Sofa arm, right",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          6,
+          34,
+          16
+        ],
+        "position": [
+          95,
+          199,
+          8
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-sofa",
+        "material": "sofa"
+      }
+    },
+    {
+      "seq": 49,
+      "op": "add",
+      "time": "2026-11-01T10:49:00.000Z",
+      "author": "jimmy",
+      "note": "add Seat cushions",
+      "object": {
+        "uuid": "living-room-v2-1-sofa-cushions",
+        "name": "Seat cushions",
+        "description": "two seat cushions",
+        "type": "box",
+        "dimensions": [
+          52,
+          26,
+          6
+        ],
+        "position": [
+          66,
+          195,
+          13
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-sofa",
+        "material": "sofa"
+      }
+    },
+    {
+      "seq": 50,
+      "op": "add",
+      "time": "2026-11-01T10:50:00.000Z",
+      "author": "jimmy",
+      "note": "add Children’s table top",
+      "object": {
+        "uuid": "living-room-v2-1-table-top",
+        "name": "Children’s table top",
+        "description": "light wood top, 22 in high",
+        "type": "box",
+        "dimensions": [
+          44,
+          30,
+          1.5
+        ],
+        "position": [
+          66,
+          165,
+          21.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-childrens-table",
+        "material": "tableWood"
+      }
+    },
+    {
+      "seq": 51,
+      "op": "add",
+      "time": "2026-11-01T10:51:00.000Z",
+      "author": "jimmy",
+      "note": "add Table leg 1",
+      "object": {
+        "uuid": "living-room-v2-1-table-leg-1",
+        "name": "Table leg 1",
+        "description": "white leg",
+        "type": "cylinder",
+        "dimensions": [
+          1,
+          20.5
+        ],
+        "position": [
+          44,
+          153,
+          10.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-childrens-table",
+        "material": "tableLeg"
+      }
+    },
+    {
+      "seq": 52,
+      "op": "add",
+      "time": "2026-11-01T10:52:00.000Z",
+      "author": "jimmy",
+      "note": "add Table leg 2",
+      "object": {
+        "uuid": "living-room-v2-1-table-leg-2",
+        "name": "Table leg 2",
+        "description": "white leg",
+        "type": "cylinder",
+        "dimensions": [
+          1,
+          20.5
+        ],
+        "position": [
+          88,
+          153,
+          10.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-childrens-table",
+        "material": "tableLeg"
+      }
+    },
+    {
+      "seq": 53,
+      "op": "add",
+      "time": "2026-11-01T10:53:00.000Z",
+      "author": "jimmy",
+      "note": "add Table leg 3",
+      "object": {
+        "uuid": "living-room-v2-1-table-leg-3",
+        "name": "Table leg 3",
+        "description": "white leg",
+        "type": "cylinder",
+        "dimensions": [
+          1,
+          20.5
+        ],
+        "position": [
+          44,
+          177,
+          10.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-childrens-table",
+        "material": "tableLeg"
+      }
+    },
+    {
+      "seq": 54,
+      "op": "add",
+      "time": "2026-11-01T10:54:00.000Z",
+      "author": "jimmy",
+      "note": "add Table leg 4",
+      "object": {
+        "uuid": "living-room-v2-1-table-leg-4",
+        "name": "Table leg 4",
+        "description": "white leg",
+        "type": "cylinder",
+        "dimensions": [
+          1,
+          20.5
+        ],
+        "position": [
+          88,
+          177,
+          10.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-childrens-table",
+        "material": "tableLeg"
+      }
+    },
+    {
+      "seq": 55,
+      "op": "add",
+      "time": "2026-11-01T10:55:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair 1",
+      "object": {
+        "uuid": "living-room-v2-1-chair-1",
+        "name": "Wooden chair 1",
+        "description": "near side of the table, faces it",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 56,
+      "op": "add",
+      "time": "2026-11-01T10:56:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair 1 seat",
+      "object": {
+        "uuid": "living-room-v2-1-chair-1-seat",
+        "name": "Wooden chair 1 seat",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          14,
+          1.5
+        ],
+        "position": [
+          56,
+          138,
+          11.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-1",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 57,
+      "op": "add",
+      "time": "2026-11-01T10:57:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair 1 back",
+      "object": {
+        "uuid": "living-room-v2-1-chair-1-back",
+        "name": "Wooden chair 1 back",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          1.2,
+          10
+        ],
+        "position": [
+          56,
+          131.25,
+          17
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-1",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 58,
+      "op": "add",
+      "time": "2026-11-01T10:58:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair 1 leg 1",
+      "object": {
+        "uuid": "living-room-v2-1-chair-1-leg-1",
+        "name": "Wooden chair 1 leg 1",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          1.2,
+          10.5
+        ],
+        "position": [
+          50,
+          132,
+          5.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-1",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 59,
+      "op": "add",
+      "time": "2026-11-01T10:59:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair 1 leg 2",
+      "object": {
+        "uuid": "living-room-v2-1-chair-1-leg-2",
+        "name": "Wooden chair 1 leg 2",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          1.2,
+          10.5
+        ],
+        "position": [
+          62,
+          132,
+          5.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-1",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 60,
+      "op": "add",
+      "time": "2026-11-01T11:00:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair 1 leg 3",
+      "object": {
+        "uuid": "living-room-v2-1-chair-1-leg-3",
+        "name": "Wooden chair 1 leg 3",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          1.2,
+          10.5
+        ],
+        "position": [
+          50,
+          144,
+          5.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-1",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 61,
+      "op": "add",
+      "time": "2026-11-01T11:01:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair 1 leg 4",
+      "object": {
+        "uuid": "living-room-v2-1-chair-1-leg-4",
+        "name": "Wooden chair 1 leg 4",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          1.2,
+          10.5
+        ],
+        "position": [
+          62,
+          144,
+          5.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-1",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 62,
+      "op": "add",
+      "time": "2026-11-01T11:02:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair 2",
+      "object": {
+        "uuid": "living-room-v2-1-chair-2",
+        "name": "Wooden chair 2",
+        "description": "near side of the table, beside chair 1",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 63,
+      "op": "add",
+      "time": "2026-11-01T11:03:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair 2 seat",
+      "object": {
+        "uuid": "living-room-v2-1-chair-2-seat",
+        "name": "Wooden chair 2 seat",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          14,
+          1.5
+        ],
+        "position": [
+          76,
+          138,
+          11.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-2",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 64,
+      "op": "add",
+      "time": "2026-11-01T11:04:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair 2 back",
+      "object": {
+        "uuid": "living-room-v2-1-chair-2-back",
+        "name": "Wooden chair 2 back",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          1.2,
+          10
+        ],
+        "position": [
+          76,
+          131.25,
+          17
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-2",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 65,
+      "op": "add",
+      "time": "2026-11-01T11:05:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair 2 leg 1",
+      "object": {
+        "uuid": "living-room-v2-1-chair-2-leg-1",
+        "name": "Wooden chair 2 leg 1",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          1.2,
+          10.5
+        ],
+        "position": [
+          70,
+          132,
+          5.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-2",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 66,
+      "op": "add",
+      "time": "2026-11-01T11:06:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair 2 leg 2",
+      "object": {
+        "uuid": "living-room-v2-1-chair-2-leg-2",
+        "name": "Wooden chair 2 leg 2",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          1.2,
+          10.5
+        ],
+        "position": [
+          82,
+          132,
+          5.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-2",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 67,
+      "op": "add",
+      "time": "2026-11-01T11:07:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair 2 leg 3",
+      "object": {
+        "uuid": "living-room-v2-1-chair-2-leg-3",
+        "name": "Wooden chair 2 leg 3",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          1.2,
+          10.5
+        ],
+        "position": [
+          70,
+          144,
+          5.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-2",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 68,
+      "op": "add",
+      "time": "2026-11-01T11:08:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair 2 leg 4",
+      "object": {
+        "uuid": "living-room-v2-1-chair-2-leg-4",
+        "name": "Wooden chair 2 leg 4",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          1.2,
+          10.5
+        ],
+        "position": [
+          82,
+          144,
+          5.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-2",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 69,
+      "op": "add",
+      "time": "2026-11-01T11:09:00.000Z",
+      "author": "jimmy",
+      "note": "add Blue chair",
+      "object": {
+        "uuid": "living-room-v2-1-chair-blue",
+        "name": "Blue chair",
+        "description": "small plastic chair, right side of the table",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 70,
+      "op": "add",
+      "time": "2026-11-01T11:10:00.000Z",
+      "author": "jimmy",
+      "note": "add Blue chair seat",
+      "object": {
+        "uuid": "living-room-v2-1-chair-blue-seat",
+        "name": "Blue chair seat",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          14,
+          1.5
+        ],
+        "position": [
+          106,
+          156,
+          9.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-blue",
+        "material": "chairBlue"
+      }
+    },
+    {
+      "seq": 71,
+      "op": "add",
+      "time": "2026-11-01T11:11:00.000Z",
+      "author": "jimmy",
+      "note": "add Blue chair back",
+      "object": {
+        "uuid": "living-room-v2-1-chair-blue-back",
+        "name": "Blue chair back",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          1.2,
+          10
+        ],
+        "position": [
+          106,
+          149.25,
+          15
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-blue",
+        "material": "chairBlue"
+      }
+    },
+    {
+      "seq": 72,
+      "op": "add",
+      "time": "2026-11-01T11:12:00.000Z",
+      "author": "jimmy",
+      "note": "add Blue chair leg 1",
+      "object": {
+        "uuid": "living-room-v2-1-chair-blue-leg-1",
+        "name": "Blue chair leg 1",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          1.2,
+          8.5
+        ],
+        "position": [
+          100,
+          150,
+          4.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-blue",
+        "material": "chairBlue"
+      }
+    },
+    {
+      "seq": 73,
+      "op": "add",
+      "time": "2026-11-01T11:13:00.000Z",
+      "author": "jimmy",
+      "note": "add Blue chair leg 2",
+      "object": {
+        "uuid": "living-room-v2-1-chair-blue-leg-2",
+        "name": "Blue chair leg 2",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          1.2,
+          8.5
+        ],
+        "position": [
+          112,
+          150,
+          4.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-blue",
+        "material": "chairBlue"
+      }
+    },
+    {
+      "seq": 74,
+      "op": "add",
+      "time": "2026-11-01T11:14:00.000Z",
+      "author": "jimmy",
+      "note": "add Blue chair leg 3",
+      "object": {
+        "uuid": "living-room-v2-1-chair-blue-leg-3",
+        "name": "Blue chair leg 3",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          1.2,
+          8.5
+        ],
+        "position": [
+          100,
+          162,
+          4.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-blue",
+        "material": "chairBlue"
+      }
+    },
+    {
+      "seq": 75,
+      "op": "add",
+      "time": "2026-11-01T11:15:00.000Z",
+      "author": "jimmy",
+      "note": "add Blue chair leg 4",
+      "object": {
+        "uuid": "living-room-v2-1-chair-blue-leg-4",
+        "name": "Blue chair leg 4",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          1.2,
+          8.5
+        ],
+        "position": [
+          112,
+          162,
+          4.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-blue",
+        "material": "chairBlue"
+      }
+    },
+    {
+      "seq": 76,
+      "op": "add",
+      "time": "2026-11-01T11:16:00.000Z",
+      "author": "jimmy",
+      "note": "add Monstera pot",
+      "object": {
+        "uuid": "living-room-v2-1-monstera-pot",
+        "name": "Monstera pot",
+        "description": "terracotta pot, far left",
+        "type": "cylinder",
+        "dimensions": [
+          8,
+          16
+        ],
+        "position": [
+          22,
+          204,
+          8
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-plants",
+        "material": "pot"
+      }
+    },
+    {
+      "seq": 77,
+      "op": "add",
+      "time": "2026-11-01T11:17:00.000Z",
+      "author": "jimmy",
+      "note": "add Monstera leaves",
+      "object": {
+        "uuid": "living-room-v2-1-monstera-leaves",
+        "name": "Monstera leaves",
+        "description": "leafy plant, far left",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 78,
+      "op": "add",
+      "time": "2026-11-01T11:18:00.000Z",
+      "author": "jimmy",
+      "note": "add Monstera leaves, cluster 1",
+      "object": {
+        "uuid": "living-room-v2-1-monstera-leaves-1",
+        "name": "Monstera leaves, cluster 1",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          7.700000000000001
+        ],
+        "position": [
+          22,
+          204,
+          50.9
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-monstera-leaves",
+        "material": "leafLight"
+      }
+    },
+    {
+      "seq": 79,
+      "op": "add",
+      "time": "2026-11-01T11:19:00.000Z",
+      "author": "jimmy",
+      "note": "add Monstera leaves, cluster 2",
+      "object": {
+        "uuid": "living-room-v2-1-monstera-leaves-2",
+        "name": "Monstera leaves, cluster 2",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          7.700000000000001
+        ],
+        "position": [
+          12.200000000000001,
+          205.4,
+          47.4
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-monstera-leaves",
+        "material": "leaf"
+      }
+    },
+    {
+      "seq": 80,
+      "op": "add",
+      "time": "2026-11-01T11:20:00.000Z",
+      "author": "jimmy",
+      "note": "add Monstera leaves, cluster 3",
+      "object": {
+        "uuid": "living-room-v2-1-monstera-leaves-3",
+        "name": "Monstera leaves, cluster 3",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          7.700000000000001
+        ],
+        "position": [
+          31.799999999999997,
+          204,
+          48.8
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-monstera-leaves",
+        "material": "leafLight"
+      }
+    },
+    {
+      "seq": 81,
+      "op": "add",
+      "time": "2026-11-01T11:21:00.000Z",
+      "author": "jimmy",
+      "note": "add Monstera leaves, cluster 4",
+      "object": {
+        "uuid": "living-room-v2-1-monstera-leaves-4",
+        "name": "Monstera leaves, cluster 4",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          7.700000000000001
+        ],
+        "position": [
+          24.8,
+          197,
+          44.6
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-monstera-leaves",
+        "material": "leaf"
+      }
+    },
+    {
+      "seq": 82,
+      "op": "add",
+      "time": "2026-11-01T11:22:00.000Z",
+      "author": "jimmy",
+      "note": "add Monstera leaves, cluster 5",
+      "object": {
+        "uuid": "living-room-v2-1-monstera-leaves-5",
+        "name": "Monstera leaves, cluster 5",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          7.700000000000001
+        ],
+        "position": [
+          17.8,
+          212.4,
+          53
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-monstera-leaves",
+        "material": "leafLight"
+      }
+    },
+    {
+      "seq": 83,
+      "op": "add",
+      "time": "2026-11-01T11:23:00.000Z",
+      "author": "jimmy",
+      "note": "add Monstera leaves, cluster 6",
+      "object": {
+        "uuid": "living-room-v2-1-monstera-leaves-6",
+        "name": "Monstera leaves, cluster 6",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          7.700000000000001
+        ],
+        "position": [
+          29,
+          209.6,
+          41.8
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-monstera-leaves",
+        "material": "leaf"
+      }
+    },
+    {
+      "seq": 84,
+      "op": "add",
+      "time": "2026-11-01T11:24:00.000Z",
+      "author": "jimmy",
+      "note": "add Fiddle-leaf pot",
+      "object": {
+        "uuid": "living-room-v2-1-fig-pot",
+        "name": "Fiddle-leaf pot",
+        "description": "blue pot, near right corner",
+        "type": "cylinder",
+        "dimensions": [
+          10,
+          20
+        ],
+        "position": [
+          140,
+          30,
+          10
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-plants",
+        "material": "potBlue"
+      }
+    },
+    {
+      "seq": 85,
+      "op": "add",
+      "time": "2026-11-01T11:25:00.000Z",
+      "author": "jimmy",
+      "note": "add Fiddle-leaf trunk",
+      "object": {
+        "uuid": "living-room-v2-1-fig-trunk",
+        "name": "Fiddle-leaf trunk",
+        "description": "thin tall trunk",
+        "type": "cylinder",
+        "dimensions": [
+          0.8,
+          70
+        ],
+        "position": [
+          140,
+          30,
+          55
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-plants",
+        "material": "trunk"
+      }
+    },
+    {
+      "seq": 86,
+      "op": "add",
+      "time": "2026-11-01T11:26:00.000Z",
+      "author": "jimmy",
+      "note": "add Fiddle-leaf crown",
+      "object": {
+        "uuid": "living-room-v2-1-fig-leaves",
+        "name": "Fiddle-leaf crown",
+        "description": "big leaves at the top",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 87,
+      "op": "add",
+      "time": "2026-11-01T11:27:00.000Z",
+      "author": "jimmy",
+      "note": "add Fiddle-leaf crown, cluster 1",
+      "object": {
+        "uuid": "living-room-v2-1-fig-leaves-1",
+        "name": "Fiddle-leaf crown, cluster 1",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          8.8
+        ],
+        "position": [
+          140,
+          30,
+          89.6
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-fig-leaves",
+        "material": "leafLight"
+      }
+    },
+    {
+      "seq": 88,
+      "op": "add",
+      "time": "2026-11-01T11:28:00.000Z",
+      "author": "jimmy",
+      "note": "add Fiddle-leaf crown, cluster 2",
+      "object": {
+        "uuid": "living-room-v2-1-fig-leaves-2",
+        "name": "Fiddle-leaf crown, cluster 2",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          8.8
+        ],
+        "position": [
+          128.8,
+          31.6,
+          85.6
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-fig-leaves",
+        "material": "leaf"
+      }
+    },
+    {
+      "seq": 89,
+      "op": "add",
+      "time": "2026-11-01T11:29:00.000Z",
+      "author": "jimmy",
+      "note": "add Fiddle-leaf crown, cluster 3",
+      "object": {
+        "uuid": "living-room-v2-1-fig-leaves-3",
+        "name": "Fiddle-leaf crown, cluster 3",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          8.8
+        ],
+        "position": [
+          151.2,
+          30,
+          87.2
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-fig-leaves",
+        "material": "leafLight"
+      }
+    },
+    {
+      "seq": 90,
+      "op": "add",
+      "time": "2026-11-01T11:30:00.000Z",
+      "author": "jimmy",
+      "note": "add Fiddle-leaf crown, cluster 4",
+      "object": {
+        "uuid": "living-room-v2-1-fig-leaves-4",
+        "name": "Fiddle-leaf crown, cluster 4",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          8.8
+        ],
+        "position": [
+          143.2,
+          22,
+          82.4
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-fig-leaves",
+        "material": "leaf"
+      }
+    },
+    {
+      "seq": 91,
+      "op": "add",
+      "time": "2026-11-01T11:31:00.000Z",
+      "author": "jimmy",
+      "note": "add Fiddle-leaf crown, cluster 5",
+      "object": {
+        "uuid": "living-room-v2-1-fig-leaves-5",
+        "name": "Fiddle-leaf crown, cluster 5",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          8.8
+        ],
+        "position": [
+          135.2,
+          39.6,
+          92
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-fig-leaves",
+        "material": "leafLight"
+      }
+    },
+    {
+      "seq": 92,
+      "op": "add",
+      "time": "2026-11-01T11:32:00.000Z",
+      "author": "jimmy",
+      "note": "add Fiddle-leaf crown, cluster 6",
+      "object": {
+        "uuid": "living-room-v2-1-fig-leaves-6",
+        "name": "Fiddle-leaf crown, cluster 6",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          8.8
+        ],
+        "position": [
+          148,
+          36.4,
+          79.2
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-fig-leaves",
+        "material": "leaf"
+      }
+    },
+    {
+      "seq": 93,
+      "op": "add",
+      "time": "2026-11-01T11:33:00.000Z",
+      "author": "jimmy",
+      "note": "add Black suitcase",
+      "object": {
+        "uuid": "living-room-v2-1-suitcase",
+        "name": "Black suitcase",
+        "description": "upright suitcase, near end of the bookcase",
+        "type": "box",
+        "dimensions": [
+          14,
+          22,
+          22
+        ],
+        "position": [
+          28,
+          40,
+          11
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-floor-items",
+        "material": "black"
+      }
+    },
+    {
+      "seq": 94,
+      "op": "add",
+      "time": "2026-11-01T11:34:00.000Z",
+      "author": "jimmy",
+      "note": "add Bin",
+      "object": {
+        "uuid": "living-room-v2-1-bin",
+        "name": "Bin",
+        "description": "white bin, near middle",
+        "type": "cylinder",
+        "dimensions": [
+          7,
+          16
+        ],
+        "position": [
+          46,
+          36,
+          8
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-floor-items",
+        "material": "bin"
+      }
+    },
+    {
+      "seq": 95,
+      "op": "add",
+      "time": "2026-11-01T11:35:00.000Z",
+      "author": "jimmy",
+      "note": "add Rug",
+      "object": {
+        "uuid": "living-room-v2-1-rug",
+        "name": "Rug",
+        "description": "grey-green rug at the door",
+        "type": "box",
+        "dimensions": [
+          32,
+          24,
+          0.5
+        ],
+        "position": [
+          134,
+          186,
+          0.75
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-floor-items",
+        "material": "rug"
+      }
+    },
+    {
+      "seq": 96,
+      "op": "add",
+      "time": "2026-11-01T11:36:00.000Z",
+      "author": "jimmy",
+      "note": "add Shoe 1",
+      "object": {
+        "uuid": "living-room-v2-1-shoe-1",
+        "name": "Shoe 1",
+        "description": "dark shoe on the rug",
+        "type": "box",
+        "dimensions": [
+          8,
+          4,
+          3
+        ],
+        "position": [
+          126,
+          190,
+          2.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-floor-items",
+        "material": "shoe1"
+      }
+    },
+    {
+      "seq": 97,
+      "op": "add",
+      "time": "2026-11-01T11:37:00.000Z",
+      "author": "jimmy",
+      "note": "add Shoe 2",
+      "object": {
+        "uuid": "living-room-v2-1-shoe-2",
+        "name": "Shoe 2",
+        "description": "brown shoe on the rug",
+        "type": "box",
+        "dimensions": [
+          8,
+          4,
+          3
+        ],
+        "position": [
+          142,
+          194,
+          2.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-floor-items",
+        "material": "shoe2"
+      }
+    },
+    {
+      "seq": 98,
+      "op": "add",
+      "time": "2026-11-01T11:38:00.000Z",
+      "author": "jimmy",
+      "note": "add Cork ceiling tile",
+      "object": {
+        "uuid": "living-room-v2-1-ceiling-tile-1-1",
+        "name": "Cork ceiling tile",
+        "description": "brown cork tile, straight grid",
+        "type": "box",
+        "dimensions": [
+          44,
+          32,
+          1
+        ],
+        "position": [
+          26,
+          24,
+          95.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-ceiling",
+        "material": "cork"
+      }
+    },
+    {
+      "seq": 99,
+      "op": "add",
+      "time": "2026-11-01T11:39:00.000Z",
+      "author": "jimmy",
+      "note": "add Cork ceiling tile",
+      "object": {
+        "uuid": "living-room-v2-1-ceiling-tile-1-2",
+        "name": "Cork ceiling tile",
+        "description": "brown cork tile, straight grid",
+        "type": "box",
+        "dimensions": [
+          44,
+          32,
+          1
+        ],
+        "position": [
+          26,
+          60,
+          95.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-ceiling",
+        "material": "cork"
+      }
+    },
+    {
+      "seq": 100,
+      "op": "add",
+      "time": "2026-11-01T11:40:00.000Z",
+      "author": "jimmy",
+      "note": "add Cork ceiling tile",
+      "object": {
+        "uuid": "living-room-v2-1-ceiling-tile-1-3",
+        "name": "Cork ceiling tile",
+        "description": "brown cork tile, straight grid",
+        "type": "box",
+        "dimensions": [
+          44,
+          32,
+          1
+        ],
+        "position": [
+          26,
+          96,
+          95.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-ceiling",
+        "material": "cork"
+      }
+    },
+    {
+      "seq": 101,
+      "op": "add",
+      "time": "2026-11-01T11:41:00.000Z",
+      "author": "jimmy",
+      "note": "add Cork ceiling tile",
+      "object": {
+        "uuid": "living-room-v2-1-ceiling-tile-1-4",
+        "name": "Cork ceiling tile",
+        "description": "brown cork tile, straight grid",
+        "type": "box",
+        "dimensions": [
+          44,
+          32,
+          1
+        ],
+        "position": [
+          26,
+          132,
+          95.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-ceiling",
+        "material": "cork"
+      }
+    },
+    {
+      "seq": 102,
+      "op": "add",
+      "time": "2026-11-01T11:42:00.000Z",
+      "author": "jimmy",
+      "note": "add Cork ceiling tile",
+      "object": {
+        "uuid": "living-room-v2-1-ceiling-tile-1-5",
+        "name": "Cork ceiling tile",
+        "description": "brown cork tile, straight grid",
+        "type": "box",
+        "dimensions": [
+          44,
+          32,
+          1
+        ],
+        "position": [
+          26,
+          168,
+          95.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-ceiling",
+        "material": "cork"
+      }
+    },
+    {
+      "seq": 103,
+      "op": "add",
+      "time": "2026-11-01T11:43:00.000Z",
+      "author": "jimmy",
+      "note": "add Cork ceiling tile",
+      "object": {
+        "uuid": "living-room-v2-1-ceiling-tile-1-6",
+        "name": "Cork ceiling tile",
+        "description": "brown cork tile, straight grid",
+        "type": "box",
+        "dimensions": [
+          44,
+          32,
+          1
+        ],
+        "position": [
+          26,
+          204,
+          95.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-ceiling",
+        "material": "cork"
+      }
+    },
+    {
+      "seq": 104,
+      "op": "add",
+      "time": "2026-11-01T11:44:00.000Z",
+      "author": "jimmy",
+      "note": "add Cork ceiling tile",
+      "object": {
+        "uuid": "living-room-v2-1-ceiling-tile-2-1",
+        "name": "Cork ceiling tile",
+        "description": "brown cork tile, straight grid",
+        "type": "box",
+        "dimensions": [
+          44,
+          32,
+          1
+        ],
+        "position": [
+          78,
+          24,
+          95.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-ceiling",
+        "material": "cork"
+      }
+    },
+    {
+      "seq": 105,
+      "op": "add",
+      "time": "2026-11-01T11:45:00.000Z",
+      "author": "jimmy",
+      "note": "add Cork ceiling tile",
+      "object": {
+        "uuid": "living-room-v2-1-ceiling-tile-2-2",
+        "name": "Cork ceiling tile",
+        "description": "brown cork tile, straight grid",
+        "type": "box",
+        "dimensions": [
+          44,
+          32,
+          1
+        ],
+        "position": [
+          78,
+          60,
+          95.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-ceiling",
+        "material": "cork"
+      }
+    },
+    {
+      "seq": 106,
+      "op": "add",
+      "time": "2026-11-01T11:46:00.000Z",
+      "author": "jimmy",
+      "note": "add Cork ceiling tile",
+      "object": {
+        "uuid": "living-room-v2-1-ceiling-tile-2-3",
+        "name": "Cork ceiling tile",
+        "description": "brown cork tile, straight grid",
+        "type": "box",
+        "dimensions": [
+          44,
+          32,
+          1
+        ],
+        "position": [
+          78,
+          96,
+          95.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-ceiling",
+        "material": "cork"
+      }
+    },
+    {
+      "seq": 107,
+      "op": "add",
+      "time": "2026-11-01T11:47:00.000Z",
+      "author": "jimmy",
+      "note": "add Cork ceiling tile",
+      "object": {
+        "uuid": "living-room-v2-1-ceiling-tile-2-4",
+        "name": "Cork ceiling tile",
+        "description": "brown cork tile, straight grid",
+        "type": "box",
+        "dimensions": [
+          44,
+          32,
+          1
+        ],
+        "position": [
+          78,
+          132,
+          95.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-ceiling",
+        "material": "cork"
+      }
+    },
+    {
+      "seq": 108,
+      "op": "add",
+      "time": "2026-11-01T11:48:00.000Z",
+      "author": "jimmy",
+      "note": "add Cork ceiling tile",
+      "object": {
+        "uuid": "living-room-v2-1-ceiling-tile-2-5",
+        "name": "Cork ceiling tile",
+        "description": "brown cork tile, straight grid",
+        "type": "box",
+        "dimensions": [
+          44,
+          32,
+          1
+        ],
+        "position": [
+          78,
+          168,
+          95.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-ceiling",
+        "material": "cork"
+      }
+    },
+    {
+      "seq": 109,
+      "op": "add",
+      "time": "2026-11-01T11:49:00.000Z",
+      "author": "jimmy",
+      "note": "add Cork ceiling tile",
+      "object": {
+        "uuid": "living-room-v2-1-ceiling-tile-2-6",
+        "name": "Cork ceiling tile",
+        "description": "brown cork tile, straight grid",
+        "type": "box",
+        "dimensions": [
+          44,
+          32,
+          1
+        ],
+        "position": [
+          78,
+          204,
+          95.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-ceiling",
+        "material": "cork"
+      }
+    },
+    {
+      "seq": 110,
+      "op": "add",
+      "time": "2026-11-01T11:50:00.000Z",
+      "author": "jimmy",
+      "note": "add Cork ceiling tile",
+      "object": {
+        "uuid": "living-room-v2-1-ceiling-tile-3-1",
+        "name": "Cork ceiling tile",
+        "description": "brown cork tile, straight grid",
+        "type": "box",
+        "dimensions": [
+          44,
+          32,
+          1
+        ],
+        "position": [
+          130,
+          24,
+          95.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-ceiling",
+        "material": "cork"
+      }
+    },
+    {
+      "seq": 111,
+      "op": "add",
+      "time": "2026-11-01T11:51:00.000Z",
+      "author": "jimmy",
+      "note": "add Cork ceiling tile",
+      "object": {
+        "uuid": "living-room-v2-1-ceiling-tile-3-2",
+        "name": "Cork ceiling tile",
+        "description": "brown cork tile, straight grid",
+        "type": "box",
+        "dimensions": [
+          44,
+          32,
+          1
+        ],
+        "position": [
+          130,
+          60,
+          95.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-ceiling",
+        "material": "cork"
+      }
+    },
+    {
+      "seq": 112,
+      "op": "add",
+      "time": "2026-11-01T11:52:00.000Z",
+      "author": "jimmy",
+      "note": "add Cork ceiling tile",
+      "object": {
+        "uuid": "living-room-v2-1-ceiling-tile-3-3",
+        "name": "Cork ceiling tile",
+        "description": "brown cork tile, straight grid",
+        "type": "box",
+        "dimensions": [
+          44,
+          32,
+          1
+        ],
+        "position": [
+          130,
+          96,
+          95.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-ceiling",
+        "material": "cork"
+      }
+    },
+    {
+      "seq": 113,
+      "op": "add",
+      "time": "2026-11-01T11:53:00.000Z",
+      "author": "jimmy",
+      "note": "add Cork ceiling tile",
+      "object": {
+        "uuid": "living-room-v2-1-ceiling-tile-3-4",
+        "name": "Cork ceiling tile",
+        "description": "brown cork tile, straight grid",
+        "type": "box",
+        "dimensions": [
+          44,
+          32,
+          1
+        ],
+        "position": [
+          130,
+          132,
+          95.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-ceiling",
+        "material": "cork"
+      }
+    },
+    {
+      "seq": 114,
+      "op": "add",
+      "time": "2026-11-01T11:54:00.000Z",
+      "author": "jimmy",
+      "note": "add Cork ceiling tile",
+      "object": {
+        "uuid": "living-room-v2-1-ceiling-tile-3-5",
+        "name": "Cork ceiling tile",
+        "description": "brown cork tile, straight grid",
+        "type": "box",
+        "dimensions": [
+          44,
+          32,
+          1
+        ],
+        "position": [
+          130,
+          168,
+          95.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-ceiling",
+        "material": "cork"
+      }
+    },
+    {
+      "seq": 115,
+      "op": "add",
+      "time": "2026-11-01T11:55:00.000Z",
+      "author": "jimmy",
+      "note": "add Cork ceiling tile",
+      "object": {
+        "uuid": "living-room-v2-1-ceiling-tile-3-6",
+        "name": "Cork ceiling tile",
+        "description": "brown cork tile, straight grid",
+        "type": "box",
+        "dimensions": [
+          44,
+          32,
+          1
+        ],
+        "position": [
+          130,
+          204,
+          95.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-ceiling",
+        "material": "cork"
+      }
+    },
+    {
+      "seq": 116,
+      "op": "add",
+      "time": "2026-11-01T11:56:00.000Z",
+      "author": "jimmy",
+      "note": "add Light panel 1",
+      "object": {
+        "uuid": "living-room-v2-1-light-1",
+        "name": "Light panel 1",
+        "description": "white ceiling light, near the sofa",
+        "type": "box",
+        "dimensions": [
+          36,
+          28,
+          1
+        ],
+        "position": [
+          78,
+          80,
+          95.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-ceiling",
+        "material": "lightPanel"
+      }
+    },
+    {
+      "seq": 117,
+      "op": "add",
+      "time": "2026-11-01T11:57:00.000Z",
+      "author": "jimmy",
+      "note": "add Light panel 2",
+      "object": {
+        "uuid": "living-room-v2-1-light-2",
+        "name": "Light panel 2",
+        "description": "white ceiling light, near the table",
+        "type": "box",
+        "dimensions": [
+          36,
+          28,
+          1
+        ],
+        "position": [
+          78,
+          150,
+          95.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-ceiling",
+        "material": "lightPanel"
+      }
+    },
+    {
+      "seq": 118,
+      "op": "add",
+      "time": "2026-11-01T11:58:00.000Z",
+      "author": "jimmy",
+      "note": "add Red paper diamond 1",
+      "object": {
+        "uuid": "living-room-v2-1-paper-red-1",
+        "name": "Red paper diamond 1",
+        "description": "red paper cut-out on the TV wall, above the bookcase",
+        "type": "box",
+        "dimensions": [
+          0.3,
+          9,
+          9
+        ],
+        "position": [
+          0.15,
+          40,
+          70
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-tv-wall",
+        "material": "paperRed"
+      }
+    },
+    {
+      "seq": 119,
+      "op": "add",
+      "time": "2026-11-01T11:59:00.000Z",
+      "author": "jimmy",
+      "note": "add Red paper diamond 2",
+      "object": {
+        "uuid": "living-room-v2-1-paper-red-2",
+        "name": "Red paper diamond 2",
+        "description": "red paper cut-out on the TV wall, above the bookcase",
+        "type": "box",
+        "dimensions": [
+          0.3,
+          9,
+          9
+        ],
+        "position": [
+          0.15,
+          56,
+          70
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-tv-wall",
+        "material": "paperRed"
+      }
+    },
+    {
+      "seq": 120,
+      "op": "add",
+      "time": "2026-11-01T12:00:00.000Z",
+      "author": "jimmy",
+      "note": "add Paper chart",
+      "object": {
+        "uuid": "living-room-v2-1-paper-chart",
+        "name": "Paper chart",
+        "description": "white chart with handwritten lines, TV wall",
+        "type": "box",
+        "dimensions": [
+          0.3,
+          14,
+          20
+        ],
+        "position": [
+          0.15,
+          26,
+          58
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-tv-wall",
+        "material": "paperWhite"
+      }
+    },
+    {
+      "seq": 121,
+      "op": "add",
+      "time": "2026-11-01T12:01:00.000Z",
+      "author": "jimmy",
+      "note": "add Blue poster",
+      "object": {
+        "uuid": "living-room-v2-1-poster-right",
+        "name": "Blue poster",
+        "description": "blue character chart on the right wall",
+        "type": "box",
+        "dimensions": [
+          0.3,
+          22,
+          30
+        ],
+        "position": [
+          155.85,
+          170,
+          56
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-decor",
+        "material": "poster"
+      }
+    },
+    {
+      "seq": 122,
+      "op": "add",
+      "time": "2026-11-01T12:02:00.000Z",
+      "author": "jimmy",
+      "note": "add Light switch",
+      "object": {
+        "uuid": "living-room-v2-1-switch-right",
+        "name": "Light switch",
+        "description": "white plate by the door",
+        "type": "box",
+        "dimensions": [
+          0.4,
+          4,
+          6
+        ],
+        "position": [
+          155.8,
+          150,
+          52
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-decor",
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 123,
+      "op": "add",
+      "time": "2026-11-01T12:03:00.000Z",
+      "author": "jimmy",
+      "note": "add Door frame, left",
+      "object": {
+        "uuid": "living-room-v2-1-door-jamb-l",
+        "name": "Door frame, left",
+        "description": "white trim",
+        "type": "box",
+        "dimensions": [
+          1.5,
+          1,
+          80
+        ],
+        "position": [
+          117,
+          215.5,
+          40
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-decor",
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 124,
+      "op": "add",
+      "time": "2026-11-01T12:04:00.000Z",
+      "author": "jimmy",
+      "note": "add Door frame, right",
+      "object": {
+        "uuid": "living-room-v2-1-door-jamb-r",
+        "name": "Door frame, right",
+        "description": "white trim",
+        "type": "box",
+        "dimensions": [
+          1.5,
+          1,
+          80
+        ],
+        "position": [
+          151,
+          215.5,
+          40
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-decor",
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 125,
+      "op": "add",
+      "time": "2026-11-01T12:05:00.000Z",
+      "author": "jimmy",
+      "note": "add Door frame, top",
+      "object": {
+        "uuid": "living-room-v2-1-door-head",
+        "name": "Door frame, top",
+        "description": "white trim",
+        "type": "box",
+        "dimensions": [
+          35,
+          1,
+          2
+        ],
+        "position": [
+          134,
+          215.5,
+          81
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-decor",
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 126,
+      "op": "add",
+      "time": "2026-11-01T12:06:00.000Z",
+      "author": "jimmy",
+      "note": "add Paper lantern",
+      "object": {
+        "uuid": "living-room-v2-1-lantern",
+        "name": "Paper lantern",
+        "description": "orange paper lantern hanging by the fiddle-leaf",
+        "type": "sphere",
+        "dimensions": [
+          6
+        ],
+        "position": [
+          146,
+          28,
+          66
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-decor",
+        "material": "lantern"
+      }
+    },
+    {
+      "seq": 127,
+      "op": "add",
+      "time": "2026-11-01T12:07:00.000Z",
+      "author": "jimmy",
+      "note": "add Printer",
+      "object": {
+        "uuid": "living-room-v2-1-printer",
+        "name": "Printer",
+        "description": "grey printer on top of the bookcase",
+        "type": "box",
+        "dimensions": [
+          14,
+          18,
+          10
+        ],
+        "position": [
+          7,
+          32,
+          33
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-tv-wall",
+        "material": "printer"
+      }
+    },
+    {
+      "seq": 128,
+      "op": "add",
+      "time": "2026-11-01T12:08:00.000Z",
+      "author": "jimmy",
+      "note": "add Cardboard box",
+      "object": {
+        "uuid": "living-room-v2-1-box-brown",
+        "name": "Cardboard box",
+        "description": "brown box, bottom left cubby",
+        "type": "box",
+        "dimensions": [
+          11,
+          13,
+          8
+        ],
+        "position": [
+          6,
+          7,
+          5.2
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "boxBrown"
+      }
+    },
+    {
+      "seq": 129,
+      "op": "add",
+      "time": "2026-11-01T12:09:00.000Z",
+      "author": "jimmy",
+      "note": "add Green storage bin",
+      "object": {
+        "uuid": "living-room-v2-1-bin-green",
+        "name": "Green storage bin",
+        "description": "green bin, bottom cubby",
+        "type": "box",
+        "dimensions": [
+          10,
+          12,
+          8
+        ],
+        "position": [
+          6,
+          21,
+          5.2
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "green"
+      }
+    },
+    {
+      "seq": 130,
+      "op": "add",
+      "time": "2026-11-01T12:10:00.000Z",
+      "author": "jimmy",
+      "note": "add Paper bag",
+      "object": {
+        "uuid": "living-room-v2-1-bag-paper",
+        "name": "Paper bag",
+        "description": "beige bag, bottom cubby",
+        "type": "box",
+        "dimensions": [
+          12,
+          10,
+          9
+        ],
+        "position": [
+          6,
+          35,
+          5.7
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "paperBag"
+      }
+    },
+    {
+      "seq": 131,
+      "op": "add",
+      "time": "2026-11-01T12:11:00.000Z",
+      "author": "jimmy",
+      "note": "add Clear storage boxes",
+      "object": {
+        "uuid": "living-room-v2-1-bins-clear",
+        "name": "Clear storage boxes",
+        "description": "clear boxes, bottom cubby",
+        "type": "box",
+        "dimensions": [
+          11,
+          12,
+          7
+        ],
+        "position": [
+          6,
+          49,
+          4.7
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "clearBin"
+      }
+    },
+    {
+      "seq": 132,
+      "op": "add",
+      "time": "2026-11-01T12:12:00.000Z",
+      "author": "jimmy",
+      "note": "add Clear storage box, top row",
+      "object": {
+        "uuid": "living-room-v2-1-bins-top",
+        "name": "Clear storage box, top row",
+        "description": "clear box, top row",
+        "type": "box",
+        "dimensions": [
+          11,
+          12,
+          7
+        ],
+        "position": [
+          6,
+          7,
+          19
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "clearBin"
+      }
+    },
+    {
+      "seq": 133,
+      "op": "add",
+      "time": "2026-11-01T12:13:00.000Z",
+      "author": "jimmy",
+      "note": "add Tote bag, top row",
+      "object": {
+        "uuid": "living-room-v2-1-bag-top",
+        "name": "Tote bag, top row",
+        "description": "soft bag, top row",
+        "type": "box",
+        "dimensions": [
+          12,
+          10,
+          9
+        ],
+        "position": [
+          6,
+          35,
+          20
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "paperBag"
+      }
+    },
+    {
+      "seq": 134,
+      "op": "add",
+      "time": "2026-11-01T12:14:00.000Z",
+      "author": "jimmy",
+      "note": "add Basket",
+      "object": {
+        "uuid": "living-room-v2-1-basket-far",
+        "name": "Basket",
+        "description": "wicker basket, bottom cubby of the far unit",
+        "type": "box",
+        "dimensions": [
+          12,
+          10,
+          8
+        ],
+        "position": [
+          6,
+          77,
+          5.2
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "basket"
+      }
+    },
+    {
+      "seq": 135,
+      "op": "add",
+      "time": "2026-11-01T12:15:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 1",
+      "object": {
+        "uuid": "living-room-v2-1-book-0",
+        "name": "Book 1",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.2,
+          7.5
+        ],
+        "position": [
+          6.5,
+          57.4,
+          4.95
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book0"
+      }
+    },
+    {
+      "seq": 136,
+      "op": "add",
+      "time": "2026-11-01T12:16:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 2",
+      "object": {
+        "uuid": "living-room-v2-1-book-1",
+        "name": "Book 2",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.2,
+          8.2
+        ],
+        "position": [
+          6.5,
+          58.699999999999996,
+          5.3
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book3"
+      }
+    },
+    {
+      "seq": 137,
+      "op": "add",
+      "time": "2026-11-01T12:17:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 3",
+      "object": {
+        "uuid": "living-room-v2-1-book-2",
+        "name": "Book 3",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.2,
+          8.9
+        ],
+        "position": [
+          6.5,
+          59.99999999999999,
+          5.65
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book6"
+      }
+    },
+    {
+      "seq": 138,
+      "op": "add",
+      "time": "2026-11-01T12:18:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 4",
+      "object": {
+        "uuid": "living-room-v2-1-book-3",
+        "name": "Book 4",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.2,
+          9.6
+        ],
+        "position": [
+          6.5,
+          61.29999999999999,
+          6
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book2"
+      }
+    },
+    {
+      "seq": 139,
+      "op": "add",
+      "time": "2026-11-01T12:19:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 5",
+      "object": {
+        "uuid": "living-room-v2-1-book-4",
+        "name": "Book 5",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.2,
+          10.3
+        ],
+        "position": [
+          6.5,
+          62.59999999999999,
+          6.3500000000000005
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book5"
+      }
+    },
+    {
+      "seq": 140,
+      "op": "add",
+      "time": "2026-11-01T12:20:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 6",
+      "object": {
+        "uuid": "living-room-v2-1-book-5",
+        "name": "Book 6",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.2,
+          7.5
+        ],
+        "position": [
+          6.5,
+          63.899999999999984,
+          4.95
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book1"
+      }
+    },
+    {
+      "seq": 141,
+      "op": "add",
+      "time": "2026-11-01T12:21:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 7",
+      "object": {
+        "uuid": "living-room-v2-1-book-6",
+        "name": "Book 7",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.6,
+          7.5
+        ],
+        "position": [
+          6.5,
+          85.6,
+          4.95
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book4"
+      }
+    },
+    {
+      "seq": 142,
+      "op": "add",
+      "time": "2026-11-01T12:22:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 8",
+      "object": {
+        "uuid": "living-room-v2-1-book-7",
+        "name": "Book 8",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.6,
+          8.2
+        ],
+        "position": [
+          6.5,
+          87.3,
+          5.3
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book0"
+      }
+    },
+    {
+      "seq": 143,
+      "op": "add",
+      "time": "2026-11-01T12:23:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 9",
+      "object": {
+        "uuid": "living-room-v2-1-book-8",
+        "name": "Book 9",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.6,
+          8.9
+        ],
+        "position": [
+          6.5,
+          89,
+          5.65
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book3"
+      }
+    },
+    {
+      "seq": 144,
+      "op": "add",
+      "time": "2026-11-01T12:24:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 10",
+      "object": {
+        "uuid": "living-room-v2-1-book-9",
+        "name": "Book 10",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.6,
+          9.6
+        ],
+        "position": [
+          6.5,
+          90.7,
+          6
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book6"
+      }
+    },
+    {
+      "seq": 145,
+      "op": "add",
+      "time": "2026-11-01T12:25:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 11",
+      "object": {
+        "uuid": "living-room-v2-1-book-10",
+        "name": "Book 11",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.6,
+          10.3
+        ],
+        "position": [
+          6.5,
+          92.4,
+          6.3500000000000005
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book2"
+      }
+    },
+    {
+      "seq": 146,
+      "op": "add",
+      "time": "2026-11-01T12:26:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 12",
+      "object": {
+        "uuid": "living-room-v2-1-book-11",
+        "name": "Book 12",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.6,
+          7.5
+        ],
+        "position": [
+          6.5,
+          94.10000000000001,
+          4.95
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book5"
+      }
+    },
+    {
+      "seq": 147,
+      "op": "add",
+      "time": "2026-11-01T12:27:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 13",
+      "object": {
+        "uuid": "living-room-v2-1-book-12",
+        "name": "Book 13",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          7.5
+        ],
+        "position": [
+          6.5,
+          99.8,
+          4.95
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book1"
+      }
+    },
+    {
+      "seq": 148,
+      "op": "add",
+      "time": "2026-11-01T12:28:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 14",
+      "object": {
+        "uuid": "living-room-v2-1-book-13",
+        "name": "Book 14",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          8.2
+        ],
+        "position": [
+          6.5,
+          101.89999999999999,
+          5.3
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book4"
+      }
+    },
+    {
+      "seq": 149,
+      "op": "add",
+      "time": "2026-11-01T12:29:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 15",
+      "object": {
+        "uuid": "living-room-v2-1-book-14",
+        "name": "Book 15",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          8.9
+        ],
+        "position": [
+          6.5,
+          103.99999999999999,
+          5.65
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book0"
+      }
+    },
+    {
+      "seq": 150,
+      "op": "add",
+      "time": "2026-11-01T12:30:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 16",
+      "object": {
+        "uuid": "living-room-v2-1-book-15",
+        "name": "Book 16",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          9.6
+        ],
+        "position": [
+          6.5,
+          106.09999999999998,
+          6
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book3"
+      }
+    },
+    {
+      "seq": 151,
+      "op": "add",
+      "time": "2026-11-01T12:31:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 17",
+      "object": {
+        "uuid": "living-room-v2-1-book-16",
+        "name": "Book 17",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          10.3
+        ],
+        "position": [
+          6.5,
+          108.19999999999997,
+          6.3500000000000005
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book6"
+      }
+    },
+    {
+      "seq": 152,
+      "op": "add",
+      "time": "2026-11-01T12:32:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 18",
+      "object": {
+        "uuid": "living-room-v2-1-book-17",
+        "name": "Book 18",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          7.5
+        ],
+        "position": [
+          6.5,
+          57.8,
+          19.15
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book2"
+      }
+    },
+    {
+      "seq": 153,
+      "op": "add",
+      "time": "2026-11-01T12:33:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 19",
+      "object": {
+        "uuid": "living-room-v2-1-book-18",
+        "name": "Book 19",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          8.2
+        ],
+        "position": [
+          6.5,
+          59.9,
+          19.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book5"
+      }
+    },
+    {
+      "seq": 154,
+      "op": "add",
+      "time": "2026-11-01T12:34:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 20",
+      "object": {
+        "uuid": "living-room-v2-1-book-19",
+        "name": "Book 20",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          8.9
+        ],
+        "position": [
+          6.5,
+          62,
+          19.85
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book1"
+      }
+    },
+    {
+      "seq": 155,
+      "op": "add",
+      "time": "2026-11-01T12:35:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 21",
+      "object": {
+        "uuid": "living-room-v2-1-book-20",
+        "name": "Book 21",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          9.6
+        ],
+        "position": [
+          6.5,
+          64.1,
+          20.2
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book4"
+      }
+    },
+    {
+      "seq": 156,
+      "op": "add",
+      "time": "2026-11-01T12:36:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 22",
+      "object": {
+        "uuid": "living-room-v2-1-book-21",
+        "name": "Book 22",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          10.3
+        ],
+        "position": [
+          6.5,
+          66.2,
+          20.55
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book0"
+      }
+    },
+    {
+      "seq": 157,
+      "op": "add",
+      "time": "2026-11-01T12:37:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 23",
+      "object": {
+        "uuid": "living-room-v2-1-book-22",
+        "name": "Book 23",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          7.5
+        ],
+        "position": [
+          6.5,
+          71.8,
+          19.15
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book3"
+      }
+    },
+    {
+      "seq": 158,
+      "op": "add",
+      "time": "2026-11-01T12:38:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 24",
+      "object": {
+        "uuid": "living-room-v2-1-book-23",
+        "name": "Book 24",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          8.2
+        ],
+        "position": [
+          6.5,
+          73.89999999999999,
+          19.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book6"
+      }
+    },
+    {
+      "seq": 159,
+      "op": "add",
+      "time": "2026-11-01T12:39:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 25",
+      "object": {
+        "uuid": "living-room-v2-1-book-24",
+        "name": "Book 25",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          8.9
+        ],
+        "position": [
+          6.5,
+          75.99999999999999,
+          19.85
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book2"
+      }
+    },
+    {
+      "seq": 160,
+      "op": "add",
+      "time": "2026-11-01T12:40:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 26",
+      "object": {
+        "uuid": "living-room-v2-1-book-25",
+        "name": "Book 26",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          9.6
+        ],
+        "position": [
+          6.5,
+          78.09999999999998,
+          20.2
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book5"
+      }
+    },
+    {
+      "seq": 161,
+      "op": "add",
+      "time": "2026-11-01T12:41:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 27",
+      "object": {
+        "uuid": "living-room-v2-1-book-26",
+        "name": "Book 27",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          10.3
+        ],
+        "position": [
+          6.5,
+          80.19999999999997,
+          20.55
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book1"
+      }
+    },
+    {
+      "seq": 162,
+      "op": "add",
+      "time": "2026-11-01T12:42:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 28",
+      "object": {
+        "uuid": "living-room-v2-1-book-27",
+        "name": "Book 28",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          7.5
+        ],
+        "position": [
+          6.5,
+          85.8,
+          19.15
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book4"
+      }
+    },
+    {
+      "seq": 163,
+      "op": "add",
+      "time": "2026-11-01T12:43:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 29",
+      "object": {
+        "uuid": "living-room-v2-1-book-28",
+        "name": "Book 29",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          8.2
+        ],
+        "position": [
+          6.5,
+          87.89999999999999,
+          19.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book0"
+      }
+    },
+    {
+      "seq": 164,
+      "op": "add",
+      "time": "2026-11-01T12:44:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 30",
+      "object": {
+        "uuid": "living-room-v2-1-book-29",
+        "name": "Book 30",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          8.9
+        ],
+        "position": [
+          6.5,
+          89.99999999999999,
+          19.85
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book3"
+      }
+    },
+    {
+      "seq": 165,
+      "op": "add",
+      "time": "2026-11-01T12:45:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 31",
+      "object": {
+        "uuid": "living-room-v2-1-book-30",
+        "name": "Book 31",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          9.6
+        ],
+        "position": [
+          6.5,
+          92.09999999999998,
+          20.2
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book6"
+      }
+    },
+    {
+      "seq": 166,
+      "op": "add",
+      "time": "2026-11-01T12:46:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 32",
+      "object": {
+        "uuid": "living-room-v2-1-book-31",
+        "name": "Book 32",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          10.3
+        ],
+        "position": [
+          6.5,
+          94.19999999999997,
+          20.55
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book2"
+      }
+    },
+    {
+      "seq": 167,
+      "op": "add",
+      "time": "2026-11-01T12:47:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 33",
+      "object": {
+        "uuid": "living-room-v2-1-book-32",
+        "name": "Book 33",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          7.5
+        ],
+        "position": [
+          6.5,
+          99.8,
+          19.15
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book5"
+      }
+    },
+    {
+      "seq": 168,
+      "op": "add",
+      "time": "2026-11-01T12:48:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 34",
+      "object": {
+        "uuid": "living-room-v2-1-book-33",
+        "name": "Book 34",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          8.2
+        ],
+        "position": [
+          6.5,
+          101.89999999999999,
+          19.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book1"
+      }
+    },
+    {
+      "seq": 169,
+      "op": "add",
+      "time": "2026-11-01T12:49:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 35",
+      "object": {
+        "uuid": "living-room-v2-1-book-34",
+        "name": "Book 35",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          8.9
+        ],
+        "position": [
+          6.5,
+          103.99999999999999,
+          19.85
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book4"
+      }
+    },
+    {
+      "seq": 170,
+      "op": "add",
+      "time": "2026-11-01T12:50:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 36",
+      "object": {
+        "uuid": "living-room-v2-1-book-35",
+        "name": "Book 36",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          9.6
+        ],
+        "position": [
+          6.5,
+          106.09999999999998,
+          20.2
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book0"
+      }
+    },
+    {
+      "seq": 171,
+      "op": "add",
+      "time": "2026-11-01T12:51:00.000Z",
+      "author": "jimmy",
+      "note": "add Book 37",
+      "object": {
+        "uuid": "living-room-v2-1-book-36",
+        "name": "Book 37",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          2,
+          10.3
+        ],
+        "position": [
+          6.5,
+          108.19999999999997,
+          20.55
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book3"
+      }
+    },
+    {
+      "seq": 172,
+      "op": "add",
+      "time": "2026-11-01T12:52:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair, near camera",
+      "object": {
+        "uuid": "living-room-v2-1-chair-near",
+        "name": "Wooden chair, near camera",
+        "description": "near the camera, faces the table",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 173,
+      "op": "add",
+      "time": "2026-11-01T12:53:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair, near camera seat",
+      "object": {
+        "uuid": "living-room-v2-1-chair-near-seat",
+        "name": "Wooden chair, near camera seat",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          14,
+          1.5
+        ],
+        "position": [
+          100,
+          44,
+          11.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-near",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 174,
+      "op": "add",
+      "time": "2026-11-01T12:54:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair, near camera back",
+      "object": {
+        "uuid": "living-room-v2-1-chair-near-back",
+        "name": "Wooden chair, near camera back",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          1.2,
+          10
+        ],
+        "position": [
+          100,
+          37.25,
+          17
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-near",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 175,
+      "op": "add",
+      "time": "2026-11-01T12:55:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair, near camera leg 1",
+      "object": {
+        "uuid": "living-room-v2-1-chair-near-leg-1",
+        "name": "Wooden chair, near camera leg 1",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          1.2,
+          10.5
+        ],
+        "position": [
+          94,
+          38,
+          5.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-near",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 176,
+      "op": "add",
+      "time": "2026-11-01T12:56:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair, near camera leg 2",
+      "object": {
+        "uuid": "living-room-v2-1-chair-near-leg-2",
+        "name": "Wooden chair, near camera leg 2",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          1.2,
+          10.5
+        ],
+        "position": [
+          106,
+          38,
+          5.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-near",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 177,
+      "op": "add",
+      "time": "2026-11-01T12:57:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair, near camera leg 3",
+      "object": {
+        "uuid": "living-room-v2-1-chair-near-leg-3",
+        "name": "Wooden chair, near camera leg 3",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          1.2,
+          10.5
+        ],
+        "position": [
+          94,
+          50,
+          5.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-near",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 178,
+      "op": "add",
+      "time": "2026-11-01T12:58:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair, near camera leg 4",
+      "object": {
+        "uuid": "living-room-v2-1-chair-near-leg-4",
+        "name": "Wooden chair, near camera leg 4",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          1.2,
+          10.5
+        ],
+        "position": [
+          106,
+          50,
+          5.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-near",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 179,
+      "op": "add",
+      "time": "2026-11-01T12:59:00.000Z",
+      "author": "jimmy",
+      "note": "add Dark jacket on the chair",
+      "object": {
+        "uuid": "living-room-v2-1-jacket",
+        "name": "Dark jacket on the chair",
+        "description": "jacket over the back of the near chair",
+        "type": "box",
+        "dimensions": [
+          13,
+          2,
+          12
+        ],
+        "position": [
+          100,
+          37.5,
+          33
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-childrens-table",
+        "material": "jacket"
+      }
+    },
+    {
+      "seq": 180,
+      "op": "add",
+      "time": "2026-11-01T13:00:00.000Z",
+      "author": "jimmy",
+      "note": "add frame-big frame, head",
+      "object": {
+        "uuid": "living-room-v2-1-frame-big-top",
+        "name": "frame-big frame, head",
+        "description": "white frame",
+        "type": "box",
+        "dimensions": [
+          61,
+          1,
+          1.5
+        ],
+        "position": [
+          63,
+          215.5,
+          84.75
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 181,
+      "op": "add",
+      "time": "2026-11-01T13:01:00.000Z",
+      "author": "jimmy",
+      "note": "add frame-big frame, sill",
+      "object": {
+        "uuid": "living-room-v2-1-frame-big-sill",
+        "name": "frame-big frame, sill",
+        "description": "white frame",
+        "type": "box",
+        "dimensions": [
+          61,
+          1,
+          1.5
+        ],
+        "position": [
+          63,
+          215.5,
+          35.25
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 182,
+      "op": "add",
+      "time": "2026-11-01T13:02:00.000Z",
+      "author": "jimmy",
+      "note": "add frame-big frame, left",
+      "object": {
+        "uuid": "living-room-v2-1-frame-big-left",
+        "name": "frame-big frame, left",
+        "description": "white frame",
+        "type": "box",
+        "dimensions": [
+          1.5,
+          1,
+          48
+        ],
+        "position": [
+          33.25,
+          215.5,
+          60
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 183,
+      "op": "add",
+      "time": "2026-11-01T13:03:00.000Z",
+      "author": "jimmy",
+      "note": "add frame-big frame, right",
+      "object": {
+        "uuid": "living-room-v2-1-frame-big-right",
+        "name": "frame-big frame, right",
+        "description": "white frame",
+        "type": "box",
+        "dimensions": [
+          1.5,
+          1,
+          48
+        ],
+        "position": [
+          92.75,
+          215.5,
+          60
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 184,
+      "op": "add",
+      "time": "2026-11-01T13:04:00.000Z",
+      "author": "jimmy",
+      "note": "add frame-narrow-right frame, head",
+      "object": {
+        "uuid": "living-room-v2-1-frame-narrow-right-top",
+        "name": "frame-narrow-right frame, head",
+        "description": "white frame",
+        "type": "box",
+        "dimensions": [
+          13,
+          1,
+          1.5
+        ],
+        "position": [
+          105,
+          215.5,
+          84.75
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 185,
+      "op": "add",
+      "time": "2026-11-01T13:05:00.000Z",
+      "author": "jimmy",
+      "note": "add frame-narrow-right frame, sill",
+      "object": {
+        "uuid": "living-room-v2-1-frame-narrow-right-sill",
+        "name": "frame-narrow-right frame, sill",
+        "description": "white frame",
+        "type": "box",
+        "dimensions": [
+          13,
+          1,
+          1.5
+        ],
+        "position": [
+          105,
+          215.5,
+          41.25
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 186,
+      "op": "add",
+      "time": "2026-11-01T13:06:00.000Z",
+      "author": "jimmy",
+      "note": "add frame-narrow-right frame, left",
+      "object": {
+        "uuid": "living-room-v2-1-frame-narrow-right-left",
+        "name": "frame-narrow-right frame, left",
+        "description": "white frame",
+        "type": "box",
+        "dimensions": [
+          1.5,
+          1,
+          42
+        ],
+        "position": [
+          99.25,
+          215.5,
+          63
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 187,
+      "op": "add",
+      "time": "2026-11-01T13:07:00.000Z",
+      "author": "jimmy",
+      "note": "add frame-narrow-right frame, right",
+      "object": {
+        "uuid": "living-room-v2-1-frame-narrow-right-right",
+        "name": "frame-narrow-right frame, right",
+        "description": "white frame",
+        "type": "box",
+        "dimensions": [
+          1.5,
+          1,
+          42
+        ],
+        "position": [
+          110.75,
+          215.5,
+          63
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 188,
+      "op": "add",
+      "time": "2026-11-01T13:08:00.000Z",
+      "author": "jimmy",
+      "note": "add TV-wall window frame, head",
+      "object": {
+        "uuid": "living-room-v2-1-frame-tv-top",
+        "name": "TV-wall window frame, head",
+        "description": "white frame",
+        "type": "box",
+        "dimensions": [
+          1,
+          21,
+          1.5
+        ],
+        "position": [
+          0.5,
+          179,
+          84.75
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 189,
+      "op": "add",
+      "time": "2026-11-01T13:09:00.000Z",
+      "author": "jimmy",
+      "note": "add TV-wall window frame, sill",
+      "object": {
+        "uuid": "living-room-v2-1-frame-tv-sill",
+        "name": "TV-wall window frame, sill",
+        "description": "white frame",
+        "type": "box",
+        "dimensions": [
+          1,
+          21,
+          1.5
+        ],
+        "position": [
+          0.5,
+          179,
+          41.25
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 190,
+      "op": "add",
+      "time": "2026-11-01T13:10:00.000Z",
+      "author": "jimmy",
+      "note": "add TV-wall window frame, near",
+      "object": {
+        "uuid": "living-room-v2-1-frame-tv-near",
+        "name": "TV-wall window frame, near",
+        "description": "white frame",
+        "type": "box",
+        "dimensions": [
+          1,
+          1.5,
+          42
+        ],
+        "position": [
+          0.5,
+          169.25,
+          63
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 191,
+      "op": "add",
+      "time": "2026-11-01T13:11:00.000Z",
+      "author": "jimmy",
+      "note": "add TV-wall window frame, far",
+      "object": {
+        "uuid": "living-room-v2-1-frame-tv-far",
+        "name": "TV-wall window frame, far",
+        "description": "white frame",
+        "type": "box",
+        "dimensions": [
+          1,
+          1.5,
+          42
+        ],
+        "position": [
+          0.5,
+          188.75,
+          63
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 192,
+      "op": "add",
+      "time": "2026-11-01T13:12:00.000Z",
+      "author": "jimmy",
+      "note": "add Baseboard, left wall, near",
+      "object": {
+        "uuid": "living-room-v2-1-base-left-near",
+        "name": "Baseboard, left wall, near",
+        "description": "white, 4 in high",
+        "type": "box",
+        "dimensions": [
+          1,
+          170,
+          4
+        ],
+        "position": [
+          0.5,
+          85,
+          2
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 193,
+      "op": "add",
+      "time": "2026-11-01T13:13:00.000Z",
+      "author": "jimmy",
+      "note": "add Baseboard, left wall, far",
+      "object": {
+        "uuid": "living-room-v2-1-base-left-far",
+        "name": "Baseboard, left wall, far",
+        "description": "white, 4 in high",
+        "type": "box",
+        "dimensions": [
+          1,
+          28,
+          4
+        ],
+        "position": [
+          0.5,
+          202,
+          2
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 194,
+      "op": "add",
+      "time": "2026-11-01T13:14:00.000Z",
+      "author": "jimmy",
+      "note": "add Baseboard, right wall",
+      "object": {
+        "uuid": "living-room-v2-1-base-right",
+        "name": "Baseboard, right wall",
+        "description": "white, 4 in high",
+        "type": "box",
+        "dimensions": [
+          1,
+          216,
+          4
+        ],
+        "position": [
+          155.5,
+          108,
+          2
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 195,
+      "op": "add",
+      "time": "2026-11-01T13:15:00.000Z",
+      "author": "jimmy",
+      "note": "add Baseboard, far wall, left of door",
+      "object": {
+        "uuid": "living-room-v2-1-base-far-left",
+        "name": "Baseboard, far wall, left of door",
+        "description": "white, 4 in high",
+        "type": "box",
+        "dimensions": [
+          118,
+          1,
+          4
+        ],
+        "position": [
+          59,
+          215.5,
+          2
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 196,
+      "op": "add",
+      "time": "2026-11-01T13:16:00.000Z",
+      "author": "jimmy",
+      "note": "add Baseboard, far wall, right of door",
+      "object": {
+        "uuid": "living-room-v2-1-base-far-right",
+        "name": "Baseboard, far wall, right of door",
+        "description": "white, 4 in high",
+        "type": "box",
+        "dimensions": [
+          6,
+          1,
+          4
+        ],
+        "position": [
+          153,
+          215.5,
+          2
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 197,
+      "op": "add",
+      "time": "2026-11-01T13:17:00.000Z",
+      "author": "jimmy",
+      "note": "add Door handle",
+      "object": {
+        "uuid": "living-room-v2-1-door-handle",
+        "name": "Door handle",
+        "description": "round handle, about waist high",
+        "type": "sphere",
+        "dimensions": [
+          1
+        ],
+        "position": [
+          126,
+          214,
+          38
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 198,
+      "op": "add",
+      "time": "2026-11-01T13:18:00.000Z",
+      "author": "jimmy",
+      "note": "add Blue fan",
+      "object": {
+        "uuid": "living-room-v2-1-fan-blue",
+        "name": "Blue fan",
+        "description": "small blue fan on the near unit top",
+        "type": "cylinder",
+        "dimensions": [
+          4,
+          7
+        ],
+        "position": [
+          7,
+          50,
+          31.5
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "fan"
+      }
+    },
+    {
+      "seq": 199,
+      "op": "add",
+      "time": "2026-11-01T13:19:00.000Z",
+      "author": "jimmy",
+      "note": "add Pink fan",
+      "object": {
+        "uuid": "living-room-v2-1-fan-pink",
+        "name": "Pink fan",
+        "description": "small pink fan on the near unit top",
+        "type": "cylinder",
+        "dimensions": [
+          3.5,
+          7
+        ],
+        "position": [
+          7,
+          12,
+          31.5
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "fanPink"
+      }
+    },
+    {
+      "seq": 200,
+      "op": "add",
+      "time": "2026-11-01T13:20:00.000Z",
+      "author": "jimmy",
+      "note": "add Boxed puzzle",
+      "object": {
+        "uuid": "living-room-v2-1-boxed-puzzle",
+        "name": "Boxed puzzle",
+        "description": "small boxed puzzle on the near unit top",
+        "type": "box",
+        "dimensions": [
+          7,
+          4,
+          9
+        ],
+        "position": [
+          7,
+          3,
+          32.5
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "puzzleBox"
+      }
+    },
+    {
+      "seq": 201,
+      "op": "add",
+      "time": "2026-11-01T13:21:00.000Z",
+      "author": "jimmy",
+      "note": "add Plant pot by the bookcase",
+      "object": {
+        "uuid": "living-room-v2-1-plant-floor-pot",
+        "name": "Plant pot by the bookcase",
+        "description": "terracotta pot, floor, near end of the bookcase (moved from the bookcase top)",
+        "type": "cylinder",
+        "dimensions": [
+          7,
+          14
+        ],
+        "position": [
+          30,
+          14,
+          7
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "pot"
+      }
+    },
+    {
+      "seq": 202,
+      "op": "add",
+      "time": "2026-11-01T13:22:00.000Z",
+      "author": "jimmy",
+      "note": "add Plant by the bookcase, leaves",
+      "object": {
+        "uuid": "living-room-v2-1-plant-floor-leaves",
+        "name": "Plant by the bookcase, leaves",
+        "description": "leafy plant, floor",
+        "type": "sphere",
+        "dimensions": [
+          11
+        ],
+        "position": [
+          30,
+          14,
+          36
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "leaf"
+      }
+    },
+    {
+      "seq": 203,
+      "op": "add",
+      "time": "2026-11-01T13:23:00.000Z",
+      "author": "jimmy",
+      "note": "add Water bottle",
+      "object": {
+        "uuid": "living-room-v2-1-bottle",
+        "name": "Water bottle",
+        "description": "teal bottle on the children’s table",
+        "type": "cylinder",
+        "dimensions": [
+          2.3,
+          10
+        ],
+        "position": [
+          74,
+          170,
+          27
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "bottle"
+      }
+    },
+    {
+      "seq": 204,
+      "op": "add",
+      "time": "2026-11-01T13:24:00.000Z",
+      "author": "jimmy",
+      "note": "add Dark box",
+      "object": {
+        "uuid": "living-room-v2-1-dark-box",
+        "name": "Dark box",
+        "description": "dark case on the children’s table",
+        "type": "box",
+        "dimensions": [
+          14,
+          8,
+          3
+        ],
+        "position": [
+          60,
+          158,
+          23.5
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "boxDark"
+      }
+    },
+    {
+      "seq": 205,
+      "op": "add",
+      "time": "2026-11-01T13:25:00.000Z",
+      "author": "jimmy",
+      "note": "add Puzzle sheet 1",
+      "object": {
+        "uuid": "living-room-v2-1-puzzle-1",
+        "name": "Puzzle sheet 1",
+        "description": "blue sheet on the table",
+        "type": "box",
+        "dimensions": [
+          12,
+          9,
+          0.3
+        ],
+        "position": [
+          52,
+          166,
+          22.15
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "puzzle1"
+      }
+    },
+    {
+      "seq": 206,
+      "op": "add",
+      "time": "2026-11-01T13:26:00.000Z",
+      "author": "jimmy",
+      "note": "add Puzzle sheet 2",
+      "object": {
+        "uuid": "living-room-v2-1-puzzle-2",
+        "name": "Puzzle sheet 2",
+        "description": "yellow sheet on the table",
+        "type": "box",
+        "dimensions": [
+          10,
+          8,
+          0.3
+        ],
+        "position": [
+          78,
+          174,
+          22.15
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "puzzle2"
+      }
+    },
+    {
+      "seq": 207,
+      "op": "add",
+      "time": "2026-11-01T13:27:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair 3",
+      "object": {
+        "uuid": "living-room-v2-1-chair-3",
+        "name": "Wooden chair 3",
+        "description": "near side of the table, beside chairs 1 and 2 (restored from V10)",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 208,
+      "op": "add",
+      "time": "2026-11-01T13:28:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair 3 seat",
+      "object": {
+        "uuid": "living-room-v2-1-chair-3-seat",
+        "name": "Wooden chair 3 seat",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          14,
+          1.5
+        ],
+        "position": [
+          96,
+          138,
+          11.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-3",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 209,
+      "op": "add",
+      "time": "2026-11-01T13:29:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair 3 back",
+      "object": {
+        "uuid": "living-room-v2-1-chair-3-back",
+        "name": "Wooden chair 3 back",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          14,
+          1.2,
+          10
+        ],
+        "position": [
+          96,
+          131.25,
+          17
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-3",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 210,
+      "op": "add",
+      "time": "2026-11-01T13:30:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair 3 leg 1",
+      "object": {
+        "uuid": "living-room-v2-1-chair-3-leg-1",
+        "name": "Wooden chair 3 leg 1",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          1.2,
+          10.5
+        ],
+        "position": [
+          90,
+          132,
+          5.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-3",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 211,
+      "op": "add",
+      "time": "2026-11-01T13:31:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair 3 leg 2",
+      "object": {
+        "uuid": "living-room-v2-1-chair-3-leg-2",
+        "name": "Wooden chair 3 leg 2",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          1.2,
+          10.5
+        ],
+        "position": [
+          102,
+          132,
+          5.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-3",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 212,
+      "op": "add",
+      "time": "2026-11-01T13:32:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair 3 leg 3",
+      "object": {
+        "uuid": "living-room-v2-1-chair-3-leg-3",
+        "name": "Wooden chair 3 leg 3",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          1.2,
+          10.5
+        ],
+        "position": [
+          90,
+          144,
+          5.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-3",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 213,
+      "op": "add",
+      "time": "2026-11-01T13:33:00.000Z",
+      "author": "jimmy",
+      "note": "add Wooden chair 3 leg 4",
+      "object": {
+        "uuid": "living-room-v2-1-chair-3-leg-4",
+        "name": "Wooden chair 3 leg 4",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          1.2,
+          10.5
+        ],
+        "position": [
+          102,
+          144,
+          5.25
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-chair-3",
+        "material": "chairWood"
+      }
+    },
+    {
+      "seq": 214,
+      "op": "add",
+      "time": "2026-11-01T13:34:00.000Z",
+      "author": "jimmy",
+      "note": "add Book, near unit 1",
+      "object": {
+        "uuid": "living-room-v2-1-book-near-200",
+        "name": "Book, near unit 1",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.2,
+          7.5
+        ],
+        "position": [
+          6.5,
+          15.4,
+          19.15
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book5"
+      }
+    },
+    {
+      "seq": 215,
+      "op": "add",
+      "time": "2026-11-01T13:35:00.000Z",
+      "author": "jimmy",
+      "note": "add Book, near unit 2",
+      "object": {
+        "uuid": "living-room-v2-1-book-near-201",
+        "name": "Book, near unit 2",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.2,
+          8.2
+        ],
+        "position": [
+          6.5,
+          16.700000000000003,
+          19.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book1"
+      }
+    },
+    {
+      "seq": 216,
+      "op": "add",
+      "time": "2026-11-01T13:36:00.000Z",
+      "author": "jimmy",
+      "note": "add Book, near unit 3",
+      "object": {
+        "uuid": "living-room-v2-1-book-near-202",
+        "name": "Book, near unit 3",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.2,
+          8.9
+        ],
+        "position": [
+          6.5,
+          18.000000000000004,
+          19.85
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book4"
+      }
+    },
+    {
+      "seq": 217,
+      "op": "add",
+      "time": "2026-11-01T13:37:00.000Z",
+      "author": "jimmy",
+      "note": "add Book, near unit 4",
+      "object": {
+        "uuid": "living-room-v2-1-book-near-203",
+        "name": "Book, near unit 4",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.2,
+          9.6
+        ],
+        "position": [
+          6.5,
+          19.300000000000004,
+          20.2
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book0"
+      }
+    },
+    {
+      "seq": 218,
+      "op": "add",
+      "time": "2026-11-01T13:38:00.000Z",
+      "author": "jimmy",
+      "note": "add Book, near unit 5",
+      "object": {
+        "uuid": "living-room-v2-1-book-near-204",
+        "name": "Book, near unit 5",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.2,
+          10.3
+        ],
+        "position": [
+          6.5,
+          20.600000000000005,
+          20.55
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book3"
+      }
+    },
+    {
+      "seq": 219,
+      "op": "add",
+      "time": "2026-11-01T13:39:00.000Z",
+      "author": "jimmy",
+      "note": "add Book, near unit 6",
+      "object": {
+        "uuid": "living-room-v2-1-book-near-205",
+        "name": "Book, near unit 6",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.2,
+          7.5
+        ],
+        "position": [
+          6.5,
+          21.900000000000006,
+          19.15
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book6"
+      }
+    },
+    {
+      "seq": 220,
+      "op": "add",
+      "time": "2026-11-01T13:40:00.000Z",
+      "author": "jimmy",
+      "note": "add Book, near unit 7",
+      "object": {
+        "uuid": "living-room-v2-1-book-near-206",
+        "name": "Book, near unit 7",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.6,
+          7.5
+        ],
+        "position": [
+          6.5,
+          43.599999999999994,
+          19.15
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book2"
+      }
+    },
+    {
+      "seq": 221,
+      "op": "add",
+      "time": "2026-11-01T13:41:00.000Z",
+      "author": "jimmy",
+      "note": "add Book, near unit 8",
+      "object": {
+        "uuid": "living-room-v2-1-book-near-207",
+        "name": "Book, near unit 8",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.6,
+          8.2
+        ],
+        "position": [
+          6.5,
+          45.3,
+          19.5
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book5"
+      }
+    },
+    {
+      "seq": 222,
+      "op": "add",
+      "time": "2026-11-01T13:42:00.000Z",
+      "author": "jimmy",
+      "note": "add Book, near unit 9",
+      "object": {
+        "uuid": "living-room-v2-1-book-near-208",
+        "name": "Book, near unit 9",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.6,
+          8.9
+        ],
+        "position": [
+          6.5,
+          47,
+          19.85
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book1"
+      }
+    },
+    {
+      "seq": 223,
+      "op": "add",
+      "time": "2026-11-01T13:43:00.000Z",
+      "author": "jimmy",
+      "note": "add Book, near unit 10",
+      "object": {
+        "uuid": "living-room-v2-1-book-near-209",
+        "name": "Book, near unit 10",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.6,
+          9.6
+        ],
+        "position": [
+          6.5,
+          48.7,
+          20.2
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book4"
+      }
+    },
+    {
+      "seq": 224,
+      "op": "add",
+      "time": "2026-11-01T13:44:00.000Z",
+      "author": "jimmy",
+      "note": "add Book, near unit 11",
+      "object": {
+        "uuid": "living-room-v2-1-book-near-210",
+        "name": "Book, near unit 11",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.6,
+          10.3
+        ],
+        "position": [
+          6.5,
+          50.400000000000006,
+          20.55
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book0"
+      }
+    },
+    {
+      "seq": 225,
+      "op": "add",
+      "time": "2026-11-01T13:45:00.000Z",
+      "author": "jimmy",
+      "note": "add Book, near unit 12",
+      "object": {
+        "uuid": "living-room-v2-1-book-near-211",
+        "name": "Book, near unit 12",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          9,
+          1.6,
+          7.5
+        ],
+        "position": [
+          6.5,
+          52.10000000000001,
+          19.15
+        ],
+        "rotation_y": 0,
+        "parent": "living-room-v2-1-bookcase",
+        "material": "book3"
+      }
+    }
+  ]
+}

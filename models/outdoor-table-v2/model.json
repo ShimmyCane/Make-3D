@@ -1,0 +1,4607 @@
+{
+  "model_id": "outdoor-table-v2",
+  "name": "Outdoor table with parasol V2",
+  "description": "A 7 ft x 3 ft white oak top on yellow painted angle-iron legs, with a rectangular frame, a centre beam and a low back bar. A folding red parasol with one large canopy at the far end, on a square base with two sandbags. A bonsai in a 2 ft box on the ground, 8 ft from the table, reaching over it.",
+  "units": "in",
+  "up": "z",
+  "world": "default-world",
+  "materials": {
+    "oak": {
+      "color": "#e6d3b3",
+      "opacity": 1
+    },
+    "yellow": {
+      "color": "#f2c94c",
+      "opacity": 1
+    },
+    "canopy": {
+      "color": "#c4544a",
+      "opacity": 1
+    },
+    "metal": {
+      "color": "#9aa4ad",
+      "opacity": 1
+    },
+    "sandbag": {
+      "color": "#c9b48a",
+      "opacity": 1
+    },
+    "box": {
+      "color": "#b58a62",
+      "opacity": 1
+    },
+    "trunk": {
+      "color": "#7a5a43",
+      "opacity": 1
+    },
+    "leaf": {
+      "color": "#6fa86a",
+      "opacity": 1
+    },
+    "deadwood": {
+      "color": "#cfc6b4",
+      "opacity": 1
+    }
+  },
+  "objects": [
+    {
+      "description": "white oak veneer, 7 ft x 3 ft, centre at 30 in high",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "oak",
+      "tags": [
+        "surface"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-top",
+      "name": "Table top",
+      "type": "box",
+      "dimensions": [
+        84,
+        36,
+        1.5
+      ],
+      "position": [
+        0,
+        0,
+        30
+      ]
+    },
+    {
+      "description": "yellow painted angle iron",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-frame",
+      "name": "Frame",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "2 in angle",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-frame",
+      "material": "yellow",
+      "tags": [
+        "frame"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-leg1",
+      "name": "Leg 1",
+      "type": "box",
+      "dimensions": [
+        2,
+        2,
+        29.25
+      ],
+      "position": [
+        -36,
+        -14,
+        14.625
+      ]
+    },
+    {
+      "description": "2 in angle",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-frame",
+      "material": "yellow",
+      "tags": [
+        "frame"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-leg2",
+      "name": "Leg 2",
+      "type": "box",
+      "dimensions": [
+        2,
+        2,
+        29.25
+      ],
+      "position": [
+        -36,
+        14,
+        14.625
+      ]
+    },
+    {
+      "description": "2 in angle",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-frame",
+      "material": "yellow",
+      "tags": [
+        "frame"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-leg3",
+      "name": "Leg 3",
+      "type": "box",
+      "dimensions": [
+        2,
+        2,
+        29.25
+      ],
+      "position": [
+        36,
+        -14,
+        14.625
+      ]
+    },
+    {
+      "description": "2 in angle",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-frame",
+      "material": "yellow",
+      "tags": [
+        "frame"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-leg4",
+      "name": "Leg 4",
+      "type": "box",
+      "dimensions": [
+        2,
+        2,
+        29.25
+      ],
+      "position": [
+        36,
+        14,
+        14.625
+      ]
+    },
+    {
+      "description": "rectangular frame, long side",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-frame",
+      "material": "yellow",
+      "tags": [
+        "frame"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-rail-front",
+      "name": "Rail front",
+      "type": "box",
+      "dimensions": [
+        84,
+        1.5,
+        2
+      ],
+      "position": [
+        0,
+        -14,
+        27.25
+      ]
+    },
+    {
+      "description": "rectangular frame, long side",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-frame",
+      "material": "yellow",
+      "tags": [
+        "frame"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-rail-back",
+      "name": "Rail back",
+      "type": "box",
+      "dimensions": [
+        84,
+        1.5,
+        2
+      ],
+      "position": [
+        0,
+        14,
+        27.25
+      ]
+    },
+    {
+      "description": "rectangular frame, short side",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-frame",
+      "material": "yellow",
+      "tags": [
+        "frame"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-rail-end-l",
+      "name": "Rail end left",
+      "type": "box",
+      "dimensions": [
+        1.5,
+        28,
+        2
+      ],
+      "position": [
+        -36,
+        0,
+        27.25
+      ]
+    },
+    {
+      "description": "rectangular frame, short side",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-frame",
+      "material": "yellow",
+      "tags": [
+        "frame"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-rail-end-r",
+      "name": "Rail end right",
+      "type": "box",
+      "dimensions": [
+        1.5,
+        28,
+        2
+      ],
+      "position": [
+        36,
+        0,
+        27.25
+      ]
+    },
+    {
+      "description": "between the end rails, under the top",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-frame",
+      "material": "yellow",
+      "tags": [
+        "frame"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-centre-beam",
+      "name": "Centre beam",
+      "type": "box",
+      "dimensions": [
+        72,
+        1.5,
+        2
+      ],
+      "position": [
+        0,
+        0,
+        27.25
+      ]
+    },
+    {
+      "description": "about 6 in off the ground, back only, for feet",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-frame",
+      "material": "yellow",
+      "tags": [
+        "frame"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-low-bar",
+      "name": "Low back bar",
+      "type": "box",
+      "dimensions": [
+        84,
+        1.5,
+        1.5
+      ],
+      "position": [
+        0,
+        14,
+        6
+      ]
+    },
+    {
+      "description": "folding, all canopy panels open as one, at the far end",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-parasol",
+      "name": "Parasol",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "from the ground to the apex of the canopy",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "metal",
+      "tags": [
+        "stand"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-pole",
+      "name": "Parasol pole",
+      "type": "cylinder",
+      "dimensions": [
+        0.75,
+        98
+      ],
+      "position": [
+        48,
+        0,
+        57
+      ]
+    },
+    {
+      "description": "24 in square, hides the sandbags",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "metal",
+      "tags": [
+        "stand"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-base",
+      "name": "Square base",
+      "type": "box",
+      "dimensions": [
+        24,
+        24,
+        8
+      ],
+      "position": [
+        48,
+        0,
+        4
+      ]
+    },
+    {
+      "description": "inside the base",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "sandbag",
+      "tags": [
+        "ballast"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-sandbag-1",
+      "name": "Sandbag 1",
+      "type": "box",
+      "dimensions": [
+        12,
+        6,
+        4
+      ],
+      "position": [
+        48,
+        -6,
+        4
+      ]
+    },
+    {
+      "description": "inside the base",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "sandbag",
+      "tags": [
+        "ballast"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-sandbag-2",
+      "name": "Sandbag 2",
+      "type": "box",
+      "dimensions": [
+        12,
+        6,
+        4
+      ],
+      "position": [
+        48,
+        6,
+        4
+      ]
+    },
+    {
+      "description": "one of three arms, same length",
+      "rotation_y": 95.873,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "metal",
+      "tags": [
+        "stand"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-arm-1",
+      "name": "Canopy arm 1",
+      "type": "cylinder",
+      "dimensions": [
+        0.5,
+        66.85084591835768
+      ],
+      "position": [
+        81.25,
+        0,
+        102.58
+      ]
+    },
+    {
+      "description": "one of three arms, same length",
+      "rotation_y": -101.624,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "metal",
+      "tags": [
+        "stand"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-arm-2",
+      "name": "Canopy arm 2",
+      "type": "cylinder",
+      "dimensions": [
+        0.5,
+        66.85084591835769
+      ],
+      "position": [
+        31.38,
+        28.8,
+        102.58
+      ],
+      "rotation_x": -59.483
+    },
+    {
+      "description": "one of three arms, same length",
+      "rotation_y": -101.624,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "metal",
+      "tags": [
+        "stand"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-arm-3",
+      "name": "Canopy arm 3",
+      "type": "cylinder",
+      "dimensions": [
+        0.5,
+        66.85084591835768
+      ],
+      "position": [
+        31.37,
+        -28.8,
+        102.58
+      ],
+      "rotation_x": 59.483
+    },
+    {
+      "description": "",
+      "rotation_y": -29.922,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-0-3",
+      "name": "Canopy panel 1-4",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        -15.63636363636364,
+        -25.454545454545453,
+        87.4
+      ],
+      "rotation_x": -5.226
+    },
+    {
+      "description": "",
+      "rotation_y": -28.639,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-0-4",
+      "name": "Canopy panel 1-5",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        -15.63636363636364,
+        -12.727272727272734,
+        86.09
+      ],
+      "rotation_x": -4.313
+    },
+    {
+      "description": "",
+      "rotation_y": -27.918,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-0-5",
+      "name": "Canopy panel 1-6",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        -15.63636363636364,
+        0,
+        85.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -28.639,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-0-6",
+      "name": "Canopy panel 1-7",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        -15.63636363636364,
+        12.72727272727272,
+        86.09
+      ],
+      "rotation_x": 4.313
+    },
+    {
+      "description": "",
+      "rotation_y": -29.922,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-0-7",
+      "name": "Canopy panel 1-8",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        -15.63636363636364,
+        25.454545454545453,
+        87.4
+      ],
+      "rotation_x": 5.226
+    },
+    {
+      "description": "",
+      "rotation_y": -9.462,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-1-1",
+      "name": "Canopy panel 2-2",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        -2.9090909090909065,
+        -50.90909090909091,
+        95.66
+      ],
+      "rotation_x": -9.337
+    },
+    {
+      "description": "",
+      "rotation_y": -26.235,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-1-2",
+      "name": "Canopy panel 2-3",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        -2.9090909090909065,
+        -38.18181818181819,
+        95.34
+      ],
+      "rotation_x": -1.619
+    },
+    {
+      "description": "",
+      "rotation_y": -26.639,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-1-3",
+      "name": "Canopy panel 2-4",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        -2.9090909090909065,
+        -25.454545454545453,
+        94.26
+      ],
+      "rotation_x": -6.442
+    },
+    {
+      "description": "",
+      "rotation_y": -25.196,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-1-4",
+      "name": "Canopy panel 2-5",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        -2.9090909090909065,
+        -12.727272727272734,
+        92.56
+      ],
+      "rotation_x": -6.162
+    },
+    {
+      "description": "",
+      "rotation_y": -24.073,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-1-5",
+      "name": "Canopy panel 2-6",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        -2.9090909090909065,
+        0,
+        91.72
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -25.196,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-1-6",
+      "name": "Canopy panel 2-7",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        -2.9090909090909065,
+        12.72727272727272,
+        92.56
+      ],
+      "rotation_x": 6.162
+    },
+    {
+      "description": "",
+      "rotation_y": -26.639,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-1-7",
+      "name": "Canopy panel 2-8",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        -2.9090909090909065,
+        25.454545454545453,
+        94.26
+      ],
+      "rotation_x": 6.442
+    },
+    {
+      "description": "",
+      "rotation_y": -26.235,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-1-8",
+      "name": "Canopy panel 2-9",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        -2.9090909090909065,
+        38.18181818181817,
+        95.34
+      ],
+      "rotation_x": 1.619
+    },
+    {
+      "description": "",
+      "rotation_y": -9.462,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-1-9",
+      "name": "Canopy panel 2-10",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        -2.9090909090909065,
+        50.90909090909091,
+        95.66
+      ],
+      "rotation_x": 9.337
+    },
+    {
+      "description": "",
+      "rotation_y": -15.733,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-2-1",
+      "name": "Canopy panel 3-2",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        9.818181818181813,
+        -50.90909090909091,
+        99.58
+      ],
+      "rotation_x": 9.533
+    },
+    {
+      "description": "",
+      "rotation_y": -19.982,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-2-2",
+      "name": "Canopy panel 3-3",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        9.818181818181813,
+        -38.18181818181819,
+        100.84
+      ],
+      "rotation_x": 1.119
+    },
+    {
+      "description": "",
+      "rotation_y": -22.671,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-2-3",
+      "name": "Canopy panel 3-4",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        9.818181818181813,
+        -25.454545454545453,
+        100.13
+      ],
+      "rotation_x": -6.625
+    },
+    {
+      "description": "",
+      "rotation_y": -21.812,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-2-4",
+      "name": "Canopy panel 3-5",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        9.818181818181813,
+        -12.727272727272734,
+        98.09
+      ],
+      "rotation_x": -8.641
+    },
+    {
+      "description": "",
+      "rotation_y": -19.983,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-2-5",
+      "name": "Canopy panel 3-6",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        9.818181818181813,
+        0,
+        96.88
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -21.812,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-2-6",
+      "name": "Canopy panel 3-7",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        9.818181818181813,
+        12.72727272727272,
+        98.09
+      ],
+      "rotation_x": 8.641
+    },
+    {
+      "description": "",
+      "rotation_y": -22.671,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-2-7",
+      "name": "Canopy panel 3-8",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        9.818181818181813,
+        25.454545454545453,
+        100.13
+      ],
+      "rotation_x": 6.625
+    },
+    {
+      "description": "",
+      "rotation_y": -19.982,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-2-8",
+      "name": "Canopy panel 3-9",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        9.818181818181813,
+        38.18181818181817,
+        100.84
+      ],
+      "rotation_x": -1.119
+    },
+    {
+      "description": "",
+      "rotation_y": -15.733,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-2-9",
+      "name": "Canopy panel 3-10",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        9.818181818181813,
+        50.90909090909091,
+        99.58
+      ],
+      "rotation_x": -9.533
+    },
+    {
+      "description": "",
+      "rotation_y": 0.278,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-3-0",
+      "name": "Canopy panel 4-1",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        22.545454545454547,
+        -63.63636363636364,
+        97.78
+      ],
+      "rotation_x": 20.41
+    },
+    {
+      "description": "",
+      "rotation_y": -3.495,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-3-1",
+      "name": "Canopy panel 4-2",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        22.545454545454547,
+        -50.90909090909091,
+        101.82
+      ],
+      "rotation_x": 14.512
+    },
+    {
+      "description": "",
+      "rotation_y": -9.021,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-3-2",
+      "name": "Canopy panel 4-3",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        22.545454545454547,
+        -38.18181818181819,
+        104.27
+      ],
+      "rotation_x": 6.731
+    },
+    {
+      "description": "",
+      "rotation_y": -15.668,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-3-3",
+      "name": "Canopy panel 4-4",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        22.545454545454547,
+        -25.454545454545453,
+        104.68
+      ],
+      "rotation_x": -3.435
+    },
+    {
+      "description": "",
+      "rotation_y": -18.54,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-3-4",
+      "name": "Canopy panel 4-5",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        22.545454545454547,
+        -12.727272727272734,
+        102.77
+      ],
+      "rotation_x": -11.226
+    },
+    {
+      "description": "",
+      "rotation_y": -15.67,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-3-5",
+      "name": "Canopy panel 4-6",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        22.545454545454547,
+        0,
+        100.98
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -18.54,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-3-6",
+      "name": "Canopy panel 4-7",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        22.545454545454547,
+        12.72727272727272,
+        102.77
+      ],
+      "rotation_x": 11.226
+    },
+    {
+      "description": "",
+      "rotation_y": -15.668,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-3-7",
+      "name": "Canopy panel 4-8",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        22.545454545454547,
+        25.454545454545453,
+        104.68
+      ],
+      "rotation_x": 3.435
+    },
+    {
+      "description": "",
+      "rotation_y": -9.021,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-3-8",
+      "name": "Canopy panel 4-9",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        22.545454545454547,
+        38.18181818181817,
+        104.27
+      ],
+      "rotation_x": -6.731
+    },
+    {
+      "description": "",
+      "rotation_y": -3.495,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-3-9",
+      "name": "Canopy panel 4-10",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        22.545454545454547,
+        50.90909090909091,
+        101.82
+      ],
+      "rotation_x": -14.512
+    },
+    {
+      "description": "",
+      "rotation_y": 0.278,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-3-10",
+      "name": "Canopy panel 4-11",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        22.545454545454547,
+        63.636363636363626,
+        97.78
+      ],
+      "rotation_x": -20.41
+    },
+    {
+      "description": "",
+      "rotation_y": 11.768,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-4-0",
+      "name": "Canopy panel 5-1",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        35.272727272727266,
+        -63.63636363636364,
+        96.39
+      ],
+      "rotation_x": 21.813
+    },
+    {
+      "description": "",
+      "rotation_y": 10.327,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-4-1",
+      "name": "Canopy panel 5-2",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        35.272727272727266,
+        -50.90909090909091,
+        101.03
+      ],
+      "rotation_x": 17.465
+    },
+    {
+      "description": "",
+      "rotation_y": 7.504,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-4-2",
+      "name": "Canopy panel 5-3",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        35.272727272727266,
+        -38.18181818181819,
+        104.49
+      ],
+      "rotation_x": 12.408
+    },
+    {
+      "description": "",
+      "rotation_y": 1.264,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-4-3",
+      "name": "Canopy panel 5-4",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        35.272727272727266,
+        -25.454545454545453,
+        106.56
+      ],
+      "rotation_x": 5.316
+    },
+    {
+      "description": "",
+      "rotation_y": -11.157,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-4-4",
+      "name": "Canopy panel 5-5",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        35.272727272727266,
+        -12.727272727272734,
+        106.4
+      ],
+      "rotation_x": -8.122
+    },
+    {
+      "description": "",
+      "rotation_y": -11.167,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-4-5",
+      "name": "Canopy panel 5-6",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        35.272727272727266,
+        0,
+        104.02
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -11.157,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-4-6",
+      "name": "Canopy panel 5-7",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        35.272727272727266,
+        12.72727272727272,
+        106.4
+      ],
+      "rotation_x": 8.122
+    },
+    {
+      "description": "",
+      "rotation_y": 1.264,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-4-7",
+      "name": "Canopy panel 5-8",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        35.272727272727266,
+        25.454545454545453,
+        106.56
+      ],
+      "rotation_x": -5.316
+    },
+    {
+      "description": "",
+      "rotation_y": 7.504,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-4-8",
+      "name": "Canopy panel 5-9",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        35.272727272727266,
+        38.18181818181817,
+        104.49
+      ],
+      "rotation_x": -12.408
+    },
+    {
+      "description": "",
+      "rotation_y": 10.327,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-4-9",
+      "name": "Canopy panel 5-10",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        35.272727272727266,
+        50.90909090909091,
+        101.03
+      ],
+      "rotation_x": -17.465
+    },
+    {
+      "description": "",
+      "rotation_y": 11.768,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-4-10",
+      "name": "Canopy panel 5-11",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        35.272727272727266,
+        63.636363636363626,
+        96.39
+      ],
+      "rotation_x": -21.813
+    },
+    {
+      "description": "",
+      "rotation_y": 18.923,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-5-0",
+      "name": "Canopy panel 6-1",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        48,
+        -63.63636363636364,
+        92.78
+      ],
+      "rotation_x": 21.461
+    },
+    {
+      "description": "",
+      "rotation_y": 18.922,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-5-1",
+      "name": "Canopy panel 6-2",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        48,
+        -50.90909090909091,
+        97.54
+      ],
+      "rotation_x": 17.458
+    },
+    {
+      "description": "",
+      "rotation_y": 18.921,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-5-2",
+      "name": "Canopy panel 6-3",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        48,
+        -38.18181818181819,
+        101.24
+      ],
+      "rotation_x": 13.272
+    },
+    {
+      "description": "",
+      "rotation_y": 18.916,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-5-3",
+      "name": "Canopy panel 6-4",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        48,
+        -25.454545454545453,
+        103.88
+      ],
+      "rotation_x": 8.937
+    },
+    {
+      "description": "",
+      "rotation_y": 18.889,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-5-4",
+      "name": "Canopy panel 6-5",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        48,
+        -12.727272727272734,
+        105.47
+      ],
+      "rotation_x": 4.497
+    },
+    {
+      "description": "",
+      "rotation_y": -6.52,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-5-5",
+      "name": "Canopy panel 6-6",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        48,
+        0,
+        106
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 18.889,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-5-6",
+      "name": "Canopy panel 6-7",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        48,
+        12.72727272727272,
+        105.47
+      ],
+      "rotation_x": -4.497
+    },
+    {
+      "description": "",
+      "rotation_y": 18.916,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-5-7",
+      "name": "Canopy panel 6-8",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        48,
+        25.454545454545453,
+        103.88
+      ],
+      "rotation_x": -8.937
+    },
+    {
+      "description": "",
+      "rotation_y": 18.921,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-5-8",
+      "name": "Canopy panel 6-9",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        48,
+        38.18181818181817,
+        101.24
+      ],
+      "rotation_x": -13.272
+    },
+    {
+      "description": "",
+      "rotation_y": 18.922,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-5-9",
+      "name": "Canopy panel 6-10",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        48,
+        50.90909090909091,
+        97.54
+      ],
+      "rotation_x": -17.458
+    },
+    {
+      "description": "",
+      "rotation_y": 18.923,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-5-10",
+      "name": "Canopy panel 6-11",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        48,
+        63.636363636363626,
+        92.78
+      ],
+      "rotation_x": -21.461
+    },
+    {
+      "description": "",
+      "rotation_y": 20.534,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-6-0",
+      "name": "Canopy panel 7-1",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        60.72727272727272,
+        -63.63636363636364,
+        88.11
+      ],
+      "rotation_x": 21.579
+    },
+    {
+      "description": "",
+      "rotation_y": 19.211,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-6-1",
+      "name": "Canopy panel 7-2",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        60.72727272727272,
+        -50.90909090909091,
+        92.99
+      ],
+      "rotation_x": 18.051
+    },
+    {
+      "description": "",
+      "rotation_y": 16.592,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-6-2",
+      "name": "Canopy panel 7-3",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        60.72727272727272,
+        -38.18181818181819,
+        96.93
+      ],
+      "rotation_x": 14.856
+    },
+    {
+      "description": "",
+      "rotation_y": 10.663,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-6-3",
+      "name": "Canopy panel 7-4",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        60.72727272727272,
+        -25.454545454545453,
+        100.16
+      ],
+      "rotation_x": 13.239
+    },
+    {
+      "description": "",
+      "rotation_y": -1.775,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-6-4",
+      "name": "Canopy panel 7-5",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        60.72727272727272,
+        -12.727272727272734,
+        103.49
+      ],
+      "rotation_x": 17.304
+    },
+    {
+      "description": "",
+      "rotation_y": -1.785,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-6-5",
+      "name": "Canopy panel 7-6",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        60.72727272727272,
+        0,
+        106.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -1.775,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-6-6",
+      "name": "Canopy panel 7-7",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        60.72727272727272,
+        12.72727272727272,
+        103.49
+      ],
+      "rotation_x": -17.304
+    },
+    {
+      "description": "",
+      "rotation_y": 10.663,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-6-7",
+      "name": "Canopy panel 7-8",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        60.72727272727272,
+        25.454545454545453,
+        100.16
+      ],
+      "rotation_x": -13.239
+    },
+    {
+      "description": "",
+      "rotation_y": 16.592,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-6-8",
+      "name": "Canopy panel 7-9",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        60.72727272727272,
+        38.18181818181817,
+        96.93
+      ],
+      "rotation_x": -14.856
+    },
+    {
+      "description": "",
+      "rotation_y": 19.211,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-6-9",
+      "name": "Canopy panel 7-10",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        60.72727272727272,
+        50.90909090909091,
+        92.99
+      ],
+      "rotation_x": -18.051
+    },
+    {
+      "description": "",
+      "rotation_y": 20.534,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-6-10",
+      "name": "Canopy panel 7-11",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        60.72727272727272,
+        63.636363636363626,
+        88.11
+      ],
+      "rotation_x": -21.579
+    },
+    {
+      "description": "",
+      "rotation_y": 18.64,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-7-0",
+      "name": "Canopy panel 8-1",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        73.45454545454545,
+        -63.63636363636364,
+        83.54
+      ],
+      "rotation_x": 23.509
+    },
+    {
+      "description": "",
+      "rotation_y": 15.183,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-7-1",
+      "name": "Canopy panel 8-2",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        73.45454545454545,
+        -50.90909090909091,
+        89.02
+      ],
+      "rotation_x": 21.378
+    },
+    {
+      "description": "",
+      "rotation_y": 9.854,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-7-2",
+      "name": "Canopy panel 8-3",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        73.45454545454545,
+        -38.18181818181819,
+        93.98
+      ],
+      "rotation_x": 20.486
+    },
+    {
+      "description": "",
+      "rotation_y": 2.976,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-7-3",
+      "name": "Canopy panel 8-4",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        73.45454545454545,
+        -25.454545454545453,
+        98.86
+      ],
+      "rotation_x": 21.518
+    },
+    {
+      "description": "",
+      "rotation_y": -0.166,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-7-4",
+      "name": "Canopy panel 8-5",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        73.45454545454545,
+        -12.727272727272734,
+        103.94
+      ],
+      "rotation_x": 20.585
+    },
+    {
+      "description": "",
+      "rotation_y": 2.974,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-7-5",
+      "name": "Canopy panel 8-6",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        73.45454545454545,
+        0,
+        106.79
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -0.166,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-7-6",
+      "name": "Canopy panel 8-7",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        73.45454545454545,
+        12.72727272727272,
+        103.94
+      ],
+      "rotation_x": -20.585
+    },
+    {
+      "description": "",
+      "rotation_y": 2.976,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-7-7",
+      "name": "Canopy panel 8-8",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        73.45454545454545,
+        25.454545454545453,
+        98.86
+      ],
+      "rotation_x": -21.518
+    },
+    {
+      "description": "",
+      "rotation_y": 9.854,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-7-8",
+      "name": "Canopy panel 8-9",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        73.45454545454545,
+        38.18181818181817,
+        93.98
+      ],
+      "rotation_x": -20.486
+    },
+    {
+      "description": "",
+      "rotation_y": 15.183,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-7-9",
+      "name": "Canopy panel 8-10",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        73.45454545454545,
+        50.90909090909091,
+        89.02
+      ],
+      "rotation_x": -21.378
+    },
+    {
+      "description": "",
+      "rotation_y": 18.64,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-7-10",
+      "name": "Canopy panel 8-11",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        73.45454545454545,
+        63.636363636363626,
+        83.54
+      ],
+      "rotation_x": -23.509
+    },
+    {
+      "description": "",
+      "rotation_y": 12.243,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-8-1",
+      "name": "Canopy panel 9-2",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        86.18181818181817,
+        -50.90909090909091,
+        85.97
+      ],
+      "rotation_x": 25.609
+    },
+    {
+      "description": "",
+      "rotation_y": 7.693,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-8-2",
+      "name": "Canopy panel 9-3",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        86.18181818181817,
+        -38.18181818181819,
+        92.12
+      ],
+      "rotation_x": 25.343
+    },
+    {
+      "description": "",
+      "rotation_y": 4.63,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-8-3",
+      "name": "Canopy panel 9-4",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        86.18181818181817,
+        -25.454545454545453,
+        98.12
+      ],
+      "rotation_x": 24.553
+    },
+    {
+      "description": "",
+      "rotation_y": 5.625,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-8-4",
+      "name": "Canopy panel 9-5",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        86.18181818181817,
+        -12.727272727272734,
+        103.33
+      ],
+      "rotation_x": 18.176
+    },
+    {
+      "description": "",
+      "rotation_y": 7.692,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-8-5",
+      "name": "Canopy panel 9-6",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        86.18181818181817,
+        0,
+        105.6
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 5.625,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-8-6",
+      "name": "Canopy panel 9-7",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        86.18181818181817,
+        12.72727272727272,
+        103.33
+      ],
+      "rotation_x": -18.176
+    },
+    {
+      "description": "",
+      "rotation_y": 4.63,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-8-7",
+      "name": "Canopy panel 9-8",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        86.18181818181817,
+        25.454545454545453,
+        98.12
+      ],
+      "rotation_x": -24.553
+    },
+    {
+      "description": "",
+      "rotation_y": 7.693,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-8-8",
+      "name": "Canopy panel 9-9",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        86.18181818181817,
+        38.18181818181817,
+        92.12
+      ],
+      "rotation_x": -25.343
+    },
+    {
+      "description": "",
+      "rotation_y": 12.243,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-8-9",
+      "name": "Canopy panel 9-10",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        86.18181818181817,
+        50.90909090909091,
+        85.97
+      ],
+      "rotation_x": -25.609
+    },
+    {
+      "description": "",
+      "rotation_y": -9.462,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-9-1",
+      "name": "Canopy panel 10-2",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        98.9090909090909,
+        -50.90909090909091,
+        84.34
+      ],
+      "rotation_x": 9.337
+    },
+    {
+      "description": "",
+      "rotation_y": 9.766,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-9-2",
+      "name": "Canopy panel 10-3",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        98.9090909090909,
+        -38.18181818181819,
+        90.22
+      ],
+      "rotation_x": 27.588
+    },
+    {
+      "description": "",
+      "rotation_y": 9.276,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-9-3",
+      "name": "Canopy panel 10-4",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        98.9090909090909,
+        -25.454545454545453,
+        96.59
+      ],
+      "rotation_x": 24.36
+    },
+    {
+      "description": "",
+      "rotation_y": 11.004,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-9-4",
+      "name": "Canopy panel 10-5",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        98.9090909090909,
+        -12.727272727272734,
+        101.46
+      ],
+      "rotation_x": 15.658
+    },
+    {
+      "description": "",
+      "rotation_y": 12.308,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-9-5",
+      "name": "Canopy panel 10-6",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        98.9090909090909,
+        0,
+        103.36
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 11.004,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-9-6",
+      "name": "Canopy panel 10-7",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        98.9090909090909,
+        12.72727272727272,
+        101.46
+      ],
+      "rotation_x": -15.658
+    },
+    {
+      "description": "",
+      "rotation_y": 9.276,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-9-7",
+      "name": "Canopy panel 10-8",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        98.9090909090909,
+        25.454545454545453,
+        96.59
+      ],
+      "rotation_x": -24.36
+    },
+    {
+      "description": "",
+      "rotation_y": 9.766,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-9-8",
+      "name": "Canopy panel 10-9",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        98.9090909090909,
+        38.18181818181817,
+        90.22
+      ],
+      "rotation_x": -27.588
+    },
+    {
+      "description": "",
+      "rotation_y": -9.462,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-9-9",
+      "name": "Canopy panel 10-10",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        98.9090909090909,
+        50.90909090909091,
+        84.34
+      ],
+      "rotation_x": -9.337
+    },
+    {
+      "description": "",
+      "rotation_y": 14.34,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-10-3",
+      "name": "Canopy panel 11-4",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        111.63636363636363,
+        -25.454545454545453,
+        93.92
+      ],
+      "rotation_x": 22.994
+    },
+    {
+      "description": "",
+      "rotation_y": 15.911,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-10-4",
+      "name": "Canopy panel 11-5",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        111.63636363636363,
+        -12.727272727272734,
+        98.4
+      ],
+      "rotation_x": 13.631
+    },
+    {
+      "description": "",
+      "rotation_y": 16.767,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-10-5",
+      "name": "Canopy panel 11-6",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        111.63636363636363,
+        0,
+        100.05
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 15.911,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-10-6",
+      "name": "Canopy panel 11-7",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        111.63636363636363,
+        12.72727272727272,
+        98.4
+      ],
+      "rotation_x": -13.631
+    },
+    {
+      "description": "",
+      "rotation_y": 14.34,
+      "parent": "outdoor-table-v2-parasol",
+      "material": "canopy",
+      "tags": [
+        "shade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-cloth-10-7",
+      "name": "Canopy panel 11-8",
+      "type": "box",
+      "dimensions": [
+        16.545454545454547,
+        16.545454545454547,
+        0.6
+      ],
+      "position": [
+        111.63636363636363,
+        25.454545454545453,
+        93.92
+      ],
+      "rotation_x": -22.994
+    },
+    {
+      "description": "on the ground, 8 ft from the table end, one main limb",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-bonsai",
+      "name": "Bonsai tree",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        -150,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "2 ft x 2 ft x 2 ft, on the ground",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "box",
+      "tags": [
+        "container"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-box",
+      "name": "Bonsai box",
+      "type": "box",
+      "dimensions": [
+        24,
+        24,
+        24
+      ],
+      "position": [
+        -150,
+        0,
+        12
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 18,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "trunk",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-t-1",
+      "name": "Trunk 1",
+      "type": "cylinder",
+      "dimensions": [
+        4,
+        16
+      ],
+      "position": [
+        -147.53,
+        0,
+        31.61
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 24,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "trunk",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-t-2",
+      "name": "Trunk 2",
+      "type": "cylinder",
+      "dimensions": [
+        3.2,
+        16
+      ],
+      "position": [
+        -141.8,
+        0,
+        46.53
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 30,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "trunk",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-t-3",
+      "name": "Trunk 3",
+      "type": "cylinder",
+      "dimensions": [
+        2.5,
+        16
+      ],
+      "position": [
+        -134.55,
+        0,
+        60.76
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 36,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "trunk",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-t-4",
+      "name": "Trunk 4",
+      "type": "cylinder",
+      "dimensions": [
+        1.7,
+        44
+      ],
+      "position": [
+        -117.62,
+        0,
+        85.49
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage apex-0",
+      "name": "Foliage apex",
+      "type": "sphere",
+      "dimensions": [
+        4.8
+      ],
+      "position": [
+        -104.69,
+        0,
+        103.29
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage apex-1",
+      "name": "Foliage apex part 1",
+      "type": "sphere",
+      "dimensions": [
+        3.84
+      ],
+      "position": [
+        -100.85,
+        0.96,
+        104.73
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage apex-2",
+      "name": "Foliage apex part 2",
+      "type": "sphere",
+      "dimensions": [
+        3.5999999999999996
+      ],
+      "position": [
+        -108.05,
+        -1.44,
+        103.77
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage apex-3",
+      "name": "Foliage apex part 3",
+      "type": "sphere",
+      "dimensions": [
+        3.36
+      ],
+      "position": [
+        -104.21,
+        3.84,
+        102.33
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": -59.036,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "deadwood",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-jin",
+      "name": "Dead branch (jin)",
+      "type": "cylinder",
+      "dimensions": [
+        1,
+        12
+      ],
+      "position": [
+        -153.58,
+        0.51,
+        31.83
+      ],
+      "rotation_x": -4.901
+    },
+    {
+      "description": "",
+      "rotation_y": -57.995,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "trunk",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-bal",
+      "name": "Balance branch",
+      "type": "cylinder",
+      "dimensions": [
+        1.4,
+        22
+      ],
+      "position": [
+        -154.37,
+        0.58,
+        45.04
+      ],
+      "rotation_x": -3.034
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage balance-0",
+      "name": "Foliage balance",
+      "type": "sphere",
+      "dimensions": [
+        4.8
+      ],
+      "position": [
+        -163.69,
+        1.16,
+        50.86
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage balance-1",
+      "name": "Foliage balance part 1",
+      "type": "sphere",
+      "dimensions": [
+        3.84
+      ],
+      "position": [
+        -159.85,
+        2.12,
+        52.3
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage balance-2",
+      "name": "Foliage balance part 2",
+      "type": "sphere",
+      "dimensions": [
+        3.5999999999999996
+      ],
+      "position": [
+        -167.05,
+        -0.28,
+        51.34
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage balance-3",
+      "name": "Foliage balance part 3",
+      "type": "sphere",
+      "dimensions": [
+        3.36
+      ],
+      "position": [
+        -163.21,
+        5,
+        49.9
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 61.981,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "trunk",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-limb-1",
+      "name": "Main limb 1",
+      "type": "cylinder",
+      "dimensions": [
+        2.2,
+        26
+      ],
+      "position": [
+        -127.08,
+        0.46,
+        59.94
+      ],
+      "rotation_x": -2.022
+    },
+    {
+      "description": "",
+      "rotation_y": 54.978,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "trunk",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-limb-2",
+      "name": "Main limb 2",
+      "type": "cylinder",
+      "dimensions": [
+        1.6,
+        22
+      ],
+      "position": [
+        -106.61,
+        1.28,
+        72.35
+      ],
+      "rotation_x": -1.876
+    },
+    {
+      "description": "",
+      "rotation_y": 59.98,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "trunk",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-limb-3",
+      "name": "Main limb 3",
+      "type": "cylinder",
+      "dimensions": [
+        1.1,
+        18
+      ],
+      "position": [
+        -89.81,
+        1.95,
+        83.16
+      ],
+      "rotation_x": -1.984
+    },
+    {
+      "description": "",
+      "rotation_y": 39.098,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "trunk",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-b-1-1",
+      "name": "Branch 1.1",
+      "type": "cylinder",
+      "dimensions": [
+        0.7,
+        15
+      ],
+      "position": [
+        -111.23,
+        3.75,
+        71.43
+      ],
+      "rotation_x": -22.16
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 1.1-0",
+      "name": "Foliage 1.1",
+      "type": "sphere",
+      "dimensions": [
+        4
+      ],
+      "position": [
+        -106.85,
+        6.58,
+        76.82
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 1.1-1",
+      "name": "Foliage 1.1 part 1",
+      "type": "sphere",
+      "dimensions": [
+        3.2
+      ],
+      "position": [
+        -103.65,
+        7.38,
+        78.02
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 1.1-2",
+      "name": "Foliage 1.1 part 2",
+      "type": "sphere",
+      "dimensions": [
+        3
+      ],
+      "position": [
+        -109.65,
+        5.38,
+        77.22
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 1.1-3",
+      "name": "Foliage 1.1 part 3",
+      "type": "sphere",
+      "dimensions": [
+        2.8
+      ],
+      "position": [
+        -106.45,
+        9.78,
+        76.02
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 40.429,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "trunk",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-b-1-2",
+      "name": "Branch 1.2",
+      "type": "cylinder",
+      "dimensions": [
+        0.7,
+        15
+      ],
+      "position": [
+        -111.02,
+        -1.55,
+        71.43
+      ],
+      "rotation_x": 19.229
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 1.2-0",
+      "name": "Foliage 1.2",
+      "type": "sphere",
+      "dimensions": [
+        4.6
+      ],
+      "position": [
+        -106.42,
+        -4.02,
+        76.82
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 1.2-1",
+      "name": "Foliage 1.2 part 1",
+      "type": "sphere",
+      "dimensions": [
+        3.6799999999999997
+      ],
+      "position": [
+        -102.74,
+        -3.1,
+        78.2
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 1.2-2",
+      "name": "Foliage 1.2 part 2",
+      "type": "sphere",
+      "dimensions": [
+        3.4499999999999997
+      ],
+      "position": [
+        -109.64,
+        -5.4,
+        77.28
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 1.2-3",
+      "name": "Foliage 1.2 part 3",
+      "type": "sphere",
+      "dimensions": [
+        3.2199999999999998
+      ],
+      "position": [
+        -105.96,
+        -0.34,
+        75.9
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 62.59,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "trunk",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-b-1-3",
+      "name": "Branch 1.3",
+      "type": "cylinder",
+      "dimensions": [
+        0.7,
+        15
+      ],
+      "position": [
+        -109.73,
+        -2.6,
+        69.09
+      ],
+      "rotation_x": 27.972
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 1.3-0",
+      "name": "Foliage 1.3",
+      "type": "sphere",
+      "dimensions": [
+        4
+      ],
+      "position": [
+        -103.85,
+        -6.12,
+        72.14
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 1.3-1",
+      "name": "Foliage 1.3 part 1",
+      "type": "sphere",
+      "dimensions": [
+        3.2
+      ],
+      "position": [
+        -100.65,
+        -5.32,
+        73.34
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 1.3-2",
+      "name": "Foliage 1.3 part 2",
+      "type": "sphere",
+      "dimensions": [
+        3
+      ],
+      "position": [
+        -106.65,
+        -7.32,
+        72.54
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 1.3-3",
+      "name": "Foliage 1.3 part 3",
+      "type": "sphere",
+      "dimensions": [
+        2.8
+      ],
+      "position": [
+        -103.45,
+        -2.92,
+        71.34
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 61.347,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "trunk",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-b-1-4",
+      "name": "Branch 1.4",
+      "type": "cylinder",
+      "dimensions": [
+        0.7,
+        15
+      ],
+      "position": [
+        -110.03,
+        4.89,
+        69.09
+      ],
+      "rotation_x": -32.016
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 1.4-0",
+      "name": "Foliage 1.4",
+      "type": "sphere",
+      "dimensions": [
+        4.6
+      ],
+      "position": [
+        -104.45,
+        8.87,
+        72.14
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 1.4-1",
+      "name": "Foliage 1.4 part 1",
+      "type": "sphere",
+      "dimensions": [
+        3.6799999999999997
+      ],
+      "position": [
+        -100.77,
+        9.79,
+        73.52
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 1.4-2",
+      "name": "Foliage 1.4 part 2",
+      "type": "sphere",
+      "dimensions": [
+        3.4499999999999997
+      ],
+      "position": [
+        -107.67,
+        7.49,
+        72.6
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 1.4-3",
+      "name": "Foliage 1.4 part 3",
+      "type": "sphere",
+      "dimensions": [
+        3.2199999999999998
+      ],
+      "position": [
+        -103.99,
+        12.55,
+        71.22
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 32.038,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "trunk",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-b-2-1",
+      "name": "Branch 2.1",
+      "type": "cylinder",
+      "dimensions": [
+        0.7,
+        13
+      ],
+      "position": [
+        -94.4,
+        4.07,
+        83.77
+      ],
+      "rotation_x": -21.933
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 2.1-0",
+      "name": "Foliage 2.1",
+      "type": "sphere",
+      "dimensions": [
+        4
+      ],
+      "position": [
+        -91.21,
+        6.49,
+        88.88
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 2.1-1",
+      "name": "Foliage 2.1 part 1",
+      "type": "sphere",
+      "dimensions": [
+        3.2
+      ],
+      "position": [
+        -88.01,
+        7.29,
+        90.08
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 2.1-2",
+      "name": "Foliage 2.1 part 2",
+      "type": "sphere",
+      "dimensions": [
+        3
+      ],
+      "position": [
+        -94.01,
+        5.29,
+        89.28
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 2.1-3",
+      "name": "Foliage 2.1 part 3",
+      "type": "sphere",
+      "dimensions": [
+        2.8
+      ],
+      "position": [
+        -90.81,
+        9.69,
+        88.08
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 33.493,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "trunk",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-b-2-2",
+      "name": "Branch 2.2",
+      "type": "cylinder",
+      "dimensions": [
+        0.7,
+        13
+      ],
+      "position": [
+        -94.22,
+        -0.53,
+        83.77
+      ],
+      "rotation_x": 19.452
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 2.2-0",
+      "name": "Foliage 2.2",
+      "type": "sphere",
+      "dimensions": [
+        4.6
+      ],
+      "position": [
+        -90.84,
+        -2.69,
+        88.88
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 2.2-1",
+      "name": "Foliage 2.2 part 1",
+      "type": "sphere",
+      "dimensions": [
+        3.6799999999999997
+      ],
+      "position": [
+        -87.16,
+        -1.77,
+        90.26
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 2.2-2",
+      "name": "Foliage 2.2 part 2",
+      "type": "sphere",
+      "dimensions": [
+        3.4499999999999997
+      ],
+      "position": [
+        -94.06,
+        -4.07,
+        89.34
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 2.2-3",
+      "name": "Foliage 2.2 part 3",
+      "type": "sphere",
+      "dimensions": [
+        3.2199999999999998
+      ],
+      "position": [
+        -90.38,
+        0.99,
+        87.96
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 55.724,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "trunk",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-b-2-3",
+      "name": "Branch 2.3",
+      "type": "cylinder",
+      "dimensions": [
+        0.7,
+        13
+      ],
+      "position": [
+        -92.87,
+        -1.43,
+        81.89
+      ],
+      "rotation_x": 28.115
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 2.3-0",
+      "name": "Foliage 2.3",
+      "type": "sphere",
+      "dimensions": [
+        4
+      ],
+      "position": [
+        -88.13,
+        -4.49,
+        85.12
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 2.3-1",
+      "name": "Foliage 2.3 part 1",
+      "type": "sphere",
+      "dimensions": [
+        3.2
+      ],
+      "position": [
+        -84.93,
+        -3.69,
+        86.32
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 2.3-2",
+      "name": "Foliage 2.3 part 2",
+      "type": "sphere",
+      "dimensions": [
+        3
+      ],
+      "position": [
+        -90.93,
+        -5.69,
+        85.52
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 2.3-3",
+      "name": "Foliage 2.3 part 3",
+      "type": "sphere",
+      "dimensions": [
+        2.8
+      ],
+      "position": [
+        -87.73,
+        -1.29,
+        84.32
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 54.205,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "trunk",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-b-2-4",
+      "name": "Branch 2.4",
+      "type": "cylinder",
+      "dimensions": [
+        0.7,
+        13
+      ],
+      "position": [
+        -93.13,
+        5.07,
+        81.89
+      ],
+      "rotation_x": -31.867
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 2.4-0",
+      "name": "Foliage 2.4",
+      "type": "sphere",
+      "dimensions": [
+        4.6
+      ],
+      "position": [
+        -88.65,
+        8.5,
+        85.12
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 2.4-1",
+      "name": "Foliage 2.4 part 1",
+      "type": "sphere",
+      "dimensions": [
+        3.6799999999999997
+      ],
+      "position": [
+        -84.97,
+        9.42,
+        86.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 2.4-2",
+      "name": "Foliage 2.4 part 2",
+      "type": "sphere",
+      "dimensions": [
+        3.4499999999999997
+      ],
+      "position": [
+        -91.87,
+        7.12,
+        85.58
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 2.4-3",
+      "name": "Foliage 2.4 part 3",
+      "type": "sphere",
+      "dimensions": [
+        3.2199999999999998
+      ],
+      "position": [
+        -88.19,
+        12.18,
+        84.2
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 37.079,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "trunk",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-b-3-1",
+      "name": "Branch 3.1",
+      "type": "cylinder",
+      "dimensions": [
+        0.7,
+        11
+      ],
+      "position": [
+        -78.95,
+        4.33,
+        91.72
+      ],
+      "rotation_x": -22.097
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 3.1-0",
+      "name": "Foliage 3.1",
+      "type": "sphere",
+      "dimensions": [
+        4
+      ],
+      "position": [
+        -75.88,
+        6.4,
+        95.79
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 3.1-1",
+      "name": "Foliage 3.1 part 1",
+      "type": "sphere",
+      "dimensions": [
+        3.2
+      ],
+      "position": [
+        -72.68,
+        7.2,
+        96.99
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 3.1-2",
+      "name": "Foliage 3.1 part 2",
+      "type": "sphere",
+      "dimensions": [
+        3
+      ],
+      "position": [
+        -78.68,
+        5.2,
+        96.19
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 3.1-3",
+      "name": "Foliage 3.1 part 3",
+      "type": "sphere",
+      "dimensions": [
+        2.8
+      ],
+      "position": [
+        -75.48,
+        9.6,
+        94.99
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 38.448,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "trunk",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-b-3-2",
+      "name": "Branch 3.2",
+      "type": "cylinder",
+      "dimensions": [
+        0.7,
+        11
+      ],
+      "position": [
+        -78.8,
+        0.44,
+        91.72
+      ],
+      "rotation_x": 19.291
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 3.2-0",
+      "name": "Foliage 3.2",
+      "type": "sphere",
+      "dimensions": [
+        4.6
+      ],
+      "position": [
+        -75.57,
+        -1.37,
+        95.79
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 3.2-1",
+      "name": "Foliage 3.2 part 1",
+      "type": "sphere",
+      "dimensions": [
+        3.6799999999999997
+      ],
+      "position": [
+        -71.89,
+        -0.45,
+        97.17
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 3.2-2",
+      "name": "Foliage 3.2 part 2",
+      "type": "sphere",
+      "dimensions": [
+        3.4499999999999997
+      ],
+      "position": [
+        -78.79,
+        -2.75,
+        96.25
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 3.2-3",
+      "name": "Foliage 3.2 part 3",
+      "type": "sphere",
+      "dimensions": [
+        3.2199999999999998
+      ],
+      "position": [
+        -75.11,
+        2.31,
+        94.87
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 60.629,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "trunk",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-b-3-3",
+      "name": "Branch 3.3",
+      "type": "cylinder",
+      "dimensions": [
+        0.7,
+        11
+      ],
+      "position": [
+        -77.8,
+        -0.32,
+        90.04
+      ],
+      "rotation_x": 28.01
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 3.3-0",
+      "name": "Foliage 3.3",
+      "type": "sphere",
+      "dimensions": [
+        4
+      ],
+      "position": [
+        -73.56,
+        -2.91,
+        92.42
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 3.3-1",
+      "name": "Foliage 3.3 part 1",
+      "type": "sphere",
+      "dimensions": [
+        3.2
+      ],
+      "position": [
+        -70.36,
+        -2.11,
+        93.62
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 3.3-2",
+      "name": "Foliage 3.3 part 2",
+      "type": "sphere",
+      "dimensions": [
+        3
+      ],
+      "position": [
+        -76.36,
+        -4.11,
+        92.82
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 3.3-3",
+      "name": "Foliage 3.3 part 3",
+      "type": "sphere",
+      "dimensions": [
+        2.8
+      ],
+      "position": [
+        -73.16,
+        0.29,
+        91.62
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 59.305,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "trunk",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-b-3-4",
+      "name": "Branch 3.4",
+      "type": "cylinder",
+      "dimensions": [
+        0.7,
+        11
+      ],
+      "position": [
+        -78.01,
+        5.17,
+        90.04
+      ],
+      "rotation_x": -31.977
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 3.4-0",
+      "name": "Foliage 3.4",
+      "type": "sphere",
+      "dimensions": [
+        4.6
+      ],
+      "position": [
+        -74,
+        8.09,
+        92.42
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 3.4-1",
+      "name": "Foliage 3.4 part 1",
+      "type": "sphere",
+      "dimensions": [
+        3.6799999999999997
+      ],
+      "position": [
+        -70.32,
+        9.01,
+        93.8
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 3.4-2",
+      "name": "Foliage 3.4 part 2",
+      "type": "sphere",
+      "dimensions": [
+        3.4499999999999997
+      ],
+      "position": [
+        -77.22,
+        6.71,
+        92.88
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "outdoor-table-v2-bonsai",
+      "material": "leaf",
+      "tags": [
+        "plant"
+      ],
+      "allowed_overlap": [],
+      "uuid": "outdoor-table-v2-Foliage 3.4-3",
+      "name": "Foliage 3.4 part 3",
+      "type": "sphere",
+      "dimensions": [
+        3.2199999999999998
+      ],
+      "position": [
+        -73.54,
+        11.77,
+        91.5
+      ]
+    }
+  ],
+  "version": 200
+}

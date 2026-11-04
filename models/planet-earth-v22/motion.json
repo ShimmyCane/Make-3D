@@ -1,0 +1,266 @@
+{
+  "schema": "make3d.motion/0.1",
+  "model_id": "planet-earth-v22",
+  "name": "Spin, clouds, satellites, launches, storms",
+  "description": "Earth spins; the Moon goes round. About 80 satellites go round on their rings (the geostationary ones keep over one spot). Clouds drift on their shells. Launches lift off and return. Storms turn. One 480 s loop; each motion is a whole number of turns, so it never jumps.",
+  "units": "in",
+  "up": "z",
+  "loop_s": 480,
+  "autoplay": {
+    "plays": 2
+  },
+  "motions": [
+    {
+      "id": "earth-spin",
+      "target": "planet-earth-v22-body-earth",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 32
+    },
+    {
+      "id": "moon-orbit",
+      "target": "planet-earth-v22-arm-moon",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 16
+    },
+    {
+      "id": "cloud-drift",
+      "target": "planet-earth-v22-clouds22",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 40
+    },
+    {
+      "id": "cloud-drift2",
+      "target": "planet-earth-v22-clouds22b",
+      "kind": "spin",
+      "axis": "y",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 30
+    },
+    {
+      "id": "arm22-leo-a-turn",
+      "target": "planet-earth-v22-arm22-leo-a",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 36
+    },
+    {
+      "id": "arm22-leo-b-turn",
+      "target": "planet-earth-v22-arm22-leo-b",
+      "kind": "spin",
+      "axis": "x",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 40
+    },
+    {
+      "id": "arm22-leo-c-turn",
+      "target": "planet-earth-v22-arm22-leo-c",
+      "kind": "spin",
+      "axis": "y",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 44
+    },
+    {
+      "id": "arm22-leo-d-turn",
+      "target": "planet-earth-v22-arm22-leo-d",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 30
+    },
+    {
+      "id": "arm22-gps-turn",
+      "target": "planet-earth-v22-arm22-gps",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 6
+    },
+    {
+      "id": "arm22-geo-turn",
+      "target": "planet-earth-v22-arm22-geo",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 32
+    },
+    {
+      "id": "arm22-iss-turn",
+      "target": "planet-earth-v22-arm22-iss",
+      "kind": "spin",
+      "axis": "y",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 60
+    },
+    {
+      "id": "arm22-hubble-turn",
+      "target": "planet-earth-v22-arm22-hubble",
+      "kind": "spin",
+      "axis": "x",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 52
+    },
+    {
+      "id": "arm22-polar-turn",
+      "target": "planet-earth-v22-arm22-polar",
+      "kind": "spin",
+      "axis": "x",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 36
+    },
+    {
+      "id": "storm22-1-turn",
+      "target": "planet-earth-v22-storm22-1",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 32
+    },
+    {
+      "id": "storm22-2-turn",
+      "target": "planet-earth-v22-storm22-2",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 32
+    },
+    {
+      "id": "storm22-3-turn",
+      "target": "planet-earth-v22-storm22-3",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 32
+    },
+    {
+      "id": "storm22-4-turn",
+      "target": "planet-earth-v22-storm22-4",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 32
+    },
+    {
+      "id": "storm22-5-turn",
+      "target": "planet-earth-v22-storm22-5",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 32
+    },
+    {
+      "id": "launch-1",
+      "target": "planet-earth-v22-rocket22-1",
+      "kind": "bob",
+      "axis": "x",
+      "amount": 1,
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "launch-2",
+      "target": "planet-earth-v22-rocket22-2",
+      "kind": "bob",
+      "axis": "y",
+      "amount": 1,
+      "cycles": 2,
+      "phase": 0.5
+    },
+    {
+      "id": "launch-3",
+      "target": "planet-earth-v22-rocket22-3",
+      "kind": "bob",
+      "axis": "x",
+      "amount": -1,
+      "cycles": 2,
+      "phase": 0.25
+    },
+    {
+      "id": "launch-4",
+      "target": "planet-earth-v22-rocket22-4",
+      "kind": "bob",
+      "axis": "y",
+      "amount": -1,
+      "cycles": 2,
+      "phase": 0.75
+    }
+  ]
+}

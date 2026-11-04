@@ -1,0 +1,283 @@
+{
+  "schema": "make3d.history/0.1",
+  "model_id": "planet-pluto",
+  "header": {
+    "model_id": "planet-pluto",
+    "name": "Pluto (planet view) V01",
+    "description": "Pluto on its own: a small icy dwarf planet at the edge of the Sun's family, with the moon Charon. Spins, with its moons going round. Tap the pink marker to fly back to the Solar System. Sizes are estimates, in inches.",
+    "units": "in",
+    "up": "z",
+    "world": "solar-system-world",
+    "materials": {
+      "sun": {
+        "color": "#ffd23f",
+        "opacity": 1
+      },
+      "corona": {
+        "color": "#ffb347",
+        "opacity": 0.2
+      },
+      "orbit": {
+        "color": "#8a86a3",
+        "opacity": 1
+      },
+      "mercury": {
+        "color": "#b8b0a4",
+        "opacity": 1
+      },
+      "venus": {
+        "color": "#f0d9a0",
+        "opacity": 1
+      },
+      "earth": {
+        "color": "#4f8fd6",
+        "opacity": 1
+      },
+      "mars": {
+        "color": "#d9714a",
+        "opacity": 1
+      },
+      "jup1": {
+        "color": "#e8c49a",
+        "opacity": 1
+      },
+      "jup2": {
+        "color": "#b87c55",
+        "opacity": 1
+      },
+      "jup3": {
+        "color": "#f2e6d0",
+        "opacity": 1
+      },
+      "sat": {
+        "color": "#ecd8a0",
+        "opacity": 1
+      },
+      "satb": {
+        "color": "#d9b97c",
+        "opacity": 1
+      },
+      "ring": {
+        "color": "#e6d7b0",
+        "opacity": 0.8
+      },
+      "ring2": {
+        "color": "#b59f7a",
+        "opacity": 0.8
+      },
+      "uranus": {
+        "color": "#a9e6f0",
+        "opacity": 1
+      },
+      "uranusb": {
+        "color": "#8fd4e6",
+        "opacity": 1
+      },
+      "neptune": {
+        "color": "#4f73e0",
+        "opacity": 1
+      },
+      "neptuneb": {
+        "color": "#3b5fc2",
+        "opacity": 1
+      },
+      "pluto": {
+        "color": "#c9b49a",
+        "opacity": 1
+      },
+      "charon": {
+        "color": "#8f8a85",
+        "opacity": 1
+      },
+      "moon": {
+        "color": "#bdbdbd",
+        "opacity": 1
+      },
+      "phobos": {
+        "color": "#8c7f74",
+        "opacity": 1
+      },
+      "io": {
+        "color": "#f6e28a",
+        "opacity": 1
+      },
+      "europa": {
+        "color": "#e9dfcf",
+        "opacity": 1
+      },
+      "ganymede": {
+        "color": "#a79b8b",
+        "opacity": 1
+      },
+      "callisto": {
+        "color": "#7e7467",
+        "opacity": 1
+      },
+      "titan": {
+        "color": "#e9b872",
+        "opacity": 1
+      },
+      "enceladus": {
+        "color": "#f4f8ff",
+        "opacity": 1
+      },
+      "miranda": {
+        "color": "#b4b4b4",
+        "opacity": 1
+      },
+      "ariel": {
+        "color": "#c9c9c9",
+        "opacity": 1
+      },
+      "triton": {
+        "color": "#e0d6c8",
+        "opacity": 1
+      },
+      "rock": {
+        "color": "#9a9188",
+        "opacity": 1
+      },
+      "rock2": {
+        "color": "#b3a99c",
+        "opacity": 1
+      },
+      "air": {
+        "color": "#9fd8ff",
+        "opacity": 0.2
+      },
+      "venusair": {
+        "color": "#ffe9a8",
+        "opacity": 0.25
+      },
+      "marker": {
+        "color": "#ff8fa3",
+        "opacity": 1
+      }
+    },
+    "view": {
+      "fill": 0.75,
+      "radius": 3.5
+    }
+  },
+  "operations": [
+    {
+      "seq": 1,
+      "op": "add",
+      "time": "2026-11-01T10:01:00.000Z",
+      "author": "jimmy",
+      "note": "add Pluto body",
+      "object": {
+        "uuid": "planet-pluto-body-pluto",
+        "name": "Pluto body",
+        "description": "spins on its own axis",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 2,
+      "op": "add",
+      "time": "2026-11-01T10:02:00.000Z",
+      "author": "jimmy",
+      "note": "add Pluto",
+      "object": {
+        "uuid": "planet-pluto-ball-pluto",
+        "name": "Pluto",
+        "description": "a small icy dwarf planet at the edge of the Sun's family, with the moon Charon",
+        "type": "sphere",
+        "dimensions": [
+          3.5
+        ],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-body-pluto",
+        "material": "pluto"
+      }
+    },
+    {
+      "seq": 3,
+      "op": "add",
+      "time": "2026-11-01T10:03:00.000Z",
+      "author": "jimmy",
+      "note": "add Charon orbit",
+      "object": {
+        "uuid": "planet-pluto-arm-charon",
+        "name": "Charon orbit",
+        "description": "turns the moon round the planet",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 4,
+      "op": "add",
+      "time": "2026-11-01T10:04:00.000Z",
+      "author": "jimmy",
+      "note": "add Charon",
+      "object": {
+        "uuid": "planet-pluto-moon-charon",
+        "name": "Charon",
+        "description": "a moon of Pluto",
+        "type": "sphere",
+        "dimensions": [
+          1.8
+        ],
+        "position": [
+          10,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-arm-charon",
+        "material": "charon"
+      }
+    },
+    {
+      "seq": 5,
+      "op": "add",
+      "time": "2026-11-01T10:05:00.000Z",
+      "author": "jimmy",
+      "note": "add Back to the Solar System",
+      "object": {
+        "uuid": "planet-pluto-home",
+        "name": "Back to the Solar System",
+        "description": "tap to fly back to the Sun and all the planets",
+        "type": "sphere",
+        "dimensions": [
+          2.6
+        ],
+        "position": [
+          -29.5,
+          0,
+          7.15
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "marker",
+        "tags": [
+          "link:solar-system-v05:fade"
+        ]
+      }
+    }
+  ]
+}

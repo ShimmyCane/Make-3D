@@ -1,0 +1,824 @@
+{
+  "schema": "make3d.motion/0.1",
+  "model_id": "habitat-aquarium-v03",
+  "name": "Swim and sway",
+  "description": "Kelp and eelgrass sway; animals swim closed loops; jellies pulse. Every motion repeats a whole number of times per 60 s loop, so it never jumps.",
+  "units": "in",
+  "up": "z",
+  "loop_s": 60,
+  "autoplay": {
+    "plays": 2
+  },
+  "motions": [
+    {
+      "id": "kelp-1-sway-x",
+      "target": "habitat-aquarium-v03-kelp-1",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -292.735,
+        12.183,
+        18.036
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-1-sway-y",
+      "target": "habitat-aquarium-v03-kelp-1",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -292.735,
+        12.183,
+        18.036
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-2-sway-x",
+      "target": "habitat-aquarium-v03-kelp-2",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -97.484,
+        222.128,
+        38.311
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "kelp-2-sway-y",
+      "target": "habitat-aquarium-v03-kelp-2",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -97.484,
+        222.128,
+        38.311
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "kelp-3-sway-x",
+      "target": "habitat-aquarium-v03-kelp-3",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        78.753,
+        181.559,
+        22.156
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-3-sway-y",
+      "target": "habitat-aquarium-v03-kelp-3",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        78.753,
+        181.559,
+        22.156
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-4-sway-x",
+      "target": "habitat-aquarium-v03-kelp-4",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -89.887,
+        107.444,
+        18.811
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-4-sway-y",
+      "target": "habitat-aquarium-v03-kelp-4",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -89.887,
+        107.444,
+        18.811
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-5-sway-x",
+      "target": "habitat-aquarium-v03-kelp-5",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -217.572,
+        61.123,
+        16.002
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "kelp-5-sway-y",
+      "target": "habitat-aquarium-v03-kelp-5",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -217.572,
+        61.123,
+        16.002
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-6-sway-x",
+      "target": "habitat-aquarium-v03-kelp-6",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -282.057,
+        201.243,
+        32.266
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-6-sway-y",
+      "target": "habitat-aquarium-v03-kelp-6",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -282.057,
+        201.243,
+        32.266
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-7-sway-x",
+      "target": "habitat-aquarium-v03-kelp-7",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -421.463,
+        164.783,
+        46.406
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-7-sway-y",
+      "target": "habitat-aquarium-v03-kelp-7",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -421.463,
+        164.783,
+        46.406
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-8-sway-x",
+      "target": "habitat-aquarium-v03-kelp-8",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -172.335,
+        237.277,
+        30.912
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-8-sway-y",
+      "target": "habitat-aquarium-v03-kelp-8",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -172.335,
+        237.277,
+        30.912
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "kelp-9-sway-x",
+      "target": "habitat-aquarium-v03-kelp-9",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -415.486,
+        112.179,
+        43.853
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-9-sway-y",
+      "target": "habitat-aquarium-v03-kelp-9",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -415.486,
+        112.179,
+        43.853
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-10-sway-x",
+      "target": "habitat-aquarium-v03-kelp-10",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        44.907,
+        188.629,
+        29.5
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-10-sway-y",
+      "target": "habitat-aquarium-v03-kelp-10",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        44.907,
+        188.629,
+        29.5
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-11-sway-x",
+      "target": "habitat-aquarium-v03-kelp-11",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -384.557,
+        95.978,
+        41.242
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-11-sway-y",
+      "target": "habitat-aquarium-v03-kelp-11",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -384.557,
+        95.978,
+        41.242
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-12-sway-x",
+      "target": "habitat-aquarium-v03-kelp-12",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -131.8,
+        133.285,
+        18.678
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-12-sway-y",
+      "target": "habitat-aquarium-v03-kelp-12",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -131.8,
+        133.285,
+        18.678
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-13-sway-x",
+      "target": "habitat-aquarium-v03-kelp-13",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -59.307,
+        225.494,
+        47.331
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "kelp-13-sway-y",
+      "target": "habitat-aquarium-v03-kelp-13",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -59.307,
+        225.494,
+        47.331
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "kelp-14-sway-x",
+      "target": "habitat-aquarium-v03-kelp-14",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -7.938,
+        147.503,
+        20.887
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-14-sway-y",
+      "target": "habitat-aquarium-v03-kelp-14",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -7.938,
+        147.503,
+        20.887
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-15-sway-x",
+      "target": "habitat-aquarium-v03-kelp-15",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -118.526,
+        143.583,
+        20.632
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-15-sway-y",
+      "target": "habitat-aquarium-v03-kelp-15",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -118.526,
+        143.583,
+        20.632
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "kelp-16-sway-x",
+      "target": "habitat-aquarium-v03-kelp-16",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -358.634,
+        136.339,
+        39.601
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "kelp-16-sway-y",
+      "target": "habitat-aquarium-v03-kelp-16",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -358.634,
+        136.339,
+        39.601
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "kelp-17-sway-x",
+      "target": "habitat-aquarium-v03-kelp-17",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -359.92,
+        7.913,
+        23.664
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0
+    },
+    {
+      "id": "kelp-17-sway-y",
+      "target": "habitat-aquarium-v03-kelp-17",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -359.92,
+        7.913,
+        23.664
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 3,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-18-sway-x",
+      "target": "habitat-aquarium-v03-kelp-18",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -192.058,
+        84.48,
+        14.74
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "kelp-18-sway-y",
+      "target": "habitat-aquarium-v03-kelp-18",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -192.058,
+        84.48,
+        14.74
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-19-sway-x",
+      "target": "habitat-aquarium-v03-kelp-19",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        14.733,
+        210.704,
+        43.069
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-19-sway-y",
+      "target": "habitat-aquarium-v03-kelp-19",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        14.733,
+        210.704,
+        43.069
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-20-sway-x",
+      "target": "habitat-aquarium-v03-kelp-20",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -112.025,
+        107.701,
+        19.568
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-20-sway-y",
+      "target": "habitat-aquarium-v03-kelp-20",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -112.025,
+        107.701,
+        19.568
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-21-sway-x",
+      "target": "habitat-aquarium-v03-kelp-21",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -225.091,
+        50.133,
+        16.582
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "kelp-21-sway-y",
+      "target": "habitat-aquarium-v03-kelp-21",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -225.091,
+        50.133,
+        16.582
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "kelp-22-sway-x",
+      "target": "habitat-aquarium-v03-kelp-22",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -362.072,
+        33.918,
+        32.315
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-22-sway-y",
+      "target": "habitat-aquarium-v03-kelp-22",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -362.072,
+        33.918,
+        32.315
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-23-sway-x",
+      "target": "habitat-aquarium-v03-kelp-23",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -284.253,
+        93.541,
+        18.12
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0.5
+    },
+    {
+      "id": "kelp-23-sway-y",
+      "target": "habitat-aquarium-v03-kelp-23",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -284.253,
+        93.541,
+        18.12
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "kelp-24-sway-x",
+      "target": "habitat-aquarium-v03-kelp-24",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -449.02,
+        38.01,
+        38.128
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "kelp-24-sway-y",
+      "target": "habitat-aquarium-v03-kelp-24",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        -449.02,
+        38.01,
+        38.128
+      ],
+      "from": -3.5,
+      "to": 3.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "grass-1-sway",
+      "target": "habitat-aquarium-v03-grass-1",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        72.523,
+        -195.466,
+        17.271
+      ],
+      "from": -5,
+      "to": 5,
+      "cycles": 4,
+      "phase": 0.5
+    },
+    {
+      "id": "grass-2-sway",
+      "target": "habitat-aquarium-v03-grass-2",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -47.647,
+        -187.614,
+        20.228
+      ],
+      "from": -5,
+      "to": 5,
+      "cycles": 3,
+      "phase": 0.5
+    },
+    {
+      "id": "grass-3-sway",
+      "target": "habitat-aquarium-v03-grass-3",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        155.895,
+        -171.684,
+        31.869
+      ],
+      "from": -5,
+      "to": 5,
+      "cycles": 3,
+      "phase": 0.5
+    },
+    {
+      "id": "grass-4-sway",
+      "target": "habitat-aquarium-v03-grass-4",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        83.08,
+        -141.795,
+        16.406
+      ],
+      "from": -5,
+      "to": 5,
+      "cycles": 4,
+      "phase": 0.5
+    },
+    {
+      "id": "grass-5-sway",
+      "target": "habitat-aquarium-v03-grass-5",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        77.108,
+        -230.383,
+        25.905
+      ],
+      "from": -5,
+      "to": 5,
+      "cycles": 5,
+      "phase": 0
+    },
+    {
+      "id": "grass-6-sway",
+      "target": "habitat-aquarium-v03-grass-6",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        -116.531,
+        -229.349,
+        40.907
+      ],
+      "from": -5,
+      "to": 5,
+      "cycles": 3,
+      "phase": 0.5
+    }
+  ]
+}

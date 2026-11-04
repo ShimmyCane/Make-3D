@@ -1,0 +1,1209 @@
+{
+  "schema": "make3d.history/0.1",
+  "model_id": "planet-pluto-v06",
+  "header": {
+    "model_id": "planet-pluto-v06",
+    "name": "Pluto (planet view) V06",
+    "description": "Pluto on its own, increment 6 of 6: a small icy dwarf planet at the edge of the Sun's family, with the moon Charon. Surfaces and bands are shaded procedurally; sizes are rough. Spins, with its moons going round. Use the button to go back to the Solar System.",
+    "units": "in",
+    "up": "z",
+    "world": "solar-system-world",
+    "materials": {
+      "sun": {
+        "color": "#ffd23f",
+        "opacity": 1
+      },
+      "corona": {
+        "color": "#ffb347",
+        "opacity": 0.2
+      },
+      "orbit": {
+        "color": "#8a86a3",
+        "opacity": 1
+      },
+      "mercury": {
+        "color": "#b8b0a4",
+        "opacity": 1
+      },
+      "venus": {
+        "color": "#f0d9a0",
+        "opacity": 1
+      },
+      "earth": {
+        "color": "#4f8fd6",
+        "opacity": 1
+      },
+      "mars": {
+        "color": "#d9714a",
+        "opacity": 1
+      },
+      "jup1": {
+        "color": "#e8c49a",
+        "opacity": 1
+      },
+      "jup2": {
+        "color": "#b87c55",
+        "opacity": 1
+      },
+      "jup3": {
+        "color": "#f2e6d0",
+        "opacity": 1
+      },
+      "sat": {
+        "color": "#ecd8a0",
+        "opacity": 1
+      },
+      "satb": {
+        "color": "#d9b97c",
+        "opacity": 1
+      },
+      "ring": {
+        "color": "#e6d7b0",
+        "opacity": 0.8
+      },
+      "ring2": {
+        "color": "#b59f7a",
+        "opacity": 0.8
+      },
+      "uranus": {
+        "color": "#a9e6f0",
+        "opacity": 1
+      },
+      "uranusb": {
+        "color": "#8fd4e6",
+        "opacity": 1
+      },
+      "neptune": {
+        "color": "#4f73e0",
+        "opacity": 1
+      },
+      "neptuneb": {
+        "color": "#3b5fc2",
+        "opacity": 1
+      },
+      "pluto": {
+        "color": "#c9b49a",
+        "opacity": 1
+      },
+      "charon": {
+        "color": "#8f8a85",
+        "opacity": 1
+      },
+      "moon": {
+        "color": "#bdbdbd",
+        "opacity": 1
+      },
+      "phobos": {
+        "color": "#8c7f74",
+        "opacity": 1
+      },
+      "io": {
+        "color": "#f6e28a",
+        "opacity": 1
+      },
+      "europa": {
+        "color": "#e9dfcf",
+        "opacity": 1
+      },
+      "ganymede": {
+        "color": "#a79b8b",
+        "opacity": 1
+      },
+      "callisto": {
+        "color": "#7e7467",
+        "opacity": 1
+      },
+      "titan": {
+        "color": "#e9b872",
+        "opacity": 1
+      },
+      "enceladus": {
+        "color": "#f4f8ff",
+        "opacity": 1
+      },
+      "miranda": {
+        "color": "#b4b4b4",
+        "opacity": 1
+      },
+      "ariel": {
+        "color": "#c9c9c9",
+        "opacity": 1
+      },
+      "triton": {
+        "color": "#e0d6c8",
+        "opacity": 1
+      },
+      "rock": {
+        "color": "#9a9188",
+        "opacity": 1
+      },
+      "rock2": {
+        "color": "#b3a99c",
+        "opacity": 1
+      },
+      "air": {
+        "color": "#9fd8ff",
+        "opacity": 0.2
+      },
+      "venusair": {
+        "color": "#ffe9a8",
+        "opacity": 0.25
+      },
+      "marker": {
+        "color": "#ff8fa3",
+        "opacity": 1
+      },
+      "venusb1": {
+        "color": "#f3e3b0",
+        "opacity": 1
+      },
+      "venusb2": {
+        "color": "#e2c58a",
+        "opacity": 1
+      },
+      "cap": {
+        "color": "#fbfbff",
+        "opacity": 1
+      },
+      "dark": {
+        "color": "#5b544d",
+        "opacity": 1
+      },
+      "grs": {
+        "color": "#c4543b",
+        "opacity": 1
+      },
+      "ovalw": {
+        "color": "#fff7ee",
+        "opacity": 1
+      },
+      "hexblue": {
+        "color": "#2e4f8f",
+        "opacity": 1
+      },
+      "ringdark": {
+        "color": "#5c5a5a",
+        "opacity": 0.7
+      },
+      "crater": {
+        "color": "#7d756c",
+        "opacity": 1
+      },
+      "brightray": {
+        "color": "#f2f0ea",
+        "opacity": 1
+      },
+      "olympus": {
+        "color": "#b0664a",
+        "opacity": 1
+      },
+      "dustv": {
+        "color": "#c7a77a",
+        "opacity": 0.3
+      },
+      "ice": {
+        "color": "#ffffff",
+        "opacity": 1
+      },
+      "pluto_heart": {
+        "color": "#f4efe6",
+        "opacity": 1
+      },
+      "nitro": {
+        "color": "#fffdf7",
+        "opacity": 1
+      },
+      "mtn": {
+        "color": "#8a8f6a",
+        "opacity": 1
+      },
+      "amalthea": {
+        "color": "#b89070",
+        "opacity": 1
+      },
+      "himalia": {
+        "color": "#a09a92",
+        "opacity": 1
+      },
+      "thebe": {
+        "color": "#a58c75",
+        "opacity": 1
+      },
+      "mimas": {
+        "color": "#e8e8e8",
+        "opacity": 1
+      },
+      "tethys": {
+        "color": "#dcdcdc",
+        "opacity": 1
+      },
+      "dione": {
+        "color": "#d0d0d0",
+        "opacity": 1
+      },
+      "rhea": {
+        "color": "#c9c9c9",
+        "opacity": 1
+      },
+      "iapetus": {
+        "color": "#b8a890",
+        "opacity": 1
+      },
+      "umbriel": {
+        "color": "#6d6d72",
+        "opacity": 1
+      },
+      "titania": {
+        "color": "#bcbcc0",
+        "opacity": 1
+      },
+      "oberon": {
+        "color": "#a9a39d",
+        "opacity": 1
+      },
+      "puck": {
+        "color": "#8f8f8f",
+        "opacity": 1
+      },
+      "proteus": {
+        "color": "#7d7d7d",
+        "opacity": 1
+      },
+      "nereid": {
+        "color": "#9ea5b8",
+        "opacity": 1
+      },
+      "nix": {
+        "color": "#dedede",
+        "opacity": 1
+      },
+      "hydra": {
+        "color": "#e6e6e6",
+        "opacity": 1
+      },
+      "land": {
+        "color": "#5f9e5a",
+        "opacity": 1
+      },
+      "dsand": {
+        "color": "#d9b77a",
+        "opacity": 1
+      },
+      "cloud": {
+        "color": "#ffffff",
+        "opacity": 0.35
+      },
+      "iss": {
+        "color": "#d9dde3",
+        "opacity": 1
+      },
+      "panel": {
+        "color": "#2f5f9e",
+        "opacity": 1
+      },
+      "rocket": {
+        "color": "#f2f2f2",
+        "opacity": 1
+      },
+      "nose": {
+        "color": "#d6453d",
+        "opacity": 1
+      },
+      "plume": {
+        "color": "#ffa640",
+        "opacity": 0.6
+      },
+      "pad": {
+        "color": "#8c8c8c",
+        "opacity": 1
+      },
+      "storm": {
+        "color": "#ffffff",
+        "opacity": 0.8
+      },
+      "eye": {
+        "color": "#3c4a5a",
+        "opacity": 1
+      },
+      "light": {
+        "color": "#ffe27a",
+        "opacity": 1
+      },
+      "shade_mercury": {
+        "color": "#a59d92",
+        "kind": "bands",
+        "a": "#a59d92",
+        "b": "#6d665e",
+        "c": "#8a8178",
+        "freq": 0,
+        "seed": 2
+      },
+      "shade_venus": {
+        "color": "#f3dca0",
+        "kind": "bands",
+        "a": "#f3dca0",
+        "b": "#e0b86e",
+        "c": "#fff2cf",
+        "freq": 9,
+        "seed": 4
+      },
+      "shade_mars": {
+        "color": "#c8643f",
+        "kind": "bands",
+        "a": "#c8643f",
+        "b": "#7a3524",
+        "c": "#e08a5c",
+        "freq": 0,
+        "seed": 5
+      },
+      "shade_jupiter": {
+        "color": "#e8c49a",
+        "kind": "bands",
+        "a": "#e8c49a",
+        "b": "#b87c55",
+        "c": "#f2e6d0",
+        "freq": 12,
+        "seed": 6
+      },
+      "shade_saturn": {
+        "color": "#ecd8a0",
+        "kind": "bands",
+        "a": "#ecd8a0",
+        "b": "#d9b97c",
+        "c": "#f5e8c4",
+        "freq": 10,
+        "seed": 7
+      },
+      "shade_uranus": {
+        "color": "#a9e6f0",
+        "kind": "bands",
+        "a": "#a9e6f0",
+        "b": "#8fd4e6",
+        "c": "#c9f2f8",
+        "freq": 6,
+        "seed": 8
+      },
+      "shade_neptune": {
+        "color": "#4f73e0",
+        "kind": "bands",
+        "a": "#4f73e0",
+        "b": "#3b5fc2",
+        "c": "#6f93f0",
+        "freq": 8,
+        "seed": 9
+      },
+      "shade_pluto": {
+        "color": "#d6c3a1",
+        "kind": "bands",
+        "a": "#d6c3a1",
+        "b": "#8c7660",
+        "c": "#efe2c8",
+        "freq": 0,
+        "seed": 10
+      },
+      "earth_surface": {
+        "color": "#4f8fd6",
+        "opacity": 1,
+        "kind": "earth",
+        "ocean": "#3f80c8",
+        "oceanDeep": "#1f4f8a",
+        "land_color": "#5f9e5a",
+        "desert_color": "#d9b77a",
+        "ice": "#f4f8ff",
+        "seed": 3,
+        "land": [
+          [
+            45,
+            -100,
+            25,
+            32
+          ],
+          [
+            72,
+            -42,
+            10,
+            14
+          ],
+          [
+            15,
+            -90,
+            5,
+            10
+          ],
+          [
+            -15,
+            -60,
+            30,
+            16
+          ],
+          [
+            54,
+            14,
+            9,
+            18
+          ],
+          [
+            3,
+            20,
+            26,
+            22
+          ],
+          [
+            52,
+            95,
+            20,
+            45
+          ],
+          [
+            25,
+            70,
+            10,
+            12
+          ],
+          [
+            -1,
+            112,
+            10,
+            12
+          ],
+          [
+            -25,
+            134,
+            9,
+            13
+          ],
+          [
+            -82,
+            0,
+            8,
+            180
+          ]
+        ],
+        "desert": [
+          [
+            23,
+            13,
+            9,
+            22
+          ],
+          [
+            -25,
+            134,
+            6,
+            9
+          ],
+          [
+            24,
+            47,
+            6,
+            8
+          ]
+        ]
+      },
+      "clouds_layer": {
+        "color": "#ffffff",
+        "opacity": 0.35,
+        "kind": "clouds",
+        "coverage": 0.5,
+        "scale": 2.4,
+        "seed": 5,
+        "alpha": 0.9
+      },
+      "clouds_layer2": {
+        "color": "#ffffff",
+        "opacity": 0.3,
+        "kind": "clouds",
+        "coverage": 0.6,
+        "scale": 3.1,
+        "seed": 9,
+        "alpha": 0.7
+      },
+      "aurora": {
+        "color": "#7dffb0",
+        "opacity": 0.35
+      },
+      "stormhaze": {
+        "color": "#ffffff",
+        "opacity": 0.45
+      }
+    },
+    "view": {
+      "fill": 0.75,
+      "radius": 3.5
+    },
+    "links": [
+      {
+        "label": "Back to the Solar System",
+        "target": "solar-system-v07",
+        "transition": "fade"
+      }
+    ]
+  },
+  "operations": [
+    {
+      "seq": 1,
+      "op": "add",
+      "time": "2026-11-01T10:01:00.000Z",
+      "author": "jimmy",
+      "note": "add Pluto body",
+      "object": {
+        "uuid": "planet-pluto-v06-body-pluto",
+        "name": "Pluto body",
+        "description": "spins on its own axis",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 2,
+      "op": "add",
+      "time": "2026-11-01T10:02:00.000Z",
+      "author": "jimmy",
+      "note": "add Pluto",
+      "object": {
+        "uuid": "planet-pluto-v06-ball-pluto",
+        "name": "Pluto",
+        "description": "a small icy dwarf planet at the edge of the Sun's family, with the moon Charon",
+        "type": "sphere",
+        "dimensions": [
+          3.5
+        ],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-v06-body-pluto",
+        "material": "shade_pluto"
+      }
+    },
+    {
+      "seq": 3,
+      "op": "add",
+      "time": "2026-11-01T10:03:00.000Z",
+      "author": "jimmy",
+      "note": "add Heart-shaped plain",
+      "object": {
+        "uuid": "planet-pluto-v06-heart",
+        "name": "Heart-shaped plain",
+        "description": "a bright plain of ice",
+        "type": "cylinder",
+        "dimensions": [
+          2.2,
+          0.4
+        ],
+        "position": [
+          -3.43,
+          0,
+          1.248
+        ],
+        "rotation_y": 70,
+        "rotation_z": 180,
+        "parent": "planet-pluto-v06-body-pluto",
+        "material": "pluto_heart"
+      }
+    },
+    {
+      "seq": 4,
+      "op": "add",
+      "time": "2026-11-01T10:04:00.000Z",
+      "author": "jimmy",
+      "note": "add Nitrogen cap",
+      "object": {
+        "uuid": "planet-pluto-v06-nitro",
+        "name": "Nitrogen cap",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2,
+          0.4
+        ],
+        "position": [
+          0.634,
+          0,
+          3.595
+        ],
+        "rotation_y": 10,
+        "parent": "planet-pluto-v06-body-pluto",
+        "material": "nitro"
+      }
+    },
+    {
+      "seq": 5,
+      "op": "add",
+      "time": "2026-11-01T10:05:00.000Z",
+      "author": "jimmy",
+      "note": "add Mountain",
+      "object": {
+        "uuid": "planet-pluto-v06-mtn-0",
+        "name": "Mountain",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          0.45
+        ],
+        "position": [
+          1.738,
+          3.011,
+          -1.265
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-v06-body-pluto",
+        "material": "mtn"
+      }
+    },
+    {
+      "seq": 6,
+      "op": "add",
+      "time": "2026-11-01T10:06:00.000Z",
+      "author": "jimmy",
+      "note": "add Mountain",
+      "object": {
+        "uuid": "planet-pluto-v06-mtn-1",
+        "name": "Mountain",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          0.45
+        ],
+        "position": [
+          -0.633,
+          -3.588,
+          0.642
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-v06-body-pluto",
+        "material": "mtn"
+      }
+    },
+    {
+      "seq": 7,
+      "op": "add",
+      "time": "2026-11-01T10:07:00.000Z",
+      "author": "jimmy",
+      "note": "add Mountain",
+      "object": {
+        "uuid": "planet-pluto-v06-mtn-2",
+        "name": "Mountain",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          0.45
+        ],
+        "position": [
+          -2.625,
+          -1.515,
+          -2.122
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-v06-body-pluto",
+        "material": "mtn"
+      }
+    },
+    {
+      "seq": 8,
+      "op": "add",
+      "time": "2026-11-01T10:08:00.000Z",
+      "author": "jimmy",
+      "note": "add Mountain",
+      "object": {
+        "uuid": "planet-pluto-v06-mtn-3",
+        "name": "Mountain",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          0.45
+        ],
+        "position": [
+          3.424,
+          1.246,
+          -0.642
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-v06-body-pluto",
+        "material": "mtn"
+      }
+    },
+    {
+      "seq": 9,
+      "op": "add",
+      "time": "2026-11-01T10:09:00.000Z",
+      "author": "jimmy",
+      "note": "add Ice",
+      "object": {
+        "uuid": "planet-pluto-v06-pice4-0",
+        "name": "Ice",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          0.8
+        ],
+        "position": [
+          2.205,
+          1.273,
+          -2.546
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-v06-body-pluto",
+        "material": "pluto_heart"
+      }
+    },
+    {
+      "seq": 10,
+      "op": "add",
+      "time": "2026-11-01T10:10:00.000Z",
+      "author": "jimmy",
+      "note": "add Ice",
+      "object": {
+        "uuid": "planet-pluto-v06-pice4-1",
+        "name": "Ice",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          0.8
+        ],
+        "position": [
+          -3.106,
+          -1.793,
+          -0.314
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-v06-body-pluto",
+        "material": "pluto_heart"
+      }
+    },
+    {
+      "seq": 11,
+      "op": "add",
+      "time": "2026-11-01T10:11:00.000Z",
+      "author": "jimmy",
+      "note": "add Ice",
+      "object": {
+        "uuid": "planet-pluto-v06-pice4-2",
+        "name": "Ice",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          0.8
+        ],
+        "position": [
+          1.379,
+          -2.388,
+          2.314
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-v06-body-pluto",
+        "material": "pluto_heart"
+      }
+    },
+    {
+      "seq": 12,
+      "op": "add",
+      "time": "2026-11-01T10:12:00.000Z",
+      "author": "jimmy",
+      "note": "add Ice",
+      "object": {
+        "uuid": "planet-pluto-v06-pice4-3",
+        "name": "Ice",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          0.8
+        ],
+        "position": [
+          -1.631,
+          2.826,
+          -1.521
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-v06-body-pluto",
+        "material": "pluto_heart"
+      }
+    },
+    {
+      "seq": 13,
+      "op": "add",
+      "time": "2026-11-01T10:13:00.000Z",
+      "author": "jimmy",
+      "note": "add Ice",
+      "object": {
+        "uuid": "planet-pluto-v06-pice4-4",
+        "name": "Ice",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          0.8
+        ],
+        "position": [
+          -0.359,
+          2.034,
+          2.949
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-v06-body-pluto",
+        "material": "pluto_heart"
+      }
+    },
+    {
+      "seq": 14,
+      "op": "add",
+      "time": "2026-11-01T10:14:00.000Z",
+      "author": "jimmy",
+      "note": "add Ice",
+      "object": {
+        "uuid": "planet-pluto-v06-pice4-5",
+        "name": "Ice",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          0.8
+        ],
+        "position": [
+          -0.616,
+          -1.691,
+          -3.118
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-v06-body-pluto",
+        "material": "pluto_heart"
+      }
+    },
+    {
+      "seq": 15,
+      "op": "add",
+      "time": "2026-11-01T10:15:00.000Z",
+      "author": "jimmy",
+      "note": "add Mountain",
+      "object": {
+        "uuid": "planet-pluto-v06-pmtn5-0",
+        "name": "Mountain",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          0.4
+        ],
+        "position": [
+          1.602,
+          -2.775,
+          -1.85
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-v06-body-pluto",
+        "material": "mtn"
+      }
+    },
+    {
+      "seq": 16,
+      "op": "add",
+      "time": "2026-11-01T10:16:00.000Z",
+      "author": "jimmy",
+      "note": "add Mountain",
+      "object": {
+        "uuid": "planet-pluto-v06-pmtn5-1",
+        "name": "Mountain",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          0.4
+        ],
+        "position": [
+          3.307,
+          -1.204,
+          -1.143
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-v06-body-pluto",
+        "material": "mtn"
+      }
+    },
+    {
+      "seq": 17,
+      "op": "add",
+      "time": "2026-11-01T10:17:00.000Z",
+      "author": "jimmy",
+      "note": "add Mountain",
+      "object": {
+        "uuid": "planet-pluto-v06-pmtn5-2",
+        "name": "Mountain",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          0.4
+        ],
+        "position": [
+          3.458,
+          1.259,
+          -0.387
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-v06-body-pluto",
+        "material": "mtn"
+      }
+    },
+    {
+      "seq": 18,
+      "op": "add",
+      "time": "2026-11-01T10:18:00.000Z",
+      "author": "jimmy",
+      "note": "add Mountain",
+      "object": {
+        "uuid": "planet-pluto-v06-pmtn5-3",
+        "name": "Mountain",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          0.4
+        ],
+        "position": [
+          1.84,
+          3.187,
+          0.387
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-v06-body-pluto",
+        "material": "mtn"
+      }
+    },
+    {
+      "seq": 19,
+      "op": "add",
+      "time": "2026-11-01T10:19:00.000Z",
+      "author": "jimmy",
+      "note": "add Mountain",
+      "object": {
+        "uuid": "planet-pluto-v06-pmtn5-4",
+        "name": "Mountain",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          0.4
+        ],
+        "position": [
+          -0.611,
+          3.465,
+          1.143
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-v06-body-pluto",
+        "material": "mtn"
+      }
+    },
+    {
+      "seq": 20,
+      "op": "add",
+      "time": "2026-11-01T10:20:00.000Z",
+      "author": "jimmy",
+      "note": "add Mountain",
+      "object": {
+        "uuid": "planet-pluto-v06-pmtn5-5",
+        "name": "Mountain",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          0.4
+        ],
+        "position": [
+          -2.455,
+          2.06,
+          1.85
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-v06-body-pluto",
+        "material": "mtn"
+      }
+    },
+    {
+      "seq": 21,
+      "op": "add",
+      "time": "2026-11-01T10:21:00.000Z",
+      "author": "jimmy",
+      "note": "add Charon orbit",
+      "object": {
+        "uuid": "planet-pluto-v06-arm-charon",
+        "name": "Charon orbit",
+        "description": "turns the moon round the planet",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 22,
+      "op": "add",
+      "time": "2026-11-01T10:22:00.000Z",
+      "author": "jimmy",
+      "note": "add Charon",
+      "object": {
+        "uuid": "planet-pluto-v06-moon-charon",
+        "name": "Charon",
+        "description": "a moon of Pluto",
+        "type": "sphere",
+        "dimensions": [
+          1.8
+        ],
+        "position": [
+          10,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-v06-arm-charon",
+        "material": "charon"
+      }
+    },
+    {
+      "seq": 23,
+      "op": "add",
+      "time": "2026-11-01T10:23:00.000Z",
+      "author": "jimmy",
+      "note": "add Nix orbit",
+      "object": {
+        "uuid": "planet-pluto-v06-arm-nix",
+        "name": "Nix orbit",
+        "description": "turns the moon round the planet",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 24,
+      "op": "add",
+      "time": "2026-11-01T10:24:00.000Z",
+      "author": "jimmy",
+      "note": "add Nix",
+      "object": {
+        "uuid": "planet-pluto-v06-moon-nix",
+        "name": "Nix",
+        "description": "a moon of Pluto",
+        "type": "sphere",
+        "dimensions": [
+          0.5
+        ],
+        "position": [
+          16,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-v06-arm-nix",
+        "material": "nix"
+      }
+    },
+    {
+      "seq": 25,
+      "op": "add",
+      "time": "2026-11-01T10:25:00.000Z",
+      "author": "jimmy",
+      "note": "add Hydra orbit",
+      "object": {
+        "uuid": "planet-pluto-v06-arm-hydra",
+        "name": "Hydra orbit",
+        "description": "turns the moon round the planet",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 26,
+      "op": "add",
+      "time": "2026-11-01T10:26:00.000Z",
+      "author": "jimmy",
+      "note": "add Hydra",
+      "object": {
+        "uuid": "planet-pluto-v06-moon-hydra",
+        "name": "Hydra",
+        "description": "a moon of Pluto",
+        "type": "sphere",
+        "dimensions": [
+          0.4
+        ],
+        "position": [
+          21,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-v06-arm-hydra",
+        "material": "hydra"
+      }
+    },
+    {
+      "seq": 27,
+      "op": "add",
+      "time": "2026-11-01T10:27:00.000Z",
+      "author": "jimmy",
+      "note": "add Styx orbit",
+      "object": {
+        "uuid": "planet-pluto-v06-arm-styx",
+        "name": "Styx orbit",
+        "description": "turns the moon round the planet",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 28,
+      "op": "add",
+      "time": "2026-11-01T10:28:00.000Z",
+      "author": "jimmy",
+      "note": "add Styx",
+      "object": {
+        "uuid": "planet-pluto-v06-moon-styx",
+        "name": "Styx",
+        "description": "a moon of Pluto",
+        "type": "sphere",
+        "dimensions": [
+          0.3
+        ],
+        "position": [
+          25,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": "planet-pluto-v06-arm-styx",
+        "material": "nix"
+      }
+    }
+  ]
+}

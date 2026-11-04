@@ -1,0 +1,629 @@
+{
+  "schema": "make3d.history/0.1",
+  "model_id": "garden-planter",
+  "header": {
+    "model_id": "garden-planter",
+    "name": "Garden planter",
+    "description": "A sunny trough planter with snap peas and lettuce, on a stone path by a short picket fence.",
+    "units": "in",
+    "up": "z",
+    "world": "default-world",
+    "materials": {
+      "clay": {
+        "color": "#e8a07a",
+        "opacity": 1
+      },
+      "soil": {
+        "color": "#7a5a43",
+        "opacity": 1
+      },
+      "pea": {
+        "color": "#7fc97a",
+        "opacity": 1
+      },
+      "stem": {
+        "color": "#5f9e5a",
+        "opacity": 1
+      },
+      "lettuce": {
+        "color": "#c4e8b0",
+        "opacity": 1
+      },
+      "stone": {
+        "color": "#e9e4d8",
+        "opacity": 1
+      },
+      "wood": {
+        "color": "#f6e7c8",
+        "opacity": 1
+      },
+      "sun": {
+        "color": "#ffd96a",
+        "opacity": 1
+      }
+    }
+  },
+  "operations": [
+    {
+      "seq": 1,
+      "op": "add",
+      "time": "2026-11-01T10:01:00.000Z",
+      "author": "jimmy",
+      "note": "add Trough",
+      "object": {
+        "uuid": "garden-planter-pot",
+        "name": "Trough",
+        "description": "the planter box",
+        "type": "box",
+        "dimensions": [
+          36,
+          12,
+          14
+        ],
+        "position": [
+          0,
+          0,
+          7
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "clay"
+      }
+    },
+    {
+      "seq": 2,
+      "op": "add",
+      "time": "2026-11-01T10:02:00.000Z",
+      "author": "jimmy",
+      "note": "add Soil",
+      "object": {
+        "uuid": "garden-planter-soil",
+        "name": "Soil",
+        "description": "sits inside the rim",
+        "type": "box",
+        "dimensions": [
+          34,
+          10,
+          1.5
+        ],
+        "position": [
+          0,
+          0,
+          14.75
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "soil"
+      }
+    },
+    {
+      "seq": 3,
+      "op": "add",
+      "time": "2026-11-01T10:03:00.000Z",
+      "author": "jimmy",
+      "note": "add Snap peas",
+      "object": {
+        "uuid": "garden-planter-peas",
+        "name": "Snap peas",
+        "description": "climbing peas on the left",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          -10,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 4,
+      "op": "add",
+      "time": "2026-11-01T10:04:00.000Z",
+      "author": "jimmy",
+      "note": "add Lettuce",
+      "object": {
+        "uuid": "garden-planter-lettuce",
+        "name": "Lettuce",
+        "description": "three heads on the right",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          11,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 5,
+      "op": "add",
+      "time": "2026-11-01T10:05:00.000Z",
+      "author": "jimmy",
+      "note": "add Pea stem 1",
+      "object": {
+        "uuid": "garden-planter-pea1",
+        "name": "Pea stem 1",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          0.3,
+          12
+        ],
+        "position": [
+          -12,
+          0,
+          21.5
+        ],
+        "rotation_y": 0,
+        "parent": "garden-planter-peas",
+        "material": "stem"
+      }
+    },
+    {
+      "seq": 6,
+      "op": "add",
+      "time": "2026-11-01T10:06:00.000Z",
+      "author": "jimmy",
+      "note": "add Pea stem 2",
+      "object": {
+        "uuid": "garden-planter-pea2",
+        "name": "Pea stem 2",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          0.3,
+          14
+        ],
+        "position": [
+          -8,
+          0,
+          22.5
+        ],
+        "rotation_y": 0,
+        "parent": "garden-planter-peas",
+        "material": "stem"
+      }
+    },
+    {
+      "seq": 7,
+      "op": "add",
+      "time": "2026-11-01T10:07:00.000Z",
+      "author": "jimmy",
+      "note": "add Pea stem 3",
+      "object": {
+        "uuid": "garden-planter-pea3",
+        "name": "Pea stem 3",
+        "description": "tip bends over",
+        "type": "cylinder",
+        "dimensions": [
+          0.3,
+          10
+        ],
+        "position": [
+          -4,
+          0,
+          20.5
+        ],
+        "rotation_y": 20,
+        "parent": "garden-planter-peas",
+        "material": "stem"
+      }
+    },
+    {
+      "seq": 8,
+      "op": "add",
+      "time": "2026-11-01T10:08:00.000Z",
+      "author": "jimmy",
+      "note": "add Pea pod 1",
+      "object": {
+        "uuid": "garden-planter-pod1",
+        "name": "Pea pod 1",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          1.2
+        ],
+        "position": [
+          -12.5,
+          0,
+          25
+        ],
+        "rotation_y": 0,
+        "parent": "garden-planter-peas",
+        "material": "pea"
+      }
+    },
+    {
+      "seq": 9,
+      "op": "add",
+      "time": "2026-11-01T10:09:00.000Z",
+      "author": "jimmy",
+      "note": "add Pea pod 2",
+      "object": {
+        "uuid": "garden-planter-pod2",
+        "name": "Pea pod 2",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          1.2
+        ],
+        "position": [
+          -7.5,
+          0,
+          27
+        ],
+        "rotation_y": 0,
+        "parent": "garden-planter-peas",
+        "material": "pea"
+      }
+    },
+    {
+      "seq": 10,
+      "op": "add",
+      "time": "2026-11-01T10:10:00.000Z",
+      "author": "jimmy",
+      "note": "add Pea pod 3",
+      "object": {
+        "uuid": "garden-planter-pod3",
+        "name": "Pea pod 3",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          1.2
+        ],
+        "position": [
+          -3.5,
+          0,
+          24
+        ],
+        "rotation_y": 0,
+        "parent": "garden-planter-peas",
+        "material": "pea"
+      }
+    },
+    {
+      "seq": 11,
+      "op": "add",
+      "time": "2026-11-01T10:11:00.000Z",
+      "author": "jimmy",
+      "note": "add Pea tendril",
+      "object": {
+        "uuid": "garden-planter-tip",
+        "name": "Pea tendril",
+        "description": "a small cone tip",
+        "type": "cone",
+        "dimensions": [
+          0.6,
+          2.5
+        ],
+        "position": [
+          -12,
+          0,
+          28.25
+        ],
+        "rotation_y": 0,
+        "parent": "garden-planter-peas",
+        "material": "stem"
+      }
+    },
+    {
+      "seq": 12,
+      "op": "add",
+      "time": "2026-11-01T10:12:00.000Z",
+      "author": "jimmy",
+      "note": "add Lettuce head 1",
+      "object": {
+        "uuid": "garden-planter-head1",
+        "name": "Lettuce head 1",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          3.5
+        ],
+        "position": [
+          7,
+          0,
+          19
+        ],
+        "rotation_y": 0,
+        "parent": "garden-planter-lettuce",
+        "material": "lettuce"
+      }
+    },
+    {
+      "seq": 13,
+      "op": "add",
+      "time": "2026-11-01T10:13:00.000Z",
+      "author": "jimmy",
+      "note": "add Lettuce head 2",
+      "object": {
+        "uuid": "garden-planter-head2",
+        "name": "Lettuce head 2",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          3.5
+        ],
+        "position": [
+          11,
+          0,
+          19.5
+        ],
+        "rotation_y": 0,
+        "parent": "garden-planter-lettuce",
+        "material": "lettuce"
+      }
+    },
+    {
+      "seq": 14,
+      "op": "add",
+      "time": "2026-11-01T10:14:00.000Z",
+      "author": "jimmy",
+      "note": "add Lettuce head 3",
+      "object": {
+        "uuid": "garden-planter-head3",
+        "name": "Lettuce head 3",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          3.5
+        ],
+        "position": [
+          15,
+          0,
+          19
+        ],
+        "rotation_y": 0,
+        "parent": "garden-planter-lettuce",
+        "material": "lettuce"
+      }
+    },
+    {
+      "seq": 15,
+      "op": "add",
+      "time": "2026-11-01T10:15:00.000Z",
+      "author": "jimmy",
+      "note": "add Stone path",
+      "object": {
+        "uuid": "garden-planter-path",
+        "name": "Stone path",
+        "description": "in front of the trough",
+        "type": "box",
+        "dimensions": [
+          72,
+          18,
+          0.5
+        ],
+        "position": [
+          0,
+          -20,
+          0.25
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "stone"
+      }
+    },
+    {
+      "seq": 16,
+      "op": "add",
+      "time": "2026-11-01T10:16:00.000Z",
+      "author": "jimmy",
+      "note": "add Picket fence",
+      "object": {
+        "uuid": "garden-planter-fence",
+        "name": "Picket fence",
+        "description": "behind the trough",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 17,
+      "op": "add",
+      "time": "2026-11-01T10:17:00.000Z",
+      "author": "jimmy",
+      "note": "add Picket 1",
+      "object": {
+        "uuid": "garden-planter-picket1",
+        "name": "Picket 1",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.5,
+          0.75,
+          30
+        ],
+        "position": [
+          -24,
+          22,
+          15
+        ],
+        "rotation_y": 0,
+        "parent": "garden-planter-fence",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 18,
+      "op": "add",
+      "time": "2026-11-01T10:18:00.000Z",
+      "author": "jimmy",
+      "note": "add Picket 2",
+      "object": {
+        "uuid": "garden-planter-picket2",
+        "name": "Picket 2",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.5,
+          0.75,
+          30
+        ],
+        "position": [
+          -20,
+          22,
+          15
+        ],
+        "rotation_y": 0,
+        "parent": "garden-planter-fence",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 19,
+      "op": "add",
+      "time": "2026-11-01T10:19:00.000Z",
+      "author": "jimmy",
+      "note": "add Picket 3",
+      "object": {
+        "uuid": "garden-planter-picket3",
+        "name": "Picket 3",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.5,
+          0.75,
+          30
+        ],
+        "position": [
+          -16,
+          22,
+          15
+        ],
+        "rotation_y": 0,
+        "parent": "garden-planter-fence",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 20,
+      "op": "add",
+      "time": "2026-11-01T10:20:00.000Z",
+      "author": "jimmy",
+      "note": "add Picket 4",
+      "object": {
+        "uuid": "garden-planter-picket4",
+        "name": "Picket 4",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.5,
+          0.75,
+          30
+        ],
+        "position": [
+          16,
+          22,
+          15
+        ],
+        "rotation_y": 0,
+        "parent": "garden-planter-fence",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 21,
+      "op": "add",
+      "time": "2026-11-01T10:21:00.000Z",
+      "author": "jimmy",
+      "note": "add Picket 5",
+      "object": {
+        "uuid": "garden-planter-picket5",
+        "name": "Picket 5",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.5,
+          0.75,
+          30
+        ],
+        "position": [
+          20,
+          22,
+          15
+        ],
+        "rotation_y": 0,
+        "parent": "garden-planter-fence",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 22,
+      "op": "add",
+      "time": "2026-11-01T10:22:00.000Z",
+      "author": "jimmy",
+      "note": "add Picket 6",
+      "object": {
+        "uuid": "garden-planter-picket6",
+        "name": "Picket 6",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.5,
+          0.75,
+          30
+        ],
+        "position": [
+          24,
+          22,
+          15
+        ],
+        "rotation_y": 0,
+        "parent": "garden-planter-fence",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 23,
+      "op": "add",
+      "time": "2026-11-01T10:23:00.000Z",
+      "author": "jimmy",
+      "note": "add Sun",
+      "object": {
+        "uuid": "garden-planter-sun",
+        "name": "Sun",
+        "description": "high and to the left, sets the light",
+        "type": "sphere",
+        "dimensions": [
+          6
+        ],
+        "position": [
+          -70,
+          -40,
+          110
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "sun"
+      }
+    },
+    {
+      "seq": 24,
+      "op": "modify",
+      "time": "2026-11-01T10:24:00.000Z",
+      "author": "chat",
+      "note": "larger middle lettuce head",
+      "uuid": "garden-planter-head2",
+      "set": {
+        "dimensions": [
+          4
+        ]
+      }
+    }
+  ]
+}

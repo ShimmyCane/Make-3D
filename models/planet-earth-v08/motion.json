@@ -1,0 +1,95 @@
+{
+  "schema": "make3d.motion/0.1",
+  "model_id": "planet-earth-v08",
+  "name": "Spin, moon and more",
+  "description": "Earth spins; the Moon goes round. Clouds drift faster than the ground. A station orbits low. A rocket lifts off once per loop and returns to the pad. Every motion is a whole number of turns, so it never jumps.",
+  "units": "in",
+  "up": "z",
+  "loop_s": 240,
+  "autoplay": {
+    "plays": 2
+  },
+  "motions": [
+    {
+      "id": "earth-spin",
+      "target": "planet-earth-v08-body-earth",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 16
+    },
+    {
+      "id": "moon-orbit",
+      "target": "planet-earth-v08-arm-moon",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 8
+    },
+    {
+      "id": "cloud-drift",
+      "target": "planet-earth-v08-clouds",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 20
+    },
+    {
+      "id": "iss-orbit",
+      "target": "planet-earth-v08-iss",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 36
+    },
+    {
+      "id": "launch-1",
+      "target": "planet-earth-v08-rocket-1",
+      "kind": "bob",
+      "axis": "x",
+      "amount": 26,
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "storm-1-turn",
+      "target": "planet-earth-v08-storm-1",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 16
+    },
+    {
+      "id": "polar-orbit",
+      "target": "planet-earth-v08-polar",
+      "kind": "spin",
+      "axis": "x",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 18
+    }
+  ]
+}

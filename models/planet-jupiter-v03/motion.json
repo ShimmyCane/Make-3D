@@ -1,0 +1,110 @@
+{
+  "schema": "make3d.motion/0.1",
+  "model_id": "planet-jupiter-v03",
+  "name": "Spin and moons",
+  "description": "Jupiter spins and its moons go round it. One 240 s loop; each motion is a whole number of turns, so it never jumps.",
+  "units": "in",
+  "up": "z",
+  "loop_s": 240,
+  "autoplay": {
+    "plays": 2
+  },
+  "motions": [
+    {
+      "id": "jupiter-spin",
+      "target": "planet-jupiter-v03-body-jupiter",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 12
+    },
+    {
+      "id": "io-orbit",
+      "target": "planet-jupiter-v03-arm-io",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 9
+    },
+    {
+      "id": "europa-orbit",
+      "target": "planet-jupiter-v03-arm-europa",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 6
+    },
+    {
+      "id": "ganymede-orbit",
+      "target": "planet-jupiter-v03-arm-ganymede",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 4
+    },
+    {
+      "id": "callisto-orbit",
+      "target": "planet-jupiter-v03-arm-callisto",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 3
+    },
+    {
+      "id": "amalthea-orbit",
+      "target": "planet-jupiter-v03-arm-amalthea",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 15
+    },
+    {
+      "id": "himalia-orbit",
+      "target": "planet-jupiter-v03-arm-himalia",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 2
+    },
+    {
+      "id": "thebe-orbit",
+      "target": "planet-jupiter-v03-arm-thebe",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 11
+    }
+  ]
+}

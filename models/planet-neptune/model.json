@@ -1,0 +1,393 @@
+{
+  "model_id": "planet-neptune",
+  "name": "Neptune (planet view) V01",
+  "description": "Neptune on its own: the windiest planet; an ice giant, deep blue. Spins, with its moons going round. Tap the pink marker to fly back to the Solar System. Sizes are estimates, in inches.",
+  "units": "in",
+  "up": "z",
+  "world": "solar-system-world",
+  "materials": {
+    "sun": {
+      "color": "#ffd23f",
+      "opacity": 1
+    },
+    "corona": {
+      "color": "#ffb347",
+      "opacity": 0.2
+    },
+    "orbit": {
+      "color": "#8a86a3",
+      "opacity": 1
+    },
+    "mercury": {
+      "color": "#b8b0a4",
+      "opacity": 1
+    },
+    "venus": {
+      "color": "#f0d9a0",
+      "opacity": 1
+    },
+    "earth": {
+      "color": "#4f8fd6",
+      "opacity": 1
+    },
+    "mars": {
+      "color": "#d9714a",
+      "opacity": 1
+    },
+    "jup1": {
+      "color": "#e8c49a",
+      "opacity": 1
+    },
+    "jup2": {
+      "color": "#b87c55",
+      "opacity": 1
+    },
+    "jup3": {
+      "color": "#f2e6d0",
+      "opacity": 1
+    },
+    "sat": {
+      "color": "#ecd8a0",
+      "opacity": 1
+    },
+    "satb": {
+      "color": "#d9b97c",
+      "opacity": 1
+    },
+    "ring": {
+      "color": "#e6d7b0",
+      "opacity": 0.8
+    },
+    "ring2": {
+      "color": "#b59f7a",
+      "opacity": 0.8
+    },
+    "uranus": {
+      "color": "#a9e6f0",
+      "opacity": 1
+    },
+    "uranusb": {
+      "color": "#8fd4e6",
+      "opacity": 1
+    },
+    "neptune": {
+      "color": "#4f73e0",
+      "opacity": 1
+    },
+    "neptuneb": {
+      "color": "#3b5fc2",
+      "opacity": 1
+    },
+    "pluto": {
+      "color": "#c9b49a",
+      "opacity": 1
+    },
+    "charon": {
+      "color": "#8f8a85",
+      "opacity": 1
+    },
+    "moon": {
+      "color": "#bdbdbd",
+      "opacity": 1
+    },
+    "phobos": {
+      "color": "#8c7f74",
+      "opacity": 1
+    },
+    "io": {
+      "color": "#f6e28a",
+      "opacity": 1
+    },
+    "europa": {
+      "color": "#e9dfcf",
+      "opacity": 1
+    },
+    "ganymede": {
+      "color": "#a79b8b",
+      "opacity": 1
+    },
+    "callisto": {
+      "color": "#7e7467",
+      "opacity": 1
+    },
+    "titan": {
+      "color": "#e9b872",
+      "opacity": 1
+    },
+    "enceladus": {
+      "color": "#f4f8ff",
+      "opacity": 1
+    },
+    "miranda": {
+      "color": "#b4b4b4",
+      "opacity": 1
+    },
+    "ariel": {
+      "color": "#c9c9c9",
+      "opacity": 1
+    },
+    "triton": {
+      "color": "#e0d6c8",
+      "opacity": 1
+    },
+    "rock": {
+      "color": "#9a9188",
+      "opacity": 1
+    },
+    "rock2": {
+      "color": "#b3a99c",
+      "opacity": 1
+    },
+    "air": {
+      "color": "#9fd8ff",
+      "opacity": 0.2
+    },
+    "venusair": {
+      "color": "#ffe9a8",
+      "opacity": 0.25
+    },
+    "marker": {
+      "color": "#ff8fa3",
+      "opacity": 1
+    }
+  },
+  "view": {
+    "fill": 0.75,
+    "radius": 13.5
+  },
+  "objects": [
+    {
+      "description": "spins on its own axis",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-neptune-body-neptune",
+      "name": "Neptune body",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "the windiest planet; an ice giant, deep blue",
+      "rotation_y": 0,
+      "parent": "planet-neptune-body-neptune",
+      "material": "neptune",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-neptune-ball-neptune",
+      "name": "Neptune",
+      "type": "sphere",
+      "dimensions": [
+        13.5
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "planet-neptune-body-neptune",
+      "material": "neptune",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-neptune-band-neptune-1",
+      "name": "Neptune band 1",
+      "type": "cylinder",
+      "dimensions": [
+        9.516,
+        4.016
+      ],
+      "position": [
+        0,
+        0,
+        -9.844
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "planet-neptune-body-neptune",
+      "material": "neptuneb",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-neptune-band-neptune-2",
+      "name": "Neptune band 2",
+      "type": "cylinder",
+      "dimensions": [
+        12.504,
+        4.016
+      ],
+      "position": [
+        0,
+        0,
+        -5.906
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "planet-neptune-body-neptune",
+      "material": "neptune",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-neptune-band-neptune-3",
+      "name": "Neptune band 3",
+      "type": "cylinder",
+      "dimensions": [
+        13.756,
+        4.016
+      ],
+      "position": [
+        0,
+        0,
+        -1.969
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "planet-neptune-body-neptune",
+      "material": "neptuneb",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-neptune-band-neptune-4",
+      "name": "Neptune band 4",
+      "type": "cylinder",
+      "dimensions": [
+        13.756,
+        4.016
+      ],
+      "position": [
+        0,
+        0,
+        1.969
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "planet-neptune-body-neptune",
+      "material": "neptune",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-neptune-band-neptune-5",
+      "name": "Neptune band 5",
+      "type": "cylinder",
+      "dimensions": [
+        12.504,
+        4.016
+      ],
+      "position": [
+        0,
+        0,
+        5.906
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "planet-neptune-body-neptune",
+      "material": "neptuneb",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-neptune-band-neptune-6",
+      "name": "Neptune band 6",
+      "type": "cylinder",
+      "dimensions": [
+        9.516,
+        4.016
+      ],
+      "position": [
+        0,
+        0,
+        9.844
+      ]
+    },
+    {
+      "description": "a thin see-through haze (taps pass through it)",
+      "rotation_y": 0,
+      "parent": "planet-neptune-body-neptune",
+      "material": "air",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-neptune-air-neptune",
+      "name": "Neptune atmosphere",
+      "type": "sphere",
+      "dimensions": [
+        15.12
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "turns the moon round the planet",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-neptune-arm-triton",
+      "name": "Triton orbit",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a moon of Neptune",
+      "rotation_y": 0,
+      "parent": "planet-neptune-arm-triton",
+      "material": "triton",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-neptune-moon-triton",
+      "name": "Triton",
+      "type": "sphere",
+      "dimensions": [
+        2.6
+      ],
+      "position": [
+        30,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "tap to fly back to the Sun and all the planets",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "marker",
+      "tags": [
+        "link:solar-system-v05:fade"
+      ],
+      "allowed_overlap": [],
+      "uuid": "planet-neptune-home",
+      "name": "Back to the Solar System",
+      "type": "sphere",
+      "dimensions": [
+        2.6
+      ],
+      "position": [
+        -39.5,
+        0,
+        16.15
+      ]
+    }
+  ],
+  "version": 12
+}

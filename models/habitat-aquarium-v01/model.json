@@ -1,0 +1,5618 @@
+{
+  "model_id": "habitat-aquarium-v01",
+  "name": "Coastal Habitat Aquarium V01",
+  "description": "Coastal Habitat Aquarium, increment 1 of 7 (about 250 objects). An organic, modelled habitat tank: curved outline and leaning walls, sculpted rockwork, a three-level floor with a cavern under the shelf, bridges over and tunnels through, kelp forest and reef. Tap an animal to read about it. Sizes are estimates, in inches.",
+  "units": "in",
+  "up": "z",
+  "world": "aquarium-world",
+  "materials": {
+    "sand": {
+      "color": "#f2e4c4",
+      "opacity": 1
+    },
+    "rock": {
+      "color": "#bdb5a8",
+      "opacity": 1
+    },
+    "rock2": {
+      "color": "#d3cbbd",
+      "opacity": 1
+    },
+    "glass": {
+      "color": "#bfe6f2",
+      "opacity": 0.2
+    },
+    "water": {
+      "color": "#8fd3e6",
+      "opacity": 0.09
+    },
+    "surface": {
+      "color": "#a9e2ee",
+      "opacity": 0.3
+    },
+    "concrete": {
+      "color": "#ebe6da",
+      "opacity": 1
+    },
+    "deck": {
+      "color": "#e2b98f",
+      "opacity": 1
+    },
+    "roof": {
+      "color": "#f7c9bd",
+      "opacity": 0.3
+    },
+    "steel": {
+      "color": "#b9c0ca",
+      "opacity": 1
+    },
+    "acrylic": {
+      "color": "#d7eef5",
+      "opacity": 0.22
+    },
+    "rib": {
+      "color": "#c9d6df",
+      "opacity": 1
+    },
+    "lamp": {
+      "color": "#fff1a8",
+      "opacity": 1
+    },
+    "sign": {
+      "color": "#fff8e7",
+      "opacity": 1
+    },
+    "bench": {
+      "color": "#e9b99a",
+      "opacity": 1
+    },
+    "mint": {
+      "color": "#a6e3d7",
+      "opacity": 1
+    },
+    "beam": {
+      "color": "#ffe9a6",
+      "opacity": 0.16
+    },
+    "wall": {
+      "color": "#e4dccb",
+      "opacity": 0.5
+    },
+    "coral": {
+      "color": "#f4a38c",
+      "opacity": 1
+    },
+    "shark": {
+      "color": "#aeb9c4",
+      "opacity": 1
+    },
+    "zebra": {
+      "color": "#ecd79c",
+      "opacity": 1
+    },
+    "spot": {
+      "color": "#8a6f4a",
+      "opacity": 1
+    },
+    "bonnet": {
+      "color": "#b9c3a8",
+      "opacity": 1
+    },
+    "leopard": {
+      "color": "#d8cdb2",
+      "opacity": 1
+    },
+    "blacktip": {
+      "color": "#bdb9b1",
+      "opacity": 1
+    },
+    "bass": {
+      "color": "#8c9aa8",
+      "opacity": 1
+    },
+    "garibaldi": {
+      "color": "#ffa05c",
+      "opacity": 1
+    },
+    "sheephead": {
+      "color": "#ec8c92",
+      "opacity": 1
+    },
+    "moray": {
+      "color": "#a8b87c",
+      "opacity": 1
+    },
+    "yellowtail": {
+      "color": "#d9d08a",
+      "opacity": 1
+    },
+    "barracuda": {
+      "color": "#a9b5bf",
+      "opacity": 1
+    },
+    "ray": {
+      "color": "#9a8fae",
+      "opacity": 1
+    },
+    "eagle": {
+      "color": "#86a0b8",
+      "opacity": 1
+    },
+    "turtle": {
+      "color": "#b3aa72",
+      "opacity": 1
+    },
+    "turtleSkin": {
+      "color": "#cfc79a",
+      "opacity": 1
+    },
+    "anchovy": {
+      "color": "#d8e3ec",
+      "opacity": 1
+    },
+    "sardine": {
+      "color": "#b8cbdc",
+      "opacity": 1
+    },
+    "blacksmith": {
+      "color": "#8f9ac2",
+      "opacity": 1
+    },
+    "tang": {
+      "color": "#8fb8f0",
+      "opacity": 1
+    },
+    "yellowTang": {
+      "color": "#ffe27a",
+      "opacity": 1
+    },
+    "idol": {
+      "color": "#f3efd0",
+      "opacity": 1
+    },
+    "sergeant": {
+      "color": "#e5e7a8",
+      "opacity": 1
+    },
+    "opaleye": {
+      "color": "#9bb59a",
+      "opacity": 1
+    },
+    "clown": {
+      "color": "#ff9a5a",
+      "opacity": 1
+    },
+    "ink": {
+      "color": "#2d2a26",
+      "opacity": 1
+    },
+    "white": {
+      "color": "#fffdf6",
+      "opacity": 1
+    },
+    "jelly": {
+      "color": "#f2c7e6",
+      "opacity": 0.75
+    },
+    "kelp": {
+      "color": "#9fb86a",
+      "opacity": 1
+    },
+    "kelp2": {
+      "color": "#b5c97c",
+      "opacity": 1
+    },
+    "stem": {
+      "color": "#8aa05a",
+      "opacity": 1
+    },
+    "grass": {
+      "color": "#8fd08a",
+      "opacity": 1
+    },
+    "fan": {
+      "color": "#e88fb0",
+      "opacity": 1
+    },
+    "coralY": {
+      "color": "#ffd36e",
+      "opacity": 1
+    },
+    "coralP": {
+      "color": "#c7a8e8",
+      "opacity": 1
+    },
+    "urchin": {
+      "color": "#7d6fa8",
+      "opacity": 1
+    },
+    "star": {
+      "color": "#ff8f6a",
+      "opacity": 1
+    },
+    "anemone": {
+      "color": "#f6a6c1",
+      "opacity": 1
+    },
+    "skin": {
+      "color": "#f2c9a5",
+      "opacity": 1
+    },
+    "shirtA": {
+      "color": "#8fc4f0",
+      "opacity": 1
+    },
+    "shirtB": {
+      "color": "#f7a8a0",
+      "opacity": 1
+    },
+    "shirtC": {
+      "color": "#c7b2ea",
+      "opacity": 1
+    },
+    "suit": {
+      "color": "#4a5a73",
+      "opacity": 1
+    },
+    "tankgas": {
+      "color": "#f2c94c",
+      "opacity": 1
+    },
+    "bubble": {
+      "color": "#e8f7fb",
+      "opacity": 0.6
+    },
+    "rockA": {
+      "color": "#bdb5a8",
+      "opacity": 1
+    },
+    "rockB": {
+      "color": "#cfc3b2",
+      "opacity": 1
+    },
+    "rockC": {
+      "color": "#a9a398",
+      "opacity": 1
+    },
+    "rockWarm": {
+      "color": "#d3b9a0",
+      "opacity": 1
+    },
+    "rockSolid": {
+      "color": "#b4ab9d",
+      "opacity": 1
+    },
+    "cave": {
+      "color": "#6f7a85",
+      "opacity": 0.8
+    },
+    "sandA": {
+      "color": "#f2e4c4",
+      "opacity": 1
+    },
+    "sandB": {
+      "color": "#ead8b0",
+      "opacity": 1
+    },
+    "wet": {
+      "color": "#c9dcc4",
+      "opacity": 1
+    },
+    "pool": {
+      "color": "#9fdcd8",
+      "opacity": 0.45
+    },
+    "frame": {
+      "color": "#d9d2c3",
+      "opacity": 1
+    },
+    "bladder": {
+      "color": "#d8c670",
+      "opacity": 1
+    },
+    "kelp3": {
+      "color": "#8fae5f",
+      "opacity": 1
+    },
+    "floorWalk": {
+      "color": "#e9e4d8",
+      "opacity": 1
+    }
+  },
+  "objects": [
+    {
+      "description": "the exhibit: a curved, lobed tank 110 ft long and about 65 ft across at most, 28 ft of water. Two storeys tall",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tank",
+      "name": "Habitat tank",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-1",
+      "name": "Tank glass 1",
+      "type": "box",
+      "dimensions": [
+        68.614,
+        7.2,
+        324
+      ],
+      "position": [
+        685.312,
+        33.231,
+        174
+      ],
+      "rotation_z": 95.882
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-1",
+      "name": "Pool rim 1",
+      "type": "box",
+      "dimensions": [
+        71.614,
+        24,
+        18
+      ],
+      "position": [
+        685.312,
+        33.231,
+        339
+      ],
+      "rotation_z": 95.882
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-2",
+      "name": "Tank glass 2",
+      "type": "box",
+      "dimensions": [
+        73.379,
+        7.2,
+        324
+      ],
+      "position": [
+        665.031,
+        98.032,
+        174
+      ],
+      "rotation_z": 118.102
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-2",
+      "name": "Pool rim 2",
+      "type": "box",
+      "dimensions": [
+        76.379,
+        24,
+        18
+      ],
+      "position": [
+        665.031,
+        98.032,
+        339
+      ],
+      "rotation_z": 118.102
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-3",
+      "name": "Tank glass 3",
+      "type": "box",
+      "dimensions": [
+        82.239,
+        7.2,
+        324
+      ],
+      "position": [
+        618.978,
+        157.266,
+        174
+      ],
+      "rotation_z": 136.543
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-3",
+      "name": "Pool rim 3",
+      "type": "box",
+      "dimensions": [
+        85.239,
+        24,
+        18
+      ],
+      "position": [
+        618.978,
+        157.266,
+        339
+      ],
+      "rotation_z": 136.543
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-4",
+      "name": "Tank glass 4",
+      "type": "box",
+      "dimensions": [
+        90.815,
+        7.2,
+        324
+      ],
+      "position": [
+        551.157,
+        207.041,
+        174
+      ],
+      "rotation_z": 150.21
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-4",
+      "name": "Pool rim 4",
+      "type": "box",
+      "dimensions": [
+        93.815,
+        24,
+        18
+      ],
+      "position": [
+        551.157,
+        207.041,
+        339
+      ],
+      "rotation_z": 150.21
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-5",
+      "name": "Tank glass 5",
+      "type": "box",
+      "dimensions": [
+        95.551,
+        7.2,
+        324
+      ],
+      "position": [
+        468.476,
+        245.168,
+        174
+      ],
+      "rotation_z": 160.024
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-5",
+      "name": "Pool rim 5",
+      "type": "box",
+      "dimensions": [
+        98.551,
+        24,
+        18
+      ],
+      "position": [
+        468.476,
+        245.168,
+        339
+      ],
+      "rotation_z": 160.024
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-6",
+      "name": "Tank glass 6",
+      "type": "box",
+      "dimensions": [
+        95.231,
+        7.2,
+        324
+      ],
+      "position": [
+        378.928,
+        271.802,
+        174
+      ],
+      "rotation_z": 166.86
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-6",
+      "name": "Pool rim 6",
+      "type": "box",
+      "dimensions": [
+        98.231,
+        24,
+        18
+      ],
+      "position": [
+        378.928,
+        271.802,
+        339
+      ],
+      "rotation_z": 166.86
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-7",
+      "name": "Tank glass 7",
+      "type": "box",
+      "dimensions": [
+        91.012,
+        7.2,
+        324
+      ],
+      "position": [
+        289.371,
+        289.346,
+        174
+      ],
+      "rotation_z": 171.07
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-7",
+      "name": "Pool rim 7",
+      "type": "box",
+      "dimensions": [
+        94.012,
+        24,
+        18
+      ],
+      "position": [
+        289.371,
+        289.346,
+        339
+      ],
+      "rotation_z": 171.07
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-8",
+      "name": "Tank glass 8",
+      "type": "box",
+      "dimensions": [
+        85.746,
+        7.2,
+        324
+      ],
+      "position": [
+        203.669,
+        301.577,
+        174
+      ],
+      "rotation_z": 172.736
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-8",
+      "name": "Pool rim 8",
+      "type": "box",
+      "dimensions": [
+        88.746,
+        24,
+        18
+      ],
+      "position": [
+        203.669,
+        301.577,
+        339
+      ],
+      "rotation_z": 172.736
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-9",
+      "name": "Tank glass 9",
+      "type": "box",
+      "dimensions": [
+        82.797,
+        7.2,
+        324
+      ],
+      "position": [
+        121.894,
+        312.268,
+        174
+      ],
+      "rotation_z": 172.361
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-9",
+      "name": "Pool rim 9",
+      "type": "box",
+      "dimensions": [
+        85.797,
+        24,
+        18
+      ],
+      "position": [
+        121.894,
+        312.268,
+        339
+      ],
+      "rotation_z": 172.361
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-10",
+      "name": "Tank glass 10",
+      "type": "box",
+      "dimensions": [
+        84.464,
+        7.2,
+        324
+      ],
+      "position": [
+        40.878,
+        323.762,
+        174
+      ],
+      "rotation_z": 171.499
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-10",
+      "name": "Pool rim 10",
+      "type": "box",
+      "dimensions": [
+        87.464,
+        24,
+        18
+      ],
+      "position": [
+        40.878,
+        323.762,
+        339
+      ],
+      "rotation_z": 171.499
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-11",
+      "name": "Tank glass 11",
+      "type": "box",
+      "dimensions": [
+        90.709,
+        7.2,
+        324
+      ],
+      "position": [
+        -44.029,
+        336.006,
+        174
+      ],
+      "rotation_z": 172.069
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-11",
+      "name": "Pool rim 11",
+      "type": "box",
+      "dimensions": [
+        93.709,
+        24,
+        18
+      ],
+      "position": [
+        -44.029,
+        336.006,
+        339
+      ],
+      "rotation_z": 172.069
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-12",
+      "name": "Tank glass 12",
+      "type": "box",
+      "dimensions": [
+        99.256,
+        7.2,
+        324
+      ],
+      "position": [
+        -136.6,
+        346.395,
+        174
+      ],
+      "rotation_z": 174.99
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-12",
+      "name": "Pool rim 12",
+      "type": "box",
+      "dimensions": [
+        102.256,
+        24,
+        18
+      ],
+      "position": [
+        -136.6,
+        346.395,
+        339
+      ],
+      "rotation_z": 174.99
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-13",
+      "name": "Tank glass 13",
+      "type": "box",
+      "dimensions": [
+        106.748,
+        7.2,
+        324
+      ],
+      "position": [
+        -237.615,
+        350.504,
+        174
+      ],
+      "rotation_z": -179.84
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-13",
+      "name": "Pool rim 13",
+      "type": "box",
+      "dimensions": [
+        109.748,
+        24,
+        18
+      ],
+      "position": [
+        -237.615,
+        350.504,
+        339
+      ],
+      "rotation_z": -179.84
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-14",
+      "name": "Tank glass 14",
+      "type": "box",
+      "dimensions": [
+        109.987,
+        7.2,
+        324
+      ],
+      "position": [
+        -343.743,
+        343.478,
+        174
+      ],
+      "rotation_z": -172.693
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-14",
+      "name": "Pool rim 14",
+      "type": "box",
+      "dimensions": [
+        112.987,
+        24,
+        18
+      ],
+      "position": [
+        -343.743,
+        343.478,
+        339
+      ],
+      "rotation_z": -172.693
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-15",
+      "name": "Tank glass 15",
+      "type": "box",
+      "dimensions": [
+        107.039,
+        7.2,
+        324
+      ],
+      "position": [
+        -447.839,
+        321.616,
+        174
+      ],
+      "rotation_z": -163.458
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-15",
+      "name": "Pool rim 15",
+      "type": "box",
+      "dimensions": [
+        110.039,
+        24,
+        18
+      ],
+      "position": [
+        -447.839,
+        321.616,
+        339
+      ],
+      "rotation_z": -163.458
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-16",
+      "name": "Tank glass 16",
+      "type": "box",
+      "dimensions": [
+        98.12,
+        7.2,
+        324
+      ],
+      "position": [
+        -540.588,
+        283.624,
+        174
+      ],
+      "rotation_z": -151.46
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-16",
+      "name": "Pool rim 16",
+      "type": "box",
+      "dimensions": [
+        101.12,
+        24,
+        18
+      ],
+      "position": [
+        -540.588,
+        283.624,
+        339
+      ],
+      "rotation_z": -151.46
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-17",
+      "name": "Tank glass 17",
+      "type": "box",
+      "dimensions": [
+        86.02,
+        7.2,
+        324
+      ],
+      "position": [
+        -612.946,
+        231.114,
+        174
+      ],
+      "rotation_z": -135.528
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-17",
+      "name": "Pool rim 17",
+      "type": "box",
+      "dimensions": [
+        89.02,
+        24,
+        18
+      ],
+      "position": [
+        -612.946,
+        231.114,
+        339
+      ],
+      "rotation_z": -135.528
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-18",
+      "name": "Tank glass 18",
+      "type": "box",
+      "dimensions": [
+        75.511,
+        7.2,
+        324
+      ],
+      "position": [
+        -658.547,
+        168.2,
+        174
+      ],
+      "rotation_z": -114.959
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-18",
+      "name": "Pool rim 18",
+      "type": "box",
+      "dimensions": [
+        78.511,
+        24,
+        18
+      ],
+      "position": [
+        -658.547,
+        168.2,
+        339
+      ],
+      "rotation_z": -114.959
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-19",
+      "name": "Tank glass 19",
+      "type": "box",
+      "dimensions": [
+        70.692,
+        7.2,
+        324
+      ],
+      "position": [
+        -675.294,
+        100.361,
+        174
+      ],
+      "rotation_z": -91.988
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-19",
+      "name": "Pool rim 19",
+      "type": "box",
+      "dimensions": [
+        73.692,
+        24,
+        18
+      ],
+      "position": [
+        -675.294,
+        100.361,
+        339
+      ],
+      "rotation_z": -91.988
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-20",
+      "name": "Tank glass 20",
+      "type": "box",
+      "dimensions": [
+        71.237,
+        7.2,
+        324
+      ],
+      "position": [
+        -665.603,
+        32.968,
+        174
+      ],
+      "rotation_z": -71.726
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-20",
+      "name": "Pool rim 20",
+      "type": "box",
+      "dimensions": [
+        74.237,
+        24,
+        18
+      ],
+      "position": [
+        -665.603,
+        32.968,
+        339
+      ],
+      "rotation_z": -71.726
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-21",
+      "name": "Tank glass 21",
+      "type": "box",
+      "dimensions": [
+        73.3,
+        7.2,
+        324
+      ],
+      "position": [
+        -635.293,
+        -30.014,
+        174
+      ],
+      "rotation_z": -57.092
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-21",
+      "name": "Pool rim 21",
+      "type": "box",
+      "dimensions": [
+        76.3,
+        24,
+        18
+      ],
+      "position": [
+        -635.293,
+        -30.014,
+        339
+      ],
+      "rotation_z": -57.092
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-22",
+      "name": "Tank glass 22",
+      "type": "box",
+      "dimensions": [
+        74.017,
+        7.2,
+        324
+      ],
+      "position": [
+        -591.558,
+        -86.724,
+        174
+      ],
+      "rotation_z": -47.676
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-22",
+      "name": "Pool rim 22",
+      "type": "box",
+      "dimensions": [
+        77.017,
+        24,
+        18
+      ],
+      "position": [
+        -591.558,
+        -86.724,
+        339
+      ],
+      "rotation_z": -47.676
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-23",
+      "name": "Tank glass 23",
+      "type": "box",
+      "dimensions": [
+        73.194,
+        7.2,
+        324
+      ],
+      "position": [
+        -540.737,
+        -137.33,
+        174
+      ],
+      "rotation_z": -42.049
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-23",
+      "name": "Pool rim 23",
+      "type": "box",
+      "dimensions": [
+        76.194,
+        24,
+        18
+      ],
+      "position": [
+        -540.737,
+        -137.33,
+        339
+      ],
+      "rotation_z": -42.049
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-24",
+      "name": "Tank glass 24",
+      "type": "box",
+      "dimensions": [
+        72.339,
+        7.2,
+        324
+      ],
+      "position": [
+        -486.677,
+        -183.258,
+        174
+      ],
+      "rotation_z": -38.631
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-24",
+      "name": "Pool rim 24",
+      "type": "box",
+      "dimensions": [
+        75.339,
+        24,
+        18
+      ],
+      "position": [
+        -486.677,
+        -183.258,
+        339
+      ],
+      "rotation_z": -38.631
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-25",
+      "name": "Tank glass 25",
+      "type": "box",
+      "dimensions": [
+        73.125,
+        7.2,
+        324
+      ],
+      "position": [
+        -430.162,
+        -226.084,
+        174
+      ],
+      "rotation_z": -35.694
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-25",
+      "name": "Pool rim 25",
+      "type": "box",
+      "dimensions": [
+        76.125,
+        24,
+        18
+      ],
+      "position": [
+        -430.162,
+        -226.084,
+        339
+      ],
+      "rotation_z": -35.694
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-26",
+      "name": "Tank glass 26",
+      "type": "box",
+      "dimensions": [
+        76.337,
+        7.2,
+        324
+      ],
+      "position": [
+        -369.518,
+        -266.521,
+        174
+      ],
+      "rotation_z": -31.783
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-26",
+      "name": "Pool rim 26",
+      "type": "box",
+      "dimensions": [
+        79.337,
+        24,
+        18
+      ],
+      "position": [
+        -369.518,
+        -266.521,
+        339
+      ],
+      "rotation_z": -31.783
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-27",
+      "name": "Tank glass 27",
+      "type": "box",
+      "dimensions": [
+        81.661,
+        7.2,
+        324
+      ],
+      "position": [
+        -302.056,
+        -303.873,
+        174
+      ],
+      "rotation_z": -26.349
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-27",
+      "name": "Pool rim 27",
+      "type": "box",
+      "dimensions": [
+        84.661,
+        24,
+        18
+      ],
+      "position": [
+        -302.056,
+        -303.873,
+        339
+      ],
+      "rotation_z": -26.349
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-28",
+      "name": "Tank glass 28",
+      "type": "box",
+      "dimensions": [
+        87.975,
+        7.2,
+        324
+      ],
+      "position": [
+        -225.714,
+        -336.134,
+        174
+      ],
+      "rotation_z": -19.72
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-28",
+      "name": "Pool rim 28",
+      "type": "box",
+      "dimensions": [
+        90.975,
+        24,
+        18
+      ],
+      "position": [
+        -225.714,
+        -336.134,
+        339
+      ],
+      "rotation_z": -19.72
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-29",
+      "name": "Tank glass 29",
+      "type": "box",
+      "dimensions": [
+        93.755,
+        7.2,
+        324
+      ],
+      "position": [
+        -140.27,
+        -360.644,
+        174
+      ],
+      "rotation_z": -12.525
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-29",
+      "name": "Pool rim 29",
+      "type": "box",
+      "dimensions": [
+        96.755,
+        24,
+        18
+      ],
+      "position": [
+        -140.27,
+        -360.644,
+        339
+      ],
+      "rotation_z": -12.525
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-30",
+      "name": "Tank glass 30",
+      "type": "box",
+      "dimensions": [
+        97.59,
+        7.2,
+        324
+      ],
+      "position": [
+        -47.693,
+        -375.002,
+        174
+      ],
+      "rotation_z": -5.255
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-30",
+      "name": "Pool rim 30",
+      "type": "box",
+      "dimensions": [
+        100.59,
+        24,
+        18
+      ],
+      "position": [
+        -47.693,
+        -375.002,
+        339
+      ],
+      "rotation_z": -5.255
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-31",
+      "name": "Tank glass 31",
+      "type": "box",
+      "dimensions": [
+        98.706,
+        7.2,
+        324
+      ],
+      "position": [
+        48.429,
+        -377.858,
+        174
+      ],
+      "rotation_z": 1.809
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-31",
+      "name": "Pool rim 31",
+      "type": "box",
+      "dimensions": [
+        101.706,
+        24,
+        18
+      ],
+      "position": [
+        48.429,
+        -377.858,
+        339
+      ],
+      "rotation_z": 1.809
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-32",
+      "name": "Tank glass 32",
+      "type": "box",
+      "dimensions": [
+        97.242,
+        7.2,
+        324
+      ],
+      "position": [
+        144.055,
+        -369.276,
+        174
+      ],
+      "rotation_z": 8.499
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-32",
+      "name": "Pool rim 32",
+      "type": "box",
+      "dimensions": [
+        100.242,
+        24,
+        18
+      ],
+      "position": [
+        144.055,
+        -369.276,
+        339
+      ],
+      "rotation_z": 8.499
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-33",
+      "name": "Tank glass 33",
+      "type": "box",
+      "dimensions": [
+        94.109,
+        7.2,
+        324
+      ],
+      "position": [
+        235.9,
+        -350.53,
+        174
+      ],
+      "rotation_z": 14.676
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-33",
+      "name": "Pool rim 33",
+      "type": "box",
+      "dimensions": [
+        97.109,
+        24,
+        18
+      ],
+      "position": [
+        235.9,
+        -350.53,
+        339
+      ],
+      "rotation_z": 14.676
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-34",
+      "name": "Tank glass 34",
+      "type": "box",
+      "dimensions": [
+        90.507,
+        7.2,
+        324
+      ],
+      "position": [
+        322.157,
+        -323.473,
+        174
+      ],
+      "rotation_z": 20.266
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-34",
+      "name": "Pool rim 34",
+      "type": "box",
+      "dimensions": [
+        93.507,
+        24,
+        18
+      ],
+      "position": [
+        322.157,
+        -323.473,
+        339
+      ],
+      "rotation_z": 20.266
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-35",
+      "name": "Tank glass 35",
+      "type": "box",
+      "dimensions": [
+        87.347,
+        7.2,
+        324
+      ],
+      "position": [
+        402.402,
+        -289.759,
+        174
+      ],
+      "rotation_z": 25.406
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-35",
+      "name": "Pool rim 35",
+      "type": "box",
+      "dimensions": [
+        90.347,
+        24,
+        18
+      ],
+      "position": [
+        402.402,
+        -289.759,
+        339
+      ],
+      "rotation_z": 25.406
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-36",
+      "name": "Tank glass 36",
+      "type": "box",
+      "dimensions": [
+        84.814,
+        7.2,
+        324
+      ],
+      "position": [
+        476.76,
+        -250.27,
+        174
+      ],
+      "rotation_z": 30.616
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-36",
+      "name": "Pool rim 36",
+      "type": "box",
+      "dimensions": [
+        87.814,
+        24,
+        18
+      ],
+      "position": [
+        476.76,
+        -250.27,
+        339
+      ],
+      "rotation_z": 30.616
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-37",
+      "name": "Tank glass 37",
+      "type": "box",
+      "dimensions": [
+        82.297,
+        7.2,
+        324
+      ],
+      "position": [
+        544.703,
+        -205.015,
+        174
+      ],
+      "rotation_z": 36.813
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-37",
+      "name": "Pool rim 37",
+      "type": "box",
+      "dimensions": [
+        85.297,
+        24,
+        18
+      ],
+      "position": [
+        544.703,
+        -205.015,
+        339
+      ],
+      "rotation_z": 36.813
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-38",
+      "name": "Tank glass 38",
+      "type": "box",
+      "dimensions": [
+        78.853,
+        7.2,
+        324
+      ],
+      "position": [
+        604.066,
+        -153.554,
+        174
+      ],
+      "rotation_z": 45.214
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-38",
+      "name": "Pool rim 38",
+      "type": "box",
+      "dimensions": [
+        81.853,
+        24,
+        18
+      ],
+      "position": [
+        604.066,
+        -153.554,
+        339
+      ],
+      "rotation_z": 45.214
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-39",
+      "name": "Tank glass 39",
+      "type": "box",
+      "dimensions": [
+        74.171,
+        7.2,
+        324
+      ],
+      "position": [
+        650.777,
+        -95.774,
+        174
+      ],
+      "rotation_z": 57.259
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-39",
+      "name": "Pool rim 39",
+      "type": "box",
+      "dimensions": [
+        77.171,
+        24,
+        18
+      ],
+      "position": [
+        650.777,
+        -95.774,
+        339
+      ],
+      "rotation_z": 57.259
+    },
+    {
+      "description": "thick acrylic wall of the tank (see-through)",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-glass-40",
+      "name": "Tank glass 40",
+      "type": "box",
+      "dimensions": [
+        69.675,
+        7.2,
+        324
+      ],
+      "position": [
+        679.542,
+        -32.668,
+        174
+      ],
+      "rotation_z": 74.281
+    },
+    {
+      "description": "concrete edge round the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tank",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-rim-40",
+      "name": "Pool rim 40",
+      "type": "box",
+      "dimensions": [
+        72.675,
+        24,
+        18
+      ],
+      "position": [
+        679.542,
+        -32.668,
+        339
+      ],
+      "rotation_z": 74.281
+    },
+    {
+      "description": "sand: a flat base of discs, and from H02 rolling mounds on top that climb toward the rock wall",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-seabed",
+      "name": "Seabed",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-1",
+      "name": "Sand 1",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        -192,
+        -199.2,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-2",
+      "name": "Sand 2",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        -72,
+        -199.2,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-3",
+      "name": "Sand 3",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        48,
+        -199.2,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-4",
+      "name": "Sand 4",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        168,
+        -199.2,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-5",
+      "name": "Sand 5",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        288,
+        -199.2,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-6",
+      "name": "Sand 6",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        -372,
+        -94.8,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-7",
+      "name": "Sand 7",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        -252,
+        -94.8,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-8",
+      "name": "Sand 8",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        -132,
+        -94.8,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-9",
+      "name": "Sand 9",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        -12,
+        -94.8,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-10",
+      "name": "Sand 10",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        108,
+        -94.8,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-11",
+      "name": "Sand 11",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        228,
+        -94.8,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-12",
+      "name": "Sand 12",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        348,
+        -94.8,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-13",
+      "name": "Sand 13",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        468,
+        -94.8,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-14",
+      "name": "Sand 14",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        -432,
+        9.6,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-15",
+      "name": "Sand 15",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        -312,
+        9.6,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-16",
+      "name": "Sand 16",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        -192,
+        9.6,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-17",
+      "name": "Sand 17",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        -72,
+        9.6,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-18",
+      "name": "Sand 18",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        48,
+        9.6,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-19",
+      "name": "Sand 19",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        168,
+        9.6,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-20",
+      "name": "Sand 20",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        288,
+        9.6,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-21",
+      "name": "Sand 21",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        408,
+        9.6,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-22",
+      "name": "Sand 22",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        528,
+        9.6,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-23",
+      "name": "Sand 23",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        -492,
+        114,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-24",
+      "name": "Sand 24",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        -372,
+        114,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-25",
+      "name": "Sand 25",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        -252,
+        114,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-26",
+      "name": "Sand 26",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        -132,
+        114,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-27",
+      "name": "Sand 27",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        -12,
+        114,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-28",
+      "name": "Sand 28",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        108,
+        114,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-29",
+      "name": "Sand 29",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        228,
+        114,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-30",
+      "name": "Sand 30",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        348,
+        114,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-31",
+      "name": "Sand 31",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        468,
+        114,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-32",
+      "name": "Sand 32",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        -432,
+        218.4,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-33",
+      "name": "Sand 33",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        -312,
+        218.4,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-34",
+      "name": "Sand 34",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        -192,
+        218.4,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-35",
+      "name": "Sand 35",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        -72,
+        218.4,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-36",
+      "name": "Sand 36",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        48,
+        218.4,
+        6.24
+      ]
+    },
+    {
+      "description": "sand on the tank floor",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-37",
+      "name": "Sand 37",
+      "type": "cylinder",
+      "dimensions": [
+        76.8,
+        12
+      ],
+      "position": [
+        168,
+        218.4,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-1",
+      "name": "Sand edge 1",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        650.855,
+        0,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-2",
+      "name": "Sand edge 2",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        648.821,
+        44.987,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-3",
+      "name": "Sand edge 3",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        633.805,
+        89.023,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-4",
+      "name": "Sand edge 4",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        605.973,
+        130.486,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-5",
+      "name": "Sand edge 5",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        566.477,
+        167.878,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-6",
+      "name": "Sand edge 6",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        517.351,
+        200.045,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-7",
+      "name": "Sand edge 7",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        461.249,
+        226.359,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-8",
+      "name": "Sand edge 8",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        401.077,
+        246.817,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-9",
+      "name": "Sand edge 9",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        339.566,
+        262.032,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-10",
+      "name": "Sand edge 10",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        278.875,
+        273.124,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-11",
+      "name": "Sand edge 11",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        220.295,
+        281.506,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-12",
+      "name": "Sand edge 12",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        164.114,
+        288.622,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-13",
+      "name": "Sand edge 13",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        109.662,
+        295.668,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-14",
+      "name": "Sand edge 14",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        55.541,
+        303.349,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-15",
+      "name": "Sand edge 15",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        0,
+        311.729,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-16",
+      "name": "Sand edge 16",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -58.623,
+        320.181,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-17",
+      "name": "Sand edge 17",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -121.458,
+        327.471,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-18",
+      "name": "Sand edge 18",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -188.75,
+        331.949,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-19",
+      "name": "Sand edge 19",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -259.667,
+        331.818,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-20",
+      "name": "Sand edge 20",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -332.29,
+        325.438,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-21",
+      "name": "Sand edge 21",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -403.808,
+        311.606,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-22",
+      "name": "Sand edge 22",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -470.875,
+        289.769,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-23",
+      "name": "Sand edge 23",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -530.066,
+        260.132,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-24",
+      "name": "Sand edge 24",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -578.359,
+        223.635,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-25",
+      "name": "Sand edge 25",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -613.55,
+        181.828,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-26",
+      "name": "Sand edge 26",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -634.541,
+        136.637,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-27",
+      "name": "Sand edge 27",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -641.439,
+        90.095,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-28",
+      "name": "Sand edge 28",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -635.467,
+        44.062,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-29",
+      "name": "Sand edge 29",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -618.707,
+        0,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-30",
+      "name": "Sand edge 30",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -593.711,
+        -41.166,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-31",
+      "name": "Sand edge 31",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -563.08,
+        -79.089,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-32",
+      "name": "Sand edge 32",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -529.058,
+        -113.923,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-33",
+      "name": "Sand edge 33",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -493.242,
+        -146.174,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-34",
+      "name": "Sand edge 34",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -456.42,
+        -176.485,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-35",
+      "name": "Sand edge 35",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -418.593,
+        -205.426,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-36",
+      "name": "Sand edge 36",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -379.133,
+        -233.312,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-37",
+      "name": "Sand edge 37",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -337.055,
+        -260.095,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-38",
+      "name": "Sand edge 38",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -291.342,
+        -285.334,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-39",
+      "name": "Sand edge 39",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -241.235,
+        -308.265,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-40",
+      "name": "Sand edge 40",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -186.466,
+        -327.932,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-41",
+      "name": "Sand edge 41",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -127.351,
+        -343.36,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-42",
+      "name": "Sand edge 42",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        -64.766,
+        -353.732,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-43",
+      "name": "Sand edge 43",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        0,
+        -358.522,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-44",
+      "name": "Sand edge 44",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        65.47,
+        -357.577,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-45",
+      "name": "Sand edge 45",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        130.226,
+        -351.112,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-46",
+      "name": "Sand edge 46",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        193.121,
+        -339.636,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-47",
+      "name": "Sand edge 47",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        253.409,
+        -323.822,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-48",
+      "name": "Sand edge 48",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        310.764,
+        -304.356,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-49",
+      "name": "Sand edge 49",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        365.179,
+        -281.797,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-50",
+      "name": "Sand edge 50",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        416.782,
+        -256.481,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-51",
+      "name": "Sand edge 51",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        465.599,
+        -228.494,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-52",
+      "name": "Sand edge 52",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        511.333,
+        -197.718,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-53",
+      "name": "Sand edge 53",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        553.205,
+        -163.944,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-54",
+      "name": "Sand edge 54",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        589.915,
+        -127.028,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandA",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-55",
+      "name": "Sand edge 55",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        619.723,
+        -87.045,
+        6.24
+      ]
+    },
+    {
+      "description": "sand along the foot of the wall",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-seabed",
+      "material": "sandB",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-sand-edge-56",
+      "name": "Sand edge 56",
+      "type": "cylinder",
+      "dimensions": [
+        55.2,
+        12
+      ],
+      "position": [
+        640.665,
+        -44.422,
+        6.24
+      ]
+    },
+    {
+      "description": "the water surface, in patches (see-through)",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-water",
+      "name": "Water",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-water",
+      "material": "surface",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-surface-0-3",
+      "name": "Water surface 1.4",
+      "type": "cylinder",
+      "dimensions": [
+        98.4,
+        2.4
+      ],
+      "position": [
+        -408,
+        132,
+        336
+      ]
+    },
+    {
+      "description": "the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-water",
+      "material": "surface",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-surface-1-1",
+      "name": "Water surface 2.2",
+      "type": "cylinder",
+      "dimensions": [
+        98.4,
+        2.4
+      ],
+      "position": [
+        -264,
+        -132,
+        336
+      ]
+    },
+    {
+      "description": "the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-water",
+      "material": "surface",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-surface-1-2",
+      "name": "Water surface 2.3",
+      "type": "cylinder",
+      "dimensions": [
+        98.4,
+        2.4
+      ],
+      "position": [
+        -336,
+        0,
+        336
+      ]
+    },
+    {
+      "description": "the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-water",
+      "material": "surface",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-surface-1-3",
+      "name": "Water surface 2.4",
+      "type": "cylinder",
+      "dimensions": [
+        98.4,
+        2.4
+      ],
+      "position": [
+        -264,
+        132,
+        336
+      ]
+    },
+    {
+      "description": "the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-water",
+      "material": "surface",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-surface-2-1",
+      "name": "Water surface 3.2",
+      "type": "cylinder",
+      "dimensions": [
+        98.4,
+        2.4
+      ],
+      "position": [
+        -120,
+        -132,
+        336
+      ]
+    },
+    {
+      "description": "the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-water",
+      "material": "surface",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-surface-2-2",
+      "name": "Water surface 3.3",
+      "type": "cylinder",
+      "dimensions": [
+        98.4,
+        2.4
+      ],
+      "position": [
+        -192,
+        0,
+        336
+      ]
+    },
+    {
+      "description": "the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-water",
+      "material": "surface",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-surface-2-3",
+      "name": "Water surface 3.4",
+      "type": "cylinder",
+      "dimensions": [
+        98.4,
+        2.4
+      ],
+      "position": [
+        -120,
+        132,
+        336
+      ]
+    },
+    {
+      "description": "the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-water",
+      "material": "surface",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-surface-3-1",
+      "name": "Water surface 4.2",
+      "type": "cylinder",
+      "dimensions": [
+        98.4,
+        2.4
+      ],
+      "position": [
+        24,
+        -132,
+        336
+      ]
+    },
+    {
+      "description": "the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-water",
+      "material": "surface",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-surface-3-2",
+      "name": "Water surface 4.3",
+      "type": "cylinder",
+      "dimensions": [
+        98.4,
+        2.4
+      ],
+      "position": [
+        -48,
+        0,
+        336
+      ]
+    },
+    {
+      "description": "the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-water",
+      "material": "surface",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-surface-3-3",
+      "name": "Water surface 4.4",
+      "type": "cylinder",
+      "dimensions": [
+        98.4,
+        2.4
+      ],
+      "position": [
+        24,
+        132,
+        336
+      ]
+    },
+    {
+      "description": "the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-water",
+      "material": "surface",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-surface-4-1",
+      "name": "Water surface 5.2",
+      "type": "cylinder",
+      "dimensions": [
+        98.4,
+        2.4
+      ],
+      "position": [
+        168,
+        -132,
+        336
+      ]
+    },
+    {
+      "description": "the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-water",
+      "material": "surface",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-surface-4-2",
+      "name": "Water surface 5.3",
+      "type": "cylinder",
+      "dimensions": [
+        98.4,
+        2.4
+      ],
+      "position": [
+        96,
+        0,
+        336
+      ]
+    },
+    {
+      "description": "the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-water",
+      "material": "surface",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-surface-4-3",
+      "name": "Water surface 5.4",
+      "type": "cylinder",
+      "dimensions": [
+        98.4,
+        2.4
+      ],
+      "position": [
+        168,
+        132,
+        336
+      ]
+    },
+    {
+      "description": "the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-water",
+      "material": "surface",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-surface-5-1",
+      "name": "Water surface 6.2",
+      "type": "cylinder",
+      "dimensions": [
+        98.4,
+        2.4
+      ],
+      "position": [
+        312,
+        -132,
+        336
+      ]
+    },
+    {
+      "description": "the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-water",
+      "material": "surface",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-surface-5-2",
+      "name": "Water surface 6.3",
+      "type": "cylinder",
+      "dimensions": [
+        98.4,
+        2.4
+      ],
+      "position": [
+        240,
+        0,
+        336
+      ]
+    },
+    {
+      "description": "the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-water",
+      "material": "surface",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-surface-5-3",
+      "name": "Water surface 6.4",
+      "type": "cylinder",
+      "dimensions": [
+        98.4,
+        2.4
+      ],
+      "position": [
+        312,
+        132,
+        336
+      ]
+    },
+    {
+      "description": "the top of the pool",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-water",
+      "material": "surface",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-surface-6-2",
+      "name": "Water surface 7.3",
+      "type": "cylinder",
+      "dimensions": [
+        98.4,
+        2.4
+      ],
+      "position": [
+        384,
+        0,
+        336
+      ]
+    },
+    {
+      "description": "a 120 ft clear acrylic tunnel that curves through the tank like a stream bed. Guests walk under the fish. 10 ft across",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel",
+      "name": "Curved tunnel",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-1",
+      "name": "Tunnel section 1",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        60.493
+      ],
+      "position": [
+        -672,
+        -12.898,
+        72
+      ],
+      "rotation_z": -28.255
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-2",
+      "name": "Tunnel section 2",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        59.932
+      ],
+      "position": [
+        -624,
+        -38.092,
+        72
+      ],
+      "rotation_z": -27.126
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-3",
+      "name": "Tunnel section 3",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        58.9
+      ],
+      "position": [
+        -576,
+        -61.504,
+        72
+      ],
+      "rotation_z": -24.854
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-4",
+      "name": "Tunnel section 4",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        57.564
+      ],
+      "position": [
+        -528,
+        -82.04,
+        72
+      ],
+      "rotation_z": -21.428
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-5",
+      "name": "Tunnel section 5",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        56.16
+      ],
+      "position": [
+        -480,
+        -98.74,
+        72
+      ],
+      "rotation_z": -16.876
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-6",
+      "name": "Tunnel section 6",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        54.951
+      ],
+      "position": [
+        -432,
+        -110.824,
+        72
+      ],
+      "rotation_z": -11.315
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-7",
+      "name": "Tunnel section 7",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        54.183
+      ],
+      "position": [
+        -384,
+        -117.725,
+        72
+      ],
+      "rotation_z": -4.998
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-8",
+      "name": "Tunnel section 8",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        54.021
+      ],
+      "position": [
+        -336,
+        -119.122,
+        72
+      ],
+      "rotation_z": 1.676
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-9",
+      "name": "Tunnel section 9",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        54.499
+      ],
+      "position": [
+        -288,
+        -114.948,
+        72
+      ],
+      "rotation_z": 8.229
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-10",
+      "name": "Tunnel section 10",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        55.515
+      ],
+      "position": [
+        -240,
+        -105.4,
+        72
+      ],
+      "rotation_z": 14.21
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-11",
+      "name": "Tunnel section 11",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        56.855
+      ],
+      "position": [
+        -192,
+        -90.923,
+        72
+      ],
+      "rotation_z": 19.289
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-12",
+      "name": "Tunnel section 12",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        58.256
+      ],
+      "position": [
+        -144,
+        -72.195,
+        72
+      ],
+      "rotation_z": 23.285
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-13",
+      "name": "Tunnel section 13",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        59.466
+      ],
+      "position": [
+        -96,
+        -50.091,
+        72
+      ],
+      "rotation_z": 26.134
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-14",
+      "name": "Tunnel section 14",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        60.279
+      ],
+      "position": [
+        -48,
+        -25.645,
+        72
+      ],
+      "rotation_z": 27.832
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-15",
+      "name": "Tunnel section 15",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        60.565
+      ],
+      "position": [
+        0,
+        0,
+        72
+      ],
+      "rotation_z": 28.395
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-16",
+      "name": "Tunnel section 16",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        60.279
+      ],
+      "position": [
+        48,
+        25.645,
+        72
+      ],
+      "rotation_z": 27.832
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-17",
+      "name": "Tunnel section 17",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        59.466
+      ],
+      "position": [
+        96,
+        50.091,
+        72
+      ],
+      "rotation_z": 26.134
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-18",
+      "name": "Tunnel section 18",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        58.256
+      ],
+      "position": [
+        144,
+        72.195,
+        72
+      ],
+      "rotation_z": 23.285
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-19",
+      "name": "Tunnel section 19",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        56.855
+      ],
+      "position": [
+        192,
+        90.923,
+        72
+      ],
+      "rotation_z": 19.289
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-20",
+      "name": "Tunnel section 20",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        55.515
+      ],
+      "position": [
+        240,
+        105.4,
+        72
+      ],
+      "rotation_z": 14.21
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-21",
+      "name": "Tunnel section 21",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        54.499
+      ],
+      "position": [
+        288,
+        114.948,
+        72
+      ],
+      "rotation_z": 8.229
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-22",
+      "name": "Tunnel section 22",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        54.021
+      ],
+      "position": [
+        336,
+        119.122,
+        72
+      ],
+      "rotation_z": 1.676
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-23",
+      "name": "Tunnel section 23",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        54.183
+      ],
+      "position": [
+        384,
+        117.725,
+        72
+      ],
+      "rotation_z": -4.998
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-24",
+      "name": "Tunnel section 24",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        54.951
+      ],
+      "position": [
+        432,
+        110.824,
+        72
+      ],
+      "rotation_z": -11.315
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-25",
+      "name": "Tunnel section 25",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        56.16
+      ],
+      "position": [
+        480,
+        98.74,
+        72
+      ],
+      "rotation_z": -16.876
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-26",
+      "name": "Tunnel section 26",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        57.564
+      ],
+      "position": [
+        528,
+        82.04,
+        72
+      ],
+      "rotation_z": -21.428
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-27",
+      "name": "Tunnel section 27",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        58.9
+      ],
+      "position": [
+        576,
+        61.504,
+        72
+      ],
+      "rotation_z": -24.854
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-28",
+      "name": "Tunnel section 28",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        59.932
+      ],
+      "position": [
+        624,
+        38.092,
+        72
+      ],
+      "rotation_z": -27.126
+    },
+    {
+      "description": "clear acrylic tunnel section, round, 10 ft across",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-tunnel-29",
+      "name": "Tunnel section 29",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        60.493
+      ],
+      "position": [
+        672,
+        12.898,
+        72
+      ],
+      "rotation_z": -28.255
+    },
+    {
+      "description": "the floor guests walk on",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "floorWalk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-walk-1",
+      "name": "Tunnel walkway 1",
+      "type": "box",
+      "dimensions": [
+        112.02,
+        72,
+        4.8
+      ],
+      "position": [
+        -648,
+        -25.193,
+        14.4
+      ],
+      "rotation_z": -27.693
+    },
+    {
+      "description": "the floor guests walk on",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "floorWalk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-walk-2",
+      "name": "Tunnel walkway 2",
+      "type": "box",
+      "dimensions": [
+        108.017,
+        72,
+        4.8
+      ],
+      "position": [
+        -552,
+        -70.923,
+        14.4
+      ],
+      "rotation_z": -23.163
+    },
+    {
+      "description": "the floor guests walk on",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "floorWalk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-walk-3",
+      "name": "Tunnel walkway 3",
+      "type": "box",
+      "dimensions": [
+        102.595,
+        72,
+        4.8
+      ],
+      "position": [
+        -456,
+        -103.543,
+        14.4
+      ],
+      "rotation_z": -14.13
+    },
+    {
+      "description": "the floor guests walk on",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "floorWalk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-walk-4",
+      "name": "Tunnel walkway 4",
+      "type": "box",
+      "dimensions": [
+        99.641,
+        72,
+        4.8
+      ],
+      "position": [
+        -360,
+        -117.023,
+        14.4
+      ],
+      "rotation_z": -1.667
+    },
+    {
+      "description": "the floor guests walk on",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "floorWalk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-walk-5",
+      "name": "Tunnel walkway 5",
+      "type": "box",
+      "dimensions": [
+        101.481,
+        72,
+        4.8
+      ],
+      "position": [
+        -264,
+        -108.871,
+        14.4
+      ],
+      "rotation_z": 11.251
+    },
+    {
+      "description": "the floor guests walk on",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "floorWalk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-walk-6",
+      "name": "Tunnel walkway 6",
+      "type": "box",
+      "dimensions": [
+        106.648,
+        72,
+        4.8
+      ],
+      "position": [
+        -168,
+        -80.595,
+        14.4
+      ],
+      "rotation_z": 21.314
+    },
+    {
+      "description": "the floor guests walk on",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "floorWalk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-walk-7",
+      "name": "Tunnel walkway 7",
+      "type": "box",
+      "dimensions": [
+        111.333,
+        72,
+        4.8
+      ],
+      "position": [
+        -72,
+        -37.42,
+        14.4
+      ],
+      "rotation_z": 26.989
+    },
+    {
+      "description": "the floor guests walk on",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "floorWalk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-walk-8",
+      "name": "Tunnel walkway 8",
+      "type": "box",
+      "dimensions": [
+        112.443,
+        72,
+        4.8
+      ],
+      "position": [
+        24,
+        12.671,
+        14.4
+      ],
+      "rotation_z": 28.115
+    },
+    {
+      "description": "the floor guests walk on",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "floorWalk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-walk-9",
+      "name": "Tunnel walkway 9",
+      "type": "box",
+      "dimensions": [
+        109.29,
+        72,
+        4.8
+      ],
+      "position": [
+        120,
+        60.42,
+        14.4
+      ],
+      "rotation_z": 24.726
+    },
+    {
+      "description": "the floor guests walk on",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "floorWalk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-walk-10",
+      "name": "Tunnel walkway 10",
+      "type": "box",
+      "dimensions": [
+        103.871,
+        72,
+        4.8
+      ],
+      "position": [
+        216,
+        97.001,
+        14.4
+      ],
+      "rotation_z": 16.783
+    },
+    {
+      "description": "the floor guests walk on",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "floorWalk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-walk-11",
+      "name": "Tunnel walkway 11",
+      "type": "box",
+      "dimensions": [
+        99.962,
+        72,
+        4.8
+      ],
+      "position": [
+        312,
+        115.651,
+        14.4
+      ],
+      "rotation_z": 4.969
+    },
+    {
+      "description": "the floor guests walk on",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "floorWalk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-walk-12",
+      "name": "Tunnel walkway 12",
+      "type": "box",
+      "dimensions": [
+        100.587,
+        72,
+        4.8
+      ],
+      "position": [
+        408,
+        112.923,
+        14.4
+      ],
+      "rotation_z": -8.182
+    },
+    {
+      "description": "the floor guests walk on",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "floorWalk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-walk-13",
+      "name": "Tunnel walkway 13",
+      "type": "box",
+      "dimensions": [
+        105.244,
+        72,
+        4.8
+      ],
+      "position": [
+        504,
+        89.321,
+        14.4
+      ],
+      "rotation_z": -19.184
+    },
+    {
+      "description": "the floor guests walk on",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "floorWalk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-walk-14",
+      "name": "Tunnel walkway 14",
+      "type": "box",
+      "dimensions": [
+        110.411,
+        72,
+        4.8
+      ],
+      "position": [
+        600,
+        49.209,
+        14.4
+      ],
+      "rotation_z": -26.001
+    },
+    {
+      "description": "the floor guests walk on",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "floorWalk",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-walk-15",
+      "name": "Tunnel walkway 15",
+      "type": "box",
+      "dimensions": [
+        58.093,
+        72,
+        4.8
+      ],
+      "position": [
+        672,
+        12.898,
+        14.4
+      ],
+      "rotation_z": -28.255
+    },
+    {
+      "description": "the straight end of the tunnel outside the tank",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-stub-west",
+      "name": "Tunnel entrance stub",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        144
+      ],
+      "position": [
+        -768,
+        0,
+        72
+      ]
+    },
+    {
+      "description": "steel frame where the tunnel leaves the tank",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-portal-west",
+      "name": "Tunnel entrance portal",
+      "type": "box",
+      "dimensions": [
+        36,
+        144,
+        144
+      ],
+      "position": [
+        -696,
+        0,
+        78
+      ]
+    },
+    {
+      "description": "where guests enter, at the west end",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-hall-west",
+      "name": "Entry lobby",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-hall-west",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-hall-west-floor",
+      "name": "Lobby floor",
+      "type": "box",
+      "dimensions": [
+        216,
+        312,
+        6
+      ],
+      "position": [
+        -888,
+        0,
+        3
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-hall-west",
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-hall-west-wall-a",
+      "name": "Lobby wall A",
+      "type": "box",
+      "dimensions": [
+        216,
+        7.2,
+        144
+      ],
+      "position": [
+        -888,
+        156,
+        75
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-hall-west",
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-hall-west-wall-b",
+      "name": "Lobby wall B",
+      "type": "box",
+      "dimensions": [
+        216,
+        7.2,
+        144
+      ],
+      "position": [
+        -888,
+        -156,
+        75
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-hall-west",
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-hall-west-wall-c",
+      "name": "Lobby end wall",
+      "type": "box",
+      "dimensions": [
+        7.2,
+        312,
+        144
+      ],
+      "position": [
+        -996,
+        0,
+        75
+      ]
+    },
+    {
+      "description": "see-through so you can look in",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-hall-west",
+      "material": "roof",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-hall-west-roof",
+      "name": "Lobby roof",
+      "type": "box",
+      "dimensions": [
+        228,
+        324,
+        7.2
+      ],
+      "position": [
+        -888,
+        0,
+        150
+      ]
+    },
+    {
+      "description": "the straight end of the tunnel outside the tank",
+      "rotation_y": 90,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "acrylic",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-stub-east",
+      "name": "Tunnel exit stub",
+      "type": "cylinder",
+      "dimensions": [
+        62.4,
+        144
+      ],
+      "position": [
+        768,
+        0,
+        72
+      ]
+    },
+    {
+      "description": "steel frame where the tunnel leaves the tank",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-tunnel",
+      "material": "steel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-portal-east",
+      "name": "Tunnel exit portal",
+      "type": "box",
+      "dimensions": [
+        36,
+        144,
+        144
+      ],
+      "position": [
+        696,
+        0,
+        78
+      ]
+    },
+    {
+      "description": "the east end of the tunnel: gift shop and exit",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-hall-east",
+      "name": "Exit hall",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-hall-east",
+      "material": "concrete",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-hall-east-floor",
+      "name": "Exit hall floor",
+      "type": "box",
+      "dimensions": [
+        216,
+        312,
+        6
+      ],
+      "position": [
+        888,
+        0,
+        3
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-hall-east",
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-hall-east-wall-a",
+      "name": "Exit hall wall A",
+      "type": "box",
+      "dimensions": [
+        216,
+        7.2,
+        144
+      ],
+      "position": [
+        888,
+        156,
+        75
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-hall-east",
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-hall-east-wall-b",
+      "name": "Exit hall wall B",
+      "type": "box",
+      "dimensions": [
+        216,
+        7.2,
+        144
+      ],
+      "position": [
+        888,
+        -156,
+        75
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-hall-east",
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-hall-east-wall-c",
+      "name": "Exit hall end wall",
+      "type": "box",
+      "dimensions": [
+        7.2,
+        312,
+        144
+      ],
+      "position": [
+        996,
+        0,
+        75
+      ]
+    },
+    {
+      "description": "see-through so you can look in",
+      "rotation_y": 0,
+      "parent": "habitat-aquarium-v01-hall-east",
+      "material": "roof",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "habitat-aquarium-v01-hall-east-roof",
+      "name": "Exit hall roof",
+      "type": "box",
+      "dimensions": [
+        228,
+        324,
+        7.2
+      ],
+      "position": [
+        888,
+        0,
+        150
+      ]
+    }
+  ],
+  "version": 254
+}

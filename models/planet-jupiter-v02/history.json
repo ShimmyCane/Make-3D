@@ -1,0 +1,945 @@
+{
+  "schema": "make3d.history/0.1",
+  "model_id": "planet-jupiter-v02",
+  "header": {
+    "model_id": "planet-jupiter-v02",
+    "name": "Jupiter (planet view) V02",
+    "description": "Jupiter on its own, increment 2: the biggest planet; a gas giant with stripes of clouds. Textures are placed by latitude and longitude; sizes are rough. Spins, with its moons going round. Use the button to go back to the Solar System.",
+    "units": "in",
+    "up": "z",
+    "world": "solar-system-world",
+    "materials": {
+      "sun": {
+        "color": "#ffd23f",
+        "opacity": 1
+      },
+      "corona": {
+        "color": "#ffb347",
+        "opacity": 0.2
+      },
+      "orbit": {
+        "color": "#8a86a3",
+        "opacity": 1
+      },
+      "mercury": {
+        "color": "#b8b0a4",
+        "opacity": 1
+      },
+      "venus": {
+        "color": "#f0d9a0",
+        "opacity": 1
+      },
+      "earth": {
+        "color": "#4f8fd6",
+        "opacity": 1
+      },
+      "mars": {
+        "color": "#d9714a",
+        "opacity": 1
+      },
+      "jup1": {
+        "color": "#e8c49a",
+        "opacity": 1
+      },
+      "jup2": {
+        "color": "#b87c55",
+        "opacity": 1
+      },
+      "jup3": {
+        "color": "#f2e6d0",
+        "opacity": 1
+      },
+      "sat": {
+        "color": "#ecd8a0",
+        "opacity": 1
+      },
+      "satb": {
+        "color": "#d9b97c",
+        "opacity": 1
+      },
+      "ring": {
+        "color": "#e6d7b0",
+        "opacity": 0.8
+      },
+      "ring2": {
+        "color": "#b59f7a",
+        "opacity": 0.8
+      },
+      "uranus": {
+        "color": "#a9e6f0",
+        "opacity": 1
+      },
+      "uranusb": {
+        "color": "#8fd4e6",
+        "opacity": 1
+      },
+      "neptune": {
+        "color": "#4f73e0",
+        "opacity": 1
+      },
+      "neptuneb": {
+        "color": "#3b5fc2",
+        "opacity": 1
+      },
+      "pluto": {
+        "color": "#c9b49a",
+        "opacity": 1
+      },
+      "charon": {
+        "color": "#8f8a85",
+        "opacity": 1
+      },
+      "moon": {
+        "color": "#bdbdbd",
+        "opacity": 1
+      },
+      "phobos": {
+        "color": "#8c7f74",
+        "opacity": 1
+      },
+      "io": {
+        "color": "#f6e28a",
+        "opacity": 1
+      },
+      "europa": {
+        "color": "#e9dfcf",
+        "opacity": 1
+      },
+      "ganymede": {
+        "color": "#a79b8b",
+        "opacity": 1
+      },
+      "callisto": {
+        "color": "#7e7467",
+        "opacity": 1
+      },
+      "titan": {
+        "color": "#e9b872",
+        "opacity": 1
+      },
+      "enceladus": {
+        "color": "#f4f8ff",
+        "opacity": 1
+      },
+      "miranda": {
+        "color": "#b4b4b4",
+        "opacity": 1
+      },
+      "ariel": {
+        "color": "#c9c9c9",
+        "opacity": 1
+      },
+      "triton": {
+        "color": "#e0d6c8",
+        "opacity": 1
+      },
+      "rock": {
+        "color": "#9a9188",
+        "opacity": 1
+      },
+      "rock2": {
+        "color": "#b3a99c",
+        "opacity": 1
+      },
+      "air": {
+        "color": "#9fd8ff",
+        "opacity": 0.2
+      },
+      "venusair": {
+        "color": "#ffe9a8",
+        "opacity": 0.25
+      },
+      "marker": {
+        "color": "#ff8fa3",
+        "opacity": 1
+      },
+      "venusb1": {
+        "color": "#f3e3b0",
+        "opacity": 1
+      },
+      "venusb2": {
+        "color": "#e2c58a",
+        "opacity": 1
+      },
+      "cap": {
+        "color": "#fbfbff",
+        "opacity": 1
+      },
+      "dark": {
+        "color": "#5b544d",
+        "opacity": 1
+      },
+      "grs": {
+        "color": "#c4543b",
+        "opacity": 1
+      },
+      "ovalw": {
+        "color": "#fff7ee",
+        "opacity": 1
+      },
+      "hexblue": {
+        "color": "#2e4f8f",
+        "opacity": 1
+      },
+      "ringdark": {
+        "color": "#5c5a5a",
+        "opacity": 0.7
+      },
+      "crater": {
+        "color": "#7d756c",
+        "opacity": 1
+      },
+      "brightray": {
+        "color": "#f2f0ea",
+        "opacity": 1
+      },
+      "olympus": {
+        "color": "#b0664a",
+        "opacity": 1
+      },
+      "dustv": {
+        "color": "#c7a77a",
+        "opacity": 0.3
+      },
+      "ice": {
+        "color": "#ffffff",
+        "opacity": 1
+      },
+      "pluto_heart": {
+        "color": "#f4efe6",
+        "opacity": 1
+      },
+      "nitro": {
+        "color": "#fffdf7",
+        "opacity": 1
+      },
+      "mtn": {
+        "color": "#8a8f6a",
+        "opacity": 1
+      },
+      "amalthea": {
+        "color": "#b89070",
+        "opacity": 1
+      },
+      "himalia": {
+        "color": "#a09a92",
+        "opacity": 1
+      },
+      "thebe": {
+        "color": "#a58c75",
+        "opacity": 1
+      },
+      "mimas": {
+        "color": "#e8e8e8",
+        "opacity": 1
+      },
+      "tethys": {
+        "color": "#dcdcdc",
+        "opacity": 1
+      },
+      "dione": {
+        "color": "#d0d0d0",
+        "opacity": 1
+      },
+      "rhea": {
+        "color": "#c9c9c9",
+        "opacity": 1
+      },
+      "iapetus": {
+        "color": "#b8a890",
+        "opacity": 1
+      },
+      "umbriel": {
+        "color": "#6d6d72",
+        "opacity": 1
+      },
+      "titania": {
+        "color": "#bcbcc0",
+        "opacity": 1
+      },
+      "oberon": {
+        "color": "#a9a39d",
+        "opacity": 1
+      },
+      "puck": {
+        "color": "#8f8f8f",
+        "opacity": 1
+      },
+      "proteus": {
+        "color": "#7d7d7d",
+        "opacity": 1
+      },
+      "nereid": {
+        "color": "#9ea5b8",
+        "opacity": 1
+      },
+      "nix": {
+        "color": "#dedede",
+        "opacity": 1
+      },
+      "hydra": {
+        "color": "#e6e6e6",
+        "opacity": 1
+      },
+      "land": {
+        "color": "#5f9e5a",
+        "opacity": 1
+      },
+      "dsand": {
+        "color": "#d9b77a",
+        "opacity": 1
+      },
+      "cloud": {
+        "color": "#ffffff",
+        "opacity": 0.35
+      },
+      "iss": {
+        "color": "#d9dde3",
+        "opacity": 1
+      },
+      "panel": {
+        "color": "#2f5f9e",
+        "opacity": 1
+      },
+      "rocket": {
+        "color": "#f2f2f2",
+        "opacity": 1
+      },
+      "nose": {
+        "color": "#d6453d",
+        "opacity": 1
+      },
+      "plume": {
+        "color": "#ffa640",
+        "opacity": 0.6
+      },
+      "pad": {
+        "color": "#8c8c8c",
+        "opacity": 1
+      },
+      "storm": {
+        "color": "#ffffff",
+        "opacity": 0.8
+      },
+      "eye": {
+        "color": "#3c4a5a",
+        "opacity": 1
+      },
+      "light": {
+        "color": "#ffe27a",
+        "opacity": 1
+      }
+    },
+    "view": {
+      "fill": 0.75,
+      "radius": 22
+    },
+    "links": [
+      {
+        "label": "Back to the Solar System",
+        "target": "solar-system-v06",
+        "transition": "fade"
+      }
+    ]
+  },
+  "operations": [
+    {
+      "seq": 1,
+      "op": "add",
+      "time": "2026-11-01T10:01:00.000Z",
+      "author": "jimmy",
+      "note": "add Jupiter body",
+      "object": {
+        "uuid": "planet-jupiter-v02-body-jupiter",
+        "name": "Jupiter body",
+        "description": "spins on its own axis",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 2,
+      "op": "add",
+      "time": "2026-11-01T10:02:00.000Z",
+      "author": "jimmy",
+      "note": "add Jupiter",
+      "object": {
+        "uuid": "planet-jupiter-v02-ball-jupiter",
+        "name": "Jupiter",
+        "description": "the biggest planet; a gas giant with stripes of clouds",
+        "type": "sphere",
+        "dimensions": [
+          22
+        ],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": "planet-jupiter-v02-body-jupiter",
+        "material": "jup1"
+      }
+    },
+    {
+      "seq": 3,
+      "op": "add",
+      "time": "2026-11-01T10:03:00.000Z",
+      "author": "jimmy",
+      "note": "add Jupiter band 1",
+      "object": {
+        "uuid": "planet-jupiter-v02-band-jupiter-1",
+        "name": "Jupiter band 1",
+        "description": "a stripe of cloud",
+        "type": "cylinder",
+        "dimensions": [
+          14.577,
+          4.909
+        ],
+        "position": [
+          0,
+          0,
+          -16.844
+        ],
+        "rotation_y": 0,
+        "parent": "planet-jupiter-v02-body-jupiter",
+        "material": "jup1"
+      }
+    },
+    {
+      "seq": 4,
+      "op": "add",
+      "time": "2026-11-01T10:04:00.000Z",
+      "author": "jimmy",
+      "note": "add Jupiter band 2",
+      "object": {
+        "uuid": "planet-jupiter-v02-band-jupiter-2",
+        "name": "Jupiter band 2",
+        "description": "a stripe of cloud",
+        "type": "cylinder",
+        "dimensions": [
+          18.971,
+          4.909
+        ],
+        "position": [
+          0,
+          0,
+          -12.031
+        ],
+        "rotation_y": 0,
+        "parent": "planet-jupiter-v02-body-jupiter",
+        "material": "jup2"
+      }
+    },
+    {
+      "seq": 5,
+      "op": "add",
+      "time": "2026-11-01T10:05:00.000Z",
+      "author": "jimmy",
+      "note": "add Jupiter band 3",
+      "object": {
+        "uuid": "planet-jupiter-v02-band-jupiter-3",
+        "name": "Jupiter band 3",
+        "description": "a stripe of cloud",
+        "type": "cylinder",
+        "dimensions": [
+          21.405,
+          4.909
+        ],
+        "position": [
+          0,
+          0,
+          -7.219
+        ],
+        "rotation_y": 0,
+        "parent": "planet-jupiter-v02-body-jupiter",
+        "material": "jup3"
+      }
+    },
+    {
+      "seq": 6,
+      "op": "add",
+      "time": "2026-11-01T10:06:00.000Z",
+      "author": "jimmy",
+      "note": "add Jupiter band 4",
+      "object": {
+        "uuid": "planet-jupiter-v02-band-jupiter-4",
+        "name": "Jupiter band 4",
+        "description": "a stripe of cloud",
+        "type": "cylinder",
+        "dimensions": [
+          22.524,
+          4.909
+        ],
+        "position": [
+          0,
+          0,
+          -2.406
+        ],
+        "rotation_y": 0,
+        "parent": "planet-jupiter-v02-body-jupiter",
+        "material": "jup2"
+      }
+    },
+    {
+      "seq": 7,
+      "op": "add",
+      "time": "2026-11-01T10:07:00.000Z",
+      "author": "jimmy",
+      "note": "add Jupiter band 5",
+      "object": {
+        "uuid": "planet-jupiter-v02-band-jupiter-5",
+        "name": "Jupiter band 5",
+        "description": "a stripe of cloud",
+        "type": "cylinder",
+        "dimensions": [
+          22.524,
+          4.909
+        ],
+        "position": [
+          0,
+          0,
+          2.406
+        ],
+        "rotation_y": 0,
+        "parent": "planet-jupiter-v02-body-jupiter",
+        "material": "jup1"
+      }
+    },
+    {
+      "seq": 8,
+      "op": "add",
+      "time": "2026-11-01T10:08:00.000Z",
+      "author": "jimmy",
+      "note": "add Jupiter band 6",
+      "object": {
+        "uuid": "planet-jupiter-v02-band-jupiter-6",
+        "name": "Jupiter band 6",
+        "description": "a stripe of cloud",
+        "type": "cylinder",
+        "dimensions": [
+          21.405,
+          4.909
+        ],
+        "position": [
+          0,
+          0,
+          7.219
+        ],
+        "rotation_y": 0,
+        "parent": "planet-jupiter-v02-body-jupiter",
+        "material": "jup2"
+      }
+    },
+    {
+      "seq": 9,
+      "op": "add",
+      "time": "2026-11-01T10:09:00.000Z",
+      "author": "jimmy",
+      "note": "add Jupiter band 7",
+      "object": {
+        "uuid": "planet-jupiter-v02-band-jupiter-7",
+        "name": "Jupiter band 7",
+        "description": "a stripe of cloud",
+        "type": "cylinder",
+        "dimensions": [
+          18.971,
+          4.909
+        ],
+        "position": [
+          0,
+          0,
+          12.031
+        ],
+        "rotation_y": 0,
+        "parent": "planet-jupiter-v02-body-jupiter",
+        "material": "jup3"
+      }
+    },
+    {
+      "seq": 10,
+      "op": "add",
+      "time": "2026-11-01T10:10:00.000Z",
+      "author": "jimmy",
+      "note": "add Jupiter band 8",
+      "object": {
+        "uuid": "planet-jupiter-v02-band-jupiter-8",
+        "name": "Jupiter band 8",
+        "description": "a stripe of cloud",
+        "type": "cylinder",
+        "dimensions": [
+          14.577,
+          4.909
+        ],
+        "position": [
+          0,
+          0,
+          16.844
+        ],
+        "rotation_y": 0,
+        "parent": "planet-jupiter-v02-body-jupiter",
+        "material": "jup1"
+      }
+    },
+    {
+      "seq": 11,
+      "op": "add",
+      "time": "2026-11-01T10:11:00.000Z",
+      "author": "jimmy",
+      "note": "add Jupiter atmosphere",
+      "object": {
+        "uuid": "planet-jupiter-v02-air-jupiter",
+        "name": "Jupiter atmosphere",
+        "description": "a thin see-through haze (taps pass through it)",
+        "type": "sphere",
+        "dimensions": [
+          24.64
+        ],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": "planet-jupiter-v02-body-jupiter",
+        "material": "air"
+      }
+    },
+    {
+      "seq": 12,
+      "op": "add",
+      "time": "2026-11-01T10:12:00.000Z",
+      "author": "jimmy",
+      "note": "add Great Red Spot",
+      "object": {
+        "uuid": "planet-jupiter-v02-grs",
+        "name": "Great Red Spot",
+        "description": "a storm bigger than Earth",
+        "type": "cylinder",
+        "dimensions": [
+          4.2,
+          0.4
+        ],
+        "position": [
+          19.429,
+          7.072,
+          -8.354
+        ],
+        "rotation_y": 112,
+        "rotation_z": 20,
+        "parent": "planet-jupiter-v02-body-jupiter",
+        "material": "grs"
+      }
+    },
+    {
+      "seq": 13,
+      "op": "add",
+      "time": "2026-11-01T10:13:00.000Z",
+      "author": "jimmy",
+      "note": "add White oval",
+      "object": {
+        "uuid": "planet-jupiter-v02-oval-1",
+        "name": "White oval",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          1.6,
+          0.4
+        ],
+        "position": [
+          2.966,
+          16.823,
+          -14.334
+        ],
+        "rotation_y": 130,
+        "rotation_z": 80,
+        "parent": "planet-jupiter-v02-body-jupiter",
+        "material": "ovalw"
+      }
+    },
+    {
+      "seq": 14,
+      "op": "add",
+      "time": "2026-11-01T10:14:00.000Z",
+      "author": "jimmy",
+      "note": "add Io orbit",
+      "object": {
+        "uuid": "planet-jupiter-v02-arm-io",
+        "name": "Io orbit",
+        "description": "turns the moon round the planet",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 15,
+      "op": "add",
+      "time": "2026-11-01T10:15:00.000Z",
+      "author": "jimmy",
+      "note": "add Io",
+      "object": {
+        "uuid": "planet-jupiter-v02-moon-io",
+        "name": "Io",
+        "description": "a moon of Jupiter",
+        "type": "sphere",
+        "dimensions": [
+          2.6
+        ],
+        "position": [
+          36,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": "planet-jupiter-v02-arm-io",
+        "material": "io"
+      }
+    },
+    {
+      "seq": 16,
+      "op": "add",
+      "time": "2026-11-01T10:16:00.000Z",
+      "author": "jimmy",
+      "note": "add Europa orbit",
+      "object": {
+        "uuid": "planet-jupiter-v02-arm-europa",
+        "name": "Europa orbit",
+        "description": "turns the moon round the planet",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 17,
+      "op": "add",
+      "time": "2026-11-01T10:17:00.000Z",
+      "author": "jimmy",
+      "note": "add Europa",
+      "object": {
+        "uuid": "planet-jupiter-v02-moon-europa",
+        "name": "Europa",
+        "description": "a moon of Jupiter",
+        "type": "sphere",
+        "dimensions": [
+          2.2
+        ],
+        "position": [
+          44,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": "planet-jupiter-v02-arm-europa",
+        "material": "europa"
+      }
+    },
+    {
+      "seq": 18,
+      "op": "add",
+      "time": "2026-11-01T10:18:00.000Z",
+      "author": "jimmy",
+      "note": "add Ganymede orbit",
+      "object": {
+        "uuid": "planet-jupiter-v02-arm-ganymede",
+        "name": "Ganymede orbit",
+        "description": "turns the moon round the planet",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 19,
+      "op": "add",
+      "time": "2026-11-01T10:19:00.000Z",
+      "author": "jimmy",
+      "note": "add Ganymede",
+      "object": {
+        "uuid": "planet-jupiter-v02-moon-ganymede",
+        "name": "Ganymede",
+        "description": "a moon of Jupiter",
+        "type": "sphere",
+        "dimensions": [
+          3.6
+        ],
+        "position": [
+          56,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": "planet-jupiter-v02-arm-ganymede",
+        "material": "ganymede"
+      }
+    },
+    {
+      "seq": 20,
+      "op": "add",
+      "time": "2026-11-01T10:20:00.000Z",
+      "author": "jimmy",
+      "note": "add Callisto orbit",
+      "object": {
+        "uuid": "planet-jupiter-v02-arm-callisto",
+        "name": "Callisto orbit",
+        "description": "turns the moon round the planet",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 21,
+      "op": "add",
+      "time": "2026-11-01T10:21:00.000Z",
+      "author": "jimmy",
+      "note": "add Callisto",
+      "object": {
+        "uuid": "planet-jupiter-v02-moon-callisto",
+        "name": "Callisto",
+        "description": "a moon of Jupiter",
+        "type": "sphere",
+        "dimensions": [
+          3.3
+        ],
+        "position": [
+          70,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": "planet-jupiter-v02-arm-callisto",
+        "material": "callisto"
+      }
+    },
+    {
+      "seq": 22,
+      "op": "add",
+      "time": "2026-11-01T10:22:00.000Z",
+      "author": "jimmy",
+      "note": "add Amalthea orbit",
+      "object": {
+        "uuid": "planet-jupiter-v02-arm-amalthea",
+        "name": "Amalthea orbit",
+        "description": "turns the moon round the planet",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 23,
+      "op": "add",
+      "time": "2026-11-01T10:23:00.000Z",
+      "author": "jimmy",
+      "note": "add Amalthea",
+      "object": {
+        "uuid": "planet-jupiter-v02-moon-amalthea",
+        "name": "Amalthea",
+        "description": "a moon of Jupiter",
+        "type": "sphere",
+        "dimensions": [
+          0.9
+        ],
+        "position": [
+          26,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": "planet-jupiter-v02-arm-amalthea",
+        "material": "amalthea"
+      }
+    },
+    {
+      "seq": 24,
+      "op": "add",
+      "time": "2026-11-01T10:24:00.000Z",
+      "author": "jimmy",
+      "note": "add Himalia orbit",
+      "object": {
+        "uuid": "planet-jupiter-v02-arm-himalia",
+        "name": "Himalia orbit",
+        "description": "turns the moon round the planet",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 25,
+      "op": "add",
+      "time": "2026-11-01T10:25:00.000Z",
+      "author": "jimmy",
+      "note": "add Himalia",
+      "object": {
+        "uuid": "planet-jupiter-v02-moon-himalia",
+        "name": "Himalia",
+        "description": "a moon of Jupiter",
+        "type": "sphere",
+        "dimensions": [
+          1.2
+        ],
+        "position": [
+          80,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": "planet-jupiter-v02-arm-himalia",
+        "material": "himalia"
+      }
+    }
+  ]
+}

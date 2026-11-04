@@ -1,0 +1,9152 @@
+{
+  "model_id": "hawk-v05",
+  "name": "Hawk V05",
+  "description": "Red-tailed hawk from closed skeleton meshes, V05: finish. About 22.5 in long, 50 in wingspan (estimates).",
+  "units": "in",
+  "up": "z",
+  "world": "default-world",
+  "view": {
+    "azimuth_deg": 20
+  },
+  "materials": {
+    "feather": {
+      "color": "#c9a37e",
+      "opacity": 1
+    },
+    "wing": {
+      "color": "#bb9570",
+      "opacity": 1
+    },
+    "tail": {
+      "color": "#e09a74",
+      "opacity": 1
+    },
+    "breast": {
+      "color": "#f6e9d3",
+      "opacity": 1
+    },
+    "beak": {
+      "color": "#e7d79a",
+      "opacity": 1
+    },
+    "leg": {
+      "color": "#f2d27a",
+      "opacity": 1
+    },
+    "ink": {
+      "color": "#2d2a26",
+      "opacity": 1
+    },
+    "brow": {
+      "color": "#8d6a4e",
+      "opacity": 1
+    },
+    "meadow": {
+      "color": "#cfe6b8",
+      "opacity": 1
+    },
+    "grass1": {
+      "color": "#a9d49a",
+      "opacity": 1
+    },
+    "grass2": {
+      "color": "#8cc48c",
+      "opacity": 1
+    },
+    "leaf": {
+      "color": "#7fc4a0",
+      "opacity": 1
+    },
+    "post": {
+      "color": "#d9b99b",
+      "opacity": 1
+    },
+    "flag": {
+      "color": "#f4a38c",
+      "opacity": 1
+    },
+    "mouse": {
+      "color": "#d3c5b4",
+      "opacity": 1
+    },
+    "ear": {
+      "color": "#f4c7c0",
+      "opacity": 1
+    }
+  },
+  "objects": [
+    {
+      "description": "red-tailed hawk; the group that flies the loop",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-hawk",
+      "name": "Hawk",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        66
+      ]
+    },
+    {
+      "description": "one closed mesh: rump, belly, chest, neck and head. Joints: 0 rump, 1 belly, 2 chest, 3 neck, 4 head",
+      "rotation_y": 0,
+      "parent": "hawk-v05-hawk",
+      "material": "feather",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-body",
+      "name": "Body",
+      "type": "loft",
+      "dimensions": [
+        14.15,
+        6.38,
+        6
+      ],
+      "position": [
+        0.05,
+        0,
+        66.51
+      ],
+      "shape": {
+        "joints": [
+          [
+            -7,
+            0,
+            66.2
+          ],
+          [
+            -2,
+            0,
+            66.4
+          ],
+          [
+            2.5,
+            0,
+            66.9
+          ],
+          [
+            5.2,
+            0,
+            67.8
+          ],
+          [
+            6.9,
+            0,
+            68.4
+          ]
+        ],
+        "facing": [
+          0,
+          1,
+          0
+        ],
+        "samples": 18,
+        "sides": 14,
+        "rings": [
+          [
+            0,
+            0.7,
+            0.7
+          ],
+          [
+            0.12,
+            2.2,
+            2.1
+          ],
+          [
+            0.38,
+            3.2,
+            3
+          ],
+          [
+            0.62,
+            3,
+            2.8
+          ],
+          [
+            0.78,
+            1.8,
+            1.9
+          ],
+          [
+            0.88,
+            1.7,
+            1.8
+          ],
+          [
+            0.97,
+            1.2,
+            1.3
+          ],
+          [
+            1,
+            0.6,
+            0.7
+          ]
+        ]
+      }
+    },
+    {
+      "description": "flat closed fan on the rump joint of the body",
+      "rotation_y": 0,
+      "parent": "hawk-v05-hawk",
+      "material": "tail",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-tail",
+      "name": "Tail",
+      "type": "loft",
+      "dimensions": [
+        8.22,
+        7,
+        1.02
+      ],
+      "position": [
+        -10.1,
+        0,
+        66.07
+      ],
+      "shape": {
+        "joints": [
+          [
+            -6,
+            0,
+            66.1
+          ],
+          [
+            -10,
+            0,
+            66
+          ],
+          [
+            -14.2,
+            0,
+            65.7
+          ]
+        ],
+        "facing": [
+          0,
+          1,
+          0
+        ],
+        "samples": 10,
+        "sides": 10,
+        "rings": [
+          [
+            0,
+            1.6,
+            0.5
+          ],
+          [
+            0.5,
+            3,
+            0.35
+          ],
+          [
+            0.9,
+            3.5,
+            0.22
+          ],
+          [
+            1,
+            2.7,
+            0.12
+          ]
+        ]
+      },
+      "attach": {
+        "to": "hawk-v05-body",
+        "joint": 0
+      }
+    },
+    {
+      "description": "closed airfoil on a skeleton line. Joints: 0 shoulder, 1 elbow, 2 wrist, 3 tip",
+      "rotation_y": 0,
+      "parent": "hawk-v05-hawk",
+      "material": "wing",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-wing-l",
+      "name": "Left wing",
+      "type": "loft",
+      "dimensions": [
+        11.71,
+        22.49,
+        2.78
+      ],
+      "position": [
+        0.44,
+        13.43,
+        67.49
+      ],
+      "shape": {
+        "joints": [
+          [
+            0.5,
+            2.6,
+            67.2
+          ],
+          [
+            -0.3,
+            10.5,
+            68
+          ],
+          [
+            2,
+            17.5,
+            67.6
+          ],
+          [
+            -1.5,
+            24.5,
+            66.6
+          ]
+        ],
+        "facing": [
+          1,
+          0,
+          0
+        ],
+        "samples": 16,
+        "sides": 12,
+        "rings": [
+          [
+            0,
+            4.2,
+            1.1
+          ],
+          [
+            0.2,
+            5,
+            1
+          ],
+          [
+            0.45,
+            5.2,
+            0.8
+          ],
+          [
+            0.7,
+            4.2,
+            0.5
+          ],
+          [
+            0.9,
+            2.4,
+            0.25
+          ],
+          [
+            1,
+            0.4,
+            0.1
+          ]
+        ]
+      }
+    },
+    {
+      "description": "closed airfoil on a skeleton line. Joints: 0 shoulder, 1 elbow, 2 wrist, 3 tip",
+      "rotation_y": 0,
+      "parent": "hawk-v05-hawk",
+      "material": "wing",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-wing-r",
+      "name": "Right wing",
+      "type": "loft",
+      "dimensions": [
+        11.71,
+        22.49,
+        2.78
+      ],
+      "position": [
+        0.44,
+        -13.43,
+        67.49
+      ],
+      "shape": {
+        "joints": [
+          [
+            0.5,
+            -2.6,
+            67.2
+          ],
+          [
+            -0.3,
+            -10.5,
+            68
+          ],
+          [
+            2,
+            -17.5,
+            67.6
+          ],
+          [
+            -1.5,
+            -24.5,
+            66.6
+          ]
+        ],
+        "facing": [
+          1,
+          0,
+          0
+        ],
+        "samples": 16,
+        "sides": 12,
+        "rings": [
+          [
+            0,
+            4.2,
+            1.1
+          ],
+          [
+            0.2,
+            5,
+            1
+          ],
+          [
+            0.45,
+            5.2,
+            0.8
+          ],
+          [
+            0.7,
+            4.2,
+            0.5
+          ],
+          [
+            0.9,
+            2.4,
+            0.25
+          ],
+          [
+            1,
+            0.4,
+            0.1
+          ]
+        ]
+      }
+    },
+    {
+      "description": "hooked, rides the head joint",
+      "rotation_y": 0,
+      "parent": "hawk-v05-hawk",
+      "material": "beak",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-beak",
+      "name": "Beak",
+      "type": "loft",
+      "dimensions": [
+        2.68,
+        2,
+        2.3
+      ],
+      "position": [
+        8.62,
+        0,
+        67.99
+      ],
+      "shape": {
+        "joints": [
+          [
+            7.6,
+            0,
+            68.3
+          ],
+          [
+            8.9,
+            0,
+            67.8
+          ],
+          [
+            9.9,
+            0,
+            66.9
+          ]
+        ],
+        "facing": [
+          0,
+          1,
+          0
+        ],
+        "samples": 8,
+        "sides": 8,
+        "rings": [
+          [
+            0,
+            1,
+            0.9
+          ],
+          [
+            0.5,
+            0.75,
+            0.8
+          ],
+          [
+            0.85,
+            0.35,
+            0.45
+          ],
+          [
+            1,
+            0.05,
+            0.08
+          ]
+        ]
+      },
+      "attach": {
+        "to": "hawk-v05-body",
+        "joint": 4
+      }
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "hawk-v05-hawk",
+      "material": "ink",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-eye-l",
+      "name": "Left eye",
+      "type": "sphere",
+      "dimensions": [
+        0.42
+      ],
+      "position": [
+        7.2,
+        1.28,
+        68.7
+      ],
+      "attach": {
+        "to": "hawk-v05-body",
+        "joint": 4
+      }
+    },
+    {
+      "description": "closed mesh. Joints: 0 hip, 1 knee, 2 ankle, 3 talon tip",
+      "rotation_y": 0,
+      "parent": "hawk-v05-hawk",
+      "material": "leg",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-leg-l",
+      "name": "Left leg and foot",
+      "type": "loft",
+      "dimensions": [
+        2.99,
+        2,
+        5.43
+      ],
+      "position": [
+        0.27,
+        1.6,
+        62.17
+      ],
+      "shape": {
+        "joints": [
+          [
+            -0.5,
+            1.6,
+            64.2
+          ],
+          [
+            1,
+            1.6,
+            62.6
+          ],
+          [
+            -0.2,
+            1.6,
+            61
+          ],
+          [
+            1.3,
+            1.7,
+            59.6
+          ]
+        ],
+        "facing": [
+          0,
+          1,
+          0
+        ],
+        "samples": 12,
+        "sides": 8,
+        "rings": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0.3,
+            0.75,
+            0.8
+          ],
+          [
+            0.6,
+            0.5,
+            0.5
+          ],
+          [
+            0.85,
+            0.9,
+            0.4
+          ],
+          [
+            1,
+            0.12,
+            0.2
+          ]
+        ]
+      },
+      "attach": {
+        "to": "hawk-v05-body",
+        "joint": 1
+      }
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "hawk-v05-hawk",
+      "material": "ink",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-eye-r",
+      "name": "Right eye",
+      "type": "sphere",
+      "dimensions": [
+        0.42
+      ],
+      "position": [
+        7.2,
+        -1.28,
+        68.7
+      ],
+      "attach": {
+        "to": "hawk-v05-body",
+        "joint": 4
+      }
+    },
+    {
+      "description": "closed mesh. Joints: 0 hip, 1 knee, 2 ankle, 3 talon tip",
+      "rotation_y": 0,
+      "parent": "hawk-v05-hawk",
+      "material": "leg",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-leg-r",
+      "name": "Right leg and foot",
+      "type": "loft",
+      "dimensions": [
+        2.99,
+        2,
+        5.43
+      ],
+      "position": [
+        0.27,
+        -1.6,
+        62.17
+      ],
+      "shape": {
+        "joints": [
+          [
+            -0.5,
+            -1.6,
+            64.2
+          ],
+          [
+            1,
+            -1.6,
+            62.6
+          ],
+          [
+            -0.2,
+            -1.6,
+            61
+          ],
+          [
+            1.3,
+            -1.7,
+            59.6
+          ]
+        ],
+        "facing": [
+          0,
+          1,
+          0
+        ],
+        "samples": 12,
+        "sides": 8,
+        "rings": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0.3,
+            0.75,
+            0.8
+          ],
+          [
+            0.6,
+            0.5,
+            0.5
+          ],
+          [
+            0.85,
+            0.9,
+            0.4
+          ],
+          [
+            1,
+            0.12,
+            0.2
+          ]
+        ]
+      },
+      "attach": {
+        "to": "hawk-v05-body",
+        "joint": 1
+      }
+    },
+    {
+      "description": "ground, grass, leaves, flag post and mouse",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-meadow-group",
+      "name": "Meadow",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "meadow",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-meadow",
+      "name": "Meadow ground",
+      "type": "cylinder",
+      "dimensions": [
+        120,
+        1
+      ],
+      "position": [
+        -15,
+        35,
+        0.5
+      ]
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-0-0",
+      "name": "Grass 1.1",
+      "type": "sheet",
+      "dimensions": [
+        2.33,
+        2.02,
+        8.01
+      ],
+      "position": [
+        -105.24,
+        -18.57,
+        4.61
+      ],
+      "shape": {
+        "joints": [
+          [
+            -106.17,
+            -17.84,
+            0.6
+          ],
+          [
+            -105.54,
+            -18.35,
+            5.01
+          ],
+          [
+            -104.09,
+            -19.56,
+            8.61
+          ]
+        ],
+        "facing": [
+          0.64,
+          0.77,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-0-1",
+      "name": "Grass 1.2",
+      "type": "sheet",
+      "dimensions": [
+        0.89,
+        1.26,
+        7.1
+      ],
+      "position": [
+        -108.01,
+        -18.75,
+        4.15
+      ],
+      "shape": {
+        "joints": [
+          [
+            -107.89,
+            -18.28,
+            0.6
+          ],
+          [
+            -108.05,
+            -18.61,
+            4.5
+          ],
+          [
+            -108.43,
+            -19.36,
+            7.7
+          ]
+        ],
+        "facing": [
+          0.89,
+          -0.45,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-0-2",
+      "name": "Grass 1.3",
+      "type": "sheet",
+      "dimensions": [
+        1.5,
+        0.89,
+        7.32
+      ],
+      "position": [
+        -107.03,
+        -17.52,
+        4.26
+      ],
+      "shape": {
+        "joints": [
+          [
+            -107.65,
+            -17.63,
+            0.6
+          ],
+          [
+            -107.24,
+            -17.47,
+            4.63
+          ],
+          [
+            -106.29,
+            -17.1,
+            7.92
+          ]
+        ],
+        "facing": [
+          -0.36,
+          0.93,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-0-3",
+      "name": "Grass 1.4",
+      "type": "sheet",
+      "dimensions": [
+        1.3,
+        1.65,
+        6.1
+      ],
+      "position": [
+        -106.82,
+        -17.32,
+        3.65
+      ],
+      "shape": {
+        "joints": [
+          [
+            -106.47,
+            -16.7,
+            0.6
+          ],
+          [
+            -106.76,
+            -17.13,
+            3.96
+          ],
+          [
+            -107.45,
+            -18.13,
+            6.7
+          ]
+        ],
+        "facing": [
+          0.83,
+          -0.57,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-0-4",
+      "name": "Grass 1.5",
+      "type": "sheet",
+      "dimensions": [
+        1.02,
+        1.61,
+        8.88
+      ],
+      "position": [
+        -107.71,
+        -17.84,
+        5.04
+      ],
+      "shape": {
+        "joints": [
+          [
+            -107.52,
+            -17.18,
+            0.6
+          ],
+          [
+            -107.72,
+            -17.62,
+            5.49
+          ],
+          [
+            -108.19,
+            -18.63,
+            9.48
+          ]
+        ],
+        "facing": [
+          0.91,
+          -0.42,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-1-0",
+      "name": "Grass 2.1",
+      "type": "sheet",
+      "dimensions": [
+        1.95,
+        1.51,
+        7.66
+      ],
+      "position": [
+        -63.19,
+        -34.97,
+        4.43
+      ],
+      "shape": {
+        "joints": [
+          [
+            -62.42,
+            -35.43,
+            0.6
+          ],
+          [
+            -62.94,
+            -35.07,
+            4.82
+          ],
+          [
+            -64.15,
+            -34.24,
+            8.26
+          ]
+        ],
+        "facing": [
+          -0.57,
+          -0.82,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-1-1",
+      "name": "Grass 2.2",
+      "type": "sheet",
+      "dimensions": [
+        1.51,
+        1.82,
+        6.84
+      ],
+      "position": [
+        -60.94,
+        -36.46,
+        4.02
+      ],
+      "shape": {
+        "joints": [
+          [
+            -61.41,
+            -35.76,
+            0.6
+          ],
+          [
+            -61.05,
+            -36.24,
+            4.36
+          ],
+          [
+            -60.21,
+            -37.35,
+            7.44
+          ]
+        ],
+        "facing": [
+          0.8,
+          0.6,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-1-2",
+      "name": "Grass 2.3",
+      "type": "sheet",
+      "dimensions": [
+        3.2,
+        1.65,
+        6.07
+      ],
+      "position": [
+        -60.07,
+        -36.31,
+        3.64
+      ],
+      "shape": {
+        "joints": [
+          [
+            -61.53,
+            -35.82,
+            0.6
+          ],
+          [
+            -60.61,
+            -36.21,
+            3.94
+          ],
+          [
+            -58.48,
+            -37.11,
+            6.67
+          ]
+        ],
+        "facing": [
+          0.39,
+          0.92,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-1-3",
+      "name": "Grass 2.4",
+      "type": "sheet",
+      "dimensions": [
+        3.04,
+        1.67,
+        7.92
+      ],
+      "position": [
+        -64.68,
+        -36.88,
+        4.56
+      ],
+      "shape": {
+        "joints": [
+          [
+            -63.31,
+            -36.38,
+            0.6
+          ],
+          [
+            -64.17,
+            -36.77,
+            4.95
+          ],
+          [
+            -66.19,
+            -37.69,
+            8.52
+          ]
+        ],
+        "facing": [
+          0.41,
+          -0.91,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-1-4",
+      "name": "Grass 2.5",
+      "type": "sheet",
+      "dimensions": [
+        2.79,
+        1.38,
+        8.47
+      ],
+      "position": [
+        -63.36,
+        -35.71,
+        4.84
+      ],
+      "shape": {
+        "joints": [
+          [
+            -62.09,
+            -36.07,
+            0.6
+          ],
+          [
+            -62.88,
+            -35.76,
+            5.26
+          ],
+          [
+            -64.74,
+            -35.05,
+            9.07
+          ]
+        ],
+        "facing": [
+          -0.36,
+          -0.93,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-2-0",
+      "name": "Grass 3.1",
+      "type": "sheet",
+      "dimensions": [
+        2.96,
+        0.72,
+        6.33
+      ],
+      "position": [
+        -93.34,
+        -26.03,
+        3.77
+      ],
+      "shape": {
+        "joints": [
+          [
+            -94.73,
+            -26.03,
+            0.6
+          ],
+          [
+            -93.87,
+            -26,
+            4.08
+          ],
+          [
+            -91.86,
+            -25.92,
+            6.93
+          ]
+        ],
+        "facing": [
+          -0.04,
+          1,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-2-1",
+      "name": "Grass 3.2",
+      "type": "sheet",
+      "dimensions": [
+        1.28,
+        0.76,
+        9.17
+      ],
+      "position": [
+        -94.32,
+        -24.55,
+        5.19
+      ],
+      "shape": {
+        "joints": [
+          [
+            -93.79,
+            -24.51,
+            0.6
+          ],
+          [
+            -94.14,
+            -24.63,
+            5.65
+          ],
+          [
+            -94.95,
+            -24.9,
+            9.77
+          ]
+        ],
+        "facing": [
+          0.32,
+          -0.95,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-2-2",
+      "name": "Grass 3.3",
+      "type": "sheet",
+      "dimensions": [
+        3.19,
+        1.32,
+        8.87
+      ],
+      "position": [
+        -95.36,
+        -26.3,
+        5.04
+      ],
+      "shape": {
+        "joints": [
+          [
+            -93.87,
+            -25.98,
+            0.6
+          ],
+          [
+            -94.79,
+            -26.26,
+            5.48
+          ],
+          [
+            -96.94,
+            -26.93,
+            9.47
+          ]
+        ],
+        "facing": [
+          0.3,
+          -0.96,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-2-3",
+      "name": "Grass 3.4",
+      "type": "sheet",
+      "dimensions": [
+        0.72,
+        2.83,
+        6.63
+      ],
+      "position": [
+        -95.86,
+        -26.45,
+        3.92
+      ],
+      "shape": {
+        "joints": [
+          [
+            -95.86,
+            -25.12,
+            0.6
+          ],
+          [
+            -95.84,
+            -25.94,
+            4.25
+          ],
+          [
+            -95.79,
+            -27.86,
+            7.23
+          ]
+        ],
+        "facing": [
+          1,
+          0.03,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-2-4",
+      "name": "Grass 3.5",
+      "type": "sheet",
+      "dimensions": [
+        1.96,
+        1.31,
+        6.37
+      ],
+      "position": [
+        -94.51,
+        -24.84,
+        3.79
+      ],
+      "shape": {
+        "joints": [
+          [
+            -95.32,
+            -25.18,
+            0.6
+          ],
+          [
+            -94.79,
+            -24.89,
+            4.1
+          ],
+          [
+            -93.55,
+            -24.21,
+            6.97
+          ]
+        ],
+        "facing": [
+          -0.48,
+          0.88,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-3-0",
+      "name": "Grass 4.1",
+      "type": "sheet",
+      "dimensions": [
+        2.2,
+        0.72,
+        6.79
+      ],
+      "position": [
+        -59.36,
+        -14.4,
+        4
+      ],
+      "shape": {
+        "joints": [
+          [
+            -60.37,
+            -14.4,
+            0.6
+          ],
+          [
+            -59.73,
+            -14.35,
+            4.33
+          ],
+          [
+            -58.26,
+            -14.24,
+            7.39
+          ]
+        ],
+        "facing": [
+          -0.08,
+          1,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-3-1",
+      "name": "Grass 4.2",
+      "type": "sheet",
+      "dimensions": [
+        2.45,
+        1.17,
+        6.99
+      ],
+      "position": [
+        -59.66,
+        -15.81,
+        4.1
+      ],
+      "shape": {
+        "joints": [
+          [
+            -60.77,
+            -16.05,
+            0.6
+          ],
+          [
+            -60.07,
+            -15.81,
+            4.45
+          ],
+          [
+            -58.44,
+            -15.25,
+            7.59
+          ]
+        ],
+        "facing": [
+          -0.32,
+          0.95,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-3-2",
+      "name": "Grass 4.3",
+      "type": "sheet",
+      "dimensions": [
+        1.23,
+        1.16,
+        6.82
+      ],
+      "position": [
+        -61.26,
+        -14.47,
+        4.01
+      ],
+      "shape": {
+        "joints": [
+          [
+            -61.63,
+            -14.78,
+            0.6
+          ],
+          [
+            -61.34,
+            -14.52,
+            4.35
+          ],
+          [
+            -60.66,
+            -13.91,
+            7.42
+          ]
+        ],
+        "facing": [
+          -0.67,
+          0.74,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-3-3",
+      "name": "Grass 4.4",
+      "type": "sheet",
+      "dimensions": [
+        1.59,
+        3.04,
+        9.36
+      ],
+      "position": [
+        -60.49,
+        -14.61,
+        5.28
+      ],
+      "shape": {
+        "joints": [
+          [
+            -60.95,
+            -15.99,
+            0.6
+          ],
+          [
+            -60.58,
+            -15.12,
+            5.75
+          ],
+          [
+            -59.72,
+            -13.1,
+            9.96
+          ]
+        ],
+        "facing": [
+          -0.92,
+          0.39,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-3-4",
+      "name": "Grass 4.5",
+      "type": "sheet",
+      "dimensions": [
+        1.8,
+        1.21,
+        8.15
+      ],
+      "position": [
+        -61.97,
+        -15.34,
+        4.68
+      ],
+      "shape": {
+        "joints": [
+          [
+            -61.24,
+            -15.63,
+            0.6
+          ],
+          [
+            -61.72,
+            -15.37,
+            5.08
+          ],
+          [
+            -62.85,
+            -14.76,
+            8.75
+          ]
+        ],
+        "facing": [
+          -0.48,
+          -0.88,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-4-0",
+      "name": "Grass 5.1",
+      "type": "sheet",
+      "dimensions": [
+        1.19,
+        1.07,
+        5.88
+      ],
+      "position": [
+        -71.83,
+        -33.3,
+        3.54
+      ],
+      "shape": {
+        "joints": [
+          [
+            -71.47,
+            -33.56,
+            0.6
+          ],
+          [
+            -71.75,
+            -33.33,
+            3.83
+          ],
+          [
+            -72.41,
+            -32.79,
+            6.48
+          ]
+        ],
+        "facing": [
+          -0.64,
+          -0.77,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-4-1",
+      "name": "Grass 5.2",
+      "type": "sheet",
+      "dimensions": [
+        2.15,
+        2.93,
+        5.15
+      ],
+      "position": [
+        -72.57,
+        -36.05,
+        3.17
+      ],
+      "shape": {
+        "joints": [
+          [
+            -71.79,
+            -34.79,
+            0.6
+          ],
+          [
+            -72.34,
+            -35.61,
+            3.43
+          ],
+          [
+            -73.62,
+            -37.5,
+            5.74
+          ]
+        ],
+        "facing": [
+          0.83,
+          -0.56,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-4-2",
+      "name": "Grass 5.3",
+      "type": "sheet",
+      "dimensions": [
+        0.82,
+        2.75,
+        8.07
+      ],
+      "position": [
+        -70.67,
+        -34.09,
+        4.64
+      ],
+      "shape": {
+        "joints": [
+          [
+            -70.61,
+            -32.8,
+            0.6
+          ],
+          [
+            -70.74,
+            -33.6,
+            5.04
+          ],
+          [
+            -71.05,
+            -35.46,
+            8.67
+          ]
+        ],
+        "facing": [
+          0.99,
+          -0.16,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-4-3",
+      "name": "Grass 5.4",
+      "type": "sheet",
+      "dimensions": [
+        1.6,
+        0.93,
+        6.1
+      ],
+      "position": [
+        -70.45,
+        -34.14,
+        3.65
+      ],
+      "shape": {
+        "joints": [
+          [
+            -71.12,
+            -34.27,
+            0.6
+          ],
+          [
+            -70.68,
+            -34.1,
+            3.95
+          ],
+          [
+            -69.66,
+            -33.7,
+            6.7
+          ]
+        ],
+        "facing": [
+          -0.36,
+          0.93,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-4-4",
+      "name": "Grass 5.5",
+      "type": "sheet",
+      "dimensions": [
+        0.83,
+        1.59,
+        5.15
+      ],
+      "position": [
+        -70.71,
+        -32.03,
+        3.18
+      ],
+      "shape": {
+        "joints": [
+          [
+            -70.78,
+            -32.72,
+            0.6
+          ],
+          [
+            -70.64,
+            -32.28,
+            3.43
+          ],
+          [
+            -70.32,
+            -31.25,
+            5.75
+          ]
+        ],
+        "facing": [
+          -0.95,
+          0.3,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-5-0",
+      "name": "Grass 6.1",
+      "type": "sheet",
+      "dimensions": [
+        1.8,
+        2.35,
+        7.32
+      ],
+      "position": [
+        -50.17,
+        -1.6,
+        4.26
+      ],
+      "shape": {
+        "joints": [
+          [
+            -50.77,
+            -2.57,
+            0.6
+          ],
+          [
+            -50.33,
+            -1.93,
+            4.63
+          ],
+          [
+            -49.29,
+            -0.44,
+            7.92
+          ]
+        ],
+        "facing": [
+          -0.82,
+          0.57,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-5-1",
+      "name": "Grass 6.2",
+      "type": "sheet",
+      "dimensions": [
+        1.84,
+        3.09,
+        8.25
+      ],
+      "position": [
+        -50.01,
+        -5.79,
+        4.73
+      ],
+      "shape": {
+        "joints": [
+          [
+            -49.41,
+            -4.41,
+            0.6
+          ],
+          [
+            -49.86,
+            -5.29,
+            5.14
+          ],
+          [
+            -50.9,
+            -7.32,
+            8.85
+          ]
+        ],
+        "facing": [
+          0.89,
+          -0.45,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-5-2",
+      "name": "Grass 6.3",
+      "type": "sheet",
+      "dimensions": [
+        1.61,
+        1.48,
+        7.01
+      ],
+      "position": [
+        -51.29,
+        -3.32,
+        4.11
+      ],
+      "shape": {
+        "joints": [
+          [
+            -50.72,
+            -3.79,
+            0.6
+          ],
+          [
+            -51.12,
+            -3.44,
+            4.45
+          ],
+          [
+            -52.07,
+            -2.6,
+            7.61
+          ]
+        ],
+        "facing": [
+          -0.66,
+          -0.75,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-5-3",
+      "name": "Grass 6.4",
+      "type": "sheet",
+      "dimensions": [
+        1.07,
+        2.7,
+        7.89
+      ],
+      "position": [
+        -48.93,
+        -3.98,
+        4.55
+      ],
+      "shape": {
+        "joints": [
+          [
+            -49.12,
+            -2.72,
+            0.6
+          ],
+          [
+            -48.91,
+            -3.5,
+            4.94
+          ],
+          [
+            -48.43,
+            -5.32,
+            8.49
+          ]
+        ],
+        "facing": [
+          0.97,
+          0.26,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-5-4",
+      "name": "Grass 6.5",
+      "type": "sheet",
+      "dimensions": [
+        1.99,
+        0.84,
+        5.01
+      ],
+      "position": [
+        -49.68,
+        -3.24,
+        3.11
+      ],
+      "shape": {
+        "joints": [
+          [
+            -48.77,
+            -3.17,
+            0.6
+          ],
+          [
+            -49.34,
+            -3.31,
+            3.36
+          ],
+          [
+            -50.67,
+            -3.63,
+            5.61
+          ]
+        ],
+        "facing": [
+          0.23,
+          -0.97,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-6-0",
+      "name": "Grass 7.1",
+      "type": "sheet",
+      "dimensions": [
+        0.72,
+        2.17,
+        8.74
+      ],
+      "position": [
+        -71.07,
+        -14.85,
+        4.97
+      ],
+      "shape": {
+        "joints": [
+          [
+            -71.07,
+            -13.85,
+            0.6
+          ],
+          [
+            -71.12,
+            -14.48,
+            5.41
+          ],
+          [
+            -71.24,
+            -15.93,
+            9.34
+          ]
+        ],
+        "facing": [
+          1,
+          -0.08,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-6-1",
+      "name": "Grass 7.2",
+      "type": "sheet",
+      "dimensions": [
+        2.46,
+        0.94,
+        5.07
+      ],
+      "position": [
+        -74.06,
+        -13.6,
+        3.14
+      ],
+      "shape": {
+        "joints": [
+          [
+            -72.91,
+            -13.48,
+            0.6
+          ],
+          [
+            -73.62,
+            -13.65,
+            3.39
+          ],
+          [
+            -75.28,
+            -14.04,
+            5.67
+          ]
+        ],
+        "facing": [
+          0.23,
+          -0.97,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-6-2",
+      "name": "Grass 7.3",
+      "type": "sheet",
+      "dimensions": [
+        1.63,
+        0.72,
+        6.74
+      ],
+      "position": [
+        -72.45,
+        -14.28,
+        3.97
+      ],
+      "shape": {
+        "joints": [
+          [
+            -71.72,
+            -14.28,
+            0.6
+          ],
+          [
+            -72.18,
+            -14.25,
+            4.31
+          ],
+          [
+            -73.26,
+            -14.18,
+            7.34
+          ]
+        ],
+        "facing": [
+          -0.06,
+          -1,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-6-3",
+      "name": "Grass 7.4",
+      "type": "sheet",
+      "dimensions": [
+        1.32,
+        0.71,
+        5.45
+      ],
+      "position": [
+        -71.64,
+        -13.37,
+        3.33
+      ],
+      "shape": {
+        "joints": [
+          [
+            -71.07,
+            -13.37,
+            0.6
+          ],
+          [
+            -71.44,
+            -13.44,
+            3.6
+          ],
+          [
+            -72.3,
+            -13.6,
+            6.05
+          ]
+        ],
+        "facing": [
+          0.19,
+          -0.98,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-6-4",
+      "name": "Grass 7.5",
+      "type": "sheet",
+      "dimensions": [
+        1.31,
+        2.64,
+        8.86
+      ],
+      "position": [
+        -70.81,
+        -13.91,
+        5.03
+      ],
+      "shape": {
+        "joints": [
+          [
+            -71.13,
+            -12.72,
+            0.6
+          ],
+          [
+            -70.85,
+            -13.47,
+            5.47
+          ],
+          [
+            -70.19,
+            -15.22,
+            9.46
+          ]
+        ],
+        "facing": [
+          0.94,
+          0.35,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-7-0",
+      "name": "Grass 8.1",
+      "type": "sheet",
+      "dimensions": [
+        1.78,
+        1.63,
+        9.08
+      ],
+      "position": [
+        -104.75,
+        -8.08,
+        5.14
+      ],
+      "shape": {
+        "joints": [
+          [
+            -104.09,
+            -8.62,
+            0.6
+          ],
+          [
+            -104.55,
+            -8.22,
+            5.59
+          ],
+          [
+            -105.62,
+            -7.29,
+            9.68
+          ]
+        ],
+        "facing": [
+          -0.65,
+          -0.76,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-7-1",
+      "name": "Grass 8.2",
+      "type": "sheet",
+      "dimensions": [
+        1.29,
+        0.97,
+        5.45
+      ],
+      "position": [
+        -103.13,
+        -6.9,
+        3.33
+      ],
+      "shape": {
+        "joints": [
+          [
+            -103.6,
+            -7.07,
+            0.6
+          ],
+          [
+            -103.27,
+            -6.88,
+            3.6
+          ],
+          [
+            -102.5,
+            -6.44,
+            6.05
+          ]
+        ],
+        "facing": [
+          -0.49,
+          0.87,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-7-2",
+      "name": "Grass 8.3",
+      "type": "sheet",
+      "dimensions": [
+        0.76,
+        1.36,
+        5.03
+      ],
+      "position": [
+        -103.28,
+        -5.8,
+        3.12
+      ],
+      "shape": {
+        "joints": [
+          [
+            -103.32,
+            -6.37,
+            0.6
+          ],
+          [
+            -103.21,
+            -6,
+            3.37
+          ],
+          [
+            -102.93,
+            -5.13,
+            5.63
+          ]
+        ],
+        "facing": [
+          -0.95,
+          0.3,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-7-3",
+      "name": "Grass 8.4",
+      "type": "sheet",
+      "dimensions": [
+        2.73,
+        2.45,
+        8.69
+      ],
+      "position": [
+        -102.09,
+        -8.31,
+        4.95
+      ],
+      "shape": {
+        "joints": [
+          [
+            -103.22,
+            -7.36,
+            0.6
+          ],
+          [
+            -102.47,
+            -8,
+            5.38
+          ],
+          [
+            -100.74,
+            -9.51,
+            9.29
+          ]
+        ],
+        "facing": [
+          0.65,
+          0.76,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-7-4",
+      "name": "Grass 8.5",
+      "type": "sheet",
+      "dimensions": [
+        1.72,
+        1.65,
+        5.3
+      ],
+      "position": [
+        -104.46,
+        -7.99,
+        3.25
+      ],
+      "shape": {
+        "joints": [
+          [
+            -103.85,
+            -7.43,
+            0.6
+          ],
+          [
+            -104.28,
+            -7.83,
+            3.52
+          ],
+          [
+            -105.3,
+            -8.79,
+            5.9
+          ]
+        ],
+        "facing": [
+          0.68,
+          -0.73,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-8-0",
+      "name": "Grass 9.1",
+      "type": "sheet",
+      "dimensions": [
+        2.69,
+        0.72,
+        7.67
+      ],
+      "position": [
+        -105.08,
+        -26.58,
+        4.44
+      ],
+      "shape": {
+        "joints": [
+          [
+            -103.82,
+            -26.58,
+            0.6
+          ],
+          [
+            -104.6,
+            -26.65,
+            4.82
+          ],
+          [
+            -106.42,
+            -26.81,
+            8.27
+          ]
+        ],
+        "facing": [
+          0.09,
+          -1,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-8-1",
+      "name": "Grass 9.2",
+      "type": "sheet",
+      "dimensions": [
+        0.99,
+        1.25,
+        8.85
+      ],
+      "position": [
+        -105.12,
+        -26.29,
+        5.03
+      ],
+      "shape": {
+        "joints": [
+          [
+            -104.93,
+            -26.72,
+            0.6
+          ],
+          [
+            -105.13,
+            -26.41,
+            5.47
+          ],
+          [
+            -105.59,
+            -25.68,
+            9.45
+          ]
+        ],
+        "facing": [
+          -0.84,
+          -0.54,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-8-2",
+      "name": "Grass 9.3",
+      "type": "sheet",
+      "dimensions": [
+        1.3,
+        0.71,
+        5.91
+      ],
+      "position": [
+        -103.95,
+        -28.23,
+        3.56
+      ],
+      "shape": {
+        "joints": [
+          [
+            -104.51,
+            -28.23,
+            0.6
+          ],
+          [
+            -104.15,
+            -28.27,
+            3.85
+          ],
+          [
+            -103.3,
+            -28.38,
+            6.51
+          ]
+        ],
+        "facing": [
+          0.12,
+          0.99,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-8-3",
+      "name": "Grass 9.4",
+      "type": "sheet",
+      "dimensions": [
+        2.54,
+        1.22,
+        8.03
+      ],
+      "position": [
+        -105.19,
+        -26.01,
+        4.62
+      ],
+      "shape": {
+        "joints": [
+          [
+            -104.04,
+            -26.28,
+            0.6
+          ],
+          [
+            -104.76,
+            -26.03,
+            5.02
+          ],
+          [
+            -106.45,
+            -25.43,
+            8.63
+          ]
+        ],
+        "facing": [
+          -0.33,
+          -0.94,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-8-4",
+      "name": "Grass 9.5",
+      "type": "sheet",
+      "dimensions": [
+        3.13,
+        1.1,
+        8.76
+      ],
+      "position": [
+        -102.49,
+        -27.3,
+        4.98
+      ],
+      "shape": {
+        "joints": [
+          [
+            -103.97,
+            -27.5,
+            0.6
+          ],
+          [
+            -103.06,
+            -27.29,
+            5.42
+          ],
+          [
+            -100.93,
+            -26.78,
+            9.36
+          ]
+        ],
+        "facing": [
+          -0.23,
+          0.97,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-9-0",
+      "name": "Grass 10.1",
+      "type": "sheet",
+      "dimensions": [
+        0.76,
+        1.46,
+        7.87
+      ],
+      "position": [
+        -66.69,
+        -23.32,
+        4.54
+      ],
+      "shape": {
+        "joints": [
+          [
+            -66.72,
+            -23.95,
+            0.6
+          ],
+          [
+            -66.6,
+            -23.55,
+            4.93
+          ],
+          [
+            -66.34,
+            -22.6,
+            8.47
+          ]
+        ],
+        "facing": [
+          -0.96,
+          0.27,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-9-1",
+      "name": "Grass 10.2",
+      "type": "sheet",
+      "dimensions": [
+        3.03,
+        1.91,
+        7.54
+      ],
+      "position": [
+        -66.03,
+        -22.72,
+        4.37
+      ],
+      "shape": {
+        "joints": [
+          [
+            -67.37,
+            -23.36,
+            0.6
+          ],
+          [
+            -66.52,
+            -22.89,
+            4.75
+          ],
+          [
+            -64.53,
+            -21.79,
+            8.14
+          ]
+        ],
+        "facing": [
+          -0.49,
+          0.87,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-9-2",
+      "name": "Grass 10.3",
+      "type": "sheet",
+      "dimensions": [
+        0.72,
+        1.36,
+        7.71
+      ],
+      "position": [
+        -65.27,
+        -23.45,
+        4.46
+      ],
+      "shape": {
+        "joints": [
+          [
+            -65.27,
+            -24.04,
+            0.6
+          ],
+          [
+            -65.25,
+            -23.66,
+            4.84
+          ],
+          [
+            -65.22,
+            -22.77,
+            8.31
+          ]
+        ],
+        "facing": [
+          -1,
+          0.04,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-9-3",
+      "name": "Grass 10.4",
+      "type": "sheet",
+      "dimensions": [
+        0.72,
+        2.06,
+        7.76
+      ],
+      "position": [
+        -66.17,
+        -23.6,
+        4.48
+      ],
+      "shape": {
+        "joints": [
+          [
+            -66.17,
+            -24.54,
+            0.6
+          ],
+          [
+            -66.19,
+            -23.95,
+            4.87
+          ],
+          [
+            -66.24,
+            -22.57,
+            8.36
+          ]
+        ],
+        "facing": [
+          -1,
+          -0.03,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-9-4",
+      "name": "Grass 10.5",
+      "type": "sheet",
+      "dimensions": [
+        3.31,
+        1.13,
+        8.69
+      ],
+      "position": [
+        -63.74,
+        -25.63,
+        4.95
+      ],
+      "shape": {
+        "joints": [
+          [
+            -65.31,
+            -25.42,
+            0.6
+          ],
+          [
+            -64.34,
+            -25.64,
+            5.38
+          ],
+          [
+            -62.09,
+            -26.17,
+            9.29
+          ]
+        ],
+        "facing": [
+          0.23,
+          0.97,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-10-0",
+      "name": "Grass 11.1",
+      "type": "sheet",
+      "dimensions": [
+        0.72,
+        2.46,
+        7.26
+      ],
+      "position": [
+        -83.42,
+        -2.7,
+        4.23
+      ],
+      "shape": {
+        "joints": [
+          [
+            -83.42,
+            -3.84,
+            0.6
+          ],
+          [
+            -83.5,
+            -3.13,
+            4.59
+          ],
+          [
+            -83.69,
+            -1.47,
+            7.86
+          ]
+        ],
+        "facing": [
+          -0.99,
+          -0.12,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-10-1",
+      "name": "Grass 11.2",
+      "type": "sheet",
+      "dimensions": [
+        0.72,
+        2.63,
+        6.78
+      ],
+      "position": [
+        -81.7,
+        -3.16,
+        3.99
+      ],
+      "shape": {
+        "joints": [
+          [
+            -81.7,
+            -4.39,
+            0.6
+          ],
+          [
+            -81.66,
+            -3.63,
+            4.33
+          ],
+          [
+            -81.56,
+            -1.85,
+            7.38
+          ]
+        ],
+        "facing": [
+          -1,
+          0.05,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-10-2",
+      "name": "Grass 11.3",
+      "type": "sheet",
+      "dimensions": [
+        1.56,
+        1.42,
+        5.77
+      ],
+      "position": [
+        -83.06,
+        -2.6,
+        3.49
+      ],
+      "shape": {
+        "joints": [
+          [
+            -83.6,
+            -3.04,
+            0.6
+          ],
+          [
+            -83.21,
+            -2.7,
+            3.77
+          ],
+          [
+            -82.3,
+            -1.91,
+            6.37
+          ]
+        ],
+        "facing": [
+          -0.66,
+          0.75,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-10-3",
+      "name": "Grass 11.4",
+      "type": "sheet",
+      "dimensions": [
+        0.76,
+        3.1,
+        7.96
+      ],
+      "position": [
+        -83.57,
+        -5.24,
+        4.58
+      ],
+      "shape": {
+        "joints": [
+          [
+            -83.55,
+            -3.78,
+            0.6
+          ],
+          [
+            -83.65,
+            -4.68,
+            4.98
+          ],
+          [
+            -83.89,
+            -6.79,
+            8.56
+          ]
+        ],
+        "facing": [
+          0.99,
+          -0.11,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-10-4",
+      "name": "Grass 11.5",
+      "type": "sheet",
+      "dimensions": [
+        1.82,
+        1.83,
+        5.6
+      ],
+      "position": [
+        -82.2,
+        -4.04,
+        3.4
+      ],
+      "shape": {
+        "joints": [
+          [
+            -82.85,
+            -3.38,
+            0.6
+          ],
+          [
+            -82.38,
+            -3.85,
+            3.68
+          ],
+          [
+            -81.31,
+            -4.94,
+            6.2
+          ]
+        ],
+        "facing": [
+          0.71,
+          0.7,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-11-0",
+      "name": "Grass 12.1",
+      "type": "sheet",
+      "dimensions": [
+        1.01,
+        1.3,
+        9.28
+      ],
+      "position": [
+        -84.73,
+        -19.24,
+        5.24
+      ],
+      "shape": {
+        "joints": [
+          [
+            -84.53,
+            -18.78,
+            0.6
+          ],
+          [
+            -84.74,
+            -19.11,
+            5.71
+          ],
+          [
+            -85.21,
+            -19.87,
+            9.88
+          ]
+        ],
+        "facing": [
+          0.85,
+          -0.53,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-11-1",
+      "name": "Grass 12.2",
+      "type": "sheet",
+      "dimensions": [
+        1.13,
+        1.43,
+        7.79
+      ],
+      "position": [
+        -83.39,
+        -20.28,
+        4.5
+      ],
+      "shape": {
+        "joints": [
+          [
+            -83.65,
+            -19.77,
+            0.6
+          ],
+          [
+            -83.41,
+            -20.13,
+            4.88
+          ],
+          [
+            -82.85,
+            -20.98,
+            8.39
+          ]
+        ],
+        "facing": [
+          0.83,
+          0.55,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-11-2",
+      "name": "Grass 12.3",
+      "type": "sheet",
+      "dimensions": [
+        0.72,
+        1.87,
+        7.92
+      ],
+      "position": [
+        -84.65,
+        -21.46,
+        4.56
+      ],
+      "shape": {
+        "joints": [
+          [
+            -84.65,
+            -20.61,
+            0.6
+          ],
+          [
+            -84.67,
+            -21.14,
+            4.96
+          ],
+          [
+            -84.72,
+            -22.39,
+            8.52
+          ]
+        ],
+        "facing": [
+          1,
+          -0.04,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-11-3",
+      "name": "Grass 12.4",
+      "type": "sheet",
+      "dimensions": [
+        2.56,
+        1.54,
+        9.22
+      ],
+      "position": [
+        -84,
+        -18.2,
+        5.21
+      ],
+      "shape": {
+        "joints": [
+          [
+            -82.88,
+            -18.65,
+            0.6
+          ],
+          [
+            -83.59,
+            -18.3,
+            5.67
+          ],
+          [
+            -85.26,
+            -17.46,
+            9.82
+          ]
+        ],
+        "facing": [
+          -0.45,
+          -0.89,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-11-4",
+      "name": "Grass 12.5",
+      "type": "sheet",
+      "dimensions": [
+        1.48,
+        1.76,
+        8.32
+      ],
+      "position": [
+        -82.76,
+        -19.7,
+        4.76
+      ],
+      "shape": {
+        "joints": [
+          [
+            -83.21,
+            -19.04,
+            0.6
+          ],
+          [
+            -82.86,
+            -19.5,
+            5.18
+          ],
+          [
+            -82.04,
+            -20.56,
+            8.92
+          ]
+        ],
+        "facing": [
+          0.79,
+          0.61,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-12-0",
+      "name": "Grass 13.1",
+      "type": "sheet",
+      "dimensions": [
+        0.78,
+        2.67,
+        7.29
+      ],
+      "position": [
+        -32.72,
+        9.35,
+        4.25
+      ],
+      "shape": {
+        "joints": [
+          [
+            -32.69,
+            10.6,
+            0.6
+          ],
+          [
+            -32.81,
+            9.83,
+            4.61
+          ],
+          [
+            -33.07,
+            8.02,
+            7.89
+          ]
+        ],
+        "facing": [
+          0.99,
+          -0.15,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-12-1",
+      "name": "Grass 13.2",
+      "type": "sheet",
+      "dimensions": [
+        1.59,
+        2.69,
+        8.97
+      ],
+      "position": [
+        -33.41,
+        11.27,
+        5.09
+      ],
+      "shape": {
+        "joints": [
+          [
+            -33.88,
+            10.08,
+            0.6
+          ],
+          [
+            -33.51,
+            10.84,
+            5.53
+          ],
+          [
+            -32.64,
+            12.6,
+            9.57
+          ]
+        ],
+        "facing": [
+          -0.9,
+          0.44,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-12-2",
+      "name": "Grass 13.3",
+      "type": "sheet",
+      "dimensions": [
+        1.37,
+        1.54,
+        8.83
+      ],
+      "position": [
+        -33.1,
+        11.82,
+        5.02
+      ],
+      "shape": {
+        "joints": [
+          [
+            -33.51,
+            11.28,
+            0.6
+          ],
+          [
+            -33.19,
+            11.67,
+            5.46
+          ],
+          [
+            -32.44,
+            12.57,
+            9.43
+          ]
+        ],
+        "facing": [
+          -0.77,
+          0.63,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-12-3",
+      "name": "Grass 13.4",
+      "type": "sheet",
+      "dimensions": [
+        0.79,
+        1.47,
+        8.33
+      ],
+      "position": [
+        -32.82,
+        10.5,
+        4.77
+      ],
+      "shape": {
+        "joints": [
+          [
+            -32.77,
+            11.13,
+            0.6
+          ],
+          [
+            -32.89,
+            10.72,
+            5.18
+          ],
+          [
+            -33.19,
+            9.78,
+            8.93
+          ]
+        ],
+        "facing": [
+          0.95,
+          -0.3,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-12-4",
+      "name": "Grass 13.5",
+      "type": "sheet",
+      "dimensions": [
+        2.17,
+        0.72,
+        8.3
+      ],
+      "position": [
+        -32.94,
+        9.24,
+        4.75
+      ],
+      "shape": {
+        "joints": [
+          [
+            -33.94,
+            9.24,
+            0.6
+          ],
+          [
+            -33.32,
+            9.24,
+            5.16
+          ],
+          [
+            -31.86,
+            9.24,
+            8.9
+          ]
+        ],
+        "facing": [
+          0,
+          1,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-13-0",
+      "name": "Grass 14.1",
+      "type": "sheet",
+      "dimensions": [
+        0.89,
+        3.42,
+        7.07
+      ],
+      "position": [
+        5.09,
+        68.04,
+        4.14
+      ],
+      "shape": {
+        "joints": [
+          [
+            5,
+            66.42,
+            0.6
+          ],
+          [
+            5.15,
+            67.42,
+            4.49
+          ],
+          [
+            5.5,
+            69.75,
+            7.67
+          ]
+        ],
+        "facing": [
+          -0.99,
+          0.15,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-13-1",
+      "name": "Grass 14.2",
+      "type": "sheet",
+      "dimensions": [
+        1.72,
+        0.76,
+        6.89
+      ],
+      "position": [
+        6.63,
+        65.17,
+        4.05
+      ],
+      "shape": {
+        "joints": [
+          [
+            5.86,
+            65.14,
+            0.6
+          ],
+          [
+            6.35,
+            65.25,
+            4.39
+          ],
+          [
+            7.49,
+            65.51,
+            7.49
+          ]
+        ],
+        "facing": [
+          -0.22,
+          0.98,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-13-2",
+      "name": "Grass 14.3",
+      "type": "sheet",
+      "dimensions": [
+        0.72,
+        1.9,
+        7.89
+      ],
+      "position": [
+        5.84,
+        66.15,
+        4.55
+      ],
+      "shape": {
+        "joints": [
+          [
+            5.84,
+            65.29,
+            0.6
+          ],
+          [
+            5.89,
+            65.83,
+            4.94
+          ],
+          [
+            6.01,
+            67.1,
+            8.49
+          ]
+        ],
+        "facing": [
+          -1,
+          0.09,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-13-3",
+      "name": "Grass 14.4",
+      "type": "sheet",
+      "dimensions": [
+        0.72,
+        2.17,
+        8.76
+      ],
+      "position": [
+        5.93,
+        66.56,
+        4.98
+      ],
+      "shape": {
+        "joints": [
+          [
+            5.93,
+            65.56,
+            0.6
+          ],
+          [
+            6.01,
+            66.18,
+            5.42
+          ],
+          [
+            6.18,
+            67.64,
+            9.36
+          ]
+        ],
+        "facing": [
+          -0.99,
+          0.12,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-13-4",
+      "name": "Grass 14.5",
+      "type": "sheet",
+      "dimensions": [
+        2.16,
+        0.93,
+        8.69
+      ],
+      "position": [
+        5.45,
+        67.2,
+        4.95
+      ],
+      "shape": {
+        "joints": [
+          [
+            4.46,
+            67.08,
+            0.6
+          ],
+          [
+            5.08,
+            67.25,
+            5.38
+          ],
+          [
+            6.52,
+            67.63,
+            9.29
+          ]
+        ],
+        "facing": [
+          -0.26,
+          0.97,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-14-0",
+      "name": "Grass 15.1",
+      "type": "sheet",
+      "dimensions": [
+        2.12,
+        2.22,
+        8.2
+      ],
+      "position": [
+        12.8,
+        -4.93,
+        4.7
+      ],
+      "shape": {
+        "joints": [
+          [
+            13.6,
+            -4.07,
+            0.6
+          ],
+          [
+            13.05,
+            -4.66,
+            5.11
+          ],
+          [
+            11.76,
+            -6.02,
+            8.8
+          ]
+        ],
+        "facing": [
+          0.73,
+          -0.69,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-14-1",
+      "name": "Grass 15.2",
+      "type": "sheet",
+      "dimensions": [
+        0.74,
+        2.42,
+        5
+      ],
+      "position": [
+        12.9,
+        -6.18,
+        3.1
+      ],
+      "shape": {
+        "joints": [
+          [
+            12.91,
+            -5.06,
+            0.6
+          ],
+          [
+            12.82,
+            -5.76,
+            3.35
+          ],
+          [
+            12.61,
+            -7.39,
+            5.6
+          ]
+        ],
+        "facing": [
+          0.99,
+          -0.13,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-14-2",
+      "name": "Grass 15.3",
+      "type": "sheet",
+      "dimensions": [
+        1.68,
+        2.05,
+        8.24
+      ],
+      "position": [
+        12.27,
+        -3.09,
+        4.72
+      ],
+      "shape": {
+        "joints": [
+          [
+            12.82,
+            -3.9,
+            0.6
+          ],
+          [
+            12.41,
+            -3.36,
+            5.13
+          ],
+          [
+            11.45,
+            -2.08,
+            8.84
+          ]
+        ],
+        "facing": [
+          -0.8,
+          -0.6,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-14-3",
+      "name": "Grass 15.4",
+      "type": "sheet",
+      "dimensions": [
+        2.13,
+        1.65,
+        8.48
+      ],
+      "position": [
+        15.07,
+        -5.45,
+        4.84
+      ],
+      "shape": {
+        "joints": [
+          [
+            14.21,
+            -4.92,
+            0.6
+          ],
+          [
+            14.78,
+            -5.32,
+            5.26
+          ],
+          [
+            16.12,
+            -6.25,
+            9.08
+          ]
+        ],
+        "facing": [
+          0.57,
+          0.82,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-14-4",
+      "name": "Grass 15.5",
+      "type": "sheet",
+      "dimensions": [
+        1.12,
+        1.91,
+        8.73
+      ],
+      "position": [
+        14.2,
+        -4.75,
+        4.97
+      ],
+      "shape": {
+        "joints": [
+          [
+            14.43,
+            -3.94,
+            0.6
+          ],
+          [
+            14.2,
+            -4.47,
+            5.4
+          ],
+          [
+            13.67,
+            -5.69,
+            9.33
+          ]
+        ],
+        "facing": [
+          0.92,
+          -0.4,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-15-0",
+      "name": "Grass 16.1",
+      "type": "sheet",
+      "dimensions": [
+        1.18,
+        3,
+        8.33
+      ],
+      "position": [
+        58.93,
+        32.84,
+        4.77
+      ],
+      "shape": {
+        "joints": [
+          [
+            59.17,
+            34.24,
+            0.6
+          ],
+          [
+            58.93,
+            33.37,
+            5.18
+          ],
+          [
+            58.37,
+            31.35,
+            8.93
+          ]
+        ],
+        "facing": [
+          0.96,
+          -0.27,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-15-1",
+      "name": "Grass 16.2",
+      "type": "sheet",
+      "dimensions": [
+        1.94,
+        1.53,
+        7.41
+      ],
+      "position": [
+        60.51,
+        33.01,
+        4.31
+      ],
+      "shape": {
+        "joints": [
+          [
+            59.75,
+            32.54,
+            0.6
+          ],
+          [
+            60.26,
+            32.9,
+            4.68
+          ],
+          [
+            61.46,
+            33.75,
+            8.01
+          ]
+        ],
+        "facing": [
+          -0.58,
+          0.82,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-15-2",
+      "name": "Grass 16.3",
+      "type": "sheet",
+      "dimensions": [
+        0.72,
+        2.44,
+        6.42
+      ],
+      "position": [
+        58.59,
+        31.11,
+        3.81
+      ],
+      "shape": {
+        "joints": [
+          [
+            58.59,
+            32.24,
+            0.6
+          ],
+          [
+            58.54,
+            31.54,
+            4.13
+          ],
+          [
+            58.42,
+            29.89,
+            7.02
+          ]
+        ],
+        "facing": [
+          1,
+          -0.07,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-15-3",
+      "name": "Grass 16.4",
+      "type": "sheet",
+      "dimensions": [
+        1.47,
+        2.1,
+        5.3
+      ],
+      "position": [
+        57.31,
+        31.4,
+        3.25
+      ],
+      "shape": {
+        "joints": [
+          [
+            57.73,
+            32.27,
+            0.6
+          ],
+          [
+            57.39,
+            31.7,
+            3.52
+          ],
+          [
+            56.6,
+            30.37,
+            5.9
+          ]
+        ],
+        "facing": [
+          0.86,
+          -0.51,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-15-4",
+      "name": "Grass 16.5",
+      "type": "sheet",
+      "dimensions": [
+        1.47,
+        2.67,
+        7.55
+      ],
+      "position": [
+        59.89,
+        33.84,
+        4.38
+      ],
+      "shape": {
+        "joints": [
+          [
+            59.49,
+            32.65,
+            0.6
+          ],
+          [
+            59.82,
+            33.41,
+            4.75
+          ],
+          [
+            60.6,
+            35.16,
+            8.15
+          ]
+        ],
+        "facing": [
+          -0.91,
+          0.4,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-16-0",
+      "name": "Grass 17.1",
+      "type": "sheet",
+      "dimensions": [
+        1.39,
+        0.82,
+        6.77
+      ],
+      "position": [
+        33.53,
+        77.73,
+        3.99
+      ],
+      "shape": {
+        "joints": [
+          [
+            32.96,
+            77.66,
+            0.6
+          ],
+          [
+            33.34,
+            77.79,
+            4.32
+          ],
+          [
+            34.22,
+            78.11,
+            7.37
+          ]
+        ],
+        "facing": [
+          -0.34,
+          0.94,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-16-1",
+      "name": "Grass 17.2",
+      "type": "sheet",
+      "dimensions": [
+        3.33,
+        1.29,
+        9.25
+      ],
+      "position": [
+        31.29,
+        75.8,
+        5.23
+      ],
+      "shape": {
+        "joints": [
+          [
+            32.86,
+            76.1,
+            0.6
+          ],
+          [
+            31.89,
+            75.82,
+            5.69
+          ],
+          [
+            29.64,
+            75.19,
+            9.85
+          ]
+        ],
+        "facing": [
+          0.27,
+          -0.96,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-16-2",
+      "name": "Grass 17.3",
+      "type": "sheet",
+      "dimensions": [
+        0.75,
+        3.45,
+        7.32
+      ],
+      "position": [
+        31.39,
+        76.05,
+        4.26
+      ],
+      "shape": {
+        "joints": [
+          [
+            31.41,
+            77.69,
+            0.6
+          ],
+          [
+            31.32,
+            76.69,
+            4.62
+          ],
+          [
+            31.09,
+            74.33,
+            7.91
+          ]
+        ],
+        "facing": [
+          1,
+          -0.1,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-16-3",
+      "name": "Grass 17.4",
+      "type": "sheet",
+      "dimensions": [
+        1.53,
+        1.95,
+        9.39
+      ],
+      "position": [
+        32.47,
+        76.49,
+        5.3
+      ],
+      "shape": {
+        "joints": [
+          [
+            32,
+            75.73,
+            0.6
+          ],
+          [
+            32.36,
+            76.25,
+            5.76
+          ],
+          [
+            33.21,
+            77.45,
+            9.99
+          ]
+        ],
+        "facing": [
+          -0.82,
+          0.58,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-16-4",
+      "name": "Grass 17.5",
+      "type": "sheet",
+      "dimensions": [
+        0.76,
+        2.9,
+        7.27
+      ],
+      "position": [
+        32.9,
+        77.9,
+        4.24
+      ],
+      "shape": {
+        "joints": [
+          [
+            32.88,
+            76.54,
+            0.6
+          ],
+          [
+            32.98,
+            77.38,
+            4.6
+          ],
+          [
+            33.21,
+            79.35,
+            7.87
+          ]
+        ],
+        "facing": [
+          -0.99,
+          0.12,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-17-0",
+      "name": "Grass 18.1",
+      "type": "sheet",
+      "dimensions": [
+        2.31,
+        1.07,
+        8.61
+      ],
+      "position": [
+        -41.04,
+        34.1,
+        4.91
+      ],
+      "shape": {
+        "joints": [
+          [
+            -40,
+            34.29,
+            0.6
+          ],
+          [
+            -40.66,
+            34.08,
+            5.34
+          ],
+          [
+            -42.19,
+            33.59,
+            9.21
+          ]
+        ],
+        "facing": [
+          0.31,
+          -0.95,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-17-1",
+      "name": "Grass 18.2",
+      "type": "sheet",
+      "dimensions": [
+        2.01,
+        0.91,
+        7.25
+      ],
+      "position": [
+        -42.5,
+        32.88,
+        4.23
+      ],
+      "shape": {
+        "joints": [
+          [
+            -41.59,
+            32.77,
+            0.6
+          ],
+          [
+            -42.16,
+            32.93,
+            4.59
+          ],
+          [
+            -43.49,
+            33.3,
+            7.85
+          ]
+        ],
+        "facing": [
+          -0.27,
+          -0.96,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-17-2",
+      "name": "Grass 18.3",
+      "type": "sheet",
+      "dimensions": [
+        2.14,
+        0.72,
+        6.6
+      ],
+      "position": [
+        -41.41,
+        33.99,
+        3.9
+      ],
+      "shape": {
+        "joints": [
+          [
+            -40.43,
+            33.99,
+            0.6
+          ],
+          [
+            -41.05,
+            34.01,
+            4.23
+          ],
+          [
+            -42.48,
+            34.06,
+            7.2
+          ]
+        ],
+        "facing": [
+          -0.04,
+          -1,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-17-3",
+      "name": "Grass 18.4",
+      "type": "sheet",
+      "dimensions": [
+        1.55,
+        1.42,
+        5.57
+      ],
+      "position": [
+        -39.88,
+        32.91,
+        3.39
+      ],
+      "shape": {
+        "joints": [
+          [
+            -40.42,
+            33.34,
+            0.6
+          ],
+          [
+            -40.03,
+            33,
+            3.67
+          ],
+          [
+            -39.12,
+            32.22,
+            6.17
+          ]
+        ],
+        "facing": [
+          0.65,
+          0.76,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-17-4",
+      "name": "Grass 18.5",
+      "type": "sheet",
+      "dimensions": [
+        2.52,
+        1.67,
+        6.9
+      ],
+      "position": [
+        -42.22,
+        32.95,
+        4.05
+      ],
+      "shape": {
+        "joints": [
+          [
+            -41.14,
+            33.47,
+            0.6
+          ],
+          [
+            -41.84,
+            33.07,
+            4.39
+          ],
+          [
+            -43.47,
+            32.14,
+            7.5
+          ]
+        ],
+        "facing": [
+          0.49,
+          -0.87,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-18-0",
+      "name": "Grass 19.1",
+      "type": "sheet",
+      "dimensions": [
+        1.9,
+        1.9,
+        6.8
+      ],
+      "position": [
+        -109,
+        12.99,
+        4
+      ],
+      "shape": {
+        "joints": [
+          [
+            -109.7,
+            12.3,
+            0.6
+          ],
+          [
+            -109.21,
+            12.78,
+            4.34
+          ],
+          [
+            -108.07,
+            13.92,
+            7.4
+          ]
+        ],
+        "facing": [
+          -0.7,
+          0.71,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-18-1",
+      "name": "Grass 19.2",
+      "type": "sheet",
+      "dimensions": [
+        1.72,
+        3.05,
+        5.66
+      ],
+      "position": [
+        -110,
+        12.09,
+        3.43
+      ],
+      "shape": {
+        "joints": [
+          [
+            -110.54,
+            13.46,
+            0.6
+          ],
+          [
+            -110.13,
+            12.6,
+            3.71
+          ],
+          [
+            -109.17,
+            10.58,
+            6.25
+          ]
+        ],
+        "facing": [
+          0.9,
+          0.43,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-18-2",
+      "name": "Grass 19.3",
+      "type": "sheet",
+      "dimensions": [
+        2.48,
+        0.92,
+        7.09
+      ],
+      "position": [
+        -112.66,
+        12.97,
+        4.15
+      ],
+      "shape": {
+        "joints": [
+          [
+            -111.5,
+            13.08,
+            0.6
+          ],
+          [
+            -112.22,
+            12.92,
+            4.5
+          ],
+          [
+            -113.89,
+            12.54,
+            7.69
+          ]
+        ],
+        "facing": [
+          0.22,
+          -0.98,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-18-3",
+      "name": "Grass 19.4",
+      "type": "sheet",
+      "dimensions": [
+        2.55,
+        1.83,
+        7.04
+      ],
+      "position": [
+        -109.23,
+        11.54,
+        4.12
+      ],
+      "shape": {
+        "joints": [
+          [
+            -110.31,
+            12.15,
+            0.6
+          ],
+          [
+            -109.61,
+            11.7,
+            4.47
+          ],
+          [
+            -107.97,
+            10.65,
+            7.64
+          ]
+        ],
+        "facing": [
+          0.54,
+          0.84,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-18-4",
+      "name": "Grass 19.5",
+      "type": "sheet",
+      "dimensions": [
+        3.35,
+        1.09,
+        7.01
+      ],
+      "position": [
+        -112.06,
+        13.14,
+        4.1
+      ],
+      "shape": {
+        "joints": [
+          [
+            -110.47,
+            12.95,
+            0.6
+          ],
+          [
+            -111.45,
+            13.17,
+            4.45
+          ],
+          [
+            -113.73,
+            13.66,
+            7.6
+          ]
+        ],
+        "facing": [
+          -0.21,
+          -0.98,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-19-0",
+      "name": "Grass 20.1",
+      "type": "sheet",
+      "dimensions": [
+        0.89,
+        2.19,
+        5.46
+      ],
+      "position": [
+        -54.65,
+        50.43,
+        3.33
+      ],
+      "shape": {
+        "joints": [
+          [
+            -54.74,
+            49.42,
+            0.6
+          ],
+          [
+            -54.59,
+            50.05,
+            3.6
+          ],
+          [
+            -54.23,
+            51.52,
+            6.06
+          ]
+        ],
+        "facing": [
+          -0.97,
+          0.24,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-19-1",
+      "name": "Grass 20.2",
+      "type": "sheet",
+      "dimensions": [
+        1.85,
+        0.72,
+        5.91
+      ],
+      "position": [
+        -53.62,
+        50.22,
+        3.56
+      ],
+      "shape": {
+        "joints": [
+          [
+            -54.46,
+            50.22,
+            0.6
+          ],
+          [
+            -53.93,
+            50.16,
+            3.85
+          ],
+          [
+            -52.7,
+            50.02,
+            6.51
+          ]
+        ],
+        "facing": [
+          0.11,
+          0.99,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-19-2",
+      "name": "Grass 20.3",
+      "type": "sheet",
+      "dimensions": [
+        3.02,
+        1.64,
+        8.75
+      ],
+      "position": [
+        -54.2,
+        48.86,
+        4.98
+      ],
+      "shape": {
+        "joints": [
+          [
+            -55.56,
+            49.35,
+            0.6
+          ],
+          [
+            -54.7,
+            48.97,
+            5.41
+          ],
+          [
+            -52.7,
+            48.07,
+            9.35
+          ]
+        ],
+        "facing": [
+          0.41,
+          0.91,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-19-3",
+      "name": "Grass 20.4",
+      "type": "sheet",
+      "dimensions": [
+        2.92,
+        0.72,
+        5.96
+      ],
+      "position": [
+        -56.4,
+        49.66,
+        3.58
+      ],
+      "shape": {
+        "joints": [
+          [
+            -55.03,
+            49.66,
+            0.6
+          ],
+          [
+            -55.88,
+            49.68,
+            3.88
+          ],
+          [
+            -57.86,
+            49.72,
+            6.56
+          ]
+        ],
+        "facing": [
+          -0.02,
+          -1,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-19-4",
+      "name": "Grass 20.5",
+      "type": "sheet",
+      "dimensions": [
+        1.17,
+        3.35,
+        7.56
+      ],
+      "position": [
+        -56.18,
+        49.17,
+        4.38
+      ],
+      "shape": {
+        "joints": [
+          [
+            -56.41,
+            50.76,
+            0.6
+          ],
+          [
+            -56.17,
+            49.78,
+            4.76
+          ],
+          [
+            -55.62,
+            47.5,
+            8.16
+          ]
+        ],
+        "facing": [
+          0.97,
+          0.23,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-20-0",
+      "name": "Grass 21.1",
+      "type": "sheet",
+      "dimensions": [
+        1.31,
+        1.83,
+        7.74
+      ],
+      "position": [
+        59.5,
+        63.5,
+        4.47
+      ],
+      "shape": {
+        "joints": [
+          [
+            59.85,
+            64.23,
+            0.6
+          ],
+          [
+            59.56,
+            63.74,
+            4.86
+          ],
+          [
+            58.87,
+            62.6,
+            8.34
+          ]
+        ],
+        "facing": [
+          0.86,
+          -0.52,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-20-1",
+      "name": "Grass 21.2",
+      "type": "sheet",
+      "dimensions": [
+        2.59,
+        0.72,
+        7.74
+      ],
+      "position": [
+        61.95,
+        62.75,
+        4.47
+      ],
+      "shape": {
+        "joints": [
+          [
+            60.74,
+            62.75,
+            0.6
+          ],
+          [
+            61.49,
+            62.7,
+            4.86
+          ],
+          [
+            63.24,
+            62.57,
+            8.34
+          ]
+        ],
+        "facing": [
+          0.07,
+          1,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-20-2",
+      "name": "Grass 21.3",
+      "type": "sheet",
+      "dimensions": [
+        2.93,
+        1.98,
+        6.7
+      ],
+      "position": [
+        59.2,
+        63.76,
+        3.95
+      ],
+      "shape": {
+        "joints": [
+          [
+            60.48,
+            64.44,
+            0.6
+          ],
+          [
+            59.67,
+            63.94,
+            4.28
+          ],
+          [
+            57.75,
+            62.79,
+            7.29
+          ]
+        ],
+        "facing": [
+          0.52,
+          -0.86,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-20-3",
+      "name": "Grass 21.4",
+      "type": "sheet",
+      "dimensions": [
+        0.89,
+        3.05,
+        8.4
+      ],
+      "position": [
+        59.1,
+        65.4,
+        4.8
+      ],
+      "shape": {
+        "joints": [
+          [
+            59.01,
+            63.96,
+            0.6
+          ],
+          [
+            59.16,
+            64.85,
+            5.22
+          ],
+          [
+            59.52,
+            66.92,
+            9
+          ]
+        ],
+        "facing": [
+          -0.99,
+          0.17,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-20-4",
+      "name": "Grass 21.5",
+      "type": "sheet",
+      "dimensions": [
+        1,
+        1.26,
+        8
+      ],
+      "position": [
+        59.34,
+        63.19,
+        4.6
+      ],
+      "shape": {
+        "joints": [
+          [
+            59.14,
+            63.63,
+            0.6
+          ],
+          [
+            59.35,
+            63.31,
+            5
+          ],
+          [
+            59.81,
+            62.58,
+            8.6
+          ]
+        ],
+        "facing": [
+          0.84,
+          0.54,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-21-0",
+      "name": "Grass 22.1",
+      "type": "sheet",
+      "dimensions": [
+        1.46,
+        1.15,
+        5.05
+      ],
+      "position": [
+        -48.39,
+        47.05,
+        3.13
+      ],
+      "shape": {
+        "joints": [
+          [
+            -47.86,
+            47.33,
+            0.6
+          ],
+          [
+            -48.23,
+            47.08,
+            3.38
+          ],
+          [
+            -49.1,
+            46.5,
+            5.65
+          ]
+        ],
+        "facing": [
+          0.56,
+          -0.83,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-21-1",
+      "name": "Grass 22.2",
+      "type": "sheet",
+      "dimensions": [
+        1.76,
+        2.39,
+        7.68
+      ],
+      "position": [
+        -49.32,
+        48.39,
+        4.44
+      ],
+      "shape": {
+        "joints": [
+          [
+            -49.9,
+            47.4,
+            0.6
+          ],
+          [
+            -49.47,
+            48.05,
+            4.82
+          ],
+          [
+            -48.47,
+            49.57,
+            8.28
+          ]
+        ],
+        "facing": [
+          -0.83,
+          0.55,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-21-2",
+      "name": "Grass 22.3",
+      "type": "sheet",
+      "dimensions": [
+        0.72,
+        2.08,
+        6.45
+      ],
+      "position": [
+        -48.56,
+        48.24,
+        3.83
+      ],
+      "shape": {
+        "joints": [
+          [
+            -48.56,
+            47.29,
+            0.6
+          ],
+          [
+            -48.62,
+            47.89,
+            4.15
+          ],
+          [
+            -48.76,
+            49.28,
+            7.05
+          ]
+        ],
+        "facing": [
+          -0.99,
+          -0.1,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-21-3",
+      "name": "Grass 22.4",
+      "type": "sheet",
+      "dimensions": [
+        1.61,
+        3.1,
+        5.83
+      ],
+      "position": [
+        -48.38,
+        45.84,
+        3.51
+      ],
+      "shape": {
+        "joints": [
+          [
+            -48.85,
+            47.25,
+            0.6
+          ],
+          [
+            -48.48,
+            46.37,
+            3.8
+          ],
+          [
+            -47.6,
+            44.3,
+            6.42
+          ]
+        ],
+        "facing": [
+          0.92,
+          0.39,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-21-4",
+      "name": "Grass 22.5",
+      "type": "sheet",
+      "dimensions": [
+        2.89,
+        1.77,
+        7.87
+      ],
+      "position": [
+        -48.32,
+        47.8,
+        4.54
+      ],
+      "shape": {
+        "joints": [
+          [
+            -49.6,
+            48.37,
+            0.6
+          ],
+          [
+            -48.79,
+            47.94,
+            4.93
+          ],
+          [
+            -46.89,
+            46.94,
+            8.47
+          ]
+        ],
+        "facing": [
+          0.47,
+          0.88,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-22-0",
+      "name": "Grass 23.1",
+      "type": "sheet",
+      "dimensions": [
+        1.88,
+        1.53,
+        8.59
+      ],
+      "position": [
+        -1.63,
+        15.84,
+        4.9
+      ],
+      "shape": {
+        "joints": [
+          [
+            -2.36,
+            15.37,
+            0.6
+          ],
+          [
+            -1.87,
+            15.73,
+            5.33
+          ],
+          [
+            -0.71,
+            16.58,
+            9.19
+          ]
+        ],
+        "facing": [
+          -0.59,
+          0.81,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-22-1",
+      "name": "Grass 23.2",
+      "type": "sheet",
+      "dimensions": [
+        1.45,
+        0.74,
+        8.18
+      ],
+      "position": [
+        -1.36,
+        14.92,
+        4.69
+      ],
+      "shape": {
+        "joints": [
+          [
+            -0.72,
+            14.94,
+            0.6
+          ],
+          [
+            -1.13,
+            14.84,
+            5.1
+          ],
+          [
+            -2.08,
+            14.6,
+            8.78
+          ]
+        ],
+        "facing": [
+          0.24,
+          -0.97,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-22-2",
+      "name": "Grass 23.3",
+      "type": "sheet",
+      "dimensions": [
+        1.14,
+        2.73,
+        8.56
+      ],
+      "position": [
+        -1.22,
+        14.85,
+        4.88
+      ],
+      "shape": {
+        "joints": [
+          [
+            -1.45,
+            16.11,
+            0.6
+          ],
+          [
+            -1.22,
+            15.32,
+            5.31
+          ],
+          [
+            -0.68,
+            13.49,
+            9.16
+          ]
+        ],
+        "facing": [
+          0.96,
+          0.28,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-22-3",
+      "name": "Grass 23.4",
+      "type": "sheet",
+      "dimensions": [
+        2.25,
+        2.64,
+        7.23
+      ],
+      "position": [
+        -0.3,
+        15.75,
+        4.22
+      ],
+      "shape": {
+        "joints": [
+          [
+            -1.15,
+            14.66,
+            0.6
+          ],
+          [
+            -0.57,
+            15.38,
+            4.57
+          ],
+          [
+            0.8,
+            17.05,
+            7.83
+          ]
+        ],
+        "facing": [
+          -0.77,
+          0.63,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-22-4",
+      "name": "Grass 23.5",
+      "type": "sheet",
+      "dimensions": [
+        1.74,
+        2.07,
+        8.65
+      ],
+      "position": [
+        -2.8,
+        16.37,
+        4.93
+      ],
+      "shape": {
+        "joints": [
+          [
+            -2.21,
+            15.56,
+            0.6
+          ],
+          [
+            -2.64,
+            16.11,
+            5.36
+          ],
+          [
+            -3.64,
+            17.39,
+            9.25
+          ]
+        ],
+        "facing": [
+          -0.79,
+          -0.62,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-23-0",
+      "name": "Grass 24.1",
+      "type": "sheet",
+      "dimensions": [
+        1.6,
+        1.57,
+        7.67
+      ],
+      "position": [
+        62.05,
+        -4.22,
+        4.44
+      ],
+      "shape": {
+        "joints": [
+          [
+            62.6,
+            -3.69,
+            0.6
+          ],
+          [
+            62.2,
+            -4.07,
+            4.82
+          ],
+          [
+            61.27,
+            -4.98,
+            8.27
+          ]
+        ],
+        "facing": [
+          0.7,
+          -0.72,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-23-1",
+      "name": "Grass 24.2",
+      "type": "sheet",
+      "dimensions": [
+        1.21,
+        3.29,
+        8.71
+      ],
+      "position": [
+        62.77,
+        -4.01,
+        4.96
+      ],
+      "shape": {
+        "joints": [
+          [
+            62.51,
+            -5.56,
+            0.6
+          ],
+          [
+            62.76,
+            -4.6,
+            5.39
+          ],
+          [
+            63.34,
+            -2.37,
+            9.31
+          ]
+        ],
+        "facing": [
+          -0.97,
+          0.25,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-23-2",
+      "name": "Grass 24.3",
+      "type": "sheet",
+      "dimensions": [
+        0.77,
+        2.02,
+        5.57
+      ],
+      "position": [
+        62.13,
+        -2.85,
+        3.39
+      ],
+      "shape": {
+        "joints": [
+          [
+            62.1,
+            -3.77,
+            0.6
+          ],
+          [
+            62.21,
+            -3.19,
+            3.67
+          ],
+          [
+            62.48,
+            -1.84,
+            6.17
+          ]
+        ],
+        "facing": [
+          -0.98,
+          0.19,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-23-3",
+      "name": "Grass 24.4",
+      "type": "sheet",
+      "dimensions": [
+        2.35,
+        0.75,
+        8.87
+      ],
+      "position": [
+        61.66,
+        -5.87,
+        5.04
+      ],
+      "shape": {
+        "joints": [
+          [
+            60.57,
+            -5.89,
+            0.6
+          ],
+          [
+            61.25,
+            -5.79,
+            5.48
+          ],
+          [
+            62.83,
+            -5.54,
+            9.47
+          ]
+        ],
+        "facing": [
+          -0.15,
+          0.99,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin blade; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "grass1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-grass-23-4",
+      "name": "Grass 24.5",
+      "type": "sheet",
+      "dimensions": [
+        1.25,
+        0.86,
+        7.66
+      ],
+      "position": [
+        60.9,
+        -4.86,
+        4.43
+      ],
+      "shape": {
+        "joints": [
+          [
+            61.38,
+            -4.97,
+            0.6
+          ],
+          [
+            61.05,
+            -4.81,
+            4.81
+          ],
+          [
+            60.29,
+            -4.46,
+            8.26
+          ]
+        ],
+        "facing": [
+          -0.42,
+          -0.91,
+          0
+        ],
+        "samples": 7,
+        "sides": 3,
+        "cup": 0.25,
+        "rings": [
+          [
+            0,
+            0.36
+          ],
+          [
+            0.55,
+            0.28
+          ],
+          [
+            1,
+            0.03
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a wide leaf, cupped; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "leaf",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-leaf-0",
+      "name": "Leaf 1",
+      "type": "sheet",
+      "dimensions": [
+        8.74,
+        4.95,
+        4.99
+      ],
+      "position": [
+        38.27,
+        -32.79,
+        3.09
+      ],
+      "shape": {
+        "joints": [
+          [
+            34,
+            -34,
+            0.6
+          ],
+          [
+            37.87,
+            -32.8,
+            4.38
+          ],
+          [
+            42.6,
+            -31.34,
+            5.1
+          ]
+        ],
+        "facing": [
+          -0.3,
+          0.96,
+          0
+        ],
+        "samples": 8,
+        "sides": 5,
+        "cup": 0.35,
+        "rings": [
+          [
+            0,
+            0.3
+          ],
+          [
+            0.3,
+            2
+          ],
+          [
+            0.65,
+            2.2
+          ],
+          [
+            1,
+            0.15
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a wide leaf, cupped; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "leaf",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-leaf-1",
+      "name": "Leaf 2",
+      "type": "sheet",
+      "dimensions": [
+        4.9,
+        10.46,
+        5.75
+      ],
+      "position": [
+        35.07,
+        -28.86,
+        3.47
+      ],
+      "shape": {
+        "joints": [
+          [
+            34,
+            -34,
+            0.6
+          ],
+          [
+            35.06,
+            -29.35,
+            5.05
+          ],
+          [
+            36.35,
+            -23.66,
+            5.9
+          ]
+        ],
+        "facing": [
+          -0.98,
+          0.22,
+          0
+        ],
+        "samples": 8,
+        "sides": 5,
+        "cup": 0.35,
+        "rings": [
+          [
+            0,
+            0.3
+          ],
+          [
+            0.3,
+            2
+          ],
+          [
+            0.65,
+            2.2
+          ],
+          [
+            1,
+            0.15
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a wide leaf, cupped; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "leaf",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-leaf-2",
+      "name": "Leaf 3",
+      "type": "sheet",
+      "dimensions": [
+        9.26,
+        8.62,
+        6.51
+      ],
+      "position": [
+        29.58,
+        -29.91,
+        3.86
+      ],
+      "shape": {
+        "joints": [
+          [
+            34,
+            -34,
+            0.6
+          ],
+          [
+            29.97,
+            -30.27,
+            5.72
+          ],
+          [
+            25.05,
+            -25.71,
+            6.7
+          ]
+        ],
+        "facing": [
+          -0.68,
+          -0.73,
+          0
+        ],
+        "samples": 8,
+        "sides": 5,
+        "cup": 0.35,
+        "rings": [
+          [
+            0,
+            0.3
+          ],
+          [
+            0.3,
+            2
+          ],
+          [
+            0.65,
+            2.2
+          ],
+          [
+            1,
+            0.15
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a wide leaf, cupped; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "leaf",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-leaf-3",
+      "name": "Leaf 4",
+      "type": "sheet",
+      "dimensions": [
+        8.74,
+        4.95,
+        4.99
+      ],
+      "position": [
+        29.73,
+        -35.21,
+        3.09
+      ],
+      "shape": {
+        "joints": [
+          [
+            34,
+            -34,
+            0.6
+          ],
+          [
+            30.13,
+            -35.2,
+            4.38
+          ],
+          [
+            25.4,
+            -36.66,
+            5.1
+          ]
+        ],
+        "facing": [
+          0.3,
+          -0.96,
+          0
+        ],
+        "samples": 8,
+        "sides": 5,
+        "cup": 0.35,
+        "rings": [
+          [
+            0,
+            0.3
+          ],
+          [
+            0.3,
+            2
+          ],
+          [
+            0.65,
+            2.2
+          ],
+          [
+            1,
+            0.15
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a wide leaf, cupped; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "leaf",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-leaf-4",
+      "name": "Leaf 5",
+      "type": "sheet",
+      "dimensions": [
+        4.9,
+        10.46,
+        5.75
+      ],
+      "position": [
+        32.93,
+        -39.14,
+        3.47
+      ],
+      "shape": {
+        "joints": [
+          [
+            34,
+            -34,
+            0.6
+          ],
+          [
+            32.94,
+            -38.65,
+            5.05
+          ],
+          [
+            31.65,
+            -44.34,
+            5.9
+          ]
+        ],
+        "facing": [
+          0.98,
+          -0.22,
+          0
+        ],
+        "samples": 8,
+        "sides": 5,
+        "cup": 0.35,
+        "rings": [
+          [
+            0,
+            0.3
+          ],
+          [
+            0.3,
+            2
+          ],
+          [
+            0.65,
+            2.2
+          ],
+          [
+            1,
+            0.15
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a wide leaf, cupped; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "leaf",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-leaf-5",
+      "name": "Leaf 6",
+      "type": "sheet",
+      "dimensions": [
+        9.26,
+        8.62,
+        6.51
+      ],
+      "position": [
+        38.42,
+        -38.09,
+        3.86
+      ],
+      "shape": {
+        "joints": [
+          [
+            34,
+            -34,
+            0.6
+          ],
+          [
+            38.03,
+            -37.73,
+            5.72
+          ],
+          [
+            42.95,
+            -42.29,
+            6.7
+          ]
+        ],
+        "facing": [
+          0.68,
+          0.73,
+          0
+        ],
+        "samples": 8,
+        "sides": 5,
+        "cup": 0.35,
+        "rings": [
+          [
+            0,
+            0.3
+          ],
+          [
+            0.3,
+            2
+          ],
+          [
+            0.65,
+            2.2
+          ],
+          [
+            1,
+            0.15
+          ]
+        ]
+      }
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "post",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-post",
+      "name": "Flag post",
+      "type": "cylinder",
+      "dimensions": [
+        0.7,
+        36
+      ],
+      "position": [
+        22,
+        -46,
+        18.6
+      ]
+    },
+    {
+      "description": "a thin pennant; double sided; flutters on the loop",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "flag",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-flag",
+      "name": "Pennant flag",
+      "type": "sheet",
+      "dimensions": [
+        21.22,
+        0.01,
+        7.21
+      ],
+      "position": [
+        33.1,
+        -46,
+        32.99
+      ],
+      "shape": {
+        "joints": [
+          [
+            22.7,
+            -46,
+            33
+          ],
+          [
+            29.7,
+            -46,
+            32.6
+          ],
+          [
+            36.7,
+            -46,
+            32
+          ],
+          [
+            43.7,
+            -46,
+            31.4
+          ]
+        ],
+        "facing": [
+          0,
+          0,
+          1
+        ],
+        "samples": 14,
+        "sides": 5,
+        "rings": [
+          [
+            0,
+            3.6
+          ],
+          [
+            0.5,
+            2.6
+          ],
+          [
+            1,
+            0.15
+          ]
+        ]
+      }
+    },
+    {
+      "description": "closed mesh, nose toward -x",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "mouse",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-mouse",
+      "name": "Mouse",
+      "type": "loft",
+      "dimensions": [
+        9.56,
+        2.7,
+        2.38
+      ],
+      "position": [
+        -80.25,
+        -21.5,
+        1.82
+      ],
+      "shape": {
+        "joints": [
+          [
+            -85,
+            -21.5,
+            1.6
+          ],
+          [
+            -82,
+            -21.5,
+            1.9
+          ],
+          [
+            -78,
+            -21.5,
+            1.7
+          ],
+          [
+            -75.5,
+            -21.5,
+            1.4
+          ]
+        ],
+        "facing": [
+          0,
+          1,
+          0
+        ],
+        "samples": 12,
+        "sides": 10,
+        "rings": [
+          [
+            0,
+            0.3,
+            0.3
+          ],
+          [
+            0.2,
+            0.9,
+            0.85
+          ],
+          [
+            0.55,
+            1.35,
+            1.25
+          ],
+          [
+            0.85,
+            1,
+            0.95
+          ],
+          [
+            1,
+            0.3,
+            0.3
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin closed tube on a skeleton line; twitches on the loop",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "mouse",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-mouse-tail",
+      "name": "Mouse tail",
+      "type": "loft",
+      "dimensions": [
+        8.42,
+        1.89,
+        1.06
+      ],
+      "position": [
+        -71.69,
+        -20.8,
+        1.42
+      ],
+      "shape": {
+        "joints": [
+          [
+            -75.8,
+            -21.5,
+            1.3
+          ],
+          [
+            -72.5,
+            -20.3,
+            1.1
+          ],
+          [
+            -70,
+            -21.3,
+            1.4
+          ],
+          [
+            -67.5,
+            -19.9,
+            1.9
+          ]
+        ],
+        "facing": [
+          0,
+          0,
+          1
+        ],
+        "samples": 10,
+        "sides": 6,
+        "rings": [
+          [
+            0,
+            0.3,
+            0.3
+          ],
+          [
+            0.5,
+            0.18,
+            0.18
+          ],
+          [
+            1,
+            0.05,
+            0.05
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin round ear; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "ear",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-mouse-ear-l",
+      "name": "Mouse left ear",
+      "type": "sheet",
+      "dimensions": [
+        1.28,
+        0.66,
+        1.18
+      ],
+      "position": [
+        -83.3,
+        -20.39,
+        3.12
+      ],
+      "shape": {
+        "joints": [
+          [
+            -83.2,
+            -20.7,
+            2.6
+          ],
+          [
+            -83.4,
+            -20.1,
+            3.7
+          ]
+        ],
+        "facing": [
+          1,
+          0,
+          0
+        ],
+        "samples": 5,
+        "sides": 5,
+        "cup": 0.4,
+        "rings": [
+          [
+            0,
+            0.3
+          ],
+          [
+            0.5,
+            0.65
+          ],
+          [
+            1,
+            0.1
+          ]
+        ]
+      }
+    },
+    {
+      "description": "a thin round ear; double sided",
+      "rotation_y": 0,
+      "parent": "hawk-v05-meadow-group",
+      "material": "ear",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-mouse-ear-r",
+      "name": "Mouse right ear",
+      "type": "sheet",
+      "dimensions": [
+        1.28,
+        0.71,
+        1.16
+      ],
+      "position": [
+        -83.3,
+        -22.55,
+        3.14
+      ],
+      "shape": {
+        "joints": [
+          [
+            -83.2,
+            -22.3,
+            2.6
+          ],
+          [
+            -83.4,
+            -22.9,
+            3.7
+          ]
+        ],
+        "facing": [
+          1,
+          0,
+          0
+        ],
+        "samples": 5,
+        "sides": 5,
+        "cup": 0.4,
+        "rings": [
+          [
+            0,
+            0.3
+          ],
+          [
+            0.5,
+            0.65
+          ],
+          [
+            1,
+            0.1
+          ]
+        ]
+      }
+    },
+    {
+      "description": "pale chest and belly: a second closed mesh, mostly inside the body",
+      "rotation_y": 0,
+      "parent": "hawk-v05-hawk",
+      "material": "breast",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-breast",
+      "name": "Cream breast",
+      "type": "loft",
+      "dimensions": [
+        6.62,
+        4.8,
+        4.89
+      ],
+      "position": [
+        1.79,
+        0,
+        65.55
+      ],
+      "shape": {
+        "joints": [
+          [
+            -1.5,
+            0,
+            65.5
+          ],
+          [
+            2,
+            0,
+            65.6
+          ],
+          [
+            4.8,
+            0,
+            66.5
+          ]
+        ],
+        "facing": [
+          0,
+          1,
+          0
+        ],
+        "samples": 10,
+        "sides": 12,
+        "rings": [
+          [
+            0,
+            0.6,
+            0.6
+          ],
+          [
+            0.3,
+            2.3,
+            2.4
+          ],
+          [
+            0.7,
+            2.4,
+            2.3
+          ],
+          [
+            1,
+            0.9,
+            1
+          ]
+        ]
+      },
+      "attach": {
+        "to": "hawk-v05-body",
+        "joint": 1
+      }
+    },
+    {
+      "description": "the brow ridge that gives a hawk its stern look",
+      "rotation_y": 0,
+      "parent": "hawk-v05-hawk",
+      "material": "brow",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-brow-l",
+      "name": "Left eye ridge",
+      "type": "loft",
+      "dimensions": [
+        1.78,
+        0.54,
+        0.82
+      ],
+      "position": [
+        7.36,
+        1.32,
+        69.33
+      ],
+      "shape": {
+        "joints": [
+          [
+            6.5,
+            1.25,
+            69.55
+          ],
+          [
+            7.4,
+            1.4,
+            69.45
+          ],
+          [
+            8.2,
+            1.1,
+            69
+          ]
+        ],
+        "facing": [
+          0,
+          1,
+          0
+        ],
+        "samples": 6,
+        "sides": 6,
+        "rings": [
+          [
+            0,
+            0.1,
+            0.22
+          ],
+          [
+            0.5,
+            0.2,
+            0.3
+          ],
+          [
+            1,
+            0.05,
+            0.1
+          ]
+        ]
+      },
+      "attach": {
+        "to": "hawk-v05-body",
+        "joint": 4
+      }
+    },
+    {
+      "description": "the brow ridge that gives a hawk its stern look",
+      "rotation_y": 0,
+      "parent": "hawk-v05-hawk",
+      "material": "brow",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "hawk-v05-brow-r",
+      "name": "Right eye ridge",
+      "type": "loft",
+      "dimensions": [
+        1.78,
+        0.54,
+        0.82
+      ],
+      "position": [
+        7.36,
+        -1.32,
+        69.33
+      ],
+      "shape": {
+        "joints": [
+          [
+            6.5,
+            -1.25,
+            69.55
+          ],
+          [
+            7.4,
+            -1.4,
+            69.45
+          ],
+          [
+            8.2,
+            -1.1,
+            69
+          ]
+        ],
+        "facing": [
+          0,
+          1,
+          0
+        ],
+        "samples": 6,
+        "sides": 6,
+        "rings": [
+          [
+            0,
+            0.1,
+            0.22
+          ],
+          [
+            0.5,
+            0.2,
+            0.3
+          ],
+          [
+            1,
+            0.05,
+            0.1
+          ]
+        ]
+      },
+      "attach": {
+        "to": "hawk-v05-body",
+        "joint": 4
+      }
+    }
+  ],
+  "version": 147
+}

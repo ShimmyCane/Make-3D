@@ -1,0 +1,242 @@
+{
+  "schema": "make3d.motion/0.1",
+  "model_id": "solar-system-v05",
+  "name": "Orbits and spins",
+  "description": "Every planet goes round the Sun and spins on its own axis, and the belt turns. One 240 s loop; each speed is a whole number of turns, in the same order as the real periods (stylised).",
+  "units": "in",
+  "up": "z",
+  "loop_s": 240,
+  "autoplay": {
+    "plays": 2
+  },
+  "motions": [
+    {
+      "id": "mercury-orbit",
+      "target": "solar-system-v05-orbit-mercury",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 24
+    },
+    {
+      "id": "mercury-spin",
+      "target": "solar-system-v05-body-mercury",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        90,
+        0,
+        0
+      ],
+      "cycles": 6
+    },
+    {
+      "id": "venus-orbit",
+      "target": "solar-system-v05-orbit-venus",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 16
+    },
+    {
+      "id": "venus-spin",
+      "target": "solar-system-v05-body-venus",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        120,
+        0,
+        0
+      ],
+      "cycles": 2
+    },
+    {
+      "id": "earth-orbit",
+      "target": "solar-system-v05-orbit-earth",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 12
+    },
+    {
+      "id": "earth-spin",
+      "target": "solar-system-v05-body-earth",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        150,
+        0,
+        0
+      ],
+      "cycles": 8
+    },
+    {
+      "id": "mars-orbit",
+      "target": "solar-system-v05-orbit-mars",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 8
+    },
+    {
+      "id": "mars-spin",
+      "target": "solar-system-v05-body-mars",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        190,
+        0,
+        0
+      ],
+      "cycles": 8
+    },
+    {
+      "id": "jupiter-orbit",
+      "target": "solar-system-v05-orbit-jupiter",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 4
+    },
+    {
+      "id": "jupiter-spin",
+      "target": "solar-system-v05-body-jupiter",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        360,
+        0,
+        0
+      ],
+      "cycles": 12
+    },
+    {
+      "id": "saturn-orbit",
+      "target": "solar-system-v05-orbit-saturn",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 3
+    },
+    {
+      "id": "saturn-spin",
+      "target": "solar-system-v05-body-saturn",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        450,
+        0,
+        0
+      ],
+      "cycles": 11
+    },
+    {
+      "id": "uranus-orbit",
+      "target": "solar-system-v05-orbit-uranus",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 2
+    },
+    {
+      "id": "uranus-spin",
+      "target": "solar-system-v05-body-uranus",
+      "kind": "spin",
+      "axis": "x",
+      "pivot": [
+        530,
+        0,
+        0
+      ],
+      "cycles": 6
+    },
+    {
+      "id": "neptune-orbit",
+      "target": "solar-system-v05-orbit-neptune",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 1
+    },
+    {
+      "id": "neptune-spin",
+      "target": "solar-system-v05-body-neptune",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        600,
+        0,
+        0
+      ],
+      "cycles": 8
+    },
+    {
+      "id": "pluto-orbit",
+      "target": "solar-system-v05-orbit-pluto",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 1
+    },
+    {
+      "id": "pluto-spin",
+      "target": "solar-system-v05-body-pluto",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        690,
+        0,
+        0
+      ],
+      "cycles": 2
+    },
+    {
+      "id": "belt-turn",
+      "target": "solar-system-v05-belt",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 6
+    }
+  ]
+}

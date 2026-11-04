@@ -1,0 +1,769 @@
+{
+  "schema": "make3d.history/0.1",
+  "model_id": "kitchen",
+  "header": {
+    "model_id": "kitchen",
+    "name": "Kitchen",
+    "description": "Walk-in kitchen: fridge, counter and stove on the left; a sink run with a triple sink and two faucets; a dishwasher, drawers and a door on the right; upper cabinets with a sliding acrylic cup display over the sink.",
+    "units": "in",
+    "up": "z",
+    "world": "default-world",
+    "view": {
+      "azimuth_deg": 214
+    },
+    "materials": {
+      "wall": {
+        "color": "#fde3cf",
+        "opacity": 1
+      },
+      "cabinet": {
+        "color": "#dfeadf",
+        "opacity": 1
+      },
+      "counter": {
+        "color": "#e9e4d8",
+        "opacity": 1
+      },
+      "steel": {
+        "color": "#b9c0c6",
+        "opacity": 1
+      },
+      "fridge": {
+        "color": "#f4f6f8",
+        "opacity": 1
+      },
+      "acrylic": {
+        "color": "#dbe7f6",
+        "opacity": 0.35
+      },
+      "cup": {
+        "color": "#ffffff",
+        "opacity": 1
+      },
+      "faucet": {
+        "color": "#c7ced6",
+        "opacity": 1
+      }
+    }
+  },
+  "operations": [
+    {
+      "seq": 1,
+      "op": "add",
+      "time": "2026-11-01T10:01:00.000Z",
+      "author": "jimmy",
+      "note": "add Back wall",
+      "object": {
+        "uuid": "kitchen-wall",
+        "name": "Back wall",
+        "description": "context only",
+        "type": "box",
+        "dimensions": [
+          240,
+          1,
+          96
+        ],
+        "position": [
+          120,
+          -0.5,
+          48
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 2,
+      "op": "add",
+      "time": "2026-11-01T10:02:00.000Z",
+      "author": "jimmy",
+      "note": "add Fridge",
+      "object": {
+        "uuid": "kitchen-fridge",
+        "name": "Fridge",
+        "description": "left end",
+        "type": "box",
+        "dimensions": [
+          36,
+          30,
+          70
+        ],
+        "position": [
+          222,
+          15,
+          35
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "fridge"
+      }
+    },
+    {
+      "seq": 3,
+      "op": "add",
+      "time": "2026-11-01T10:03:00.000Z",
+      "author": "jimmy",
+      "note": "add Counter run",
+      "object": {
+        "uuid": "kitchen-run1",
+        "name": "Counter run",
+        "description": "after the fridge",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          240,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 4,
+      "op": "add",
+      "time": "2026-11-01T10:04:00.000Z",
+      "author": "jimmy",
+      "note": "add Base cabinets 1",
+      "object": {
+        "uuid": "kitchen-run1-base",
+        "name": "Base cabinets 1",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          36,
+          24,
+          34.5
+        ],
+        "position": [
+          186,
+          12,
+          17.25
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-run1",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 5,
+      "op": "add",
+      "time": "2026-11-01T10:05:00.000Z",
+      "author": "jimmy",
+      "note": "add Counter 1",
+      "object": {
+        "uuid": "kitchen-run1-top",
+        "name": "Counter 1",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          36,
+          25.5,
+          1.5
+        ],
+        "position": [
+          186,
+          12.75,
+          35.25
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-run1",
+        "material": "counter"
+      }
+    },
+    {
+      "seq": 6,
+      "op": "add",
+      "time": "2026-11-01T10:06:00.000Z",
+      "author": "jimmy",
+      "note": "add Stove",
+      "object": {
+        "uuid": "kitchen-stove",
+        "name": "Stove",
+        "description": "four burners on top",
+        "type": "box",
+        "dimensions": [
+          30,
+          24,
+          36
+        ],
+        "position": [
+          153,
+          12,
+          18
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 7,
+      "op": "add",
+      "time": "2026-11-01T10:07:00.000Z",
+      "author": "jimmy",
+      "note": "add Base cabinets 2",
+      "object": {
+        "uuid": "kitchen-run2-base",
+        "name": "Base cabinets 2",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          36,
+          24,
+          34.5
+        ],
+        "position": [
+          120,
+          12,
+          17.25
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 8,
+      "op": "add",
+      "time": "2026-11-01T10:08:00.000Z",
+      "author": "jimmy",
+      "note": "add Counter 2",
+      "object": {
+        "uuid": "kitchen-run2-top",
+        "name": "Counter 2",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          36,
+          25.5,
+          1.5
+        ],
+        "position": [
+          120,
+          12.75,
+          35.25
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "counter"
+      }
+    },
+    {
+      "seq": 9,
+      "op": "add",
+      "time": "2026-11-01T10:09:00.000Z",
+      "author": "jimmy",
+      "note": "add Sink run",
+      "object": {
+        "uuid": "kitchen-sink",
+        "name": "Sink run",
+        "description": "corner run with the triple sink",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          240,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 10,
+      "op": "add",
+      "time": "2026-11-01T10:10:00.000Z",
+      "author": "jimmy",
+      "note": "add Sink base cabinets",
+      "object": {
+        "uuid": "kitchen-sink-base",
+        "name": "Sink base cabinets",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          54,
+          24,
+          34.5
+        ],
+        "position": [
+          75,
+          12,
+          17.25
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-sink",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 11,
+      "op": "add",
+      "time": "2026-11-01T10:11:00.000Z",
+      "author": "jimmy",
+      "note": "add Sink counter",
+      "object": {
+        "uuid": "kitchen-sink-top",
+        "name": "Sink counter",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          54,
+          25.5,
+          1.5
+        ],
+        "position": [
+          75,
+          12.75,
+          35.25
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-sink",
+        "material": "counter"
+      }
+    },
+    {
+      "seq": 12,
+      "op": "add",
+      "time": "2026-11-01T10:12:00.000Z",
+      "author": "jimmy",
+      "note": "add Sink bowl 1",
+      "object": {
+        "uuid": "kitchen-bowl1",
+        "name": "Sink bowl 1",
+        "description": "of three",
+        "type": "box",
+        "dimensions": [
+          12,
+          16,
+          5
+        ],
+        "position": [
+          92,
+          12,
+          33.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-sink",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 13,
+      "op": "add",
+      "time": "2026-11-01T10:13:00.000Z",
+      "author": "jimmy",
+      "note": "add Sink bowl 2",
+      "object": {
+        "uuid": "kitchen-bowl2",
+        "name": "Sink bowl 2",
+        "description": "of three",
+        "type": "box",
+        "dimensions": [
+          12,
+          16,
+          5
+        ],
+        "position": [
+          75,
+          12,
+          33.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-sink",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 14,
+      "op": "add",
+      "time": "2026-11-01T10:14:00.000Z",
+      "author": "jimmy",
+      "note": "add Sink bowl 3",
+      "object": {
+        "uuid": "kitchen-bowl3",
+        "name": "Sink bowl 3",
+        "description": "of three",
+        "type": "box",
+        "dimensions": [
+          12,
+          16,
+          5
+        ],
+        "position": [
+          58,
+          12,
+          33.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-sink",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 15,
+      "op": "add",
+      "time": "2026-11-01T10:15:00.000Z",
+      "author": "jimmy",
+      "note": "add Faucet 1",
+      "object": {
+        "uuid": "kitchen-faucet1",
+        "name": "Faucet 1",
+        "description": "over bowl 1",
+        "type": "cylinder",
+        "dimensions": [
+          0.6,
+          12
+        ],
+        "position": [
+          84,
+          3,
+          42
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-sink",
+        "material": "faucet"
+      }
+    },
+    {
+      "seq": 16,
+      "op": "add",
+      "time": "2026-11-01T10:16:00.000Z",
+      "author": "jimmy",
+      "note": "add Faucet 2",
+      "object": {
+        "uuid": "kitchen-faucet2",
+        "name": "Faucet 2",
+        "description": "over bowl 3",
+        "type": "cylinder",
+        "dimensions": [
+          0.6,
+          12
+        ],
+        "position": [
+          66,
+          3,
+          42
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-sink",
+        "material": "faucet"
+      }
+    },
+    {
+      "seq": 17,
+      "op": "add",
+      "time": "2026-11-01T10:17:00.000Z",
+      "author": "jimmy",
+      "note": "add Dishwasher",
+      "object": {
+        "uuid": "kitchen-dish",
+        "name": "Dishwasher",
+        "description": "after the corner, with a gap",
+        "type": "box",
+        "dimensions": [
+          22,
+          24,
+          34.5
+        ],
+        "position": [
+          35,
+          12,
+          17.25
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 18,
+      "op": "add",
+      "time": "2026-11-01T10:18:00.000Z",
+      "author": "jimmy",
+      "note": "add Drawers and doors",
+      "object": {
+        "uuid": "kitchen-drawers",
+        "name": "Drawers and doors",
+        "description": "far right",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          240,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 19,
+      "op": "add",
+      "time": "2026-11-01T10:19:00.000Z",
+      "author": "jimmy",
+      "note": "add Drawer base",
+      "object": {
+        "uuid": "kitchen-dbase",
+        "name": "Drawer base",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          22,
+          24,
+          34.5
+        ],
+        "position": [
+          11,
+          12,
+          17.25
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-drawers",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 20,
+      "op": "add",
+      "time": "2026-11-01T10:20:00.000Z",
+      "author": "jimmy",
+      "note": "add Drawer 1",
+      "object": {
+        "uuid": "kitchen-drw1",
+        "name": "Drawer 1",
+        "description": "top drawer front",
+        "type": "box",
+        "dimensions": [
+          20,
+          0.75,
+          7
+        ],
+        "position": [
+          11,
+          24.4,
+          31
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-drawers",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 21,
+      "op": "add",
+      "time": "2026-11-01T10:21:00.000Z",
+      "author": "jimmy",
+      "note": "add Drawer 2",
+      "object": {
+        "uuid": "kitchen-drw2",
+        "name": "Drawer 2",
+        "description": "middle drawer front",
+        "type": "box",
+        "dimensions": [
+          20,
+          0.75,
+          7
+        ],
+        "position": [
+          11,
+          24.4,
+          22.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-drawers",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 22,
+      "op": "add",
+      "time": "2026-11-01T10:22:00.000Z",
+      "author": "jimmy",
+      "note": "add Cupboard door",
+      "object": {
+        "uuid": "kitchen-door",
+        "name": "Cupboard door",
+        "description": "bottom door front",
+        "type": "box",
+        "dimensions": [
+          20,
+          0.75,
+          13
+        ],
+        "position": [
+          11,
+          24.4,
+          9.5
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-drawers",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 23,
+      "op": "add",
+      "time": "2026-11-01T10:23:00.000Z",
+      "author": "jimmy",
+      "note": "add Upper cabinets",
+      "object": {
+        "uuid": "kitchen-upper",
+        "name": "Upper cabinets",
+        "description": "over the sink run",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          240,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 24,
+      "op": "add",
+      "time": "2026-11-01T10:24:00.000Z",
+      "author": "jimmy",
+      "note": "add Upper cabinet",
+      "object": {
+        "uuid": "kitchen-upper-box",
+        "name": "Upper cabinet",
+        "description": "bottom at 54 in",
+        "type": "box",
+        "dimensions": [
+          54,
+          12,
+          30
+        ],
+        "position": [
+          75,
+          6,
+          69
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-upper",
+        "material": "cabinet"
+      }
+    },
+    {
+      "seq": 25,
+      "op": "add",
+      "time": "2026-11-01T10:25:00.000Z",
+      "author": "jimmy",
+      "note": "add Sliding acrylic display",
+      "object": {
+        "uuid": "kitchen-display",
+        "name": "Sliding acrylic display",
+        "description": "slides in front of the cups",
+        "type": "box",
+        "dimensions": [
+          48,
+          0.25,
+          22
+        ],
+        "position": [
+          75,
+          13,
+          66
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-upper",
+        "material": "acrylic"
+      }
+    },
+    {
+      "seq": 26,
+      "op": "add",
+      "time": "2026-11-01T10:26:00.000Z",
+      "author": "jimmy",
+      "note": "add Cup 1",
+      "object": {
+        "uuid": "kitchen-cup1",
+        "name": "Cup 1",
+        "description": "on the shelf",
+        "type": "cylinder",
+        "dimensions": [
+          1.8,
+          4.5
+        ],
+        "position": [
+          88,
+          7,
+          60
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-upper",
+        "material": "cup"
+      }
+    },
+    {
+      "seq": 27,
+      "op": "add",
+      "time": "2026-11-01T10:27:00.000Z",
+      "author": "jimmy",
+      "note": "add Cup 2",
+      "object": {
+        "uuid": "kitchen-cup2",
+        "name": "Cup 2",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          1.8,
+          4.5
+        ],
+        "position": [
+          75,
+          7,
+          60
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-upper",
+        "material": "cup"
+      }
+    },
+    {
+      "seq": 28,
+      "op": "add",
+      "time": "2026-11-01T10:28:00.000Z",
+      "author": "jimmy",
+      "note": "add Cup 3",
+      "object": {
+        "uuid": "kitchen-cup3",
+        "name": "Cup 3",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          1.8,
+          4.5
+        ],
+        "position": [
+          62,
+          7,
+          60
+        ],
+        "rotation_y": 0,
+        "parent": "kitchen-upper",
+        "material": "cup"
+      }
+    },
+    {
+      "seq": 29,
+      "op": "modify",
+      "time": "2026-11-01T10:29:00.000Z",
+      "author": "chat",
+      "note": "tidy the description",
+      "uuid": "kitchen-display",
+      "set": {
+        "description": "slides in front of the cups; a little higher"
+      }
+    }
+  ]
+}

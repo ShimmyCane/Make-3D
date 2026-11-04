@@ -1,0 +1,821 @@
+{
+  "schema": "make3d.history/0.1",
+  "model_id": "planet-venus-v04",
+  "header": {
+    "model_id": "planet-venus-v04",
+    "name": "Venus (planet view) V04",
+    "description": "Venus on its own, increment 4 of 6: hot and cloudy; it spins the other way, which this model cannot show yet. Surfaces and bands are shaded procedurally; sizes are rough. Spins. Use the button to go back to the Solar System.",
+    "units": "in",
+    "up": "z",
+    "world": "solar-system-world",
+    "materials": {
+      "sun": {
+        "color": "#ffd23f",
+        "opacity": 1
+      },
+      "corona": {
+        "color": "#ffb347",
+        "opacity": 0.2
+      },
+      "orbit": {
+        "color": "#8a86a3",
+        "opacity": 1
+      },
+      "mercury": {
+        "color": "#b8b0a4",
+        "opacity": 1
+      },
+      "venus": {
+        "color": "#f0d9a0",
+        "opacity": 1
+      },
+      "earth": {
+        "color": "#4f8fd6",
+        "opacity": 1
+      },
+      "mars": {
+        "color": "#d9714a",
+        "opacity": 1
+      },
+      "jup1": {
+        "color": "#e8c49a",
+        "opacity": 1
+      },
+      "jup2": {
+        "color": "#b87c55",
+        "opacity": 1
+      },
+      "jup3": {
+        "color": "#f2e6d0",
+        "opacity": 1
+      },
+      "sat": {
+        "color": "#ecd8a0",
+        "opacity": 1
+      },
+      "satb": {
+        "color": "#d9b97c",
+        "opacity": 1
+      },
+      "ring": {
+        "color": "#e6d7b0",
+        "opacity": 0.8
+      },
+      "ring2": {
+        "color": "#b59f7a",
+        "opacity": 0.8
+      },
+      "uranus": {
+        "color": "#a9e6f0",
+        "opacity": 1
+      },
+      "uranusb": {
+        "color": "#8fd4e6",
+        "opacity": 1
+      },
+      "neptune": {
+        "color": "#4f73e0",
+        "opacity": 1
+      },
+      "neptuneb": {
+        "color": "#3b5fc2",
+        "opacity": 1
+      },
+      "pluto": {
+        "color": "#c9b49a",
+        "opacity": 1
+      },
+      "charon": {
+        "color": "#8f8a85",
+        "opacity": 1
+      },
+      "moon": {
+        "color": "#bdbdbd",
+        "opacity": 1
+      },
+      "phobos": {
+        "color": "#8c7f74",
+        "opacity": 1
+      },
+      "io": {
+        "color": "#f6e28a",
+        "opacity": 1
+      },
+      "europa": {
+        "color": "#e9dfcf",
+        "opacity": 1
+      },
+      "ganymede": {
+        "color": "#a79b8b",
+        "opacity": 1
+      },
+      "callisto": {
+        "color": "#7e7467",
+        "opacity": 1
+      },
+      "titan": {
+        "color": "#e9b872",
+        "opacity": 1
+      },
+      "enceladus": {
+        "color": "#f4f8ff",
+        "opacity": 1
+      },
+      "miranda": {
+        "color": "#b4b4b4",
+        "opacity": 1
+      },
+      "ariel": {
+        "color": "#c9c9c9",
+        "opacity": 1
+      },
+      "triton": {
+        "color": "#e0d6c8",
+        "opacity": 1
+      },
+      "rock": {
+        "color": "#9a9188",
+        "opacity": 1
+      },
+      "rock2": {
+        "color": "#b3a99c",
+        "opacity": 1
+      },
+      "air": {
+        "color": "#9fd8ff",
+        "opacity": 0.2
+      },
+      "venusair": {
+        "color": "#ffe9a8",
+        "opacity": 0.25
+      },
+      "marker": {
+        "color": "#ff8fa3",
+        "opacity": 1
+      },
+      "venusb1": {
+        "color": "#f3e3b0",
+        "opacity": 1
+      },
+      "venusb2": {
+        "color": "#e2c58a",
+        "opacity": 1
+      },
+      "cap": {
+        "color": "#fbfbff",
+        "opacity": 1
+      },
+      "dark": {
+        "color": "#5b544d",
+        "opacity": 1
+      },
+      "grs": {
+        "color": "#c4543b",
+        "opacity": 1
+      },
+      "ovalw": {
+        "color": "#fff7ee",
+        "opacity": 1
+      },
+      "hexblue": {
+        "color": "#2e4f8f",
+        "opacity": 1
+      },
+      "ringdark": {
+        "color": "#5c5a5a",
+        "opacity": 0.7
+      },
+      "crater": {
+        "color": "#7d756c",
+        "opacity": 1
+      },
+      "brightray": {
+        "color": "#f2f0ea",
+        "opacity": 1
+      },
+      "olympus": {
+        "color": "#b0664a",
+        "opacity": 1
+      },
+      "dustv": {
+        "color": "#c7a77a",
+        "opacity": 0.3
+      },
+      "ice": {
+        "color": "#ffffff",
+        "opacity": 1
+      },
+      "pluto_heart": {
+        "color": "#f4efe6",
+        "opacity": 1
+      },
+      "nitro": {
+        "color": "#fffdf7",
+        "opacity": 1
+      },
+      "mtn": {
+        "color": "#8a8f6a",
+        "opacity": 1
+      },
+      "amalthea": {
+        "color": "#b89070",
+        "opacity": 1
+      },
+      "himalia": {
+        "color": "#a09a92",
+        "opacity": 1
+      },
+      "thebe": {
+        "color": "#a58c75",
+        "opacity": 1
+      },
+      "mimas": {
+        "color": "#e8e8e8",
+        "opacity": 1
+      },
+      "tethys": {
+        "color": "#dcdcdc",
+        "opacity": 1
+      },
+      "dione": {
+        "color": "#d0d0d0",
+        "opacity": 1
+      },
+      "rhea": {
+        "color": "#c9c9c9",
+        "opacity": 1
+      },
+      "iapetus": {
+        "color": "#b8a890",
+        "opacity": 1
+      },
+      "umbriel": {
+        "color": "#6d6d72",
+        "opacity": 1
+      },
+      "titania": {
+        "color": "#bcbcc0",
+        "opacity": 1
+      },
+      "oberon": {
+        "color": "#a9a39d",
+        "opacity": 1
+      },
+      "puck": {
+        "color": "#8f8f8f",
+        "opacity": 1
+      },
+      "proteus": {
+        "color": "#7d7d7d",
+        "opacity": 1
+      },
+      "nereid": {
+        "color": "#9ea5b8",
+        "opacity": 1
+      },
+      "nix": {
+        "color": "#dedede",
+        "opacity": 1
+      },
+      "hydra": {
+        "color": "#e6e6e6",
+        "opacity": 1
+      },
+      "land": {
+        "color": "#5f9e5a",
+        "opacity": 1
+      },
+      "dsand": {
+        "color": "#d9b77a",
+        "opacity": 1
+      },
+      "cloud": {
+        "color": "#ffffff",
+        "opacity": 0.35
+      },
+      "iss": {
+        "color": "#d9dde3",
+        "opacity": 1
+      },
+      "panel": {
+        "color": "#2f5f9e",
+        "opacity": 1
+      },
+      "rocket": {
+        "color": "#f2f2f2",
+        "opacity": 1
+      },
+      "nose": {
+        "color": "#d6453d",
+        "opacity": 1
+      },
+      "plume": {
+        "color": "#ffa640",
+        "opacity": 0.6
+      },
+      "pad": {
+        "color": "#8c8c8c",
+        "opacity": 1
+      },
+      "storm": {
+        "color": "#ffffff",
+        "opacity": 0.8
+      },
+      "eye": {
+        "color": "#3c4a5a",
+        "opacity": 1
+      },
+      "light": {
+        "color": "#ffe27a",
+        "opacity": 1
+      },
+      "shade_mercury": {
+        "color": "#a59d92",
+        "kind": "bands",
+        "a": "#a59d92",
+        "b": "#6d665e",
+        "c": "#8a8178",
+        "freq": 0,
+        "seed": 2
+      },
+      "shade_venus": {
+        "color": "#f3dca0",
+        "kind": "bands",
+        "a": "#f3dca0",
+        "b": "#e0b86e",
+        "c": "#fff2cf",
+        "freq": 9,
+        "seed": 4
+      },
+      "shade_mars": {
+        "color": "#c8643f",
+        "kind": "bands",
+        "a": "#c8643f",
+        "b": "#7a3524",
+        "c": "#e08a5c",
+        "freq": 0,
+        "seed": 5
+      },
+      "shade_jupiter": {
+        "color": "#e8c49a",
+        "kind": "bands",
+        "a": "#e8c49a",
+        "b": "#b87c55",
+        "c": "#f2e6d0",
+        "freq": 12,
+        "seed": 6
+      },
+      "shade_saturn": {
+        "color": "#ecd8a0",
+        "kind": "bands",
+        "a": "#ecd8a0",
+        "b": "#d9b97c",
+        "c": "#f5e8c4",
+        "freq": 10,
+        "seed": 7
+      },
+      "shade_uranus": {
+        "color": "#a9e6f0",
+        "kind": "bands",
+        "a": "#a9e6f0",
+        "b": "#8fd4e6",
+        "c": "#c9f2f8",
+        "freq": 6,
+        "seed": 8
+      },
+      "shade_neptune": {
+        "color": "#4f73e0",
+        "kind": "bands",
+        "a": "#4f73e0",
+        "b": "#3b5fc2",
+        "c": "#6f93f0",
+        "freq": 8,
+        "seed": 9
+      },
+      "shade_pluto": {
+        "color": "#d6c3a1",
+        "kind": "bands",
+        "a": "#d6c3a1",
+        "b": "#8c7660",
+        "c": "#efe2c8",
+        "freq": 0,
+        "seed": 10
+      },
+      "earth_surface": {
+        "color": "#4f8fd6",
+        "opacity": 1,
+        "kind": "earth",
+        "ocean": "#3f80c8",
+        "oceanDeep": "#1f4f8a",
+        "land_color": "#5f9e5a",
+        "desert_color": "#d9b77a",
+        "ice": "#f4f8ff",
+        "seed": 3,
+        "land": [
+          [
+            45,
+            -100,
+            25,
+            32
+          ],
+          [
+            72,
+            -42,
+            10,
+            14
+          ],
+          [
+            15,
+            -90,
+            5,
+            10
+          ],
+          [
+            -15,
+            -60,
+            30,
+            16
+          ],
+          [
+            54,
+            14,
+            9,
+            18
+          ],
+          [
+            3,
+            20,
+            26,
+            22
+          ],
+          [
+            52,
+            95,
+            20,
+            45
+          ],
+          [
+            25,
+            70,
+            10,
+            12
+          ],
+          [
+            -1,
+            112,
+            10,
+            12
+          ],
+          [
+            -25,
+            134,
+            9,
+            13
+          ],
+          [
+            -82,
+            0,
+            8,
+            180
+          ]
+        ],
+        "desert": [
+          [
+            23,
+            13,
+            9,
+            22
+          ],
+          [
+            -25,
+            134,
+            6,
+            9
+          ],
+          [
+            24,
+            47,
+            6,
+            8
+          ]
+        ]
+      },
+      "clouds_layer": {
+        "color": "#ffffff",
+        "opacity": 0.35,
+        "kind": "clouds",
+        "coverage": 0.5,
+        "scale": 2.4,
+        "seed": 5,
+        "alpha": 0.9
+      },
+      "clouds_layer2": {
+        "color": "#ffffff",
+        "opacity": 0.3,
+        "kind": "clouds",
+        "coverage": 0.6,
+        "scale": 3.1,
+        "seed": 9,
+        "alpha": 0.7
+      },
+      "aurora": {
+        "color": "#7dffb0",
+        "opacity": 0.35
+      },
+      "stormhaze": {
+        "color": "#ffffff",
+        "opacity": 0.45
+      }
+    },
+    "view": {
+      "fill": 0.75,
+      "radius": 9
+    },
+    "links": [
+      {
+        "label": "Back to the Solar System",
+        "target": "solar-system-v07",
+        "transition": "fade"
+      }
+    ]
+  },
+  "operations": [
+    {
+      "seq": 1,
+      "op": "add",
+      "time": "2026-11-01T10:01:00.000Z",
+      "author": "jimmy",
+      "note": "add Venus body",
+      "object": {
+        "uuid": "planet-venus-v04-body-venus",
+        "name": "Venus body",
+        "description": "spins on its own axis",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 2,
+      "op": "add",
+      "time": "2026-11-01T10:02:00.000Z",
+      "author": "jimmy",
+      "note": "add Venus",
+      "object": {
+        "uuid": "planet-venus-v04-ball-venus",
+        "name": "Venus",
+        "description": "hot and cloudy; it spins the other way, which this model cannot show yet",
+        "type": "sphere",
+        "dimensions": [
+          9
+        ],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": "planet-venus-v04-body-venus",
+        "material": "shade_venus"
+      }
+    },
+    {
+      "seq": 3,
+      "op": "add",
+      "time": "2026-11-01T10:03:00.000Z",
+      "author": "jimmy",
+      "note": "add Venus atmosphere",
+      "object": {
+        "uuid": "planet-venus-v04-air-venus",
+        "name": "Venus atmosphere",
+        "description": "a thin see-through haze (taps pass through it)",
+        "type": "sphere",
+        "dimensions": [
+          10.08
+        ],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": "planet-venus-v04-body-venus",
+        "material": "venusair"
+      }
+    },
+    {
+      "seq": 4,
+      "op": "add",
+      "time": "2026-11-01T10:04:00.000Z",
+      "author": "jimmy",
+      "note": "add North polar vortex",
+      "object": {
+        "uuid": "planet-venus-v04-vortex-n",
+        "name": "North polar vortex",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          4,
+          0.4
+        ],
+        "position": [
+          2.381,
+          0,
+          8.887
+        ],
+        "rotation_y": 15,
+        "parent": "planet-venus-v04-body-venus",
+        "material": "venusb2"
+      }
+    },
+    {
+      "seq": 5,
+      "op": "add",
+      "time": "2026-11-01T10:05:00.000Z",
+      "author": "jimmy",
+      "note": "add South polar vortex",
+      "object": {
+        "uuid": "planet-venus-v04-vortex-s",
+        "name": "South polar vortex",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          4,
+          0.4
+        ],
+        "position": [
+          -1.421,
+          2.462,
+          -8.75
+        ],
+        "rotation_y": 162,
+        "rotation_z": 120,
+        "parent": "planet-venus-v04-body-venus",
+        "material": "venusb2"
+      }
+    },
+    {
+      "seq": 6,
+      "op": "add",
+      "time": "2026-11-01T10:06:00.000Z",
+      "author": "jimmy",
+      "note": "add Volcano",
+      "object": {
+        "uuid": "planet-venus-v04-volc-0",
+        "name": "Volcano",
+        "description": "a volcano",
+        "type": "cone",
+        "dimensions": [
+          1.2,
+          2.2
+        ],
+        "position": [
+          9.168,
+          3.337,
+          -2.614
+        ],
+        "rotation_y": 105,
+        "rotation_z": 20,
+        "parent": "planet-venus-v04-body-venus",
+        "material": "dark"
+      }
+    },
+    {
+      "seq": 7,
+      "op": "add",
+      "time": "2026-11-01T10:07:00.000Z",
+      "author": "jimmy",
+      "note": "add Volcano",
+      "object": {
+        "uuid": "planet-venus-v04-volc-1",
+        "name": "Volcano",
+        "description": "a volcano",
+        "type": "cone",
+        "dimensions": [
+          1.2,
+          2.2
+        ],
+        "position": [
+          4.577,
+          -7.927,
+          4.268
+        ],
+        "rotation_y": 65,
+        "rotation_z": -60,
+        "parent": "planet-venus-v04-body-venus",
+        "material": "dark"
+      }
+    },
+    {
+      "seq": 8,
+      "op": "add",
+      "time": "2026-11-01T10:08:00.000Z",
+      "author": "jimmy",
+      "note": "add Volcano",
+      "object": {
+        "uuid": "planet-venus-v04-volc-2",
+        "name": "Volcano",
+        "description": "a volcano",
+        "type": "cone",
+        "dimensions": [
+          1.2,
+          2.2
+        ],
+        "position": [
+          -2.646,
+          7.27,
+          -6.492
+        ],
+        "rotation_y": 130,
+        "rotation_z": 110,
+        "parent": "planet-venus-v04-body-venus",
+        "material": "dark"
+      }
+    },
+    {
+      "seq": 9,
+      "op": "add",
+      "time": "2026-11-01T10:09:00.000Z",
+      "author": "jimmy",
+      "note": "add Volcano",
+      "object": {
+        "uuid": "planet-venus-v04-volc-3",
+        "name": "Volcano",
+        "description": "a volcano",
+        "type": "cone",
+        "dimensions": [
+          1.2,
+          2.2
+        ],
+        "position": [
+          -8.614,
+          4.973,
+          1.754
+        ],
+        "rotation_y": 80,
+        "rotation_z": 150,
+        "parent": "planet-venus-v04-body-venus",
+        "material": "dark"
+      }
+    },
+    {
+      "seq": 10,
+      "op": "add",
+      "time": "2026-11-01T10:10:00.000Z",
+      "author": "jimmy",
+      "note": "add Volcano",
+      "object": {
+        "uuid": "planet-venus-v04-volc-4",
+        "name": "Volcano",
+        "description": "a volcano",
+        "type": "cone",
+        "dimensions": [
+          1.2,
+          2.2
+        ],
+        "position": [
+          3.571,
+          6.185,
+          7.142
+        ],
+        "rotation_y": 45,
+        "rotation_z": 60,
+        "parent": "planet-venus-v04-body-venus",
+        "material": "dark"
+      }
+    },
+    {
+      "seq": 11,
+      "op": "add",
+      "time": "2026-11-01T10:11:00.000Z",
+      "author": "jimmy",
+      "note": "add Volcano",
+      "object": {
+        "uuid": "planet-venus-v04-volc-5",
+        "name": "Volcano",
+        "description": "a volcano",
+        "type": "cone",
+        "dimensions": [
+          1.2,
+          2.2
+        ],
+        "position": [
+          -4.577,
+          -7.927,
+          -4.268
+        ],
+        "rotation_y": 115,
+        "rotation_z": -120,
+        "parent": "planet-venus-v04-body-venus",
+        "material": "dark"
+      }
+    }
+  ]
+}

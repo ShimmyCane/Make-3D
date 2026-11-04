@@ -1,0 +1,5646 @@
+{
+  "schema": "make3d.history/0.1",
+  "model_id": "adventure-park-v11",
+  "header": {
+    "model_id": "adventure-park-v11",
+    "name": "Adventure park V11",
+    "description": "Adventure Coaster Park, compact, curved and animated, increment 11 of 16. Capacity 1000 persons per hour. Estimated from published figures, in inches.",
+    "units": "in",
+    "up": "z",
+    "world": "adventure-park-world",
+    "materials": {
+      "path": {
+        "color": "#f4e7cf",
+        "opacity": 1
+      },
+      "stone": {
+        "color": "#e7e2d6",
+        "opacity": 1
+      },
+      "track": {
+        "color": "#f29a7e",
+        "opacity": 1
+      },
+      "steel": {
+        "color": "#b9c0ca",
+        "opacity": 1
+      },
+      "car": {
+        "color": "#ffc09a",
+        "opacity": 1
+      },
+      "cup": {
+        "color": "#f7d1e0",
+        "opacity": 1
+      },
+      "water": {
+        "color": "#a6e3d7",
+        "opacity": 0.9
+      },
+      "boat": {
+        "color": "#9cc8f0",
+        "opacity": 1
+      },
+      "wood": {
+        "color": "#e2b98f",
+        "opacity": 1
+      },
+      "roof": {
+        "color": "#f7a8a0",
+        "opacity": 1
+      },
+      "cream": {
+        "color": "#fff8e7",
+        "opacity": 1
+      },
+      "fence": {
+        "color": "#fffdf6",
+        "opacity": 1
+      },
+      "red": {
+        "color": "#f08080",
+        "opacity": 1
+      },
+      "green": {
+        "color": "#9ed39a",
+        "opacity": 1
+      },
+      "leaf": {
+        "color": "#8fcf8a",
+        "opacity": 1
+      },
+      "trunk": {
+        "color": "#b98a63",
+        "opacity": 1
+      },
+      "lamp": {
+        "color": "#fff1a8",
+        "opacity": 1
+      },
+      "flower": {
+        "color": "#f6a6c1",
+        "opacity": 1
+      },
+      "flag": {
+        "color": "#ffd36e",
+        "opacity": 1
+      },
+      "lavender": {
+        "color": "#c7b2ea",
+        "opacity": 1
+      },
+      "mint": {
+        "color": "#9fd8c0",
+        "opacity": 1
+      },
+      "sky": {
+        "color": "#bfe3f7",
+        "opacity": 0.85
+      },
+      "skin": {
+        "color": "#ffd9b8",
+        "opacity": 1
+      }
+    }
+  },
+  "operations": [
+    {
+      "seq": 1,
+      "op": "add",
+      "time": "2026-11-01T10:01:00.000Z",
+      "author": "jimmy",
+      "note": "add Entrance",
+      "object": {
+        "uuid": "adventure-park-v11-gate",
+        "name": "Entrance",
+        "description": "the park gate and its sign",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 2,
+      "op": "add",
+      "time": "2026-11-01T10:02:00.000Z",
+      "author": "jimmy",
+      "note": "add Paths",
+      "object": {
+        "uuid": "adventure-park-v11-paths",
+        "name": "Paths",
+        "description": "walkways and the plaza",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 3,
+      "op": "add",
+      "time": "2026-11-01T10:03:00.000Z",
+      "author": "jimmy",
+      "note": "add Pip's Little Loop",
+      "object": {
+        "uuid": "adventure-park-v11-pip",
+        "name": "Pip's Little Loop",
+        "description": "kiddie coaster: curved oval track, station, two cars",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 4,
+      "op": "add",
+      "time": "2026-11-01T10:04:00.000Z",
+      "author": "jimmy",
+      "note": "add Bumble River",
+      "object": {
+        "uuid": "adventure-park-v11-bumble",
+        "name": "Bumble River",
+        "description": "a gentle boat ride on a short river",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 5,
+      "op": "add",
+      "time": "2026-11-01T10:05:00.000Z",
+      "author": "jimmy",
+      "note": "add Teacup Twirl",
+      "object": {
+        "uuid": "adventure-park-v11-teacups",
+        "name": "Teacup Twirl",
+        "description": "turntable and canopy",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 6,
+      "op": "add",
+      "time": "2026-11-01T10:06:00.000Z",
+      "author": "jimmy",
+      "note": "add Teacups",
+      "object": {
+        "uuid": "adventure-park-v11-tea-cups",
+        "name": "Teacups",
+        "description": "four cups that spin on the turntable",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 7,
+      "op": "add",
+      "time": "2026-11-01T10:07:00.000Z",
+      "author": "jimmy",
+      "note": "add Thunder Trail",
+      "object": {
+        "uuid": "adventure-park-v11-thunder",
+        "name": "Thunder Trail",
+        "description": "the adventure family coaster, 60 ft lift",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 8,
+      "op": "add",
+      "time": "2026-11-01T10:08:00.000Z",
+      "author": "jimmy",
+      "note": "add Splash Falls",
+      "object": {
+        "uuid": "adventure-park-v11-splash",
+        "name": "Splash Falls",
+        "description": "log flume with a lift and a splash drop",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 9,
+      "op": "add",
+      "time": "2026-11-01T10:09:00.000Z",
+      "author": "jimmy",
+      "note": "add Sky Wheel",
+      "object": {
+        "uuid": "adventure-park-v11-skywheel",
+        "name": "Sky Wheel",
+        "description": "show ride: tower and A-frame",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 10,
+      "op": "add",
+      "time": "2026-11-01T10:10:00.000Z",
+      "author": "jimmy",
+      "note": "add Sky Wheel wheel",
+      "object": {
+        "uuid": "adventure-park-v11-sky-wheel",
+        "name": "Sky Wheel wheel",
+        "description": "the turning wheel with bubble cars",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 11,
+      "op": "add",
+      "time": "2026-11-01T10:11:00.000Z",
+      "author": "jimmy",
+      "note": "add Safety",
+      "object": {
+        "uuid": "adventure-park-v11-safety",
+        "name": "Safety",
+        "description": "fences, signs, walkways and stop buttons",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 12,
+      "op": "add",
+      "time": "2026-11-01T10:12:00.000Z",
+      "author": "jimmy",
+      "note": "add Scenery",
+      "object": {
+        "uuid": "adventure-park-v11-scenery",
+        "name": "Scenery",
+        "description": "trees, benches, lamps and flower beds",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 13,
+      "op": "add",
+      "time": "2026-11-01T10:13:00.000Z",
+      "author": "jimmy",
+      "note": "add Plaza fountain",
+      "object": {
+        "uuid": "adventure-park-v11-fountain",
+        "name": "Plaza fountain",
+        "description": "a basin and eight jets that play in a wave",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 14,
+      "op": "add",
+      "time": "2026-11-01T10:14:00.000Z",
+      "author": "jimmy",
+      "note": "add Finishing",
+      "object": {
+        "uuid": "adventure-park-v11-finish",
+        "name": "Finishing",
+        "description": "flags, the park sign and balloons",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 15,
+      "op": "add",
+      "time": "2026-11-01T10:15:00.000Z",
+      "author": "jimmy",
+      "note": "add Gate post left",
+      "object": {
+        "uuid": "adventure-park-v11-gate-post-l",
+        "name": "Gate post left",
+        "description": "entrance post",
+        "type": "cylinder",
+        "dimensions": [
+          12,
+          192
+        ],
+        "position": [
+          -120,
+          -1416,
+          96
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-gate",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 16,
+      "op": "add",
+      "time": "2026-11-01T10:16:00.000Z",
+      "author": "jimmy",
+      "note": "add Gate post right",
+      "object": {
+        "uuid": "adventure-park-v11-gate-post-r",
+        "name": "Gate post right",
+        "description": "entrance post",
+        "type": "cylinder",
+        "dimensions": [
+          12,
+          192
+        ],
+        "position": [
+          120,
+          -1416,
+          96
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-gate",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 17,
+      "op": "add",
+      "time": "2026-11-01T10:17:00.000Z",
+      "author": "jimmy",
+      "note": "add Gate beam",
+      "object": {
+        "uuid": "adventure-park-v11-gate-beam",
+        "name": "Gate beam",
+        "description": "arch over the path",
+        "type": "box",
+        "dimensions": [
+          288,
+          24,
+          24
+        ],
+        "position": [
+          0,
+          -1416,
+          192
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-gate",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 18,
+      "op": "add",
+      "time": "2026-11-01T10:18:00.000Z",
+      "author": "jimmy",
+      "note": "add Main path",
+      "object": {
+        "uuid": "adventure-park-v11-path-main",
+        "name": "Main path",
+        "description": "from the gate to the plaza",
+        "type": "box",
+        "dimensions": [
+          96,
+          1152,
+          3.6
+        ],
+        "position": [
+          0,
+          -840,
+          1.8
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-paths",
+        "material": "path"
+      }
+    },
+    {
+      "seq": 19,
+      "op": "add",
+      "time": "2026-11-01T10:19:00.000Z",
+      "author": "jimmy",
+      "note": "add Plaza",
+      "object": {
+        "uuid": "adventure-park-v11-plaza",
+        "name": "Plaza",
+        "description": "round meeting place, 52 ft across",
+        "type": "cylinder",
+        "dimensions": [
+          312,
+          3.6
+        ],
+        "position": [
+          0,
+          0,
+          1.8
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-paths",
+        "material": "path"
+      }
+    },
+    {
+      "seq": 20,
+      "op": "add",
+      "time": "2026-11-01T10:20:00.000Z",
+      "author": "jimmy",
+      "note": "add West path",
+      "object": {
+        "uuid": "adventure-park-v11-path-west",
+        "name": "West path",
+        "description": "to Pip and Bumble River",
+        "type": "box",
+        "dimensions": [
+          1440,
+          96,
+          3.6
+        ],
+        "position": [
+          -1032,
+          0,
+          1.8
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-paths",
+        "material": "path"
+      }
+    },
+    {
+      "seq": 21,
+      "op": "add",
+      "time": "2026-11-01T10:21:00.000Z",
+      "author": "jimmy",
+      "note": "add East path",
+      "object": {
+        "uuid": "adventure-park-v11-path-east",
+        "name": "East path",
+        "description": "to the teacups and Thunder Trail",
+        "type": "box",
+        "dimensions": [
+          1440,
+          96,
+          3.6
+        ],
+        "position": [
+          1032,
+          0,
+          1.8
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-paths",
+        "material": "path"
+      }
+    },
+    {
+      "seq": 22,
+      "op": "add",
+      "time": "2026-11-01T10:22:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 1",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-0",
+        "name": "pip rail left 1",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          76.89
+        ],
+        "position": [
+          -691.469,
+          -445.232,
+          77.846
+        ],
+        "rotation_y": -52.864,
+        "rotation_x": -75.412,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 23,
+      "op": "add",
+      "time": "2026-11-01T10:23:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 1",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-0",
+        "name": "pip rail right 1",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          76.89
+        ],
+        "position": [
+          -667.969,
+          -440.356,
+          77.846
+        ],
+        "rotation_y": -52.864,
+        "rotation_x": -75.412,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 24,
+      "op": "add",
+      "time": "2026-11-01T10:24:00.000Z",
+      "author": "jimmy",
+      "note": "add pip support 1",
+      "object": {
+        "uuid": "adventure-park-v11-pip-post-0",
+        "name": "pip support 1",
+        "description": "steel support",
+        "type": "cylinder",
+        "dimensions": [
+          6,
+          72
+        ],
+        "position": [
+          -672,
+          -480,
+          36
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-pip",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 25,
+      "op": "add",
+      "time": "2026-11-01T10:25:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 2",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-1",
+        "name": "pip rail left 2",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          82.014
+        ],
+        "position": [
+          -718.903,
+          -377.042,
+          88.238
+        ],
+        "rotation_y": -77.906,
+        "rotation_x": -58.049,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 26,
+      "op": "add",
+      "time": "2026-11-01T10:26:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 2",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-1",
+        "name": "pip rail right 2",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          82.014
+        ],
+        "position": [
+          -698.413,
+          -364.546,
+          88.238
+        ],
+        "rotation_y": -77.906,
+        "rotation_x": -58.049,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 27,
+      "op": "add",
+      "time": "2026-11-01T10:27:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 3",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-2",
+        "name": "pip rail left 3",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          91.151
+        ],
+        "position": [
+          -772.276,
+          -315.463,
+          94.084
+        ],
+        "rotation_y": -87.849,
+        "rotation_x": -40.581,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 28,
+      "op": "add",
+      "time": "2026-11-01T10:28:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 3",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-2",
+        "name": "pip rail right 3",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          91.151
+        ],
+        "position": [
+          -756.657,
+          -297.241,
+          94.084
+        ],
+        "rotation_y": -87.849,
+        "rotation_x": -40.581,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 29,
+      "op": "add",
+      "time": "2026-11-01T10:29:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 4",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-3",
+        "name": "pip rail left 4",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          100.224
+        ],
+        "position": [
+          -849.052,
+          -264.297,
+          94.084
+        ],
+        "rotation_y": -91.673,
+        "rotation_x": -27.398,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 30,
+      "op": "add",
+      "time": "2026-11-01T10:30:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 4",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-3",
+        "name": "pip rail right 4",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          100.224
+        ],
+        "position": [
+          -838.004,
+          -242.991,
+          94.084
+        ],
+        "rotation_y": -91.673,
+        "rotation_x": -27.398,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 31,
+      "op": "add",
+      "time": "2026-11-01T10:31:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 5",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-4",
+        "name": "pip rail left 5",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          108.531
+        ],
+        "position": [
+          -943.331,
+          -228.021,
+          88.238
+        ],
+        "rotation_y": -94.979,
+        "rotation_x": -15.111,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 32,
+      "op": "add",
+      "time": "2026-11-01T10:32:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 5",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-4",
+        "name": "pip rail right 5",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          108.531
+        ],
+        "position": [
+          -937.052,
+          -204.856,
+          88.238
+        ],
+        "rotation_y": -94.979,
+        "rotation_x": -15.111,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 33,
+      "op": "add",
+      "time": "2026-11-01T10:33:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 6",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-5",
+        "name": "pip rail left 6",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          112.699
+        ],
+        "position": [
+          -1049.293,
+          -209.095,
+          77.846
+        ],
+        "rotation_y": -95.98,
+        "rotation_x": -5.24,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 34,
+      "op": "add",
+      "time": "2026-11-01T10:34:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 6",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-5",
+        "name": "pip rail right 6",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          112.699
+        ],
+        "position": [
+          -1047.089,
+          -185.197,
+          77.846
+        ],
+        "rotation_y": -95.98,
+        "rotation_x": -5.24,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 35,
+      "op": "add",
+      "time": "2026-11-01T10:35:00.000Z",
+      "author": "jimmy",
+      "note": "add pip support 6",
+      "object": {
+        "uuid": "adventure-park-v11-pip-post-5",
+        "name": "pip support 6",
+        "description": "steel support",
+        "type": "cylinder",
+        "dimensions": [
+          6,
+          83.691
+        ],
+        "position": [
+          -992.383,
+          -202.292,
+          41.846
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-pip",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 36,
+      "op": "add",
+      "time": "2026-11-01T10:36:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 7",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-6",
+        "name": "pip rail left 7",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          112.699
+        ],
+        "position": [
+          -1158.707,
+          -209.095,
+          66.154
+        ],
+        "rotation_y": -95.98,
+        "rotation_x": 5.24,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 37,
+      "op": "add",
+      "time": "2026-11-01T10:37:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 7",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-6",
+        "name": "pip rail right 7",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          112.699
+        ],
+        "position": [
+          -1160.911,
+          -185.197,
+          66.154
+        ],
+        "rotation_y": -95.98,
+        "rotation_x": 5.24,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 38,
+      "op": "add",
+      "time": "2026-11-01T10:38:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 8",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-7",
+        "name": "pip rail left 8",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          108.531
+        ],
+        "position": [
+          -1264.669,
+          -228.021,
+          55.762
+        ],
+        "rotation_y": -94.979,
+        "rotation_x": 15.111,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 39,
+      "op": "add",
+      "time": "2026-11-01T10:39:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 8",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-7",
+        "name": "pip rail right 8",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          108.531
+        ],
+        "position": [
+          -1270.948,
+          -204.856,
+          55.762
+        ],
+        "rotation_y": -94.979,
+        "rotation_x": 15.111,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 40,
+      "op": "add",
+      "time": "2026-11-01T10:40:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 9",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-8",
+        "name": "pip rail left 9",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          100.224
+        ],
+        "position": [
+          -1358.948,
+          -264.297,
+          49.916
+        ],
+        "rotation_y": -91.673,
+        "rotation_x": 27.398,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 41,
+      "op": "add",
+      "time": "2026-11-01T10:41:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 9",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-8",
+        "name": "pip rail right 9",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          100.224
+        ],
+        "position": [
+          -1369.996,
+          -242.991,
+          49.916
+        ],
+        "rotation_y": -91.673,
+        "rotation_x": 27.398,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 42,
+      "op": "add",
+      "time": "2026-11-01T10:42:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 10",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-9",
+        "name": "pip rail left 10",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          91.151
+        ],
+        "position": [
+          -1435.724,
+          -315.463,
+          49.916
+        ],
+        "rotation_y": -87.849,
+        "rotation_x": 40.581,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 43,
+      "op": "add",
+      "time": "2026-11-01T10:43:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 10",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-9",
+        "name": "pip rail right 10",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          91.151
+        ],
+        "position": [
+          -1451.343,
+          -297.241,
+          49.916
+        ],
+        "rotation_y": -87.849,
+        "rotation_x": 40.581,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 44,
+      "op": "add",
+      "time": "2026-11-01T10:44:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 11",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-10",
+        "name": "pip rail left 11",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          82.014
+        ],
+        "position": [
+          -1489.097,
+          -377.042,
+          55.762
+        ],
+        "rotation_y": -77.906,
+        "rotation_x": 58.049,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 45,
+      "op": "add",
+      "time": "2026-11-01T10:45:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 11",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-10",
+        "name": "pip rail right 11",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          82.014
+        ],
+        "position": [
+          -1509.587,
+          -364.546,
+          55.762
+        ],
+        "rotation_y": -77.906,
+        "rotation_x": 58.049,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 46,
+      "op": "add",
+      "time": "2026-11-01T10:46:00.000Z",
+      "author": "jimmy",
+      "note": "add pip support 11",
+      "object": {
+        "uuid": "adventure-park-v11-pip-post-10",
+        "name": "pip support 11",
+        "description": "steel support",
+        "type": "cylinder",
+        "dimensions": [
+          6,
+          51.215
+        ],
+        "position": [
+          -1478.123,
+          -336,
+          25.608
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-pip",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 47,
+      "op": "add",
+      "time": "2026-11-01T10:47:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 12",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-11",
+        "name": "pip rail left 12",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          76.89
+        ],
+        "position": [
+          -1516.531,
+          -445.232,
+          66.154
+        ],
+        "rotation_y": -52.864,
+        "rotation_x": 75.412,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 48,
+      "op": "add",
+      "time": "2026-11-01T10:48:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 12",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-11",
+        "name": "pip rail right 12",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          76.89
+        ],
+        "position": [
+          -1540.031,
+          -440.356,
+          66.154
+        ],
+        "rotation_y": -52.864,
+        "rotation_x": 75.412,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 49,
+      "op": "add",
+      "time": "2026-11-01T10:49:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 13",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-12",
+        "name": "pip rail left 13",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          76.89
+        ],
+        "position": [
+          -1516.531,
+          -514.768,
+          77.846
+        ],
+        "rotation_y": 52.864,
+        "rotation_x": 75.412,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 50,
+      "op": "add",
+      "time": "2026-11-01T10:50:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 13",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-12",
+        "name": "pip rail right 13",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          76.89
+        ],
+        "position": [
+          -1540.031,
+          -519.644,
+          77.846
+        ],
+        "rotation_y": 52.864,
+        "rotation_x": 75.412,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 51,
+      "op": "add",
+      "time": "2026-11-01T10:51:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 14",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-13",
+        "name": "pip rail left 14",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          82.014
+        ],
+        "position": [
+          -1489.097,
+          -582.958,
+          88.238
+        ],
+        "rotation_y": 77.906,
+        "rotation_x": 58.049,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 52,
+      "op": "add",
+      "time": "2026-11-01T10:52:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 14",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-13",
+        "name": "pip rail right 14",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          82.014
+        ],
+        "position": [
+          -1509.587,
+          -595.454,
+          88.238
+        ],
+        "rotation_y": 77.906,
+        "rotation_x": 58.049,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 53,
+      "op": "add",
+      "time": "2026-11-01T10:53:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 15",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-14",
+        "name": "pip rail left 15",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          91.151
+        ],
+        "position": [
+          -1435.724,
+          -644.537,
+          94.084
+        ],
+        "rotation_y": 87.849,
+        "rotation_x": 40.581,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 54,
+      "op": "add",
+      "time": "2026-11-01T10:54:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 15",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-14",
+        "name": "pip rail right 15",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          91.151
+        ],
+        "position": [
+          -1451.343,
+          -662.759,
+          94.084
+        ],
+        "rotation_y": 87.849,
+        "rotation_x": 40.581,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 55,
+      "op": "add",
+      "time": "2026-11-01T10:55:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 16",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-15",
+        "name": "pip rail left 16",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          100.224
+        ],
+        "position": [
+          -1358.948,
+          -695.703,
+          94.084
+        ],
+        "rotation_y": 91.673,
+        "rotation_x": 27.398,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 56,
+      "op": "add",
+      "time": "2026-11-01T10:56:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 16",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-15",
+        "name": "pip rail right 16",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          100.224
+        ],
+        "position": [
+          -1369.996,
+          -717.009,
+          94.084
+        ],
+        "rotation_y": 91.673,
+        "rotation_x": 27.398,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 57,
+      "op": "add",
+      "time": "2026-11-01T10:57:00.000Z",
+      "author": "jimmy",
+      "note": "add pip support 16",
+      "object": {
+        "uuid": "adventure-park-v11-pip-post-15",
+        "name": "pip support 16",
+        "description": "steel support",
+        "type": "cylinder",
+        "dimensions": [
+          6,
+          95.383
+        ],
+        "position": [
+          -1408.944,
+          -683.296,
+          47.692
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-pip",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 58,
+      "op": "add",
+      "time": "2026-11-01T10:58:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 17",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-16",
+        "name": "pip rail left 17",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          108.531
+        ],
+        "position": [
+          -1264.669,
+          -731.979,
+          88.238
+        ],
+        "rotation_y": 94.979,
+        "rotation_x": 15.111,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 59,
+      "op": "add",
+      "time": "2026-11-01T10:59:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 17",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-16",
+        "name": "pip rail right 17",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          108.531
+        ],
+        "position": [
+          -1270.948,
+          -755.144,
+          88.238
+        ],
+        "rotation_y": 94.979,
+        "rotation_x": 15.111,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 60,
+      "op": "add",
+      "time": "2026-11-01T11:00:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 18",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-17",
+        "name": "pip rail left 18",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          112.699
+        ],
+        "position": [
+          -1158.707,
+          -750.905,
+          77.846
+        ],
+        "rotation_y": 95.98,
+        "rotation_x": 5.24,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 61,
+      "op": "add",
+      "time": "2026-11-01T11:01:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 18",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-17",
+        "name": "pip rail right 18",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          112.699
+        ],
+        "position": [
+          -1160.911,
+          -774.803,
+          77.846
+        ],
+        "rotation_y": 95.98,
+        "rotation_x": 5.24,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 62,
+      "op": "add",
+      "time": "2026-11-01T11:02:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 19",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-18",
+        "name": "pip rail left 19",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          112.699
+        ],
+        "position": [
+          -1049.293,
+          -750.905,
+          66.154
+        ],
+        "rotation_y": 95.98,
+        "rotation_x": -5.24,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 63,
+      "op": "add",
+      "time": "2026-11-01T11:03:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 19",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-18",
+        "name": "pip rail right 19",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          112.699
+        ],
+        "position": [
+          -1047.089,
+          -774.803,
+          66.154
+        ],
+        "rotation_y": 95.98,
+        "rotation_x": -5.24,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 64,
+      "op": "add",
+      "time": "2026-11-01T11:04:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 20",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-19",
+        "name": "pip rail left 20",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          108.531
+        ],
+        "position": [
+          -943.331,
+          -731.979,
+          55.762
+        ],
+        "rotation_y": 94.979,
+        "rotation_x": -15.111,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 65,
+      "op": "add",
+      "time": "2026-11-01T11:05:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 20",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-19",
+        "name": "pip rail right 20",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          108.531
+        ],
+        "position": [
+          -937.052,
+          -755.144,
+          55.762
+        ],
+        "rotation_y": 94.979,
+        "rotation_x": -15.111,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 66,
+      "op": "add",
+      "time": "2026-11-01T11:06:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 21",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-20",
+        "name": "pip rail left 21",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          100.224
+        ],
+        "position": [
+          -849.052,
+          -695.703,
+          49.916
+        ],
+        "rotation_y": 91.673,
+        "rotation_x": -27.398,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 67,
+      "op": "add",
+      "time": "2026-11-01T11:07:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 21",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-20",
+        "name": "pip rail right 21",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          100.224
+        ],
+        "position": [
+          -838.004,
+          -717.009,
+          49.916
+        ],
+        "rotation_y": 91.673,
+        "rotation_x": -27.398,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 68,
+      "op": "add",
+      "time": "2026-11-01T11:08:00.000Z",
+      "author": "jimmy",
+      "note": "add pip support 21",
+      "object": {
+        "uuid": "adventure-park-v11-pip-post-20",
+        "name": "pip support 21",
+        "description": "steel support",
+        "type": "cylinder",
+        "dimensions": [
+          6,
+          51.215
+        ],
+        "position": [
+          -888,
+          -729.415,
+          25.608
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-pip",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 69,
+      "op": "add",
+      "time": "2026-11-01T11:09:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 22",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-21",
+        "name": "pip rail left 22",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          91.151
+        ],
+        "position": [
+          -772.276,
+          -644.537,
+          49.916
+        ],
+        "rotation_y": 87.849,
+        "rotation_x": -40.581,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 70,
+      "op": "add",
+      "time": "2026-11-01T11:10:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 22",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-21",
+        "name": "pip rail right 22",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          91.151
+        ],
+        "position": [
+          -756.657,
+          -662.759,
+          49.916
+        ],
+        "rotation_y": 87.849,
+        "rotation_x": -40.581,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 71,
+      "op": "add",
+      "time": "2026-11-01T11:11:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 23",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-22",
+        "name": "pip rail left 23",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          82.014
+        ],
+        "position": [
+          -718.903,
+          -582.958,
+          55.762
+        ],
+        "rotation_y": 77.906,
+        "rotation_x": -58.049,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 72,
+      "op": "add",
+      "time": "2026-11-01T11:12:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 23",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-22",
+        "name": "pip rail right 23",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          82.014
+        ],
+        "position": [
+          -698.413,
+          -595.454,
+          55.762
+        ],
+        "rotation_y": 77.906,
+        "rotation_x": -58.049,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 73,
+      "op": "add",
+      "time": "2026-11-01T11:13:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail left 24",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railL-23",
+        "name": "pip rail left 24",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          76.89
+        ],
+        "position": [
+          -691.469,
+          -514.768,
+          66.154
+        ],
+        "rotation_y": 52.864,
+        "rotation_x": -75.412,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 74,
+      "op": "add",
+      "time": "2026-11-01T11:14:00.000Z",
+      "author": "jimmy",
+      "note": "add pip rail right 24",
+      "object": {
+        "uuid": "adventure-park-v11-pip-railR-23",
+        "name": "pip rail right 24",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          76.89
+        ],
+        "position": [
+          -667.969,
+          -519.644,
+          66.154
+        ],
+        "rotation_y": 52.864,
+        "rotation_x": -75.412,
+        "parent": "adventure-park-v11-pip",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 75,
+      "op": "add",
+      "time": "2026-11-01T11:15:00.000Z",
+      "author": "jimmy",
+      "note": "add Pip car 1",
+      "object": {
+        "uuid": "adventure-park-v11-pip-car-1",
+        "name": "Pip car 1",
+        "description": "a seat car, five seats",
+        "type": "box",
+        "dimensions": [
+          72,
+          36,
+          30
+        ],
+        "position": [
+          -672,
+          -480,
+          96
+        ],
+        "rotation_y": -8.95,
+        "rotation_z": 90,
+        "parent": "adventure-park-v11-pip",
+        "material": "car"
+      }
+    },
+    {
+      "seq": 76,
+      "op": "add",
+      "time": "2026-11-01T11:16:00.000Z",
+      "author": "jimmy",
+      "note": "add Pip car 2",
+      "object": {
+        "uuid": "adventure-park-v11-pip-car-2",
+        "name": "Pip car 2",
+        "description": "a seat car, five seats",
+        "type": "box",
+        "dimensions": [
+          72,
+          36,
+          30
+        ],
+        "position": [
+          -1378.754,
+          -701.759,
+          119.095
+        ],
+        "rotation_y": 0.961,
+        "rotation_z": -29.247,
+        "parent": "adventure-park-v11-pip",
+        "material": "car"
+      }
+    },
+    {
+      "seq": 77,
+      "op": "add",
+      "time": "2026-11-01T11:17:00.000Z",
+      "author": "jimmy",
+      "note": "add Pip station",
+      "object": {
+        "uuid": "adventure-park-v11-pip-station",
+        "name": "Pip station",
+        "description": "low station beside the oval",
+        "type": "box",
+        "dimensions": [
+          192,
+          120,
+          120
+        ],
+        "position": [
+          -1104,
+          -888,
+          60
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-pip",
+        "material": "cream"
+      }
+    },
+    {
+      "seq": 78,
+      "op": "add",
+      "time": "2026-11-01T11:18:00.000Z",
+      "author": "jimmy",
+      "note": "add Pip station roof",
+      "object": {
+        "uuid": "adventure-park-v11-pip-roof",
+        "name": "Pip station roof",
+        "description": "coral roof",
+        "type": "box",
+        "dimensions": [
+          216,
+          144,
+          12
+        ],
+        "position": [
+          -1104,
+          -888,
+          126
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-pip",
+        "material": "roof"
+      }
+    },
+    {
+      "seq": 79,
+      "op": "add",
+      "time": "2026-11-01T11:19:00.000Z",
+      "author": "jimmy",
+      "note": "add Bumble River water",
+      "object": {
+        "uuid": "adventure-park-v11-bumble-water",
+        "name": "Bumble River water",
+        "description": "mint water, 1.5 ft deep",
+        "type": "box",
+        "dimensions": [
+          912,
+          264,
+          18
+        ],
+        "position": [
+          -816,
+          696,
+          9
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-bumble",
+        "material": "water"
+      }
+    },
+    {
+      "seq": 80,
+      "op": "add",
+      "time": "2026-11-01T11:20:00.000Z",
+      "author": "jimmy",
+      "note": "add Bumble station",
+      "object": {
+        "uuid": "adventure-park-v11-bumble-station",
+        "name": "Bumble station",
+        "description": "boarding house on the bank",
+        "type": "box",
+        "dimensions": [
+          144,
+          96,
+          108
+        ],
+        "position": [
+          -816,
+          456,
+          54
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-bumble",
+        "material": "cream"
+      }
+    },
+    {
+      "seq": 81,
+      "op": "add",
+      "time": "2026-11-01T11:21:00.000Z",
+      "author": "jimmy",
+      "note": "add Teacup platform",
+      "object": {
+        "uuid": "adventure-park-v11-tea-platform",
+        "name": "Teacup platform",
+        "description": "turntable, 1 ft high",
+        "type": "cylinder",
+        "dimensions": [
+          240,
+          12
+        ],
+        "position": [
+          888,
+          -576,
+          6
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-teacups",
+        "material": "stone"
+      }
+    },
+    {
+      "seq": 82,
+      "op": "add",
+      "time": "2026-11-01T11:22:00.000Z",
+      "author": "jimmy",
+      "note": "add Teacup centre pole",
+      "object": {
+        "uuid": "adventure-park-v11-tea-pole",
+        "name": "Teacup centre pole",
+        "description": "the spindle the cups turn on",
+        "type": "cylinder",
+        "dimensions": [
+          6,
+          96
+        ],
+        "position": [
+          888,
+          -576,
+          48
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-teacups",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 83,
+      "op": "add",
+      "time": "2026-11-01T11:23:00.000Z",
+      "author": "jimmy",
+      "note": "add Teacup roof",
+      "object": {
+        "uuid": "adventure-park-v11-tea-roof",
+        "name": "Teacup roof",
+        "description": "coral canopy",
+        "type": "cone",
+        "dimensions": [
+          168,
+          60
+        ],
+        "position": [
+          888,
+          -576,
+          120
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-teacups",
+        "material": "roof"
+      }
+    },
+    {
+      "seq": 84,
+      "op": "add",
+      "time": "2026-11-01T11:24:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 1",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-0",
+        "name": "thunder rail left 1",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          86.943
+        ],
+        "position": [
+          385.409,
+          519.662,
+          87.556
+        ],
+        "rotation_y": 23.69,
+        "rotation_x": 6.457,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 85,
+      "op": "add",
+      "time": "2026-11-01T11:25:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 1",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-0",
+        "name": "thunder rail right 1",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          86.943
+        ],
+        "position": [
+          378.902,
+          496.561,
+          87.556
+        ],
+        "rotation_y": 23.69,
+        "rotation_x": 6.457,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 86,
+      "op": "add",
+      "time": "2026-11-01T11:26:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder support 1",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-post-0",
+        "name": "thunder support 1",
+        "description": "steel support",
+        "type": "cylinder",
+        "dimensions": [
+          6,
+          48
+        ],
+        "position": [
+          364.8,
+          513,
+          24
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-thunder",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 87,
+      "op": "add",
+      "time": "2026-11-01T11:27:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 2",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-1",
+        "name": "thunder rail left 2",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          124.127
+        ],
+        "position": [
+          423.018,
+          517.608,
+          184
+        ],
+        "rotation_y": 23.46,
+        "rotation_x": -2.257,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 88,
+      "op": "add",
+      "time": "2026-11-01T11:28:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 2",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-1",
+        "name": "thunder rail right 2",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          124.127
+        ],
+        "position": [
+          425.382,
+          493.725,
+          184
+        ],
+        "rotation_y": 23.46,
+        "rotation_x": -2.257,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 89,
+      "op": "add",
+      "time": "2026-11-01T11:29:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 3",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-2",
+        "name": "thunder rail left 3",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          128.479
+        ],
+        "position": [
+          471.626,
+          522.494,
+          300.444
+        ],
+        "rotation_y": 21.912,
+        "rotation_x": -2.181,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 90,
+      "op": "add",
+      "time": "2026-11-01T11:30:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 3",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-2",
+        "name": "thunder rail right 3",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          128.479
+        ],
+        "position": [
+          474.063,
+          498.618,
+          300.444
+        ],
+        "rotation_y": 21.912,
+        "rotation_x": -2.181,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 91,
+      "op": "add",
+      "time": "2026-11-01T11:31:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 4",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-3",
+        "name": "thunder rail left 4",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          113.719
+        ],
+        "position": [
+          511.805,
+          525,
+          414.844
+        ],
+        "rotation_y": 15.301,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 92,
+      "op": "add",
+      "time": "2026-11-01T11:32:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 4",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-3",
+        "name": "thunder rail right 4",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          113.719
+        ],
+        "position": [
+          511.805,
+          501,
+          414.844
+        ],
+        "rotation_y": 15.301,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 93,
+      "op": "add",
+      "time": "2026-11-01T11:33:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 5",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-4",
+        "name": "thunder rail left 5",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          131.942
+        ],
+        "position": [
+          541.092,
+          525,
+          534.094
+        ],
+        "rotation_y": 12.504,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 94,
+      "op": "add",
+      "time": "2026-11-01T11:34:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 5",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-4",
+        "name": "thunder rail right 5",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          131.942
+        ],
+        "position": [
+          541.092,
+          501,
+          534.094
+        ],
+        "rotation_y": 12.504,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 95,
+      "op": "add",
+      "time": "2026-11-01T11:35:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 6",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-5",
+        "name": "thunder rail left 6",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          103.694
+        ],
+        "position": [
+          569.864,
+          525,
+          648.281
+        ],
+        "rotation_y": 16.228,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 96,
+      "op": "add",
+      "time": "2026-11-01T11:36:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 6",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-5",
+        "name": "thunder rail right 6",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          103.694
+        ],
+        "position": [
+          569.864,
+          501,
+          648.281
+        ],
+        "rotation_y": 16.228,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 97,
+      "op": "add",
+      "time": "2026-11-01T11:37:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder support 6",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-post-5",
+        "name": "thunder support 6",
+        "description": "steel support",
+        "type": "cylinder",
+        "dimensions": [
+          6,
+          598.5
+        ],
+        "position": [
+          555.375,
+          513,
+          299.25
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-thunder",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 98,
+      "op": "add",
+      "time": "2026-11-01T11:38:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 7",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-6",
+        "name": "thunder rail left 7",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          38.179
+        ],
+        "position": [
+          599.977,
+          525,
+          709.031
+        ],
+        "rotation_y": 54.928,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 99,
+      "op": "add",
+      "time": "2026-11-01T11:39:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 7",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-6",
+        "name": "thunder rail right 7",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          38.179
+        ],
+        "position": [
+          599.977,
+          501,
+          709.031
+        ],
+        "rotation_y": 54.928,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 100,
+      "op": "add",
+      "time": "2026-11-01T11:40:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 8",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-7",
+        "name": "thunder rail left 8",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          60.684
+        ],
+        "position": [
+          626.611,
+          525.375,
+          691.889
+        ],
+        "rotation_y": 157.904,
+        "rotation_x": -0.721,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 101,
+      "op": "add",
+      "time": "2026-11-01T11:41:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 8",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-7",
+        "name": "thunder rail right 8",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          60.684
+        ],
+        "position": [
+          627.414,
+          501.389,
+          691.889
+        ],
+        "rotation_y": 157.904,
+        "rotation_x": -0.721,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 102,
+      "op": "add",
+      "time": "2026-11-01T11:42:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 9",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-8",
+        "name": "thunder rail left 9",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          110.888
+        ],
+        "position": [
+          649.645,
+          526.575,
+          609.667
+        ],
+        "rotation_y": 167.441,
+        "rotation_x": -0.868,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 103,
+      "op": "add",
+      "time": "2026-11-01T11:43:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 9",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-8",
+        "name": "thunder rail right 9",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          110.888
+        ],
+        "position": [
+          651.314,
+          502.633,
+          609.667
+        ],
+        "rotation_y": 167.441,
+        "rotation_x": -0.868,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 104,
+      "op": "add",
+      "time": "2026-11-01T11:44:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 10",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-9",
+        "name": "thunder rail left 10",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          137.823
+        ],
+        "position": [
+          674.144,
+          528.257,
+          487.778
+        ],
+        "rotation_y": 169.615,
+        "rotation_x": -0.699,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 105,
+      "op": "add",
+      "time": "2026-11-01T11:45:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 10",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-9",
+        "name": "thunder rail right 10",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          137.823
+        ],
+        "position": [
+          675.764,
+          504.312,
+          487.778
+        ],
+        "rotation_y": 169.615,
+        "rotation_x": -0.699,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 106,
+      "op": "add",
+      "time": "2026-11-01T11:46:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 11",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-10",
+        "name": "thunder rail left 11",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          140.471
+        ],
+        "position": [
+          699.521,
+          529.501,
+          350.889
+        ],
+        "rotation_y": 169.738,
+        "rotation_x": -0.312,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 107,
+      "op": "add",
+      "time": "2026-11-01T11:47:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 11",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-10",
+        "name": "thunder rail right 11",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          140.471
+        ],
+        "position": [
+          700.254,
+          505.513,
+          350.889
+        ],
+        "rotation_y": 169.738,
+        "rotation_x": -0.312,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 108,
+      "op": "add",
+      "time": "2026-11-01T11:48:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder support 11",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-post-10",
+        "name": "thunder support 11",
+        "description": "steel support",
+        "type": "cylinder",
+        "dimensions": [
+          6,
+          420
+        ],
+        "position": [
+          687.375,
+          517.125,
+          210
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-thunder",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 109,
+      "op": "add",
+      "time": "2026-11-01T11:49:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 12",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-11",
+        "name": "thunder rail left 12",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          118.814
+        ],
+        "position": [
+          725.249,
+          529.343,
+          223.667
+        ],
+        "rotation_y": 168.021,
+        "rotation_x": 0.516,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 110,
+      "op": "add",
+      "time": "2026-11-01T11:50:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 12",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-11",
+        "name": "thunder rail right 12",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          118.814
+        ],
+        "position": [
+          724.209,
+          505.365,
+          223.667
+        ],
+        "rotation_y": 168.021,
+        "rotation_x": 0.516,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 111,
+      "op": "add",
+      "time": "2026-11-01T11:51:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 13",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-12",
+        "name": "thunder rail left 13",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          73.595
+        ],
+        "position": [
+          750.835,
+          526.757,
+          130.778
+        ],
+        "rotation_y": 161.153,
+        "rotation_x": 2.975,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 112,
+      "op": "add",
+      "time": "2026-11-01T11:52:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 13",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-12",
+        "name": "thunder rail right 13",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          73.595
+        ],
+        "position": [
+          747.023,
+          503.062,
+          130.778
+        ],
+        "rotation_y": 161.153,
+        "rotation_x": 2.975,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 113,
+      "op": "add",
+      "time": "2026-11-01T11:53:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 14",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-13",
+        "name": "thunder rail left 14",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          89.521
+        ],
+        "position": [
+          797.17,
+          509.462,
+          124.5
+        ],
+        "rotation_y": 47.726,
+        "rotation_x": 18.817,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 114,
+      "op": "add",
+      "time": "2026-11-01T11:54:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 14",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-13",
+        "name": "thunder rail right 14",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          89.521
+        ],
+        "position": [
+          787.13,
+          487.663,
+          124.5
+        ],
+        "rotation_y": 47.726,
+        "rotation_x": 18.817,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 115,
+      "op": "add",
+      "time": "2026-11-01T11:55:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 15",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-14",
+        "name": "thunder rail left 15",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          136.021
+        ],
+        "position": [
+          863.817,
+          476.14,
+          208.5
+        ],
+        "rotation_y": 31.978,
+        "rotation_x": 15.839,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 116,
+      "op": "add",
+      "time": "2026-11-01T11:56:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 15",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-14",
+        "name": "thunder rail right 15",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          136.021
+        ],
+        "position": [
+          852.483,
+          454.985,
+          208.5
+        ],
+        "rotation_y": 31.978,
+        "rotation_x": 15.839,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 117,
+      "op": "add",
+      "time": "2026-11-01T11:57:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 16",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-15",
+        "name": "thunder rail left 16",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          91.905
+        ],
+        "position": [
+          929.606,
+          443.229,
+          234.222
+        ],
+        "rotation_y": 133.139,
+        "rotation_x": 18.613,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 118,
+      "op": "add",
+      "time": "2026-11-01T11:58:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 16",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-15",
+        "name": "thunder rail right 16",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          91.905
+        ],
+        "position": [
+          919.549,
+          421.438,
+          234.222
+        ],
+        "rotation_y": 133.139,
+        "rotation_x": 18.613,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 119,
+      "op": "add",
+      "time": "2026-11-01T11:59:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder support 16",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-post-15",
+        "name": "thunder support 16",
+        "description": "steel support",
+        "type": "cylinder",
+        "dimensions": [
+          6,
+          264
+        ],
+        "position": [
+          892.8,
+          447,
+          132
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-thunder",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 120,
+      "op": "add",
+      "time": "2026-11-01T12:00:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 17",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-16",
+        "name": "thunder rail left 17",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          125.686
+        ],
+        "position": [
+          996.388,
+          414.088,
+          154.667
+        ],
+        "rotation_y": 144.547,
+        "rotation_x": 13.496,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 121,
+      "op": "add",
+      "time": "2026-11-01T12:01:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 17",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-16",
+        "name": "thunder rail right 17",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          125.686
+        ],
+        "position": [
+          987.212,
+          391.912,
+          154.667
+        ],
+        "rotation_y": 144.547,
+        "rotation_x": 13.496,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 122,
+      "op": "add",
+      "time": "2026-11-01T12:02:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 18",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-17",
+        "name": "thunder rail left 18",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          71.936
+        ],
+        "position": [
+          1060.398,
+          396.588,
+          88.444
+        ],
+        "rotation_y": 117.361,
+        "rotation_x": 5.851,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 123,
+      "op": "add",
+      "time": "2026-11-01T12:03:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 18",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-17",
+        "name": "thunder rail right 18",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          71.936
+        ],
+        "position": [
+          1057.647,
+          372.746,
+          88.444
+        ],
+        "rotation_y": 117.361,
+        "rotation_x": 5.851,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 124,
+      "op": "add",
+      "time": "2026-11-01T12:04:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 19",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-18",
+        "name": "thunder rail left 19",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          78.02
+        ],
+        "position": [
+          1105.397,
+          400.071,
+          105
+        ],
+        "rotation_y": 30.201,
+        "rotation_x": -11.822,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 125,
+      "op": "add",
+      "time": "2026-11-01T12:05:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 19",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-18",
+        "name": "thunder rail right 19",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          78.02
+        ],
+        "position": [
+          1114.617,
+          377.913,
+          105
+        ],
+        "rotation_y": 30.201,
+        "rotation_x": -11.822,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 126,
+      "op": "add",
+      "time": "2026-11-01T12:06:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 20",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-19",
+        "name": "thunder rail left 20",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          125.274
+        ],
+        "position": [
+          1138.223,
+          420.732,
+          196.5
+        ],
+        "rotation_y": 16.101,
+        "rotation_x": -13.569,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 127,
+      "op": "add",
+      "time": "2026-11-01T12:07:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 20",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-19",
+        "name": "thunder rail right 20",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          125.274
+        ],
+        "position": [
+          1153.978,
+          402.627,
+          196.5
+        ],
+        "rotation_y": 16.101,
+        "rotation_x": -13.569,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 128,
+      "op": "add",
+      "time": "2026-11-01T12:08:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 21",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-20",
+        "name": "thunder rail left 21",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          137.018
+        ],
+        "position": [
+          1168.832,
+          453.564,
+          318.75
+        ],
+        "rotation_y": 13.53,
+        "rotation_x": -16.844,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 129,
+      "op": "add",
+      "time": "2026-11-01T12:09:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 21",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-20",
+        "name": "thunder rail right 21",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          137.018
+        ],
+        "position": [
+          1187.823,
+          438.889,
+          318.75
+        ],
+        "rotation_y": 13.53,
+        "rotation_x": -16.844,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 130,
+      "op": "add",
+      "time": "2026-11-01T12:10:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder support 21",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-post-20",
+        "name": "thunder support 21",
+        "description": "steel support",
+        "type": "cylinder",
+        "dimensions": [
+          6,
+          255
+        ],
+        "position": [
+          1162.988,
+          426.375,
+          127.5
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-thunder",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 131,
+      "op": "add",
+      "time": "2026-11-01T12:11:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 22",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-21",
+        "name": "thunder rail left 22",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          112.056
+        ],
+        "position": [
+          1198.039,
+          495.869,
+          431.25
+        ],
+        "rotation_y": 16.636,
+        "rotation_x": -24.755,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 132,
+      "op": "add",
+      "time": "2026-11-01T12:12:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 22",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-21",
+        "name": "thunder rail right 22",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          112.056
+        ],
+        "position": [
+          1218.428,
+          483.209,
+          431.25
+        ],
+        "rotation_y": 16.636,
+        "rotation_x": -24.755,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 133,
+      "op": "add",
+      "time": "2026-11-01T12:13:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 23",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-22",
+        "name": "thunder rail left 23",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          124.648
+        ],
+        "position": [
+          1233.66,
+          557.869,
+          523.556
+        ],
+        "rotation_y": 26.154,
+        "rotation_x": -38.869,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 134,
+      "op": "add",
+      "time": "2026-11-01T12:14:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 23",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-22",
+        "name": "thunder rail right 23",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          124.648
+        ],
+        "position": [
+          1254.717,
+          546.353,
+          523.556
+        ],
+        "rotation_y": 26.154,
+        "rotation_x": -38.869,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 135,
+      "op": "add",
+      "time": "2026-11-01T12:15:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 24",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-23",
+        "name": "thunder rail left 24",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          116.174
+        ],
+        "position": [
+          1274.074,
+          642.323,
+          596
+        ],
+        "rotation_y": 34.095,
+        "rotation_x": -53.089,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 136,
+      "op": "add",
+      "time": "2026-11-01T12:16:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 24",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-23",
+        "name": "thunder rail right 24",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          116.174
+        ],
+        "position": [
+          1296.193,
+          633.01,
+          596
+        ],
+        "rotation_y": 34.095,
+        "rotation_x": -53.089,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 137,
+      "op": "add",
+      "time": "2026-11-01T12:17:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 25",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-24",
+        "name": "thunder rail left 25",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          94.456
+        ],
+        "position": [
+          1301.443,
+          732.73,
+          624.444
+        ],
+        "rotation_y": 92.974,
+        "rotation_x": -79.549,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 138,
+      "op": "add",
+      "time": "2026-11-01T12:18:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 25",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-24",
+        "name": "thunder rail right 25",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          94.456
+        ],
+        "position": [
+          1325.046,
+          728.382,
+          624.444
+        ],
+        "rotation_y": 92.974,
+        "rotation_x": -79.549,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 139,
+      "op": "add",
+      "time": "2026-11-01T12:19:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 26",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-25",
+        "name": "thunder rail left 26",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          96.729
+        ],
+        "position": [
+          1306.004,
+          811.014,
+          591.188
+        ],
+        "rotation_y": -173.278,
+        "rotation_x": -46.911,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 140,
+      "op": "add",
+      "time": "2026-11-01T12:20:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 26",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-25",
+        "name": "thunder rail right 26",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          96.729
+        ],
+        "position": [
+          1329.862,
+          813.626,
+          591.188
+        ],
+        "rotation_y": -173.278,
+        "rotation_x": -46.911,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 141,
+      "op": "add",
+      "time": "2026-11-01T12:21:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder support 26",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-post-25",
+        "name": "thunder support 26",
+        "description": "steel support",
+        "type": "cylinder",
+        "dimensions": [
+          6,
+          624
+        ],
+        "position": [
+          1321.8,
+          777,
+          312
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-thunder",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 142,
+      "op": "add",
+      "time": "2026-11-01T12:22:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 27",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-26",
+        "name": "thunder rail left 27",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          135.233
+        ],
+        "position": [
+          1291.96,
+          881.201,
+          502.688
+        ],
+        "rotation_y": -169.252,
+        "rotation_x": -33.041,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 143,
+      "op": "add",
+      "time": "2026-11-01T12:23:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 27",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-26",
+        "name": "thunder rail right 27",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          135.233
+        ],
+        "position": [
+          1315.031,
+          887.815,
+          502.688
+        ],
+        "rotation_y": -169.252,
+        "rotation_x": -33.041,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 144,
+      "op": "add",
+      "time": "2026-11-01T12:24:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 28",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-27",
+        "name": "thunder rail left 28",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          140.297
+        ],
+        "position": [
+          1266.32,
+          950.083,
+          387.563
+        ],
+        "rotation_y": -165.18,
+        "rotation_x": -28.781,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 145,
+      "op": "add",
+      "time": "2026-11-01T12:25:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 28",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-27",
+        "name": "thunder rail right 28",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          140.297
+        ],
+        "position": [
+          1288.077,
+          960.214,
+          387.563
+        ],
+        "rotation_y": -165.18,
+        "rotation_x": -28.781,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 146,
+      "op": "add",
+      "time": "2026-11-01T12:26:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 29",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-28",
+        "name": "thunder rail left 29",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          109.424
+        ],
+        "position": [
+          1232.502,
+          1007.807,
+          284.063
+        ],
+        "rotation_y": -156.307,
+        "rotation_x": -28.42,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 147,
+      "op": "add",
+      "time": "2026-11-01T12:27:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 29",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-28",
+        "name": "thunder rail right 29",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          109.424
+        ],
+        "position": [
+          1251.77,
+          1022.115,
+          284.063
+        ],
+        "rotation_y": -156.307,
+        "rotation_x": -28.42,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 148,
+      "op": "add",
+      "time": "2026-11-01T12:28:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 30",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-29",
+        "name": "thunder rail left 30",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          104.881
+        ],
+        "position": [
+          1181.559,
+          1052.854,
+          207.556
+        ],
+        "rotation_y": -132.966,
+        "rotation_x": -24.804,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 149,
+      "op": "add",
+      "time": "2026-11-01T12:29:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 30",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-29",
+        "name": "thunder rail right 30",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          104.881
+        ],
+        "position": [
+          1194.375,
+          1073.146,
+          207.556
+        ],
+        "rotation_y": -132.966,
+        "rotation_x": -24.804,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 150,
+      "op": "add",
+      "time": "2026-11-01T12:30:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 31",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-30",
+        "name": "thunder rail left 31",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          93.155
+        ],
+        "position": [
+          1107.938,
+          1084.389,
+          158.667
+        ],
+        "rotation_y": -111.305,
+        "rotation_x": -13.66,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 151,
+      "op": "add",
+      "time": "2026-11-01T12:31:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 31",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-30",
+        "name": "thunder rail right 31",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          93.155
+        ],
+        "position": [
+          1113.996,
+          1107.611,
+          158.667
+        ],
+        "rotation_y": -111.305,
+        "rotation_x": -13.66,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 152,
+      "op": "add",
+      "time": "2026-11-01T12:32:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder support 31",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-post-30",
+        "name": "thunder support 31",
+        "description": "steel support",
+        "type": "cylinder",
+        "dimensions": [
+          6,
+          175.111
+        ],
+        "position": [
+          1153.133,
+          1085,
+          87.556
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-thunder",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 153,
+      "op": "add",
+      "time": "2026-11-01T12:33:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 32",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-31",
+        "name": "thunder rail left 32",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          77.021
+        ],
+        "position": [
+          1030.3,
+          1095,
+          143.111
+        ],
+        "rotation_y": -88.677,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 154,
+      "op": "add",
+      "time": "2026-11-01T12:34:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 32",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-31",
+        "name": "thunder rail right 32",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          77.021
+        ],
+        "position": [
+          1030.3,
+          1119,
+          143.111
+        ],
+        "rotation_y": -88.677,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 155,
+      "op": "add",
+      "time": "2026-11-01T12:35:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 33",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-32",
+        "name": "thunder rail left 33",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          92.014
+        ],
+        "position": [
+          966.437,
+          1081.515,
+          175.111
+        ],
+        "rotation_y": -44.484,
+        "rotation_x": 18.59,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 156,
+      "op": "add",
+      "time": "2026-11-01T12:36:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 33",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-32",
+        "name": "thunder rail right 33",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          92.014
+        ],
+        "position": [
+          956.052,
+          1103.152,
+          175.111
+        ],
+        "rotation_y": -44.484,
+        "rotation_x": 18.59,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 157,
+      "op": "add",
+      "time": "2026-11-01T12:37:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 34",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-33",
+        "name": "thunder rail left 34",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          122.125
+        ],
+        "position": [
+          912.086,
+          1043.32,
+          254.667
+        ],
+        "rotation_y": -29.032,
+        "rotation_x": 24.856,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 158,
+      "op": "add",
+      "time": "2026-11-01T12:38:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 34",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-33",
+        "name": "thunder rail right 34",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          122.125
+        ],
+        "position": [
+          895.514,
+          1060.68,
+          254.667
+        ],
+        "rotation_y": -29.032,
+        "rotation_x": 24.856,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 159,
+      "op": "add",
+      "time": "2026-11-01T12:39:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 35",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-34",
+        "name": "thunder rail left 35",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          91.556
+        ],
+        "position": [
+          860.442,
+          992.284,
+          331.556
+        ],
+        "rotation_y": -41.376,
+        "rotation_x": 34.102,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 160,
+      "op": "add",
+      "time": "2026-11-01T12:40:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 35",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-34",
+        "name": "thunder rail right 35",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          91.556
+        ],
+        "position": [
+          843.269,
+          1009.049,
+          331.556
+        ],
+        "rotation_y": -41.376,
+        "rotation_x": 34.102,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 161,
+      "op": "add",
+      "time": "2026-11-01T12:41:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 36",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-35",
+        "name": "thunder rail left 36",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          110.934
+        ],
+        "position": [
+          801.38,
+          931.58,
+          333.75
+        ],
+        "rotation_y": -127.645,
+        "rotation_x": 39.208,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 162,
+      "op": "add",
+      "time": "2026-11-01T12:42:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 36",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-35",
+        "name": "thunder rail right 36",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          110.934
+        ],
+        "position": [
+          784.158,
+          948.295,
+          333.75
+        ],
+        "rotation_y": -127.645,
+        "rotation_x": 39.208,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 163,
+      "op": "add",
+      "time": "2026-11-01T12:43:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder support 36",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-post-35",
+        "name": "thunder support 36",
+        "description": "steel support",
+        "type": "cylinder",
+        "dimensions": [
+          6,
+          360
+        ],
+        "position": [
+          826.8,
+          975,
+          180
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-thunder",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 164,
+      "op": "add",
+      "time": "2026-11-01T12:44:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 37",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-36",
+        "name": "thunder rail left 37",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          127.627
+        ],
+        "position": [
+          735.114,
+          865.314,
+          261.75
+        ],
+        "rotation_y": -145.055,
+        "rotation_x": 29,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 165,
+      "op": "add",
+      "time": "2026-11-01T12:45:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 37",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-36",
+        "name": "thunder rail right 37",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          127.627
+        ],
+        "position": [
+          718.424,
+          882.561,
+          261.75
+        ],
+        "rotation_y": -145.055,
+        "rotation_x": 29,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 166,
+      "op": "add",
+      "time": "2026-11-01T12:46:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 38",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-37",
+        "name": "thunder rail left 38",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          93.42
+        ],
+        "position": [
+          667.926,
+          813.088,
+          189.375
+        ],
+        "rotation_y": -128.897,
+        "rotation_x": 24.802,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 167,
+      "op": "add",
+      "time": "2026-11-01T12:47:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 38",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-37",
+        "name": "thunder rail right 38",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          93.42
+        ],
+        "position": [
+          655.674,
+          833.725,
+          189.375
+        ],
+        "rotation_y": -128.897,
+        "rotation_x": 24.802,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 168,
+      "op": "add",
+      "time": "2026-11-01T12:48:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 39",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-38",
+        "name": "thunder rail left 39",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          83.081
+        ],
+        "position": [
+          600.317,
+          779.289,
+          141.375
+        ],
+        "rotation_y": -122.932,
+        "rotation_x": 18.828,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 169,
+      "op": "add",
+      "time": "2026-11-01T12:49:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 39",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-38",
+        "name": "thunder rail right 39",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          83.081
+        ],
+        "position": [
+          591.283,
+          801.524,
+          141.375
+        ],
+        "rotation_y": -122.932,
+        "rotation_x": 18.828,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 170,
+      "op": "add",
+      "time": "2026-11-01T12:50:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 40",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-39",
+        "name": "thunder rail left 40",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          79.803
+        ],
+        "position": [
+          530.157,
+          758.028,
+          102.375
+        ],
+        "rotation_y": -116.687,
+        "rotation_x": 10.423,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 171,
+      "op": "add",
+      "time": "2026-11-01T12:51:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 40",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-39",
+        "name": "thunder rail right 40",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          79.803
+        ],
+        "position": [
+          525.318,
+          781.535,
+          102.375
+        ],
+        "rotation_y": -116.687,
+        "rotation_x": 10.423,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 172,
+      "op": "add",
+      "time": "2026-11-01T12:52:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 41",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-40",
+        "name": "thunder rail left 41",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          69.178
+        ],
+        "position": [
+          465.186,
+          741.787,
+          72.375
+        ],
+        "rotation_y": -111.801,
+        "rotation_x": 15.565,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 173,
+      "op": "add",
+      "time": "2026-11-01T12:53:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 41",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-40",
+        "name": "thunder rail right 41",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          69.178
+        ],
+        "position": [
+          458.289,
+          764.775,
+          72.375
+        ],
+        "rotation_y": -111.801,
+        "rotation_x": 15.565,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 174,
+      "op": "add",
+      "time": "2026-11-01T12:54:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder support 41",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-post-40",
+        "name": "thunder support 41",
+        "description": "steel support",
+        "type": "cylinder",
+        "dimensions": [
+          6,
+          84.75
+        ],
+        "position": [
+          492.675,
+          762.563,
+          42.375
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-thunder",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 175,
+      "op": "add",
+      "time": "2026-11-01T12:55:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 42",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-41",
+        "name": "thunder rail left 42",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          60.602
+        ],
+        "position": [
+          418.865,
+          714.068,
+          55.125
+        ],
+        "rotation_y": -103.299,
+        "rotation_x": 45.619,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 176,
+      "op": "add",
+      "time": "2026-11-01T12:56:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 42",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-41",
+        "name": "thunder rail right 42",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          60.602
+        ],
+        "position": [
+          401.485,
+          730.62,
+          55.125
+        ],
+        "rotation_y": -103.299,
+        "rotation_x": 45.619,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 177,
+      "op": "add",
+      "time": "2026-11-01T12:57:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 43",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-42",
+        "name": "thunder rail left 43",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          60.981
+        ],
+        "position": [
+          388.141,
+          667.97,
+          49.125
+        ],
+        "rotation_y": -95.194,
+        "rotation_x": 65.95,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 178,
+      "op": "add",
+      "time": "2026-11-01T12:58:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 43",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-42",
+        "name": "thunder rail right 43",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          60.981
+        ],
+        "position": [
+          366.209,
+          677.717,
+          49.125
+        ],
+        "rotation_y": -95.194,
+        "rotation_x": 65.95,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 179,
+      "op": "add",
+      "time": "2026-11-01T12:59:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 44",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-43",
+        "name": "thunder rail left 44",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          75.988
+        ],
+        "position": [
+          370.44,
+          606.879,
+          37.875
+        ],
+        "rotation_y": -148.57,
+        "rotation_x": 71.802,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 180,
+      "op": "add",
+      "time": "2026-11-01T13:00:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 44",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-43",
+        "name": "thunder rail right 44",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          75.988
+        ],
+        "position": [
+          346.785,
+          610.934,
+          37.875
+        ],
+        "rotation_y": -148.57,
+        "rotation_x": 71.802,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 181,
+      "op": "add",
+      "time": "2026-11-01T13:01:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail left 45",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railL-44",
+        "name": "thunder rail left 45",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          64.349
+        ],
+        "position": [
+          370.364,
+          545.338,
+          37.875
+        ],
+        "rotation_y": 31.43,
+        "rotation_x": 68.358,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 182,
+      "op": "add",
+      "time": "2026-11-01T13:02:00.000Z",
+      "author": "jimmy",
+      "note": "add thunder rail right 45",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-railR-44",
+        "name": "thunder rail right 45",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2.4,
+          64.349
+        ],
+        "position": [
+          346.861,
+          540.475,
+          37.875
+        ],
+        "rotation_y": 31.43,
+        "rotation_x": 68.358,
+        "parent": "adventure-park-v11-thunder",
+        "material": "track"
+      }
+    },
+    {
+      "seq": 183,
+      "op": "add",
+      "time": "2026-11-01T13:03:00.000Z",
+      "author": "jimmy",
+      "note": "add Thunder car 1",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-car-1",
+        "name": "Thunder car 1",
+        "description": "a seat car, five seats",
+        "type": "box",
+        "dimensions": [
+          72,
+          36,
+          30
+        ],
+        "position": [
+          364.8,
+          513,
+          72
+        ],
+        "rotation_y": -49.678,
+        "rotation_z": -55.842,
+        "parent": "adventure-park-v11-thunder",
+        "material": "car"
+      }
+    },
+    {
+      "seq": 184,
+      "op": "add",
+      "time": "2026-11-01T13:04:00.000Z",
+      "author": "jimmy",
+      "note": "add Thunder car 2",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-car-2",
+        "name": "Thunder car 2",
+        "description": "a seat car, five seats",
+        "type": "box",
+        "dimensions": [
+          72,
+          36,
+          30
+        ],
+        "position": [
+          695.753,
+          517.517,
+          397.102
+        ],
+        "rotation_y": 79.964,
+        "rotation_z": 2.437,
+        "parent": "adventure-park-v11-thunder",
+        "material": "car"
+      }
+    },
+    {
+      "seq": 185,
+      "op": "add",
+      "time": "2026-11-01T13:05:00.000Z",
+      "author": "jimmy",
+      "note": "add Thunder station",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-station",
+        "name": "Thunder station",
+        "description": "boarding hall",
+        "type": "box",
+        "dimensions": [
+          240,
+          144,
+          120
+        ],
+        "position": [
+          168,
+          432,
+          60
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-thunder",
+        "material": "cream"
+      }
+    },
+    {
+      "seq": 186,
+      "op": "add",
+      "time": "2026-11-01T13:06:00.000Z",
+      "author": "jimmy",
+      "note": "add Lift motor house",
+      "object": {
+        "uuid": "adventure-park-v11-thunder-motor",
+        "name": "Lift motor house",
+        "description": "drives the chain lift",
+        "type": "box",
+        "dimensions": [
+          84,
+          72,
+          84
+        ],
+        "position": [
+          720,
+          264,
+          42
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-thunder",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 187,
+      "op": "add",
+      "time": "2026-11-01T13:07:00.000Z",
+      "author": "jimmy",
+      "note": "add Splash pool",
+      "object": {
+        "uuid": "adventure-park-v11-splash-water",
+        "name": "Splash pool",
+        "description": "channel, 1.5 ft deep",
+        "type": "box",
+        "dimensions": [
+          816,
+          144,
+          18
+        ],
+        "position": [
+          -1176,
+          1200,
+          9
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-splash",
+        "material": "water"
+      }
+    },
+    {
+      "seq": 188,
+      "op": "add",
+      "time": "2026-11-01T13:08:00.000Z",
+      "author": "jimmy",
+      "note": "add Flume lift",
+      "object": {
+        "uuid": "adventure-park-v11-splash-lift",
+        "name": "Flume lift",
+        "description": "the slope up, 45 degrees",
+        "type": "box",
+        "dimensions": [
+          407.294,
+          96,
+          24
+        ],
+        "position": [
+          -1536,
+          1200,
+          156
+        ],
+        "rotation_y": -45,
+        "parent": "adventure-park-v11-splash",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 189,
+      "op": "add",
+      "time": "2026-11-01T13:09:00.000Z",
+      "author": "jimmy",
+      "note": "add Flume drop",
+      "object": {
+        "uuid": "adventure-park-v11-splash-drop",
+        "name": "Flume drop",
+        "description": "the drop into the pool, 45 degrees",
+        "type": "box",
+        "dimensions": [
+          407.294,
+          96,
+          24
+        ],
+        "position": [
+          -1248,
+          1200,
+          156
+        ],
+        "rotation_y": 45,
+        "parent": "adventure-park-v11-splash",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 190,
+      "op": "add",
+      "time": "2026-11-01T13:10:00.000Z",
+      "author": "jimmy",
+      "note": "add Flume station",
+      "object": {
+        "uuid": "adventure-park-v11-splash-station",
+        "name": "Flume station",
+        "description": "boarding house",
+        "type": "box",
+        "dimensions": [
+          288,
+          144,
+          120
+        ],
+        "position": [
+          -1176,
+          1392,
+          60
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-splash",
+        "material": "cream"
+      }
+    },
+    {
+      "seq": 191,
+      "op": "add",
+      "time": "2026-11-01T13:11:00.000Z",
+      "author": "jimmy",
+      "note": "add pip-queue fence north",
+      "object": {
+        "uuid": "adventure-park-v11-pip-queue-n",
+        "name": "pip-queue fence north",
+        "description": "queue or safety rail",
+        "type": "box",
+        "dimensions": [
+          528,
+          6,
+          36
+        ],
+        "position": [
+          -1104,
+          -984,
+          18
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-safety",
+        "material": "fence"
+      }
+    },
+    {
+      "seq": 192,
+      "op": "add",
+      "time": "2026-11-01T13:12:00.000Z",
+      "author": "jimmy",
+      "note": "add pip-queue fence south",
+      "object": {
+        "uuid": "adventure-park-v11-pip-queue-s",
+        "name": "pip-queue fence south",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          528,
+          6,
+          36
+        ],
+        "position": [
+          -1104,
+          -1080,
+          18
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-safety",
+        "material": "fence"
+      }
+    },
+    {
+      "seq": 193,
+      "op": "add",
+      "time": "2026-11-01T13:13:00.000Z",
+      "author": "jimmy",
+      "note": "add pip-queue fence west",
+      "object": {
+        "uuid": "adventure-park-v11-pip-queue-w",
+        "name": "pip-queue fence west",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          6,
+          96,
+          36
+        ],
+        "position": [
+          -1368,
+          -1032,
+          18
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-safety",
+        "material": "fence"
+      }
+    },
+    {
+      "seq": 194,
+      "op": "add",
+      "time": "2026-11-01T13:14:00.000Z",
+      "author": "jimmy",
+      "note": "add pip-queue fence east",
+      "object": {
+        "uuid": "adventure-park-v11-pip-queue-e",
+        "name": "pip-queue fence east",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          6,
+          96,
+          36
+        ],
+        "position": [
+          -840,
+          -1032,
+          18
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-safety",
+        "material": "fence"
+      }
+    },
+    {
+      "seq": 195,
+      "op": "add",
+      "time": "2026-11-01T13:15:00.000Z",
+      "author": "jimmy",
+      "note": "add tea-queue fence north",
+      "object": {
+        "uuid": "adventure-park-v11-tea-queue-n",
+        "name": "tea-queue fence north",
+        "description": "queue or safety rail",
+        "type": "box",
+        "dimensions": [
+          576,
+          6,
+          36
+        ],
+        "position": [
+          888,
+          -288,
+          18
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-safety",
+        "material": "fence"
+      }
+    },
+    {
+      "seq": 196,
+      "op": "add",
+      "time": "2026-11-01T13:16:00.000Z",
+      "author": "jimmy",
+      "note": "add tea-queue fence south",
+      "object": {
+        "uuid": "adventure-park-v11-tea-queue-s",
+        "name": "tea-queue fence south",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          576,
+          6,
+          36
+        ],
+        "position": [
+          888,
+          -864,
+          18
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-safety",
+        "material": "fence"
+      }
+    },
+    {
+      "seq": 197,
+      "op": "add",
+      "time": "2026-11-01T13:17:00.000Z",
+      "author": "jimmy",
+      "note": "add tea-queue fence west",
+      "object": {
+        "uuid": "adventure-park-v11-tea-queue-w",
+        "name": "tea-queue fence west",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          6,
+          576,
+          36
+        ],
+        "position": [
+          600,
+          -576,
+          18
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-safety",
+        "material": "fence"
+      }
+    },
+    {
+      "seq": 198,
+      "op": "add",
+      "time": "2026-11-01T13:18:00.000Z",
+      "author": "jimmy",
+      "note": "add tea-queue fence east",
+      "object": {
+        "uuid": "adventure-park-v11-tea-queue-e",
+        "name": "tea-queue fence east",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          6,
+          576,
+          36
+        ],
+        "position": [
+          1176,
+          -576,
+          18
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-safety",
+        "material": "fence"
+      }
+    },
+    {
+      "seq": 199,
+      "op": "add",
+      "time": "2026-11-01T13:19:00.000Z",
+      "author": "jimmy",
+      "note": "add Height sign post",
+      "object": {
+        "uuid": "adventure-park-v11-pip-sign-post",
+        "name": "Height sign post",
+        "description": "stands at the Pip queue",
+        "type": "cylinder",
+        "dimensions": [
+          4.8,
+          108
+        ],
+        "position": [
+          -1584,
+          -840,
+          54
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-safety",
+        "material": "steel"
+      }
+    },
+    {
+      "seq": 200,
+      "op": "add",
+      "time": "2026-11-01T13:20:00.000Z",
+      "author": "jimmy",
+      "note": "add Height sign: 36 in",
+      "object": {
+        "uuid": "adventure-park-v11-pip-sign",
+        "name": "Height sign: 36 in",
+        "description": "riders under 36 in ride with an adult",
+        "type": "box",
+        "dimensions": [
+          12,
+          72,
+          36
+        ],
+        "position": [
+          -1584,
+          -840,
+          90
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-safety",
+        "material": "cream"
+      }
+    },
+    {
+      "seq": 201,
+      "op": "add",
+      "time": "2026-11-01T13:21:00.000Z",
+      "author": "jimmy",
+      "note": "add Emergency walkway",
+      "object": {
+        "uuid": "adventure-park-v11-walkway",
+        "name": "Emergency walkway",
+        "description": "a clear route along the south edge",
+        "type": "box",
+        "dimensions": [
+          3600,
+          96,
+          3.6
+        ],
+        "position": [
+          0,
+          -1536,
+          1.8
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-safety",
+        "material": "path"
+      }
+    },
+    {
+      "seq": 202,
+      "op": "add",
+      "time": "2026-11-01T13:22:00.000Z",
+      "author": "jimmy",
+      "note": "add Tree trunk",
+      "object": {
+        "uuid": "adventure-park-v11-tree-1-trunk",
+        "name": "Tree trunk",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          7.2,
+          96
+        ],
+        "position": [
+          -1560,
+          -1320,
+          48
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-scenery",
+        "material": "trunk"
+      }
+    },
+    {
+      "seq": 203,
+      "op": "add",
+      "time": "2026-11-01T13:23:00.000Z",
+      "author": "jimmy",
+      "note": "add Tree crown",
+      "object": {
+        "uuid": "adventure-park-v11-tree-1-leaves",
+        "name": "Tree crown",
+        "description": "round crown",
+        "type": "sphere",
+        "dimensions": [
+          72
+        ],
+        "position": [
+          -1560,
+          -1320,
+          144
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-scenery",
+        "material": "leaf"
+      }
+    },
+    {
+      "seq": 204,
+      "op": "add",
+      "time": "2026-11-01T13:24:00.000Z",
+      "author": "jimmy",
+      "note": "add Tree trunk",
+      "object": {
+        "uuid": "adventure-park-v11-tree-2-trunk",
+        "name": "Tree trunk",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          7.2,
+          96
+        ],
+        "position": [
+          -1680,
+          120,
+          48
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-scenery",
+        "material": "trunk"
+      }
+    },
+    {
+      "seq": 205,
+      "op": "add",
+      "time": "2026-11-01T13:25:00.000Z",
+      "author": "jimmy",
+      "note": "add Tree crown",
+      "object": {
+        "uuid": "adventure-park-v11-tree-2-leaves",
+        "name": "Tree crown",
+        "description": "round crown",
+        "type": "sphere",
+        "dimensions": [
+          72
+        ],
+        "position": [
+          -1680,
+          120,
+          144
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-scenery",
+        "material": "leaf"
+      }
+    },
+    {
+      "seq": 206,
+      "op": "add",
+      "time": "2026-11-01T13:26:00.000Z",
+      "author": "jimmy",
+      "note": "add Tree trunk",
+      "object": {
+        "uuid": "adventure-park-v11-tree-3-trunk",
+        "name": "Tree trunk",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          7.2,
+          96
+        ],
+        "position": [
+          -720,
+          -1200,
+          48
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-scenery",
+        "material": "trunk"
+      }
+    },
+    {
+      "seq": 207,
+      "op": "add",
+      "time": "2026-11-01T13:27:00.000Z",
+      "author": "jimmy",
+      "note": "add Tree crown",
+      "object": {
+        "uuid": "adventure-park-v11-tree-3-leaves",
+        "name": "Tree crown",
+        "description": "round crown",
+        "type": "sphere",
+        "dimensions": [
+          72
+        ],
+        "position": [
+          -720,
+          -1200,
+          144
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-scenery",
+        "material": "leaf"
+      }
+    },
+    {
+      "seq": 208,
+      "op": "add",
+      "time": "2026-11-01T13:28:00.000Z",
+      "author": "jimmy",
+      "note": "add Tree trunk",
+      "object": {
+        "uuid": "adventure-park-v11-tree-4-trunk",
+        "name": "Tree trunk",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          7.2,
+          96
+        ],
+        "position": [
+          -240,
+          1152,
+          48
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-scenery",
+        "material": "trunk"
+      }
+    },
+    {
+      "seq": 209,
+      "op": "add",
+      "time": "2026-11-01T13:29:00.000Z",
+      "author": "jimmy",
+      "note": "add Tree crown",
+      "object": {
+        "uuid": "adventure-park-v11-tree-4-leaves",
+        "name": "Tree crown",
+        "description": "round crown",
+        "type": "sphere",
+        "dimensions": [
+          72
+        ],
+        "position": [
+          -240,
+          1152,
+          144
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-scenery",
+        "material": "leaf"
+      }
+    },
+    {
+      "seq": 210,
+      "op": "add",
+      "time": "2026-11-01T13:30:00.000Z",
+      "author": "jimmy",
+      "note": "add Tree trunk",
+      "object": {
+        "uuid": "adventure-park-v11-tree-5-trunk",
+        "name": "Tree trunk",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          7.2,
+          96
+        ],
+        "position": [
+          360,
+          1320,
+          48
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-scenery",
+        "material": "trunk"
+      }
+    },
+    {
+      "seq": 211,
+      "op": "add",
+      "time": "2026-11-01T13:31:00.000Z",
+      "author": "jimmy",
+      "note": "add Tree crown",
+      "object": {
+        "uuid": "adventure-park-v11-tree-5-leaves",
+        "name": "Tree crown",
+        "description": "round crown",
+        "type": "sphere",
+        "dimensions": [
+          72
+        ],
+        "position": [
+          360,
+          1320,
+          144
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-scenery",
+        "material": "leaf"
+      }
+    },
+    {
+      "seq": 212,
+      "op": "add",
+      "time": "2026-11-01T13:32:00.000Z",
+      "author": "jimmy",
+      "note": "add Tree trunk",
+      "object": {
+        "uuid": "adventure-park-v11-tree-6-trunk",
+        "name": "Tree trunk",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          7.2,
+          96
+        ],
+        "position": [
+          1680,
+          1200,
+          48
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-scenery",
+        "material": "trunk"
+      }
+    },
+    {
+      "seq": 213,
+      "op": "add",
+      "time": "2026-11-01T13:33:00.000Z",
+      "author": "jimmy",
+      "note": "add Tree crown",
+      "object": {
+        "uuid": "adventure-park-v11-tree-6-leaves",
+        "name": "Tree crown",
+        "description": "round crown",
+        "type": "sphere",
+        "dimensions": [
+          72
+        ],
+        "position": [
+          1680,
+          1200,
+          144
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-scenery",
+        "material": "leaf"
+      }
+    },
+    {
+      "seq": 214,
+      "op": "add",
+      "time": "2026-11-01T13:34:00.000Z",
+      "author": "jimmy",
+      "note": "add Tree trunk",
+      "object": {
+        "uuid": "adventure-park-v11-tree-7-trunk",
+        "name": "Tree trunk",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          7.2,
+          96
+        ],
+        "position": [
+          -360,
+          -720,
+          48
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-scenery",
+        "material": "trunk"
+      }
+    },
+    {
+      "seq": 215,
+      "op": "add",
+      "time": "2026-11-01T13:35:00.000Z",
+      "author": "jimmy",
+      "note": "add Tree crown",
+      "object": {
+        "uuid": "adventure-park-v11-tree-7-leaves",
+        "name": "Tree crown",
+        "description": "round crown",
+        "type": "sphere",
+        "dimensions": [
+          72
+        ],
+        "position": [
+          -360,
+          -720,
+          144
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-scenery",
+        "material": "leaf"
+      }
+    },
+    {
+      "seq": 216,
+      "op": "add",
+      "time": "2026-11-01T13:36:00.000Z",
+      "author": "jimmy",
+      "note": "add Bench 1",
+      "object": {
+        "uuid": "adventure-park-v11-bench-1",
+        "name": "Bench 1",
+        "description": "wooden bench by the plaza",
+        "type": "box",
+        "dimensions": [
+          72,
+          24,
+          24
+        ],
+        "position": [
+          -264,
+          240,
+          12
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-scenery",
+        "material": "wood"
+      }
+    },
+    {
+      "seq": 217,
+      "op": "add",
+      "time": "2026-11-01T13:37:00.000Z",
+      "author": "jimmy",
+      "note": "add Bench 2",
+      "object": {
+        "uuid": "adventure-park-v11-bench-2",
+        "name": "Bench 2",
+        "description": "wooden bench by the plaza",
+        "type": "box",
+        "dimensions": [
+          72,
+          24,
+          24
+        ],
+        "position": [
+          264,
+          240,
+          12
+        ],
+        "rotation_y": 0,
+        "parent": "adventure-park-v11-scenery",
+        "material": "wood"
+      }
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "schema": "make3d.motion/0.1",
+  "model_id": "robot-banana",
+  "name": "Walk the loop",
+  "description": "One lap of the stones is 18 strides. Everything repeats a whole number of times per lap, so the loop has no jump.",
+  "units": "in",
+  "up": "z",
+  "loop_s": 18,
+  "autoplay": {
+    "plays": 2
+  },
+  "motions": [
+    {
+      "id": "walk",
+      "target": "robot-banana-robot",
+      "kind": "path",
+      "points": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          40,
+          12,
+          0
+        ],
+        [
+          80,
+          0,
+          0
+        ],
+        [
+          100,
+          34,
+          0
+        ],
+        [
+          80,
+          66,
+          0
+        ],
+        [
+          44,
+          56,
+          0
+        ],
+        [
+          14,
+          80,
+          0
+        ],
+        [
+          -26,
+          74,
+          0
+        ],
+        [
+          -48,
+          40,
+          0
+        ],
+        [
+          -30,
+          12,
+          0
+        ]
+      ],
+      "face": "tangent",
+      "rest_heading_deg": 0,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 1
+    },
+    {
+      "id": "left-leg",
+      "target": "robot-banana-leg-l",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        0,
+        3.5,
+        15
+      ],
+      "from": -24,
+      "to": 24,
+      "cycles": 18,
+      "phase": 0
+    },
+    {
+      "id": "right-leg",
+      "target": "robot-banana-leg-r",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        0,
+        -3.5,
+        15
+      ],
+      "from": -24,
+      "to": 24,
+      "cycles": 18,
+      "phase": 0.5
+    },
+    {
+      "id": "left-foot",
+      "target": "robot-banana-foot-l",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        0,
+        3.5,
+        1.75
+      ],
+      "from": 24,
+      "to": -24,
+      "cycles": 18,
+      "phase": 0
+    },
+    {
+      "id": "right-foot",
+      "target": "robot-banana-foot-r",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        0,
+        -3.5,
+        1.75
+      ],
+      "from": 24,
+      "to": -24,
+      "cycles": 18,
+      "phase": 0.5
+    },
+    {
+      "id": "left-arm",
+      "target": "robot-banana-arm-l",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        0,
+        6.8,
+        27
+      ],
+      "from": -18,
+      "to": 18,
+      "cycles": 18,
+      "phase": 0.5
+    },
+    {
+      "id": "right-arm",
+      "target": "robot-banana-arm-r",
+      "kind": "swing",
+      "axis": "y",
+      "pivot": [
+        0,
+        -6.8,
+        27
+      ],
+      "from": -6,
+      "to": 6,
+      "cycles": 18,
+      "phase": 0
+    },
+    {
+      "id": "dip",
+      "target": "robot-banana-robot",
+      "kind": "bob",
+      "axis": "z",
+      "amount": -1.15,
+      "cycles": 36,
+      "phase": 0
+    },
+    {
+      "id": "sway",
+      "target": "robot-banana-upper",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        0,
+        0,
+        15
+      ],
+      "from": -2,
+      "to": 2,
+      "cycles": 18,
+      "phase": 0
+    }
+  ]
+}

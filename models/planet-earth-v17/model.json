@@ -1,0 +1,4360 @@
+{
+  "model_id": "planet-earth-v17",
+  "name": "Earth (planet view) V17",
+  "description": "Earth on its own, increment 17 of 20. Shaded continents, deserts and ice from a rough map; a noise cloud shell that drifts; a station, launches, storms, aurora, a constellation of small satellites, city lights and craters on the Moon. Sizes are rough; not to scale.",
+  "units": "in",
+  "up": "z",
+  "world": "solar-system-world",
+  "materials": {
+    "sun": {
+      "color": "#ffd23f",
+      "opacity": 1
+    },
+    "corona": {
+      "color": "#ffb347",
+      "opacity": 0.2
+    },
+    "orbit": {
+      "color": "#8a86a3",
+      "opacity": 1
+    },
+    "mercury": {
+      "color": "#b8b0a4",
+      "opacity": 1
+    },
+    "venus": {
+      "color": "#f0d9a0",
+      "opacity": 1
+    },
+    "earth": {
+      "color": "#4f8fd6",
+      "opacity": 1
+    },
+    "mars": {
+      "color": "#d9714a",
+      "opacity": 1
+    },
+    "jup1": {
+      "color": "#e8c49a",
+      "opacity": 1
+    },
+    "jup2": {
+      "color": "#b87c55",
+      "opacity": 1
+    },
+    "jup3": {
+      "color": "#f2e6d0",
+      "opacity": 1
+    },
+    "sat": {
+      "color": "#ecd8a0",
+      "opacity": 1
+    },
+    "satb": {
+      "color": "#d9b97c",
+      "opacity": 1
+    },
+    "ring": {
+      "color": "#e6d7b0",
+      "opacity": 0.8
+    },
+    "ring2": {
+      "color": "#b59f7a",
+      "opacity": 0.8
+    },
+    "uranus": {
+      "color": "#a9e6f0",
+      "opacity": 1
+    },
+    "uranusb": {
+      "color": "#8fd4e6",
+      "opacity": 1
+    },
+    "neptune": {
+      "color": "#4f73e0",
+      "opacity": 1
+    },
+    "neptuneb": {
+      "color": "#3b5fc2",
+      "opacity": 1
+    },
+    "pluto": {
+      "color": "#c9b49a",
+      "opacity": 1
+    },
+    "charon": {
+      "color": "#8f8a85",
+      "opacity": 1
+    },
+    "moon": {
+      "color": "#bdbdbd",
+      "opacity": 1
+    },
+    "phobos": {
+      "color": "#8c7f74",
+      "opacity": 1
+    },
+    "io": {
+      "color": "#f6e28a",
+      "opacity": 1
+    },
+    "europa": {
+      "color": "#e9dfcf",
+      "opacity": 1
+    },
+    "ganymede": {
+      "color": "#a79b8b",
+      "opacity": 1
+    },
+    "callisto": {
+      "color": "#7e7467",
+      "opacity": 1
+    },
+    "titan": {
+      "color": "#e9b872",
+      "opacity": 1
+    },
+    "enceladus": {
+      "color": "#f4f8ff",
+      "opacity": 1
+    },
+    "miranda": {
+      "color": "#b4b4b4",
+      "opacity": 1
+    },
+    "ariel": {
+      "color": "#c9c9c9",
+      "opacity": 1
+    },
+    "triton": {
+      "color": "#e0d6c8",
+      "opacity": 1
+    },
+    "rock": {
+      "color": "#9a9188",
+      "opacity": 1
+    },
+    "rock2": {
+      "color": "#b3a99c",
+      "opacity": 1
+    },
+    "air": {
+      "color": "#9fd8ff",
+      "opacity": 0.2
+    },
+    "venusair": {
+      "color": "#ffe9a8",
+      "opacity": 0.25
+    },
+    "marker": {
+      "color": "#ff8fa3",
+      "opacity": 1
+    },
+    "venusb1": {
+      "color": "#f3e3b0",
+      "opacity": 1
+    },
+    "venusb2": {
+      "color": "#e2c58a",
+      "opacity": 1
+    },
+    "cap": {
+      "color": "#fbfbff",
+      "opacity": 1
+    },
+    "dark": {
+      "color": "#5b544d",
+      "opacity": 1
+    },
+    "grs": {
+      "color": "#c4543b",
+      "opacity": 1
+    },
+    "ovalw": {
+      "color": "#fff7ee",
+      "opacity": 1
+    },
+    "hexblue": {
+      "color": "#2e4f8f",
+      "opacity": 1
+    },
+    "ringdark": {
+      "color": "#5c5a5a",
+      "opacity": 0.7
+    },
+    "crater": {
+      "color": "#7d756c",
+      "opacity": 1
+    },
+    "brightray": {
+      "color": "#f2f0ea",
+      "opacity": 1
+    },
+    "olympus": {
+      "color": "#b0664a",
+      "opacity": 1
+    },
+    "dustv": {
+      "color": "#c7a77a",
+      "opacity": 0.3
+    },
+    "ice": {
+      "color": "#ffffff",
+      "opacity": 1
+    },
+    "pluto_heart": {
+      "color": "#f4efe6",
+      "opacity": 1
+    },
+    "nitro": {
+      "color": "#fffdf7",
+      "opacity": 1
+    },
+    "mtn": {
+      "color": "#8a8f6a",
+      "opacity": 1
+    },
+    "amalthea": {
+      "color": "#b89070",
+      "opacity": 1
+    },
+    "himalia": {
+      "color": "#a09a92",
+      "opacity": 1
+    },
+    "thebe": {
+      "color": "#a58c75",
+      "opacity": 1
+    },
+    "mimas": {
+      "color": "#e8e8e8",
+      "opacity": 1
+    },
+    "tethys": {
+      "color": "#dcdcdc",
+      "opacity": 1
+    },
+    "dione": {
+      "color": "#d0d0d0",
+      "opacity": 1
+    },
+    "rhea": {
+      "color": "#c9c9c9",
+      "opacity": 1
+    },
+    "iapetus": {
+      "color": "#b8a890",
+      "opacity": 1
+    },
+    "umbriel": {
+      "color": "#6d6d72",
+      "opacity": 1
+    },
+    "titania": {
+      "color": "#bcbcc0",
+      "opacity": 1
+    },
+    "oberon": {
+      "color": "#a9a39d",
+      "opacity": 1
+    },
+    "puck": {
+      "color": "#8f8f8f",
+      "opacity": 1
+    },
+    "proteus": {
+      "color": "#7d7d7d",
+      "opacity": 1
+    },
+    "nereid": {
+      "color": "#9ea5b8",
+      "opacity": 1
+    },
+    "nix": {
+      "color": "#dedede",
+      "opacity": 1
+    },
+    "hydra": {
+      "color": "#e6e6e6",
+      "opacity": 1
+    },
+    "land": {
+      "color": "#5f9e5a",
+      "opacity": 1
+    },
+    "dsand": {
+      "color": "#d9b77a",
+      "opacity": 1
+    },
+    "cloud": {
+      "color": "#ffffff",
+      "opacity": 0.35
+    },
+    "iss": {
+      "color": "#d9dde3",
+      "opacity": 1
+    },
+    "panel": {
+      "color": "#2f5f9e",
+      "opacity": 1
+    },
+    "rocket": {
+      "color": "#f2f2f2",
+      "opacity": 1
+    },
+    "nose": {
+      "color": "#d6453d",
+      "opacity": 1
+    },
+    "plume": {
+      "color": "#ffa640",
+      "opacity": 0.6
+    },
+    "pad": {
+      "color": "#8c8c8c",
+      "opacity": 1
+    },
+    "storm": {
+      "color": "#ffffff",
+      "opacity": 0.8
+    },
+    "eye": {
+      "color": "#3c4a5a",
+      "opacity": 1
+    },
+    "light": {
+      "color": "#ffe27a",
+      "opacity": 1
+    },
+    "shade_mercury": {
+      "color": "#a59d92",
+      "kind": "bands",
+      "a": "#a59d92",
+      "b": "#6d665e",
+      "c": "#8a8178",
+      "freq": 0,
+      "seed": 2
+    },
+    "shade_venus": {
+      "color": "#f3dca0",
+      "kind": "bands",
+      "a": "#f3dca0",
+      "b": "#e0b86e",
+      "c": "#fff2cf",
+      "freq": 9,
+      "seed": 4
+    },
+    "shade_mars": {
+      "color": "#c8643f",
+      "kind": "bands",
+      "a": "#c8643f",
+      "b": "#7a3524",
+      "c": "#e08a5c",
+      "freq": 0,
+      "seed": 5
+    },
+    "shade_jupiter": {
+      "color": "#e8c49a",
+      "kind": "bands",
+      "a": "#e8c49a",
+      "b": "#b87c55",
+      "c": "#f2e6d0",
+      "freq": 12,
+      "seed": 6
+    },
+    "shade_saturn": {
+      "color": "#ecd8a0",
+      "kind": "bands",
+      "a": "#ecd8a0",
+      "b": "#d9b97c",
+      "c": "#f5e8c4",
+      "freq": 10,
+      "seed": 7
+    },
+    "shade_uranus": {
+      "color": "#a9e6f0",
+      "kind": "bands",
+      "a": "#a9e6f0",
+      "b": "#8fd4e6",
+      "c": "#c9f2f8",
+      "freq": 6,
+      "seed": 8
+    },
+    "shade_neptune": {
+      "color": "#4f73e0",
+      "kind": "bands",
+      "a": "#4f73e0",
+      "b": "#3b5fc2",
+      "c": "#6f93f0",
+      "freq": 8,
+      "seed": 9
+    },
+    "shade_pluto": {
+      "color": "#d6c3a1",
+      "kind": "bands",
+      "a": "#d6c3a1",
+      "b": "#8c7660",
+      "c": "#efe2c8",
+      "freq": 0,
+      "seed": 10
+    },
+    "earth_surface": {
+      "color": "#4f8fd6",
+      "opacity": 1,
+      "kind": "earth",
+      "ocean": "#3f80c8",
+      "oceanDeep": "#1f4f8a",
+      "land_color": "#5f9e5a",
+      "desert_color": "#d9b77a",
+      "ice": "#f4f8ff",
+      "seed": 3,
+      "land": [
+        [
+          45,
+          -100,
+          25,
+          32
+        ],
+        [
+          72,
+          -42,
+          10,
+          14
+        ],
+        [
+          15,
+          -90,
+          5,
+          10
+        ],
+        [
+          -15,
+          -60,
+          30,
+          16
+        ],
+        [
+          54,
+          14,
+          9,
+          18
+        ],
+        [
+          3,
+          20,
+          26,
+          22
+        ],
+        [
+          52,
+          95,
+          20,
+          45
+        ],
+        [
+          25,
+          70,
+          10,
+          12
+        ],
+        [
+          -1,
+          112,
+          10,
+          12
+        ],
+        [
+          -25,
+          134,
+          9,
+          13
+        ],
+        [
+          -82,
+          0,
+          8,
+          180
+        ]
+      ],
+      "desert": [
+        [
+          23,
+          13,
+          9,
+          22
+        ],
+        [
+          -25,
+          134,
+          6,
+          9
+        ],
+        [
+          24,
+          47,
+          6,
+          8
+        ]
+      ]
+    },
+    "clouds_layer": {
+      "color": "#ffffff",
+      "opacity": 0.35,
+      "kind": "clouds",
+      "coverage": 0.5,
+      "scale": 2.4,
+      "seed": 5,
+      "alpha": 0.9
+    },
+    "clouds_layer2": {
+      "color": "#ffffff",
+      "opacity": 0.3,
+      "kind": "clouds",
+      "coverage": 0.6,
+      "scale": 3.1,
+      "seed": 9,
+      "alpha": 0.7
+    },
+    "aurora": {
+      "color": "#7dffb0",
+      "opacity": 0.35
+    },
+    "stormhaze": {
+      "color": "#ffffff",
+      "opacity": 0.45
+    }
+  },
+  "view": {
+    "fill": 0.75,
+    "radius": 9.5
+  },
+  "links": [
+    {
+      "label": "Back to the Solar System",
+      "target": "solar-system-v07",
+      "transition": "fade"
+    }
+  ],
+  "objects": [
+    {
+      "description": "spins on its own axis",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-body-earth",
+      "name": "Earth body",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "our home, with one Moon",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "earth_surface",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-ball-earth",
+      "name": "Earth",
+      "type": "sphere",
+      "dimensions": [
+        9.5
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a thin see-through haze (taps pass through it)",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "air",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-air-earth",
+      "name": "Earth atmosphere",
+      "type": "sphere",
+      "dimensions": [
+        10.64
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "the Moon goes round the Earth",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-arm-moon",
+      "name": "Moon orbit",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "our Moon, 2.7 in radius here (not to scale)",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-arm-moon",
+      "material": "moon",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-moon",
+      "name": "Moon",
+      "type": "sphere",
+      "dimensions": [
+        2.7
+      ],
+      "position": [
+        30,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a large satellite in a low orbit",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-iss",
+      "name": "Space station group",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "the big satellite (not to scale)",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-iss",
+      "material": "iss",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-iss-core",
+      "name": "Station core",
+      "type": "box",
+      "dimensions": [
+        2.6,
+        0.9,
+        0.9
+      ],
+      "position": [
+        17.5,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-iss",
+      "material": "panel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-iss-panel",
+      "name": "Station panels",
+      "type": "box",
+      "dimensions": [
+        0.25,
+        6.4,
+        1.6
+      ],
+      "position": [
+        17.5,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a rocket that lifts off once per loop, then returns to the pad",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-rocket-1",
+      "name": "Launch 1 rocket",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 90,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "pad",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-pad-1",
+      "name": "Launch 1 pad",
+      "type": "cylinder",
+      "dimensions": [
+        3,
+        0.4
+      ],
+      "position": [
+        9.8,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 90,
+      "parent": "planet-earth-v17-rocket-1",
+      "material": "rocket",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-rocket-1-body",
+      "name": "Launch 1 stage",
+      "type": "cylinder",
+      "dimensions": [
+        0.7,
+        8
+      ],
+      "position": [
+        14.1,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 90,
+      "parent": "planet-earth-v17-rocket-1",
+      "material": "nose",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-rocket-1-nose",
+      "name": "Launch 1 nose cone",
+      "type": "cone",
+      "dimensions": [
+        0.7,
+        2.2
+      ],
+      "position": [
+        19.2,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "the exhaust",
+      "rotation_y": 90,
+      "parent": "planet-earth-v17-rocket-1",
+      "material": "plume",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-rocket-1-plume",
+      "name": "Launch 1 plume",
+      "type": "cone",
+      "dimensions": [
+        1.4,
+        3
+      ],
+      "position": [
+        8.6,
+        0,
+        0
+      ],
+      "rotation_x": 180
+    },
+    {
+      "description": "a large satellite on a polar orbit",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-polar",
+      "name": "Polar satellite group",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a large satellite over the poles",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-polar",
+      "material": "iss",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-polar-core",
+      "name": "Polar satellite",
+      "type": "box",
+      "dimensions": [
+        2.2,
+        2.2,
+        2.2
+      ],
+      "position": [
+        0,
+        21.5,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-polar",
+      "material": "panel",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-polar-panel",
+      "name": "Polar satellite panels",
+      "type": "box",
+      "dimensions": [
+        0.25,
+        9,
+        2.4
+      ],
+      "position": [
+        0,
+        21.5,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "light",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-city-1",
+      "name": "City lights",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        -3.393,
+        -7.276,
+        5.621
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "light",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-city-3",
+      "name": "City lights",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        -0.7,
+        -7.997,
+        5.621
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "light",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-city-5",
+      "name": "City lights",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        2.078,
+        -7.754,
+        5.621
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "light",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-city-7",
+      "name": "City lights",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        -1.794,
+        -6.694,
+        6.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "light",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-city-9",
+      "name": "City lights",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        0.604,
+        -6.903,
+        6.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "light",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-city-11",
+      "name": "City lights",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        6.903,
+        -0.604,
+        6.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "light",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-city-13",
+      "name": "City lights",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        6.694,
+        1.794,
+        6.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "light",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-city-15",
+      "name": "City lights",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        5.6,
+        -0.49,
+        8.028
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "light",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-city-17",
+      "name": "City lights",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        5.43,
+        1.455,
+        8.028
+      ]
+    },
+    {
+      "description": "a rocket that lifts off once per loop, then returns to the pad",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-rocket-2",
+      "name": "Launch 2 rocket",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 90,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "pad",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-pad-2",
+      "name": "Launch 2 pad",
+      "type": "cylinder",
+      "dimensions": [
+        3,
+        0.4
+      ],
+      "position": [
+        0,
+        9.8,
+        0
+      ],
+      "rotation_z": 90
+    },
+    {
+      "description": "",
+      "rotation_y": 90,
+      "parent": "planet-earth-v17-rocket-2",
+      "material": "rocket",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-rocket-2-body",
+      "name": "Launch 2 stage",
+      "type": "cylinder",
+      "dimensions": [
+        0.7,
+        8
+      ],
+      "position": [
+        0,
+        14.1,
+        0
+      ],
+      "rotation_z": 90
+    },
+    {
+      "description": "",
+      "rotation_y": 90,
+      "parent": "planet-earth-v17-rocket-2",
+      "material": "nose",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-rocket-2-nose",
+      "name": "Launch 2 nose cone",
+      "type": "cone",
+      "dimensions": [
+        0.7,
+        2.2
+      ],
+      "position": [
+        0,
+        19.2,
+        0
+      ],
+      "rotation_z": 90
+    },
+    {
+      "description": "the exhaust",
+      "rotation_y": 90,
+      "parent": "planet-earth-v17-rocket-2",
+      "material": "plume",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-rocket-2-plume",
+      "name": "Launch 2 plume",
+      "type": "cone",
+      "dimensions": [
+        1.4,
+        3
+      ],
+      "position": [
+        0,
+        8.6,
+        0
+      ],
+      "rotation_x": 180,
+      "rotation_z": 90
+    },
+    {
+      "description": "a noise shell that drifts faster than the ground",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-clouds",
+      "name": "Cloud layer",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "clouds from noise (taps pass through)",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-clouds",
+      "material": "clouds_layer",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-cloud-shell",
+      "name": "Cloud shell",
+      "type": "sphere",
+      "dimensions": [
+        9.833
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a mountain range",
+      "rotation_y": 60,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "mtn",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mtn-0-0",
+      "name": "Mountain",
+      "type": "cone",
+      "dimensions": [
+        1.5,
+        3.08
+      ],
+      "position": [
+        0.833,
+        9.525,
+        5.52
+      ],
+      "rotation_z": 85
+    },
+    {
+      "description": "a mountain range",
+      "rotation_y": 57.5,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "mtn",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mtn-0-1",
+      "name": "Mountain",
+      "type": "cone",
+      "dimensions": [
+        1.5,
+        3.52
+      ],
+      "position": [
+        0.828,
+        9.46,
+        6.05
+      ],
+      "rotation_z": 85
+    },
+    {
+      "description": "a mountain range",
+      "rotation_y": 60,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "mtn",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mtn-0-2",
+      "name": "Mountain",
+      "type": "cone",
+      "dimensions": [
+        1.5,
+        3.96
+      ],
+      "position": [
+        0.434,
+        9.933,
+        5.74
+      ],
+      "rotation_z": 87.5
+    },
+    {
+      "description": "a mountain range",
+      "rotation_y": 57.5,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "mtn",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mtn-0-3",
+      "name": "Mountain",
+      "type": "cone",
+      "dimensions": [
+        1.5,
+        4.4
+      ],
+      "position": [
+        0.43,
+        9.858,
+        6.286
+      ],
+      "rotation_z": 87.5
+    },
+    {
+      "description": "a mountain range",
+      "rotation_y": 110,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "mtn",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mtn-1-0",
+      "name": "Mountain",
+      "type": "cone",
+      "dimensions": [
+        1.5,
+        2.52
+      ],
+      "position": [
+        3.788,
+        -9.375,
+        -3.68
+      ],
+      "rotation_z": -68
+    },
+    {
+      "description": "a mountain range",
+      "rotation_y": 107.5,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "mtn",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mtn-1-1",
+      "name": "Mountain",
+      "type": "cone",
+      "dimensions": [
+        1.5,
+        2.88
+      ],
+      "position": [
+        3.909,
+        -9.674,
+        -3.29
+      ],
+      "rotation_z": -68
+    },
+    {
+      "description": "a mountain range",
+      "rotation_y": 110,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "mtn",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mtn-1-2",
+      "name": "Mountain",
+      "type": "cone",
+      "dimensions": [
+        1.5,
+        3.24
+      ],
+      "position": [
+        4.333,
+        -9.509,
+        -3.803
+      ],
+      "rotation_z": -65.5
+    },
+    {
+      "description": "a mountain range",
+      "rotation_y": 107.5,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "mtn",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mtn-1-3",
+      "name": "Mountain",
+      "type": "cone",
+      "dimensions": [
+        1.5,
+        3.6
+      ],
+      "position": [
+        4.469,
+        -9.807,
+        -3.398
+      ],
+      "rotation_z": -65.5
+    },
+    {
+      "description": "a mountain range",
+      "rotation_y": 45,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "mtn",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mtn-2-0",
+      "name": "Mountain",
+      "type": "cone",
+      "dimensions": [
+        1.5,
+        2.1
+      ],
+      "position": [
+        -3.153,
+        -6.761,
+        7.46
+      ],
+      "rotation_z": -115
+    },
+    {
+      "description": "a mountain range",
+      "rotation_y": 42.5,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "mtn",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mtn-2-1",
+      "name": "Mountain",
+      "type": "cone",
+      "dimensions": [
+        1.5,
+        2.4
+      ],
+      "position": [
+        -3.055,
+        -6.552,
+        7.889
+      ],
+      "rotation_z": -115
+    },
+    {
+      "description": "a mountain range",
+      "rotation_y": 45,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "mtn",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mtn-2-2",
+      "name": "Mountain",
+      "type": "cone",
+      "dimensions": [
+        1.5,
+        2.7
+      ],
+      "position": [
+        -2.936,
+        -7.088,
+        7.672
+      ],
+      "rotation_z": -112.5
+    },
+    {
+      "description": "a mountain range",
+      "rotation_y": 42.5,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "mtn",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mtn-2-3",
+      "name": "Mountain",
+      "type": "cone",
+      "dimensions": [
+        1.5,
+        3
+      ],
+      "position": [
+        -2.844,
+        -6.866,
+        8.11
+      ],
+      "rotation_z": -112.5
+    },
+    {
+      "description": "a mountain range",
+      "rotation_y": 44,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "mtn",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mtn-3-0",
+      "name": "Mountain",
+      "type": "cone",
+      "dimensions": [
+        1.5,
+        1.4
+      ],
+      "position": [
+        7.017,
+        0.986,
+        7.337
+      ],
+      "rotation_z": 8
+    },
+    {
+      "description": "a mountain range",
+      "rotation_y": 41.5,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "mtn",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mtn-3-1",
+      "name": "Mountain",
+      "type": "cone",
+      "dimensions": [
+        1.5,
+        1.6
+      ],
+      "position": [
+        6.759,
+        0.95,
+        7.714
+      ],
+      "rotation_z": 8
+    },
+    {
+      "description": "a mountain range",
+      "rotation_y": 44,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "mtn",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mtn-3-2",
+      "name": "Mountain",
+      "type": "cone",
+      "dimensions": [
+        1.5,
+        1.8
+      ],
+      "position": [
+        7.103,
+        1.317,
+        7.481
+      ],
+      "rotation_z": 10.5
+    },
+    {
+      "description": "a mountain range",
+      "rotation_y": 41.5,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "mtn",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mtn-3-3",
+      "name": "Mountain",
+      "type": "cone",
+      "dimensions": [
+        1.5,
+        2
+      ],
+      "position": [
+        6.841,
+        1.268,
+        7.864
+      ],
+      "rotation_z": 10.5
+    },
+    {
+      "description": "a hurricane seen from above",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1",
+      "name": "Storm group",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "the calm centre",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "eye",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-eye",
+      "name": "Storm eye",
+      "type": "sphere",
+      "dimensions": [
+        0.9
+      ],
+      "position": [
+        -7.975,
+        4.604,
+        3.352
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm0-0",
+      "name": "Storm cloud 1.1",
+      "type": "sphere",
+      "dimensions": [
+        0.4
+      ],
+      "position": [
+        -8.657,
+        3.558,
+        3.376
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm0-1",
+      "name": "Storm cloud 1.2",
+      "type": "sphere",
+      "dimensions": [
+        0.435
+      ],
+      "position": [
+        -8.655,
+        2.75,
+        4.065
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm0-2",
+      "name": "Storm cloud 1.3",
+      "type": "sphere",
+      "dimensions": [
+        0.47
+      ],
+      "position": [
+        -8.192,
+        2.316,
+        5.151
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm0-3",
+      "name": "Storm cloud 1.4",
+      "type": "sphere",
+      "dimensions": [
+        0.505
+      ],
+      "position": [
+        -7.286,
+        2.491,
+        6.302
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm0-4",
+      "name": "Storm cloud 1.5",
+      "type": "sphere",
+      "dimensions": [
+        0.54
+      ],
+      "position": [
+        -6.08,
+        3.336,
+        7.135
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm0-5",
+      "name": "Storm cloud 1.6",
+      "type": "sphere",
+      "dimensions": [
+        0.575
+      ],
+      "position": [
+        -4.799,
+        4.726,
+        7.324
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm0-6",
+      "name": "Storm cloud 1.7",
+      "type": "sphere",
+      "dimensions": [
+        0.61
+      ],
+      "position": [
+        -3.698,
+        6.384,
+        6.676
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm0-7",
+      "name": "Storm cloud 1.8",
+      "type": "sphere",
+      "dimensions": [
+        0.645
+      ],
+      "position": [
+        -3.004,
+        7.944,
+        5.184
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm0-8",
+      "name": "Storm cloud 1.9",
+      "type": "sphere",
+      "dimensions": [
+        0.68
+      ],
+      "position": [
+        -2.865,
+        9.036,
+        3.023
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm0-9",
+      "name": "Storm cloud 1.10",
+      "type": "sphere",
+      "dimensions": [
+        0.715
+      ],
+      "position": [
+        -3.32,
+        9.365,
+        0.521
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm0-10",
+      "name": "Storm cloud 1.11",
+      "type": "sphere",
+      "dimensions": [
+        0.75
+      ],
+      "position": [
+        -4.296,
+        8.768,
+        -1.913
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm0-11",
+      "name": "Storm cloud 1.12",
+      "type": "sphere",
+      "dimensions": [
+        0.785
+      ],
+      "position": [
+        -5.616,
+        7.251,
+        -3.858
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm1-0",
+      "name": "Storm cloud 2.1",
+      "type": "sphere",
+      "dimensions": [
+        0.4
+      ],
+      "position": [
+        -7.402,
+        4.993,
+        4.391
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm1-1",
+      "name": "Storm cloud 2.2",
+      "type": "sphere",
+      "dimensions": [
+        0.435
+      ],
+      "position": [
+        -6.705,
+        5.781,
+        4.541
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm1-2",
+      "name": "Storm cloud 2.3",
+      "type": "sphere",
+      "dimensions": [
+        0.47
+      ],
+      "position": [
+        -6.111,
+        6.753,
+        4.007
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm1-3",
+      "name": "Storm cloud 2.4",
+      "type": "sphere",
+      "dimensions": [
+        0.505
+      ],
+      "position": [
+        -5.828,
+        7.56,
+        2.807
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm1-4",
+      "name": "Storm cloud 2.5",
+      "type": "sphere",
+      "dimensions": [
+        0.54
+      ],
+      "position": [
+        -5.977,
+        7.872,
+        1.15
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm1-5",
+      "name": "Storm cloud 2.6",
+      "type": "sphere",
+      "dimensions": [
+        0.575
+      ],
+      "position": [
+        -6.556,
+        7.46,
+        -0.612
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm1-6",
+      "name": "Storm cloud 2.7",
+      "type": "sphere",
+      "dimensions": [
+        0.61
+      ],
+      "position": [
+        -7.448,
+        6.262,
+        -2.078
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm1-7",
+      "name": "Storm cloud 2.8",
+      "type": "sphere",
+      "dimensions": [
+        0.645
+      ],
+      "position": [
+        -8.446,
+        4.395,
+        -2.89
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm1-8",
+      "name": "Storm cloud 2.9",
+      "type": "sphere",
+      "dimensions": [
+        0.68
+      ],
+      "position": [
+        -9.305,
+        2.128,
+        -2.81
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm1-9",
+      "name": "Storm cloud 2.10",
+      "type": "sphere",
+      "dimensions": [
+        0.715
+      ],
+      "position": [
+        -9.789,
+        -0.168,
+        -1.774
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm1-10",
+      "name": "Storm cloud 2.11",
+      "type": "sphere",
+      "dimensions": [
+        0.75
+      ],
+      "position": [
+        -9.726,
+        -2.098,
+        0.096
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm1-11",
+      "name": "Storm cloud 2.12",
+      "type": "sphere",
+      "dimensions": [
+        0.785
+      ],
+      "position": [
+        -9.037,
+        -3.315,
+        2.52
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm2-0",
+      "name": "Storm cloud 3.1",
+      "type": "sphere",
+      "dimensions": [
+        0.4
+      ],
+      "position": [
+        -8.042,
+        5.363,
+        2.362
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm2-1",
+      "name": "Storm cloud 3.2",
+      "type": "sphere",
+      "dimensions": [
+        0.435
+      ],
+      "position": [
+        -8.385,
+        5.178,
+        1.374
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm2-2",
+      "name": "Storm cloud 3.3",
+      "type": "sphere",
+      "dimensions": [
+        0.47
+      ],
+      "position": [
+        -8.931,
+        4.345,
+        0.606
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm2-3",
+      "name": "Storm cloud 3.4",
+      "type": "sphere",
+      "dimensions": [
+        0.505
+      ],
+      "position": [
+        -9.481,
+        2.994,
+        0.388
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm2-4",
+      "name": "Storm cloud 3.5",
+      "type": "sphere",
+      "dimensions": [
+        0.54
+      ],
+      "position": [
+        -9.807,
+        1.416,
+        0.904
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm2-5",
+      "name": "Storm cloud 3.6",
+      "type": "sphere",
+      "dimensions": [
+        0.575
+      ],
+      "position": [
+        -9.716,
+        -0.021,
+        2.144
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm2-6",
+      "name": "Storm cloud 3.7",
+      "type": "sphere",
+      "dimensions": [
+        0.61
+      ],
+      "position": [
+        -9.099,
+        -0.958,
+        3.911
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm2-7",
+      "name": "Storm cloud 3.8",
+      "type": "sphere",
+      "dimensions": [
+        0.645
+      ],
+      "position": [
+        -7.959,
+        -1.133,
+        5.863
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm2-8",
+      "name": "Storm cloud 3.9",
+      "type": "sphere",
+      "dimensions": [
+        0.68
+      ],
+      "position": [
+        -6.412,
+        -0.437,
+        7.596
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm2-9",
+      "name": "Storm cloud 3.10",
+      "type": "sphere",
+      "dimensions": [
+        0.715
+      ],
+      "position": [
+        -4.665,
+        1.065,
+        8.724
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm2-10",
+      "name": "Storm cloud 3.11",
+      "type": "sphere",
+      "dimensions": [
+        0.75
+      ],
+      "position": [
+        -2.975,
+        3.143,
+        8.96
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-1",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-1-arm2-11",
+      "name": "Storm cloud 3.12",
+      "type": "sphere",
+      "dimensions": [
+        0.785
+      ],
+      "position": [
+        -1.602,
+        5.449,
+        8.17
+      ]
+    },
+    {
+      "description": "a hurricane seen from above",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2",
+      "name": "Storm 2 group",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "the calm centre",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "eye",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-eye",
+      "name": "Storm 2 eye",
+      "type": "sphere",
+      "dimensions": [
+        0.9
+      ],
+      "position": [
+        -4.244,
+        -7.35,
+        -4.9
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm0-0",
+      "name": "Storm 2 cloud 1.1",
+      "type": "sphere",
+      "dimensions": [
+        0.4
+      ],
+      "position": [
+        -3.195,
+        -8.027,
+        -4.936
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm0-1",
+      "name": "Storm 2 cloud 1.2",
+      "type": "sphere",
+      "dimensions": [
+        0.435
+      ],
+      "position": [
+        -2.723,
+        -8.608,
+        -4.182
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm0-2",
+      "name": "Storm 2 cloud 1.3",
+      "type": "sphere",
+      "dimensions": [
+        0.47
+      ],
+      "position": [
+        -2.816,
+        -9.056,
+        -3.011
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm0-3",
+      "name": "Storm 2 cloud 1.4",
+      "type": "sphere",
+      "dimensions": [
+        0.505
+      ],
+      "position": [
+        -3.555,
+        -9.129,
+        -1.737
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm0-4",
+      "name": "Storm 2 cloud 1.5",
+      "type": "sphere",
+      "dimensions": [
+        0.54
+      ],
+      "position": [
+        -4.83,
+        -8.669,
+        -0.725
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm0-5",
+      "name": "Storm 2 cloud 1.6",
+      "type": "sphere",
+      "dimensions": [
+        0.575
+      ],
+      "position": [
+        -6.367,
+        -7.641,
+        -0.286
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm0-6",
+      "name": "Storm 2 cloud 1.7",
+      "type": "sphere",
+      "dimensions": [
+        0.61
+      ],
+      "position": [
+        -7.799,
+        -6.149,
+        -0.607
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm0-7",
+      "name": "Storm 2 cloud 1.8",
+      "type": "sphere",
+      "dimensions": [
+        0.645
+      ],
+      "position": [
+        -8.755,
+        -4.409,
+        -1.703
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm0-8",
+      "name": "Storm 2 cloud 1.9",
+      "type": "sphere",
+      "dimensions": [
+        0.68
+      ],
+      "position": [
+        -8.944,
+        -2.705,
+        -3.418
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm0-9",
+      "name": "Storm 2 cloud 1.10",
+      "type": "sphere",
+      "dimensions": [
+        0.715
+      ],
+      "position": [
+        -8.215,
+        -1.328,
+        -5.455
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm0-10",
+      "name": "Storm 2 cloud 1.11",
+      "type": "sphere",
+      "dimensions": [
+        0.75
+      ],
+      "position": [
+        -6.588,
+        -0.52,
+        -7.438
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm0-11",
+      "name": "Storm 2 cloud 1.12",
+      "type": "sphere",
+      "dimensions": [
+        0.785
+      ],
+      "position": [
+        -4.257,
+        -0.431,
+        -8.983
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm1-0",
+      "name": "Storm 2 cloud 2.1",
+      "type": "sphere",
+      "dimensions": [
+        0.4
+      ],
+      "position": [
+        -5.084,
+        -7.56,
+        -4.001
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm1-1",
+      "name": "Storm 2 cloud 2.2",
+      "type": "sphere",
+      "dimensions": [
+        0.435
+      ],
+      "position": [
+        -5.967,
+        -7.027,
+        -3.744
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm1-2",
+      "name": "Storm 2 cloud 2.3",
+      "type": "sphere",
+      "dimensions": [
+        0.47
+      ],
+      "position": [
+        -6.739,
+        -6.088,
+        -4.065
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm1-3",
+      "name": "Storm 2 cloud 2.4",
+      "type": "sphere",
+      "dimensions": [
+        0.505
+      ],
+      "position": [
+        -7.059,
+        -4.959,
+        -4.958
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm1-4",
+      "name": "Storm 2 cloud 2.5",
+      "type": "sphere",
+      "dimensions": [
+        0.54
+      ],
+      "position": [
+        -6.685,
+        -3.921,
+        -6.241
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm1-5",
+      "name": "Storm 2 cloud 2.6",
+      "type": "sphere",
+      "dimensions": [
+        0.575
+      ],
+      "position": [
+        -5.545,
+        -3.239,
+        -7.6
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm1-6",
+      "name": "Storm 2 cloud 2.7",
+      "type": "sphere",
+      "dimensions": [
+        0.61
+      ],
+      "position": [
+        -3.755,
+        -3.105,
+        -8.675
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm1-7",
+      "name": "Storm 2 cloud 2.8",
+      "type": "sphere",
+      "dimensions": [
+        0.645
+      ],
+      "position": [
+        -1.589,
+        -3.587,
+        -9.144
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm1-8",
+      "name": "Storm 2 cloud 2.9",
+      "type": "sphere",
+      "dimensions": [
+        0.68
+      ],
+      "position": [
+        0.578,
+        -4.619,
+        -8.794
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm1-9",
+      "name": "Storm 2 cloud 2.10",
+      "type": "sphere",
+      "dimensions": [
+        0.715
+      ],
+      "position": [
+        2.347,
+        -6.015,
+        -7.57
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm1-10",
+      "name": "Storm 2 cloud 2.11",
+      "type": "sphere",
+      "dimensions": [
+        0.75
+      ],
+      "position": [
+        3.378,
+        -7.509,
+        -5.587
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm1-11",
+      "name": "Storm 2 cloud 2.12",
+      "type": "sphere",
+      "dimensions": [
+        0.785
+      ],
+      "position": [
+        3.452,
+        -8.8,
+        -3.106
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm2-0",
+      "name": "Storm 2 cloud 3.1",
+      "type": "sphere",
+      "dimensions": [
+        0.4
+      ],
+      "position": [
+        -4.544,
+        -6.624,
+        -5.871
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm2-1",
+      "name": "Storm 2 cloud 3.2",
+      "type": "sphere",
+      "dimensions": [
+        0.435
+      ],
+      "position": [
+        -3.945,
+        -6.249,
+        -6.663
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm2-2",
+      "name": "Storm 2 cloud 3.3",
+      "type": "sphere",
+      "dimensions": [
+        0.47
+      ],
+      "position": [
+        -2.807,
+        -6.268,
+        -7.199
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm2-3",
+      "name": "Storm 2 cloud 3.4",
+      "type": "sphere",
+      "dimensions": [
+        0.505
+      ],
+      "position": [
+        -1.409,
+        -6.735,
+        -7.187
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm2-4",
+      "name": "Storm 2 cloud 3.5",
+      "type": "sphere",
+      "dimensions": [
+        0.54
+      ],
+      "position": [
+        -0.119,
+        -7.56,
+        -6.468
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm2-5",
+      "name": "Storm 2 cloud 3.6",
+      "type": "sphere",
+      "dimensions": [
+        0.575
+      ],
+      "position": [
+        0.701,
+        -8.539,
+        -5.06
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm2-6",
+      "name": "Storm 2 cloud 3.7",
+      "type": "sphere",
+      "dimensions": [
+        0.61
+      ],
+      "position": [
+        0.782,
+        -9.404,
+        -3.156
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm2-7",
+      "name": "Storm 2 cloud 3.8",
+      "type": "sphere",
+      "dimensions": [
+        0.645
+      ],
+      "position": [
+        0.017,
+        -9.891,
+        -1.077
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm2-8",
+      "name": "Storm 2 cloud 3.9",
+      "type": "sphere",
+      "dimensions": [
+        0.68
+      ],
+      "position": [
+        -1.52,
+        -9.801,
+        0.796
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm2-9",
+      "name": "Storm 2 cloud 3.10",
+      "type": "sphere",
+      "dimensions": [
+        0.715
+      ],
+      "position": [
+        -3.59,
+        -9.038,
+        2.105
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm2-10",
+      "name": "Storm 2 cloud 3.11",
+      "type": "sphere",
+      "dimensions": [
+        0.75
+      ],
+      "position": [
+        -5.834,
+        -7.636,
+        2.582
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-2",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-2-arm2-11",
+      "name": "Storm 2 cloud 3.12",
+      "type": "sphere",
+      "dimensions": [
+        0.785
+      ],
+      "position": [
+        -7.844,
+        -5.75,
+        2.101
+      ]
+    },
+    {
+      "description": "a hurricane seen from above",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3",
+      "name": "Storm 3 group",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "the calm centre",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "eye",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-eye",
+      "name": "Storm 3 eye",
+      "type": "sphere",
+      "dimensions": [
+        0.9
+      ],
+      "position": [
+        6.001,
+        -3.465,
+        6.93
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm0-0",
+      "name": "Storm 3 cloud 1.1",
+      "type": "sphere",
+      "dimensions": [
+        0.4
+      ],
+      "position": [
+        6.669,
+        -2.41,
+        6.98
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm0-1",
+      "name": "Storm 3 cloud 1.2",
+      "type": "sphere",
+      "dimensions": [
+        0.435
+      ],
+      "position": [
+        6.448,
+        -1.475,
+        7.433
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm0-2",
+      "name": "Storm 3 cloud 1.3",
+      "type": "sphere",
+      "dimensions": [
+        0.47
+      ],
+      "position": [
+        5.637,
+        -0.841,
+        8.156
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm0-3",
+      "name": "Storm 3 cloud 1.4",
+      "type": "sphere",
+      "dimensions": [
+        0.505
+      ],
+      "position": [
+        4.367,
+        -0.805,
+        8.904
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm0-4",
+      "name": "Storm 3 cloud 1.5",
+      "type": "sphere",
+      "dimensions": [
+        0.54
+      ],
+      "position": [
+        2.906,
+        -1.503,
+        9.397
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm0-5",
+      "name": "Storm 3 cloud 1.6",
+      "type": "sphere",
+      "dimensions": [
+        0.575
+      ],
+      "position": [
+        1.589,
+        -2.873,
+        9.393
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm0-6",
+      "name": "Storm 3 cloud 1.7",
+      "type": "sphere",
+      "dimensions": [
+        0.61
+      ],
+      "position": [
+        0.736,
+        -4.674,
+        8.753
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm0-7",
+      "name": "Storm 3 cloud 1.8",
+      "type": "sphere",
+      "dimensions": [
+        0.645
+      ],
+      "position": [
+        0.573,
+        -6.541,
+        7.476
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm0-8",
+      "name": "Storm 3 cloud 1.9",
+      "type": "sphere",
+      "dimensions": [
+        0.68
+      ],
+      "position": [
+        1.19,
+        -8.07,
+        5.698
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm0-9",
+      "name": "Storm 3 cloud 1.10",
+      "type": "sphere",
+      "dimensions": [
+        0.715
+      ],
+      "position": [
+        2.517,
+        -8.901,
+        3.666
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm0-10",
+      "name": "Storm 3 cloud 1.11",
+      "type": "sphere",
+      "dimensions": [
+        0.75
+      ],
+      "position": [
+        4.339,
+        -8.793,
+        1.692
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm0-11",
+      "name": "Storm 3 cloud 1.12",
+      "type": "sphere",
+      "dimensions": [
+        0.785
+      ],
+      "position": [
+        6.34,
+        -7.668,
+        0.092
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm1-0",
+      "name": "Storm 3 cloud 2.1",
+      "type": "sphere",
+      "dimensions": [
+        0.4
+      ],
+      "position": [
+        5.072,
+        -3.648,
+        7.744
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm1-1",
+      "name": "Storm 3 cloud 2.2",
+      "type": "sphere",
+      "dimensions": [
+        0.435
+      ],
+      "position": [
+        4.338,
+        -4.414,
+        7.791
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm1-2",
+      "name": "Storm 3 cloud 2.3",
+      "type": "sphere",
+      "dimensions": [
+        0.47
+      ],
+      "position": [
+        3.941,
+        -5.5,
+        7.295
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm1-3",
+      "name": "Storm 3 cloud 2.4",
+      "type": "sphere",
+      "dimensions": [
+        0.505
+      ],
+      "position": [
+        4.085,
+        -6.554,
+        6.274
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm1-4",
+      "name": "Storm 3 cloud 2.5",
+      "type": "sphere",
+      "dimensions": [
+        0.54
+      ],
+      "position": [
+        4.816,
+        -7.202,
+        4.893
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm1-5",
+      "name": "Storm 3 cloud 2.6",
+      "type": "sphere",
+      "dimensions": [
+        0.575
+      ],
+      "position": [
+        6.017,
+        -7.149,
+        3.421
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm1-6",
+      "name": "Storm 3 cloud 2.7",
+      "type": "sphere",
+      "dimensions": [
+        0.61
+      ],
+      "position": [
+        7.431,
+        -6.252,
+        2.165
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm1-7",
+      "name": "Storm 3 cloud 2.8",
+      "type": "sphere",
+      "dimensions": [
+        0.645
+      ],
+      "position": [
+        8.732,
+        -4.56,
+        1.401
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm1-8",
+      "name": "Storm 3 cloud 2.9",
+      "type": "sphere",
+      "dimensions": [
+        0.68
+      ],
+      "position": [
+        9.593,
+        -2.294,
+        1.308
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm1-9",
+      "name": "Storm 3 cloud 2.10",
+      "type": "sphere",
+      "dimensions": [
+        0.715
+      ],
+      "position": [
+        9.757,
+        0.186,
+        1.939
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm1-10",
+      "name": "Storm 3 cloud 2.11",
+      "type": "sphere",
+      "dimensions": [
+        0.75
+      ],
+      "position": [
+        9.092,
+        2.464,
+        3.204
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm1-11",
+      "name": "Storm 3 cloud 2.12",
+      "type": "sphere",
+      "dimensions": [
+        0.785
+      ],
+      "position": [
+        7.614,
+        4.137,
+        4.89
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm2-0",
+      "name": "Storm 3 cloud 3.1",
+      "type": "sphere",
+      "dimensions": [
+        0.4
+      ],
+      "position": [
+        6.395,
+        -4.412,
+        6.217
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm2-1",
+      "name": "Storm 3 cloud 3.2",
+      "type": "sphere",
+      "dimensions": [
+        0.435
+      ],
+      "position": [
+        7.083,
+        -4.426,
+        5.408
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm2-2",
+      "name": "Storm 3 cloud 3.3",
+      "type": "sphere",
+      "dimensions": [
+        0.47
+      ],
+      "position": [
+        7.905,
+        -3.753,
+        4.736
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm2-3",
+      "name": "Storm 3 cloud 3.4",
+      "type": "sphere",
+      "dimensions": [
+        0.505
+      ],
+      "position": [
+        8.551,
+        -2.457,
+        4.454
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm2-4",
+      "name": "Storm 3 cloud 3.5",
+      "type": "sphere",
+      "dimensions": [
+        0.54
+      ],
+      "position": [
+        8.73,
+        -0.794,
+        4.708
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm2-5",
+      "name": "Storm 3 cloud 3.6",
+      "type": "sphere",
+      "dimensions": [
+        0.575
+      ],
+      "position": [
+        8.25,
+        0.867,
+        5.495
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm2-6",
+      "name": "Storm 3 cloud 3.7",
+      "type": "sphere",
+      "dimensions": [
+        0.61
+      ],
+      "position": [
+        7.067,
+        2.131,
+        6.672
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm2-7",
+      "name": "Storm 3 cloud 3.8",
+      "type": "sphere",
+      "dimensions": [
+        0.645
+      ],
+      "position": [
+        5.3,
+        2.668,
+        7.987
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm2-8",
+      "name": "Storm 3 cloud 3.9",
+      "type": "sphere",
+      "dimensions": [
+        0.68
+      ],
+      "position": [
+        3.199,
+        2.292,
+        9.139
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm2-9",
+      "name": "Storm 3 cloud 3.10",
+      "type": "sphere",
+      "dimensions": [
+        0.715
+      ],
+      "position": [
+        1.101,
+        0.993,
+        9.839
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm2-10",
+      "name": "Storm 3 cloud 3.11",
+      "type": "sphere",
+      "dimensions": [
+        0.75
+      ],
+      "position": [
+        -0.641,
+        -1.055,
+        9.873
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-storm-3",
+      "material": "stormhaze",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-storm-3-arm2-11",
+      "name": "Storm 3 cloud 3.12",
+      "type": "sphere",
+      "dimensions": [
+        0.785
+      ],
+      "position": [
+        -1.722,
+        -3.53,
+        9.142
+      ]
+    },
+    {
+      "description": "light over the north pole",
+      "rotation_y": 16,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "aurora",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-aurora-n",
+      "name": "Northern aurora",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        0.4
+      ],
+      "position": [
+        2.701,
+        0,
+        9.42
+      ]
+    },
+    {
+      "description": "light over the south pole",
+      "rotation_y": 164,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "aurora",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-aurora-s",
+      "name": "Southern aurora",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        0.4
+      ],
+      "position": [
+        2.701,
+        0,
+        -9.42
+      ]
+    },
+    {
+      "description": "a small satellite on its own low orbit",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-sat-1",
+      "name": "Small satellite 1 group",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-sat-1",
+      "material": "iss",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-sat-1-body",
+      "name": "Small satellite 1",
+      "type": "sphere",
+      "dimensions": [
+        0.7
+      ],
+      "position": [
+        25.5,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a small satellite on its own low orbit",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-sat-2",
+      "name": "Small satellite 2 group",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-sat-2",
+      "material": "iss",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-sat-2-body",
+      "name": "Small satellite 2",
+      "type": "sphere",
+      "dimensions": [
+        0.7
+      ],
+      "position": [
+        27.5,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a small satellite on its own low orbit",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-sat-3",
+      "name": "Small satellite 3 group",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-sat-3",
+      "material": "iss",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-sat-3-body",
+      "name": "Small satellite 3",
+      "type": "sphere",
+      "dimensions": [
+        0.7
+      ],
+      "position": [
+        0,
+        29.5,
+        0
+      ]
+    },
+    {
+      "description": "a small satellite on its own low orbit",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-sat-4",
+      "name": "Small satellite 4 group",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-sat-4",
+      "material": "iss",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-sat-4-body",
+      "name": "Small satellite 4",
+      "type": "sphere",
+      "dimensions": [
+        0.7
+      ],
+      "position": [
+        26.5,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a small satellite on its own low orbit",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-sat-5",
+      "name": "Small satellite 5 group",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-sat-5",
+      "material": "iss",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-sat-5-body",
+      "name": "Small satellite 5",
+      "type": "sphere",
+      "dimensions": [
+        0.7
+      ],
+      "position": [
+        28.5,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "a small satellite on its own low orbit",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-sat-6",
+      "name": "Small satellite 6 group",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-sat-6",
+      "material": "iss",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-sat-6-body",
+      "name": "Small satellite 6",
+      "type": "sphere",
+      "dimensions": [
+        0.7
+      ],
+      "position": [
+        0,
+        30.5,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "light",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-city15-1",
+      "name": "City lights",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        6.28,
+        -6.28,
+        -4.142
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "light",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-city15-3",
+      "name": "City lights",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        7.276,
+        5.094,
+        -4.142
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "light",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-city15-5",
+      "name": "City lights",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        0.825,
+        9.43,
+        2.536
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "light",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-city15-7",
+      "name": "City lights",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        0.774,
+        8.848,
+        4.142
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "light",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-city15-9",
+      "name": "City lights",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        -6.576,
+        4.604,
+        5.621
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-arm-moon",
+      "material": "crater",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mcr-0",
+      "name": "Moon crater",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        32.091,
+        1.207,
+        0.647
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-arm-moon",
+      "material": "crater",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mcr-1",
+      "name": "Moon crater",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        30.408,
+        2.314,
+        -0.855
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-arm-moon",
+      "material": "crater",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mcr-2",
+      "name": "Moon crater",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        30.958,
+        -1.659,
+        1.607
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-arm-moon",
+      "material": "crater",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mcr-3",
+      "name": "Moon crater",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        28.226,
+        1.024,
+        -1.434
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-arm-moon",
+      "material": "crater",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mcr-4",
+      "name": "Moon crater",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        28.755,
+        -2.157,
+        0.218
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-arm-moon",
+      "material": "crater",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mcr-5",
+      "name": "Moon crater",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        32.231,
+        0.393,
+        1.057
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-arm-moon",
+      "material": "crater",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mcr-6",
+      "name": "Moon crater",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        32.132,
+        -1.231,
+        -0.434
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-arm-moon",
+      "material": "crater",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-mcr-7",
+      "name": "Moon crater",
+      "type": "sphere",
+      "dimensions": [
+        0.5
+      ],
+      "position": [
+        29.721,
+        1.583,
+        1.915
+      ]
+    },
+    {
+      "description": "a rocket that lifts off once per loop, then returns to the pad",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-rocket-3",
+      "name": "Launch 3 rocket",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 90,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "pad",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-pad-3",
+      "name": "Launch 3 pad",
+      "type": "cylinder",
+      "dimensions": [
+        3,
+        0.4
+      ],
+      "position": [
+        -9.8,
+        0,
+        0
+      ],
+      "rotation_z": 180
+    },
+    {
+      "description": "",
+      "rotation_y": 90,
+      "parent": "planet-earth-v17-rocket-3",
+      "material": "rocket",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-rocket-3-body",
+      "name": "Launch 3 stage",
+      "type": "cylinder",
+      "dimensions": [
+        0.7,
+        8
+      ],
+      "position": [
+        -14.1,
+        0,
+        0
+      ],
+      "rotation_z": 180
+    },
+    {
+      "description": "",
+      "rotation_y": 90,
+      "parent": "planet-earth-v17-rocket-3",
+      "material": "nose",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-rocket-3-nose",
+      "name": "Launch 3 nose cone",
+      "type": "cone",
+      "dimensions": [
+        0.7,
+        2.2
+      ],
+      "position": [
+        -19.2,
+        0,
+        0
+      ],
+      "rotation_z": 180
+    },
+    {
+      "description": "the exhaust",
+      "rotation_y": 90,
+      "parent": "planet-earth-v17-rocket-3",
+      "material": "plume",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-rocket-3-plume",
+      "name": "Launch 3 plume",
+      "type": "cone",
+      "dimensions": [
+        1.4,
+        3
+      ],
+      "position": [
+        -8.6,
+        0,
+        0
+      ],
+      "rotation_x": 180,
+      "rotation_z": 180
+    },
+    {
+      "description": "a rocket that lifts off once per loop, then returns to the pad",
+      "rotation_y": 0,
+      "parent": "planet-earth-v17-body-earth",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-rocket-4",
+      "name": "Launch 4 rocket",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 90,
+      "parent": "planet-earth-v17-body-earth",
+      "material": "pad",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-pad-4",
+      "name": "Launch 4 pad",
+      "type": "cylinder",
+      "dimensions": [
+        3,
+        0.4
+      ],
+      "position": [
+        0,
+        -9.8,
+        0
+      ],
+      "rotation_z": -90
+    },
+    {
+      "description": "",
+      "rotation_y": 90,
+      "parent": "planet-earth-v17-rocket-4",
+      "material": "rocket",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-rocket-4-body",
+      "name": "Launch 4 stage",
+      "type": "cylinder",
+      "dimensions": [
+        0.7,
+        8
+      ],
+      "position": [
+        0,
+        -14.1,
+        0
+      ],
+      "rotation_z": -90
+    },
+    {
+      "description": "",
+      "rotation_y": 90,
+      "parent": "planet-earth-v17-rocket-4",
+      "material": "nose",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-rocket-4-nose",
+      "name": "Launch 4 nose cone",
+      "type": "cone",
+      "dimensions": [
+        0.7,
+        2.2
+      ],
+      "position": [
+        0,
+        -19.2,
+        0
+      ],
+      "rotation_z": -90
+    },
+    {
+      "description": "the exhaust",
+      "rotation_y": 90,
+      "parent": "planet-earth-v17-rocket-4",
+      "material": "plume",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "planet-earth-v17-rocket-4-plume",
+      "name": "Launch 4 plume",
+      "type": "cone",
+      "dimensions": [
+        1.4,
+        3
+      ],
+      "position": [
+        0,
+        -8.6,
+        0
+      ],
+      "rotation_x": 180,
+      "rotation_z": -90
+    }
+  ],
+  "version": 199
+}

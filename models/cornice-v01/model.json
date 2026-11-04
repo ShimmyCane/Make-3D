@@ -1,0 +1,806 @@
+{
+  "model_id": "cornice-v01",
+  "name": "Cornice V01",
+  "description": "Museum (24 ft wall, 14 ft picture under the cornice) and a 9 ft home, side by side, one person in each, back to back across the shared wall. V01: the cornice as one box.",
+  "units": "in",
+  "up": "z",
+  "world": "default-world",
+  "materials": {
+    "wall": {
+      "color": "#f4efe4",
+      "opacity": 1
+    },
+    "floor": {
+      "color": "#c9b89a",
+      "opacity": 1
+    },
+    "cornice": {
+      "color": "#f0d9a8",
+      "opacity": 1
+    },
+    "step": {
+      "color": "#e8c27a",
+      "opacity": 1
+    },
+    "envelope": {
+      "color": "#f0d9a8",
+      "opacity": 0.35
+    },
+    "frame": {
+      "color": "#7a5a3a",
+      "opacity": 1
+    },
+    "canvas": {
+      "color": "#9fc5e8",
+      "opacity": 1
+    },
+    "lamp": {
+      "color": "#fff2a8",
+      "opacity": 1
+    },
+    "shirt": {
+      "color": "#7fb3d5",
+      "opacity": 1
+    },
+    "pants": {
+      "color": "#3c4a5c",
+      "opacity": 1
+    },
+    "skin": {
+      "color": "#e8b894",
+      "opacity": 1
+    },
+    "ink": {
+      "color": "#2d2a26",
+      "opacity": 1
+    }
+  },
+  "objects": [
+    {
+      "description": "both rooms",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "floor",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-ground",
+      "name": "Floor",
+      "type": "box",
+      "dimensions": [
+        372,
+        252,
+        1
+      ],
+      "position": [
+        -90,
+        0,
+        -0.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-wall-museum-back",
+      "name": "Museum picture wall",
+      "type": "box",
+      "dimensions": [
+        6,
+        252,
+        288
+      ],
+      "position": [
+        -363,
+        0,
+        144
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-wall-museum-left",
+      "name": "Museum side wall (left)",
+      "type": "box",
+      "dimensions": [
+        372,
+        6,
+        288
+      ],
+      "position": [
+        -180,
+        -123,
+        144
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-wall-museum-right",
+      "name": "Museum side wall (right)",
+      "type": "box",
+      "dimensions": [
+        372,
+        6,
+        288
+      ],
+      "position": [
+        -180,
+        123,
+        144
+      ]
+    },
+    {
+      "description": "between the two rooms",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-wall-shared",
+      "name": "Shared wall",
+      "type": "box",
+      "dimensions": [
+        6,
+        252,
+        288
+      ],
+      "position": [
+        3,
+        0,
+        144
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-wall-home-far",
+      "name": "Home far wall",
+      "type": "box",
+      "dimensions": [
+        6,
+        252,
+        108
+      ],
+      "position": [
+        183,
+        0,
+        54
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-wall-home-left",
+      "name": "Home side wall (left)",
+      "type": "box",
+      "dimensions": [
+        174,
+        6,
+        108
+      ],
+      "position": [
+        93,
+        -123,
+        54
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-wall-home-right",
+      "name": "Home side wall (right)",
+      "type": "box",
+      "dimensions": [
+        174,
+        6,
+        108
+      ],
+      "position": [
+        93,
+        123,
+        54
+      ]
+    },
+    {
+      "description": "14 ft by 10 ft",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "frame",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-frame",
+      "name": "Picture frame",
+      "type": "box",
+      "dimensions": [
+        2,
+        124,
+        172
+      ],
+      "position": [
+        -359,
+        0,
+        96
+      ]
+    },
+    {
+      "description": "canvas",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "canvas",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-canvas",
+      "name": "Picture",
+      "type": "box",
+      "dimensions": [
+        0.6,
+        112,
+        160
+      ],
+      "position": [
+        -357.7,
+        0,
+        96
+      ]
+    },
+    {
+      "description": "picture light",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "lamp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-lamp-1",
+      "name": "Lamp 1",
+      "type": "sphere",
+      "dimensions": [
+        3
+      ],
+      "position": [
+        -300,
+        -80,
+        186
+      ]
+    },
+    {
+      "description": "picture light",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "lamp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-lamp-2",
+      "name": "Lamp 2",
+      "type": "sphere",
+      "dimensions": [
+        3
+      ],
+      "position": [
+        -300,
+        -40,
+        186
+      ]
+    },
+    {
+      "description": "picture light",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "lamp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-lamp-3",
+      "name": "Lamp 3",
+      "type": "sphere",
+      "dimensions": [
+        3
+      ],
+      "position": [
+        -300,
+        0,
+        186
+      ]
+    },
+    {
+      "description": "picture light",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "lamp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-lamp-4",
+      "name": "Lamp 4",
+      "type": "sphere",
+      "dimensions": [
+        3
+      ],
+      "position": [
+        -300,
+        40,
+        186
+      ]
+    },
+    {
+      "description": "picture light",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "lamp",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-lamp-5",
+      "name": "Lamp 5",
+      "type": "sphere",
+      "dimensions": [
+        3
+      ],
+      "position": [
+        -300,
+        80,
+        186
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-p-museum",
+      "name": "Museum person",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v01-p-museum",
+      "material": "pants",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-p-museum-legL",
+      "name": "Left leg",
+      "type": "box",
+      "dimensions": [
+        4,
+        5,
+        30
+      ],
+      "position": [
+        -8,
+        -3.5,
+        15
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v01-p-museum",
+      "material": "pants",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-p-museum-legR",
+      "name": "Right leg",
+      "type": "box",
+      "dimensions": [
+        4,
+        5,
+        30
+      ],
+      "position": [
+        -8,
+        3.5,
+        15
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v01-p-museum",
+      "material": "shirt",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-p-museum-torso",
+      "name": "Torso",
+      "type": "box",
+      "dimensions": [
+        8,
+        16,
+        26
+      ],
+      "position": [
+        -8,
+        0,
+        43
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v01-p-museum",
+      "material": "shirt",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-p-museum-armL",
+      "name": "Left arm",
+      "type": "box",
+      "dimensions": [
+        3,
+        3,
+        24
+      ],
+      "position": [
+        -8,
+        -9.5,
+        42
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v01-p-museum",
+      "material": "shirt",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-p-museum-armR",
+      "name": "Right arm",
+      "type": "box",
+      "dimensions": [
+        3,
+        3,
+        24
+      ],
+      "position": [
+        -8,
+        9.5,
+        42
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v01-p-museum",
+      "material": "skin",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-p-museum-neck",
+      "name": "Neck",
+      "type": "cylinder",
+      "dimensions": [
+        2,
+        5
+      ],
+      "position": [
+        -8,
+        0,
+        58.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v01-p-museum",
+      "material": "skin",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-p-museum-head",
+      "name": "Head",
+      "type": "sphere",
+      "dimensions": [
+        5.5
+      ],
+      "position": [
+        -8,
+        0,
+        66.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v01-p-museum",
+      "material": "ink",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-p-museum-eyeL",
+      "name": "Left eye",
+      "type": "sphere",
+      "dimensions": [
+        1
+      ],
+      "position": [
+        -13.2,
+        -2,
+        67.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v01-p-museum",
+      "material": "ink",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-p-museum-eyeR",
+      "name": "Right eye",
+      "type": "sphere",
+      "dimensions": [
+        1
+      ],
+      "position": [
+        -13.2,
+        2,
+        67.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-p-home",
+      "name": "Home person",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v01-p-home",
+      "material": "pants",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-p-home-legL",
+      "name": "Left leg",
+      "type": "box",
+      "dimensions": [
+        4,
+        5,
+        30
+      ],
+      "position": [
+        14,
+        -3.5,
+        15
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v01-p-home",
+      "material": "pants",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-p-home-legR",
+      "name": "Right leg",
+      "type": "box",
+      "dimensions": [
+        4,
+        5,
+        30
+      ],
+      "position": [
+        14,
+        3.5,
+        15
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v01-p-home",
+      "material": "shirt",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-p-home-torso",
+      "name": "Torso",
+      "type": "box",
+      "dimensions": [
+        8,
+        16,
+        26
+      ],
+      "position": [
+        14,
+        0,
+        43
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v01-p-home",
+      "material": "shirt",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-p-home-armL",
+      "name": "Left arm",
+      "type": "box",
+      "dimensions": [
+        3,
+        3,
+        24
+      ],
+      "position": [
+        14,
+        -9.5,
+        42
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v01-p-home",
+      "material": "shirt",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-p-home-armR",
+      "name": "Right arm",
+      "type": "box",
+      "dimensions": [
+        3,
+        3,
+        24
+      ],
+      "position": [
+        14,
+        9.5,
+        42
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v01-p-home",
+      "material": "skin",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-p-home-neck",
+      "name": "Neck",
+      "type": "cylinder",
+      "dimensions": [
+        2,
+        5
+      ],
+      "position": [
+        14,
+        0,
+        58.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v01-p-home",
+      "material": "skin",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-p-home-head",
+      "name": "Head",
+      "type": "sphere",
+      "dimensions": [
+        5.5
+      ],
+      "position": [
+        14,
+        0,
+        66.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v01-p-home",
+      "material": "ink",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-p-home-eyeL",
+      "name": "Left eye",
+      "type": "sphere",
+      "dimensions": [
+        1
+      ],
+      "position": [
+        19.2,
+        -2,
+        67.5
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "cornice-v01-p-home",
+      "material": "ink",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-p-home-eyeR",
+      "name": "Right eye",
+      "type": "sphere",
+      "dimensions": [
+        1
+      ],
+      "position": [
+        19.2,
+        2,
+        67.5
+      ]
+    },
+    {
+      "description": "bounding box of the profile",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "envelope",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-env-museum",
+      "name": "Museum cornice (blockout)",
+      "type": "box",
+      "dimensions": [
+        82.243,
+        240,
+        97.00126
+      ],
+      "position": [
+        -318.87850000000003,
+        0,
+        239.49937
+      ]
+    },
+    {
+      "description": "bounding box of the profile",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "envelope",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "cornice-v01-env-home",
+      "name": "Home cornice (blockout)",
+      "type": "box",
+      "dimensions": [
+        82.243,
+        240,
+        97.00126
+      ],
+      "position": [
+        138.8785,
+        0,
+        59.49937
+      ]
+    }
+  ],
+  "version": 37
+}

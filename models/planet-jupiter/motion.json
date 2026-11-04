@@ -1,0 +1,74 @@
+{
+  "schema": "make3d.motion/0.1",
+  "model_id": "planet-jupiter",
+  "name": "Spin and moons",
+  "description": "Jupiter spins and its moons go round it. One 240 s loop; each motion is a whole number of turns, so it never jumps.",
+  "units": "in",
+  "up": "z",
+  "loop_s": 240,
+  "autoplay": {
+    "plays": 2
+  },
+  "motions": [
+    {
+      "id": "jupiter-spin",
+      "target": "planet-jupiter-body-jupiter",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 12
+    },
+    {
+      "id": "io-orbit",
+      "target": "planet-jupiter-arm-io",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 9
+    },
+    {
+      "id": "europa-orbit",
+      "target": "planet-jupiter-arm-europa",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 6
+    },
+    {
+      "id": "ganymede-orbit",
+      "target": "planet-jupiter-arm-ganymede",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 4
+    },
+    {
+      "id": "callisto-orbit",
+      "target": "planet-jupiter-arm-callisto",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cycles": 3
+    }
+  ]
+}

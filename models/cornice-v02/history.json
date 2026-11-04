@@ -1,0 +1,2962 @@
+{
+  "schema": "make3d.history/0.1",
+  "model_id": "cornice-v02",
+  "header": {
+    "model_id": "cornice-v02",
+    "name": "Cornice V02",
+    "description": "Same two rooms. V02: the cornice from the traced profile (slices of its outline, with the two steps) on the back wall of each room.",
+    "units": "in",
+    "up": "z",
+    "world": "default-world",
+    "materials": {
+      "wall": {
+        "color": "#f4efe4",
+        "opacity": 1
+      },
+      "floor": {
+        "color": "#c9b89a",
+        "opacity": 1
+      },
+      "cornice": {
+        "color": "#f0d9a8",
+        "opacity": 1
+      },
+      "step": {
+        "color": "#e8c27a",
+        "opacity": 1
+      },
+      "envelope": {
+        "color": "#f0d9a8",
+        "opacity": 0.35
+      },
+      "frame": {
+        "color": "#7a5a3a",
+        "opacity": 1
+      },
+      "canvas": {
+        "color": "#9fc5e8",
+        "opacity": 1
+      },
+      "lamp": {
+        "color": "#fff2a8",
+        "opacity": 1
+      },
+      "shirt": {
+        "color": "#7fb3d5",
+        "opacity": 1
+      },
+      "pants": {
+        "color": "#3c4a5c",
+        "opacity": 1
+      },
+      "skin": {
+        "color": "#e8b894",
+        "opacity": 1
+      },
+      "ink": {
+        "color": "#2d2a26",
+        "opacity": 1
+      }
+    }
+  },
+  "operations": [
+    {
+      "seq": 1,
+      "op": "add",
+      "time": "2026-11-01T10:01:00.000Z",
+      "author": "jimmy",
+      "note": "add Floor",
+      "object": {
+        "uuid": "cornice-v02-ground",
+        "name": "Floor",
+        "description": "both rooms",
+        "type": "box",
+        "dimensions": [
+          372,
+          252,
+          1
+        ],
+        "position": [
+          -90,
+          0,
+          -0.5
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "floor"
+      }
+    },
+    {
+      "seq": 2,
+      "op": "add",
+      "time": "2026-11-01T10:02:00.000Z",
+      "author": "jimmy",
+      "note": "add Museum picture wall",
+      "object": {
+        "uuid": "cornice-v02-wall-museum-back",
+        "name": "Museum picture wall",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          6,
+          252,
+          288
+        ],
+        "position": [
+          -363,
+          0,
+          144
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 3,
+      "op": "add",
+      "time": "2026-11-01T10:03:00.000Z",
+      "author": "jimmy",
+      "note": "add Museum side wall (left)",
+      "object": {
+        "uuid": "cornice-v02-wall-museum-left",
+        "name": "Museum side wall (left)",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          372,
+          6,
+          288
+        ],
+        "position": [
+          -180,
+          -123,
+          144
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 4,
+      "op": "add",
+      "time": "2026-11-01T10:04:00.000Z",
+      "author": "jimmy",
+      "note": "add Museum side wall (right)",
+      "object": {
+        "uuid": "cornice-v02-wall-museum-right",
+        "name": "Museum side wall (right)",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          372,
+          6,
+          288
+        ],
+        "position": [
+          -180,
+          123,
+          144
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 5,
+      "op": "add",
+      "time": "2026-11-01T10:05:00.000Z",
+      "author": "jimmy",
+      "note": "add Shared wall",
+      "object": {
+        "uuid": "cornice-v02-wall-shared",
+        "name": "Shared wall",
+        "description": "between the two rooms",
+        "type": "box",
+        "dimensions": [
+          6,
+          252,
+          288
+        ],
+        "position": [
+          3,
+          0,
+          144
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 6,
+      "op": "add",
+      "time": "2026-11-01T10:06:00.000Z",
+      "author": "jimmy",
+      "note": "add Home far wall",
+      "object": {
+        "uuid": "cornice-v02-wall-home-far",
+        "name": "Home far wall",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          6,
+          252,
+          108
+        ],
+        "position": [
+          183,
+          0,
+          54
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 7,
+      "op": "add",
+      "time": "2026-11-01T10:07:00.000Z",
+      "author": "jimmy",
+      "note": "add Home side wall (left)",
+      "object": {
+        "uuid": "cornice-v02-wall-home-left",
+        "name": "Home side wall (left)",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          174,
+          6,
+          108
+        ],
+        "position": [
+          93,
+          -123,
+          54
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 8,
+      "op": "add",
+      "time": "2026-11-01T10:08:00.000Z",
+      "author": "jimmy",
+      "note": "add Home side wall (right)",
+      "object": {
+        "uuid": "cornice-v02-wall-home-right",
+        "name": "Home side wall (right)",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          174,
+          6,
+          108
+        ],
+        "position": [
+          93,
+          123,
+          54
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "wall"
+      }
+    },
+    {
+      "seq": 9,
+      "op": "add",
+      "time": "2026-11-01T10:09:00.000Z",
+      "author": "jimmy",
+      "note": "add Picture frame",
+      "object": {
+        "uuid": "cornice-v02-frame",
+        "name": "Picture frame",
+        "description": "14 ft by 10 ft",
+        "type": "box",
+        "dimensions": [
+          2,
+          124,
+          172
+        ],
+        "position": [
+          -359,
+          0,
+          96
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "frame"
+      }
+    },
+    {
+      "seq": 10,
+      "op": "add",
+      "time": "2026-11-01T10:10:00.000Z",
+      "author": "jimmy",
+      "note": "add Picture",
+      "object": {
+        "uuid": "cornice-v02-canvas",
+        "name": "Picture",
+        "description": "canvas",
+        "type": "box",
+        "dimensions": [
+          0.6,
+          112,
+          160
+        ],
+        "position": [
+          -357.7,
+          0,
+          96
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "canvas"
+      }
+    },
+    {
+      "seq": 11,
+      "op": "add",
+      "time": "2026-11-01T10:11:00.000Z",
+      "author": "jimmy",
+      "note": "add Lamp 1",
+      "object": {
+        "uuid": "cornice-v02-lamp-1",
+        "name": "Lamp 1",
+        "description": "picture light",
+        "type": "sphere",
+        "dimensions": [
+          3
+        ],
+        "position": [
+          -300,
+          -80,
+          186
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "lamp"
+      }
+    },
+    {
+      "seq": 12,
+      "op": "add",
+      "time": "2026-11-01T10:12:00.000Z",
+      "author": "jimmy",
+      "note": "add Lamp 2",
+      "object": {
+        "uuid": "cornice-v02-lamp-2",
+        "name": "Lamp 2",
+        "description": "picture light",
+        "type": "sphere",
+        "dimensions": [
+          3
+        ],
+        "position": [
+          -300,
+          -40,
+          186
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "lamp"
+      }
+    },
+    {
+      "seq": 13,
+      "op": "add",
+      "time": "2026-11-01T10:13:00.000Z",
+      "author": "jimmy",
+      "note": "add Lamp 3",
+      "object": {
+        "uuid": "cornice-v02-lamp-3",
+        "name": "Lamp 3",
+        "description": "picture light",
+        "type": "sphere",
+        "dimensions": [
+          3
+        ],
+        "position": [
+          -300,
+          0,
+          186
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "lamp"
+      }
+    },
+    {
+      "seq": 14,
+      "op": "add",
+      "time": "2026-11-01T10:14:00.000Z",
+      "author": "jimmy",
+      "note": "add Lamp 4",
+      "object": {
+        "uuid": "cornice-v02-lamp-4",
+        "name": "Lamp 4",
+        "description": "picture light",
+        "type": "sphere",
+        "dimensions": [
+          3
+        ],
+        "position": [
+          -300,
+          40,
+          186
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "lamp"
+      }
+    },
+    {
+      "seq": 15,
+      "op": "add",
+      "time": "2026-11-01T10:15:00.000Z",
+      "author": "jimmy",
+      "note": "add Lamp 5",
+      "object": {
+        "uuid": "cornice-v02-lamp-5",
+        "name": "Lamp 5",
+        "description": "picture light",
+        "type": "sphere",
+        "dimensions": [
+          3
+        ],
+        "position": [
+          -300,
+          80,
+          186
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": "lamp"
+      }
+    },
+    {
+      "seq": 16,
+      "op": "add",
+      "time": "2026-11-01T10:16:00.000Z",
+      "author": "jimmy",
+      "note": "add Museum person",
+      "object": {
+        "uuid": "cornice-v02-p-museum",
+        "name": "Museum person",
+        "description": "",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 17,
+      "op": "add",
+      "time": "2026-11-01T10:17:00.000Z",
+      "author": "jimmy",
+      "note": "add Left leg",
+      "object": {
+        "uuid": "cornice-v02-p-museum-legL",
+        "name": "Left leg",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          4,
+          5,
+          30
+        ],
+        "position": [
+          -8,
+          -3.5,
+          15
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-p-museum",
+        "material": "pants"
+      }
+    },
+    {
+      "seq": 18,
+      "op": "add",
+      "time": "2026-11-01T10:18:00.000Z",
+      "author": "jimmy",
+      "note": "add Right leg",
+      "object": {
+        "uuid": "cornice-v02-p-museum-legR",
+        "name": "Right leg",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          4,
+          5,
+          30
+        ],
+        "position": [
+          -8,
+          3.5,
+          15
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-p-museum",
+        "material": "pants"
+      }
+    },
+    {
+      "seq": 19,
+      "op": "add",
+      "time": "2026-11-01T10:19:00.000Z",
+      "author": "jimmy",
+      "note": "add Torso",
+      "object": {
+        "uuid": "cornice-v02-p-museum-torso",
+        "name": "Torso",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          8,
+          16,
+          26
+        ],
+        "position": [
+          -8,
+          0,
+          43
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-p-museum",
+        "material": "shirt"
+      }
+    },
+    {
+      "seq": 20,
+      "op": "add",
+      "time": "2026-11-01T10:20:00.000Z",
+      "author": "jimmy",
+      "note": "add Left arm",
+      "object": {
+        "uuid": "cornice-v02-p-museum-armL",
+        "name": "Left arm",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          3,
+          3,
+          24
+        ],
+        "position": [
+          -8,
+          -9.5,
+          42
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-p-museum",
+        "material": "shirt"
+      }
+    },
+    {
+      "seq": 21,
+      "op": "add",
+      "time": "2026-11-01T10:21:00.000Z",
+      "author": "jimmy",
+      "note": "add Right arm",
+      "object": {
+        "uuid": "cornice-v02-p-museum-armR",
+        "name": "Right arm",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          3,
+          3,
+          24
+        ],
+        "position": [
+          -8,
+          9.5,
+          42
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-p-museum",
+        "material": "shirt"
+      }
+    },
+    {
+      "seq": 22,
+      "op": "add",
+      "time": "2026-11-01T10:22:00.000Z",
+      "author": "jimmy",
+      "note": "add Neck",
+      "object": {
+        "uuid": "cornice-v02-p-museum-neck",
+        "name": "Neck",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2,
+          5
+        ],
+        "position": [
+          -8,
+          0,
+          58.5
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-p-museum",
+        "material": "skin"
+      }
+    },
+    {
+      "seq": 23,
+      "op": "add",
+      "time": "2026-11-01T10:23:00.000Z",
+      "author": "jimmy",
+      "note": "add Head",
+      "object": {
+        "uuid": "cornice-v02-p-museum-head",
+        "name": "Head",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          5.5
+        ],
+        "position": [
+          -8,
+          0,
+          66.5
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-p-museum",
+        "material": "skin"
+      }
+    },
+    {
+      "seq": 24,
+      "op": "add",
+      "time": "2026-11-01T10:24:00.000Z",
+      "author": "jimmy",
+      "note": "add Left eye",
+      "object": {
+        "uuid": "cornice-v02-p-museum-eyeL",
+        "name": "Left eye",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          1
+        ],
+        "position": [
+          -13.2,
+          -2,
+          67.5
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-p-museum",
+        "material": "ink"
+      }
+    },
+    {
+      "seq": 25,
+      "op": "add",
+      "time": "2026-11-01T10:25:00.000Z",
+      "author": "jimmy",
+      "note": "add Right eye",
+      "object": {
+        "uuid": "cornice-v02-p-museum-eyeR",
+        "name": "Right eye",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          1
+        ],
+        "position": [
+          -13.2,
+          2,
+          67.5
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-p-museum",
+        "material": "ink"
+      }
+    },
+    {
+      "seq": 26,
+      "op": "add",
+      "time": "2026-11-01T10:26:00.000Z",
+      "author": "jimmy",
+      "note": "add Home person",
+      "object": {
+        "uuid": "cornice-v02-p-home",
+        "name": "Home person",
+        "description": "",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 27,
+      "op": "add",
+      "time": "2026-11-01T10:27:00.000Z",
+      "author": "jimmy",
+      "note": "add Left leg",
+      "object": {
+        "uuid": "cornice-v02-p-home-legL",
+        "name": "Left leg",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          4,
+          5,
+          30
+        ],
+        "position": [
+          14,
+          -3.5,
+          15
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-p-home",
+        "material": "pants"
+      }
+    },
+    {
+      "seq": 28,
+      "op": "add",
+      "time": "2026-11-01T10:28:00.000Z",
+      "author": "jimmy",
+      "note": "add Right leg",
+      "object": {
+        "uuid": "cornice-v02-p-home-legR",
+        "name": "Right leg",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          4,
+          5,
+          30
+        ],
+        "position": [
+          14,
+          3.5,
+          15
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-p-home",
+        "material": "pants"
+      }
+    },
+    {
+      "seq": 29,
+      "op": "add",
+      "time": "2026-11-01T10:29:00.000Z",
+      "author": "jimmy",
+      "note": "add Torso",
+      "object": {
+        "uuid": "cornice-v02-p-home-torso",
+        "name": "Torso",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          8,
+          16,
+          26
+        ],
+        "position": [
+          14,
+          0,
+          43
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-p-home",
+        "material": "shirt"
+      }
+    },
+    {
+      "seq": 30,
+      "op": "add",
+      "time": "2026-11-01T10:30:00.000Z",
+      "author": "jimmy",
+      "note": "add Left arm",
+      "object": {
+        "uuid": "cornice-v02-p-home-armL",
+        "name": "Left arm",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          3,
+          3,
+          24
+        ],
+        "position": [
+          14,
+          -9.5,
+          42
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-p-home",
+        "material": "shirt"
+      }
+    },
+    {
+      "seq": 31,
+      "op": "add",
+      "time": "2026-11-01T10:31:00.000Z",
+      "author": "jimmy",
+      "note": "add Right arm",
+      "object": {
+        "uuid": "cornice-v02-p-home-armR",
+        "name": "Right arm",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          3,
+          3,
+          24
+        ],
+        "position": [
+          14,
+          9.5,
+          42
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-p-home",
+        "material": "shirt"
+      }
+    },
+    {
+      "seq": 32,
+      "op": "add",
+      "time": "2026-11-01T10:32:00.000Z",
+      "author": "jimmy",
+      "note": "add Neck",
+      "object": {
+        "uuid": "cornice-v02-p-home-neck",
+        "name": "Neck",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          2,
+          5
+        ],
+        "position": [
+          14,
+          0,
+          58.5
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-p-home",
+        "material": "skin"
+      }
+    },
+    {
+      "seq": 33,
+      "op": "add",
+      "time": "2026-11-01T10:33:00.000Z",
+      "author": "jimmy",
+      "note": "add Head",
+      "object": {
+        "uuid": "cornice-v02-p-home-head",
+        "name": "Head",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          5.5
+        ],
+        "position": [
+          14,
+          0,
+          66.5
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-p-home",
+        "material": "skin"
+      }
+    },
+    {
+      "seq": 34,
+      "op": "add",
+      "time": "2026-11-01T10:34:00.000Z",
+      "author": "jimmy",
+      "note": "add Left eye",
+      "object": {
+        "uuid": "cornice-v02-p-home-eyeL",
+        "name": "Left eye",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          1
+        ],
+        "position": [
+          19.2,
+          -2,
+          67.5
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-p-home",
+        "material": "ink"
+      }
+    },
+    {
+      "seq": 35,
+      "op": "add",
+      "time": "2026-11-01T10:35:00.000Z",
+      "author": "jimmy",
+      "note": "add Right eye",
+      "object": {
+        "uuid": "cornice-v02-p-home-eyeR",
+        "name": "Right eye",
+        "description": "",
+        "type": "sphere",
+        "dimensions": [
+          1
+        ],
+        "position": [
+          19.2,
+          2,
+          67.5
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-p-home",
+        "material": "ink"
+      }
+    },
+    {
+      "seq": 36,
+      "op": "add",
+      "time": "2026-11-01T10:36:00.000Z",
+      "author": "jimmy",
+      "note": "add Museum cornice",
+      "object": {
+        "uuid": "cornice-v02-pm-cornice",
+        "name": "Museum cornice",
+        "description": "the traced profile, with its two steps",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 37,
+      "op": "add",
+      "time": "2026-11-01T10:37:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -14",
+      "object": {
+        "uuid": "cornice-v02-pm--14",
+        "name": "Profile slice -14",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          60.5642,
+          240,
+          2.0780569999999976
+        ],
+        "position": [
+          -308.0391,
+          0,
+          192.0377685
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 38,
+      "op": "add",
+      "time": "2026-11-01T10:38:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -13",
+      "object": {
+        "uuid": "cornice-v02-pm--13",
+        "name": "Profile slice -13",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          76.3685,
+          240,
+          3.79
+        ],
+        "position": [
+          -321.81575,
+          0,
+          194.971797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 39,
+      "op": "add",
+      "time": "2026-11-01T10:39:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -12",
+      "object": {
+        "uuid": "cornice-v02-pm--12",
+        "name": "Profile slice -12",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          -359.4,
+          0,
+          198.761797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 40,
+      "op": "add",
+      "time": "2026-11-01T10:40:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -11",
+      "object": {
+        "uuid": "cornice-v02-pm--11",
+        "name": "Profile slice -11",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          -359.4,
+          0,
+          202.551797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 41,
+      "op": "add",
+      "time": "2026-11-01T10:41:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -10",
+      "object": {
+        "uuid": "cornice-v02-pm--10",
+        "name": "Profile slice -10",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          -359.4,
+          0,
+          206.34179699999999
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 42,
+      "op": "add",
+      "time": "2026-11-01T10:42:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -9",
+      "object": {
+        "uuid": "cornice-v02-pm--9",
+        "name": "Profile slice -9",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          -359.4,
+          0,
+          210.131797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 43,
+      "op": "add",
+      "time": "2026-11-01T10:43:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -8",
+      "object": {
+        "uuid": "cornice-v02-pm--8",
+        "name": "Profile slice -8",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          -359.4,
+          0,
+          213.921797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 44,
+      "op": "add",
+      "time": "2026-11-01T10:44:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -7",
+      "object": {
+        "uuid": "cornice-v02-pm--7",
+        "name": "Profile slice -7",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          -359.4,
+          0,
+          217.711797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 45,
+      "op": "add",
+      "time": "2026-11-01T10:45:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -6",
+      "object": {
+        "uuid": "cornice-v02-pm--6",
+        "name": "Profile slice -6",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          -359.4,
+          0,
+          221.501797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 46,
+      "op": "add",
+      "time": "2026-11-01T10:46:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -5",
+      "object": {
+        "uuid": "cornice-v02-pm--5",
+        "name": "Profile slice -5",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          -359.4,
+          0,
+          225.291797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 47,
+      "op": "add",
+      "time": "2026-11-01T10:47:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -4",
+      "object": {
+        "uuid": "cornice-v02-pm--4",
+        "name": "Profile slice -4",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          -359.1726,
+          0,
+          229.081797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 48,
+      "op": "add",
+      "time": "2026-11-01T10:48:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -3",
+      "object": {
+        "uuid": "cornice-v02-pm--3",
+        "name": "Profile slice -3",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          -359.1726,
+          0,
+          232.871797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 49,
+      "op": "add",
+      "time": "2026-11-01T10:49:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -2",
+      "object": {
+        "uuid": "cornice-v02-pm--2",
+        "name": "Profile slice -2",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2128000000000003,
+          240,
+          3.79
+        ],
+        "position": [
+          -359.3936,
+          0,
+          236.66179699999998
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 50,
+      "op": "add",
+      "time": "2026-11-01T10:50:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -1",
+      "object": {
+        "uuid": "cornice-v02-pm--1",
+        "name": "Profile slice -1",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2128000000000003,
+          240,
+          3.79
+        ],
+        "position": [
+          -359.3936,
+          0,
+          240.451797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 51,
+      "op": "add",
+      "time": "2026-11-01T10:51:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 0",
+      "object": {
+        "uuid": "cornice-v02-pm-0",
+        "name": "Profile slice 0",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2128000000000003,
+          240,
+          3.79
+        ],
+        "position": [
+          -359.3936,
+          0,
+          244.241797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 52,
+      "op": "add",
+      "time": "2026-11-01T10:52:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 1",
+      "object": {
+        "uuid": "cornice-v02-pm-1",
+        "name": "Profile slice 1",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          -358.1872,
+          0,
+          248.03179699999998
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 53,
+      "op": "add",
+      "time": "2026-11-01T10:53:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 2",
+      "object": {
+        "uuid": "cornice-v02-pm-2",
+        "name": "Profile slice 2",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2128000000000003,
+          240,
+          3.79
+        ],
+        "position": [
+          -359.3936,
+          0,
+          251.821797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 54,
+      "op": "add",
+      "time": "2026-11-01T10:54:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 3",
+      "object": {
+        "uuid": "cornice-v02-pm-3",
+        "name": "Profile slice 3",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.4401999999999997,
+          240,
+          3.79
+        ],
+        "position": [
+          -359.2799,
+          0,
+          255.611797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 55,
+      "op": "add",
+      "time": "2026-11-01T10:55:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 4",
+      "object": {
+        "uuid": "cornice-v02-pm-4",
+        "name": "Profile slice 4",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.4401999999999997,
+          240,
+          3.79
+        ],
+        "position": [
+          -359.2799,
+          0,
+          259.401797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 56,
+      "op": "add",
+      "time": "2026-11-01T10:56:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 5",
+      "object": {
+        "uuid": "cornice-v02-pm-5",
+        "name": "Profile slice 5",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.4401999999999997,
+          240,
+          3.79
+        ],
+        "position": [
+          -359.2799,
+          0,
+          263.191797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 57,
+      "op": "add",
+      "time": "2026-11-01T10:57:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 6",
+      "object": {
+        "uuid": "cornice-v02-pm-6",
+        "name": "Profile slice 6",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.4401999999999997,
+          240,
+          3.79
+        ],
+        "position": [
+          -359.2799,
+          0,
+          266.981797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 58,
+      "op": "add",
+      "time": "2026-11-01T10:58:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 7",
+      "object": {
+        "uuid": "cornice-v02-pm-7",
+        "name": "Profile slice 7",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          -358.9831,
+          0,
+          270.771797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 59,
+      "op": "add",
+      "time": "2026-11-01T10:59:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 8",
+      "object": {
+        "uuid": "cornice-v02-pm-8",
+        "name": "Profile slice 8",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          -357.9598,
+          0,
+          274.56179699999996
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 60,
+      "op": "add",
+      "time": "2026-11-01T11:00:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 9",
+      "object": {
+        "uuid": "cornice-v02-pm-9",
+        "name": "Profile slice 9",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          -358.5662,
+          0,
+          278.351797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 61,
+      "op": "add",
+      "time": "2026-11-01T11:01:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 10",
+      "object": {
+        "uuid": "cornice-v02-pm-10",
+        "name": "Profile slice 10",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          -357.9598,
+          0,
+          282.141797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 62,
+      "op": "add",
+      "time": "2026-11-01T11:02:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 11",
+      "object": {
+        "uuid": "cornice-v02-pm-11",
+        "name": "Profile slice 11",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          -357.9598,
+          0,
+          285.93179699999996
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 63,
+      "op": "add",
+      "time": "2026-11-01T11:03:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -13",
+      "object": {
+        "uuid": "cornice-v02-pm-a--13",
+        "name": "Step slice -13",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.6676000000000073,
+          240,
+          3.0619410000000005
+        ],
+        "position": [
+          -282.4566,
+          0,
+          195.3358265
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 64,
+      "op": "add",
+      "time": "2026-11-01T11:04:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -12",
+      "object": {
+        "uuid": "cornice-v02-pm-a--12",
+        "name": "Step slice -12",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.3644000000000034,
+          240,
+          3.79
+        ],
+        "position": [
+          -282.6082,
+          0,
+          198.761797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 65,
+      "op": "add",
+      "time": "2026-11-01T11:05:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -11",
+      "object": {
+        "uuid": "cornice-v02-pm-a--11",
+        "name": "Step slice -11",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2000000000000028,
+          240,
+          3.79
+        ],
+        "position": [
+          -282.3872,
+          0,
+          202.551797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 66,
+      "op": "add",
+      "time": "2026-11-01T11:06:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -10",
+      "object": {
+        "uuid": "cornice-v02-pm-a--10",
+        "name": "Step slice -10",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          2.3877000000000095,
+          240,
+          3.79
+        ],
+        "position": [
+          -283.57465,
+          0,
+          206.34179699999999
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 67,
+      "op": "add",
+      "time": "2026-11-01T11:07:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -9",
+      "object": {
+        "uuid": "cornice-v02-pm-a--9",
+        "name": "Step slice -9",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          5.988200000000006,
+          240,
+          3.79
+        ],
+        "position": [
+          -286.5877,
+          0,
+          210.131797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 68,
+      "op": "add",
+      "time": "2026-11-01T11:08:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -8",
+      "object": {
+        "uuid": "cornice-v02-pm-a--8",
+        "name": "Step slice -8",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          16.600199999999994,
+          240,
+          3.186631999999999
+        ],
+        "position": [
+          -298.18510000000003,
+          0,
+          213.620113
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 69,
+      "op": "add",
+      "time": "2026-11-01T11:09:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -8",
+      "object": {
+        "uuid": "cornice-v02-pm-b--8",
+        "name": "Step slice -8",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          11.786899999999996,
+          240,
+          2.851217
+        ],
+        "position": [
+          -309.95305,
+          0,
+          214.3911885
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 70,
+      "op": "add",
+      "time": "2026-11-01T11:10:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -7",
+      "object": {
+        "uuid": "cornice-v02-pm-b--7",
+        "name": "Step slice -7",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          13.985100000000003,
+          240,
+          3.79
+        ],
+        "position": [
+          -312.15125,
+          0,
+          217.711797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 71,
+      "op": "add",
+      "time": "2026-11-01T11:11:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -6",
+      "object": {
+        "uuid": "cornice-v02-pm-b--6",
+        "name": "Step slice -6",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          3.8278999999999996,
+          240,
+          3.79
+        ],
+        "position": [
+          -318.85955,
+          0,
+          221.501797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 72,
+      "op": "add",
+      "time": "2026-11-01T11:12:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -5",
+      "object": {
+        "uuid": "cornice-v02-pm-b--5",
+        "name": "Step slice -5",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          2.0087000000000046,
+          240,
+          3.79
+        ],
+        "position": [
+          -320.48924999999997,
+          0,
+          225.291797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 73,
+      "op": "add",
+      "time": "2026-11-01T11:13:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -4",
+      "object": {
+        "uuid": "cornice-v02-pm-b--4",
+        "name": "Step slice -4",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2000000000000028,
+          240,
+          3.79
+        ],
+        "position": [
+          -320.8936,
+          0,
+          229.081797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 74,
+      "op": "add",
+      "time": "2026-11-01T11:14:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -3",
+      "object": {
+        "uuid": "cornice-v02-pm-b--3",
+        "name": "Step slice -3",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2000000000000028,
+          240,
+          3.421612
+        ],
+        "position": [
+          -320.8936,
+          0,
+          232.687603
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-pm-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 75,
+      "op": "add",
+      "time": "2026-11-01T11:15:00.000Z",
+      "author": "jimmy",
+      "note": "add Home cornice",
+      "object": {
+        "uuid": "cornice-v02-ph-cornice",
+        "name": "Home cornice",
+        "description": "the traced profile, with its two steps",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 76,
+      "op": "add",
+      "time": "2026-11-01T11:16:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -14",
+      "object": {
+        "uuid": "cornice-v02-ph--14",
+        "name": "Profile slice -14",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          60.5642,
+          240,
+          2.0780569999999976
+        ],
+        "position": [
+          128.03910000000002,
+          0,
+          12.0377685
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 77,
+      "op": "add",
+      "time": "2026-11-01T11:17:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -13",
+      "object": {
+        "uuid": "cornice-v02-ph--13",
+        "name": "Profile slice -13",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          76.3685,
+          240,
+          3.79
+        ],
+        "position": [
+          141.81575,
+          0,
+          14.971796999999995
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 78,
+      "op": "add",
+      "time": "2026-11-01T11:18:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -12",
+      "object": {
+        "uuid": "cornice-v02-ph--12",
+        "name": "Profile slice -12",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          179.4,
+          0,
+          18.761796999999994
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 79,
+      "op": "add",
+      "time": "2026-11-01T11:19:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -11",
+      "object": {
+        "uuid": "cornice-v02-ph--11",
+        "name": "Profile slice -11",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          179.4,
+          0,
+          22.551796999999993
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 80,
+      "op": "add",
+      "time": "2026-11-01T11:20:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -10",
+      "object": {
+        "uuid": "cornice-v02-ph--10",
+        "name": "Profile slice -10",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          179.4,
+          0,
+          26.341796999999996
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 81,
+      "op": "add",
+      "time": "2026-11-01T11:21:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -9",
+      "object": {
+        "uuid": "cornice-v02-ph--9",
+        "name": "Profile slice -9",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          179.4,
+          0,
+          30.131796999999995
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 82,
+      "op": "add",
+      "time": "2026-11-01T11:22:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -8",
+      "object": {
+        "uuid": "cornice-v02-ph--8",
+        "name": "Profile slice -8",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          179.4,
+          0,
+          33.921797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 83,
+      "op": "add",
+      "time": "2026-11-01T11:23:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -7",
+      "object": {
+        "uuid": "cornice-v02-ph--7",
+        "name": "Profile slice -7",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          179.4,
+          0,
+          37.711797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 84,
+      "op": "add",
+      "time": "2026-11-01T11:24:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -6",
+      "object": {
+        "uuid": "cornice-v02-ph--6",
+        "name": "Profile slice -6",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          179.4,
+          0,
+          41.501796999999996
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 85,
+      "op": "add",
+      "time": "2026-11-01T11:25:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -5",
+      "object": {
+        "uuid": "cornice-v02-ph--5",
+        "name": "Profile slice -5",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          179.4,
+          0,
+          45.291796999999995
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 86,
+      "op": "add",
+      "time": "2026-11-01T11:26:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -4",
+      "object": {
+        "uuid": "cornice-v02-ph--4",
+        "name": "Profile slice -4",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          179.1726,
+          0,
+          49.081796999999995
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 87,
+      "op": "add",
+      "time": "2026-11-01T11:27:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -3",
+      "object": {
+        "uuid": "cornice-v02-ph--3",
+        "name": "Profile slice -3",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          179.1726,
+          0,
+          52.871796999999994
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 88,
+      "op": "add",
+      "time": "2026-11-01T11:28:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -2",
+      "object": {
+        "uuid": "cornice-v02-ph--2",
+        "name": "Profile slice -2",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2128000000000003,
+          240,
+          3.79
+        ],
+        "position": [
+          179.3936,
+          0,
+          56.66179699999999
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 89,
+      "op": "add",
+      "time": "2026-11-01T11:29:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice -1",
+      "object": {
+        "uuid": "cornice-v02-ph--1",
+        "name": "Profile slice -1",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2128000000000003,
+          240,
+          3.79
+        ],
+        "position": [
+          179.3936,
+          0,
+          60.451797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 90,
+      "op": "add",
+      "time": "2026-11-01T11:30:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 0",
+      "object": {
+        "uuid": "cornice-v02-ph-0",
+        "name": "Profile slice 0",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2128000000000003,
+          240,
+          3.79
+        ],
+        "position": [
+          179.3936,
+          0,
+          64.24179699999999
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 91,
+      "op": "add",
+      "time": "2026-11-01T11:31:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 1",
+      "object": {
+        "uuid": "cornice-v02-ph-1",
+        "name": "Profile slice 1",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          178.1872,
+          0,
+          68.031797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 92,
+      "op": "add",
+      "time": "2026-11-01T11:32:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 2",
+      "object": {
+        "uuid": "cornice-v02-ph-2",
+        "name": "Profile slice 2",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2128000000000003,
+          240,
+          3.79
+        ],
+        "position": [
+          179.3936,
+          0,
+          71.82179699999999
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 93,
+      "op": "add",
+      "time": "2026-11-01T11:33:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 3",
+      "object": {
+        "uuid": "cornice-v02-ph-3",
+        "name": "Profile slice 3",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.4401999999999997,
+          240,
+          3.79
+        ],
+        "position": [
+          179.2799,
+          0,
+          75.611797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 94,
+      "op": "add",
+      "time": "2026-11-01T11:34:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 4",
+      "object": {
+        "uuid": "cornice-v02-ph-4",
+        "name": "Profile slice 4",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.4401999999999997,
+          240,
+          3.79
+        ],
+        "position": [
+          179.2799,
+          0,
+          79.40179699999999
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 95,
+      "op": "add",
+      "time": "2026-11-01T11:35:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 5",
+      "object": {
+        "uuid": "cornice-v02-ph-5",
+        "name": "Profile slice 5",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.4401999999999997,
+          240,
+          3.79
+        ],
+        "position": [
+          179.2799,
+          0,
+          83.191797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 96,
+      "op": "add",
+      "time": "2026-11-01T11:36:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 6",
+      "object": {
+        "uuid": "cornice-v02-ph-6",
+        "name": "Profile slice 6",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.4401999999999997,
+          240,
+          3.79
+        ],
+        "position": [
+          179.2799,
+          0,
+          86.98179699999999
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 97,
+      "op": "add",
+      "time": "2026-11-01T11:37:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 7",
+      "object": {
+        "uuid": "cornice-v02-ph-7",
+        "name": "Profile slice 7",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          178.9831,
+          0,
+          90.77179699999999
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 98,
+      "op": "add",
+      "time": "2026-11-01T11:38:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 8",
+      "object": {
+        "uuid": "cornice-v02-ph-8",
+        "name": "Profile slice 8",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          177.9598,
+          0,
+          94.56179699999998
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 99,
+      "op": "add",
+      "time": "2026-11-01T11:39:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 9",
+      "object": {
+        "uuid": "cornice-v02-ph-9",
+        "name": "Profile slice 9",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          178.5662,
+          0,
+          98.35179699999999
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 100,
+      "op": "add",
+      "time": "2026-11-01T11:40:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 10",
+      "object": {
+        "uuid": "cornice-v02-ph-10",
+        "name": "Profile slice 10",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          177.9598,
+          0,
+          102.14179699999998
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 101,
+      "op": "add",
+      "time": "2026-11-01T11:41:00.000Z",
+      "author": "jimmy",
+      "note": "add Profile slice 11",
+      "object": {
+        "uuid": "cornice-v02-ph-11",
+        "name": "Profile slice 11",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2,
+          240,
+          3.79
+        ],
+        "position": [
+          177.9598,
+          0,
+          105.93179699999999
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "cornice"
+      }
+    },
+    {
+      "seq": 102,
+      "op": "add",
+      "time": "2026-11-01T11:42:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -13",
+      "object": {
+        "uuid": "cornice-v02-ph-a--13",
+        "name": "Step slice -13",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.6676000000000073,
+          240,
+          3.0619410000000005
+        ],
+        "position": [
+          102.45660000000001,
+          0,
+          15.335826499999996
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 103,
+      "op": "add",
+      "time": "2026-11-01T11:43:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -12",
+      "object": {
+        "uuid": "cornice-v02-ph-a--12",
+        "name": "Step slice -12",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.3644000000000034,
+          240,
+          3.79
+        ],
+        "position": [
+          102.60820000000001,
+          0,
+          18.761796999999994
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 104,
+      "op": "add",
+      "time": "2026-11-01T11:44:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -11",
+      "object": {
+        "uuid": "cornice-v02-ph-a--11",
+        "name": "Step slice -11",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2000000000000028,
+          240,
+          3.79
+        ],
+        "position": [
+          102.3872,
+          0,
+          22.551796999999993
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 105,
+      "op": "add",
+      "time": "2026-11-01T11:45:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -10",
+      "object": {
+        "uuid": "cornice-v02-ph-a--10",
+        "name": "Step slice -10",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          2.3877000000000095,
+          240,
+          3.79
+        ],
+        "position": [
+          103.57464999999999,
+          0,
+          26.341796999999996
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 106,
+      "op": "add",
+      "time": "2026-11-01T11:46:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -9",
+      "object": {
+        "uuid": "cornice-v02-ph-a--9",
+        "name": "Step slice -9",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          5.988200000000006,
+          240,
+          3.79
+        ],
+        "position": [
+          106.5877,
+          0,
+          30.131796999999995
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 107,
+      "op": "add",
+      "time": "2026-11-01T11:47:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -8",
+      "object": {
+        "uuid": "cornice-v02-ph-a--8",
+        "name": "Step slice -8",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          16.600199999999994,
+          240,
+          3.186631999999999
+        ],
+        "position": [
+          118.1851,
+          0,
+          33.620112999999996
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 108,
+      "op": "add",
+      "time": "2026-11-01T11:48:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -8",
+      "object": {
+        "uuid": "cornice-v02-ph-b--8",
+        "name": "Step slice -8",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          11.786899999999996,
+          240,
+          2.851217
+        ],
+        "position": [
+          129.95305000000002,
+          0,
+          34.3911885
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 109,
+      "op": "add",
+      "time": "2026-11-01T11:49:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -7",
+      "object": {
+        "uuid": "cornice-v02-ph-b--7",
+        "name": "Step slice -7",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          13.985100000000003,
+          240,
+          3.79
+        ],
+        "position": [
+          132.15125,
+          0,
+          37.711797
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 110,
+      "op": "add",
+      "time": "2026-11-01T11:50:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -6",
+      "object": {
+        "uuid": "cornice-v02-ph-b--6",
+        "name": "Step slice -6",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          3.8278999999999996,
+          240,
+          3.79
+        ],
+        "position": [
+          138.85954999999998,
+          0,
+          41.501796999999996
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 111,
+      "op": "add",
+      "time": "2026-11-01T11:51:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -5",
+      "object": {
+        "uuid": "cornice-v02-ph-b--5",
+        "name": "Step slice -5",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          2.0087000000000046,
+          240,
+          3.79
+        ],
+        "position": [
+          140.48925,
+          0,
+          45.291796999999995
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 112,
+      "op": "add",
+      "time": "2026-11-01T11:52:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -4",
+      "object": {
+        "uuid": "cornice-v02-ph-b--4",
+        "name": "Step slice -4",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2000000000000028,
+          240,
+          3.79
+        ],
+        "position": [
+          140.8936,
+          0,
+          49.081796999999995
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "step"
+      }
+    },
+    {
+      "seq": 113,
+      "op": "add",
+      "time": "2026-11-01T11:53:00.000Z",
+      "author": "jimmy",
+      "note": "add Step slice -3",
+      "object": {
+        "uuid": "cornice-v02-ph-b--3",
+        "name": "Step slice -3",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          1.2000000000000028,
+          240,
+          3.421612
+        ],
+        "position": [
+          140.8936,
+          0,
+          52.687602999999996
+        ],
+        "rotation_y": 0,
+        "parent": "cornice-v02-ph-cornice",
+        "material": "step"
+      }
+    }
+  ]
+}

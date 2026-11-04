@@ -1,0 +1,1162 @@
+{
+  "schema": "make3d.history/0.1",
+  "model_id": "honda-crv-test-v05",
+  "header": {
+    "model_id": "honda-crv-test-v05",
+    "name": "Honda CR-V test model V05",
+    "description": "Honda CR-V test model, estimated from published spec figures, in inches. Increment 5 of 5.",
+    "units": "in",
+    "up": "z",
+    "world": "default-world",
+    "materials": {
+      "paint": {
+        "color": "#f5f3ec",
+        "opacity": 1
+      },
+      "glass": {
+        "color": "#2f3b47",
+        "opacity": 0.85
+      },
+      "trim": {
+        "color": "#3a3f45",
+        "opacity": 1
+      },
+      "tyre": {
+        "color": "#1f2124",
+        "opacity": 1
+      },
+      "rim": {
+        "color": "#c9ced6",
+        "opacity": 1
+      },
+      "hub": {
+        "color": "#8e959e",
+        "opacity": 1
+      },
+      "lamp": {
+        "color": "#fff4d1",
+        "opacity": 1
+      },
+      "tail": {
+        "color": "#d9463f",
+        "opacity": 1
+      },
+      "grille": {
+        "color": "#2b2f34",
+        "opacity": 1
+      },
+      "plate": {
+        "color": "#ffffff",
+        "opacity": 1
+      },
+      "exhaust": {
+        "color": "#6b6f75",
+        "opacity": 1
+      }
+    }
+  },
+  "operations": [
+    {
+      "seq": 1,
+      "op": "add",
+      "time": "2026-11-01T10:01:00.000Z",
+      "author": "jimmy",
+      "note": "add Body",
+      "object": {
+        "uuid": "honda-crv-test-v05-body",
+        "name": "Body",
+        "description": "the car body",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 2,
+      "op": "add",
+      "time": "2026-11-01T10:02:00.000Z",
+      "author": "jimmy",
+      "note": "add Glass",
+      "object": {
+        "uuid": "honda-crv-test-v05-glass",
+        "name": "Glass",
+        "description": "windows and windscreen",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 3,
+      "op": "add",
+      "time": "2026-11-01T10:03:00.000Z",
+      "author": "jimmy",
+      "note": "add Wheels",
+      "object": {
+        "uuid": "honda-crv-test-v05-wheels",
+        "name": "Wheels",
+        "description": "four wheels",
+        "type": "group",
+        "dimensions": [],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_y": 0,
+        "parent": null,
+        "material": null
+      }
+    },
+    {
+      "seq": 4,
+      "op": "add",
+      "time": "2026-11-01T10:04:00.000Z",
+      "author": "jimmy",
+      "note": "add Lower body",
+      "object": {
+        "uuid": "honda-crv-test-v05-lower",
+        "name": "Lower body",
+        "description": "from 8 in to 27 in above the ground",
+        "type": "box",
+        "dimensions": [
+          184.8,
+          72,
+          19
+        ],
+        "position": [
+          -1.5,
+          0,
+          17.5
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "paint"
+      }
+    },
+    {
+      "seq": 5,
+      "op": "add",
+      "time": "2026-11-01T10:05:00.000Z",
+      "author": "jimmy",
+      "note": "add Tyre front left",
+      "object": {
+        "uuid": "honda-crv-test-v05-tyre-left-front",
+        "name": "Tyre front left",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          14.5,
+          9.25
+        ],
+        "position": [
+          53.15,
+          32,
+          14.5
+        ],
+        "rotation_y": 0,
+        "rotation_x": -90,
+        "parent": "honda-crv-test-v05-wheels",
+        "material": "tyre"
+      }
+    },
+    {
+      "seq": 6,
+      "op": "add",
+      "time": "2026-11-01T10:06:00.000Z",
+      "author": "jimmy",
+      "note": "add Tyre front right",
+      "object": {
+        "uuid": "honda-crv-test-v05-tyre-right-front",
+        "name": "Tyre front right",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          14.5,
+          9.25
+        ],
+        "position": [
+          53.15,
+          -32,
+          14.5
+        ],
+        "rotation_y": 0,
+        "rotation_x": -90,
+        "parent": "honda-crv-test-v05-wheels",
+        "material": "tyre"
+      }
+    },
+    {
+      "seq": 7,
+      "op": "add",
+      "time": "2026-11-01T10:07:00.000Z",
+      "author": "jimmy",
+      "note": "add Tyre rear left",
+      "object": {
+        "uuid": "honda-crv-test-v05-tyre-left-rear",
+        "name": "Tyre rear left",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          14.5,
+          9.25
+        ],
+        "position": [
+          -53.15,
+          32,
+          14.5
+        ],
+        "rotation_y": 0,
+        "rotation_x": -90,
+        "parent": "honda-crv-test-v05-wheels",
+        "material": "tyre"
+      }
+    },
+    {
+      "seq": 8,
+      "op": "add",
+      "time": "2026-11-01T10:08:00.000Z",
+      "author": "jimmy",
+      "note": "add Tyre rear right",
+      "object": {
+        "uuid": "honda-crv-test-v05-tyre-right-rear",
+        "name": "Tyre rear right",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          14.5,
+          9.25
+        ],
+        "position": [
+          -53.15,
+          -32,
+          14.5
+        ],
+        "rotation_y": 0,
+        "rotation_x": -90,
+        "parent": "honda-crv-test-v05-wheels",
+        "material": "tyre"
+      }
+    },
+    {
+      "seq": 9,
+      "op": "add",
+      "time": "2026-11-01T10:09:00.000Z",
+      "author": "jimmy",
+      "note": "add Glass house",
+      "object": {
+        "uuid": "honda-crv-test-v05-house",
+        "name": "Glass house",
+        "description": "the glass area of the cabin",
+        "type": "box",
+        "dimensions": [
+          92,
+          64,
+          36
+        ],
+        "position": [
+          -4,
+          0,
+          45
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-glass",
+        "material": "glass"
+      }
+    },
+    {
+      "seq": 10,
+      "op": "add",
+      "time": "2026-11-01T10:10:00.000Z",
+      "author": "jimmy",
+      "note": "add Roof",
+      "object": {
+        "uuid": "honda-crv-test-v05-roof",
+        "name": "Roof",
+        "description": "roof panel, body colour",
+        "type": "box",
+        "dimensions": [
+          90,
+          62,
+          3.5
+        ],
+        "position": [
+          -4,
+          0,
+          64.75
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "paint"
+      }
+    },
+    {
+      "seq": 11,
+      "op": "add",
+      "time": "2026-11-01T10:11:00.000Z",
+      "author": "jimmy",
+      "note": "add Windscreen",
+      "object": {
+        "uuid": "honda-crv-test-v05-screen-f",
+        "name": "Windscreen",
+        "description": "slopes back from the bonnet",
+        "type": "box",
+        "dimensions": [
+          28,
+          62,
+          1.5
+        ],
+        "position": [
+          33,
+          0,
+          49
+        ],
+        "rotation_y": 35,
+        "parent": "honda-crv-test-v05-glass",
+        "material": "glass"
+      }
+    },
+    {
+      "seq": 12,
+      "op": "add",
+      "time": "2026-11-01T10:12:00.000Z",
+      "author": "jimmy",
+      "note": "add Rear glass",
+      "object": {
+        "uuid": "honda-crv-test-v05-screen-r",
+        "name": "Rear glass",
+        "description": "steeper slope at the back",
+        "type": "box",
+        "dimensions": [
+          22,
+          62,
+          1.5
+        ],
+        "position": [
+          -45,
+          0,
+          49
+        ],
+        "rotation_y": -40,
+        "parent": "honda-crv-test-v05-glass",
+        "material": "glass"
+      }
+    },
+    {
+      "seq": 13,
+      "op": "add",
+      "time": "2026-11-01T10:13:00.000Z",
+      "author": "jimmy",
+      "note": "add Bonnet",
+      "object": {
+        "uuid": "honda-crv-test-v05-bonnet",
+        "name": "Bonnet",
+        "description": "sits on the lower body at the front",
+        "type": "box",
+        "dimensions": [
+          40,
+          70,
+          3
+        ],
+        "position": [
+          68.9,
+          0,
+          28.5
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "paint"
+      }
+    },
+    {
+      "seq": 14,
+      "op": "add",
+      "time": "2026-11-01T10:14:00.000Z",
+      "author": "jimmy",
+      "note": "add Rim front left",
+      "object": {
+        "uuid": "honda-crv-test-v05-rim-left-front",
+        "name": "Rim front left",
+        "description": "18 in alloy",
+        "type": "cylinder",
+        "dimensions": [
+          9,
+          9.85
+        ],
+        "position": [
+          53.15,
+          32,
+          14.5
+        ],
+        "rotation_y": 0,
+        "rotation_x": -90,
+        "parent": "honda-crv-test-v05-wheels",
+        "material": "rim"
+      }
+    },
+    {
+      "seq": 15,
+      "op": "add",
+      "time": "2026-11-01T10:15:00.000Z",
+      "author": "jimmy",
+      "note": "add Hub cap front left",
+      "object": {
+        "uuid": "honda-crv-test-v05-hub-left-front",
+        "name": "Hub cap front left",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          3.5,
+          10.25
+        ],
+        "position": [
+          53.15,
+          32,
+          14.5
+        ],
+        "rotation_y": 0,
+        "rotation_x": -90,
+        "parent": "honda-crv-test-v05-wheels",
+        "material": "hub"
+      }
+    },
+    {
+      "seq": 16,
+      "op": "add",
+      "time": "2026-11-01T10:16:00.000Z",
+      "author": "jimmy",
+      "note": "add Arch flare front left",
+      "object": {
+        "uuid": "honda-crv-test-v05-arch-left-front",
+        "name": "Arch flare front left",
+        "description": "dark plastic above the tyre",
+        "type": "box",
+        "dimensions": [
+          30,
+          2,
+          5
+        ],
+        "position": [
+          53.15,
+          37,
+          30.5
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 17,
+      "op": "add",
+      "time": "2026-11-01T10:17:00.000Z",
+      "author": "jimmy",
+      "note": "add Rim front right",
+      "object": {
+        "uuid": "honda-crv-test-v05-rim-right-front",
+        "name": "Rim front right",
+        "description": "18 in alloy",
+        "type": "cylinder",
+        "dimensions": [
+          9,
+          9.85
+        ],
+        "position": [
+          53.15,
+          -32,
+          14.5
+        ],
+        "rotation_y": 0,
+        "rotation_x": -90,
+        "parent": "honda-crv-test-v05-wheels",
+        "material": "rim"
+      }
+    },
+    {
+      "seq": 18,
+      "op": "add",
+      "time": "2026-11-01T10:18:00.000Z",
+      "author": "jimmy",
+      "note": "add Hub cap front right",
+      "object": {
+        "uuid": "honda-crv-test-v05-hub-right-front",
+        "name": "Hub cap front right",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          3.5,
+          10.25
+        ],
+        "position": [
+          53.15,
+          -32,
+          14.5
+        ],
+        "rotation_y": 0,
+        "rotation_x": -90,
+        "parent": "honda-crv-test-v05-wheels",
+        "material": "hub"
+      }
+    },
+    {
+      "seq": 19,
+      "op": "add",
+      "time": "2026-11-01T10:19:00.000Z",
+      "author": "jimmy",
+      "note": "add Arch flare front right",
+      "object": {
+        "uuid": "honda-crv-test-v05-arch-right-front",
+        "name": "Arch flare front right",
+        "description": "dark plastic above the tyre",
+        "type": "box",
+        "dimensions": [
+          30,
+          2,
+          5
+        ],
+        "position": [
+          53.15,
+          -37,
+          30.5
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 20,
+      "op": "add",
+      "time": "2026-11-01T10:20:00.000Z",
+      "author": "jimmy",
+      "note": "add Rim rear left",
+      "object": {
+        "uuid": "honda-crv-test-v05-rim-left-rear",
+        "name": "Rim rear left",
+        "description": "18 in alloy",
+        "type": "cylinder",
+        "dimensions": [
+          9,
+          9.85
+        ],
+        "position": [
+          -53.15,
+          32,
+          14.5
+        ],
+        "rotation_y": 0,
+        "rotation_x": -90,
+        "parent": "honda-crv-test-v05-wheels",
+        "material": "rim"
+      }
+    },
+    {
+      "seq": 21,
+      "op": "add",
+      "time": "2026-11-01T10:21:00.000Z",
+      "author": "jimmy",
+      "note": "add Hub cap rear left",
+      "object": {
+        "uuid": "honda-crv-test-v05-hub-left-rear",
+        "name": "Hub cap rear left",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          3.5,
+          10.25
+        ],
+        "position": [
+          -53.15,
+          32,
+          14.5
+        ],
+        "rotation_y": 0,
+        "rotation_x": -90,
+        "parent": "honda-crv-test-v05-wheels",
+        "material": "hub"
+      }
+    },
+    {
+      "seq": 22,
+      "op": "add",
+      "time": "2026-11-01T10:22:00.000Z",
+      "author": "jimmy",
+      "note": "add Arch flare rear left",
+      "object": {
+        "uuid": "honda-crv-test-v05-arch-left-rear",
+        "name": "Arch flare rear left",
+        "description": "dark plastic above the tyre",
+        "type": "box",
+        "dimensions": [
+          30,
+          2,
+          5
+        ],
+        "position": [
+          -53.15,
+          37,
+          30.5
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 23,
+      "op": "add",
+      "time": "2026-11-01T10:23:00.000Z",
+      "author": "jimmy",
+      "note": "add Rim rear right",
+      "object": {
+        "uuid": "honda-crv-test-v05-rim-right-rear",
+        "name": "Rim rear right",
+        "description": "18 in alloy",
+        "type": "cylinder",
+        "dimensions": [
+          9,
+          9.85
+        ],
+        "position": [
+          -53.15,
+          -32,
+          14.5
+        ],
+        "rotation_y": 0,
+        "rotation_x": -90,
+        "parent": "honda-crv-test-v05-wheels",
+        "material": "rim"
+      }
+    },
+    {
+      "seq": 24,
+      "op": "add",
+      "time": "2026-11-01T10:24:00.000Z",
+      "author": "jimmy",
+      "note": "add Hub cap rear right",
+      "object": {
+        "uuid": "honda-crv-test-v05-hub-right-rear",
+        "name": "Hub cap rear right",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          3.5,
+          10.25
+        ],
+        "position": [
+          -53.15,
+          -32,
+          14.5
+        ],
+        "rotation_y": 0,
+        "rotation_x": -90,
+        "parent": "honda-crv-test-v05-wheels",
+        "material": "hub"
+      }
+    },
+    {
+      "seq": 25,
+      "op": "add",
+      "time": "2026-11-01T10:25:00.000Z",
+      "author": "jimmy",
+      "note": "add Arch flare rear right",
+      "object": {
+        "uuid": "honda-crv-test-v05-arch-right-rear",
+        "name": "Arch flare rear right",
+        "description": "dark plastic above the tyre",
+        "type": "box",
+        "dimensions": [
+          30,
+          2,
+          5
+        ],
+        "position": [
+          -53.15,
+          -37,
+          30.5
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 26,
+      "op": "add",
+      "time": "2026-11-01T10:26:00.000Z",
+      "author": "jimmy",
+      "note": "add Sill cladding left",
+      "object": {
+        "uuid": "honda-crv-test-v05-sill-left",
+        "name": "Sill cladding left",
+        "description": "dark strip along the bottom of the side",
+        "type": "box",
+        "dimensions": [
+          150,
+          1.5,
+          6
+        ],
+        "position": [
+          -1.5,
+          36.4,
+          11
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 27,
+      "op": "add",
+      "time": "2026-11-01T10:27:00.000Z",
+      "author": "jimmy",
+      "note": "add Sill cladding right",
+      "object": {
+        "uuid": "honda-crv-test-v05-sill-right",
+        "name": "Sill cladding right",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          150,
+          1.5,
+          6
+        ],
+        "position": [
+          -1.5,
+          -36.4,
+          11
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 28,
+      "op": "add",
+      "time": "2026-11-01T10:28:00.000Z",
+      "author": "jimmy",
+      "note": "add Grille",
+      "object": {
+        "uuid": "honda-crv-test-v05-grille",
+        "name": "Grille",
+        "description": "dark grille in the nose",
+        "type": "box",
+        "dimensions": [
+          2,
+          46,
+          9
+        ],
+        "position": [
+          91.4,
+          0,
+          19.5
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "grille"
+      }
+    },
+    {
+      "seq": 29,
+      "op": "add",
+      "time": "2026-11-01T10:29:00.000Z",
+      "author": "jimmy",
+      "note": "add Front bumper",
+      "object": {
+        "uuid": "honda-crv-test-v05-bumper-f",
+        "name": "Front bumper",
+        "description": "low dark lip under the nose",
+        "type": "box",
+        "dimensions": [
+          3,
+          70,
+          6
+        ],
+        "position": [
+          91.4,
+          0,
+          11
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 30,
+      "op": "add",
+      "time": "2026-11-01T10:30:00.000Z",
+      "author": "jimmy",
+      "note": "add Headlight left",
+      "object": {
+        "uuid": "honda-crv-test-v05-lamp-l",
+        "name": "Headlight left",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          2,
+          20,
+          4
+        ],
+        "position": [
+          91.4,
+          28,
+          25
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "lamp"
+      }
+    },
+    {
+      "seq": 31,
+      "op": "add",
+      "time": "2026-11-01T10:31:00.000Z",
+      "author": "jimmy",
+      "note": "add Headlight right",
+      "object": {
+        "uuid": "honda-crv-test-v05-lamp-r",
+        "name": "Headlight right",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          2,
+          20,
+          4
+        ],
+        "position": [
+          91.4,
+          -28,
+          25
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "lamp"
+      }
+    },
+    {
+      "seq": 32,
+      "op": "add",
+      "time": "2026-11-01T10:32:00.000Z",
+      "author": "jimmy",
+      "note": "add Rear bumper",
+      "object": {
+        "uuid": "honda-crv-test-v05-bumper-r",
+        "name": "Rear bumper",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          3,
+          70,
+          6
+        ],
+        "position": [
+          -94.4,
+          0,
+          11
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 33,
+      "op": "add",
+      "time": "2026-11-01T10:33:00.000Z",
+      "author": "jimmy",
+      "note": "add Tail light left",
+      "object": {
+        "uuid": "honda-crv-test-v05-tail-l",
+        "name": "Tail light left",
+        "description": "red",
+        "type": "box",
+        "dimensions": [
+          2,
+          20,
+          4
+        ],
+        "position": [
+          -94.4,
+          27,
+          27
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "tail"
+      }
+    },
+    {
+      "seq": 34,
+      "op": "add",
+      "time": "2026-11-01T10:34:00.000Z",
+      "author": "jimmy",
+      "note": "add Tail light right",
+      "object": {
+        "uuid": "honda-crv-test-v05-tail-r",
+        "name": "Tail light right",
+        "description": "red",
+        "type": "box",
+        "dimensions": [
+          2,
+          20,
+          4
+        ],
+        "position": [
+          -94.4,
+          -27,
+          27
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "tail"
+      }
+    },
+    {
+      "seq": 35,
+      "op": "add",
+      "time": "2026-11-01T10:35:00.000Z",
+      "author": "jimmy",
+      "note": "add Number plate",
+      "object": {
+        "uuid": "honda-crv-test-v05-plate",
+        "name": "Number plate",
+        "description": "blank plate recess",
+        "type": "box",
+        "dimensions": [
+          1,
+          18,
+          6
+        ],
+        "position": [
+          -95.4,
+          0,
+          20
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "plate"
+      }
+    },
+    {
+      "seq": 36,
+      "op": "add",
+      "time": "2026-11-01T10:36:00.000Z",
+      "author": "jimmy",
+      "note": "add Exhaust tip",
+      "object": {
+        "uuid": "honda-crv-test-v05-exhaust",
+        "name": "Exhaust tip",
+        "description": "under the rear bumper",
+        "type": "cylinder",
+        "dimensions": [
+          1.3,
+          6
+        ],
+        "position": [
+          -91.9,
+          16,
+          10
+        ],
+        "rotation_y": 90,
+        "parent": "honda-crv-test-v05-body",
+        "material": "exhaust"
+      }
+    },
+    {
+      "seq": 37,
+      "op": "add",
+      "time": "2026-11-01T10:37:00.000Z",
+      "author": "jimmy",
+      "note": "add Roof rail left",
+      "object": {
+        "uuid": "honda-crv-test-v05-rail-l",
+        "name": "Roof rail left",
+        "description": "along the roof",
+        "type": "cylinder",
+        "dimensions": [
+          0.6,
+          84
+        ],
+        "position": [
+          -4,
+          24,
+          67.5
+        ],
+        "rotation_y": 90,
+        "parent": "honda-crv-test-v05-body",
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 38,
+      "op": "add",
+      "time": "2026-11-01T10:38:00.000Z",
+      "author": "jimmy",
+      "note": "add Roof rail right",
+      "object": {
+        "uuid": "honda-crv-test-v05-rail-r",
+        "name": "Roof rail right",
+        "description": "",
+        "type": "cylinder",
+        "dimensions": [
+          0.6,
+          84
+        ],
+        "position": [
+          -4,
+          -24,
+          67.5
+        ],
+        "rotation_y": 90,
+        "parent": "honda-crv-test-v05-body",
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 39,
+      "op": "add",
+      "time": "2026-11-01T10:39:00.000Z",
+      "author": "jimmy",
+      "note": "add Mirror left",
+      "object": {
+        "uuid": "honda-crv-test-v05-mirror-l",
+        "name": "Mirror left",
+        "description": "on the front door base",
+        "type": "box",
+        "dimensions": [
+          5,
+          3,
+          3
+        ],
+        "position": [
+          30,
+          38.5,
+          52
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "paint"
+      }
+    },
+    {
+      "seq": 40,
+      "op": "add",
+      "time": "2026-11-01T10:40:00.000Z",
+      "author": "jimmy",
+      "note": "add Mirror right",
+      "object": {
+        "uuid": "honda-crv-test-v05-mirror-r",
+        "name": "Mirror right",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          5,
+          3,
+          3
+        ],
+        "position": [
+          30,
+          -38.5,
+          52
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "paint"
+      }
+    },
+    {
+      "seq": 41,
+      "op": "add",
+      "time": "2026-11-01T10:41:00.000Z",
+      "author": "jimmy",
+      "note": "add Door seam front",
+      "object": {
+        "uuid": "honda-crv-test-v05-seam-f",
+        "name": "Door seam front",
+        "description": "a thin line on the side",
+        "type": "box",
+        "dimensions": [
+          0.4,
+          0.6,
+          26
+        ],
+        "position": [
+          14,
+          36.8,
+          40
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 42,
+      "op": "add",
+      "time": "2026-11-01T10:42:00.000Z",
+      "author": "jimmy",
+      "note": "add Door seam rear",
+      "object": {
+        "uuid": "honda-crv-test-v05-seam-r",
+        "name": "Door seam rear",
+        "description": "",
+        "type": "box",
+        "dimensions": [
+          0.4,
+          0.6,
+          26
+        ],
+        "position": [
+          -35,
+          36.8,
+          40
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "trim"
+      }
+    },
+    {
+      "seq": 43,
+      "op": "add",
+      "time": "2026-11-01T10:43:00.000Z",
+      "author": "jimmy",
+      "note": "add Shark-fin aerial",
+      "object": {
+        "uuid": "honda-crv-test-v05-aerial",
+        "name": "Shark-fin aerial",
+        "description": "small fin on the roof",
+        "type": "cone",
+        "dimensions": [
+          2.5,
+          5
+        ],
+        "position": [
+          -18,
+          0,
+          69
+        ],
+        "rotation_y": 0,
+        "parent": "honda-crv-test-v05-body",
+        "material": "paint"
+      }
+    }
+  ]
+}
