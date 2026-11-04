@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Make 3D V3</title>
-<link rel="stylesheet" href="css/app.css?v=3.01">
+<link rel="stylesheet" href="css/app.css?v=3.02">
 </head>
 <body>
 <header class="topbar">
@@ -47,6 +47,9 @@
     <section class="card" id="listCard">
       <h2 class="collapse" data-target="listBody" aria-expanded="true">Objects <span class="chev-mark" aria-hidden="true">▾</span></h2>
       <div id="listBody">
+      <div class="btn-row">
+        <button class="btn small" id="organizeBtn" type="button">Edit groups</button>
+      </div>
       <ul class="objects" id="objectList"></ul>
       <p class="hint" id="emptyNote" hidden>No objects yet. Paste an operation or add one below.</p>
       </div>
@@ -205,7 +208,7 @@
 
 <div class="drawer" id="gearPanel" hidden>
   <h2>Settings</h2>
-  <p class="hint" id="buildNote">Version 3.01</p>
+  <p class="hint" id="buildNote">Version 3.02</p>
 
   <h3>Versions</h3>
   <p class="hint">V3 is the current engine. V2 is the version before it, and V1 is the archived first version; both run as they were.</p>
@@ -308,6 +311,22 @@
   <button class="btn ghost" id="closeGear" type="button">Close</button>
 </div>
 
+<div class="organize" id="organizePanel" role="dialog" aria-modal="true" aria-labelledby="orgTitle" hidden>
+  <div class="org-card">
+    <div class="org-head">
+      <h2 id="orgTitle">Edit groups</h2>
+      <button class="btn small primary" id="organizeDone" type="button">Done</button>
+    </div>
+    <p class="hint">Put each part inside the group it belongs to, so hiding the group hides its parts. Each change is a step in the history, so it can be undone.</p>
+    <p class="err" id="orgErr" hidden></p>
+    <ul class="objects org-list" id="orgList"></ul>
+    <div class="org-save">
+      <button class="btn primary" id="orgSave" type="button">Save groups to the cloud</button>
+      <p class="hint" id="orgSaveNote">Saves the whole scene, with these groups, to the cloud library. Sign in with the owner email in the Library first.</p>
+    </div>
+  </div>
+</div>
+
 <script src="vendor/three/three.min.js"></script>
 <script src="js/core/units.js"></script>
 <script src="js/core/schema.js"></script>
@@ -320,12 +339,13 @@
 <script src="js/core/motion.js"></script>
 <script src="js/core/linked_views.js"></script>
 <script src="js/core/visibility.js"></script>
+<script src="js/core/hierarchy.js?v=3.02"></script>
 <script src="js/core/patterns.js"></script>
 <script src="js/core/glb.js"></script>
 <script src="vendor/supabase/supabase.js"></script>
 <script src="js/cloud/cloud.js"></script>
-<script src="js/viewer/viewer.js?v=3.01"></script>
+<script src="js/viewer/viewer.js?v=3.02"></script>
 <script src="js/samples.bundle.js"></script>
-<script src="js/ui/app.js?v=3.01"></script>
+<script src="js/ui/app.js?v=3.02"></script>
 </body>
 </html>

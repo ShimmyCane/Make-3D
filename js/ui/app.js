@@ -8,11 +8,13 @@
   const SAMPLES = window.M3D_SAMPLES || {};
   const SAMPLE_ID = 'garden-planter';
   // Build version, shown in Settings. Bump it with every change (also the ?v= on the script and CSS links in index.html).
-  const BUILD = '3.01';
+  const BUILD = '3.02';
 
   const st = {
     hiddenParts: new Set(), // labels of the Parts dropdown that are turned off (show:<label> tags)
     hiddenObjs: new Set(),  // uuids turned off with the eye in the Objects list (a group takes its children with it)
+    collapsedObjs: new Set(), // group uuids folded in the Objects list (the scene does not change)
+    organizing: false,      // the Edit groups view is open
     partsKey: null,         // the labels the dropdown was last built for
     history: null,      // { header, operations, ... }
     world: null,
@@ -190,6 +192,7 @@
 
     refreshSelectors();
     renderList(model);
+    renderOrganize(model);
     renderSelection(model);
     renderLink(model);
     renderHome();
@@ -229,15 +232,8 @@
   function renderList(model) {
     const ul = $('objectList');
     ul.innerHTML = '';
-    const items = [];
-    const roots = model.objects.filter((o) => !o.parent || !findObj(model, o.parent));
-    const walk = (o, depth) => {
-      items.push({ o, depth });
-      model.objects.filter((c) => c.parent === o.uuid).forEach((c) => walk(c, depth + 1));
-    };
-    roots.forEach((o) => walk(o, 0));
     $('emptyNote').hidden = model.objects.length > 0;
-    for (const { o, depth } of items) {
+    for (const { o, depth, hasChildren, collapsed } of M.treeRows(model, st.collapsedObjs)) {
       const li = document.createElement('li');
       const off = st.hiddenObjs.has(o.uuid);
       li.className = `row${depth ? ' child' : ''}${off ? ' off' : ''}`;
@@ -254,6 +250,25 @@
         if (st.hiddenObjs.has(o.uuid)) st.hiddenObjs.delete(o.uuid); else st.hiddenObjs.add(o.uuid);
         render();
       });
+      // chevron: folds a group's parts in this list only (nothing changes in the scene)
+      let chev;
+      if (hasChildren) {
+        chev = document.createElement('button');
+        chev.type = 'button';
+        chev.className = 'chev';
+        chev.setAttribute('aria-expanded', String(!collapsed));
+        chev.setAttribute('aria-label', `${collapsed ? 'Show the parts of' : 'Fold the parts of'} ${o.name}`);
+        chev.title = collapsed ? 'Show parts' : 'Fold parts';
+        chev.innerHTML = CHEVRON;
+        chev.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if (st.collapsedObjs.has(o.uuid)) st.collapsedObjs.delete(o.uuid); else st.collapsedObjs.add(o.uuid);
+          render();
+        });
+      } else {
+        chev = document.createElement('span');
+        chev.className = 'chev-pad';
+      }
       const b = document.createElement('button');
       b.type = 'button';
       b.className = `name${o.uuid === st.selected ? ' sel' : ''}`;
@@ -269,10 +284,71 @@
         b.appendChild(tg);
       }
       b.addEventListener('click', () => select(o.uuid));
-      li.append(eye, b);
+      li.append(eye, chev, b);
       ul.appendChild(li);
     }
   }
+  const CHEVRON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+  // ---------- Edit groups: a full-screen view. Each part gets a "Put inside" picker; each choice is a modify step
+  // in the history (M.moveOp), so it is checked by the rules, can be undone, and is saved with the scene.
+  function renderOrganize(model) {
+    $('organizePanel').hidden = !st.organizing;
+    if (!st.organizing) return;
+    const ul = $('orgList');
+    ul.innerHTML = '';
+    for (const { o, depth } of M.treeRows(model)) {
+      const li = document.createElement('li');
+      li.className = `org-row${depth ? ' child' : ''}`;
+      li.style.marginLeft = `${depth * 22}px`;
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = `name${o.uuid === st.selected ? ' sel' : ''}`;
+      b.textContent = o.name;
+      const k = document.createElement('span');
+      k.className = 'kind';
+      k.textContent = o.type;
+      b.appendChild(k);
+      b.addEventListener('click', () => select(o.uuid));
+      const pick = document.createElement('select');
+      pick.className = 'org-pick';
+      pick.setAttribute('aria-label', `Put ${o.name} inside`);
+      pick.add(new Option('Top level', ''));
+      for (const g of M.groupOptions(model, o.uuid)) pick.add(new Option(g.label, g.uuid));
+      pick.value = M.parentOf(model, o) || '';
+      if (o.attach) {
+        pick.disabled = true;
+        pick.title = 'Attached to a skeleton: it stays in the skeleton\u2019s group';
+      }
+      pick.addEventListener('change', () => {
+        const r = applyOp(M.moveOp(o.uuid, pick.value || null));
+        const err = $('orgErr');
+        err.hidden = r.outcome !== 'reject' && r.outcome !== 'blocked';
+        if (!err.hidden) err.textContent = r.outcome === 'blocked' ? 'Go to the latest step to make changes.' : `Not moved: ${r.issues[0].message}`;
+      });
+      li.append(b, pick);
+      ul.appendChild(li);
+    }
+    $('orgSaveNote').textContent = st.cloudSession
+      ? 'Saves the whole scene, with these groups, to the cloud library.'
+      : 'Sign in with the owner email in the Library first, then save here.';
+  }
+  function openOrganize() { st.organizing = true; $('orgErr').hidden = true; render(); $('organizeDone').focus(); }
+  function closeOrganize() { st.organizing = false; render(); $('organizeBtn').focus(); }
+  // The same save as "Save this scene to the cloud" in the Library: the history, with these groups, goes to the database.
+  async function orgSave() {
+    const err = $('orgErr');
+    err.hidden = true;
+    if (!st.cloud || !st.cloud.available || !st.cloudSession) {
+      err.textContent = 'Sign in with the owner email in the Library first.';
+      err.hidden = false;
+      return;
+    }
+    st.cloudNote = '';
+    await saveCloud();
+    if (st.cloudNote && st.cloudNote.startsWith('Could not save')) { err.textContent = st.cloudNote; err.hidden = false; }
+  }
+
   // Eye icons for the Objects list (24 px, currentColor). Shut = a lid line with lashes.
   const EYE_OPEN = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12c2.6-4.6 6-7 10-7s7.4 2.4 10 7c-2.6 4.6-6 7-10 7S4.6 16.6 2 12z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="12" r="3.2" fill="currentColor"/></svg>';
   const EYE_SHUT = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5c2.8 4.4 5.7 6.3 9 6.3s6.2-1.9 9-6.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M7 13.6l-1.6 2.6M12 15.8V18.6M17 13.6l1.6 2.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
@@ -717,6 +793,7 @@
     st.cursor = history.operations.length;
     st.selected = null; st.rejected = null; st.preview = null; st.last = null; st.check = null;
     st.hiddenObjs = new Set();
+    st.collapsedObjs = new Set(); st.organizing = false;
     st.fit = true; st.groundZ = null;
     save();
     render();
@@ -1067,6 +1144,10 @@
     $('modelName').addEventListener('change', (e) => applyOp({ op: 'set_header', set: { name: e.target.value.trim() || st.history.model_id } }));
     $('modelDesc').addEventListener('change', (e) => applyOp({ op: 'set_header', set: { description: e.target.value.trim() } }));
 
+    $('organizeBtn').addEventListener('click', openOrganize);
+    $('organizeDone').addEventListener('click', closeOrganize);
+    $('orgSave').addEventListener('click', orgSave);
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && st.organizing) closeOrganize(); });
     $('selDelete').addEventListener('click', () => { if (st.selected) applyOp({ op: 'delete', uuid: st.selected }); });
 
     $('tabAdd').addEventListener('click', () => showTab('add'));
