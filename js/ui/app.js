@@ -10,6 +10,7 @@
 
   const st = {
     hiddenParts: new Set(), // labels of the Parts dropdown that are turned off (show:<label> tags)
+    hiddenObjs: new Set(),  // uuids turned off with the eye in the Objects list (a group takes its children with it)
     partsKey: null,         // the labels the dropdown was last built for
     history: null,      // { header, operations, ... }
     world: null,
@@ -144,7 +145,7 @@
   function renderParts(model) {
     const groups = M.groupsIn(model);
     $('groupCtl').hidden = groups.length === 0;
-    if (st.viewer) st.viewer.setHiddenUuids(M.hiddenUuids(groups, [...st.hiddenParts]));
+    if (st.viewer) st.viewer.setHiddenUuids([...M.hiddenUuids(groups, [...st.hiddenParts]), ...st.hiddenObjs]);
     const key = groups.map((g) => g.label).join('|');
     if (key === st.partsKey) return;
     st.partsKey = key;
@@ -236,10 +237,24 @@
     $('emptyNote').hidden = model.objects.length > 0;
     for (const { o, depth } of items) {
       const li = document.createElement('li');
-      li.className = depth ? 'child' : '';
+      const off = st.hiddenObjs.has(o.uuid);
+      li.className = `row${depth ? ' child' : ''}${off ? ' off' : ''}`;
+      // eye: open = shown, shut (lid down) = hidden. Hiding a group hides its children too.
+      const eye = document.createElement('button');
+      eye.type = 'button';
+      eye.className = 'eye';
+      eye.setAttribute('aria-pressed', String(off));
+      eye.setAttribute('aria-label', `${off ? 'Show' : 'Hide'} ${o.name}`);
+      eye.title = off ? 'Show' : 'Hide';
+      eye.innerHTML = off ? EYE_SHUT : EYE_OPEN;
+      eye.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (st.hiddenObjs.has(o.uuid)) st.hiddenObjs.delete(o.uuid); else st.hiddenObjs.add(o.uuid);
+        render();
+      });
       const b = document.createElement('button');
       b.type = 'button';
-      b.className = o.uuid === st.selected ? 'sel' : '';
+      b.className = `name${o.uuid === st.selected ? ' sel' : ''}`;
       b.textContent = o.name;
       const k = document.createElement('span');
       k.className = 'kind';
@@ -252,10 +267,13 @@
         b.appendChild(tg);
       }
       b.addEventListener('click', () => select(o.uuid));
-      li.appendChild(b);
+      li.append(eye, b);
       ul.appendChild(li);
     }
   }
+  // Eye icons for the Objects list (24 px, currentColor). Shut = a lid line with lashes.
+  const EYE_OPEN = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12c2.6-4.6 6-7 10-7s7.4 2.4 10 7c-2.6 4.6-6 7-10 7S4.6 16.6 2 12z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="12" r="3.2" fill="currentColor"/></svg>';
+  const EYE_SHUT = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5c2.8 4.4 5.7 6.3 9 6.3s6.2-1.9 9-6.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M7 13.6l-1.6 2.6M12 15.8V18.6M17 13.6l1.6 2.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
 
   // Bottom bar, next to Check model: the selected part's purpose and description.
   function renderStatusLine(o) {
@@ -374,9 +392,12 @@
   }
 
   // ---------- selection
+  // Selecting focuses the camera on the part or group. Tapping the selected one again re-focuses it.
   function select(uuid) {
+    const again = !!uuid && uuid === st.selected;
     st.selected = uuid;
     render();
+    if (again) st.viewer.focus();
   }
 
   // ---------- linked views (schematic §16): a tagged part opens another model, with a fade or a zoom
@@ -693,6 +714,7 @@
     setupTrack();
     st.cursor = history.operations.length;
     st.selected = null; st.rejected = null; st.preview = null; st.last = null; st.check = null;
+    st.hiddenObjs = new Set();
     st.fit = true; st.groundZ = null;
     save();
     render();
@@ -1047,7 +1069,7 @@
 
     $('tabAdd').addEventListener('click', () => showTab('add'));
     $('tabPaste').addEventListener('click', () => showTab('paste'));
-    document.querySelectorAll('h2.collapse').forEach((h) => h.addEventListener('click', () => {
+    document.querySelectorAll('.collapse').forEach((h) => h.addEventListener('click', () => {
       const body = document.getElementById(h.dataset.target);
       const open = h.getAttribute('aria-expanded') !== 'false';
       h.setAttribute('aria-expanded', String(!open));

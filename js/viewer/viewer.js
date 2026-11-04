@@ -1,6 +1,8 @@
 /* Make 3D — viewer engine (Three.js). Reads a model; never changes it.
    File axes -> scene axes:  Z-up file: (x, y, z) -> (x, z, -y).  Y-up file: identity.
-   Orbit and zoom with mouse, trackpad or touch (one finger orbits, two fingers pinch to zoom). Tap to select.
+   Orbit and zoom with mouse, trackpad or touch (one finger orbits, two fingers pinch to zoom and slide to pan the
+   focal point; Shift-drag or right-drag pans with a mouse). Tap to select: the camera then aims at the selected
+   part or group and follows it, keeping the viewing angle.
    Scene graph: every object gets a node; children sit inside their parent group's node. At rest every node
    is the identity, so parts keep their file positions. A motion pose (js/core/motion.js) sets the node
    matrices, so a group carries its children (the banana travels with the hand). Stop puts nodes back to rest.
@@ -135,6 +137,10 @@
     let onSelect = () => {};
     const ZOOM_MIN = 4, ZOOM_MAX = 3000;
     let lastModel = null;
+    // Selection focus: while an object or group is selected, the camera aims at the centre of its box and follows
+    // it (so a moving part stays in the middle). followOffset holds the pans made since the focus was set.
+    let followOn = false;
+    const followOffset = new THREE.Vector3();
     let nodes = new Map();           // uuid -> THREE.Group (motion node)
     let meshes = [];                 // pickable meshes
     let skins = new Map();           // uuid -> { geo, o, posed } for skeleton meshes
@@ -366,6 +372,7 @@
         const f = info.fullBox;
         const ext = Math.max(f.max[0] - f.min[0], f.max[1] - f.min[1], f.max[2] - f.min[2], 24);
         if (info.fit) {
+          followOn = false;   // a full fit (Reset view, a new scene) frames the whole model, not the selection
           if (info.azimuth_deg !== undefined) theta = (info.azimuth_deg * Math.PI) / 180;
           if (model.view && model.view.fill && model.view.radius) {
             // the camera distance at which a sphere of this radius fills `fill` of the screen height (35 degree lens)
@@ -389,20 +396,47 @@
       requestRender();
     }
 
+    // The box of the selected part or whole group (its node and everything under it), or null when empty.
+    function selectedBox() {
+      const node = selected && nodes.get(selected);
+      if (!node) return null;
+      modelRoot.updateMatrixWorld(true);
+      const box = new THREE.Box3().setFromObject(node);
+      return box.isEmpty() ? null : box;
+    }
+    // Focus the selection: aim at the centre of its box and fit it on screen. The current angle is kept.
+    // Runs when the selection changes (and when a tap picks the selected part again), not on every redraw.
+    function focus() {
+      followOn = true; followOffset.set(0, 0, 0);
+      const box = selectedBox();
+      if (box) {
+        const s = box.getBoundingSphere(new THREE.Sphere());
+        const tanV = Math.tan((35 * Math.PI) / 360), tanH = tanV * (camera.aspect || 1);
+        radius = Math.max(ZOOM_MIN, (Math.max(s.radius, 0.5) * 1.8) / Math.min(tanV, tanH));
+        target.copy(s.center);
+      }
+      requestRender();
+    }
+
     function setSelected(uuid) {
+      const changed = uuid !== selected;
       selected = uuid;
       if (selectionHelper) { scene.remove(selectionHelper); selectionHelper.dispose(); selectionHelper = null; }
-      const mesh = meshes.find((c) => c.userData.uuid === uuid);
-      if (mesh) {
+      // a part or a whole group: the outline covers the node and its children
+      const node = uuid && nodes.get(uuid);
+      if (node) {
         modelRoot.updateMatrixWorld(true);
-        selectionHelper = new THREE.BoxHelper(mesh, SELECT);
+        selectionHelper = new THREE.BoxHelper(node, SELECT);
+        selectionHelper.visible = shown(node);
         scene.add(selectionHelper);
       }
+      if (changed) { if (node) focus(); else followOn = false; }
       requestRender();
     }
 
     // --- camera
     function updateCamera() {
+      if (followOn) { const box = selectedBox(); if (box) box.getCenter(target).add(followOffset); }
       phi = Math.min(Math.max(phi, 0.08), Math.PI / 2 - 0.02);
       radius = Math.min(Math.max(radius, ZOOM_MIN), ZOOM_MAX);
       camera.position.set(
@@ -425,19 +459,34 @@
     // iPad Safari delivers reliably for two fingers; the page's own pinch-zoom is blocked over the canvas.
     const zoomBy = (f) => { radius = Math.min(Math.max(radius * f, ZOOM_MIN), ZOOM_MAX); requestRender(); };
     const orbitBy = (dx, dy) => { theta -= dx * 0.008; phi -= dy * 0.008; requestRender(); };
+    // Pan: slide the focal point across the screen (the content follows the fingers), so the next orbit turns
+    // about the new point. Screen pixels -> scene units at the focal point: 2 * radius * tan(fov/2) across the height.
+    function panBy(dx, dy) {
+      const h = canvas.clientHeight || 1;
+      const k = (2 * radius * Math.tan((35 * Math.PI) / 360)) / h;
+      const fwd = new THREE.Vector3(-Math.sin(phi) * Math.sin(theta), -Math.cos(phi), -Math.sin(phi) * Math.cos(theta));
+      const right = new THREE.Vector3().crossVectors(fwd, new THREE.Vector3(0, 1, 0)).normalize();
+      const up = new THREE.Vector3().crossVectors(right, fwd).normalize();
+      const d = right.multiplyScalar(-dx * k).add(up.multiplyScalar(dy * k));
+      target.add(d);
+      if (followOn) followOffset.add(d);
+      requestRender();
+    }
     canvas.style.touchAction = 'none';
+    canvas.addEventListener('contextmenu', (e) => e.preventDefault());   // right drag pans, it does not open the menu
 
     let mouse = null;
     canvas.addEventListener('pointerdown', (e) => {
       if (e.pointerType === 'touch') return;
       canvas.setPointerCapture(e.pointerId);
-      mouse = { x: e.clientX, y: e.clientY, moved: 0 };
+      // drag orbits; Shift-drag, middle or right button drag pans
+      mouse = { x: e.clientX, y: e.clientY, moved: 0, pan: e.shiftKey || e.button === 1 || e.button === 2 };
     });
     canvas.addEventListener('pointermove', (e) => {
       if (e.pointerType === 'touch' || !mouse) return;
       const dx = e.clientX - mouse.x, dy = e.clientY - mouse.y;
       mouse.x = e.clientX; mouse.y = e.clientY; mouse.moved += Math.abs(dx) + Math.abs(dy);
-      orbitBy(dx, dy);
+      if (mouse.pan) panBy(dx, dy); else orbitBy(dx, dy);
     });
     const endMouse = (e) => {
       if (e.pointerType === 'touch' || !mouse) return;
@@ -451,22 +500,25 @@
       zoomBy(Math.exp(e.deltaY * (e.ctrlKey ? 0.01 : 0.0015)));   // ctrlKey = trackpad pinch
     }, { passive: false });
 
-    let touch = null;   // { x, y, moved, gap, multi }
+    // Two fingers: spreading or closing them zooms; sliding them together pans the focal point.
+    let touch = null;   // { x, y, moved, gap, mid, multi }
     const gapOf = (t) => Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY) || 1;
+    const midOf = (t) => ({ x: (t[0].clientX + t[1].clientX) / 2, y: (t[0].clientY + t[1].clientY) / 2 });
     canvas.addEventListener('touchstart', (e) => {
       e.preventDefault();
       const t = e.touches;
-      if (t.length === 1) touch = { x: t[0].clientX, y: t[0].clientY, moved: 0, gap: null, multi: false };
-      else if (t.length >= 2) touch = Object.assign(touch || { moved: 0 }, { gap: gapOf(t), multi: true });
+      if (t.length === 1) touch = { x: t[0].clientX, y: t[0].clientY, moved: 0, gap: null, mid: null, multi: false };
+      else if (t.length >= 2) touch = Object.assign(touch || { moved: 0 }, { gap: gapOf(t), mid: midOf(t), multi: true });
     }, { passive: false });
     canvas.addEventListener('touchmove', (e) => {
       e.preventDefault();
       const t = e.touches;
       if (!touch) return;
       if (t.length >= 2) {
-        const gap = gapOf(t);
+        const gap = gapOf(t), mid = midOf(t);
         if (touch.gap) zoomBy(touch.gap / gap);   // fingers apart = closer (zoom in)
-        touch.gap = gap; touch.multi = true;
+        if (touch.mid) panBy(mid.x - touch.mid.x, mid.y - touch.mid.y);
+        touch.gap = gap; touch.mid = mid; touch.multi = true;
       } else if (t.length === 1 && !touch.multi) {
         const dx = t[0].clientX - touch.x, dy = t[0].clientY - touch.y;
         touch.x = t[0].clientX; touch.y = t[0].clientY; touch.moved += Math.abs(dx) + Math.abs(dy);
@@ -482,7 +534,7 @@
         touch = null;
       } else if (e.touches.length === 1) {
         // one finger left after a pinch: don't jump into an orbit
-        touch.gap = null;
+        touch.gap = null; touch.mid = null;
         touch.x = e.touches[0].clientX; touch.y = e.touches[0].clientY;
       }
     };
@@ -497,6 +549,8 @@
     let hiddenSet = new Set();
     function applyVisibility() {
       for (const [uuid, node] of nodes) node.visible = !hiddenSet.has(uuid);
+      // the outline of a hidden selection goes too
+      if (selectionHelper && selected && nodes.get(selected)) selectionHelper.visible = shown(nodes.get(selected));
     }
     function setHiddenUuids(list) {
       hiddenSet = new Set(list || []);
@@ -535,7 +589,8 @@
     return {
       setModel, setOptions, setSelected, setHiddenUuids, render, resize: () => { resize(); requestRender(); },
       onSelect(fn) { onSelect = fn; },
-      resetView(origin, extent) { theta = 0.6; phi = 1.0; fitTo(origin, extent); requestRender(); },
+      resetView(origin, extent) { theta = 0.6; phi = 1.0; followOn = false; fitTo(origin, extent); requestRender(); },
+      focus, pan: panBy,   // the selected part or group (re-focus on a second tap); pan the focal point by pixels
       stop() { cancelAnimationFrame(raf); },
       // animation
       setMotion, play, pause, seek,
@@ -548,7 +603,7 @@
         let skipped = 0;
         for (const mesh of meshes) {
           const g = mesh.geometry, mat = mesh.material;
-          if (!mesh.visible || !g || !g.attributes.position) continue;
+          if (!shown(mesh) || !g || !g.attributes.position) continue;   // hidden by its own eye or by a hidden group
           if (!(mat && mat.isMeshStandardMaterial) || mat.wireframe) { skipped++; continue; }
           const count = g.attributes.position.count;
           const m = mesh.matrixWorld, nm = new THREE.Matrix3().getNormalMatrix(m);
@@ -576,7 +631,7 @@
       },
       // measurement (V2): what the last frame drew
       stats: () => ({ triangles: renderer.info.render.triangles, draws: renderer.info.render.calls, meshes: meshes.length }),
-      viewState: () => ({ radius, theta, phi }),
+      viewState: () => ({ radius, theta, phi, target: target.toArray() }),
       setView(v) { if (v.target) target.set(...toScene(v.target)); if (v.radius) radius = v.radius; if (v.theta !== undefined) theta = v.theta; if (v.phi !== undefined) phi = v.phi; requestRender(); },
     };
   }

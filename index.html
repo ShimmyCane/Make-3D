@@ -60,7 +60,9 @@
       </div>
     </section>
 
-    <section class="card">
+    <section class="card" id="addCard">
+      <h2 class="collapse" data-target="addBody" aria-expanded="true">Add or paste objects <span class="chev-mark" aria-hidden="true">▾</span></h2>
+      <div id="addBody">
       <div class="tabs" role="tablist">
         <button class="btn" id="tabPaste" type="button" aria-pressed="true">Paste an operation</button>
         <button class="btn" id="tabAdd" type="button" aria-pressed="false">Add an object</button>
@@ -113,6 +115,7 @@
         <p class="err" id="pasteErr" hidden></p>
         <button class="btn primary" id="pasteApply" type="button">Apply</button>
         <ul class="issues" id="pasteResults"></ul>
+      </div>
       </div>
     </section>
   </aside>
@@ -281,6 +284,10 @@
 
   <div class="btn-row">
     <button class="btn" id="checkBtn" type="button">Check model</button>
+  </div>
+  <h3 class="collapse" data-target="ioBody" aria-expanded="true">Export and open files <span class="chev-mark" aria-hidden="true">▾</span></h3>
+  <div id="ioBody">
+  <div class="btn-row">
     <button class="btn" id="saveBtn" type="button">Save file</button>
     <button class="btn" id="exportIfcBtn" type="button">Export IFC (Revit)</button>
     <button class="btn" id="exportGlbBtn" type="button">Export GLB (3-D)</button>
@@ -295,6 +302,7 @@
     <button class="btn" id="loadSample" type="button">Load sample (replaces this model)</button>
   </div>
   <p class="hint">Saved in this browser. The cloud copy is in the Library.</p>
+  </div>
   <button class="btn ghost" id="closeGear" type="button">Close</button>
 </div>
 
