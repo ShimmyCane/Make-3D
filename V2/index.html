@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Make 3D V2</title>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">Make 3D <span class="ver">V2</span></div>
+  <div class="model-title" id="modelTitle">…</div>
+  <span class="pill" id="status">Saved on this device</span>
+</header>
+
+<main class="layout">
+  <aside class="side" aria-label="Model panels">
+    <section class="card" id="infoCard">
+      <h2 class="collapse" data-target="infoBody" aria-expanded="true">Model <span class="chev-mark" aria-hidden="true">▾</span></h2>
+      <div id="infoBody">
+      <label class="field">Name
+        <input id="modelName" type="text" maxlength="80">
+      </label>
+      <label class="field">Description
+        <textarea id="modelDesc" rows="2" maxlength="400"></textarea>
+      </label>
+      <p class="hint" id="modelMeta"></p>
+      </div>
+    </section>
+
+    <section class="card" id="lastCard" hidden>
+      <h2 id="lastTitle">Last change</h2>
+      <ul class="issues" id="lastIssues"></ul>
+    </section>
+
+    <section class="card" id="rejectCard" hidden>
+      <h2>Not applied</h2>
+      <p class="hint">The change broke a rule, so the model is unchanged. Fix it, or pick a way forward.</p>
+      <ul class="issues" id="rejectIssues"></ul>
+      <div class="btn-row">
+        <button class="btn" id="rejectDelete" type="button">Delete the listed objects and retry</button>
+        <button class="btn" id="rejectPreview" type="button">Preview without saving</button>
+        <button class="btn ghost" id="rejectDismiss" type="button">Dismiss</button>
+      </div>
+    </section>
+
+    <section class="card" id="listCard">
+      <h2 class="collapse" data-target="listBody" aria-expanded="true">Objects <span class="chev-mark" aria-hidden="true">▾</span></h2>
+      <div id="listBody">
+      <ul class="objects" id="objectList"></ul>
+      <p class="hint" id="emptyNote" hidden>No objects yet. Paste an operation or add one below.</p>
+      </div>
+    </section>
+
+    <section class="card" id="selCard" hidden>
+      <h2>Selected</h2>
+      <dl class="facts" id="selFacts"></dl>
+      <div class="btn-row">
+        <button class="btn danger" id="selDelete" type="button">Delete this object</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="tabs" role="tablist">
+        <button class="btn" id="tabPaste" type="button" aria-pressed="true">Paste an operation</button>
+        <button class="btn" id="tabAdd" type="button" aria-pressed="false">Add an object</button>
+      </div>
+
+      <form id="addForm" class="stack" autocomplete="off" hidden>
+        <label class="field">Type
+          <select id="fType"></select>
+        </label>
+        <label class="field">Name
+          <input id="fName" type="text" required maxlength="60">
+        </label>
+        <label class="field">Description
+          <input id="fDesc" type="text" maxlength="120" placeholder="optional">
+        </label>
+        <div class="grid2" id="fDims"></div>
+        <div class="grid3">
+          <label class="field">X <input id="fX" type="text" value="0"></label>
+          <label class="field">Y <input id="fY" type="text" value="0"></label>
+          <label class="field">Z <input id="fZ" type="text" value="0"></label>
+        </div>
+        <div class="grid3">
+          <label class="field">Turn X (deg)
+            <input id="fRotX" type="number" value="0" step="1">
+          </label>
+          <label class="field">Tilt Y (deg)
+            <input id="fRot" type="number" value="0" step="1">
+          </label>
+          <label class="field">Spin Z, up (deg)
+            <input id="fRotZ" type="number" value="0" step="1">
+          </label>
+        </div>
+        <div class="grid2">
+          <label class="field">Material
+            <select id="fMat"></select>
+          </label>
+          <label class="field">Parent group
+            <select id="fParent"></select>
+          </label>
+        </div>
+        <p class="hint">Lengths: 36, 3′ 6″, 3 1/2, or 7'. Plain numbers are inches.</p>
+        <p class="err" id="fErr" hidden></p>
+        <button class="btn primary" type="submit">Add object</button>
+      </form>
+
+      <div id="pastePanel" class="stack">
+        <label class="field">One operation, or a list
+          <textarea id="pasteBox" rows="8" spellcheck="false" placeholder='{"op":"add","object":{"name":"Stone","type":"box","dimensions":[12,6,2],"position":[0,0,1]}}'></textarea>
+        </label>
+        <p class="err" id="pasteErr" hidden></p>
+        <button class="btn primary" id="pasteApply" type="button">Apply</button>
+        <ul class="issues" id="pasteResults"></ul>
+      </div>
+    </section>
+  </aside>
+
+  <section class="stage">
+    <canvas id="view" aria-label="3D view of the model"></canvas>
+    <div class="banner" id="previewBanner" hidden>
+      <span>Preview only. Not saved.</span>
+      <button class="btn small" id="previewDiscard" type="button">Discard preview</button>
+    </div>
+    <div class="stage-tools">
+      <button class="btn small" id="resetView" type="button">Reset view</button>
+      <button class="btn small home-btn" id="homeBtn" type="button" hidden>Back</button>
+    </div>
+    <div class="date-track" id="dateTrack" role="slider" aria-label="Date on the timeline. Scroll or drag to move." tabindex="0" hidden>
+      <div class="drum" id="drum"></div>
+    </div>
+    <div class="stage-top-right">
+      <button class="btn small link-btn" id="linkBtn" type="button" hidden>Open</button>
+      <button class="btn small" id="fullBtn" type="button" aria-pressed="false">Full screen</button>
+      <div class="groupctl" id="groupCtl" hidden>
+        <button type="button" class="btn small groupbtn" id="groupBtn" aria-haspopup="true" aria-expanded="false" aria-controls="groupPanel">Parts <span aria-hidden="true">▾</span></button>
+        <div class="grouppanel" id="groupPanel" role="group" aria-label="Show or hide parts" hidden></div>
+      </div>
+    </div>
+    <div class="anim-bar" id="animBar" hidden>
+      <button class="btn small anim-btn" id="animPlay" type="button" aria-label="Play"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></button>
+      <button class="btn small anim-btn" id="animReset" type="button" aria-label="Back to the start"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M5 12a7 7 0 1 0 2.2-5.1" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M4.5 3.5v5h5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <input id="animTime" type="range" min="0" max="1000" value="0" step="1" aria-label="Animation time">
+    </div>
+  </section>
+</main>
+
+<footer class="bottombar">
+  <div class="history">
+    <button class="btn small" id="latestBtn" type="button" hidden>Go to latest</button>
+    <input id="scrub" type="range" min="0" max="0" value="0" aria-label="History step">
+  </div>
+  <button class="btn small chip" id="rulesChip" type="button">Check model</button>
+  <p class="selinfo" id="selInfo" aria-live="polite">Tap an object to see what it is for.</p>
+  <div class="bottom-errors" id="errorsArea" hidden>
+    <strong>Model check</strong>
+    <ul class="issues" id="errorsList"></ul>
+  </div>
+</footer>
+
+<button class="libbtn" id="libBtn" type="button" aria-expanded="false" aria-controls="libPanel">Library</button>
+
+<div class="drawer" id="libPanel" hidden>
+  <h2>Library</h2>
+
+  <h3>Scenes (input)</h3>
+  <ul class="objects" id="builtinList"></ul>
+
+  <h3>Saved in the cloud</h3>
+  <p class="hint" id="cloudNote">Sign in with the owner email to see saved scenes.</p>
+  <div id="signInBox" class="stack">
+    <label class="field">Email <input id="cloudEmail" type="email" autocomplete="email"></label>
+    <div class="btn-row"><button class="btn" id="sendCode" type="button">Send a code</button></div>
+    <label class="field">Code from the email <input id="cloudCode" type="text" inputmode="numeric" autocomplete="one-time-code"></label>
+    <div class="btn-row"><button class="btn primary" id="verifyCode" type="button">Sign in</button></div>
+  </div>
+  <div id="signedBox" hidden>
+    <p class="hint">Signed in as <span id="cloudWho"></span></p>
+    <div class="btn-row">
+      <button class="btn primary" id="saveCloud" type="button">Save this scene to the cloud</button>
+      <button class="btn ghost" id="signOutBtn" type="button">Sign out</button>
+    </div>
+    <div class="btn-row">
+      <button class="btn" id="saveLog" type="button">Save all scenes to the log</button>
+    </div>
+    <p class="hint">Writes every built-in scene version (V01 to V2.5) to the scene log table. Safe to repeat: it updates the rows.</p>
+    <ul class="objects" id="cloudList"></ul>
+  </div>
+
+  <h3>Quick Detail: tagged make3d</h3>
+  <p class="hint">Read only. These are future references: they are not loaded as scenes yet.</p>
+  <ul class="issues" id="refList"></ul>
+
+  <h3>Later</h3>
+  <p class="hint">Scenes made from words (an LLM) and drawn scenes, linked in by JSON input, will appear here. Not built yet.</p>
+
+  <button class="btn ghost" id="closeLib" type="button">Close</button>
+</div>
+
+<button class="gear" id="gearBtn" type="button" aria-label="Settings" aria-expanded="false" aria-controls="gearPanel"><svg viewBox="0 0 24 24" width="34" height="34" aria-hidden="true"><path d="M10.3 2.5h3.4l.5 2.6c.6.2 1.2.5 1.7.9l2.5-.9 1.7 2.9-2 1.8c.1.6.1 1.2 0 1.8l2 1.8-1.7 2.9-2.5-.9c-.5.4-1.1.7-1.7.9l-.5 2.6h-3.4l-.5-2.6c-.6-.2-1.2-.5-1.7-.9l-2.5.9-1.7-2.9 2-1.8c-.1-.6-.1-1.2 0-1.8l-2-1.8 1.7-2.9 2.5.9c.5-.4 1.1-.7 1.7-.9z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+
+<div class="drawer" id="gearPanel" hidden>
+  <h2>Settings</h2>
+
+  <h3>Versions</h3>
+  <p class="hint">V2 is archived: the version before V3, kept to run as it was. V1 is the archived first version.</p>
+  <div class="btn-row">
+    <a class="btn" href="../index.html">Open V3 (current)</a>
+    <a class="btn" href="../V1/index.html">Open V1 (archived)</a>
+  </div>
+
+  <label class="field">Up axis of the file
+    <select id="upSel">
+      <option value="z">Z up (default)</option>
+      <option value="y">Y up</option>
+    </select>
+  </label>
+
+  <div class="field-row">
+    <label class="toggle"><input id="groundOn" type="checkbox"> Show ground</label>
+  </div>
+  <label class="field">Ground height <span id="groundReadout"></span>
+    <input id="groundSlider" type="range" min="-60" max="60" value="0" disabled>
+  </label>
+
+  <label class="field">Display
+    <select id="displaySel">
+      <option value="solid">Solid</option>
+      <option value="edges">Solid + edges</option>
+      <option value="wire">Wireframe</option>
+    </select>
+  </label>
+  <label class="field">Dimensions shown as
+    <select id="unitsSel">
+      <option value="ftin">Feet and inches</option>
+      <option value="in">Inches</option>
+    </select>
+  </label>
+  <h3>Material</h3>
+  <label class="field">Material
+    <select id="matSel"></select>
+  </label>
+  <label class="field">Colour <input id="matColor" type="color"></label>
+  <label class="field">Roughness <span id="matRoughRead"></span>
+    <input id="matRough" type="range" min="0" max="1" step="0.05">
+  </label>
+  <label class="field">Metalness <span id="matMetalRead"></span>
+    <input id="matMetal" type="range" min="0" max="1" step="0.05">
+  </label>
+  <label class="field">Pattern
+    <select id="matPattern">
+      <option value="none">None (flat colour)</option>
+      <option value="wood">Wood</option>
+      <option value="tile">Tile</option>
+      <option value="stripe">Stripes</option>
+      <option value="leaf">Leaf</option>
+    </select>
+  </label>
+  <label class="field">Pattern colour <input id="matPatColor" type="color"></label>
+  <label class="field">Repeats across each face
+    <select id="matScale"></select>
+  </label>
+  <p class="hint">Each change is a Set material step in the history, so it can be undone.</p>
+
+  <div class="field-row">
+    <label class="toggle"><input id="showErrors" type="checkbox"> Show errors</label>
+  </div>
+
+  <div id="animSettings" hidden>
+    <label class="field">Animation speed
+      <select id="animSpeed">
+        <option value="0.5">½×</option>
+        <option value="1" selected>1×</option>
+        <option value="2">2×</option>
+      </select>
+    </label>
+    <div class="field-row">
+      <label class="toggle"><input id="animAuto" type="checkbox" checked> Play by itself on open (twice, then pause)</label>
+    </div>
+  </div>
+
+  <div class="btn-row">
+    <button class="btn" id="checkBtn" type="button">Check model</button>
+    <button class="btn" id="saveBtn" type="button">Save file</button>
+    <button class="btn" id="exportIfcBtn" type="button">Export IFC (Revit)</button>
+    <button class="btn" id="exportGlbBtn" type="button">Export GLB (3-D)</button>
+  </div>
+  <label class="field">Open a file
+    <input id="openFile" type="file" accept="application/json,.json">
+  </label>
+  <label class="field">Sample
+    <select id="sampleSel"></select>
+  </label>
+  <div class="btn-row">
+    <button class="btn" id="loadSample" type="button">Load sample (replaces this model)</button>
+  </div>
+  <p class="hint">Saved in this browser. The cloud copy is in the Library.</p>
+  <button class="btn ghost" id="closeGear" type="button">Close</button>
+</div>
+
+<script src="vendor/three/three.min.js"></script>
+<script src="js/core/units.js"></script>
+<script src="js/core/schema.js"></script>
+<script src="js/core/geometry.js"></script>
+<script src="js/core/origin.js"></script>
+<script src="js/core/rules.js"></script>
+<script src="js/core/io.js"></script>
+<script src="js/core/export_ifc.js"></script>
+<script src="js/core/mesh.js"></script>
+<script src="js/core/motion.js"></script>
+<script src="js/core/linked_views.js"></script>
+<script src="js/core/visibility.js"></script>
+<script src="js/core/patterns.js"></script>
+<script src="js/core/glb.js"></script>
+<script src="vendor/supabase/supabase.js"></script>
+<script src="js/cloud/cloud.js"></script>
+<script src="js/viewer/viewer.js"></script>
+<script src="js/samples.bundle.js"></script>
+<script src="js/ui/app.js"></script>
+</body>
+</html>
