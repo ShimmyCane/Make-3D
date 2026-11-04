@@ -7,6 +7,8 @@
   const STORE_KEY = 'make3d.v2.current';
   const SAMPLES = window.M3D_SAMPLES || {};
   const SAMPLE_ID = 'garden-planter';
+  // Build version, shown in Settings. Bump it with every change (also the ?v= on the script and CSS links in index.html).
+  const BUILD = '2.01';
 
   const st = {
     hiddenParts: new Set(), // labels of the Parts dropdown that are turned off (show:<label> tags)
@@ -1108,6 +1110,7 @@
 
   // ---------- start
   function start() {
+    $('buildNote').textContent = `Version ${BUILD}`;
     const b = loadInitial();
     st.history = b.history; st.world = b.world; st.motion = b.motion || null;
     st.cursor = st.history.operations.length;
