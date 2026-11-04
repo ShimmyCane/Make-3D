@@ -8,7 +8,7 @@
   const SAMPLES = window.M3D_SAMPLES || {};
   const SAMPLE_ID = 'garden-planter';
   // Build version, shown in Settings. Bump it with every change (also the ?v= on the script and CSS links in index.html).
-  const BUILD = '2.01';
+  const BUILD = '3.01';
 
   const st = {
     hiddenParts: new Set(), // labels of the Parts dropdown that are turned off (show:<label> tags)
