@@ -37,9 +37,21 @@ const min = (a) => Math.min(...a), max = (a) => Math.max(...a);
 // The stroke as joints in model space, facing the drawing (depth from the drawing's centre, a little bulge for limbs).
 // bulge: how far a part bows forward (+X) at its middle, so a V12 limb has volume (0 for the flat V11 cut-out).
 const joints = (name, depth = 0, bulge = 0) => {
-  const P = SRC[name];
+  const P = smoothed(SRC[name], bulge > 0 ? 2 : 0);
   return P.map((p, i) => T(p[0], p[1], depth + bulge * Math.sin((Math.PI * i) / (P.length - 1))));
 };
+// V12: a moving average over neighbouring points (the traces wobble a little where the pen did), keeping the ends.
+function smoothed(P, passes) {
+  let Q = P;
+  for (let k = 0; k < passes; k++) {
+    Q = Q.map((p, i) => {
+      if (i === 0 || i === Q.length - 1) return p;
+      const a = Q[i - 1], b = Q[i + 1];
+      return [(a[0] + 2 * p[0] + b[0]) / 4, (a[1] + 2 * p[1] + b[1]) / 4];
+    });
+  }
+  return Q;
+}
 
 // Bounding box of joints (plus a margin), for the loft's dimensions and position (as in the cape).
 function boxOf(js, margin) {
