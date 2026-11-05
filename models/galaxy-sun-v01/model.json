@@ -1,0 +1,4484 @@
+{
+  "model_id": "galaxy-sun-v01",
+  "name": "Galaxy Sun V01",
+  "description": "The Sun and four planets (Earth, Mars, Jupiter, Saturn) carried round the Milky Way's centre. The galactic sweep is sped up so 200 years shows as a 30-degree arc (the real pace is too slow to see); the planets keep their true orbits, tilted about 63 degrees to the galaxy. No orbit paths are drawn.",
+  "units": "in",
+  "up": "z",
+  "world": "galaxy-sun-world",
+  "materials": {
+    "sun": {
+      "color": "#ffd23f",
+      "opacity": 1
+    },
+    "corona": {
+      "color": "#ffb347",
+      "opacity": 0.2
+    },
+    "orbit": {
+      "color": "#8a86a3",
+      "opacity": 1
+    },
+    "mercury": {
+      "color": "#b8b0a4",
+      "opacity": 1
+    },
+    "venus": {
+      "color": "#f0d9a0",
+      "opacity": 1
+    },
+    "earth": {
+      "color": "#4f8fd6",
+      "opacity": 1
+    },
+    "mars": {
+      "color": "#d9714a",
+      "opacity": 1
+    },
+    "jup1": {
+      "color": "#e8c49a",
+      "opacity": 1
+    },
+    "jup2": {
+      "color": "#b87c55",
+      "opacity": 1
+    },
+    "jup3": {
+      "color": "#f2e6d0",
+      "opacity": 1
+    },
+    "sat": {
+      "color": "#ecd8a0",
+      "opacity": 1
+    },
+    "satb": {
+      "color": "#d9b97c",
+      "opacity": 1
+    },
+    "ring": {
+      "color": "#e6d7b0",
+      "opacity": 0.8
+    },
+    "ring2": {
+      "color": "#b59f7a",
+      "opacity": 0.8
+    },
+    "uranus": {
+      "color": "#a9e6f0",
+      "opacity": 1
+    },
+    "uranusb": {
+      "color": "#8fd4e6",
+      "opacity": 1
+    },
+    "neptune": {
+      "color": "#4f73e0",
+      "opacity": 1
+    },
+    "neptuneb": {
+      "color": "#3b5fc2",
+      "opacity": 1
+    },
+    "pluto": {
+      "color": "#c9b49a",
+      "opacity": 1
+    },
+    "charon": {
+      "color": "#8f8a85",
+      "opacity": 1
+    },
+    "moon": {
+      "color": "#bdbdbd",
+      "opacity": 1
+    },
+    "phobos": {
+      "color": "#8c7f74",
+      "opacity": 1
+    },
+    "io": {
+      "color": "#f6e28a",
+      "opacity": 1
+    },
+    "europa": {
+      "color": "#e9dfcf",
+      "opacity": 1
+    },
+    "ganymede": {
+      "color": "#a79b8b",
+      "opacity": 1
+    },
+    "callisto": {
+      "color": "#7e7467",
+      "opacity": 1
+    },
+    "titan": {
+      "color": "#e9b872",
+      "opacity": 1
+    },
+    "enceladus": {
+      "color": "#f4f8ff",
+      "opacity": 1
+    },
+    "miranda": {
+      "color": "#b4b4b4",
+      "opacity": 1
+    },
+    "ariel": {
+      "color": "#c9c9c9",
+      "opacity": 1
+    },
+    "triton": {
+      "color": "#e0d6c8",
+      "opacity": 1
+    },
+    "rock": {
+      "color": "#9a9188",
+      "opacity": 1
+    },
+    "rock2": {
+      "color": "#b3a99c",
+      "opacity": 1
+    },
+    "air": {
+      "color": "#9fd8ff",
+      "opacity": 0.2
+    },
+    "venusair": {
+      "color": "#ffe9a8",
+      "opacity": 0.25
+    },
+    "marker": {
+      "color": "#ff8fa3",
+      "opacity": 1
+    },
+    "disc": {
+      "color": "#5a6fa8",
+      "opacity": 0.12
+    },
+    "bulge": {
+      "color": "#ffd9a0",
+      "opacity": 0.3
+    },
+    "centre": {
+      "color": "#ffffff",
+      "opacity": 1
+    },
+    "arm": {
+      "color": "#a9c4ff",
+      "opacity": 0.9
+    },
+    "tail-sun": {
+      "color": "#ffd23f",
+      "opacity": 0.35
+    },
+    "tail-earth": {
+      "color": "#3d7fd1",
+      "opacity": 0.35
+    },
+    "tail-mars": {
+      "color": "#c1440e",
+      "opacity": 0.35
+    },
+    "tail-jupiter": {
+      "color": "#d9a066",
+      "opacity": 0.35
+    },
+    "tail-saturn": {
+      "color": "#e8d9a8",
+      "opacity": 0.35
+    }
+  },
+  "objects": [
+    {
+      "description": "the galactic disc, drawn as a spiral pattern (not to scale)",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-galaxy",
+      "name": "Milky Way (stylised)",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "the flat disc the Sun orbits in",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-galaxy",
+      "material": "disc",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-disc",
+      "name": "Galactic disc",
+      "type": "cylinder",
+      "dimensions": [
+        5600,
+        4
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "the dense central bulge (drawn faint; taps pass through)",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-galaxy",
+      "material": "bulge",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-bulge",
+      "name": "Galactic bulge",
+      "type": "sphere",
+      "dimensions": [
+        420
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "the centre of the Milky Way, around the black hole Sagittarius A*",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-galaxy",
+      "material": "centre",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-centre",
+      "name": "Galactic centre",
+      "type": "sphere",
+      "dimensions": [
+        60
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "stars along four spiral arms (a drawn pattern, not real positions)",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-galaxy",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-arms",
+      "name": "Spiral arms",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-0",
+      "name": "Arm 1 star 1",
+      "type": "sphere",
+      "dimensions": [
+        22
+      ],
+      "position": [
+        1128,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-1",
+      "name": "Arm 1 star 2",
+      "type": "sphere",
+      "dimensions": [
+        31.62
+      ],
+      "position": [
+        1246.584,
+        163.853,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-2",
+      "name": "Arm 1 star 3",
+      "type": "sphere",
+      "dimensions": [
+        41.24
+      ],
+      "position": [
+        1198.116,
+        320.502,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-3",
+      "name": "Arm 1 star 4",
+      "type": "sphere",
+      "dimensions": [
+        24.86
+      ],
+      "position": [
+        1274.782,
+        527.103,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-4",
+      "name": "Arm 1 star 5",
+      "type": "sphere",
+      "dimensions": [
+        34.48
+      ],
+      "position": [
+        1180.515,
+        680.266,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-5",
+      "name": "Arm 1 star 6",
+      "type": "sphere",
+      "dimensions": [
+        44.1
+      ],
+      "position": [
+        1066.227,
+        816.39,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-6",
+      "name": "Arm 1 star 7",
+      "type": "sphere",
+      "dimensions": [
+        27.72
+      ],
+      "position": [
+        1058.846,
+        1056.215,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-7",
+      "name": "Arm 1 star 8",
+      "type": "sphere",
+      "dimensions": [
+        37.34
+      ],
+      "position": [
+        900.24,
+        1169.697,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-8",
+      "name": "Arm 1 star 9",
+      "type": "sphere",
+      "dimensions": [
+        46.96
+      ],
+      "position": [
+        822.558,
+        1419.271,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-9",
+      "name": "Arm 1 star 10",
+      "type": "sphere",
+      "dimensions": [
+        30.58
+      ],
+      "position": [
+        623.12,
+        1496.441,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-10",
+      "name": "Arm 1 star 11",
+      "type": "sphere",
+      "dimensions": [
+        40.2
+      ],
+      "position": [
+        416.92,
+        1543.163,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-11",
+      "name": "Arm 1 star 12",
+      "type": "sphere",
+      "dimensions": [
+        23.82
+      ],
+      "position": [
+        236.201,
+        1763.047,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-12",
+      "name": "Arm 1 star 13",
+      "type": "sphere",
+      "dimensions": [
+        33.44
+      ],
+      "position": [
+        4.37,
+        1756.389,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-13",
+      "name": "Arm 1 star 14",
+      "type": "sphere",
+      "dimensions": [
+        43.06
+      ],
+      "position": [
+        -221.258,
+        1716.352,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-14",
+      "name": "Arm 1 star 15",
+      "type": "sphere",
+      "dimensions": [
+        26.68
+      ],
+      "position": [
+        -493.677,
+        1864.051,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-15",
+      "name": "Arm 1 star 16",
+      "type": "sphere",
+      "dimensions": [
+        36.3
+      ],
+      "position": [
+        -722.59,
+        1759.948,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-16",
+      "name": "Arm 1 star 17",
+      "type": "sphere",
+      "dimensions": [
+        45.92
+      ],
+      "position": [
+        -1051.631,
+        1835.512,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-17",
+      "name": "Arm 1 star 18",
+      "type": "sphere",
+      "dimensions": [
+        29.54
+      ],
+      "position": [
+        -1266.328,
+        1662.41,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-18",
+      "name": "Arm 1 star 19",
+      "type": "sphere",
+      "dimensions": [
+        39.16
+      ],
+      "position": [
+        -1451.278,
+        1462.15,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-19",
+      "name": "Arm 1 star 20",
+      "type": "sphere",
+      "dimensions": [
+        22.78
+      ],
+      "position": [
+        -1814.159,
+        1403.441,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-20",
+      "name": "Arm 1 star 21",
+      "type": "sphere",
+      "dimensions": [
+        32.4
+      ],
+      "position": [
+        -1956.037,
+        1140.159,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-21",
+      "name": "Arm 1 star 22",
+      "type": "sphere",
+      "dimensions": [
+        42.02
+      ],
+      "position": [
+        -2319.799,
+        972.746,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-22",
+      "name": "Arm 1 star 23",
+      "type": "sphere",
+      "dimensions": [
+        25.64
+      ],
+      "position": [
+        -2398.489,
+        654.413,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-23",
+      "name": "Arm 1 star 24",
+      "type": "sphere",
+      "dimensions": [
+        35.26
+      ],
+      "position": [
+        -2429.598,
+        331.656,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-24",
+      "name": "Arm 1 star 25",
+      "type": "sphere",
+      "dimensions": [
+        44.88
+      ],
+      "position": [
+        -2727.858,
+        13.573,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-25",
+      "name": "Arm 1 star 26",
+      "type": "sphere",
+      "dimensions": [
+        28.5
+      ],
+      "position": [
+        -2672.768,
+        -337.793,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-26",
+      "name": "Arm 1 star 27",
+      "type": "sphere",
+      "dimensions": [
+        38.12
+      ],
+      "position": [
+        -2568.132,
+        -673.313,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-27",
+      "name": "Arm 1 star 28",
+      "type": "sphere",
+      "dimensions": [
+        47.74
+      ],
+      "position": [
+        -2738.562,
+        -1116.431,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-28",
+      "name": "Arm 1 star 29",
+      "type": "sphere",
+      "dimensions": [
+        31.36
+      ],
+      "position": [
+        -2535.81,
+        -1444.489,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-29",
+      "name": "Arm 1 star 30",
+      "type": "sphere",
+      "dimensions": [
+        40.98
+      ],
+      "position": [
+        -2585.463,
+        -1959.312,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-30",
+      "name": "Arm 1 star 31",
+      "type": "sphere",
+      "dimensions": [
+        24.6
+      ],
+      "position": [
+        -2280.506,
+        -2252.313,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-31",
+      "name": "Arm 1 star 32",
+      "type": "sphere",
+      "dimensions": [
+        34.22
+      ],
+      "position": [
+        -1939.989,
+        -2494.878,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-32",
+      "name": "Arm 1 star 33",
+      "type": "sphere",
+      "dimensions": [
+        43.84
+      ],
+      "position": [
+        -1778.937,
+        -3034.538,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-33",
+      "name": "Arm 1 star 34",
+      "type": "sphere",
+      "dimensions": [
+        27.46
+      ],
+      "position": [
+        -1350.915,
+        -3199.31,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-34",
+      "name": "Arm 1 star 35",
+      "type": "sphere",
+      "dimensions": [
+        37.08
+      ],
+      "position": [
+        -908.773,
+        -3298.407,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-35",
+      "name": "Arm 1 star 36",
+      "type": "sphere",
+      "dimensions": [
+        46.7
+      ],
+      "position": [
+        -525.12,
+        -3776.705,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-36",
+      "name": "Arm 1 star 37",
+      "type": "sphere",
+      "dimensions": [
+        30.32
+      ],
+      "position": [
+        -28.074,
+        -3761.464,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-37",
+      "name": "Arm 1 star 38",
+      "type": "sphere",
+      "dimensions": [
+        39.94
+      ],
+      "position": [
+        514.201,
+        -4151.592,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-38",
+      "name": "Arm 1 star 39",
+      "type": "sphere",
+      "dimensions": [
+        23.56
+      ],
+      "position": [
+        1037.999,
+        -3999.642,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-39",
+      "name": "Arm 1 star 40",
+      "type": "sphere",
+      "dimensions": [
+        33.18
+      ],
+      "position": [
+        1528.187,
+        -3775.426,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-40",
+      "name": "Arm 1 star 41",
+      "type": "sphere",
+      "dimensions": [
+        42.8
+      ],
+      "position": [
+        2235.129,
+        -3946.582,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-41",
+      "name": "Arm 1 star 42",
+      "type": "sphere",
+      "dimensions": [
+        26.42
+      ],
+      "position": [
+        2694.875,
+        -3574.536,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-42",
+      "name": "Arm 1 star 43",
+      "type": "sphere",
+      "dimensions": [
+        36.04
+      ],
+      "position": [
+        3486.796,
+        -3548.053,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-43",
+      "name": "Arm 1 star 44",
+      "type": "sphere",
+      "dimensions": [
+        45.66
+      ],
+      "position": [
+        3873.321,
+        -3027.344,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-44",
+      "name": "Arm 1 star 45",
+      "type": "sphere",
+      "dimensions": [
+        29.28
+      ],
+      "position": [
+        4176.343,
+        -2462.28,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-0-45",
+      "name": "Arm 1 star 46",
+      "type": "sphere",
+      "dimensions": [
+        38.9
+      ],
+      "position": [
+        4964.295,
+        -2110.751,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-0",
+      "name": "Arm 2 star 1",
+      "type": "sphere",
+      "dimensions": [
+        27.46
+      ],
+      "position": [
+        0,
+        1183.003,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-1",
+      "name": "Arm 2 star 2",
+      "type": "sphere",
+      "dimensions": [
+        37.08
+      ],
+      "position": [
+        -151.871,
+        1155.423,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-2",
+      "name": "Arm 2 star 3",
+      "type": "sphere",
+      "dimensions": [
+        46.7
+      ],
+      "position": [
+        -335.673,
+        1254.829,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-3",
+      "name": "Arm 2 star 4",
+      "type": "sphere",
+      "dimensions": [
+        30.32
+      ],
+      "position": [
+        -489.605,
+        1184.093,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-4",
+      "name": "Arm 2 star 5",
+      "type": "sphere",
+      "dimensions": [
+        39.94
+      ],
+      "position": [
+        -711.551,
+        1234.806,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-5",
+      "name": "Arm 2 star 6",
+      "type": "sphere",
+      "dimensions": [
+        23.56
+      ],
+      "position": [
+        -855.745,
+        1117.626,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-6",
+      "name": "Arm 2 star 7",
+      "type": "sphere",
+      "dimensions": [
+        33.18
+      ],
+      "position": [
+        -979.791,
+        982.232,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-7",
+      "name": "Arm 2 star 8",
+      "type": "sphere",
+      "dimensions": [
+        42.8
+      ],
+      "position": [
+        -1224.453,
+        942.382,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-8",
+      "name": "Arm 2 star 9",
+      "type": "sphere",
+      "dimensions": [
+        26.42
+      ],
+      "position": [
+        -1319.34,
+        764.642,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-9",
+      "name": "Arm 2 star 10",
+      "type": "sphere",
+      "dimensions": [
+        36.04
+      ],
+      "position": [
+        -1564.522,
+        651.469,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-10",
+      "name": "Arm 2 star 11",
+      "type": "sphere",
+      "dimensions": [
+        45.66
+      ],
+      "position": [
+        -1616.716,
+        436.792,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-11",
+      "name": "Arm 2 star 12",
+      "type": "sphere",
+      "dimensions": [
+        29.28
+      ],
+      "position": [
+        -1636.812,
+        219.289,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-12",
+      "name": "Arm 2 star 13",
+      "type": "sphere",
+      "dimensions": [
+        38.9
+      ],
+      "position": [
+        -1837.71,
+        4.572,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-13",
+      "name": "Arm 2 star 14",
+      "type": "sphere",
+      "dimensions": [
+        22.52
+      ],
+      "position": [
+        -1799.678,
+        -231.999,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-14",
+      "name": "Arm 2 star 15",
+      "type": "sphere",
+      "dimensions": [
+        32.14
+      ],
+      "position": [
+        -1728.289,
+        -457.721,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-15",
+      "name": "Arm 2 star 16",
+      "type": "sphere",
+      "dimensions": [
+        41.76
+      ],
+      "position": [
+        -1842.901,
+        -756.649,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-16",
+      "name": "Arm 2 star 17",
+      "type": "sphere",
+      "dimensions": [
+        25.38
+      ],
+      "position": [
+        -1705.447,
+        -977.112,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-17",
+      "name": "Arm 2 star 18",
+      "type": "sphere",
+      "dimensions": [
+        35
+      ],
+      "position": [
+        -1738.548,
+        -1324.325,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-18",
+      "name": "Arm 2 star 19",
+      "type": "sphere",
+      "dimensions": [
+        44.62
+      ],
+      "position": [
+        -1532.33,
+        -1520.936,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-19",
+      "name": "Arm 2 star 20",
+      "type": "sphere",
+      "dimensions": [
+        28.24
+      ],
+      "position": [
+        -1302.301,
+        -1683.42,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-20",
+      "name": "Arm 2 star 21",
+      "type": "sphere",
+      "dimensions": [
+        37.86
+      ],
+      "position": [
+        -1193.308,
+        -2047.219,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-21",
+      "name": "Arm 2 star 22",
+      "type": "sphere",
+      "dimensions": [
+        47.48
+      ],
+      "position": [
+        -904.522,
+        -2157.099,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-22",
+      "name": "Arm 2 star 23",
+      "type": "sphere",
+      "dimensions": [
+        31.1
+      ],
+      "position": [
+        -684.064,
+        -2507.164,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-23",
+      "name": "Arm 2 star 24",
+      "type": "sphere",
+      "dimensions": [
+        40.72
+      ],
+      "position": [
+        -347.397,
+        -2544.908,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-24",
+      "name": "Arm 2 star 25",
+      "type": "sphere",
+      "dimensions": [
+        24.34
+      ],
+      "position": [
+        -12.605,
+        -2533.318,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-25",
+      "name": "Arm 2 star 26",
+      "type": "sphere",
+      "dimensions": [
+        33.96
+      ],
+      "position": [
+        353.368,
+        -2796.003,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-26",
+      "name": "Arm 2 star 27",
+      "type": "sphere",
+      "dimensions": [
+        43.58
+      ],
+      "position": [
+        705.859,
+        -2692.267,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-27",
+      "name": "Arm 2 star 28",
+      "type": "sphere",
+      "dimensions": [
+        27.2
+      ],
+      "position": [
+        1035.448,
+        -2539.914,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-28",
+      "name": "Arm 2 star 29",
+      "type": "sphere",
+      "dimensions": [
+        36.82
+      ],
+      "position": [
+        1512.285,
+        -2654.827,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-29",
+      "name": "Arm 2 star 30",
+      "type": "sphere",
+      "dimensions": [
+        46.44
+      ],
+      "position": [
+        1821.02,
+        -2402.977,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-30",
+      "name": "Arm 2 star 31",
+      "type": "sphere",
+      "dimensions": [
+        30.06
+      ],
+      "position": [
+        2355.045,
+        -2384.523,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-31",
+      "name": "Arm 2 star 32",
+      "type": "sphere",
+      "dimensions": [
+        39.68
+      ],
+      "position": [
+        2614.111,
+        -2032.704,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-32",
+      "name": "Arm 2 star 33",
+      "type": "sphere",
+      "dimensions": [
+        23.3
+      ],
+      "position": [
+        2816.726,
+        -1651.25,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-33",
+      "name": "Arm 2 star 34",
+      "type": "sphere",
+      "dimensions": [
+        32.92
+      ],
+      "position": [
+        3347.823,
+        -1413.625,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-34",
+      "name": "Arm 2 star 35",
+      "type": "sphere",
+      "dimensions": [
+        42.54
+      ],
+      "position": [
+        3458.973,
+        -953.012,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-35",
+      "name": "Arm 2 star 36",
+      "type": "sphere",
+      "dimensions": [
+        26.16
+      ],
+      "position": [
+        3500.951,
+        -486.778,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-36",
+      "name": "Arm 2 star 37",
+      "type": "sphere",
+      "dimensions": [
+        35.78
+      ],
+      "position": [
+        3939.223,
+        -29.401,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-37",
+      "name": "Arm 2 star 38",
+      "type": "sphere",
+      "dimensions": [
+        45.4
+      ],
+      "position": [
+        3856.69,
+        477.676,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-38",
+      "name": "Arm 2 star 39",
+      "type": "sphere",
+      "dimensions": [
+        29.02
+      ],
+      "position": [
+        4183.293,
+        1085.661,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-39",
+      "name": "Arm 2 star 40",
+      "type": "sphere",
+      "dimensions": [
+        38.64
+      ],
+      "position": [
+        3957.125,
+        1601.734,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-40",
+      "name": "Arm 2 star 41",
+      "type": "sphere",
+      "dimensions": [
+        22.26
+      ],
+      "position": [
+        3661.461,
+        2073.652,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-41",
+      "name": "Arm 2 star 42",
+      "type": "sphere",
+      "dimensions": [
+        31.88
+      ],
+      "position": [
+        3741.598,
+        2820.825,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-42",
+      "name": "Arm 2 star 43",
+      "type": "sphere",
+      "dimensions": [
+        41.5
+      ],
+      "position": [
+        3298.608,
+        3241.657,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-43",
+      "name": "Arm 2 star 44",
+      "type": "sphere",
+      "dimensions": [
+        25.12
+      ],
+      "position": [
+        3164.86,
+        4049.265,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-44",
+      "name": "Arm 2 star 45",
+      "type": "sphere",
+      "dimensions": [
+        34.74
+      ],
+      "position": [
+        2579.45,
+        4375.079,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-1-45",
+      "name": "Arm 2 star 46",
+      "type": "sphere",
+      "dimensions": [
+        44.36
+      ],
+      "position": [
+        1959.85,
+        4609.39,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-0",
+      "name": "Arm 3 star 1",
+      "type": "sphere",
+      "dimensions": [
+        32.92
+      ],
+      "position": [
+        -1238.006,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-1",
+      "name": "Arm 3 star 2",
+      "type": "sphere",
+      "dimensions": [
+        42.54
+      ],
+      "position": [
+        -1211.764,
+        -159.276,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-2",
+      "name": "Arm 3 star 3",
+      "type": "sphere",
+      "dimensions": [
+        26.16
+      ],
+      "position": [
+        -1163.066,
+        -311.126,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-3",
+      "name": "Arm 3 star 4",
+      "type": "sphere",
+      "dimensions": [
+        35.78
+      ],
+      "position": [
+        -1240.142,
+        -512.78,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-4",
+      "name": "Arm 3 star 5",
+      "type": "sphere",
+      "dimensions": [
+        45.4
+      ],
+      "position": [
+        -1146.961,
+        -660.931,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-5",
+      "name": "Arm 3 star 6",
+      "type": "sphere",
+      "dimensions": [
+        29.02
+      ],
+      "position": [
+        -1169.025,
+        -895.101,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-6",
+      "name": "Arm 3 star 7",
+      "type": "sphere",
+      "dimensions": [
+        38.64
+      ],
+      "position": [
+        -1029.582,
+        -1027.024,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-7",
+      "name": "Arm 3 star 8",
+      "type": "sphere",
+      "dimensions": [
+        22.26
+      ],
+      "position": [
+        -874.195,
+        -1135.856,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-8",
+      "name": "Arm 3 star 9",
+      "type": "sphere",
+      "dimensions": [
+        31.88
+      ],
+      "position": [
+        -800.436,
+        -1381.101,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-9",
+      "name": "Arm 3 star 10",
+      "type": "sphere",
+      "dimensions": [
+        41.5
+      ],
+      "position": [
+        -605.599,
+        -1454.364,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-10",
+      "name": "Arm 3 star 11",
+      "type": "sphere",
+      "dimensions": [
+        25.12
+      ],
+      "position": [
+        -456.664,
+        -1690.27,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-11",
+      "name": "Arm 3 star 12",
+      "type": "sphere",
+      "dimensions": [
+        34.74
+      ],
+      "position": [
+        -229.741,
+        -1714.829,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-12",
+      "name": "Arm 3 star 13",
+      "type": "sphere",
+      "dimensions": [
+        44.36
+      ],
+      "position": [
+        -4.245,
+        -1706.13,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-13",
+      "name": "Arm 3 star 14",
+      "type": "sphere",
+      "dimensions": [
+        27.98
+      ],
+      "position": [
+        242.741,
+        -1883.003,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-14",
+      "name": "Arm 3 star 15",
+      "type": "sphere",
+      "dimensions": [
+        37.6
+      ],
+      "position": [
+        479.943,
+        -1812.195,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-15",
+      "name": "Arm 3 star 16",
+      "type": "sphere",
+      "dimensions": [
+        47.22
+      ],
+      "position": [
+        701.541,
+        -1708.68,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-16",
+      "name": "Arm 3 star 17",
+      "type": "sphere",
+      "dimensions": [
+        30.84
+      ],
+      "position": [
+        1023.167,
+        -1785.832,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-17",
+      "name": "Arm 3 star 18",
+      "type": "sphere",
+      "dimensions": [
+        40.46
+      ],
+      "position": [
+        1230.484,
+        -1615.354,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-18",
+      "name": "Arm 3 star 19",
+      "type": "sphere",
+      "dimensions": [
+        24.08
+      ],
+      "position": [
+        1590.595,
+        -1602.511,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-19",
+      "name": "Arm 3 star 20",
+      "type": "sphere",
+      "dimensions": [
+        33.7
+      ],
+      "position": [
+        1764.221,
+        -1364.809,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-20",
+      "name": "Arm 3 star 21",
+      "type": "sphere",
+      "dimensions": [
+        43.32
+      ],
+      "position": [
+        1899.684,
+        -1107.311,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-21",
+      "name": "Arm 3 star 22",
+      "type": "sphere",
+      "dimensions": [
+        26.94
+      ],
+      "position": [
+        2257.653,
+        -946.687,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-22",
+      "name": "Arm 3 star 23",
+      "type": "sphere",
+      "dimensions": [
+        36.56
+      ],
+      "position": [
+        2331.324,
+        -636.087,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-23",
+      "name": "Arm 3 star 24",
+      "type": "sphere",
+      "dimensions": [
+        46.18
+      ],
+      "position": [
+        2660.217,
+        -363.137,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-24",
+      "name": "Arm 3 star 25",
+      "type": "sphere",
+      "dimensions": [
+        29.8
+      ],
+      "position": [
+        2653.55,
+        -13.203,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-25",
+      "name": "Arm 3 star 26",
+      "type": "sphere",
+      "dimensions": [
+        39.42
+      ],
+      "position": [
+        2596.604,
+        328.167,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-26",
+      "name": "Arm 3 star 27",
+      "type": "sphere",
+      "dimensions": [
+        23.04
+      ],
+      "position": [
+        2816.402,
+        738.404,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-27",
+      "name": "Arm 3 star 28",
+      "type": "sphere",
+      "dimensions": [
+        32.66
+      ],
+      "position": [
+        2662.685,
+        1085.498,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-28",
+      "name": "Arm 3 star 29",
+      "type": "sphere",
+      "dimensions": [
+        42.28
+      ],
+      "position": [
+        2462.254,
+        1402.588,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-29",
+      "name": "Arm 3 star 30",
+      "type": "sphere",
+      "dimensions": [
+        25.9
+      ],
+      "position": [
+        2515.76,
+        1906.489,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-30",
+      "name": "Arm 3 star 31",
+      "type": "sphere",
+      "dimensions": [
+        35.52
+      ],
+      "position": [
+        2216.22,
+        2188.822,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-31",
+      "name": "Arm 3 star 32",
+      "type": "sphere",
+      "dimensions": [
+        45.14
+      ],
+      "position": [
+        2125.418,
+        2733.344,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-32",
+      "name": "Arm 3 star 33",
+      "type": "sphere",
+      "dimensions": [
+        28.76
+      ],
+      "position": [
+        1730.165,
+        2951.341,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-33",
+      "name": "Arm 3 star 34",
+      "type": "sphere",
+      "dimensions": [
+        38.38
+      ],
+      "position": [
+        1312.158,
+        3107.524,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-34",
+      "name": "Arm 3 star 35",
+      "type": "sphere",
+      "dimensions": [
+        22
+      ],
+      "position": [
+        997.251,
+        3619.539,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-35",
+      "name": "Arm 3 star 36",
+      "type": "sphere",
+      "dimensions": [
+        31.62
+      ],
+      "position": [
+        510.474,
+        3671.377,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-36",
+      "name": "Arm 3 star 37",
+      "type": "sphere",
+      "dimensions": [
+        41.24
+      ],
+      "position": [
+        27.255,
+        3651.602,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-37",
+      "name": "Arm 3 star 38",
+      "type": "sphere",
+      "dimensions": [
+        24.86
+      ],
+      "position": [
+        -500.25,
+        4038.95,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-38",
+      "name": "Arm 3 star 39",
+      "type": "sphere",
+      "dimensions": [
+        34.48
+      ],
+      "position": [
+        -1008.542,
+        3886.139,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-39",
+      "name": "Arm 3 star 40",
+      "type": "sphere",
+      "dimensions": [
+        44.1
+      ],
+      "position": [
+        -1675.281,
+        4138.824,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-40",
+      "name": "Arm 3 star 41",
+      "type": "sphere",
+      "dimensions": [
+        27.72
+      ],
+      "position": [
+        -2173.451,
+        3837.676,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-41",
+      "name": "Arm 3 star 42",
+      "type": "sphere",
+      "dimensions": [
+        37.34
+      ],
+      "position": [
+        -2617.034,
+        3471.286,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-42",
+      "name": "Arm 3 star 43",
+      "type": "sphere",
+      "dimensions": [
+        46.96
+      ],
+      "position": [
+        -3393.161,
+        3452.774,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-43",
+      "name": "Arm 3 star 44",
+      "type": "sphere",
+      "dimensions": [
+        30.58
+      ],
+      "position": [
+        -3764.581,
+        2942.354,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-44",
+      "name": "Arm 3 star 45",
+      "type": "sphere",
+      "dimensions": [
+        40.2
+      ],
+      "position": [
+        -4573.816,
+        2696.62,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-2-45",
+      "name": "Arm 3 star 46",
+      "type": "sphere",
+      "dimensions": [
+        23.82
+      ],
+      "position": [
+        -4828.733,
+        2053.112,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-0",
+      "name": "Arm 4 star 1",
+      "type": "sphere",
+      "dimensions": [
+        38.38
+      ],
+      "position": [
+        0,
+        -1149.009,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-1",
+      "name": "Arm 4 star 2",
+      "type": "sphere",
+      "dimensions": [
+        22
+      ],
+      "position": [
+        166.682,
+        -1268.104,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-2",
+      "name": "Arm 4 star 3",
+      "type": "sphere",
+      "dimensions": [
+        31.62
+      ],
+      "position": [
+        326.297,
+        -1219.779,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-3",
+      "name": "Arm 4 star 4",
+      "type": "sphere",
+      "dimensions": [
+        41.24
+      ],
+      "position": [
+        475.281,
+        -1149.453,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-4",
+      "name": "Arm 4 star 5",
+      "type": "sphere",
+      "dimensions": [
+        24.86
+      ],
+      "position": [
+        692.216,
+        -1201.252,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-5",
+      "name": "Arm 4 star 6",
+      "type": "sphere",
+      "dimensions": [
+        34.48
+      ],
+      "position": [
+        831.422,
+        -1085.859,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-6",
+      "name": "Arm 4 star 7",
+      "type": "sphere",
+      "dimensions": [
+        44.1
+      ],
+      "position": [
+        1074.256,
+        -1076.932,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-7",
+      "name": "Arm 4 star 8",
+      "type": "sphere",
+      "dimensions": [
+        27.72
+      ],
+      "position": [
+        1190.612,
+        -916.337,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-8",
+      "name": "Arm 4 star 9",
+      "type": "sphere",
+      "dimensions": [
+        37.34
+      ],
+      "position": [
+        1281.169,
+        -742.519,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-9",
+      "name": "Arm 4 star 10",
+      "type": "sphere",
+      "dimensions": [
+        46.96
+      ],
+      "position": [
+        1522.446,
+        -633.948,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-10",
+      "name": "Arm 4 star 11",
+      "type": "sphere",
+      "dimensions": [
+        30.58
+      ],
+      "position": [
+        1571.258,
+        -424.511,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-11",
+      "name": "Arm 4 star 12",
+      "type": "sphere",
+      "dimensions": [
+        40.2
+      ],
+      "position": [
+        1792.847,
+        -240.194,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-12",
+      "name": "Arm 4 star 13",
+      "type": "sphere",
+      "dimensions": [
+        23.82
+      ],
+      "position": [
+        1787.451,
+        -4.447,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-13",
+      "name": "Arm 4 star 14",
+      "type": "sphere",
+      "dimensions": [
+        33.44
+      ],
+      "position": [
+        1748.179,
+        225.361,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-14",
+      "name": "Arm 4 star 15",
+      "type": "sphere",
+      "dimensions": [
+        43.06
+      ],
+      "position": [
+        1896.1,
+        502.164,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-15",
+      "name": "Arm 4 star 16",
+      "type": "sphere",
+      "dimensions": [
+        26.68
+      ],
+      "position": [
+        1791.633,
+        735.6,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-16",
+      "name": "Arm 4 star 17",
+      "type": "sphere",
+      "dimensions": [
+        36.3
+      ],
+      "position": [
+        1655.767,
+        948.648,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-17",
+      "name": "Arm 4 star 18",
+      "type": "sphere",
+      "dimensions": [
+        45.92
+      ],
+      "position": [
+        1691.492,
+        1288.481,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-18",
+      "name": "Arm 4 star 19",
+      "type": "sphere",
+      "dimensions": [
+        29.54
+      ],
+      "position": [
+        1488.957,
+        1477.885,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-19",
+      "name": "Arm 4 star 20",
+      "type": "sphere",
+      "dimensions": [
+        39.16
+      ],
+      "position": [
+        1427.317,
+        1845.022,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-20",
+      "name": "Arm 4 star 21",
+      "type": "sphere",
+      "dimensions": [
+        22.78
+      ],
+      "position": [
+        1160.46,
+        1990.866,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-21",
+      "name": "Arm 4 star 22",
+      "type": "sphere",
+      "dimensions": [
+        32.4
+      ],
+      "position": [
+        878.463,
+        2094.954,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-22",
+      "name": "Arm 4 star 23",
+      "type": "sphere",
+      "dimensions": [
+        42.02
+      ],
+      "position": [
+        665.738,
+        2439.999,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-23",
+      "name": "Arm 4 star 24",
+      "type": "sphere",
+      "dimensions": [
+        25.64
+      ],
+      "position": [
+        337.669,
+        2473.642,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-24",
+      "name": "Arm 4 star 25",
+      "type": "sphere",
+      "dimensions": [
+        35.26
+      ],
+      "position": [
+        13.802,
+        2773.782,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-25",
+      "name": "Arm 4 star 26",
+      "type": "sphere",
+      "dimensions": [
+        44.88
+      ],
+      "position": [
+        -343.742,
+        2719.84,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-26",
+      "name": "Arm 4 star 27",
+      "type": "sphere",
+      "dimensions": [
+        28.5
+      ],
+      "position": [
+        -685.745,
+        2615.548,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-27",
+      "name": "Arm 4 star 28",
+      "type": "sphere",
+      "dimensions": [
+        38.12
+      ],
+      "position": [
+        -1135.548,
+        2785.456,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-28",
+      "name": "Arm 4 star 29",
+      "type": "sphere",
+      "dimensions": [
+        47.74
+      ],
+      "position": [
+        -1470.385,
+        2581.27,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-29",
+      "name": "Arm 4 star 30",
+      "type": "sphere",
+      "dimensions": [
+        31.36
+      ],
+      "position": [
+        -1768.198,
+        2333.274,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-30",
+      "name": "Arm 4 star 31",
+      "type": "sphere",
+      "dimensions": [
+        40.98
+      ],
+      "position": [
+        -2291.553,
+        2320.237,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-31",
+      "name": "Arm 4 star 32",
+      "type": "sphere",
+      "dimensions": [
+        24.6
+      ],
+      "position": [
+        -2540.421,
+        1975.403,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-32",
+      "name": "Arm 4 star 33",
+      "type": "sphere",
+      "dimensions": [
+        34.22
+      ],
+      "position": [
+        -3085.956,
+        1809.08,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-33",
+      "name": "Arm 4 star 34",
+      "type": "sphere",
+      "dimensions": [
+        43.84
+      ],
+      "position": [
+        -3256.037,
+        1374.868,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-34",
+      "name": "Arm 4 star 35",
+      "type": "sphere",
+      "dimensions": [
+        27.46
+      ],
+      "position": [
+        -3359.738,
+        925.67,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-35",
+      "name": "Arm 4 star 36",
+      "type": "sphere",
+      "dimensions": [
+        37.08
+      ],
+      "position": [
+        -3841.802,
+        534.171,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-36",
+      "name": "Arm 4 star 37",
+      "type": "sphere",
+      "dimensions": [
+        46.7
+      ],
+      "position": [
+        -3829.362,
+        28.581,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-37",
+      "name": "Arm 4 star 38",
+      "type": "sphere",
+      "dimensions": [
+        30.32
+      ],
+      "position": [
+        -3744.047,
+        -463.724,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-38",
+      "name": "Arm 4 star 39",
+      "type": "sphere",
+      "dimensions": [
+        39.94
+      ],
+      "position": [
+        -4069.79,
+        -1056.204,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-39",
+      "name": "Arm 4 star 40",
+      "type": "sphere",
+      "dimensions": [
+        23.56
+      ],
+      "position": [
+        -3844.829,
+        -1556.28,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-40",
+      "name": "Arm 4 star 41",
+      "type": "sphere",
+      "dimensions": [
+        33.18
+      ],
+      "position": [
+        -4013.89,
+        -2273.249,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-41",
+      "name": "Arm 4 star 42",
+      "type": "sphere",
+      "dimensions": [
+        42.8
+      ],
+      "position": [
+        -3638.348,
+        -2742.984,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-42",
+      "name": "Arm 4 star 43",
+      "type": "sphere",
+      "dimensions": [
+        26.42
+      ],
+      "position": [
+        -3203.328,
+        -3148.022,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-43",
+      "name": "Arm 4 star 44",
+      "type": "sphere",
+      "dimensions": [
+        36.04
+      ],
+      "position": [
+        -3079.87,
+        -3940.525,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-44",
+      "name": "Arm 4 star 45",
+      "type": "sphere",
+      "dimensions": [
+        45.66
+      ],
+      "position": [
+        -2507.035,
+        -4252.254,
+        0
+      ]
+    },
+    {
+      "description": "",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-arms",
+      "material": "arm",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-star-3-45",
+      "name": "Arm 4 star 46",
+      "type": "sphere",
+      "dimensions": [
+        29.28
+      ],
+      "position": [
+        -2146.374,
+        -5048.077,
+        0
+      ]
+    },
+    {
+      "description": "the Sun, carried round the centre (sped up; see the description)",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-galaxy",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-sun-path",
+      "name": "Sun orbit",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "the star (stylised size); about 21 parsecs above the galactic plane",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-sun-path",
+      "material": "sun",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-sun",
+      "name": "Sun",
+      "type": "sphere",
+      "dimensions": [
+        40
+      ],
+      "position": [
+        3000,
+        0,
+        8
+      ]
+    },
+    {
+      "description": "a faint glow round the Sun (taps pass through it)",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-sun-path",
+      "material": "corona",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-corona",
+      "name": "Sun glow",
+      "type": "sphere",
+      "dimensions": [
+        48
+      ],
+      "position": [
+        3000,
+        0,
+        8
+      ]
+    },
+    {
+      "description": "the true path round the Sun, tilted with the solar plane (no line drawn)",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-sun-path",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-orbit-earth",
+      "name": "Earth orbit",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "spins on its own axis",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-orbit-earth",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-body-earth",
+      "name": "Earth body",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        3040.146,
+        79.958,
+        -70.451
+      ]
+    },
+    {
+      "description": "our home, with one Moon",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-earth",
+      "material": "earth",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-ball-earth",
+      "name": "Earth",
+      "type": "sphere",
+      "dimensions": [
+        9.5
+      ],
+      "position": [
+        3040.146,
+        79.958,
+        -70.451
+      ]
+    },
+    {
+      "description": "a thin see-through haze (taps pass through it)",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-earth",
+      "material": "air",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-air-earth",
+      "name": "Earth atmosphere",
+      "type": "sphere",
+      "dimensions": [
+        10.64
+      ],
+      "position": [
+        3040.146,
+        79.958,
+        -70.451
+      ]
+    },
+    {
+      "description": "the true path round the Sun, tilted with the solar plane (no line drawn)",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-sun-path",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-orbit-mars",
+      "name": "Mars orbit",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "spins on its own axis",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-orbit-mars",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-body-mars",
+      "name": "Mars body",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        2988.467,
+        151.797,
+        39.308
+      ]
+    },
+    {
+      "description": "the red planet, with two small moons",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-mars",
+      "material": "mars",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-ball-mars",
+      "name": "Mars",
+      "type": "sphere",
+      "dimensions": [
+        7
+      ],
+      "position": [
+        2988.467,
+        151.797,
+        39.308
+      ]
+    },
+    {
+      "description": "a thin see-through haze (taps pass through it)",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-mars",
+      "material": "air",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-air-mars",
+      "name": "Mars atmosphere",
+      "type": "sphere",
+      "dimensions": [
+        7.84
+      ],
+      "position": [
+        2988.467,
+        151.797,
+        39.308
+      ]
+    },
+    {
+      "description": "the true path round the Sun, tilted with the solar plane (no line drawn)",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-sun-path",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-orbit-jupiter",
+      "name": "Jupiter orbit",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "spins on its own axis",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-orbit-jupiter",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-body-jupiter",
+      "name": "Jupiter body",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        2914.649,
+        201.338,
+        182.504
+      ]
+    },
+    {
+      "description": "the biggest planet; a gas giant with stripes of clouds",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-jupiter",
+      "material": "jup1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-ball-jupiter",
+      "name": "Jupiter",
+      "type": "sphere",
+      "dimensions": [
+        22
+      ],
+      "position": [
+        2914.649,
+        201.338,
+        182.504
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-jupiter",
+      "material": "jup1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-band-jupiter-1",
+      "name": "Jupiter band 1",
+      "type": "cylinder",
+      "dimensions": [
+        14.577,
+        4.909
+      ],
+      "position": [
+        2914.649,
+        201.338,
+        165.66
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-jupiter",
+      "material": "jup2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-band-jupiter-2",
+      "name": "Jupiter band 2",
+      "type": "cylinder",
+      "dimensions": [
+        18.971,
+        4.909
+      ],
+      "position": [
+        2914.649,
+        201.338,
+        170.473
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-jupiter",
+      "material": "jup3",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-band-jupiter-3",
+      "name": "Jupiter band 3",
+      "type": "cylinder",
+      "dimensions": [
+        21.405,
+        4.909
+      ],
+      "position": [
+        2914.649,
+        201.338,
+        175.285
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-jupiter",
+      "material": "jup2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-band-jupiter-4",
+      "name": "Jupiter band 4",
+      "type": "cylinder",
+      "dimensions": [
+        22.524,
+        4.909
+      ],
+      "position": [
+        2914.649,
+        201.338,
+        180.098
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-jupiter",
+      "material": "jup1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-band-jupiter-5",
+      "name": "Jupiter band 5",
+      "type": "cylinder",
+      "dimensions": [
+        22.524,
+        4.909
+      ],
+      "position": [
+        2914.649,
+        201.338,
+        184.91
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-jupiter",
+      "material": "jup2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-band-jupiter-6",
+      "name": "Jupiter band 6",
+      "type": "cylinder",
+      "dimensions": [
+        21.405,
+        4.909
+      ],
+      "position": [
+        2914.649,
+        201.338,
+        189.723
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-jupiter",
+      "material": "jup3",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-band-jupiter-7",
+      "name": "Jupiter band 7",
+      "type": "cylinder",
+      "dimensions": [
+        18.971,
+        4.909
+      ],
+      "position": [
+        2914.649,
+        201.338,
+        194.535
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-jupiter",
+      "material": "jup1",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-band-jupiter-8",
+      "name": "Jupiter band 8",
+      "type": "cylinder",
+      "dimensions": [
+        14.577,
+        4.909
+      ],
+      "position": [
+        2914.649,
+        201.338,
+        199.348
+      ]
+    },
+    {
+      "description": "a thin see-through haze (taps pass through it)",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-jupiter",
+      "material": "air",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-air-jupiter",
+      "name": "Jupiter atmosphere",
+      "type": "sphere",
+      "dimensions": [
+        24.64
+      ],
+      "position": [
+        2914.649,
+        201.338,
+        182.504
+      ]
+    },
+    {
+      "description": "the true path round the Sun, tilted with the solar plane (no line drawn)",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-sun-path",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-orbit-saturn",
+      "name": "Saturn orbit",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "spins on its own axis",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-orbit-saturn",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-body-saturn",
+      "name": "Saturn body",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        3149.335,
+        75.692,
+        -317.974
+      ]
+    },
+    {
+      "description": "a gas giant with big, flat rings",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-saturn",
+      "material": "sat",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-ball-saturn",
+      "name": "Saturn",
+      "type": "sphere",
+      "dimensions": [
+        19
+      ],
+      "position": [
+        3149.335,
+        75.692,
+        -317.974
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-saturn",
+      "material": "sat",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-band-saturn-1",
+      "name": "Saturn band 1",
+      "type": "cylinder",
+      "dimensions": [
+        12.589,
+        4.239
+      ],
+      "position": [
+        3149.335,
+        75.692,
+        -332.521
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-saturn",
+      "material": "satb",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-band-saturn-2",
+      "name": "Saturn band 2",
+      "type": "cylinder",
+      "dimensions": [
+        16.384,
+        4.239
+      ],
+      "position": [
+        3149.335,
+        75.692,
+        -328.365
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-saturn",
+      "material": "sat",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-band-saturn-3",
+      "name": "Saturn band 3",
+      "type": "cylinder",
+      "dimensions": [
+        18.486,
+        4.239
+      ],
+      "position": [
+        3149.335,
+        75.692,
+        -324.208
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-saturn",
+      "material": "satb",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-band-saturn-4",
+      "name": "Saturn band 4",
+      "type": "cylinder",
+      "dimensions": [
+        19.453,
+        4.239
+      ],
+      "position": [
+        3149.335,
+        75.692,
+        -320.052
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-saturn",
+      "material": "sat",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-band-saturn-5",
+      "name": "Saturn band 5",
+      "type": "cylinder",
+      "dimensions": [
+        19.453,
+        4.239
+      ],
+      "position": [
+        3149.335,
+        75.692,
+        -315.896
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-saturn",
+      "material": "satb",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-band-saturn-6",
+      "name": "Saturn band 6",
+      "type": "cylinder",
+      "dimensions": [
+        18.486,
+        4.239
+      ],
+      "position": [
+        3149.335,
+        75.692,
+        -311.74
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-saturn",
+      "material": "sat",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-band-saturn-7",
+      "name": "Saturn band 7",
+      "type": "cylinder",
+      "dimensions": [
+        16.384,
+        4.239
+      ],
+      "position": [
+        3149.335,
+        75.692,
+        -307.583
+      ]
+    },
+    {
+      "description": "a stripe of cloud",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-saturn",
+      "material": "satb",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-band-saturn-8",
+      "name": "Saturn band 8",
+      "type": "cylinder",
+      "dimensions": [
+        12.589,
+        4.239
+      ],
+      "position": [
+        3149.335,
+        75.692,
+        -303.427
+      ]
+    },
+    {
+      "description": "a flat disc of ice",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-saturn",
+      "material": "ring",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-ring-a-saturn",
+      "name": "Saturn rings, outer",
+      "type": "cylinder",
+      "dimensions": [
+        39.9,
+        0.4
+      ],
+      "position": [
+        3149.335,
+        75.692,
+        -317.974
+      ]
+    },
+    {
+      "description": "a darker band inside the rings",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-saturn",
+      "material": "ring2",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-ring-b-saturn",
+      "name": "Saturn rings, inner",
+      "type": "cylinder",
+      "dimensions": [
+        30.4,
+        0.4
+      ],
+      "position": [
+        3149.335,
+        75.692,
+        -317.374
+      ]
+    },
+    {
+      "description": "a thin see-through haze (taps pass through it)",
+      "rotation_y": 0,
+      "parent": "galaxy-sun-v01-body-saturn",
+      "material": "air",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "galaxy-sun-v01-air-saturn",
+      "name": "Saturn atmosphere",
+      "type": "sphere",
+      "dimensions": [
+        21.28
+      ],
+      "position": [
+        3149.335,
+        75.692,
+        -317.974
+      ]
+    }
+  ],
+  "version": 226
+}
