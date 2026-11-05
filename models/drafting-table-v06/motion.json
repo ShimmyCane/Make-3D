@@ -1,0 +1,252 @@
+{
+  "schema": "make3d.motion/0.1",
+  "model_id": "drafting-table-v06",
+  "name": "Drawing at the board",
+  "description": "The parallel rule shifts, the French ruler slides, pencils trace the elevation, the sharpener turns and the stool swivels. Every motion repeats a whole number of times in each 60 s loop.",
+  "units": "in",
+  "up": "z",
+  "loop_s": 60,
+  "autoplay": {
+    "plays": 2
+  },
+  "motions": [
+    {
+      "id": "parallel-rule-shift",
+      "target": "drafting-table-v06-parallel-rule",
+      "kind": "path",
+      "points": [
+        [
+          0,
+          6.403,
+          42.909
+        ],
+        [
+          0.3,
+          6.287,
+          42.842
+        ],
+        [
+          0.52,
+          5.97,
+          42.659
+        ],
+        [
+          0.6,
+          5.537,
+          42.409
+        ],
+        [
+          0.52,
+          5.104,
+          42.159
+        ],
+        [
+          0.3,
+          4.787,
+          41.976
+        ],
+        [
+          0,
+          4.671,
+          41.909
+        ],
+        [
+          -0.3,
+          4.787,
+          41.976
+        ],
+        [
+          -0.52,
+          5.104,
+          42.159
+        ],
+        [
+          -0.6,
+          5.537,
+          42.409
+        ],
+        [
+          -0.52,
+          5.97,
+          42.659
+        ],
+        [
+          -0.3,
+          6.287,
+          42.842
+        ]
+      ],
+      "pivot": [
+        0,
+        6.403,
+        42.909
+      ],
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "french-ruler-slide",
+      "target": "drafting-table-v06-french-ruler",
+      "kind": "slide",
+      "axis": "x",
+      "distance": 4,
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "pencil-trace-path",
+      "target": "drafting-table-v06-pencil-trace",
+      "kind": "path",
+      "points": [
+        [
+          -9,
+          -3.116,
+          41.397
+        ],
+        [
+          -4.5,
+          -3.116,
+          41.397
+        ],
+        [
+          0,
+          -3.116,
+          41.397
+        ],
+        [
+          4.5,
+          -3.116,
+          41.397
+        ],
+        [
+          9,
+          -3.116,
+          41.397
+        ],
+        [
+          9,
+          -2.033,
+          42.022
+        ],
+        [
+          9,
+          -0.951,
+          42.647
+        ],
+        [
+          9,
+          0.132,
+          43.272
+        ],
+        [
+          9,
+          1.214,
+          43.897
+        ],
+        [
+          4.5,
+          1.214,
+          43.897
+        ],
+        [
+          0,
+          1.214,
+          43.897
+        ],
+        [
+          -4.5,
+          1.214,
+          43.897
+        ],
+        [
+          -9,
+          1.214,
+          43.897
+        ],
+        [
+          -9,
+          0.132,
+          43.272
+        ],
+        [
+          -9,
+          -0.951,
+          42.647
+        ],
+        [
+          -9,
+          -2.033,
+          42.022
+        ]
+      ],
+      "pivot": [
+        -9,
+        -3.116,
+        41.397
+      ],
+      "cycles": 2,
+      "phase": 0
+    },
+    {
+      "id": "sharpener-crank-turn",
+      "target": "drafting-table-v06-sharpener-handle",
+      "kind": "spin",
+      "axis": "x",
+      "pivot": [
+        -17.4,
+        -17.687,
+        29.636
+      ],
+      "cycles": 6,
+      "phase": 0
+    },
+    {
+      "id": "pencil-sharpen-dip",
+      "target": "drafting-table-v06-pencil-sharpen",
+      "kind": "bob",
+      "axis": "z",
+      "amount": -1.2,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "stool-swivel",
+      "target": "drafting-table-v06-stool",
+      "kind": "swing",
+      "axis": "z",
+      "pivot": [
+        0,
+        -36,
+        0
+      ],
+      "from": -10,
+      "to": 10,
+      "cycles": 1,
+      "phase": 0
+    },
+    {
+      "id": "eraser-rub",
+      "target": "drafting-table-v06-eraser-working",
+      "kind": "slide",
+      "axis": "x",
+      "distance": 1.5,
+      "cycles": 4,
+      "phase": 0
+    },
+    {
+      "id": "lamp-sway",
+      "target": "drafting-table-v06-lamp-head",
+      "kind": "swing",
+      "axis": "x",
+      "pivot": [
+        38,
+        0,
+        44.5
+      ],
+      "from": -4,
+      "to": 4,
+      "cycles": 1,
+      "phase": 0
+    }
+  ]
+}

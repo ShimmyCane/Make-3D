@@ -26,6 +26,7 @@ How to run: open `index.html` in a browser (no server or build). It is the light
 - Scenes: edit `tools/scenes.js`, then `node tools/build_samples.js`. Three samples: garden planter, outdoor table with parasol, kitchen.
 - Supabase (Architecture project): `m3d_scene_log` is the log of every scene version (history, world, model, label, note); edit it there, not in JSON. Load with `node tools/push_scene_log.js` (owner session token, never committed; `--dry-run` needs no token). SQL in `supabase/002_m3d_scene_log.sql` (applied). `m3d_scenes` (saved scenes, owner only). Reads Quick Detail's `sketch_details` where a tag is `make3d` in any letter case (read only; the old `make 3-D` tag is retired). SQL in `supabase/001_m3d_scenes.sql` (applied).
 
+- Architectural drafting table: `tools/drafting.js` (V01–V07, one `defsFor(v)`; V01–V03 build the table, lamp, stool and tools, V04–V07 animate the ink elevation), world `worlds/drafting-world.json`, test `node tests/test_drafting.js`. Open: `index.html?model=drafting-table-v07`.
 - Aquarium: `tools/aquarium.js` (V01–V05, one `defsFor(v)` returning objects and motions), world `worlds/aquarium-world.json`, test `node tests/test_aquarium.js`. Review: Increment Viewer `?set=aquarium`. Taps pass through glass and water (opacity under 0.4).
 
 Project rules:

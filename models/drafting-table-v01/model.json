@@ -1,0 +1,820 @@
+{
+  "model_id": "drafting-table-v01",
+  "name": "Architectural drafting table V01",
+  "description": "An architectural drafting table before CAD, increment 1 of 7 (about 30 objects). A lamp, a stool, pencils and a French ruler. From V04 the elevation is drawn in ink and the tools move.",
+  "units": "in",
+  "up": "z",
+  "world": "drafting-world",
+  "materials": {
+    "floor": {
+      "color": "#c9a77a",
+      "opacity": 1
+    },
+    "rug": {
+      "color": "#9c4a3a",
+      "opacity": 1
+    },
+    "wall": {
+      "color": "#efe6d2",
+      "opacity": 1
+    },
+    "frame": {
+      "color": "#8b6a4b",
+      "opacity": 1
+    },
+    "glass": {
+      "color": "#cfe9f2",
+      "opacity": 0.3
+    },
+    "wood": {
+      "color": "#b5835a",
+      "opacity": 1
+    },
+    "iron": {
+      "color": "#3d4247",
+      "opacity": 1
+    },
+    "brass": {
+      "color": "#c9a24a",
+      "opacity": 1
+    },
+    "board": {
+      "color": "#2f6b57",
+      "opacity": 1
+    },
+    "tray": {
+      "color": "#8c6a47",
+      "opacity": 1
+    },
+    "leather": {
+      "color": "#7a4e35",
+      "opacity": 1
+    },
+    "paper": {
+      "color": "#fbf6ea",
+      "opacity": 1
+    },
+    "ink": {
+      "color": "#2d2a26",
+      "opacity": 1
+    },
+    "pencil": {
+      "color": "#e0b84e",
+      "opacity": 1
+    },
+    "pencilRed": {
+      "color": "#c8553d",
+      "opacity": 1
+    },
+    "pencilBlue": {
+      "color": "#7fa8c9",
+      "opacity": 1
+    },
+    "penBlue": {
+      "color": "#2f5a9a",
+      "opacity": 1
+    },
+    "eraserPink": {
+      "color": "#e8a0a8",
+      "opacity": 1
+    },
+    "eraserBlue": {
+      "color": "#8fb3d9",
+      "opacity": 1
+    },
+    "rule": {
+      "color": "#ead9b0",
+      "opacity": 1
+    },
+    "steel": {
+      "color": "#b9c0ca",
+      "opacity": 1
+    },
+    "sharpener": {
+      "color": "#a33b2a",
+      "opacity": 1
+    },
+    "inkBottle": {
+      "color": "#243e5a",
+      "opacity": 0.9
+    },
+    "lampShade": {
+      "color": "#f4e3b5",
+      "opacity": 1
+    },
+    "bulb": {
+      "color": "#fff1a8",
+      "opacity": 1
+    },
+    "mug": {
+      "color": "#f2ede4",
+      "opacity": 1
+    },
+    "steam": {
+      "color": "#ffffff",
+      "opacity": 0.35
+    },
+    "bin": {
+      "color": "#8c8c80",
+      "opacity": 1
+    },
+    "tube": {
+      "color": "#d8c49a",
+      "opacity": 1
+    },
+    "pot": {
+      "color": "#b5583e",
+      "opacity": 1
+    },
+    "plant": {
+      "color": "#6f9a5a",
+      "opacity": 1
+    }
+  },
+  "objects": [
+    {
+      "description": "the wood floor of the drawing room",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-floor",
+      "name": "Floor",
+      "type": "box",
+      "dimensions": [
+        120,
+        100,
+        1
+      ],
+      "position": [
+        0,
+        0,
+        -0.5
+      ]
+    },
+    {
+      "description": "a red rug under the table and the stool",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "rug",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-rug",
+      "name": "Rug",
+      "type": "box",
+      "dimensions": [
+        60,
+        40,
+        0.5
+      ],
+      "position": [
+        0,
+        -4,
+        0.25
+      ]
+    },
+    {
+      "description": "the plaster wall behind the table",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "wall",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-wall",
+      "name": "Back wall",
+      "type": "box",
+      "dimensions": [
+        120,
+        1,
+        96
+      ],
+      "position": [
+        0,
+        24,
+        48
+      ]
+    },
+    {
+      "description": "the window on the back wall, letting in the daylight",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "glass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-window",
+      "name": "Window glass",
+      "type": "box",
+      "dimensions": [
+        28,
+        0.4,
+        34
+      ],
+      "position": [
+        -34,
+        23.4,
+        58
+      ]
+    },
+    {
+      "description": "the top of the window frame",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "frame",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-window-top",
+      "name": "Window top frame",
+      "type": "box",
+      "dimensions": [
+        30,
+        0.8,
+        1.2
+      ],
+      "position": [
+        -34,
+        23.2,
+        75.4
+      ]
+    },
+    {
+      "description": "the bottom of the window frame",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "frame",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-window-sill",
+      "name": "Window sill frame",
+      "type": "box",
+      "dimensions": [
+        30,
+        0.8,
+        1.2
+      ],
+      "position": [
+        -34,
+        23.2,
+        40.6
+      ]
+    },
+    {
+      "description": "the left side of the window frame",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "frame",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-window-left",
+      "name": "Window left frame",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        0.8,
+        36
+      ],
+      "position": [
+        -48.4,
+        23.2,
+        58
+      ]
+    },
+    {
+      "description": "the right side of the window frame",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "frame",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-window-right",
+      "name": "Window right frame",
+      "type": "box",
+      "dimensions": [
+        1.2,
+        0.8,
+        36
+      ],
+      "position": [
+        -19.6,
+        23.2,
+        58
+      ]
+    },
+    {
+      "description": "an oak shelf on the back wall, holding three books and a small plant",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "oak",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-shelf",
+      "name": "Wall shelf",
+      "type": "box",
+      "dimensions": [
+        20,
+        5,
+        1
+      ],
+      "position": [
+        46,
+        21,
+        62
+      ]
+    },
+    {
+      "description": "a blue book on the shelf, a building handbook",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "penBlue",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-book-1",
+      "name": "Book 1",
+      "type": "box",
+      "dimensions": [
+        1.5,
+        3.5,
+        6
+      ],
+      "position": [
+        40,
+        21,
+        65.5
+      ]
+    },
+    {
+      "description": "a red book on the shelf, a catalogue of furniture",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "pencilRed",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-book-2",
+      "name": "Book 2",
+      "type": "box",
+      "dimensions": [
+        1.5,
+        3.5,
+        6
+      ],
+      "position": [
+        41.8,
+        21,
+        65.5
+      ]
+    },
+    {
+      "description": "a brass-coloured book on the shelf, a survey of old drawings",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "brass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-book-3",
+      "name": "Book 3",
+      "type": "box",
+      "dimensions": [
+        1.5,
+        3.5,
+        5
+      ],
+      "position": [
+        43.6,
+        21,
+        65
+      ]
+    },
+    {
+      "description": "a terracotta pot with a fern on the shelf",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "pot",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-plant-pot",
+      "name": "Plant pot",
+      "type": "cylinder",
+      "dimensions": [
+        2.5,
+        4
+      ],
+      "position": [
+        52,
+        21,
+        64
+      ]
+    },
+    {
+      "description": "a small fern, the only green thing in the room apart from the board",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "plant",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-plant",
+      "name": "Fern",
+      "type": "sphere",
+      "dimensions": [
+        3
+      ],
+      "position": [
+        52,
+        21,
+        68
+      ]
+    },
+    {
+      "description": "a tin bin for spoiled sheets and shavings",
+      "rotation_y": 0,
+      "parent": null,
+      "material": "bin",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-bin",
+      "name": "Waste bin",
+      "type": "cylinder",
+      "dimensions": [
+        4,
+        12
+      ],
+      "position": [
+        44,
+        -16,
+        6
+      ]
+    },
+    {
+      "description": "rolled sheets, tied with string, kept at the side of the room",
+      "rotation_y": 90,
+      "parent": null,
+      "material": "tube",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-tube",
+      "name": "Tube of drawings",
+      "type": "cylinder",
+      "dimensions": [
+        1.5,
+        30
+      ],
+      "position": [
+        -44,
+        -16,
+        1.5
+      ]
+    },
+    {
+      "description": "a wooden drafting table. The board tilts 30 degrees toward the stool, so the drawing sits at a natural reading angle",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-table",
+      "name": "Drafting table",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "the heavy base that keeps the table steady",
+      "rotation_y": 0,
+      "parent": "drafting-table-v01-table",
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-base",
+      "name": "Pedestal base",
+      "type": "box",
+      "dimensions": [
+        28,
+        20,
+        1.5
+      ],
+      "position": [
+        0,
+        0,
+        0.75
+      ]
+    },
+    {
+      "description": "the column that holds the board, with the tilt pivot at its top",
+      "rotation_y": 0,
+      "parent": "drafting-table-v01-table",
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-column",
+      "name": "Pedestal column",
+      "type": "cylinder",
+      "dimensions": [
+        1.6,
+        36
+      ],
+      "position": [
+        0,
+        0,
+        19.5
+      ]
+    },
+    {
+      "description": "the tilted drawing board, 48 by 36 inches, with a clean green top",
+      "rotation_y": 0,
+      "parent": "drafting-table-v01-table",
+      "material": "board",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-board",
+      "name": "Drawing board",
+      "type": "box",
+      "dimensions": [
+        48,
+        36,
+        1
+      ],
+      "position": [
+        0,
+        0,
+        38
+      ],
+      "rotation_x": 30
+    },
+    {
+      "description": "the ledge along the bottom of the board, for pencils, pens and erasers",
+      "rotation_y": 0,
+      "parent": "drafting-table-v01-table",
+      "material": "tray",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-tray",
+      "name": "Pencil ledge",
+      "type": "box",
+      "dimensions": [
+        48,
+        3,
+        1.2
+      ],
+      "position": [
+        0,
+        -16.887,
+        28.25
+      ],
+      "rotation_x": 30
+    },
+    {
+      "description": "a brass task lamp beside the board, with an arm that reaches over the work",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-lamp",
+      "name": "Task lamp",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "description": "the round foot of the lamp",
+      "rotation_y": 0,
+      "parent": "drafting-table-v01-lamp",
+      "material": "iron",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-lamp-foot",
+      "name": "Lamp foot",
+      "type": "cylinder",
+      "dimensions": [
+        6,
+        1.2
+      ],
+      "position": [
+        38,
+        0,
+        0.6
+      ]
+    },
+    {
+      "description": "the pole of the lamp, up from the foot",
+      "rotation_y": 0,
+      "parent": "drafting-table-v01-lamp",
+      "material": "brass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-lamp-pole",
+      "name": "Lamp pole",
+      "type": "cylinder",
+      "dimensions": [
+        0.8,
+        42.8
+      ],
+      "position": [
+        38,
+        0,
+        22.6
+      ]
+    },
+    {
+      "description": "the arm, shade and bulb of the lamp. It sways on the top of the pole",
+      "rotation_y": 0,
+      "parent": "drafting-table-v01-lamp",
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-lamp-head",
+      "name": "Lamp head",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        34,
+        0,
+        42
+      ]
+    },
+    {
+      "description": "the arm that holds the shade out over the board",
+      "rotation_y": 90,
+      "parent": "drafting-table-v01-lamp-head",
+      "material": "brass",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-lamp-arm",
+      "name": "Lamp arm",
+      "type": "cylinder",
+      "dimensions": [
+        0.5,
+        8
+      ],
+      "position": [
+        34,
+        0,
+        44.5
+      ]
+    },
+    {
+      "description": "a cream shade, wide at the bottom, to throw the light down on the paper",
+      "rotation_y": 0,
+      "parent": "drafting-table-v01-lamp-head",
+      "material": "lampShade",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-lamp-shade",
+      "name": "Lamp shade",
+      "type": "cone",
+      "dimensions": [
+        4,
+        4
+      ],
+      "position": [
+        30,
+        0,
+        42
+      ]
+    },
+    {
+      "description": "the bulb under the shade",
+      "rotation_y": 0,
+      "parent": "drafting-table-v01-lamp-head",
+      "material": "bulb",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-lamp-bulb",
+      "name": "Lamp bulb",
+      "type": "sphere",
+      "dimensions": [
+        1.2
+      ],
+      "position": [
+        30,
+        0,
+        39.5
+      ]
+    },
+    {
+      "description": "a round stool with a leather seat that turns on its base",
+      "rotation_y": 0,
+      "parent": null,
+      "material": null,
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-stool",
+      "name": "Drafting stool",
+      "type": "group",
+      "dimensions": [],
+      "position": [
+        0,
+        -36,
+        0
+      ]
+    },
+    {
+      "description": "the leather seat",
+      "rotation_y": 0,
+      "parent": "drafting-table-v01-stool",
+      "material": "leather",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-stool-seat",
+      "name": "Stool seat",
+      "type": "cylinder",
+      "dimensions": [
+        8,
+        2
+      ],
+      "position": [
+        0,
+        -36,
+        22
+      ]
+    },
+    {
+      "description": "a wooden leg of the stool",
+      "rotation_y": 0,
+      "parent": "drafting-table-v01-stool",
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-stool-leg-1",
+      "name": "Stool leg 1",
+      "type": "cylinder",
+      "dimensions": [
+        0.6,
+        21
+      ],
+      "position": [
+        0,
+        -31,
+        10.5
+      ]
+    },
+    {
+      "description": "a wooden leg of the stool",
+      "rotation_y": 0,
+      "parent": "drafting-table-v01-stool",
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-stool-leg-2",
+      "name": "Stool leg 2",
+      "type": "cylinder",
+      "dimensions": [
+        0.6,
+        21
+      ],
+      "position": [
+        -4.33,
+        -38.5,
+        10.5
+      ]
+    },
+    {
+      "description": "a wooden leg of the stool",
+      "rotation_y": 0,
+      "parent": "drafting-table-v01-stool",
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-stool-leg-3",
+      "name": "Stool leg 3",
+      "type": "cylinder",
+      "dimensions": [
+        0.6,
+        21
+      ],
+      "position": [
+        4.33,
+        -38.5,
+        10.5
+      ]
+    },
+    {
+      "description": "a flat ring the sitter rests their feet on",
+      "rotation_y": 0,
+      "parent": "drafting-table-v01-stool",
+      "material": "wood",
+      "tags": [],
+      "allowed_overlap": [],
+      "uuid": "drafting-table-v01-stool-ring",
+      "name": "Foot ring",
+      "type": "cylinder",
+      "dimensions": [
+        6.5,
+        0.6
+      ],
+      "position": [
+        0,
+        -36,
+        9
+      ]
+    }
+  ],
+  "version": 34
+}

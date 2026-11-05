@@ -27,6 +27,7 @@
     'Honda CR-V test model': 'tests',
 
     'Living room': 'architecture',
+    'Architectural drafting table': 'architecture',
     'Kitchen': 'architecture',
     'Kitchen mockup': 'architecture',
     'Outdoor table with parasol': 'architecture',
