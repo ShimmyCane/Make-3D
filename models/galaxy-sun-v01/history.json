@@ -4,7 +4,7 @@
   "header": {
     "model_id": "galaxy-sun-v01",
     "name": "Galaxy Sun V01",
-    "description": "The Sun and four planets (Earth, Mars, Jupiter, Saturn) carried round the Milky Way's centre. The galactic sweep is sped up so 200 years shows as a 30-degree arc (the real pace is too slow to see); the planets keep their true orbits, tilted about 63 degrees to the galaxy. No orbit paths are drawn.",
+    "description": "The Sun and four planets (Earth, Mars, Jupiter, Saturn) carried round the Milky Way's centre. The galactic sweep is sped up so 200 years shows as a 30-degree arc (the real pace is too slow to see); the planets keep their true orbits, tilted about 60 degrees to the galaxy. No orbit paths are drawn.",
     "units": "in",
     "up": "z",
     "world": "galaxy-sun-world",
@@ -4830,9 +4830,9 @@
         "type": "group",
         "dimensions": [],
         "position": [
-          3040.146,
-          79.958,
-          -70.451
+          3084.302,
+          -34.671,
+          -68.49
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-orbit-earth",
@@ -4854,9 +4854,9 @@
           9.5
         ],
         "position": [
-          3040.146,
-          79.958,
-          -70.451
+          3084.302,
+          -34.671,
+          -68.49
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-earth",
@@ -4878,9 +4878,9 @@
           10.64
         ],
         "position": [
-          3040.146,
-          79.958,
-          -70.451
+          3084.302,
+          -34.671,
+          -68.49
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-earth",
@@ -4922,9 +4922,9 @@
         "type": "group",
         "dimensions": [],
         "position": [
-          2988.467,
-          151.797,
-          39.308
+          3149.427,
+          29.763,
+          38.682
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-orbit-mars",
@@ -4946,9 +4946,9 @@
           7
         ],
         "position": [
-          2988.467,
-          151.797,
-          39.308
+          3149.427,
+          29.763,
+          38.682
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-mars",
@@ -4970,9 +4970,9 @@
           7.84
         ],
         "position": [
-          2988.467,
-          151.797,
-          39.308
+          3149.427,
+          29.763,
+          38.682
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-mars",
@@ -5014,9 +5014,9 @@
         "type": "group",
         "dimensions": [],
         "position": [
-          2914.649,
-          201.338,
-          182.504
+          3189.772,
+          115.273,
+          178.211
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-orbit-jupiter",
@@ -5038,9 +5038,9 @@
           22
         ],
         "position": [
-          2914.649,
-          201.338,
-          182.504
+          3189.772,
+          115.273,
+          178.211
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-jupiter",
@@ -5063,9 +5063,9 @@
           4.909
         ],
         "position": [
-          2914.649,
-          201.338,
-          165.66
+          3189.772,
+          115.273,
+          161.367
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-jupiter",
@@ -5088,9 +5088,9 @@
           4.909
         ],
         "position": [
-          2914.649,
-          201.338,
-          170.473
+          3189.772,
+          115.273,
+          166.18
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-jupiter",
@@ -5113,9 +5113,9 @@
           4.909
         ],
         "position": [
-          2914.649,
-          201.338,
-          175.285
+          3189.772,
+          115.273,
+          170.992
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-jupiter",
@@ -5138,9 +5138,9 @@
           4.909
         ],
         "position": [
-          2914.649,
-          201.338,
-          180.098
+          3189.772,
+          115.273,
+          175.805
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-jupiter",
@@ -5163,9 +5163,9 @@
           4.909
         ],
         "position": [
-          2914.649,
-          201.338,
-          184.91
+          3189.772,
+          115.273,
+          180.617
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-jupiter",
@@ -5188,9 +5188,9 @@
           4.909
         ],
         "position": [
-          2914.649,
-          201.338,
-          189.723
+          3189.772,
+          115.273,
+          185.43
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-jupiter",
@@ -5213,9 +5213,9 @@
           4.909
         ],
         "position": [
-          2914.649,
-          201.338,
-          194.535
+          3189.772,
+          115.273,
+          190.242
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-jupiter",
@@ -5238,9 +5238,9 @@
           4.909
         ],
         "position": [
-          2914.649,
-          201.338,
-          199.348
+          3189.772,
+          115.273,
+          195.055
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-jupiter",
@@ -5262,9 +5262,9 @@
           24.64
         ],
         "position": [
-          2914.649,
-          201.338,
-          182.504
+          3189.772,
+          115.273,
+          178.211
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-jupiter",
@@ -5306,9 +5306,9 @@
         "type": "group",
         "dimensions": [],
         "position": [
-          3149.335,
-          75.692,
-          -317.974
+          3093.39,
+          -155.176,
+          -310.572
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-orbit-saturn",
@@ -5330,9 +5330,9 @@
           19
         ],
         "position": [
-          3149.335,
-          75.692,
-          -317.974
+          3093.39,
+          -155.176,
+          -310.572
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-saturn",
@@ -5355,9 +5355,9 @@
           4.239
         ],
         "position": [
-          3149.335,
-          75.692,
-          -332.521
+          3093.39,
+          -155.176,
+          -325.119
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-saturn",
@@ -5380,9 +5380,9 @@
           4.239
         ],
         "position": [
-          3149.335,
-          75.692,
-          -328.365
+          3093.39,
+          -155.176,
+          -320.963
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-saturn",
@@ -5405,9 +5405,9 @@
           4.239
         ],
         "position": [
-          3149.335,
-          75.692,
-          -324.208
+          3093.39,
+          -155.176,
+          -316.806
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-saturn",
@@ -5430,9 +5430,9 @@
           4.239
         ],
         "position": [
-          3149.335,
-          75.692,
-          -320.052
+          3093.39,
+          -155.176,
+          -312.65
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-saturn",
@@ -5455,9 +5455,9 @@
           4.239
         ],
         "position": [
-          3149.335,
-          75.692,
-          -315.896
+          3093.39,
+          -155.176,
+          -308.494
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-saturn",
@@ -5480,9 +5480,9 @@
           4.239
         ],
         "position": [
-          3149.335,
-          75.692,
-          -311.74
+          3093.39,
+          -155.176,
+          -304.338
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-saturn",
@@ -5505,9 +5505,9 @@
           4.239
         ],
         "position": [
-          3149.335,
-          75.692,
-          -307.583
+          3093.39,
+          -155.176,
+          -300.181
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-saturn",
@@ -5530,9 +5530,9 @@
           4.239
         ],
         "position": [
-          3149.335,
-          75.692,
-          -303.427
+          3093.39,
+          -155.176,
+          -296.025
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-saturn",
@@ -5555,9 +5555,9 @@
           0.4
         ],
         "position": [
-          3149.335,
-          75.692,
-          -317.974
+          3093.39,
+          -155.176,
+          -310.572
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-saturn",
@@ -5580,9 +5580,9 @@
           0.4
         ],
         "position": [
-          3149.335,
-          75.692,
-          -317.374
+          3093.39,
+          -155.176,
+          -309.972
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-saturn",
@@ -5604,9 +5604,9 @@
           21.28
         ],
         "position": [
-          3149.335,
-          75.692,
-          -317.974
+          3093.39,
+          -155.176,
+          -310.572
         ],
         "rotation_y": 0,
         "parent": "galaxy-sun-v01-body-saturn",
