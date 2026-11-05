@@ -541,3 +541,11 @@ Source: research `04 AI/Make 3D/research/earth-launches.md`. Request: clearer la
 - `V1/`: frozen copy of the first app (`make3d.v1.*` storage). Settings → Versions links between them.
 - Projects stay at the root: `models/`, `renders/`, `drawings/`, `worlds/`, `convo/`, `supabase/`, `tools/`, `tests/`.
 - V2 plan and TRELLIS.2 notes: `04 AI/Make 3D/research/`.
+
+## 22. Requests, the gather-todo skill, and what to measure next (2026-11-05: built, requests; proposed, analytics)
+
+- **New request:** each category on the front page has a "New request" button. It opens a form ("What would you like a 3-D model of?"), and Save writes one row to `public.m3d_requests` (category, description, status `new`). Validation is in `cleanRequest` (`js/cloud/cloud.js`, `tests/test_requests.js`).
+- **Access:** owner only, the same email policy as `m3d_scenes` and `m3d_scene_log`. A visitor who is not signed in gets a message to sign in through the Library first. Migration: `supabase/003_m3d_requests.sql` (applied 2026-11-05).
+- **Drift found:** `001` and `002` name `public.platform_is_owner()`, which this project does not have. The live policies compare the signed-in email. The repo SQL now says so; fix the older files when they are next touched.
+- **To-do flow:** the skill `.claude/skills/gather-todo` reads the `new` rows, writes them into a dated section of `todo.md`, checks the section, then deletes exactly those rows. Requests that look private stay in the database and are not written to the public repo.
+- **Proposed, not built: first-party analytics.** No third-party trackers: the repo is public and the Quick Detail data is private. Plan: one table `m3d_events` (event name, category, scene id, time, and a random per-browser id with no email or IP), written by the page only when the owner is signed in or after a one-line notice, and read by the owner only. Events: front category opened, project opened, version opened, scene loaded, selection box turned off, Settings opened, request saved, save failed. Questions it answers: which categories are used, which scenes are opened and then left, where the page fails. Decision needed from the owner before it is built.

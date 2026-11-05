@@ -16,7 +16,19 @@
     scenesTable: 'm3d_scenes',
     logTable: 'm3d_scene_log',
     detailsTable: 'sketch_details',
+    requestsTable: 'm3d_requests',
   };
+
+  // A new request from the front page: a category and a description. Pure, so tests can run it.
+  const REQUEST_CATEGORIES = ['science', 'tests', 'architecture', 'fun', 'unsorted'];
+  function cleanRequest(input) {
+    const category = input && input.category;
+    const body = String((input && input.body) || '').trim();
+    if (!REQUEST_CATEGORIES.includes(category)) return { error: 'Pick a category first.' };
+    if (!body) return { error: 'Describe what you would like a 3-D model of.' };
+    if (body.length > 2000) return { error: 'Keep the description under 2,000 characters.' };
+    return { row: { category, body } };
+  }
 
   // Tags match ignoring letter case only. The retired "make 3-d" spelling is not the same tag, so it no longer matches.
   const tagKey = (t) => String(t).trim().toLowerCase();
@@ -110,6 +122,14 @@
         return rows.length;
       },
 
+      // Saves a request (public.m3d_requests, status 'new'). Owner only, by the table's policy.
+      async saveRequest(input) {
+        const c = cleanRequest(input);
+        if (c.error) throw new Error(c.error);
+        ok(await client.from(cfg.requestsTable).insert(c.row));
+        return true;
+      },
+
       // Read only. Quick Detail details tagged for Make 3D, any letter case. Deleted details are left out.
       // The tag match is done here, not in the query, because the database compares tags case-sensitively.
       async listReferences() {
@@ -122,5 +142,5 @@
     };
   }
 
-  return { createCloud, logRowsFromSamples, CLOUD_CONFIG: CONFIG, cloudFriendly: friendly };
+  return { createCloud, logRowsFromSamples, cleanRequest, REQUEST_CATEGORIES, CLOUD_CONFIG: CONFIG, cloudFriendly: friendly };
 });

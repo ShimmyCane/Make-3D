@@ -246,3 +246,10 @@ Jimmy's note on V06: too slow, too small, "too diagrammatic and not real enough 
 - Published orbit elements for the dwarf planets are scattered: the search gave a, e and period, but not mean anomaly, inclination or node. Mark each value's source, and use a labelled placeholder rather than guessing a starting place.
 - The build's rules check on the full bundle takes several minutes. Run `node tools/build_samples.js` in the background and wait on its process, not by polling.
 - The render tool finds a scene through its project row in the library, which shows only the latest version label. Pass the project name ("Solar System"), not the full version name.
+
+## Requests and the to-do skill (2026-11-05)
+
+- **Read the live database before running a repo SQL file.** The repo SQL named `public.platform_is_owner()`; the live project has no such function and the migration failed. The deployed tables use an email check. Look at `pg_policies` first, then match them and record the difference in the SQL file.
+- **Put the save rule where the data lives.** A form on a public page can write only as far as the table policy lets it. Owner-only is the safe default; a public submit needs its own decision (rate limit, spam check).
+- **Big bundles make browser checks slow.** The 37 MB sample bundle takes about two minutes to load in headless Chromium. Run the check in the background and wait on its log file rather than in the foreground.
+- **Check the diff after a sed version bump.** A `sed` across files also hits lines that were not meant to change; read `git diff` for the version strings before committing.
