@@ -4,7 +4,7 @@
   "header": {
     "model_id": "galaxy-sun-v05",
     "name": "Galaxy Sun V05",
-    "description": "Galaxy Sun, increment 5: one scale (1 AU = 120 in). The Sun drifts at its true speed, 230 km/s (about 5,800 in per year), and the four planets go round it on their true orbits. Each planet's trail (hidden at start) is a row of loops, because the drift is much faster than a planet's loop. The galactic arms are removed.",
+    "description": "Galaxy Sun, increment 5: one scale (1 AU = 120 in). The Sun drifts at its true speed, 230 km/s (about 5,800 in per year), and the four planets go round it on their true orbits. Each planet's trail is a row of loops, because the drift is much faster than a planet's loop. The galactic arms are removed.",
     "units": "in",
     "up": "z",
     "world": "galaxy-helix-world",
@@ -1073,7 +1073,7 @@
       "object": {
         "uuid": "galaxy-sun-v05-trails",
         "name": "Planet trails",
-        "description": "where each planet was over one orbit (hidden at start)",
+        "description": "where each planet was over one orbit (eye shut at start)",
         "type": "group",
         "dimensions": [],
         "position": [
@@ -1084,10 +1084,7 @@
         "rotation_y": 0,
         "parent": "galaxy-sun-v05-sun-frame",
         "material": null,
-        "tags": [
-          "show:Planet trails",
-          "start:hidden"
-        ]
+        "hidden_at_start": true
       }
     },
     {
@@ -14923,7 +14920,7 @@
       "object": {
         "uuid": "galaxy-sun-v05-plane",
         "name": "Galactic plane",
-        "description": "the galactic plane through the Sun (a local reference; hidden at start)",
+        "description": "the galactic plane through the Sun (a local reference; eye shut at start)",
         "type": "group",
         "dimensions": [],
         "position": [
@@ -14934,10 +14931,7 @@
         "rotation_y": 0,
         "parent": "galaxy-sun-v05-sun-frame",
         "material": null,
-        "tags": [
-          "show:Galactic plane",
-          "start:hidden"
-        ]
+        "hidden_at_start": true
       }
     },
     {

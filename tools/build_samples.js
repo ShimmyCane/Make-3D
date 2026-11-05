@@ -45,7 +45,8 @@ for (const scene of SCENES) {
         dimensions: d.dimensions, position: d.position, rotation_y: d.rotation_y || 0,
         ...(d.rotation_x ? { rotation_x: d.rotation_x } : {}), ...(d.rotation_z ? { rotation_z: d.rotation_z } : {}),
         parent: d.parent ? uuid(d.parent) : null, material: d.material || null, ...(d.tags ? { tags: d.tags } : {}),
-        ...(d.shape ? { shape: d.shape } : {}), ...(d.attach ? { attach: { to: uuid(d.attach.to), joint: d.attach.joint } } : {}) } });
+        ...(d.shape ? { shape: d.shape } : {}), ...(d.attach ? { attach: { to: uuid(d.attach.to), joint: d.attach.joint } } : {}),
+        ...(d.hidden_at_start ? { hidden_at_start: true } : {}) } });
   }
   for (const m of scene.modify || []) {
     seq++;

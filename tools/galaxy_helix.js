@@ -75,7 +75,7 @@ function helixScene(o) {
   // Trails: TRAIL_N beads spread over one orbit. Bead k sits where the planet was k/TRAIL_N of its orbit back in time:
   // the Sun's drift at that earlier time plus the planet's place round the Sun then. The bead moves with the planet's
   // orbit shifted back in time, so one object carries each bead.
-  defs.push(['trails', { name: 'Planet trails', description: 'where each planet was over one orbit (hidden at start)', type: 'group', dimensions: [], position: [0, 0, 0], parent: 'sun-frame', tags: ['show:Planet trails', 'start:hidden'] }]);
+  defs.push(['trails', { name: 'Planet trails', description: 'where each planet was over one orbit (eye shut at start)', type: 'group', dimensions: [], position: [0, 0, 0], parent: 'sun-frame', hidden_at_start: true }]);
   for (const key of PICK) {
     const el = ST.ELEMENTS[key], p = SS.PLANETS[key];
     const P = el.period / 365.25;          // the orbit, in years
@@ -92,7 +92,7 @@ function helixScene(o) {
   }
 
   // The galactic plane through the Sun: a flat, faint disc, hidden at start.
-  defs.push(['plane', { name: 'Galactic plane', description: 'the galactic plane through the Sun (a local reference; hidden at start)', type: 'group', dimensions: [], position: [0, 0, 0], parent: 'sun-frame', tags: ['show:Galactic plane', 'start:hidden'] }]);
+  defs.push(['plane', { name: 'Galactic plane', description: 'the galactic plane through the Sun (a local reference; eye shut at start)', type: 'group', dimensions: [], position: [0, 0, 0], parent: 'sun-frame', hidden_at_start: true }]);
   defs.push(['plane-disc', { name: 'Galactic plane disc', description: '', type: 'cylinder', dimensions: [2500, 2], position: [0, 0, 0], material: 'disc', parent: 'plane' }]);
 
   return {
@@ -117,15 +117,27 @@ function helixScene(o) {
   };
 }
 
+// V07 and V08: the same scene with the trails and the plane starting with their eyes shut (the eye toggle in the
+// Objects list), not with a tag. V07 is the helix speed (as V06), V08 the true speed (as V05). V05 and V06 stay as they were.
+const SCENE_V07 = helixScene({
+  id: 'galaxy-sun-v07', name: 'Galaxy Sun V07', D: D_HELIX,
+  description: `Galaxy Sun, increment 7: as V06 (helix speed, 960 in per year, four Earth orbit diameters per year), with the trails and the galactic plane starting with their eyes shut. Open the eye on Planet trails to see the helices.`,
+  motionName: 'Sun drifts at helix speed, 200 years', motionDescription: `The Sun drifts ${D_HELIX} in per year on this scale, about ${Math.round(D_TRUE / D_HELIX)} times slower than the true speed. 200 years plays in ${LOOP_S} s, then holds.`,
+});
+const SCENE_V08 = helixScene({
+  id: 'galaxy-sun-v08', name: 'Galaxy Sun V08', D: D_TRUE,
+  description: `Galaxy Sun, increment 8: as V05 (true speed, 230 km/s, about 5,820 in per year on the 1 AU = 120 in scale), with the trails and the galactic plane starting with their eyes shut.`,
+  motionName: 'Sun drifts at true speed, 200 years', motionDescription: `The Sun drifts at 230 km/s (${Math.round(D_TRUE)} in per year on this scale). 200 years plays in ${LOOP_S} s, then holds.`,
+});
 const SCENE_V05 = helixScene({
   id: 'galaxy-sun-v05', name: 'Galaxy Sun V05', D: D_TRUE,
-  description: `Galaxy Sun, increment 5: one scale (1 AU = 120 in). The Sun drifts at its true speed, 230 km/s (about 5,800 in per year), and the four planets go round it on their true orbits. Each planet's trail (hidden at start) is a row of loops, because the drift is much faster than a planet's loop. The galactic arms are removed.`,
+  description: `Galaxy Sun, increment 5: one scale (1 AU = 120 in). The Sun drifts at its true speed, 230 km/s (about 5,800 in per year), and the four planets go round it on their true orbits. Each planet's trail is a row of loops, because the drift is much faster than a planet's loop. The galactic arms are removed.`,
   motionName: 'Sun drifts at true speed, 200 years', motionDescription: `The Sun drifts at 230 km/s (${Math.round(D_TRUE)} in per year on this scale). 200 years plays in ${LOOP_S} s, then holds.`,
 });
 const SCENE_V06 = helixScene({
   id: 'galaxy-sun-v06', name: 'Galaxy Sun V06', D: D_HELIX,
-  description: `Galaxy Sun, increment 6: the drift sped up so each planet's trail reads as a helix (one year moves the Sun four orbit diameters). Same scale as V05 (1 AU = 120 in). Trails start hidden. Not the true speed: at true speed the trail is a row of loops (V05).`,
+  description: `Galaxy Sun, increment 6: the drift sped up so each planet's trail reads as a helix (one year moves the Sun four orbit diameters). Same scale as V05 (1 AU = 120 in). Not the true speed: at true speed the trail is a row of loops (V05).`,
   motionName: 'Sun drifts at helix speed, 200 years', motionDescription: `The Sun drifts ${D_HELIX} in per year on this scale, about ${Math.round(D_TRUE / D_HELIX)} times slower than the true speed. 200 years plays in ${LOOP_S} s, then holds.`,
 });
 
-module.exports = { GALAXY_HELIX_V05: SCENE_V05, GALAXY_HELIX_V06: SCENE_V06, D_TRUE, D_HELIX, TRAIL_N };
+module.exports = { GALAXY_HELIX_V05: SCENE_V05, GALAXY_HELIX_V06: SCENE_V06, GALAXY_HELIX_V07: SCENE_V07, GALAXY_HELIX_V08: SCENE_V08, D_TRUE, D_HELIX, TRAIL_N };

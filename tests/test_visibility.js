@@ -46,12 +46,12 @@ t('hiddenUuids: returns the uuids of the labels turned off, and nothing else', (
 
 console.log(`\n${n} visibility tests passed`);
 
-t('start:hidden: a group that the model says starts off', () => {
-  const m = { model_id: 'x', objects: [
-    { uuid: 'g', name: 'Trails', tags: ['show:trails', 'start:hidden'] },
+t('hidden_at_start: the objects whose eye starts shut', () => {
+  const m = { objects: [
+    { uuid: 'g', name: 'Trails', tags: ['show:trails'], hidden_at_start: true },
     { uuid: 'p', name: 'Plane', tags: ['show:plane'] },
-    { uuid: 'q', name: 'Trail bead', tags: ['show:trails'] },
+    { uuid: 'q', name: 'Bead', tags: [], hidden_at_start: false },
   ] };
-  assert.deepStrictEqual(V.defaultHiddenLabels(m), ['trails']);
-  assert.deepStrictEqual(V.defaultHiddenLabels({ objects: [] }), []);
+  assert.deepStrictEqual(V.startHiddenUuids(m), ['g']);
+  assert.deepStrictEqual(V.startHiddenUuids({ objects: [] }), []);
 });
