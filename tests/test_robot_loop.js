@@ -52,7 +52,7 @@ const scenes = RL.ROBOT_LOOP;
 const byVersion = Object.fromEntries(scenes.map((s) => [s.header.model_id, s]));
 
 t('scenes: V02 to V06 exist; each adds to the one before (older parts kept, V05 moves the frisbee)', () => {
-  assert.deepStrictEqual(scenes.map((s) => s.header.model_id), ['robot-loop-v02', 'robot-loop-v03', 'robot-loop-v04', 'robot-loop-v05', 'robot-loop-v06', 'robot-loop-v07', 'robot-loop-v08', 'robot-loop-v09']);
+  assert.deepStrictEqual(scenes.map((s) => s.header.model_id), ['robot-loop-v02', 'robot-loop-v03', 'robot-loop-v04', 'robot-loop-v05', 'robot-loop-v06', 'robot-loop-v07', 'robot-loop-v08', 'robot-loop-v09', 'robot-loop-v10']);
   const keys = (v) => RL.defsFor(v).map(([k]) => k);
   const v2 = keys(2), v3 = keys(3), v4 = keys(4);
   for (const k of v2) assert.ok(v3.includes(k), `v3 keeps ${k}`);

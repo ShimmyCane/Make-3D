@@ -265,4 +265,122 @@ function articulatedMotion(uuid, path, fuzzy) {
     motions: [...keep, ...extra] };
 }
 
-module.exports = { SKETCH2_ID, defs, bodyDefs, REPLACED, TAIL_DEG, articulatedDefs, articulatedMotion };
+// ---------------------------------------------------------------------------------------------
+// V10 (play): the V08 rig, with more to see. Five limbs from the body, as the drawing has them: two long arms
+// (the hinged left arm and the banana arm), a waving arm that rises from the back of the body (new), and two
+// long legs. Each joint is a hinge with a visible cap. The tail is a chain of four joints that whips along its
+// length. The antenna bounces on its spring. The eyes have lids that blink twice a lap. The body bounces on
+// each step.
+
+const TAIL_JOINTS = 4;
+const WAVE_S = [-5.5, 0, 27];                        // the waving arm's shoulder, on the back of the body
+const WAVE_U = [-0.5, 0, 0.87];                      // upper arm direction (back and up)
+const WAVE_F = [-0.707, 0, 0.707];                   // forearm direction (further back)
+const WAVE_E = WAVE_S.map((c, k) => c + 6 * WAVE_U[k]);   // the waving elbow (6 in up the arm)
+const WAVE_H = WAVE_E.map((c, k) => c + 5 * WAVE_F[k]);   // the waving hand (5 in on)
+const LID_Y = 1.9, LID_Z = 36.4;                     // the eyelids' hinge: the top edge of each eye
+
+function playDefs(path) {
+  const base = articulatedDefs(path, false).filter(([key]) => !/^tail(-|$)/.test(key));
+  const add = (key, o) => base.push([key, o]);
+  const dir = [-Math.cos(rad(TAIL_DEG)), 0, Math.sin(rad(TAIL_DEG))];
+  const phi = -(90 - TAIL_DEG);
+
+  // hinge caps: a small yellow ball at each elbow and knee, so the joints read as hinges
+  add('hinge-elbow-l', { name: 'Left elbow hinge', type: 'sphere', dimensions: [0.8], position: [0, RB2.ARM_Y, ELBOW_Z], material: 'banana', parent: 'elbow-l' });
+  const E = RB2.R_SHOULDER.map((c, k) => c + 5 * RB2.R_DIR[k]);
+  add('hinge-elbow-r', { name: 'Right elbow hinge', type: 'sphere', dimensions: [0.8], position: E, material: 'banana', parent: 'elbow-r' });
+  for (const [side, y] of [['l', RB2.LEG_Y], ['r', -RB2.LEG_Y]]) {
+    add(`hinge-knee-${side}`, { name: `${side === 'l' ? 'Left' : 'Right'} knee hinge`, type: 'sphere', dimensions: [0.8], position: [0, y, KNEE_Z], material: 'banana', parent: `knee-${side}` });
+  }
+
+  // the waving arm: shoulder group, upper arm, elbow group with forearm and hand
+  const upPhi = Math.atan2(WAVE_U[0], WAVE_U[2]) * 180 / Math.PI;
+  const fPhi = Math.atan2(WAVE_F[0], WAVE_F[2]) * 180 / Math.PI;
+  add('arm-5', { name: 'Waving arm', description: 'rises from the back and waves', type: 'group', dimensions: [], position: WAVE_S, parent: 'upper' });
+  add('upper-arm-5', { name: 'Waving arm upper', type: 'cylinder', dimensions: [1.2, 6.2],
+    position: WAVE_S.map((c, k) => round(c + 3 * WAVE_U[k])), rotation_y: upPhi, material: 'joint', parent: 'arm-5' });
+  add('elbow-5', { name: 'Waving elbow', type: 'group', dimensions: [], position: WAVE_E, parent: 'arm-5' });
+  add('hinge-elbow-5', { name: 'Waving elbow hinge', type: 'sphere', dimensions: [0.8], position: WAVE_E, material: 'banana', parent: 'elbow-5' });
+  add('forearm-5', { name: 'Waving forearm', type: 'cylinder', dimensions: [1.1, 5.2],
+    position: WAVE_E.map((c, k) => round(c + 2.5 * WAVE_F[k])), rotation_y: fPhi, material: 'joint', parent: 'elbow-5' });
+  add('hand-5', { name: 'Waving hand', description: 'yellow, waves', type: 'sphere', dimensions: [1.9], position: WAVE_H.map(round), material: 'banana', parent: 'elbow-5' });
+
+  // tail: four joints in a chain; each joint is a group, so the whip runs down the tail
+  let parent = 'upper';
+  for (let k = 0; k < TAIL_JOINTS; k++) {
+    const J = TAIL_START.map((c, i) => c + dir[i] * k * TAIL_SEG);
+    add(`tail-g${k}`, { name: `Tail joint ${k + 1}`, description: 'a hinge along the tail', type: 'group', dimensions: [],
+      position: J.map(round), parent });
+    add(`tail-${k + 1}`, { name: `Tail ${k + 1}`, type: 'cylinder', dimensions: [TAIL_R[k], TAIL_SEG + 0.2],
+      position: J.map((c, i) => round(c + dir[i] * TAIL_SEG / 2)), rotation_y: phi, material: 'body', parent: `tail-g${k}` });
+    parent = `tail-g${k}`;
+  }
+
+  // eyelids: a brow above each eye that drops over it to blink (the lid's hinge is the top edge of the eye)
+  for (const [side, y] of [['l', LID_Y], ['r', -LID_Y]]) {
+    const S2 = side === 'l' ? 'Left' : 'Right';
+    add(`lid-${side}`, { name: `${S2} eyelid hinge`, type: 'group', dimensions: [], position: [4.2, y, LID_Z], parent: 'head-group' });
+    add(`lid-${side}-plate`, { name: `${S2} eyelid`, description: 'a brow that drops over the eye to blink', type: 'box', dimensions: [0.5, 2.4, 1.2],
+      position: [4.2, y, LID_Z + 1.2], material: 'head', parent: `lid-${side}` });
+  }
+  return base;
+}
+
+// Keys for a blink: open (0) at rest, closed (-180) twice a lap, returning to open.
+const BLINK_KEYS = [[0, 0], [0.30, 0], [0.315, -180], [0.335, 0], [0.70, 0], [0.715, -180], [0.735, 0]];
+
+function playMotion(uuid, path) {
+  const base = articulatedMotion(uuid, path, false);
+  const drop = new Set(['left-arm', 'right-arm', 'left-elbow', 'right-elbow', 'left-ear', 'right-ear', 'head-tilt', 'antenna-sway', 'tail-wag']);
+  const keep = base.motions.filter((m) => !drop.has(m.id));
+  const pts = path.map((p) => [p[0], p[1], 0]);
+  const strides = Math.max(1, Math.round(M.pathLength(pts) / RB2.STRIDE));
+  const th = (u) => 2 * Math.PI * strides * u;
+  const E = RB2.R_SHOULDER.map((c, k) => c + 5 * RB2.R_DIR[k]);
+  const fun = [];
+  // hand swings: the hinged left arm swings wide and folds at the elbow; the banana arm holds steady and waves
+  fun.push({ id: 'left-arm', target: uuid('arm-l'), kind: 'swing', axis: 'y', pivot: [0, RB2.ARM_Y, RB2.SHOULDER_Z],
+    keys: sampleKeys((u) => 30 * Math.sin(th(u) + Math.PI)) });
+  fun.push({ id: 'left-elbow', target: uuid('elbow-l'), kind: 'swing', axis: 'y', pivot: [0, RB2.ARM_Y, ELBOW_Z],
+    keys: sampleKeys((u) => -(20 + 22 * Math.sin(th(u) + Math.PI))) });
+  fun.push({ id: 'right-arm', target: uuid('arm-r'), kind: 'swing', axis: 'y', pivot: RB2.R_SHOULDER,
+    keys: sampleKeys((u) => 8 * Math.sin(th(u))) });
+  fun.push({ id: 'right-elbow', target: uuid('elbow-r'), kind: 'swing', axis: 'y', pivot: E,
+    keys: sampleKeys((u) => -(10 + 12 * Math.sin(2 * th(u)))) });
+  // the waving arm: sways back and forth and its elbow flicks
+  fun.push({ id: 'wave-arm', target: uuid('arm-5'), kind: 'swing', axis: 'y', pivot: WAVE_S,
+    keys: sampleKeys((u) => 38 * Math.sin(th(u) + Math.PI / 2)) });
+  fun.push({ id: 'wave-elbow', target: uuid('elbow-5'), kind: 'swing', axis: 'y', pivot: WAVE_E,
+    keys: sampleKeys((u) => -(30 + 26 * Math.sin(2 * th(u) + Math.PI))) });
+  // ears flap fast
+  fun.push({ id: 'left-ear', target: uuid('ear-l'), kind: 'swing', axis: 'x', pivot: [0, HEAD_R, EAR_Z],
+    keys: sampleKeys((u) => 20 * Math.sin(2 * th(u) + 1)) });
+  fun.push({ id: 'right-ear', target: uuid('ear-r'), kind: 'swing', axis: 'x', pivot: [0, -HEAD_R, EAR_Z],
+    keys: sampleKeys((u) => -20 * Math.sin(2 * th(u) + 1)) });
+  // head nods and tilts
+  fun.push({ id: 'head-tilt', target: uuid('head-group'), kind: 'swing', axis: 'x', pivot: [0, 0, HEAD_NECK_Z],
+    keys: sampleKeys((u) => 7 * Math.sin(th(u) * 2)) });
+  // antenna: sways, and its whole spring bounces up and down
+  fun.push({ id: 'antenna-sway', target: uuid('antenna-base'), kind: 'swing', axis: 'x', pivot: [-1.5, 0, HEAD_Z + HEAD_R],
+    keys: sampleKeys((u) => 16 * Math.sin(th(u) * 2 + 0.7)) });
+  fun.push({ id: 'antenna-bounce', target: uuid('antenna-base'), kind: 'bob', axis: 'z', amount: 0.7, cycles: strides * 3, phase: 0 });
+  // tail: a whip. Each joint swings a little later than the one before, so the wave runs down the tail.
+  for (let k = 0; k < TAIL_JOINTS; k++) {
+    const J = TAIL_START.map((c, i) => c + [-Math.cos(rad(TAIL_DEG)), 0, Math.sin(rad(TAIL_DEG))][i] * k * TAIL_SEG);
+    fun.push({ id: `tail-whip-${k + 1}`, target: uuid(`tail-g${k}`), kind: 'swing', axis: 'z', pivot: J.map(round),
+      keys: sampleKeys((u) => 16 * Math.sin(th(u) + Math.PI / 2 - k * 0.8)) });
+  }
+  // blinks: both lids drop twice a lap
+  for (const side of ['l', 'r']) {
+    fun.push({ id: `blink-${side}`, target: uuid(`lid-${side}`), kind: 'swing', axis: 'y', pivot: [4.2, side === 'l' ? LID_Y : -LID_Y, LID_Z],
+      keys: BLINK_KEYS });
+  }
+  // the body bounces on each step
+  fun.push({ id: 'bounce', target: uuid('upper'), kind: 'bob', axis: 'z', amount: 0.8, cycles: strides * 2, phase: 0 });
+
+  return { ...base, description: 'Play: five limbs swing and hinge (the hinged left arm folds, the banana arm waves, the waving arm rises from the back, two long legs walk), the tail whips, the antenna bounces, the eyelids blink and the body bounces on each step.',
+    motions: [...keep, ...fun] };
+}
+
+module.exports = { SKETCH2_ID, defs, bodyDefs, REPLACED, TAIL_DEG, articulatedDefs, articulatedMotion, playDefs, playMotion };
