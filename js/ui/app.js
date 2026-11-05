@@ -8,7 +8,7 @@
   const SAMPLES = window.M3D_SAMPLES || {};
   const SAMPLE_ID = 'garden-planter';
   // Build version, shown in Settings. Bump it with every change (also the ?v= on the script and CSS links in index.html).
-  const BUILD = '3.02';
+  const BUILD = '3.03';
 
   const st = {
     hiddenParts: new Set(), // labels of the Parts dropdown that are turned off (show:<label> tags)
@@ -34,6 +34,7 @@
     display: 'solid',
     units: 'ftin',
     showErrors: false,
+    selBox: true,       // the blue box round the selected part (Settings); off hides the box only
     fit: true,
     viewer: null,
     cloud: null,        // createCloud(...) or { available: false }
@@ -833,12 +834,31 @@
       const p = JSON.parse(localStorage.getItem('make3d.v2.prefs') || '{}');
       if (p.animSpeed) st.animSpeed = p.animSpeed;
       if (typeof p.animAuto === 'boolean') st.animAuto = p.animAuto;
+      if (typeof p.selBox === 'boolean') st.selBox = p.selBox;
     } catch (e) { /* storage blocked: defaults */ }
     $('animSpeed').value = String(st.animSpeed);
     $('animAuto').checked = st.animAuto;
+    $('selBoxOn').checked = st.selBox;
   }
   function savePrefs() {
-    try { localStorage.setItem('make3d.v2.prefs', JSON.stringify({ animSpeed: st.animSpeed, animAuto: st.animAuto })); } catch (e) { /* ignore */ }
+    try { localStorage.setItem('make3d.v2.prefs', JSON.stringify({ animSpeed: st.animSpeed, animAuto: st.animAuto, selBox: st.selBox })); } catch (e) { /* ignore */ }
+  }
+
+  // ---------- front page: the first screen. Categories drop down into projects; a pick opens the latest version.
+  function renderFront() {
+    M3DFront.render($('frontCats'), sampleProjects(), openFromFront);
+  }
+  function showFront() {
+    renderFront();
+    $('front').hidden = false;
+  }
+  function hideFront() { $('front').hidden = true; }
+  function openFromFront(id, label) {
+    if (!confirm(`Open "${label}" and replace the current model? Save a file first to keep it.`)) return;
+    setModelUrl(id);
+    setState(sampleBundle(id));
+    setStatus(`Opened ${label}`, '');
+    hideFront();
   }
 
   // ---------- library (scenes, cloud, Quick Detail references)
@@ -1091,6 +1111,9 @@
     });
     $('animSpeed').addEventListener('change', (e) => { st.animSpeed = Number(e.target.value) || 1; st.viewer.setOptions({ speed: st.animSpeed }); savePrefs(); });
     $('animAuto').addEventListener('change', (e) => { st.animAuto = e.target.checked; savePrefs(); });
+    $('selBoxOn').addEventListener('change', (e) => { st.selBox = e.target.checked; st.viewer.setOptions({ selectionBox: st.selBox }); savePrefs(); });
+    $('frontBtn').addEventListener('click', showFront);
+    $('frontKeep').addEventListener('click', hideFront);
 
     $('libBtn').addEventListener('click', () => {
       const open = $('libPanel').hidden;
@@ -1202,7 +1225,7 @@
     st.viewer.onTick(renderAnim);
     window.__m3dViewer = st.viewer;   // for the headless checks (tools/anim_check.js)
     loadPrefs();
-    st.viewer.setOptions({ speed: st.animSpeed });
+    st.viewer.setOptions({ speed: st.animSpeed, selectionBox: st.selBox });
     buildTypeControls();
     fillSamples();
     if (modelFromUrl()) $('sampleSel').value = modelFromUrl();
@@ -1215,6 +1238,8 @@
     startMotion();
     renderLibrary();
     cloudRefresh();
+    // A shared link (?model=) opens its model; a bare open starts on the front page.
+    if (modelFromUrl()) hideFront(); else showFront();
     window.addEventListener('resize', () => st.viewer.resize());
   }
   // The script sits at the end of <body>, so the DOM is ready when it runs.

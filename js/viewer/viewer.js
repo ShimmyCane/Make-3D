@@ -133,6 +133,7 @@
     scene.add(modelRoot, originMarker, ground, grid);
 
     let up = 'z', display = 'solid', selected = null, selectionHelper = null;
+    let boxOn = true;   // the blue selection box; off hides the outline only (the selection and its focus stay)
     let target = new THREE.Vector3(), theta = 0.6, phi = 1.0, radius = 180;
     let onSelect = () => {};
     const ZOOM_MIN = 4, ZOOM_MAX = 3000;
@@ -386,6 +387,11 @@
 
     function setOptions(opts) {
       if (opts.speed) anim.speed = opts.speed;
+      if (typeof opts.selectionBox === 'boolean') {
+        boxOn = opts.selectionBox;
+        if (selectionHelper && selected && nodes.get(selected)) selectionHelper.visible = boxOn && shown(nodes.get(selected));
+        requestRender();
+      }
       if (opts.zoomSpeed !== undefined) anim.zoomSpeed = opts.zoomSpeed || null;
       if (opts.up && opts.up !== up) { up = opts.up; if (lastModel) buildModel(lastModel); }
       if (opts.display && opts.display !== display) { display = opts.display; if (lastModel) buildModel(lastModel); }
@@ -427,7 +433,7 @@
       if (node) {
         modelRoot.updateMatrixWorld(true);
         selectionHelper = new THREE.BoxHelper(node, SELECT);
-        selectionHelper.visible = shown(node);
+        selectionHelper.visible = boxOn && shown(node);
         scene.add(selectionHelper);
       }
       if (changed) { if (node) focus(); else followOn = false; }
@@ -550,7 +556,7 @@
     function applyVisibility() {
       for (const [uuid, node] of nodes) node.visible = !hiddenSet.has(uuid);
       // the outline of a hidden selection goes too
-      if (selectionHelper && selected && nodes.get(selected)) selectionHelper.visible = shown(nodes.get(selected));
+      if (selectionHelper && selected && nodes.get(selected)) selectionHelper.visible = boxOn && shown(nodes.get(selected));
     }
     function setHiddenUuids(list) {
       hiddenSet = new Set(list || []);
