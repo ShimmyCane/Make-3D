@@ -1,0 +1,145 @@
+{
+  "schema": "make3d.motion/0.1",
+  "model_id": "galaxy-sun-v01",
+  "name": "Sun round the galaxy centre, 200 years",
+  "description": "The Sun sweeps 30 degrees round the galactic centre in 200 years (sped up about 95,833 times; the real lap is about 230 million years). The planets go round the Sun on their true orbits, tilted with the solar plane. 200 years plays in 200 s, then holds.",
+  "units": "in",
+  "up": "z",
+  "loop_s": 200,
+  "loop": false,
+  "timeline": {
+    "start_date": "2026-11-05",
+    "span_days": 73050,
+    "note": "200 years of the Sun's motion"
+  },
+  "autoplay": {
+    "plays": 1
+  },
+  "motions": [
+    {
+      "id": "sun-galactic-orbit",
+      "target": "galaxy-sun-v01-sun-path",
+      "kind": "orbit",
+      "a": 3000,
+      "e": 0,
+      "inc_deg": 0,
+      "node_deg": 0,
+      "peri_deg": 0,
+      "M0_deg": 0,
+      "period_days": 876600,
+      "span_days": 73050
+    },
+    {
+      "id": "earth-orbit",
+      "target": "galaxy-sun-v01-orbit-earth",
+      "kind": "orbit",
+      "a": 120,
+      "e": 0.01671,
+      "inc_deg": 62.9,
+      "node_deg": 90,
+      "peri_deg": 12.947,
+      "M0_deg": 300.931,
+      "period_days": 365.256,
+      "span_days": 73050
+    },
+    {
+      "id": "earth-spin",
+      "target": "galaxy-sun-v01-body-earth",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        3040.146,
+        79.958,
+        -70.451
+      ],
+      "cycles": 73249.972
+    },
+    {
+      "id": "mars-orbit",
+      "target": "galaxy-sun-v01-orbit-mars",
+      "kind": "orbit",
+      "a": 148.126,
+      "e": 0.0934,
+      "inc_deg": 64.314,
+      "node_deg": 88.668,
+      "peri_deg": -113.348,
+      "M0_deg": 117.272,
+      "period_days": 686.98,
+      "span_days": 73050
+    },
+    {
+      "id": "mars-spin",
+      "target": "galaxy-sun-v01-body-mars",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        2988.467,
+        151.797,
+        39.308
+      ],
+      "cycles": 71201.606
+    },
+    {
+      "id": "jupiter-orbit",
+      "target": "galaxy-sun-v01-orbit-jupiter",
+      "kind": "orbit",
+      "a": 273.718,
+      "e": 0.04839,
+      "inc_deg": 64.182,
+      "node_deg": 90.263,
+      "peri_deg": -75.786,
+      "M0_deg": 114.74,
+      "period_days": 4332.59,
+      "span_days": 73050
+    },
+    {
+      "id": "jupiter-spin",
+      "target": "galaxy-sun-v01-body-jupiter",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        2914.649,
+        201.338,
+        182.504
+      ],
+      "cycles": 176645.548
+    },
+    {
+      "id": "saturn-orbit",
+      "target": "galaxy-sun-v01-orbit-saturn",
+      "kind": "orbit",
+      "a": 370.578,
+      "e": 0.05386,
+      "inc_deg": 65.18,
+      "node_deg": 91.099,
+      "peri_deg": 2.577,
+      "M0_deg": 284.941,
+      "period_days": 10759.22,
+      "span_days": 73050
+    },
+    {
+      "id": "saturn-spin",
+      "target": "galaxy-sun-v01-body-saturn",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        3149.335,
+        75.692,
+        -317.974
+      ],
+      "cycles": 164523.322
+    },
+    {
+      "id": "sun-spin",
+      "target": "galaxy-sun-v01-sun",
+      "kind": "spin",
+      "axis": "z",
+      "pivot": [
+        3000,
+        0,
+        8
+      ],
+      "cycles": 2878.251
+    }
+  ]
+}

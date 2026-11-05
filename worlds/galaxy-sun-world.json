@@ -1,0 +1,53 @@
+{
+  "schema": "make3d.world/0.1",
+  "world_id": "galaxy-sun-world",
+  "units": "in",
+  "coordinate_system": "right-handed",
+  "up": "z",
+  "gravity": [
+    0,
+    0,
+    0
+  ],
+  "bounds": {
+    "min": [
+      -6000,
+      -6000,
+      -500
+    ],
+    "max": [
+      6000,
+      6000,
+      500
+    ]
+  },
+  "rules": [
+    {
+      "id": "rule-001",
+      "type": "valid_coordinates",
+      "severity": "reject"
+    },
+    {
+      "id": "rule-002",
+      "type": "valid_geometry",
+      "severity": "reject"
+    },
+    {
+      "id": "rule-003",
+      "type": "minimum_dimension",
+      "value": 0.25,
+      "severity": "warning"
+    },
+    {
+      "id": "rule-004",
+      "type": "within_bounds",
+      "severity": "warning"
+    },
+    {
+      "id": "rule-005",
+      "type": "object_overlap",
+      "mode": "allow",
+      "severity": "review"
+    }
+  ]
+}
