@@ -279,5 +279,5 @@ const SCENE_V04 = sceneFor({
   description: `Galaxy Sun, increment 4 of 4: adds trails for Mars, Jupiter and Saturn, each over one of its own orbits. With the Sun's trail, the paths show the helix each planet traces through the galaxy.`,
 });
 
-module.exports = { GALAXY_SUN: SCENE, GALAXY_SUN_V02: SCENE_V02, GALAXY_SUN_V03: SCENE_V03, GALAXY_SUN_V04: SCENE_V04,
+module.exports = { GALAXY_SUN: SCENE, GALAXY_SUN_V02: SCENE_V02, GALAXY_SUN_V03: SCENE_V03, GALAXY_SUN_V04: SCENE_V04, K, SPAN_DAYS, START, orbitOf, restPos, lagPlanetOrbit: (el, L) => { const o = orbitOf(el); return { ...o, M0_deg: rnd(mod360(o.M0_deg - 360 * L * 365.25 / el.period)) }; },
   GAL_R, SUN_Z, TILT_DEG, SPAN_YEARS, LOOP_S, PICK, GAL_SWEEP_DEG, GAL_LAP_YEARS, tiltedElements, orbitOf, restPos, S0 };
