@@ -16,6 +16,7 @@
     collapsedObjs: new Set(), // group uuids folded in the Objects list (the scene does not change)
     organizing: false,      // the Edit groups view is open
     partsKey: null,         // the labels the dropdown was last built for
+    partsModel: null,       // the model the dropdown's starting state was set for
     history: null,      // { header, operations, ... }
     world: null,
     motion: null,       // make3d.motion file, separate from the model; null when the scene doesn't move
@@ -149,6 +150,8 @@
   function renderParts(model) {
     const groups = M.groupsIn(model);
     $('groupCtl').hidden = groups.length === 0;
+    // A model's groups start as the model says (start:hidden), each time a different model is opened.
+    if (st.partsModel !== model.model_id) { st.partsModel = model.model_id; st.hiddenParts = new Set(M.defaultHiddenLabels(model)); st.partsKey = null; }
     if (st.viewer) st.viewer.setHiddenUuids([...M.hiddenUuids(groups, [...st.hiddenParts]), ...st.hiddenObjs]);
     const key = groups.map((g) => g.label).join('|');
     if (key === st.partsKey) return;
