@@ -11,6 +11,7 @@
 
 const RB = require('./robot_banana.js');
 const CAPE = require('./robot_cape.js');
+const SK2 = require('./robot_sketch2.js');
 const M = require('../js/core/motion.js');
 
 const SKETCH_ID = '3c4c380d-7901-4944-8929-d74e92903789';
@@ -151,7 +152,7 @@ const ROBOT_PATH_PTS = [
 ];
 const PATH_V6 = loopFrom(ROBOT_PATH_PTS, ROBOT_PATH_IN_PER_UNIT, 1.0, 120);
 // The walk for each version: V02 to V05 use the sketched loop; V06 uses the Robot Path.
-const pathFor = (v) => (v === 6 ? PATH_V6 : PATH);
+const pathFor = (v) => (v >= 6 ? PATH_V6 : PATH);
 
 // Frisbee: a flat disc with a rim, held in the left hand (the hand is at x 0, y 6.8, z 16.5 in the robot).
 function addFrisbee(add) {
@@ -179,9 +180,13 @@ function addHat(add) {
   add('hat-band', { name: 'Hat band', type: 'cylinder', dimensions: [3.65, 1], position: [0, 0, 38.1], material: 'accent', parent: 'hat' });
 }
 
-// The increment for version v (2 to 5). Each version adds to the one before; older parts are kept, and an older
+// The increment for version v (2 to 6). Each version adds to the one before; older parts are kept, and an older
 // increment is never rebuilt with newer parts (V03 and V04 keep the frisbee in the left hand).
 function defsFor(v) {
+  // V07: the robot body is rebuilt from Quick Detail "Robot Sketch 2" (tools/robot_sketch2.js); no hat, frisbee or cape.
+  if (v === 7) return SK2.defs(pathFor(v));
+  // V08 and V09: the articulated robot (every limb jointed); V09 is the fuzzy reinterpretation
+  if (v >= 8) return SK2.articulatedDefs(pathFor(v), v === 9);
   const add = (() => { const d = []; const f = (key, o) => d.push([key, o]); f.list = d; return f; })();
   const base = RB.defs(pathFor(v), { tagged: true });
   for (const [key, o] of base) add(key, o);
@@ -197,12 +202,16 @@ const NOTES = {
   4: 'Adds a top hat on the head. Hat is a visibility group.',
   5: 'The frisbee moves to the banana hand. Adds the robot cape (Quick Detail "Robot Cape"): a sheet that ripples down its length, and flows more in tight turns. Cape is a visibility group.',
   6: 'Walks the sketch Quick Detail "Robot Path 2" (one stroke that crosses itself). Same parts as V05: frisbee, hat and cape.',
+  8: 'Articulated: the sketch robot with jointed arms (shoulder and elbow), legs (hip and knee), ears on the head, a head that tilts with the eyes, mouth and antenna, and a tail that wags. Motion from the walk: the knees fold, the elbows bend, the ears flap, the antenna sways and the tail wags.',
+  9: 'Fuzzy reinterpretation of V08: the ears and hands are fluffy clusters, a ring of fuzz balls runs round the body, and the motion is livelier (the ears flutter fast, the body bounces on each step, the tail wags more, the knees bend deeper).',
+  7: 'The robot is rebuilt from Quick Detail "Robot Sketch 2": round body with a chest panel of nine lights, round head, long antenna and long tail, four limbs. It walks the Robot Path 2 walk with the banana. No hat, frisbee or cape (not in the sketch).',
 };
 
-// Motion for version v. V05 and up add the cape's wave and sway to the walk.
+// Motion for version v. V05 and V06 add the cape's wave and sway to the walk. V07 has no cape.
 function motionFor(v, uuid) {
   const base = RB.motionFor(uuid, pathFor(v));
-  if (v < 5) return base;
+  if (v >= 8) return SK2.articulatedMotion(uuid, pathFor(v), v === 9);
+  if (v !== 5 && v !== 6) return base;
   const path3 = pathFor(v).map((p) => [p[0], p[1], 0]);
   return { ...base, description: `${base.description} The cape ripples down its length and sways in turns.`,
     motions: [...base.motions, ...CAPE.capeMotions(uuid('cape'), path3)] };
@@ -217,15 +226,15 @@ function sceneFor(v) {
     header: {
       model_id: id,
       name: `${RB.ROBOT_PROJECT} V0${v}`,
-      description: `${NOTES[v]} ${v === 6 ? `Path from Quick Detail "Robot Path 2" (${ROBOT_PATH_ID}).` : `Walks the loop from Quick Detail "Robot Loop" (${SKETCH_ID}).`}`,
-      units: 'in', up: 'z', world: v === 6 ? 'robot-path-world' : WORLD_ID,
-      materials: v >= 5 ? { ...RB.MATERIALS, cape: { color: '#bcd9f2', opacity: 1 } } : RB.MATERIALS,
+      description: `${NOTES[v]} ${v >= 6 ? `Path from Quick Detail "Robot Path 2" (${ROBOT_PATH_ID}).` : `Walks the loop from Quick Detail "Robot Loop" (${SKETCH_ID}).`}`,
+      units: 'in', up: 'z', world: v >= 6 ? 'robot-path-world' : WORLD_ID,
+      materials: v === 5 || v === 6 ? { ...RB.MATERIALS, cape: { color: '#bcd9f2', opacity: 1 } } : RB.MATERIALS,
     },
     defs: defsFor(v),
     motion: (uuid) => motionFor(v, uuid),
   };
 }
 
-const ROBOT_LOOP = [2, 3, 4, 5, 6].map(sceneFor);
+const ROBOT_LOOP = [2, 3, 4, 5, 6, 7, 8, 9].map(sceneFor);
 
 module.exports = { ROBOT_LOOP, defsFor, loopPath, PATH, PATH_V6, SKETCH_ID, SKETCH_PTS, LABEL_IN, ROBOT_PATH_ID };
