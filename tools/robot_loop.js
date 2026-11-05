@@ -186,6 +186,7 @@ function defsFor(v) {
   // V07: the robot body is rebuilt from Quick Detail "Robot Sketch 2" (tools/robot_sketch2.js); no hat, frisbee or cape.
   if (v === 7) return SK2.defs(pathFor(v));
   // V08 and V09: the articulated robot (every limb jointed); V09 is the fuzzy reinterpretation
+  if (v === 10) return SK2.playDefs(pathFor(v));
   if (v >= 8) return SK2.articulatedDefs(pathFor(v), v === 9);
   const add = (() => { const d = []; const f = (key, o) => d.push([key, o]); f.list = d; return f; })();
   const base = RB.defs(pathFor(v), { tagged: true });
@@ -203,6 +204,7 @@ const NOTES = {
   5: 'The frisbee moves to the banana hand. Adds the robot cape (Quick Detail "Robot Cape"): a sheet that ripples down its length, and flows more in tight turns. Cape is a visibility group.',
   6: 'Walks the sketch Quick Detail "Robot Path 2" (one stroke that crosses itself). Same parts as V05: frisbee, hat and cape.',
   8: 'Articulated: the sketch robot with jointed arms (shoulder and elbow), legs (hip and knee), ears on the head, a head that tilts with the eyes, mouth and antenna, and a tail that wags. Motion from the walk: the knees fold, the elbows bend, the ears flap, the antenna sways and the tail wags.',
+  10: 'Play: five limbs from the body (the hinged left arm, the banana arm, a waving arm from the back, two long legs). Each has a hinge cap. The arms swing and fold, the tail whips down its length, the antenna bounces on its spring, the eyelids blink twice a lap and the body bounces on each step.',
   9: 'Fuzzy reinterpretation of V08: the ears and hands are fluffy clusters, a ring of fuzz balls runs round the body, and the motion is livelier (the ears flutter fast, the body bounces on each step, the tail wags more, the knees bend deeper).',
   7: 'The robot is rebuilt from Quick Detail "Robot Sketch 2": round body with a chest panel of nine lights, round head, long antenna and long tail, four limbs. It walks the Robot Path 2 walk with the banana. No hat, frisbee or cape (not in the sketch).',
 };
@@ -210,6 +212,7 @@ const NOTES = {
 // Motion for version v. V05 and V06 add the cape's wave and sway to the walk. V07 has no cape.
 function motionFor(v, uuid) {
   const base = RB.motionFor(uuid, pathFor(v));
+  if (v === 10) return SK2.playMotion(uuid, pathFor(v));
   if (v >= 8) return SK2.articulatedMotion(uuid, pathFor(v), v === 9);
   if (v !== 5 && v !== 6) return base;
   const path3 = pathFor(v).map((p) => [p[0], p[1], 0]);
@@ -218,14 +221,14 @@ function motionFor(v, uuid) {
 }
 
 function sceneFor(v) {
-  const id = `robot-loop-v0${v}`;
+  const id = `robot-loop-v${String(v).padStart(2, '0')}`;
   return {
     id,
     builtin: true,
     project: RB.ROBOT_PROJECT,
     header: {
       model_id: id,
-      name: `${RB.ROBOT_PROJECT} V0${v}`,
+      name: `${RB.ROBOT_PROJECT} V${String(v).padStart(2, '0')}`,
       description: `${NOTES[v]} ${v >= 6 ? `Path from Quick Detail "Robot Path 2" (${ROBOT_PATH_ID}).` : `Walks the loop from Quick Detail "Robot Loop" (${SKETCH_ID}).`}`,
       units: 'in', up: 'z', world: v >= 6 ? 'robot-path-world' : WORLD_ID,
       materials: v === 5 || v === 6 ? { ...RB.MATERIALS, cape: { color: '#bcd9f2', opacity: 1 } } : RB.MATERIALS,
@@ -235,6 +238,6 @@ function sceneFor(v) {
   };
 }
 
-const ROBOT_LOOP = [2, 3, 4, 5, 6, 7, 8, 9].map(sceneFor);
+const ROBOT_LOOP = [2, 3, 4, 5, 6, 7, 8, 9, 10].map(sceneFor);
 
 module.exports = { ROBOT_LOOP, defsFor, loopPath, PATH, PATH_V6, SKETCH_ID, SKETCH_PTS, LABEL_IN, ROBOT_PATH_ID };
