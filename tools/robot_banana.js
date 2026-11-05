@@ -180,4 +180,6 @@ function motionFor(uuid, path = PATH) {
 
 ROBOT_BANANA.motion = motionFor;
 
-module.exports = { ROBOT_BANANA, motionFor, defs, MATERIALS, PATH, HAND_R, ROBOT_PROJECT };
+module.exports = { ROBOT_BANANA, motionFor, defs, MATERIALS, PATH, HAND_R, ROBOT_PROJECT,
+  // rig constants, shared with the articulated robot (tools/robot_sketch2.js)
+  HIP_Z, LEG_LEN, LEG_Y, ANKLE_Z, SWING_LEG, SHOULDER_Z, ARM_Y, R_SHOULDER, R_DIR, R_ARM_TILT, STRIDE, STRIDE_S };
