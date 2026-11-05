@@ -113,7 +113,7 @@ function armStars() {
 //     sun-path (orbit motion: the Sun's circle round the centre; its rest is the origin)
 //       sun, corona (at S0)
 //       orbit-<planet> (orbit motion, tilted) > body-<planet> (spin) > ball-<planet> (at S0 + rest place)
-function defs() {
+function baseDefs() {
   const out = [];
   out.push(['galaxy', { name: 'Milky Way (stylised)', description: 'the galactic disc, drawn as a spiral pattern (not to scale)', type: 'group', dimensions: [], position: [0, 0, 0] }]);
   out.push(['disc', { name: 'Galactic disc', description: 'the flat disc the Sun orbits in', type: 'cylinder', dimensions: [5600, 4], position: [0, 0, 0], material: 'disc', parent: 'galaxy' }]);
@@ -134,9 +134,33 @@ function defs() {
   return out;
 }
 
-function motions(uuid) {
+const mod360 = (d) => ((d % 360) + 360) % 360;
+const rnd1 = (n) => Math.round(n * 10) / 10;
+const TAIL_SUN_DOTS = 40, TAIL_SUN_STEP_YR = 10;   // the Sun's trail: 400 years, a dot every 10 years
+const TAIL_DOTS = 24;                               // a planet's trail: 24 dots over one of its own orbits
+const TAIL_SIZE = { sun: 8, earth: 3, mars: 2.5, jupiter: 4.5, saturn: 4 };
+const TAIL_MATS = {
+  'tail-sun': { color: '#ffd23f', opacity: 0.35 },
+  'tail-earth': { color: '#3d7fd1', opacity: 0.35 },
+  'tail-mars': { color: '#c1440e', opacity: 0.35 },
+  'tail-jupiter': { color: '#d9a066', opacity: 0.35 },
+  'tail-saturn': { color: '#e8d9a8', opacity: 0.35 },
+};
+
+// The Sun's galactic orbit, shifted back by Lyr years (same circle, same speed, earlier phase).
+function lagSunOrbit(Lyr) {
+  return { a: GAL_R, e: 0, inc_deg: 0, node_deg: 0, peri_deg: 0, M0_deg: rnd(mod360(-360 * Lyr / GAL_LAP_YEARS)),
+    period_days: rnd(GAL_LAP_YEARS * 365.25), span_days: SPAN_DAYS };
+}
+const sunPosAt = (Lyr) => M.orbitPosition(lagSunOrbit(Lyr), 0);
+// A planet's orbit shifted back by Lyr years (its place round the Sun, Lyr years earlier).
+function lagPlanetOrbit(el, Lyr) {
+  const o = orbitOf(el);
+  return { ...o, M0_deg: rnd(mod360(o.M0_deg - 360 * Lyr * 365.25 / el.period)) };
+}
+
+function baseMotions() {
   const list = [];
-  // The Sun round the galactic centre: a circle of radius GAL_R, in the galactic plane, sped up (see the top note).
   list.push({ id: 'sun-galactic-orbit', target: 'sun-path', kind: 'orbit', a: GAL_R, e: 0, inc_deg: 0, node_deg: 0, peri_deg: 0,
     M0_deg: 0, period_days: rnd(GAL_LAP_YEARS * 365.25), span_days: SPAN_DAYS });
   for (const key of PICK) {
@@ -145,17 +169,70 @@ function motions(uuid) {
     list.push({ id: `${key}-spin`, target: `body-${key}`, kind: 'spin', axis: p.spinAxis || 'z', pivot: rnd3(c), cycles: rnd(SPAN_DAYS / el.rot) });
   }
   list.push({ id: 'sun-spin', target: 'sun', kind: 'spin', axis: 'z', pivot: rnd3(S0), cycles: rnd(SPAN_DAYS / SUN_ROT) });
+  return list;
+}
+
+// Trails: dots where a body was, one per step back in time. Each dot is a pair of groups that copy the motions
+// shifted back in time (the Sun's orbit, then the planet's orbit), and the dot sits at the lagged place.
+function sunTrail(n, stepYr) {
+  const defs = [], motions = [];
+  for (let k = 1; k <= n; k++) {
+    const L = k * stepYr, id = `tail-sun-${k}`, p = sunPosAt(L);
+    const size = rnd(TAIL_SIZE.sun * (1 - 0.6 * (k - 1) / n));
+    defs.push([id, { name: `Sun trail ${k}`, description: `where the Sun was ${rnd1(L)} years earlier`, type: 'group', dimensions: [], position: [0, 0, 0], parent: 'galaxy' }]);
+    defs.push([`${id}-dot`, { name: `Sun trail dot ${k}`, description: '', type: 'sphere', dimensions: [size], position: rnd3(add3(p, [0, 0, SUN_Z])), material: 'tail-sun', parent: id }]);
+    motions.push({ id: `${id}-orbit`, target: id, kind: 'orbit', ...lagSunOrbit(L) });
+  }
+  return { defs, motions };
+}
+
+function planetTrail(key, n) {
+  const el = ST.ELEMENTS[key], p = SS.PLANETS[key];
+  const stepYr = (el.period / 365.25) / n;
+  const defs = [], motions = [];
+  for (let k = 1; k <= n; k++) {
+    const L = k * stepYr, A = `tail-${key}-${k}`, B = `${A}-orb`;
+    const rel = M.orbitPosition(lagPlanetOrbit(el, L), 0);
+    const at = add3(add3(sunPosAt(L), [0, 0, SUN_Z]), rel);
+    const size = rnd(TAIL_SIZE[key] * (1 - 0.6 * (k - 1) / n));
+    defs.push([A, { name: `${p.name} trail ${k}`, description: '', type: 'group', dimensions: [], position: [0, 0, 0], parent: 'galaxy' }]);
+    defs.push([B, { name: `${p.name} trail ${k} orbit`, description: '', type: 'group', dimensions: [], position: [0, 0, 0], parent: A }]);
+    defs.push([`${A}-dot`, { name: `${p.name} trail dot ${k}`, description: `where ${p.name} was ${rnd1(L)} years earlier`, type: 'sphere', dimensions: [size], position: rnd3(at), material: `tail-${key}`, parent: B }]);
+    motions.push({ id: `${A}-sun`, target: A, kind: 'orbit', ...lagSunOrbit(L) });
+    motions.push({ id: `${B}-orbit`, target: B, kind: 'orbit', ...lagPlanetOrbit(el, L) });
+  }
+  return { defs, motions };
+}
+
+// One scene from its options: { id, name, description, sunTrail, planets: [keys with trails] }.
+function sceneFor(o) {
+  const defs = baseDefs(), motions = baseMotions();
+  if (o.sunTrail) { const t = sunTrail(TAIL_SUN_DOTS, TAIL_SUN_STEP_YR); defs.push(...t.defs); motions.push(...t.motions); }
+  for (const key of o.planets || []) { const t = planetTrail(key, TAIL_DOTS); defs.push(...t.defs); motions.push(...t.motions); }
   return {
-    schema: M.MOTION_SCHEMA,
-    model_id: 'galaxy-sun-v01',
-    name: 'Sun round the galaxy centre, 200 years',
-    description: `The Sun sweeps ${GAL_SWEEP_DEG} degrees round the galactic centre in ${SPAN_YEARS} years (sped up about ${Math.round(GAL_REAL_LAP_YEARS / GAL_LAP_YEARS).toLocaleString('en-US')} times; the real lap is about 230 million years). The planets go round the Sun on their true orbits, tilted with the solar plane. ${SPAN_YEARS} years plays in ${LOOP_S} s, then holds.`,
-    units: 'in', up: 'z',
-    loop_s: LOOP_S,
-    loop: false,
-    timeline: { start_date: START, span_days: SPAN_DAYS, note: `${SPAN_YEARS} years of the Sun's motion` },
-    autoplay: { plays: 1 },
-    motions: list.map((m) => ({ ...m, target: uuid(m.target) })),
+    id: o.id,
+    builtin: true,
+    project: 'Galaxy Sun',
+    header: {
+      model_id: o.id,
+      name: o.name,
+      description: o.description,
+      units: 'in', up: 'z', world: WORLD_ID,
+      materials: { ...SS.MATERIALS, ...MATERIALS, ...TAIL_MATS },
+    },
+    defs,
+    motion: (uuid) => ({
+      schema: M.MOTION_SCHEMA,
+      model_id: o.id,
+      name: 'Sun round the galaxy centre, 200 years',
+      description: `The Sun sweeps ${GAL_SWEEP_DEG} degrees round the galactic centre in ${SPAN_YEARS} years (sped up about ${Math.round(GAL_REAL_LAP_YEARS / GAL_LAP_YEARS).toLocaleString('en-US')} times; the real lap is about 230 million years). The planets go round the Sun on their true orbits, tilted with the solar plane. ${SPAN_YEARS} years plays in ${LOOP_S} s, then holds.`,
+      units: 'in', up: 'z',
+      loop_s: LOOP_S,
+      loop: false,
+      timeline: { start_date: START, span_days: SPAN_DAYS, note: `${SPAN_YEARS} years of the Sun's motion` },
+      autoplay: { plays: 1 },
+      motions: motions.map((m) => ({ ...m, target: uuid(m.target) })),
+    }),
   };
 }
 
@@ -168,19 +245,26 @@ const MATERIALS = {
   arm: { color: '#a9c4ff', opacity: 0.9 },
 };
 
-const SCENE = {
+const SCENE = sceneFor({
   id: 'galaxy-sun-v01',
-  builtin: true,
-  project: 'Galaxy Sun',
-  header: {
-    model_id: 'galaxy-sun-v01',
-    name: 'Galaxy Sun V01',
-    description: `The Sun and four planets (Earth, Mars, Jupiter, Saturn) carried round the Milky Way's centre. The galactic sweep is sped up so 200 years shows as a 30-degree arc (the real pace is too slow to see); the planets keep their true orbits, tilted about 63 degrees to the galaxy. No orbit paths are drawn.`,
-    units: 'in', up: 'z', world: WORLD_ID,
-    materials: { ...SS.MATERIALS, ...MATERIALS },
-  },
-  defs: defs(),
-  motion: (uuid) => motions(uuid),
-};
+  name: 'Galaxy Sun V01',
+  description: `The Sun and four planets (Earth, Mars, Jupiter, Saturn) carried round the Milky Way's centre. The galactic sweep is sped up so 200 years shows as a 30-degree arc (the real pace is too slow to see); the planets keep their true orbits, tilted about 63 degrees to the galaxy. No orbit paths are drawn.`,
+});
+// V02: the Sun's trail (where it was over the last 400 years)
+const SCENE_V02 = sceneFor({
+  id: 'galaxy-sun-v02', name: 'Galaxy Sun V02', sunTrail: true,
+  description: `Galaxy Sun, increment 2 of 4: a trail of dots marks where the Sun was over the last 400 years, one dot every 10 years. The trail shows the Sun's path round the galactic centre. No orbit paths are drawn.`,
+});
+// V03: + Earth's trail over one Earth orbit (the Sun's drift makes it a coil)
+const SCENE_V03 = sceneFor({
+  id: 'galaxy-sun-v03', name: 'Galaxy Sun V03', sunTrail: true, planets: ['earth'],
+  description: `Galaxy Sun, increment 3 of 4: adds Earth's trail, the dots where Earth was over one orbit. In the galactic frame the loop round the Sun is stretched by the Sun's drift, so the trail is a coil. Dots fade and shrink with age.`,
+});
+// V04: + Mars, Jupiter and Saturn, each over one of its own orbits
+const SCENE_V04 = sceneFor({
+  id: 'galaxy-sun-v04', name: 'Galaxy Sun V04', sunTrail: true, planets: ['earth', 'mars', 'jupiter', 'saturn'],
+  description: `Galaxy Sun, increment 4 of 4: adds trails for Mars, Jupiter and Saturn, each over one of its own orbits. With the Sun's trail, the paths show the helix each planet traces through the galaxy.`,
+});
 
-module.exports = { GALAXY_SUN: SCENE, GAL_R, SUN_Z, TILT_DEG, SPAN_YEARS, LOOP_S, PICK, GAL_SWEEP_DEG, GAL_LAP_YEARS, tiltedElements, orbitOf, restPos, S0 };
+module.exports = { GALAXY_SUN: SCENE, GALAXY_SUN_V02: SCENE_V02, GALAXY_SUN_V03: SCENE_V03, GALAXY_SUN_V04: SCENE_V04,
+  GAL_R, SUN_Z, TILT_DEG, SPAN_YEARS, LOOP_S, PICK, GAL_SWEEP_DEG, GAL_LAP_YEARS, tiltedElements, orbitOf, restPos, S0 };
