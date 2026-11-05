@@ -151,13 +151,23 @@
   },
   "galaxy-sun-v05": {
     "created": "2026-11-05T06:01:48Z",
-    "updated": "2026-11-05T06:01:48Z",
-    "hash": "64647f054970e160"
+    "updated": "2026-11-05T06:55:08Z",
+    "hash": "991e8f42dbc65bb9"
   },
   "galaxy-sun-v06": {
     "created": "2026-11-05T06:01:48Z",
-    "updated": "2026-11-05T06:01:48Z",
-    "hash": "1efd8700a548ff33"
+    "updated": "2026-11-05T06:55:08Z",
+    "hash": "c08317c176b32a33"
+  },
+  "galaxy-sun-v07": {
+    "created": "2026-11-05T06:51:09Z",
+    "updated": "2026-11-05T06:55:08Z",
+    "hash": "0f2ebb32c1e946b5"
+  },
+  "galaxy-sun-v08": {
+    "created": "2026-11-05T06:51:09Z",
+    "updated": "2026-11-05T06:55:08Z",
+    "hash": "ec3cef7efdbf2e62"
   },
   "garden-planter": {
     "created": "2026-11-01T18:54:45Z",

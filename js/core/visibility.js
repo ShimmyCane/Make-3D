@@ -46,16 +46,10 @@
     return out;
   }
 
-  // Labels that start turned off: a group tagged show:<label> and start:hidden. Used when a model is opened.
-  const START_HIDDEN = 'start:hidden';
-  function defaultHiddenLabels(model) {
-    const out = [];
-    for (const o of (model && model.objects) || []) {
-      const label = labelOf(o);
-      if (label && (o.tags || []).includes(START_HIDDEN) && !out.includes(label)) out.push(label);
-    }
-    return out;
+  // Objects that start with their eye shut: hidden_at_start true in the model. Used when a model is opened.
+  function startHiddenUuids(model) {
+    return ((model && model.objects) || []).filter((o) => o.hidden_at_start === true && o.uuid).map((o) => o.uuid);
   }
 
-  return { PREFIX, parseShowTag, labelOf, groupsIn, hiddenUuids, defaultHiddenLabels, START_HIDDEN };
+  return { PREFIX, parseShowTag, labelOf, groupsIn, hiddenUuids, startHiddenUuids };
 });

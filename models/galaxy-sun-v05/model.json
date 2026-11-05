@@ -1,7 +1,7 @@
 {
   "model_id": "galaxy-sun-v05",
   "name": "Galaxy Sun V05",
-  "description": "Galaxy Sun, increment 5: one scale (1 AU = 120 in). The Sun drifts at its true speed, 230 km/s (about 5,800 in per year), and the four planets go round it on their true orbits. Each planet's trail (hidden at start) is a row of loops, because the drift is much faster than a planet's loop. The galactic arms are removed.",
+  "description": "Galaxy Sun, increment 5: one scale (1 AU = 120 in). The Sun drifts at its true speed, 230 km/s (about 5,800 in per year), and the four planets go round it on their true orbits. Each planet's trail is a row of loops, because the drift is much faster than a planet's loop. The galactic arms are removed.",
   "units": "in",
   "up": "z",
   "world": "galaxy-helix-world",
@@ -876,14 +876,11 @@
       ]
     },
     {
-      "description": "where each planet was over one orbit (hidden at start)",
+      "description": "where each planet was over one orbit (eye shut at start)",
       "rotation_y": 0,
       "parent": "galaxy-sun-v05-sun-frame",
       "material": null,
-      "tags": [
-        "show:Planet trails",
-        "start:hidden"
-      ],
+      "tags": [],
       "allowed_overlap": [],
       "uuid": "galaxy-sun-v05-trails",
       "name": "Planet trails",
@@ -893,7 +890,8 @@
         0,
         0,
         0
-      ]
+      ],
+      "hidden_at_start": true
     },
     {
       "description": "where Earth was 0.007 years earlier",
@@ -11840,14 +11838,11 @@
       ]
     },
     {
-      "description": "the galactic plane through the Sun (a local reference; hidden at start)",
+      "description": "the galactic plane through the Sun (a local reference; eye shut at start)",
       "rotation_y": 0,
       "parent": "galaxy-sun-v05-sun-frame",
       "material": null,
-      "tags": [
-        "show:Galactic plane",
-        "start:hidden"
-      ],
+      "tags": [],
       "allowed_overlap": [],
       "uuid": "galaxy-sun-v05-plane",
       "name": "Galactic plane",
@@ -11857,7 +11852,8 @@
         0,
         0,
         0
-      ]
+      ],
+      "hidden_at_start": true
     },
     {
       "description": "",

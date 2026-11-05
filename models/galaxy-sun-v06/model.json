@@ -1,7 +1,7 @@
 {
   "model_id": "galaxy-sun-v06",
   "name": "Galaxy Sun V06",
-  "description": "Galaxy Sun, increment 6: the drift sped up so each planet's trail reads as a helix (one year moves the Sun four orbit diameters). Same scale as V05 (1 AU = 120 in). Trails start hidden. Not the true speed: at true speed the trail is a row of loops (V05).",
+  "description": "Galaxy Sun, increment 6: the drift sped up so each planet's trail reads as a helix (one year moves the Sun four orbit diameters). Same scale as V05 (1 AU = 120 in). Not the true speed: at true speed the trail is a row of loops (V05).",
   "units": "in",
   "up": "z",
   "world": "galaxy-helix-world",
@@ -876,14 +876,11 @@
       ]
     },
     {
-      "description": "where each planet was over one orbit (hidden at start)",
+      "description": "where each planet was over one orbit (eye shut at start)",
       "rotation_y": 0,
       "parent": "galaxy-sun-v06-sun-frame",
       "material": null,
-      "tags": [
-        "show:Planet trails",
-        "start:hidden"
-      ],
+      "tags": [],
       "allowed_overlap": [],
       "uuid": "galaxy-sun-v06-trails",
       "name": "Planet trails",
@@ -893,7 +890,8 @@
         0,
         0,
         0
-      ]
+      ],
+      "hidden_at_start": true
     },
     {
       "description": "where Earth was 0.007 years earlier",
@@ -11840,14 +11838,11 @@
       ]
     },
     {
-      "description": "the galactic plane through the Sun (a local reference; hidden at start)",
+      "description": "the galactic plane through the Sun (a local reference; eye shut at start)",
       "rotation_y": 0,
       "parent": "galaxy-sun-v06-sun-frame",
       "material": null,
-      "tags": [
-        "show:Galactic plane",
-        "start:hidden"
-      ],
+      "tags": [],
       "allowed_overlap": [],
       "uuid": "galaxy-sun-v06-plane",
       "name": "Galactic plane",
@@ -11857,7 +11852,8 @@
         0,
         0,
         0
-      ]
+      ],
+      "hidden_at_start": true
     },
     {
       "description": "",
