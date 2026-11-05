@@ -1073,7 +1073,7 @@
       "object": {
         "uuid": "galaxy-sun-v08-trails",
         "name": "Planet trails",
-        "description": "where each planet was over one orbit (eye shut at start)",
+        "description": "where each planet and Halley's Comet was over one orbit",
         "type": "group",
         "dimensions": [],
         "position": [

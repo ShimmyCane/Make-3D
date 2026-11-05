@@ -2,7 +2,7 @@
   "schema": "make3d.motion/0.1",
   "model_id": "galaxy-sun-v05",
   "name": "Sun drifts at true speed, 200 years",
-  "description": "The Sun drifts at 230 km/s (5822 in per year on this scale). 200 years plays in 200 s, then holds.",
+  "description": "The Sun drifts 5822 in per year on this scale (1.00 times the true speed). 200 years plays in 200 s, then holds.",
   "units": "in",
   "up": "z",
   "loop_s": 200,

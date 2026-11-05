@@ -876,7 +876,7 @@
       ]
     },
     {
-      "description": "where each planet was over one orbit (eye shut at start)",
+      "description": "where each planet and Halley's Comet was over one orbit",
       "rotation_y": 0,
       "parent": "galaxy-sun-v07-sun-frame",
       "material": null,
