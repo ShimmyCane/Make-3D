@@ -46,5 +46,16 @@
     return out;
   }
 
-  return { PREFIX, parseShowTag, labelOf, groupsIn, hiddenUuids };
+  // Labels that start turned off: a group tagged show:<label> and start:hidden. Used when a model is opened.
+  const START_HIDDEN = 'start:hidden';
+  function defaultHiddenLabels(model) {
+    const out = [];
+    for (const o of (model && model.objects) || []) {
+      const label = labelOf(o);
+      if (label && (o.tags || []).includes(START_HIDDEN) && !out.includes(label)) out.push(label);
+    }
+    return out;
+  }
+
+  return { PREFIX, parseShowTag, labelOf, groupsIn, hiddenUuids, defaultHiddenLabels, START_HIDDEN };
 });
