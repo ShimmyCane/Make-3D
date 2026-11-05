@@ -2,7 +2,7 @@
   "schema": "make3d.motion/0.1",
   "model_id": "galaxy-sun-v06",
   "name": "Sun drifts at helix speed, 200 years",
-  "description": "The Sun drifts 960 in per year on this scale, about 6 times slower than the true speed. 200 years plays in 200 s, then holds.",
+  "description": "The Sun drifts 960 in per year on this scale (0.16 times the true speed). 200 years plays in 200 s, then holds.",
   "units": "in",
   "up": "z",
   "loop_s": 200,
