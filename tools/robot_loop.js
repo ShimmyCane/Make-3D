@@ -187,6 +187,7 @@ function defsFor(v) {
   // V07: the robot body is rebuilt from Quick Detail "Robot Sketch 2" (tools/robot_sketch2.js); no hat, frisbee or cape.
   if (v === 7) return SK2.defs(pathFor(v));
   // V08 and V09: the articulated robot (every limb jointed); V09 is the fuzzy reinterpretation
+  if (v === 12) return TR.defs(pathFor(v), true);
   if (v === 11) return TR.defs(pathFor(v));
   if (v === 10) return SK2.playDefs(pathFor(v));
   if (v >= 8) return SK2.articulatedDefs(pathFor(v), v === 9);
@@ -206,6 +207,7 @@ const NOTES = {
   5: 'The frisbee moves to the banana hand. Adds the robot cape (Quick Detail "Robot Cape"): a sheet that ripples down its length, and flows more in tight turns. Cape is a visibility group.',
   6: 'Walks the sketch Quick Detail "Robot Path 2" (one stroke that crosses itself). Same parts as V05: frisbee, hat and cape.',
   8: 'Articulated: the sketch robot with jointed arms (shoulder and elbow), legs (hip and knee), ears on the head, a head that tilts with the eyes, mouth and antenna, and a tail that wags. Motion from the walk: the knees fold, the elbows bend, the ears flap, the antenna sways and the tail wags.',
+  12: 'Traced robot with depth and play: the limbs bow forward so the figure has volume, the arms and legs hinge at their middle joints, the tail whips down its length, the antenna sways and bounces, the eyelids blink twice a lap, and the body bounces on each step.',
   11: 'Traced from the drawing: each part follows its stroke in Quick Detail "Robot Sketch 2". Five arms from the body (the hinged left arm, the down-left arm, the right arm, the top-left arm and the top arm), two legs, the round body and head as drawn (the head sits to one side), the spiky ears and crest, the antenna and the very long tail. The walk is the Robot Path 2 walk; the arms and legs swing from their roots.',
   10: 'Play: five limbs from the body (the hinged left arm, the banana arm, a waving arm from the back, two long legs). Each has a hinge cap. The arms swing and fold, the tail whips down its length, the antenna bounces on its spring, the eyelids blink twice a lap and the body bounces on each step.',
   9: 'Fuzzy reinterpretation of V08: the ears and hands are fluffy clusters, a ring of fuzz balls runs round the body, and the motion is livelier (the ears flutter fast, the body bounces on each step, the tail wags more, the knees bend deeper).',
@@ -215,6 +217,7 @@ const NOTES = {
 // Motion for version v. V05 and V06 add the cape's wave and sway to the walk. V07 has no cape.
 function motionFor(v, uuid) {
   const base = RB.motionFor(uuid, pathFor(v));
+  if (v === 12) return TR.motionFor(uuid, pathFor(v), true);
   if (v === 11) return TR.motionFor(uuid, pathFor(v));
   if (v === 10) return SK2.playMotion(uuid, pathFor(v));
   if (v >= 8) return SK2.articulatedMotion(uuid, pathFor(v), v === 9);
@@ -242,6 +245,6 @@ function sceneFor(v) {
   };
 }
 
-const ROBOT_LOOP = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(sceneFor);
+const ROBOT_LOOP = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(sceneFor);
 
 module.exports = { ROBOT_LOOP, defsFor, loopPath, PATH, PATH_V6, SKETCH_ID, SKETCH_PTS, LABEL_IN, ROBOT_PATH_ID };

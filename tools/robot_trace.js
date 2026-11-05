@@ -19,6 +19,9 @@
 
 const RB = require('./robot_banana.js');
 const SK = require('./robot_sketch2_strokes.js').STROKES;
+const SKF = require('./robot_sketch2_strokes_fine.js').STROKES;   // V12's finer traces
+let SRC = SK;   // the traces in use: V11 the coarse ones; V12 (play) the fine ones. Set by defs().
+const KEY_N = 96;
 const M = require('../js/core/motion.js');
 
 const K = 6.5;                 // inches per sketch unit
@@ -27,12 +30,16 @@ const BOT = 2.42;              // the lowest point of the drawing (the ground)
 // Nothing goes below the ground: the lowest point is lifted to z 1 (the feet's tubes have a radius of about 1 in).
 const T = (sx, sy, depth = 0) => [round(depth), round(-(sx - CX) * K), round(Math.max(1, (BOT - sy) * K))];
 const round = (x) => Math.round(x * 100) / 100;
-const centre = (name) => { const P = SK[name]; return [P.reduce((s, p) => s + p[0], 0) / P.length, P.reduce((s, p) => s + p[1], 0) / P.length]; };
-const span = (name) => { const P = SK[name]; const xs = P.map((p) => p[0]), ys = P.map((p) => p[1]); return Math.max(max(xs) - min(xs), max(ys) - min(ys)); };
+const centre = (name) => { const P = SRC[name]; return [P.reduce((s, p) => s + p[0], 0) / P.length, P.reduce((s, p) => s + p[1], 0) / P.length]; };
+const span = (name) => { const P = SRC[name]; const xs = P.map((p) => p[0]), ys = P.map((p) => p[1]); return Math.max(max(xs) - min(xs), max(ys) - min(ys)); };
 const min = (a) => Math.min(...a), max = (a) => Math.max(...a);
 
 // The stroke as joints in model space, facing the drawing (depth from the drawing's centre, a little bulge for limbs).
-const joints = (name, depth = 0) => SK[name].map((p) => T(p[0], p[1], depth));
+// bulge: how far a part bows forward (+X) at its middle, so a V12 limb has volume (0 for the flat V11 cut-out).
+const joints = (name, depth = 0, bulge = 0) => {
+  const P = SRC[name];
+  return P.map((p, i) => T(p[0], p[1], depth + bulge * Math.sin((Math.PI * i) / (P.length - 1))));
+};
 
 // Bounding box of joints (plus a margin), for the loft's dimensions and position (as in the cape).
 function boxOf(js, margin) {
@@ -55,7 +62,7 @@ const LIMBS = [
 // The loft's rings: a tube that tapers from r[0] at the body to r[1] at the hand.
 const rings = (r) => [[0, r[0], r[0]], [0.5, (r[0] + r[1]) / 2, (r[0] + r[1]) / 2], [1, r[1], r[1]]];
 
-function traceDefs(add) {
+function traceDefs(add, play) {
   // the robot group and the upper body (the body, head and limbs ride the upper body)
   add('upper', { name: 'Upper body', description: 'the drawing\'s round body, head and arms', type: 'group', dimensions: [], position: [0, 0, 24], parent: 'robot' });
 
@@ -77,6 +84,17 @@ function traceDefs(add) {
   for (const [key, name, label] of [['eye-a', 'Left eye', 'eye-a'], ['eye-b', 'Right eye', 'eye-b']]) {
     const [ex, ey] = centre(label);
     add(key, { name, description: 'a curl in the drawing, a dot here', type: 'sphere', dimensions: [0.9], position: T(ex, ey, 4.4), material: 'ink', parent: 'upper' });
+  }
+  // V12: eyelids, a brow above each eye that drops over it to blink (the hinge is above the eye)
+  if (play) {
+    for (const [side, key] of [['l', 'eye-a'], ['r', 'eye-b']]) {
+      const [ex, ey] = centre(key);
+      const e = T(ex, ey, 4.4);
+      const P = [round(e[0] + 0.4), e[1], round(e[2] + 0.9)];
+      add(`lid-${side}`, { name: side === 'l' ? 'Left eyelid hinge' : 'Right eyelid hinge', type: 'group', dimensions: [], position: P, parent: 'upper' });
+      add(`lid-${side}-plate`, { name: side === 'l' ? 'Left eyelid' : 'Right eyelid', description: 'a brow that drops over the eye to blink', type: 'box',
+        dimensions: [0.5, 2.2, 1.2], position: [P[0], P[1], round(P[2] + 1.2)], material: 'head', parent: `lid-${side}` });
+    }
   }
   const [mx, my] = centre('mouth');
   add('mouth', { name: 'Mouth', type: 'box', dimensions: [0.4, round(span('mouth') * K), 0.6], position: T(mx, my, 4.2), material: 'accent', parent: 'upper' });
@@ -101,13 +119,13 @@ function traceDefs(add) {
       attach: { to: 'antenna', joint: js.length - 1 } }); }
 
   // tail: the long curl (44), a tube from the body's back that tapers to a point; it runs out and up
-  { const js = joints('tail', -0.3);
+  { const js = joints('tail', -0.3, play ? 1.0 : 0);
     add('tail', { name: 'Tail', description: 'the very long tail, traced from the drawing\'s curl', type: 'loft', ...boxOf(js, 1), material: 'body', parent: 'upper',
       shape: { joints: js, facing: [0, 1, 0], samples: 16, sides: 8, rings: [[0, 1.1, 1.1], [0.5, 0.7, 0.7], [1, 0.25, 0.25]] } }); }
 
   // limbs: five arms and two legs, each a closed tube along its stroke. Hands and feet ride the limb's end.
   for (const L of LIMBS) {
-    const js = joints(L.stroke, 0.2);
+    const js = joints(L.stroke, 0.2, play ? 1.2 : 0);
     add(L.key, { name: L.key.replace(/-/g, ' '), description: 'traced from the drawing; bends at its root and joints', type: 'loft', ...boxOf(js, 1.2),
       material: 'joint', parent: 'upper', shape: { joints: js, facing: [1, 0, 0], samples: 12, sides: 8, rings: rings(L.r) } });
     if (L.end) {
@@ -129,11 +147,12 @@ function traceDefs(add) {
 }
 
 // V11 defs: the walk's own parts (robot and stones), then the traced robot.
-function defs(path) {
+function defs(path, play = false) {
   const d = [];
   const add = (key, o) => d.push([key, o]);
   add('robot', { name: 'Robot', description: 'walks the path; traced from Quick Detail "Robot Sketch 2"', type: 'group', dimensions: [], position: [0, 0, 0] });
-  traceDefs(add);
+  SRC = play ? SKF : SK;
+  traceDefs(add, play);
   // stepping stones along the path (as in V01)
   add('stones', { name: 'Stepping stones', description: 'the path the robot walks', type: 'group', dimensions: [], position: [0, 0, 0] });
   const pts = path.map((p) => [p[0], p[1], 0]);
@@ -147,7 +166,59 @@ function defs(path) {
 }
 
 // Motion: the walk (from V01's walk: the path, the body's bounce and sway), and each limb swings from its root.
-function motionFor(uuid, path) {
+// Keys for a joint: f(u) for u in 0..1, sampled at KEY_N points, as [[t, degrees], ...] starting at 0.
+function sampleKeys(f) {
+  const v = Array.from({ length: KEY_N }, (_, i) => f(i / KEY_N));
+  return v.map((x, i) => [round(i / KEY_N), round(x - v[0])]);
+}
+
+// The eyelid's blink, in degrees: open (0) at rest, closed (-180) twice a lap.
+const BLINK_KEYS = [[0, 0], [0.30, 0], [0.315, -180], [0.335, 0], [0.70, 0], [0.715, -180], [0.735, 0]];
+
+// V12 motion: the V11 walk and swings, plus hinges at each arm's and leg's middle joint, a whip down the tail,
+// an antenna that sways and bounces, blinking eyelids, and a bounce of the body on each step.
+function playMotion(uuid, path) {
+  SRC = SKF;   // the fine traces (the lengths below are read from them)
+  const base = motionFor(uuid, path, false);
+  const pts = path.map((p) => [p[0], p[1], 0]);
+  const strides = Math.max(1, Math.round(M.pathLength(pts) / RB.STRIDE));
+  const th = (u) => 2 * Math.PI * strides * u;
+  const extra = [];
+  LIMBS.forEach((L, i) => {
+    const isLeg = L.key.startsWith('leg');
+    const ph = isLeg ? (L.key === 'leg-left' ? 0 : Math.PI) : (i % 2 ? Math.PI : 0);
+    const mid = Math.floor(SRC[L.stroke].length / 2);
+    extra.push({ id: `${L.key}-hinge`, target: uuid(L.key), kind: 'bend', joint: mid, axis: 'y',
+      // a leg folds at the knee as it swings forward; an arm folds at the elbow, back and forth
+      keys: sampleKeys((u) => (isLeg ? 30 * Math.max(0, -Math.sin(th(u) + ph)) : 24 * Math.sin(th(u) + ph + Math.PI / 2))) });
+  });
+  const tailN = SRC.tail.length;
+  for (const k of [8, 16, 24, 32, 40]) {
+    if (k >= tailN - 1) continue;
+    extra.push({ id: `tail-whip-${k}`, target: uuid('tail'), kind: 'bend', joint: k, axis: 'z',
+      keys: sampleKeys((u) => 14 * Math.sin(th(u) + Math.PI / 2 - k * 0.12)) });
+  }
+  extra.push({ id: 'antenna-sway', target: uuid('antenna'), kind: 'bend', joint: 0, axis: 'x',
+    keys: sampleKeys((u) => 14 * Math.sin(2 * th(u) + 0.7)) });
+  extra.push({ id: 'antenna-bounce', target: uuid('antenna'), kind: 'bob', axis: 'z', amount: 0.6, cycles: strides * 3, phase: 0 });
+  for (const side of ['l', 'r']) {
+    extra.push({ id: `blink-${side}`, target: uuid(`lid-${side}`), kind: 'swing', axis: 'y',
+      pivot: lidPivot(side === 'l' ? 'eye-a' : 'eye-b'), keys: BLINK_KEYS });
+  }
+  extra.push({ id: 'bounce', target: uuid('upper'), kind: 'bob', axis: 'z', amount: 0.8, cycles: strides * 2, phase: 0 });
+  return { ...base, description: 'Play (V12): the traced robot walks; its arms and legs hinge at the middle joint, the tail whips, the antenna sways and bounces, the eyelids blink and the body bounces on each step.',
+    motions: [...base.motions, ...extra] };
+}
+
+// The eyelid's hinge point (the same point defs() puts the lid at).
+function lidPivot(key) {
+  const [ex, ey] = (() => { const P = SKF[key]; return [P.reduce((s, p) => s + p[0], 0) / P.length, P.reduce((s, p) => s + p[1], 0) / P.length]; })();
+  const e = T(ex, ey, 4.4);
+  return [round(e[0] + 0.4), e[1], round(e[2] + 0.9)];
+}
+
+function motionFor(uuid, path, play = false) {
+  if (play) return playMotion(uuid, path);
   const base = RB.motionFor(uuid, path);
   const keep = base.motions.filter((m) => ['walk', 'dip', 'sway'].includes(m.id));
   const strides = Math.max(1, Math.round(M.pathLength(path.map((p) => [p[0], p[1], 0])) / RB.STRIDE));
