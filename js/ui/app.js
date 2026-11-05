@@ -8,7 +8,7 @@
   const SAMPLES = window.M3D_SAMPLES || {};
   const SAMPLE_ID = 'garden-planter';
   // Build version, shown in Settings. Bump it with every change (also the ?v= on the script and CSS links in index.html).
-  const BUILD = '3.03';
+  const BUILD = '3.04';
 
   const st = {
     hiddenParts: new Set(), // labels of the Parts dropdown that are turned off (show:<label> tags)
@@ -846,7 +846,45 @@
 
   // ---------- front page: the first screen. Categories drop down into projects; a pick opens the latest version.
   function renderFront() {
-    M3DFront.render($('frontCats'), sampleProjects(), openFromFront);
+    M3DFront.render($('frontCats'), sampleProjects(), openFromFront, openRequest);
+  }
+
+  // ---------- new requests: "New request" in a category saves what to model to m3d_requests (owner only).
+  // The gather-todo skill turns the saved rows into to-do items and then deletes them.
+  let reqCategory = null;
+  function openRequest(catId, catName) {
+    reqCategory = catId;
+    $('reqCat').textContent = `Category: ${catName}`;
+    $('reqBody').value = '';
+    $('reqErr').hidden = true;
+    const signed = !!(st.cloud && st.cloud.available && st.cloudSession);
+    $('reqNote').hidden = signed;
+    $('reqNote').textContent = 'Sign in with the owner email in the Library first, then save.';
+    $('reqPanel').hidden = false;
+    $('reqBody').focus();
+  }
+  function closeRequest() { $('reqPanel').hidden = true; }
+  async function saveRequest() {
+    const err = $('reqErr');
+    const body = $('reqBody').value;
+    const check = M.cleanRequest({ category: reqCategory, body });
+    if (check.error) { err.textContent = check.error; err.hidden = false; return; }
+    if (!st.cloud || !st.cloud.available || !st.cloudSession) {
+      err.textContent = 'Sign in with the owner email in the Library first, then save again.';
+      err.hidden = false;
+      return;
+    }
+    $('reqSave').disabled = true;
+    try {
+      await st.cloud.saveRequest({ category: reqCategory, body });
+      closeRequest();
+      setStatus('Request saved for the to-do list', '');
+    } catch (e) {
+      err.textContent = `Could not save: ${M.cloudFriendly(e)}`;
+      err.hidden = false;
+    } finally {
+      $('reqSave').disabled = false;
+    }
   }
   function showFront() {
     renderFront();
@@ -1114,6 +1152,8 @@
     $('selBoxOn').addEventListener('change', (e) => { st.selBox = e.target.checked; st.viewer.setOptions({ selectionBox: st.selBox }); savePrefs(); });
     $('frontBtn').addEventListener('click', showFront);
     $('frontKeep').addEventListener('click', hideFront);
+    $('reqSave').addEventListener('click', saveRequest);
+    $('reqCancel').addEventListener('click', closeRequest);
 
     $('libBtn').addEventListener('click', () => {
       const open = $('libPanel').hidden;

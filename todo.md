@@ -175,3 +175,13 @@ Plan and research: `04 AI/Make 3D/research/v2_plan.md` and `trellis2_notes.md`. 
 - [ ] Jimmy checks the cape size (22 in, drawn 7'-10" not used) and whether the sway in turns is too much (bottom up to about 7 in).
 - [ ] Holes are discs, not cut-outs; the border is beads, not a trim; no sheen. Tell me if these matter.
 - [ ] Cape does not collide with the robot; check on iPad.
+
+## Requests and the to-do skill (2026-11-05)
+
+- [x] "New request" in each front-page category; form saves to `m3d_requests` (owner only); `tests/test_requests.js`.
+- [x] Migration `supabase/003_m3d_requests.sql` applied; policy matches the live email rule.
+- [x] Skill `.claude/skills/gather-todo`: reads `new` requests, writes them here, deletes the gathered rows.
+- [ ] Jimmy signs in through the Library and saves a test request in the browser (not checked from this session: the sign-in needs the email code).
+- [ ] Jimmy decides on analytics: first-party `m3d_events` table, as in schematic §22, or no tracking.
+- [ ] Split the 37 MB sample bundle so a project loads on demand (the real start-up cost).
+- [ ] Fix the `platform_is_owner` mentions in `001` and `002` so they match the live policies.

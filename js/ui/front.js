@@ -64,8 +64,8 @@
   }
 
   // The DOM: one bar per category. Opening a bar drops its project list down under it (one bar open at a time).
-  // onOpen(id, label) is called with the scene id to load.
-  function render(container, projects, onOpen) {
+  // onOpen(id, label) is called with the scene id to load; onRequest(category id, name) with the request button.
+  function render(container, projects, onOpen, onRequest) {
     const groups = groupByCategory(projects);
     container.innerHTML = '';
     let openId = null;
@@ -90,6 +90,14 @@
       const list = document.createElement('ul');
       list.className = 'fcat-list';
       list.hidden = true;
+
+      // every category has a request button, empty or not: onRequest(category id, name) opens the form
+      const req = document.createElement('button');
+      req.type = 'button';
+      req.className = 'btn primary fcat-new';
+      req.textContent = 'New request';
+      req.addEventListener('click', () => { if (onRequest) onRequest(g.id, g.name); });
+      list.appendChild(req);
 
       if (!n) {
         const empty = document.createElement('li');

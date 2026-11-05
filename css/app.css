@@ -249,6 +249,14 @@ h2 { font-size: 16px; margin: 0 0 8px; }
 .fversions button { width: 100%; min-height: 46px; display: flex; justify-content: space-between; align-items: center; gap: 8px; text-align: left; }
 .fcat .kind { color: var(--muted); font-size: 14px; font-weight: 600; }
 @media (prefers-reduced-motion: reduce) { .fcat-list.drop { animation: none; } .fcat-chev { transition: none; } }
+.fcat-new { min-height: 52px; justify-self: start; padding: 8px 18px; }
+
+/* new request: a modal over the front page */
+.reqmodal { position: fixed; inset: 0; z-index: 70; background: rgba(45, 42, 38, .35); display: flex; align-items: center; justify-content: center; padding: 16px; }
+.reqmodal[hidden] { display: none; }
+.req-card { width: min(520px, 100%); background: var(--panel); border: var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 18px; }
+.req-card h2 { font-size: 20px; }
+.req-card textarea { min-height: 120px; }
 
 /* narrow screens (iPad portrait, phone): the side panel sits above the view */
 @media (max-width: 860px) {

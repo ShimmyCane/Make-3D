@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Make 3D V3</title>
-<link rel="stylesheet" href="css/app.css?v=3.03">
+<link rel="stylesheet" href="css/app.css?v=3.04">
 </head>
 <body>
 <section class="front" id="front" aria-labelledby="frontTitle">
@@ -222,7 +222,7 @@
 
 <div class="drawer" id="gearPanel" hidden>
   <h2>Settings</h2>
-  <p class="hint" id="buildNote">Version 3.03</p>
+  <p class="hint" id="buildNote">Version 3.04</p>
 
   <h3>Versions</h3>
   <p class="hint">V3 is the current engine. V2 is the version before it, and V1 is the archived first version; both run as they were.</p>
@@ -344,6 +344,22 @@
   </div>
 </div>
 
+<div class="reqmodal" id="reqPanel" role="dialog" aria-modal="true" aria-labelledby="reqTitle" hidden>
+  <div class="req-card">
+    <h2 id="reqTitle">What would you like a 3-D model of?</h2>
+    <p class="hint" id="reqCat"></p>
+    <label class="field">Describe it
+      <textarea id="reqBody" rows="5" maxlength="2000" placeholder="For example: a garden shed with a green roof and two windows"></textarea>
+    </label>
+    <p class="err" id="reqErr" hidden></p>
+    <p class="hint" id="reqNote" hidden></p>
+    <div class="btn-row">
+      <button class="btn primary" id="reqSave" type="button">Save request</button>
+      <button class="btn ghost" id="reqCancel" type="button">Cancel</button>
+    </div>
+  </div>
+</div>
+
 <script src="vendor/three/three.min.js"></script>
 <script src="js/core/units.js"></script>
 <script src="js/core/schema.js"></script>
@@ -356,14 +372,14 @@
 <script src="js/core/motion.js"></script>
 <script src="js/core/linked_views.js"></script>
 <script src="js/core/visibility.js"></script>
-<script src="js/core/hierarchy.js?v=3.03"></script>
+<script src="js/core/hierarchy.js?v=3.04"></script>
 <script src="js/core/patterns.js"></script>
 <script src="js/core/glb.js"></script>
 <script src="vendor/supabase/supabase.js"></script>
 <script src="js/cloud/cloud.js"></script>
-<script src="js/viewer/viewer.js?v=3.03"></script>
+<script src="js/viewer/viewer.js?v=3.04"></script>
 <script src="js/samples.bundle.js"></script>
-<script src="js/ui/front.js?v=3.03"></script>
-<script src="js/ui/app.js?v=3.03"></script>
+<script src="js/ui/front.js?v=3.04"></script>
+<script src="js/ui/app.js?v=3.04"></script>
 </body>
 </html>
