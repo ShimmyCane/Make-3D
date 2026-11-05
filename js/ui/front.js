@@ -45,7 +45,7 @@
     return id && KNOWN.has(id) ? id : 'unsorted';
   }
 
-  // projects: the list the library builds ({ project, versions: [{ id, bundle, name }] }, newest first).
+  // projects: from projectsFrom() ({ project, versions: [{ id, name, parts, moves }] }, newest first).
   // Returns every category in order, each with its projects (possibly none).
   function groupByCategory(projects) {
     const out = CATEGORIES.map((c) => ({ ...c, projects: [] }));
@@ -58,9 +58,21 @@
   function versionLabel(v, project) {
     return (v.name.startsWith(project) ? v.name.slice(project.length).trim() : v.name) || 'V1';
   }
-  function partsOf(bundle) {
-    const n = bundle.model ? bundle.model.objects.length : bundle.history.operations.length;
-    return `${n} parts`;
+  function partsText(n) { return `${n} parts`; }
+
+  // The front page's list, from js/front_index.js (tools/build_front_index.js). Same rules as the library:
+  // a project's versions are newest first, and projects are newest first (ties by name).
+  function projectsFrom(entries) {
+    const map = new Map();
+    entries.forEach((e, n) => {
+      if (!map.has(e.project)) map.set(e.project, { project: e.project, updated: '', versions: [] });
+      const g = map.get(e.project);
+      g.versions.push({ id: e.id, name: e.name, parts: e.parts, moves: !!e.moves, updated: e.updated || '', n });
+      if ((e.updated || '') > g.updated) g.updated = e.updated || '';
+    });
+    const list = [...map.values()];
+    for (const g of list) g.versions.sort((a, b) => (b.updated > a.updated ? 1 : b.updated < a.updated ? -1 : b.n - a.n));
+    return list.sort((a, b) => (b.updated > a.updated ? 1 : b.updated < a.updated ? -1 : a.project.localeCompare(b.project)));
   }
 
   // The DOM: one bar per category. Opening a bar drops its project list down under it (one bar open at a time).
@@ -140,8 +152,8 @@
     const kind = document.createElement('span');
     kind.className = 'kind';
     kind.textContent = p.versions.length > 1
-      ? `${versionLabel(latest, p.project)} · ${partsOf(latest.bundle)}`
-      : partsOf(latest.bundle);
+      ? `${versionLabel(latest, p.project)} · ${partsText(latest.parts)}`
+      : partsText(latest.parts);
     open.appendChild(kind);
     open.addEventListener('click', () => onOpen(latest.id, latest.name));
     row.appendChild(open);
@@ -166,7 +178,7 @@
         vb.textContent = versionLabel(v, p.project);
         const vk = document.createElement('span');
         vk.className = 'kind';
-        vk.textContent = partsOf(v.bundle);
+        vk.textContent = partsText(v.parts);
         vb.appendChild(vk);
         vb.addEventListener('click', () => onOpen(v.id, v.name));
         vli.appendChild(vb);
@@ -183,7 +195,7 @@
     return li;
   }
 
-  const api = { CATEGORIES, PROJECT_CATEGORY, categoryOf, groupByCategory, versionLabel, partsOf, render };
+  const api = { CATEGORIES, PROJECT_CATEGORY, categoryOf, groupByCategory, versionLabel, partsText, projectsFrom, render };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   root.M3DFront = api;
 })(typeof window !== 'undefined' ? window : globalThis);

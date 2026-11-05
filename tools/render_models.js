@@ -1,4 +1,4 @@
-// Headless render by sample id, using the shareable link (index.html?model=<id>). Save screenshots outside the repo.
+// Headless render by sample id, using the shareable link (viewer.html?model=<id>). Save screenshots outside the repo.
 // Run: node tools/render_models.js <dir> <id>[@t1,t2,...] ...    e.g.  hawk-v03   hawk-v06@0,5,9.5,12
 // "@times" pauses the animation, seeks to each time in seconds and takes a frame (frames are named <id>-t<seconds>.png).
 // --follow=<part key> keeps that part (for example the hawk group) centred in each frame; --phi=<rad> tilts the camera.
@@ -13,7 +13,7 @@ const [shotDir, ...items] = args.filter((a) => !a.startsWith('--'));
 if (!shotDir || !items.length) { console.error('usage: render_models.js <dir> <id>[@t,...]... [--zoom=0.5] [--azimuth=30]'); process.exit(2); }
 fs.mkdirSync(shotDir, { recursive: true });
 const MO = require(path.join(__dirname, '..', 'js/core/motion.js'));
-const base = 'file://' + path.join(__dirname, '..', 'index.html');
+const base = 'file://' + path.join(__dirname, '..', 'viewer.html');
 (async () => {
   const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium',
     args: ['--no-sandbox', '--use-gl=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });

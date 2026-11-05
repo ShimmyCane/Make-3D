@@ -7,8 +7,8 @@
   const STORE_KEY = 'make3d.v2.current';
   const SAMPLES = window.M3D_SAMPLES || {};
   const SAMPLE_ID = 'garden-planter';
-  // Build version, shown in Settings. Bump it with every change (also the ?v= on the script and CSS links in index.html).
-  const BUILD = '3.04';
+  // Build version, shown in Settings. Bump it with every change (also the ?v= on the script and CSS links in viewer.html).
+  const BUILD = '3.05';
 
   const st = {
     hiddenParts: new Set(), // labels of the Parts dropdown that are turned off (show:<label> tags)
@@ -844,61 +844,6 @@
     try { localStorage.setItem('make3d.v2.prefs', JSON.stringify({ animSpeed: st.animSpeed, animAuto: st.animAuto, selBox: st.selBox })); } catch (e) { /* ignore */ }
   }
 
-  // ---------- front page: the first screen. Categories drop down into projects; a pick opens the latest version.
-  function renderFront() {
-    M3DFront.render($('frontCats'), sampleProjects(), openFromFront, openRequest);
-  }
-
-  // ---------- new requests: "New request" in a category saves what to model to m3d_requests (owner only).
-  // The gather-todo skill turns the saved rows into to-do items and then deletes them.
-  let reqCategory = null;
-  function openRequest(catId, catName) {
-    reqCategory = catId;
-    $('reqCat').textContent = `Category: ${catName}`;
-    $('reqBody').value = '';
-    $('reqErr').hidden = true;
-    const signed = !!(st.cloud && st.cloud.available && st.cloudSession);
-    $('reqNote').hidden = signed;
-    $('reqNote').textContent = 'Sign in with the owner email in the Library first, then save.';
-    $('reqPanel').hidden = false;
-    $('reqBody').focus();
-  }
-  function closeRequest() { $('reqPanel').hidden = true; }
-  async function saveRequest() {
-    const err = $('reqErr');
-    const body = $('reqBody').value;
-    const check = M.cleanRequest({ category: reqCategory, body });
-    if (check.error) { err.textContent = check.error; err.hidden = false; return; }
-    if (!st.cloud || !st.cloud.available || !st.cloudSession) {
-      err.textContent = 'Sign in with the owner email in the Library first, then save again.';
-      err.hidden = false;
-      return;
-    }
-    $('reqSave').disabled = true;
-    try {
-      await st.cloud.saveRequest({ category: reqCategory, body });
-      closeRequest();
-      setStatus('Request saved for the to-do list', '');
-    } catch (e) {
-      err.textContent = `Could not save: ${M.cloudFriendly(e)}`;
-      err.hidden = false;
-    } finally {
-      $('reqSave').disabled = false;
-    }
-  }
-  function showFront() {
-    renderFront();
-    $('front').hidden = false;
-  }
-  function hideFront() { $('front').hidden = true; }
-  function openFromFront(id, label) {
-    if (!confirm(`Open "${label}" and replace the current model? Save a file first to keep it.`)) return;
-    setModelUrl(id);
-    setState(sampleBundle(id));
-    setStatus(`Opened ${label}`, '');
-    hideFront();
-  }
-
   // ---------- library (scenes, cloud, Quick Detail references)
   function openScene(bundle, label) {
     if (!confirm(`Open "${label}" and replace the current model?`)) return;
@@ -1150,10 +1095,6 @@
     $('animSpeed').addEventListener('change', (e) => { st.animSpeed = Number(e.target.value) || 1; st.viewer.setOptions({ speed: st.animSpeed }); savePrefs(); });
     $('animAuto').addEventListener('change', (e) => { st.animAuto = e.target.checked; savePrefs(); });
     $('selBoxOn').addEventListener('change', (e) => { st.selBox = e.target.checked; st.viewer.setOptions({ selectionBox: st.selBox }); savePrefs(); });
-    $('frontBtn').addEventListener('click', showFront);
-    $('frontKeep').addEventListener('click', hideFront);
-    $('reqSave').addEventListener('click', saveRequest);
-    $('reqCancel').addEventListener('click', closeRequest);
 
     $('libBtn').addEventListener('click', () => {
       const open = $('libPanel').hidden;
@@ -1278,8 +1219,6 @@
     startMotion();
     renderLibrary();
     cloudRefresh();
-    // A shared link (?model=) opens its model; a bare open starts on the front page.
-    if (modelFromUrl()) hideFront(); else showFront();
     window.addEventListener('resize', () => st.viewer.resize());
   }
   // The script sits at the end of <body>, so the DOM is ready when it runs.

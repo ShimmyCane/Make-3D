@@ -253,3 +253,10 @@ Jimmy's note on V06: too slow, too small, "too diagrammatic and not real enough 
 - **Put the save rule where the data lives.** A form on a public page can write only as far as the table policy lets it. Owner-only is the safe default; a public submit needs its own decision (rate limit, spam check).
 - **Big bundles make browser checks slow.** The 37 MB sample bundle takes about two minutes to load in headless Chromium. Run the check in the background and wait on its log file rather than in the foreground.
 - **Check the diff after a sed version bump.** A `sed` across files also hits lines that were not meant to change; read `git diff` for the version strings before committing.
+
+## Split the front page from the viewer (2026-11-05)
+
+- **Generate the list the front page needs.** Reading the 37 MB bundle just to show 25 names was the whole cost. A small generated index (`js/front_index.js`, 26 KB) from one build step keeps the front page light, and the page only needs the fields it shows.
+- **Check what a page downloads, not what it looks like.** The first check showed the front page ready in about 0.2 s and loading only five small files. Count the requests with `requestfinished`; the screen alone hides a 37 MB script.
+- **Load a library when the action needs it.** The cloud client is only needed when a request is saved, so it loads then. Sign-in lives in the browser's own storage, so a second page on the same site can use it.
+- **A logger that reads a response body can crash the run.** In Playwright, `response()` is a promise. Log the URL and read sizes from disk instead.

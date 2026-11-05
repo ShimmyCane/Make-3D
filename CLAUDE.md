@@ -8,7 +8,7 @@ Purpose: a browser-based 3D sandbox where the **JSON file is the model**. Object
 - AI notes: `04 AI/Make 3D/brief.md` and `lessons.md`
 - Shared conventions: root `CLAUDE.md` (public repo, privacy)
 
-How to run: open `index.html` in a browser (no server or build). Also works from GitHub Pages.
+How to run: open `index.html` in a browser (no server or build). It is the light front page (categories, requests); it loads no 3-D engine and no sample models. Picking a project opens `viewer.html?model=<id>`, the 3-D viewer. Also works from GitHub Pages.
 
 - Earth V22 (satellites on faded orbits, storms and rockets to scale): `tools/earth_v22.js` (`EARTH_VIEWS_V22`); test `node tests/test_earth_v22.js`; schematic §20.
 - Earth dot map: `tools/earth_land_5deg.js` (land on a 5-degree grid from Natural Earth) and Earth V21 (`planet-earth-v21`, `EARTH_VIEWS_V21` in `tools/planet_views_v4.js`); test `node tests/test_earth_land.js`; schematic §19.
@@ -19,7 +19,7 @@ How to run: open `index.html` in a browser (no server or build). Also works from
 - Motion: a separate `motion.json` per scene (`js/core/motion.js`, schematic §14). Every animation is a loop. Test scene: `tools/robot_banana.js`. Browser check: `node tools/anim_check.js <screenshotDir>` (autoplay, play bar, pinch zoom).
 - Robot loop: `tools/robot_loop.js` (V02 to V05, one `defsFor(v)`): the robot walks the Quick Detail "Robot Loop" sketch; V03 frisbee (left hand), V04 top hat, V05 frisbee moved to the banana hand and the cape from the Quick Detail "Robot Cape" (`tools/robot_cape.js`, tests `node tests/test_robot_cape.js`). Parts dropdown (upper right): any group tagged `show:<label>` gets a checkbox that hides its branch (`js/core/visibility.js`). Tests: `node tests/test_robot_loop.js`, `node tests/test_visibility.js`.
 - Skeleton meshes: `loft` (closed) and `sheet` (open, double sided) on a joint chain, with the `bend` motion kind and `attach` (schematic §15). Test scene: `tools/hawk.js` (V01 to V07; V07 flight and meadow in `tools/hawk_flight.js`, world `worlds/hawk-world.json`). Render stills or frames: `node tools/render_models.js <dir> hawk-v06@19.4 --follow=hawk`.
-- Sample: the planter is generated. Edit the operation list in `tools/build_samples.js`, then run `node tools/build_samples.js`. Never hand-edit `model.json` or `js/samples.bundle.js`.
+- Sample: the planter is generated. Edit the operation list in `tools/build_samples.js`, then run `node tools/build_samples.js`, then `node tools/build_front_index.js` (writes `js/front_index.js`, the front page's list). Never hand-edit `model.json`, `js/samples.bundle.js` or `js/front_index.js`.
 - Browser check: `node tools/smoke.js <screenshotDir>` (headless Chromium via pre-installed Playwright; save screenshots outside the repo).
 - Cloud client test: `node tests/test_cloud.js` (fake Supabase, no network).
 - Units are inches. Files: `model.json` (replayed result), `history.json` (source of truth), `worlds/default-world.json` (rules).
