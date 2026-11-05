@@ -185,3 +185,10 @@ Plan and research: `04 AI/Make 3D/research/v2_plan.md` and `trellis2_notes.md`. 
 - [ ] Jimmy decides on analytics: first-party `m3d_events` table, as in schematic §22, or no tracking.
 - [ ] Split the 37 MB sample bundle so a project loads on demand (the real start-up cost).
 - [ ] Fix the `platform_is_owner` mentions in `001` and `002` so they match the live policies.
+
+## Front page split (2026-11-05)
+
+- [x] `index.html` is the light front page; `viewer.html` is the viewer (engine, bundle, Library). Picking a project opens `viewer.html?model=<id>`.
+- [x] `tools/build_front_index.js` writes `js/front_index.js` (183 scenes, about 26 KB); the front page reads it, not the bundle.
+- [x] New request loads the cloud library only when saved; `tests/test_front_page.js` guards the split.
+- [ ] Split the 37 MB bundle so the viewer loads one model on demand (the viewer's own start-up cost).

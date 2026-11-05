@@ -213,8 +213,10 @@ h2 { font-size: 16px; margin: 0 0 8px; }
 .drawer .objects li button { font-size: 15px; }
 
 /* front page: the first screen. Five categories; each drops down its projects (one open at a time) */
-.front { position: fixed; inset: 0; z-index: 50; background: var(--paper); overflow-y: auto; display: flex; justify-content: center; padding: 28px 16px 40px; }
-.front[hidden] { display: none; }
+/* the front page (index.html) is a normal scrolling page; the viewer's body is a fixed grid */
+html:has(body.front-page) { height: auto; }
+body.front-page { display: block; height: auto; min-height: 100%; overflow-y: auto; }
+.front { display: flex; justify-content: center; padding: 28px 16px 40px; }
 .front-card { width: min(680px, 100%); }
 .front-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
 .front h1 { font-size: clamp(30px, 5vmin, 44px); margin: 0 0 4px; }

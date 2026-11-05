@@ -6,7 +6,7 @@ const { chromium } = require('playwright');
 const [shotDir, ...names] = process.argv.slice(2);
 if (!shotDir || !names.length) { console.error('usage: render_versions.js <dir> <name>...'); process.exit(2); }
 fs.mkdirSync(shotDir, { recursive: true });
-const url = 'file://' + path.join(__dirname, '..', 'index.html');
+const url = 'file://' + path.join(__dirname, '..', 'viewer.html');
 
 (async () => {
   const browser = await chromium.launch({

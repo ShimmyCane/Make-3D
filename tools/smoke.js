@@ -1,9 +1,9 @@
-// Headless browser run of index.html from file://. Needs Playwright with Chromium.
+// Headless browser run of viewer.html from file://. Needs Playwright with Chromium.
 // Run: node tools/smoke.js [screenshotDir]   (save screenshots outside the repo)
 const path = require('path');
 const { chromium } = require('playwright');
 const shotDir = process.argv[2];
-const url = 'file://' + path.join(__dirname, '..', 'index.html');
+const url = 'file://' + path.join(__dirname, '..', 'viewer.html');
 
 (async () => {
   const browser = await chromium.launch({

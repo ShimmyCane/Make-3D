@@ -16,7 +16,7 @@ fs.mkdirSync(out, { recursive: true });
   page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text()); });
   page.on('pageerror', (e) => errors.push('pageerror: ' + e.message));
   page.on('dialog', (d) => d.accept());
-  await page.goto('file://' + path.join(root, 'index.html'));
+  await page.goto('file://' + path.join(root, 'viewer.html'));
   await page.waitForTimeout(800);
   console.log('planter anim bar hidden:', await page.$eval('#animBar', (e) => e.hidden));
   // open the robot from the gear sample picker
