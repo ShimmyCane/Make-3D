@@ -102,4 +102,43 @@ t('V09 is the fuzzy version: fuzz balls on the body and the ears; V08 has none',
   assert.ok(fuzz('robot-loop-v09') >= 10 + 5 * 2, `fuzz balls ${fuzz('robot-loop-v09')}`);
 });
 
+// V10 (play): five limbs with hinges, a whipping tail, a bouncing antenna, blinking lids.
+{
+  const id = 'robot-loop-v10';
+  const dirV = path.join(root, 'models', id);
+  const mod = G.replay(JSON.parse(fs.readFileSync(path.join(dirV, 'history.json'), 'utf8')));
+  const mot = JSON.parse(fs.readFileSync(path.join(dirV, 'motion.json'), 'utf8'));
+  const named = (re) => mod.objects.filter((o) => re.test(o.name));
+
+  t('V10: replays, the motion passes its check, every motion targets a part, and the loop has no jump', () => {
+    assert.strictEqual(MO.checkMotion(mod, mot).outcome, 'accept', id);
+    const ids = new Set(mod.objects.map((o) => o.uuid));
+    for (const m of mot.motions) assert.ok(ids.has(m.target), `${id} ${m.id}`);
+    const a = MO.poseAt(mod, mot, 0), b = MO.poseAt(mod, mot, mot.loop_s - 1e-6);
+    for (const k of Object.keys(a)) a[k].forEach((x, i) => near(x, b[k][i], 1e-3));
+  });
+
+  t('V10: five limbs (three arms, two legs), each with a hinge cap', () => {
+    for (const re of [/^Left arm$/, /^Right arm$/, /^Waving arm$/, /^Left leg$/, /^Right leg$/,
+      /^Left elbow hinge$/, /^Right elbow hinge$/, /^Waving elbow hinge$/, /^Left knee hinge$/, /^Right knee hinge$/]) {
+      assert.strictEqual(named(re).length, 1, `${id} ${re}`);
+    }
+  });
+
+  t('V10: the tail is a chain of four joints, the eyelids are hinged, the antenna bounces', () => {
+    for (let k = 1; k <= 4; k++) assert.strictEqual(named(new RegExp(`^Tail joint ${k}$`)).length, 1, `joint ${k}`);
+    assert.strictEqual(named(/^Tail \d$/).length, 4);
+    assert.strictEqual(named(/^(Left|Right) eyelid$/).length, 2);
+    for (const k of ['tail-whip-1', 'tail-whip-4', 'blink-l', 'blink-r', 'antenna-bounce', 'wave-arm', 'bounce', 'left-arm', 'left-elbow']) {
+      assert.ok(mot.motions.some((m) => m.id === k), `${id} ${k}`);
+    }
+  });
+
+  t('V10: the banana is still in the right hand (on the right elbow), and the walk is still the Robot Path 2 walk', () => {
+    assert.strictEqual(named(/^Banana$/)[0].parent, named(/^Right elbow$/)[0].uuid);
+    const walk = mot.motions.find((m) => m.id === 'walk');
+    assert.strictEqual(walk.points.length, RL.PATH_V6.length);
+  });
+}
+
 console.log(`\n${n} robot sketch 2 tests passed`);
