@@ -1,12 +1,12 @@
 // Galaxy Sun V01: the Sun and four planets carried round the Milky Way's centre, 200 years in 200 s.
 // Sources: planet elements from tools/solar_true.js (JPL approximate, J2000). Galactic numbers are approximate
 // published values: the Sun about 8.2 kpc from the centre, about 21 pc above the galactic plane, orbit speed about
-// 230 km/s (one lap about 230 million years), and the ecliptic tilted about 62.9 degrees to the galactic plane.
+// 230 km/s (one lap about 230 million years), and the ecliptic tilted about 60.2 degrees to the galactic plane.
 //
 // What is true here:
 //   - each planet's orbit (shape, place on the start date, direction) and its spin direction, as in Solar System V06
 //   - the Sun's path is a circle round the galactic centre, in the galactic plane, at the true distance
-//   - the planets' orbits are tilted 62.9 degrees to the galactic plane (each orbit is turned, see tiltedElements)
+//   - the planets' orbits are tilted 60.2 degrees to the galactic plane (each orbit is turned, see tiltedElements)
 // What is scaled, sped up or left out:
 //   - galaxy scale: 1 inch is about 2.7 parsecs (the Sun's real distance, 8,200 pc, is drawn as 3,000 inches).
 //   - speed of the galactic sweep is NOT real. At the real pace the Sun moves about 0.05 parsec in 200 years, which
@@ -39,7 +39,8 @@ const K = 120;                         // planets: a_model = K * sqrt(AU), the s
 const GAL_R = 3000;                    // inches: the Sun's distance from the galactic centre (about 8.2 kpc)
 const SUN_Z = 8;                       // inches: the Sun's height above the galactic plane (about 21 pc)
 const S0 = [GAL_R, 0, SUN_Z];          // where the Sun sits at the start, relative to the galactic centre
-const TILT_DEG = 62.9;                 // the ecliptic against the galactic plane
+const TILT_DEG = 60.2;                 // the ecliptic against the galactic plane (north ecliptic pole is 60.2 deg from the galactic pole)
+const SWEEP_INC_DEG = 180;             // the Sun moves clockwise seen from the galactic north pole (retrograde orbit)
 const GAL_SWEEP_DEG = 30;              // degrees the Sun sweeps round the centre in the 200 years
 const GAL_LAP_YEARS = (SPAN_YEARS * 360) / GAL_SWEEP_DEG;   // one lap at this pace, about 2,400 years
 const GAL_REAL_LAP_YEARS = 230e6;      // the real lap, about 230 million years
@@ -57,17 +58,29 @@ const PICK = ['earth', 'mars', 'jupiter', 'saturn'];
 // ---- small 3x3 rotation helpers (right-handed; columns are the images of x, y, z)
 const rotZ = (a) => [[Math.cos(a), -Math.sin(a), 0], [Math.sin(a), Math.cos(a), 0], [0, 0, 1]];
 const rotX = (a) => [[1, 0, 0], [0, Math.cos(a), -Math.sin(a)], [0, Math.sin(a), Math.cos(a)]];
-const rotY = (a) => [[Math.cos(a), 0, Math.sin(a)], [0, 1, 0], [-Math.sin(a), 0, Math.cos(a)]];
 const mm = (A, B) => A.map((row) => [0, 1, 2].map((j) => row[0] * B[0][j] + row[1] * B[1][j] + row[2] * B[2][j]));
 const col = (A, j) => [A[0][j], A[1][j], A[2][j]];
 const dot = (a, b) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
 const cross = (a, b) => [a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0]];
 
-// The same orbit, turned by the ecliptic tilt. An orbit is R = Rz(node) Rx(inc) Rz(peri); the galactic-frame orbit is
-// Ry(tilt) R. Its normal and perihelion give the new node, inclination and perihelion angle. Checked in the test.
+// Scene axes: the Sun is at +x from the galactic centre, so the direction to the centre is -x; the Sun moves
+// round the centre along -y (clockwise seen from +z, the galactic north pole); +z is the galactic north pole.
+// A direction at galactic longitude l and latitude b: cos b (cos l * (-x) + sin l * (-y)) + sin b * z.
+const galDir = (l, b) => {
+  const L = l / DEG, B = b / DEG;
+  return [-Math.cos(B) * Math.cos(L), -Math.cos(B) * Math.sin(L), Math.sin(B)];
+};
+// Solar frame, in scene axes: z = the north ecliptic pole (galactic l 96.38, b 29.81), x = the vernal equinox
+// (galactic l 96.34, b -60.19), y = z x x. The equinox lies in the ecliptic, so the frame is orthonormal and right-handed.
+const ECL_Z = galDir(96.38, 29.81), ECL_X = galDir(96.34, -60.19);
+const ECL_Y = cross(ECL_Z, ECL_X);
+const ECL_FRAME = [[ECL_X[0], ECL_Y[0], ECL_Z[0]], [ECL_X[1], ECL_Y[1], ECL_Z[1]], [ECL_X[2], ECL_Y[2], ECL_Z[2]]];
+
+// The same orbit, turned into the scene frame. An orbit is R = Rz(node) Rx(inc) Rz(peri); the scene's orbit is
+// ECL_FRAME R. Its normal and perihelion give the new node, inclination and perihelion angle. Checked in the test.
 function tiltedElements(el) {
   const R = mm(rotZ(el.node / DEG), mm(rotX(el.inc / DEG), rotZ(el.peri / DEG)));
-  const Rn = mm(rotY(TILT_DEG / DEG), R);
+  const Rn = mm(ECL_FRAME, R);
   const n = col(Rn, 2), p = col(Rn, 0);
   const inc = Math.acos(Math.max(-1, Math.min(1, n[2])));
   const node = Math.atan2(n[0], -n[1]);
@@ -149,7 +162,7 @@ const TAIL_MATS = {
 
 // The Sun's galactic orbit, shifted back by Lyr years (same circle, same speed, earlier phase).
 function lagSunOrbit(Lyr) {
-  return { a: GAL_R, e: 0, inc_deg: 0, node_deg: 0, peri_deg: 0, M0_deg: rnd(mod360(-360 * Lyr / GAL_LAP_YEARS)),
+  return { a: GAL_R, e: 0, inc_deg: SWEEP_INC_DEG, node_deg: 0, peri_deg: 0, M0_deg: rnd(mod360(-360 * Lyr / GAL_LAP_YEARS)),
     period_days: rnd(GAL_LAP_YEARS * 365.25), span_days: SPAN_DAYS };
 }
 const sunPosAt = (Lyr) => M.orbitPosition(lagSunOrbit(Lyr), 0);
@@ -161,7 +174,7 @@ function lagPlanetOrbit(el, Lyr) {
 
 function baseMotions() {
   const list = [];
-  list.push({ id: 'sun-galactic-orbit', target: 'sun-path', kind: 'orbit', a: GAL_R, e: 0, inc_deg: 0, node_deg: 0, peri_deg: 0,
+  list.push({ id: 'sun-galactic-orbit', target: 'sun-path', kind: 'orbit', a: GAL_R, e: 0, inc_deg: SWEEP_INC_DEG, node_deg: 0, peri_deg: 0,
     M0_deg: 0, period_days: rnd(GAL_LAP_YEARS * 365.25), span_days: SPAN_DAYS });
   for (const key of PICK) {
     const el = ST.ELEMENTS[key], p = SS.PLANETS[key], c = add3(restPos(el), S0);
@@ -248,7 +261,7 @@ const MATERIALS = {
 const SCENE = sceneFor({
   id: 'galaxy-sun-v01',
   name: 'Galaxy Sun V01',
-  description: `The Sun and four planets (Earth, Mars, Jupiter, Saturn) carried round the Milky Way's centre. The galactic sweep is sped up so 200 years shows as a 30-degree arc (the real pace is too slow to see); the planets keep their true orbits, tilted about 63 degrees to the galaxy. No orbit paths are drawn.`,
+  description: `The Sun and four planets (Earth, Mars, Jupiter, Saturn) carried round the Milky Way's centre. The galactic sweep is sped up so 200 years shows as a 30-degree arc (the real pace is too slow to see); the planets keep their true orbits, tilted about 60 degrees to the galaxy. No orbit paths are drawn.`,
 });
 // V02: the Sun's trail (where it was over the last 400 years)
 const SCENE_V02 = sceneFor({
