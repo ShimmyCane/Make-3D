@@ -4,9 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Make 3D V3</title>
-<link rel="stylesheet" href="css/app.css?v=3.02">
+<link rel="stylesheet" href="css/app.css?v=3.03">
 </head>
 <body>
+<section class="front" id="front" aria-labelledby="frontTitle">
+  <div class="front-card">
+    <div class="front-head">
+      <div>
+        <h1 id="frontTitle">Make 3D</h1>
+        <p class="hint">Pick a category, then a project. It opens the latest version.</p>
+      </div>
+      <button class="btn small" id="frontKeep" type="button">Keep my last model</button>
+    </div>
+    <div class="fcats" id="frontCats"></div>
+  </div>
+</section>
+
 <header class="topbar">
   <div class="brand">Make 3D <span class="ver">V3</span></div>
   <div class="model-title" id="modelTitle">…</div>
@@ -131,6 +144,7 @@
     </div>
     <div class="stage-tools">
       <button class="btn small" id="resetView" type="button">Reset view</button>
+      <button class="btn small" id="frontBtn" type="button">Front page</button>
       <button class="btn small home-btn" id="homeBtn" type="button" hidden>Back</button>
     </div>
     <div class="date-track" id="dateTrack" role="slider" aria-label="Date on the timeline. Scroll or drag to move." tabindex="0" hidden>
@@ -208,7 +222,7 @@
 
 <div class="drawer" id="gearPanel" hidden>
   <h2>Settings</h2>
-  <p class="hint" id="buildNote">Version 3.02</p>
+  <p class="hint" id="buildNote">Version 3.03</p>
 
   <h3>Versions</h3>
   <p class="hint">V3 is the current engine. V2 is the version before it, and V1 is the archived first version; both run as they were.</p>
@@ -238,6 +252,9 @@
       <option value="wire">Wireframe</option>
     </select>
   </label>
+  <div class="field-row">
+    <label class="toggle"><input id="selBoxOn" type="checkbox" checked> Show the selection box</label>
+  </div>
   <label class="field">Dimensions shown as
     <select id="unitsSel">
       <option value="ftin">Feet and inches</option>
@@ -339,13 +356,14 @@
 <script src="js/core/motion.js"></script>
 <script src="js/core/linked_views.js"></script>
 <script src="js/core/visibility.js"></script>
-<script src="js/core/hierarchy.js?v=3.02"></script>
+<script src="js/core/hierarchy.js?v=3.03"></script>
 <script src="js/core/patterns.js"></script>
 <script src="js/core/glb.js"></script>
 <script src="vendor/supabase/supabase.js"></script>
 <script src="js/cloud/cloud.js"></script>
-<script src="js/viewer/viewer.js?v=3.02"></script>
+<script src="js/viewer/viewer.js?v=3.03"></script>
 <script src="js/samples.bundle.js"></script>
-<script src="js/ui/app.js?v=3.02"></script>
+<script src="js/ui/front.js?v=3.03"></script>
+<script src="js/ui/app.js?v=3.03"></script>
 </body>
 </html>

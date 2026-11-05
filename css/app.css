@@ -117,7 +117,7 @@ h2 { font-size: 16px; margin: 0 0 8px; }
 .home-btn { margin-top: 8px; background: var(--butter); font-weight: 700; }
 /* lower right: the month and year tracker for a one-shot timeline (above the settings button) */
 .date-track {
-  position: absolute; right: 14px; bottom: 96px; width: 170px; height: 170px; overflow: hidden;
+  position: absolute; right: 14px; bottom: calc(var(--gear, 68px) + 28px); width: 170px; height: 170px; overflow: hidden;
   background: var(--panel); border: var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
   touch-action: none; cursor: ns-resize; user-select: none; -webkit-user-select: none;
 }
@@ -180,11 +180,11 @@ h2 { font-size: 16px; margin: 0 0 8px; }
 
 /* library button, to the left of the gear */
 .libbtn {
-  position: fixed; right: 100px; bottom: 26px; height: 52px; padding: 0 18px; border-radius: 999px;
+  position: fixed; right: calc(var(--gear, 68px) + 32px); bottom: calc(var(--gear, 68px) / 2 - 12px); height: 52px; padding: 0 18px; border-radius: 999px;
   border: var(--line); background: var(--mint); box-shadow: var(--shadow); font: inherit; font-weight: 800; font-size: 16px;
   color: var(--ink); cursor: pointer; z-index: 5;
 }
-#libPanel { right: 100px; }
+#libPanel { right: calc(var(--gear, 68px) + 32px); }
 #libPanel h3 { font-size: 14px; margin: 14px 0 6px; }
 #libPanel .objects li button .kind { color: var(--muted); }
 /* library: one row per project; older versions fold away */
@@ -195,21 +195,60 @@ h2 { font-size: 16px; margin: 0 0 8px; }
 #libPanel .versions { margin: 6px 0 4px 18px; }
 #libPanel .versions[hidden] { display: none; }
 
-/* gear */
+/* gear: lower right, sized to the screen (--gear); the things beside it keep their places from its size */
 .gear {
-  position: fixed; right: 18px; bottom: 14px; width: 68px; height: 68px; border-radius: 50%;
+  --gear: clamp(52px, 7vmin, 84px);
+  position: fixed; right: 18px; bottom: 14px; width: var(--gear); height: var(--gear); border-radius: 50%;
   border: var(--line); background: var(--butter); box-shadow: var(--shadow); cursor: pointer; z-index: 5;
   display: grid; place-items: center; color: var(--ink); padding: 0;
 }
-.gear svg { display: block; }
+.gear svg { display: block; width: 50%; height: 50%; }
 .drawer {
-  position: fixed; right: 18px; bottom: 96px; width: min(360px, 92vw); max-height: 70vh; overflow-y: auto;
+  position: fixed; right: 18px; bottom: calc(var(--gear) + 28px); width: min(360px, 92vw); max-height: 70vh; overflow-y: auto;
   background: var(--panel); border: var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 14px; z-index: 6;
 }
 .drawer[hidden] { display: none; }
 .drawer h2 { font-size: 18px; }
 .drawer ul.objects { margin-bottom: 4px; }
 .drawer .objects li button { font-size: 15px; }
+
+/* front page: the first screen. Five categories; each drops down its projects (one open at a time) */
+.front { position: fixed; inset: 0; z-index: 50; background: var(--paper); overflow-y: auto; display: flex; justify-content: center; padding: 28px 16px 40px; }
+.front[hidden] { display: none; }
+.front-card { width: min(680px, 100%); }
+.front-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
+.front h1 { font-size: clamp(30px, 5vmin, 44px); margin: 0 0 4px; }
+.fcats { display: grid; gap: 12px; }
+.fcat { background: var(--panel); border: var(--line); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+.fcat[data-category="science"] .fcat-head { background: var(--sky); }
+.fcat[data-category="tests"] .fcat-head { background: var(--peach); }
+.fcat[data-category="architecture"] .fcat-head { background: var(--sage); }
+.fcat[data-category="fun"] .fcat-head { background: var(--butter); }
+.fcat[data-category="unsorted"] .fcat-head { background: #fff; }
+.fcat-head {
+  width: 100%; min-height: 72px; display: flex; align-items: center; gap: 12px; padding: 12px 16px;
+  border: 0; font: inherit; color: var(--ink); text-align: left; cursor: pointer;
+}
+.fcat-name { font-size: clamp(20px, 3.4vmin, 26px); font-weight: 800; white-space: nowrap; }
+.fcat-blurb { flex: 1 1 auto; min-width: 0; color: var(--muted); font-size: 14px; }
+.fcat-count { font-weight: 800; background: #fff; border: 2px solid var(--ink); border-radius: 999px; padding: 0 10px; min-width: 34px; text-align: center; }
+.fcat-count:empty { display: none; }
+.fcat-chev { font-size: 20px; transition: transform 200ms ease; }
+.fcat.open .fcat-chev { transform: rotate(180deg); }
+.fcat-list { list-style: none; margin: 0; padding: 12px; border-top: var(--line); display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; background: var(--panel); }
+.fcat-list[hidden] { display: none; }
+.fcat-list.drop { animation: fdrop 260ms ease-out; }
+@keyframes fdrop { from { opacity: 0; transform: translateY(-12px); } to { opacity: 1; transform: none; } }
+.fcat-empty { color: var(--muted); padding: 8px 4px; }
+.fproj-row { display: flex; gap: 6px; min-width: 0; }
+.fproj-open { flex: 1 1 0; min-width: 0; min-height: 56px; display: flex; flex-direction: column; align-items: flex-start; gap: 2px; text-align: left; overflow-wrap: anywhere; }
+.fproj-more { flex: 0 0 64px; width: 64px; min-height: 56px; padding: 6px 4px; background: var(--sky); }
+.fproj-more[aria-expanded="true"] { background: var(--butter); }
+.fversions { list-style: none; margin: 6px 0 0 18px; padding: 0; display: grid; gap: 6px; }
+.fversions[hidden] { display: none; }
+.fversions button { width: 100%; min-height: 46px; display: flex; justify-content: space-between; align-items: center; gap: 8px; text-align: left; }
+.fcat .kind { color: var(--muted); font-size: 14px; font-weight: 600; }
+@media (prefers-reduced-motion: reduce) { .fcat-list.drop { animation: none; } .fcat-chev { transition: none; } }
 
 /* narrow screens (iPad portrait, phone): the side panel sits above the view */
 @media (max-width: 860px) {
