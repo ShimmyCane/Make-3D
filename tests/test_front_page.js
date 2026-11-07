@@ -47,6 +47,14 @@ t('the front page index is a generated file with one entry per scene', () => {
   assert.strictEqual(ids.size, list.length, 'ids are unique');
 });
 
+t('the index lists exactly the scenes in the bundle (rebuild with tools/build_front_index.js after build_samples.js)', () => {
+  const win = {};
+  vm.runInNewContext(read('js/samples.bundle.js'), { window: win });
+  const bundleIds = Object.keys(win.M3D_SAMPLES).sort();
+  const indexIds = JSON.parse(read('js/front_index.js').split('= ')[1].replace(/;\s*$/, '')).map((e) => e.id).sort();
+  assert.deepStrictEqual(indexIds, bundleIds);
+});
+
 t('the index file is small compared with the bundle', () => {
   const idx = fs.statSync(path.join(root, 'js/front_index.js')).size;
   const bundle = fs.statSync(path.join(root, 'js/samples.bundle.js')).size;
