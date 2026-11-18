@@ -260,3 +260,9 @@ Jimmy's note on V06: too slow, too small, "too diagrammatic and not real enough 
 - **Check what a page downloads, not what it looks like.** The first check showed the front page ready in about 0.2 s and loading only five small files. Count the requests with `requestfinished`; the screen alone hides a 37 MB script.
 - **Load a library when the action needs it.** The cloud client is only needed when a request is saved, so it loads then. Sign-in lives in the browser's own storage, so a second page on the same site can use it.
 - **A logger that reads a response body can crash the run.** In Playwright, `response()` is a promise. Log the URL and read sizes from disk instead.
+
+## Model iteration and scene craft (2026-11-18, camp-move diorama)
+
+- Applied from the round-by-round lessons: `04 AI/model_iteration_lessons.md` (check scale against real sizes, build from parts, check after every change, render close-ups from a readable angle, check overlaps and the full field path) and `04 AI/scene_craft_lessons.md` (three planes, depth cues, lighting, sources and their strength).
+- **Rotation was dropped by the build** (no error). Found by comparing the source object with the model object. Check the path of each field.
+- **A close-up from the wrong side showed the wrong object.** Start every focus from a readable angle.

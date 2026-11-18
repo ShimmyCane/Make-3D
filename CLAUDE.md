@@ -33,3 +33,5 @@ Project rules:
 - Public repo. Sample models are synthetic. Real architectural details or client drawings go in `private/`.
 - Rendering never modifies the model. Rules live outside the geometry. Every change is an operation in the history.
 - Living room from a photo: `tools/living_room.js` (V01–V10, one function `defsFor(v)`). Photo in `private/` only. Render a version with `node tools/render_versions.js <dir> "Living room V10"`.
+
+Before a model or scene change: read `04 AI/model_iteration_lessons.md` (scale, parts, checks after every change, browser tests) and `04 AI/scene_craft_lessons.md` (three planes, depth, lighting). Add a lesson there after each round.
